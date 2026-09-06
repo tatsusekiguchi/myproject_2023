@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+#main{
+  padding: 15px 0 0 0;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#main h2{
+  padding-bottom: 25px;
+  border-bottom: #e3e0c9 1px solid;
+}
+#main #nav_store{
+  overflow: hidden;
+  margin:25px 0;
+}
+#main #nav_store ul{
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+}
+#main #nav_store ul li{
+  float:left;
+  margin-right: 20px;
+  position: relative;
+  left: -50%;
+}
+
+#area_01{
+  background: #f5f2dd none;
+  padding: 50px 0;
+}
+.area_box_01{
+  width:980px;
+  margin:0 auto;
+  overflow:hidden;
+}
+.area_box_01 .right{
+  float: right;
+  width: 848px;
+  padding-left: 80px;
+  border-left: 1px solid #c3003f;
+}
+.area_box_01 .oh{
+  padding-top: 10px;
+  overflow: hidden;
+}
+.area_box_01 .oh .flr{
+  padding-left: 10px;
+}
+.area_box_01 .oh .fll{
+  overflow: hidden;
+}
+.area_box_01 h3{
+  float: left;
+}
+
+#area_02{
+  background: url(../img/store/bg_01.png) no-repeat right top;
+  padding: 50px 0;
+}
+.area_box_02{
+  width:980px;
+  margin:0 auto;
+  overflow:hidden;
+}
+.area_box_02 .right{
+  float: right;
+  width: 848px;
+  padding-left: 80px;
+  border-left: 1px solid #c3003f;
+}
+.area_box_02 .oh{
+  overflow: hidden;
+}
+.area_box_02 .oh img{
+  float: right;
+}
+.area_box_02 table{
+  width: 470px;
+  float: left;
+}
+.area_box_02 table th{
+  padding: 10px 20px;
+  border-right: #e2debf 1px solid;
+  width:105px;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: bold;
+}
+.area_box_02 table td{
+  padding: 12px 20px;
+  vertical-align: middle;
+  text-align: left;
+}
+.area_box_02 table tr{
+  border-bottom:#e2debf 1px solid;
+  border-top:#e2debf 1px solid;
+}
+
+#area_03{
+  background: #f5f2dd none;
+  padding: 50px 0;
+}
+.area_box_03{
+  width:980px;
+  margin:0 auto;
+  overflow:hidden;
+}
+.area_box_03 .right{
+  float: right;
+  width: 848px;
+  padding-left: 80px;
+  border-left: 1px solid #c3003f;
+}
+.area_box_03 .oh{
+  padding-top: 10px;
+  overflow: hidden;
+}
+.area_box_03 iframe{
+  float: right;
+  width: 360px;
+}
+.area_box_03 table{
+  width: 470px;
+  float: left;
+}
+.area_box_03 table th{
+  padding: 10px 20px;
+  border-right: #e2debf 1px solid;
+  width:105px;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: bold;
+}
+.area_box_03 table td{
+  padding: 12px 20px;
+  vertical-align: middle;
+  text-align: left;
+}
+.area_box_03 table tr{
+  border-bottom:#e2debf 1px solid;
+  border-top:#e2debf 1px solid;
+}
+.area_box_03 h3{
+  float: left;
+}
+
+
+

@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+#main{
+	padding-bottom: 30px;
+}
+
+.lcl-the-article{
+	border-top: 2px solid #c3003f;
+}
+
+.lcl-the-article__header{
+	color: #c3003f;
+	overflow: hidden;
+	border-bottom: 1px solid #a5a498;
+	padding: 15px 10px;
+	margin-bottom: 20px;
+}
+
+.lcl-the-article__header-date{
+	font-size: 12px;
+	line-height: 21px;
+	float: left;
+}
+
+.lcl-the-article__header-cat{
+	font-size: 11px;
+	color: #fff;
+	line-height: 21px;
+	letter-spacing: 1px;
+	float: right;
+	padding: 0 6px;
+}
+
+.lcl-the-article__header-title{
+	font-size: 18px;
+	font-weight: bold;
+	clear: both;
+	padding-top: 10px;
+}
+
+.lcl-the-article__body{
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #a5a498;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 10px 30px 10px;
+}
+
+.lcl-the-article__body img{
+	max-width: 100%;
+	height: auto;
+}
+
+.lcl-the-article__body p{
+	line-height: 2.5em;
+}
+
+.lcl-the-article__body blockquote{
+	margin: 10px 30px;
+}
+
+.lcl-the-article__body h3{
+	background: #e6e6e2 none;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	border-left: 4px solid #c3003f;
+	padding: 8px 10px 8px 10px;
+	margin: 10px 0 10px -10px;
+}
+
+.lcl-the-article__body h4,
+.lcl-the-article__body h5,
+.lcl-the-article__body h6{
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.lcl-the-article__body ul{
+	list-style-type: disc;
+}
+
+.lcl-the-article__body ul li{
+	margin-left: 2em;
+}
+
+.lcl-the-article__body ol{
+	list-style-type: decimal;
+}
+
+.lcl-the-article__body ol li{
+	margin-left: 2em;
+}
+
+.lcl-the-article__body em{
+	font-style: italic !important;
+}
+
+.lcl-the-article__body hr{
+	display: block;
+}
+
+.lcl-the-article__body a{
+	text-decoration: underline;
+}
+
+.lcl-the-article__body a:hover{
+	text-decoration: none;
+}
+
+.lcl-page-nav{
+	height: 33px;
+}
+
+.lcl-page-nav__prev,
+.lcl-page-nav__next{
+	background: #c3003f none;
+	font-size: 15px;
+	color: #fff;
+	line-height: 1.0;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 9px 18px;
+}
+
+.lcl-btn-back{
+	background: #a5a498 none;
+	font-size: 15px;
+	color: #fff;
+	border-radius: 5px;
+	display: block;
+	padding: 12px 0;
+	text-align: center;
+}

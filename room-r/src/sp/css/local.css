@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.lcl-slide{
+	background: #c7c5b6 none;
+	position: relative;
+	padding: 20px 0;
+}
+
+.lcl-slide__slides{
+	position: relative;
+	width: 255px;
+	height: 120px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.lcl-slide__slides-item{
+	width: 255px;
+	height: 120px;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.lcl-slide__controllers-prev{
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	margin-left: -152px;
+}
+
+.lcl-slide__controllers-next{
+	position: absolute;
+	top: 70px;
+	right: 50%;
+	margin-right: -152px;
+}
+
+.lcl-btns{
+	overflow: hidden;
+}
+
+.lcl-btns__item{
+	background: #c3003f url(../common/img/arrow_02.png) no-repeat scroll right center;
+	-webkit-background-size: 19px auto;
+	background-size: 19px auto;
+	float: left;
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.lcl-btns__item + .lcl-btns__item{
+	float: right;
+	border-left: 1px solid #fff;
+}
+
+.lcl-btns__item > a{
+	background: transparent none no-repeat scroll 13px 25px;
+	-webkit-background-size: 20px auto;
+	background-size: 20px auto;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.0;
+	letter-spacing: 1px;
+	display: block;
+	padding: 30px 0 30px 40px;
+}
+
+.lcl-btn.lcl-btn-01{
+	background: #a5a498 url(../common/img/arrow_03.png) no-repeat scroll right center;
+	-webkit-background-size: 19px auto;
+	background-size: 19px auto;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.0;
+	display: block;
+	padding: 17px 30px;
+	text-align: right;
+}

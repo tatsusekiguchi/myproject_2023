@@ -1,0 +1,89 @@
+お問い合わせありがとうございます。
+以下の情報でお問い合わせを受け付けました。
+確認の上、担当者からご連絡差し上げます。
+
+【お客様情報】
+■お名前
+{$v.name}
+
+■フリガナ
+{$v.furi}
+
+■電話番号
+{$v.tel}
+
+■ご連絡希望時間
+{$v.tel_time}
+
+■ご希望家賃
+{$v.rent}
+
+{if !empty($v.mail)}
+■メールアドレス
+{$v.mail}
+
+{/if}
+{if !empty($v.address)}
+■現在お住まいのご住所
+〒{$v.zip}
+{$v.address}
+
+{/if}
+{if !empty($v.gyoshu)}
+■職種
+{$v.gyoshu}
+
+{/if}
+{if !empty($v.madori)}
+■間取り
+{$v.madori}
+
+{/if}
+{if !empty($v.area)}
+■お探しのエリア
+{$v.area}
+{$v.area_othre}
+
+{/if}
+{if !empty($v.date_m)}
+■ご案内希望日時
+第1希望：{$v.date_m}月{if !empty($v.date_d)} {$v.date_d}日{/if} {if !empty($v.date_h)}{$v.date_h}{/if}〜{if !empty($v.date_h_2)}{$v.date_h_2}頃{/if}
+
+第2希望：{$v.date_m2}月{if !empty($v.date_d2)} {$v.date_d2}日{/if} {if !empty($v.date_h2)}{$v.date_h2}{/if}〜{if !empty($v.date_h2_2)}{$v.date_h2_2}頃{/if}
+
+
+{/if}
+{if !empty($v.other)}
+■その他条件・ご質問等
+{$v.other}
+
+{/if}
+{if !empty($h)}
+【お問い合わせ物件情報】
+{foreach from=$h item=val}
+---------------------------------------------------------
+物件名　　　　　：{$val.building.building_name_c}
+家賃　　　　　　：{if $val.house.rental_price_c != ""}{$val.house.rental_price_c }円{if $val.house.more_price_flg_c == 1}〜{/if}{else}-{/if}
+
+共益費　　　　　：{$val.house.money_01_c}円
+タイプ　　　　　：{$val.house.house_no_c}タイプ
+間取り　　　　　：{if $val.house.layout_c != ""}{$cnf.layout_regist[$val.house.layout_c]}{if $cnf.layout_option[$val.house.layout_option_c] != ""}＋{$cnf.layout_option[$val.house.layout_option_c]}{/if}{/if}
+
+平米数　　　　　：{$val.house.space_c}m2
+交通　　　　　　：{$cnf.transport[$val.building.transport1_c]}
+駅　　　　　　　：{$cnf.station[$val.building.station1_c]}駅　徒歩{$val.building.distance1_c}分
+所在地　　　　　：愛知県名古屋市{$cnf.ku_nagoya[$val.building.ku_c]}{$val.building.address_c}
+向き　　　　　　：{$cnf.direction[$val.house.direction_c]}
+築年　　　　　　：{if $val.building.completion_year_c != ""}{$val.building.completion_year_c}年{$val.building.completion_month_c}月{/if}
+
+---------------------------------------------------------
+この物件をWebサイトで見るにはこちらのアドレスからアクセスしてください。
+{$smarty.const.WEB_ROOT}/detail.php?b={$val.building.building_id_c}&h={$val.house.house_id_c}
+
+{/foreach}
+{/if}
+3日以内にこちらより連絡がない場合、システム上のトラブル等が発生している可能性がございます。
+お手数ですがもう一度メール（もしくはお電話）にてお問い合わせください。
+
+****************************************
+room R room

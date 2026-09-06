@@ -1,0 +1,120 @@
+@charset "utf-8";
+#main{ padding: 15px 0 0 0; }
+#news_list{
+	border-top: 1px solid #f5f2dd;
+}
+.category{
+	position: relative;
+}
+.category:after{
+	position: absolute;
+	left: 50%;
+	bottom: -25px;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 16px solid #e9e8e9;
+	border-right: 14px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 14px solid transparent;
+	margin-left: -16px;
+}
+.category dl{
+	width: 980px;
+	height: 50px;
+	margin: 15px auto 0 auto;
+	background: #e9e8e9;
+	overflow: hidden;
+}
+.category dt,
+.category dd{
+	float: left;
+}
+.category dt{
+	width: 125px;
+	text-indent: 35px;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.32em;
+}
+.category dd{
+	width: 169px;
+	padding: 0;
+}
+.category dd a{
+	display: block;
+	height: 34px;
+	margin: 8px 10px;
+	border-radius: 16px;
+	background: #fff;
+	line-height: 34px;
+	font-size: 14px;
+	letter-spacing: 0.16em;
+	text-align: center;
+	color: #c3003f;
+}
+.category dd a:hover,
+.category dd a.current{ color: #fff; background: #c3003f; }
+
+.category dd.ico_room a{ color: #167dad; }
+.category dd.ico_room a:hover,
+.category dd.ico_room a.current{ color: #fff; background: #167dad; }
+
+.category dd.ico_food a{ color: #8e5e01; }
+.category dd.ico_food a:hover,
+.category dd.ico_food a.current{ color: #fff; background: #8e5e01; }
+
+.category dd.ico_life a{ color: #27867c; }
+.category dd.ico_life a:hover,
+.category dd.ico_life a.current{ color: #fff; background: #27867c; }
+
+.category dd.ico_info a{ color: #565290; }
+.category dd.ico_info a:hover,
+.category dd.ico_info a.current{ color: #fff; background: #565290; }
+
+.article{
+	width: 980px;
+	margin: 50px auto 0 auto;
+}
+.article_list{
+	width: 1013px;
+	overflow: hidden;
+}
+.article_list li{
+	margin-top: 38px;
+	float: left;
+	width: 220px;
+	padding-right: 33px;
+	border-bottom: 1px solid #e9e8e9;
+}
+.article_list li .ico{
+	text-align: center;
+	height: 23px;
+	line-height: 23px;
+	font-size: 12px;
+	color: #fff;
+	background: #ccc;
+}
+.article_list li .ico.room{ background: #167dad; }
+.article_list li .ico.food{ background: #8e5e01; }
+.article_list li .ico.life{ background: #27867c; }
+.article_list li .ico.info{ background: #565290; }
+
+.article_list li .image{ background: #ccc; width: 220px; height: 146px; }
+.article_list li .image img{ max-width: 220px; max-height: 146px; }
+.article_list li .date{
+	margin-top: 5px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.article_list li .title{
+	line-height: 20px;
+	height: 40px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+

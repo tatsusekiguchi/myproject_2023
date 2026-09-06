@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#main{
+	padding: 15px 0 0 0;
+}
+#main .inner #box_area{
+	background: #f5f2dd none;
+}
+#main .inner .box{
+	width: 800px;
+	margin: 0 auto;
+	padding: 50px 0 25px;
+	font-size: 14px;
+	line-height: 22px;
+}
+#main .inner .box p{
+	padding-bottom:25px;
+}
+#main .inner .box h3{
+	font-weight: bold;
+	padding-bottom: 5px;
+}

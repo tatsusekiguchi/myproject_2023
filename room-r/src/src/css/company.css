@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#main{
+	padding: 15px 0 0 0;
+}
+#main .inner #box_area{
+	background: #f5f2dd none;
+	padding: 50px 0;
+}
+
+#main .company_list{
+	width: 800px;
+	margin: 0 auto;
+	background: #f5f2dd none;
+	font-size: 14px;
+	line-height: 25px;
+}
+#main .company_list tr{
+	border-top: 1px solid #f5f2dd;
+}
+#main .company_list th , #main .company_list td{
+	text-align:left;
+	vertical-align: middle;
+	padding: 20px 10px;
+}
+#main .company_list th{
+	font-weight:bold;
+	background: #e2debf none;
+	width: 110px;
+}
+#main .company_list td{
+	background: #fff none;
+}
+
+#main .company_list a{
+	text-decoration: underline;
+}
+#main .company_list a:hover{
+	color: #c3003f;
+	text-decoration: none;
+}

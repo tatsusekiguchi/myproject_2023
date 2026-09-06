@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+#slide_nav{
+	position: relative;
+	width: 980px;
+	margin-top: 47px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#slide_nav .slides{
+	position: relative;
+	width: 980px;
+	height: 225px;
+	overflow: hidden;
+}
+
+#slide_nav .slides .item{
+	width: 242px;
+}
+
+#slide_nav .nav li a{
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 36px;
+	height: 225px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+#slide_nav .nav .prev a{
+	background: transparent url(../img/index/b_01.png) no-repeat scroll left top;
+	left: -35px;
+}
+
+#slide_nav .nav .next a{
+	background: transparent url(../img/index/b_02.png) no-repeat scroll right top;
+	right: -35px;
+}
+
+#area_tab .tabs{
+	line-height: 1.0;
+	font-size: 0;
+	border-bottom: 5px solid #c3003f;
+	margin-top: 65px;
+	text-align: center;
+}
+
+#area_tab .tabs li{
+	font-size: 12px;
+	width: 288px;
+	display: inline-block;
+}
+
+#area_tab .tabs li a{
+	background: transparent none no-repeat scroll left top;
+	display: inline-block;
+	vertical-align: top;
+	width: 261px;
+	height: 58px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+#area_tab .tabs li.i01 a{
+	background-image: url(../img/index/tab_01.png);
+}
+
+#area_tab .tabs li.i02 a{
+	background-image: url(../img/index/tab_02.png);
+}
+
+#area_tab .tabs li.on a,
+#area_tab .tabs li a:hover{
+	background-position: left bottom;
+}
+
+#search-area{
+	background: #f5f2dd none;
+	height: 491px;
+	padding-top: 25px;
+}
+
+#search-cond{
+	background: #f5f2dd url(../img/index/bg_01.jpg) no-repeat scroll right top;
+	height: 454px;
+	padding-top: 62px;
+}
+
+
+#area_bukken{
+	padding: 120px 0 30px 0;
+}
+
+#area_news{
+	background: #f5f2dd none;
+	padding: 40px 0 50px 0;
+}
+
+#area_news .articles{
+	overflow: hidden;
+	width: 1025px;
+	margin-top: 18px;
+}
+
+#area_news .articles > li{
+	width: 160px;
+	float: left;
+	font-size: 12px;
+	color: #646464;
+	line-height: 1.5;
+	border-top: 1px solid #d7d3b9;
+	padding-top: 27px;
+	padding-right: 45px;
+}
+
+#area_news .articles > li .cat{
+	background: #555 none;
+	line-height: 20px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+#area_news .articles > li .cat.cat-room{ background-color: #167dad;}
+#area_news .articles > li .cat.cat-food{ background-color: #8e5e01;}
+#area_news .articles > li .cat.cat-life{ background-color: #27867c;}
+#area_news .articles > li .cat.cat-join{ background-color: #b72979;}
+#area_news .articles > li .cat.cat-info{ background-color: #565290;}
+
+#area_news .articles > li .title a:hover{
+	text-decoration: underline;
+}
+#area_news .articles > li .image{
+	width: 160px;
+	height: 106px;
+	background: #ccc;
+}

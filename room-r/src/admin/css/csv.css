@@ -1,0 +1,34 @@
+.inner h2{
+	font-size: 20px;
+	font-weight: bold;
+	color: #470000;
+	margin-bottom: 20px;
+}
+.btn_submit{
+	margin-top: 30px;
+}
+.error{
+	margin: 20px auto;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #f00;
+	background: #efe6ed;
+	color: #f00;
+	padding: 20px;
+	line-height: 1.5em;
+}
+.result{
+	margin: 20px auto;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #0ede75;
+	background: #e4f9ef;
+	color: #0ede75;
+	padding: 20px;
+	line-height: 1.5em;
+}
+.error_inner{
+	width: 100%;
+	overflow: auto;
+	max-height: 15em;
+}

@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+.t0{ top: 0;}
+.l0{ left: 0;}
+
+#main{
+	padding: 15px 0 0 0;
+}
+
+#search-line{
+	background: #f5f2dd none;
+	padding: 25px 0;
+}
+
+#search-line > .inner{
+	position: relative;
+	width: 980px;
+	height: 386px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#search-line .h{
+	padding-left: 3px;
+}
+
+#search-line .lines{
+	position: relative;
+	z-index: 1;
+	padding-top: 10px;
+}
+
+#search-line .lines > li{
+	margin-top: 15px;
+}
+
+#search-line .lines > li .clickable{
+	background: transparent none no-repeat scroll left top;
+	width: 180px;
+	height: 40px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	display: block;
+	cursor: pointer;
+}
+
+#search-line .lines > li .clickable.on{
+	background-position: left bottom;
+}
+
+#search-line .stations > li{
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#search-line .stations .station-kokusaicenter{ background-image: url(../img/line/s/kokusaicenter.png); width: 81px; height: 39px; top: 74px; left: 324px;}
+#search-line .stations .station-marunouchi{ background-image: url(../img/line/s/marunouchi.png); width: 66px; height: 37px; top: 93px; left: 409px;}
+#search-line .stations .station-hisayaodori{ background-image: url(../img/line/s/hisayaodori.png); width: 84px; height: 37px; top: 75px; left: 480px;}
+#search-line .stations .station-takaoka{ background-image: url(../img/line/s/takaoka.png); width: 30px; height: 39px; top: 74px; left: 628px;}
+#search-line .stations .station-kurumamichi{ background-image: url(../img/line/s/kurumamichi.png); width: 30px; height: 40px; top: 74px; left: 716px;}
+#search-line .stations .station-ozone{ background-image: url(../img/line/s/ozone.png); width: 82px; height: 30px; top: 57px; left: 778px;}
+#search-line .stations .station-nagoya{ background-image: url(../img/line/s/nagoya.png); width: 76px; height: 44px; top: 169px; left: 290px;}
+#search-line .stations .station-fushimi{ background-image: url(../img/line/s/fushimi.png); width: 51px; height: 37px; top: 158px; left: 409px;}
+#search-line .stations .station-sakae{ background-image: url(../img/line/s/sakae.png); width: 46px; height: 41px; top: 158px; left: 519px;}
+#search-line .stations .station-shinsakae{ background-image: url(../img/line/s/shinsakae.png); width: 31px; height: 37px; top: 158px; left: 625px;}
+#search-line .stations .station-chikusa{ background-image: url(../img/line/s/chikusa.png); width: 54px; height: 44px; top: 168px; left: 749px;}
+#search-line .stations .station-nakamurakuyakusho{ background-image: url(../img/line/s/nakamurakuyakusho.png); width: 77px; height: 39px; top: 234px; left: 217px;}
+#search-line .stations .station-osukannon{ background-image: url(../img/line/s/osukannon.png); width: 62px; height: 38px; top: 264px; left: 395px;}
+#search-line .stations .station-kamimaezu{ background-image: url(../img/line/s/kamimaezu.png); width: 66px; height: 38px; top: 247px; left: 546px;}
+#search-line .stations .station-tsurumai{ background-image: url(../img/line/s/tsurumai.png); width: 49px; height: 37px; top: 247px; left: 658px;}
+#search-line .stations .station-higashibetsuin{ background-image: url(../img/line/s/higashibetsuin.png); width: 72px; height: 23px; top: 310px; left: 536px;}
+#search-line .stations .station-kanayama{ background-image: url(../img/line/s/kanayama.png); width: 31px; height: 52px; top: 334px; left: 633px;}
+
+#search-line .stations > li .clickable{
+	background: transparent none no-repeat scroll left top;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	display: block;
+}
+
+#search-line .stations .station-kokusaicenter .clickable.on,
+#search-line .stations .station-marunouchi .clickable.on,
+#search-line .stations .station-hisayaodori .clickable.on,
+#search-line .stations .station-takaoka .clickable.on,
+#search-line .stations .station-kurumamichi .clickable.on,
+#search-line .stations .station-fushimi .clickable.on,
+#search-line .stations .station-shinsakae .clickable.on,
+#search-line .stations .station-nakamurakuyakusho .clickable.on,
+#search-line .stations .station-osukannon .clickable.on,
+#search-line .stations .station-kamimaezu .clickable.on,
+#search-line .stations .station-tsurumai .clickable.on,
+#search-line .stations .station-higashibetsuin .clickable.on{
+	background: transparent url(../img/line/checked_s.png) no-repeat scroll 0 0;
+}
+
+#search-line .stations .station-nagoya .clickable.on,
+#search-line .stations .station-sakae .clickable.on,
+#search-line .stations .station-kanayama .clickable.on,
+#search-line .stations .station-chikusa .clickable.on,
+#search-line .stations .station-ozone .clickable.on{
+	background: transparent url(../img/line/checked_l.png) no-repeat scroll 0 0;
+}
+
+#wrapper #search-line .stations .station-kokusaicenter .clickable{ background-position: 46px 23px;}
+#wrapper #search-line .stations .station-marunouchi .clickable{ background-position: 4px 4px;}
+#wrapper #search-line .stations .station-hisayaodori .clickable{ background-position: 68px 21px;}
+#wrapper #search-line .stations .station-takaoka .clickable{ background-position: 8px 23px;}
+#wrapper #search-line .stations .station-kurumamichi .clickable{ background-position: 7px 24px;}
+#wrapper #search-line .stations .station-ozone .clickable{ background-position: 57px 5px;}
+#wrapper #search-line .stations .station-nagoya .clickable{ background-position: 5px 5px;}
+#wrapper #search-line .stations .station-fushimi .clickable{ background-position: 4px 21px;}
+#wrapper #search-line .stations .station-sakae .clickable{ background-position: 5px 16px;}
+#wrapper #search-line .stations .station-shinsakae .clickable{ background-position: 8px 21px;}
+#wrapper #search-line .stations .station-chikusa .clickable{ background-position: 5px 5px;}
+#wrapper #search-line .stations .station-nakamurakuyakusho .clickable{ background-position: 33px 4px;}
+#wrapper #search-line .stations .station-osukannon .clickable{ background-position: 18px 4px;}
+#wrapper #search-line .stations .station-kamimaezu .clickable{ background-position: 4px 22px;}
+#wrapper #search-line .stations .station-tsurumai .clickable{ background-position: 33px 21px;}
+#wrapper #search-line .stations .station-higashibetsuin .clickable{ background-position: 56px 4px;}
+#wrapper #search-line .stations .station-kanayama .clickable{ background-position: 6px 5px;}
+
+#search-cond{
+	background: #e3dfc6 none;
+	padding-bottom: 20px;
+}

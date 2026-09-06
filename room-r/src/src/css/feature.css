@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#main{
+	padding: 15px 0 0 0;
+}
+
+#search-area{
+	background: #f5f2dd none;
+	height: 488px;
+	padding-top: 24px;
+}
+
+#search-cond{
+	background: #e3dfc6 none;
+	padding-bottom: 20px;
+}

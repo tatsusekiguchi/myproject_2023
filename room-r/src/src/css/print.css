@@ -1,0 +1,200 @@
+@charset "utf-8";
+#wrapper{
+	width: 1100px;
+	page-break-inside: avoid;
+}
+#box01{
+	padding: 50px 55px;
+}
+#box01 #name_area{
+	padding: 0 0 0 40px;
+}
+#box01 #name_area h1{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    padding-left: 35px;
+    background: transparent url(../img/detail/h_01.png) no-repeat left 6px;
+    overflow: hidden;
+}
+#box01 #name_area h1 span{
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 15px;
+	font-weight: normal;
+}
+#box02{
+	background: #f5f2dd;
+	padding: 40px 0;
+}
+#box02 > .inner{
+	width: 980px;
+	margin: 0 auto;
+}
+#box02 > .inner > .fll{
+	width: 575px;
+}
+
+#box02 .address dt{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #c3003f;
+	line-height: 25px;
+}
+
+#box02 .address dd{
+	margin-bottom: 12px;
+	line-height: 25px;
+}
+
+#box02 .detail table{
+	margin-top: 8px;
+	width: 350px;
+	line-height: 20px;
+	border-collapse: collapse;
+	height: 438px;
+}
+#box02 .detail table td,
+#box02 .detail table th{
+	padding: 2px 10px;
+	font-size: 12px;
+	border: 1px solid #f5f2dd;
+	overflow: hidden;
+	vertical-align: middle;
+}
+#box02 .detail table th{ background: #e2debf; width: 80px; }
+#box02 .detail table td{background: #fff;}
+
+#box02 .detail .flg{
+	margin-top: 8px;
+	width: 196px;
+	float: right;
+}
+#box02 .detail .flg li{
+	float: left;
+	margin-left: 6px;
+	margin-bottom: 5px;
+	font-size: 0;
+}
+
+#box02 > .inner > .flr{
+	width: 370px;
+
+}
+
+#box02 > .inner > .flr .h{
+	background: #87012c;
+	line-height: 30px;
+	height: 30px;
+	overflow: hidden;
+	color: #fff;
+	font-size: 12px;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+}
+#box02 > .inner > .flr .h strong{ font-size: 15px; font-weight: bold; }
+#box02 > .inner > .flr .layout_price{
+	overflow: hidden;
+	background: #fff;
+	height: 30px;
+	text-align: center;
+}
+#box02 > .inner > .flr .layout_price li{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+	background: #c3003f;
+	color: #fff;
+}
+#box02 > .inner > .flr .madori{
+	width: 370px;
+	height: 544px;
+	background: #fff;
+}
+#box02 > .inner > .flr .madori img{ max-width: 370px; height: 479px; margin: 32px 0; }
+
+#box02 #map_area{
+	float: left;
+	width: 574px;
+}
+#box02 #map_area #map{
+	border: 3px solid #fff;
+	width: 568px;
+	background: #eee;
+	height: 254px;
+}
+#box02 .point{
+	width: 370px;
+	float: right;
+}
+#box02 .point > .inner{
+	background: #fff;
+	padding: 20px;
+}
+#box02 .point > .inner table{ border-collapse: collapse; }
+#box02 .point > .inner th{
+	width: 33px;
+	background: #c3003f;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px 0
+}
+#box02 .point > .inner td{
+	font-size: 14px;
+	line-height: 25px;
+	vertical-align: middle;
+	padding: 0 0 0 25px;
+}
+
+#box03{
+	overflow: hidden;
+	width: 980px;
+	margin: 55px auto 0 auto;
+}
+
+#box03 ul{
+	float: left;
+	width: 490px;
+}
+#box03 ul li{
+	float: left;
+	width: 233px;
+}
+#box03 ul li img{
+	width: 100%;
+}
+
+#box03 ul.bukken{
+	width: 490px;
+
+}
+#box03 ul.bukken li{
+	margin-right: 12px;
+	margin-bottom: 10px;
+}
+#box03 ul.bukken li.small{
+	height: 150px;
+	overflow: hidden;
+}
+#box03 ul.bukken li.small img{
+	margin-top: -100px;
+}
+#box03 ul.house li{
+	margin-left: 12px;
+	margin-bottom: 22px;
+}
+
+#print_footer{
+	width: 980px;
+	margin: 50px auto 10px auto;
+	overflow: hidden;
+}
+#print_footer p{
+	margin-left: 25px;
+	margin-top: 30px;
+	font-size: 12px;
+	line-height: 1.5;
+}

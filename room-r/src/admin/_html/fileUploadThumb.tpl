@@ -1,0 +1,2 @@
+<!--{if $upload == 'fail'}-->ファイルのアップロードに失敗しました<br /><!--{/if}-->
+<!--{if $file != ''}--><br /><span class="confirm<!--{$num}-->"><a href="showImage.php?dir=<!--{$imgdir}-->&file=<!--{$file}-->&bg=<!--{$bg}-->" target="_blank"><img src="../uploads/<!--{$file}-->" style="width: 100px;" /></a></span><!--{/if}-->

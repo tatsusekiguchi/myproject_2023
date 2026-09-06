@@ -1,0 +1,11 @@
+IndexIgnore *
+
+#AuthType Basic
+#AuthName "Input your ID and Password.-roomRroom"
+#AuthUserFile /home/room-r-room/www/.htpasswd
+#require valid-user
+#Satisfy any
+#Order Allow,Deny
+#Allow from 219.94.155.214
+#Allow from 153.142.60.41
+#Allow from 49.212.180.39

@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+#main{
+	padding: 15px 0 0 0;
+}
+
+#main .form{
+	background: #f5f2dd url(../img/contact/bg_01.png) no-repeat scroll right bottom;
+	padding: 60px 0;
+}
+
+#main .form > form > .inner{
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#ct_1{
+	background: #fff none;
+	border-top: 4px solid #c3003f;
+	padding: 20px;
+}
+
+#ct_1 table{
+	width: 100%;
+	border-right: 1px solid #d2d0be;
+	border-bottom: 1px solid #d2d0be;
+	border-left: 1px solid #d2d0be;
+}
+
+#ct_1 table th{
+	background: #7f7d70 none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	vertical-align: middle;
+	width: 155px;
+	border-top: 1px solid #d2d0be;
+	padding: 20px 0 20px 20px;
+	text-align: left;
+}
+
+#ct_1 table td{
+	background: #fff none;
+	font-size: 12px;
+	border-top: 1px solid #d2d0be;
+	padding: 20px;
+}
+
+#ct_1 table select{
+	vertical-align: top;
+}
+
+#ct_1 table input[type="text"],
+#ct_1 table textarea{
+	background: #e9e8e9 none;
+	vertical-align: top;
+	width: 100%;
+	border: none;
+}
+
+#ct_1 table input[type="text"]{
+	line-height: 30px;
+	height: 20px;
+	padding: 5px;
+}
+
+#ct_2{
+	background: #fff none;
+	overflow: hidden;
+	padding: 20px;
+}
+
+#ct_2 > .h{
+	background: #00567e none;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1.0;
+	color: #fff;
+	width: 155px;
+	height: 57px;
+	float: left;
+	padding: 46px 0 0 20px;
+}
+
+#ct_2 > .img{
+	background: #000 none no-repeat scroll center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 112px;
+	height: 103px;
+	float: left;
+	margin-left: 20px;
+}
+
+#ct_2 > .ml{
+	margin-left: 327px;
+}
+
+#ct_2 > .ml .name{
+	font-size: 12px;
+	line-height: 30px;
+}
+
+#ct_2 > .ml .name .h{
+	display: inline-block;
+	font-weight: bold;
+	line-height: 30px;
+	width: 136px;
+	height: 28px;
+	border: 1px solid #00567e;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#ct_2 > .ml table{
+	font-size: 12px;
+	width: 100%;
+	border: 1px solid #00567e;
+	margin-top: 10px;
+}
+
+#ct_2 > .ml table th,
+#ct_2 > .ml table td{
+	width: 136px;
+	height: 29px;
+	text-align: center;
+}
+
+#ct_2 > .ml table th{
+	background: #00567e none;
+	color: #fff;
+}
+
+#ct_2 > .ml table th + th{
+	border-left: 1px solid #fff;
+}
+
+#ct_2 > .ml table td + td{
+	border-left: 1px solid #00567e;
+}

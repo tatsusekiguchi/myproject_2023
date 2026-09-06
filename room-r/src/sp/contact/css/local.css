@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+#main{
+	padding-bottom: 50px;
+}
+
+#main input[type="text"],
+#main textarea{
+	background: #fff none;
+	border: 1px solid #ccc;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 4px 0;
+}
+
+.lcl-ico-form-req{
+	background: #c3003f none;
+	font-size: 12px;
+	line-height: 20px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 0 6px;
+	margin-left: 10px;
+}
+
+.lcl-table01{
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.lcl-table01 .lcl-table01__t{
+	background: #7f7d70 none;
+	color: #fff;
+	padding: 10px 15px;
+}
+
+.lcl-table01 .lcl-table01__d + .lcl-table01__t{
+	margin-top: 20px;
+}
+
+.lcl-table01 .lcl-table01__d{
+	padding: 10px 15px 0 15px;
+}
+
+.lcl-contact-bukken{
+	background: #00567e none;
+	padding: 15px 10px 10px 10px;
+}
+
+.lcl-contact-bukken__h{
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.0;
+	text-align: center;
+}
+
+.lcl-contact-bukken__article{
+	margin-top: 15px;
+}
+
+.lcl-bukken{
+	background: #fff none;
+	border-radius: 6px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.lcl-bukken__name{
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.lcl-bukken__img{
+	background: transparent none no-repeat scroll center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 120px;
+	height: 79px;
+	float: left;
+}
+
+.lcl-bukken__data{
+	font-size: 13px;
+	margin-left: 132px;
+}

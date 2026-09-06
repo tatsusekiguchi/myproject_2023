@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+#main{
+	padding-bottom: 30px;
+}
+
+.lcl-text{
+	font-size: 13px;
+	word-wrap: break-word;
+	border-top: 2px solid #c3003f;
+	padding-top: 16px;
+}

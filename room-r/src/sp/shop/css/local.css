@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#main{
+	padding-bottom: 30px;
+}
+
+.lcl-table-01__t{
+	background: #eee none;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 8px 10px;
+}
+
+.lcl-table-01__d{
+	font-size: 14px;
+	padding: 8px 10px;
+}

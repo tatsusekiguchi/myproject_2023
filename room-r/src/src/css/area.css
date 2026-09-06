@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#main{
+	padding: 15px 0 0 0;
+}
+
+#search-area{
+	background: #f5f2dd none;
+	height: 488px;
+	padding-top: 24px;
+}
+
+#search-cond{
+	background: #e3dfc6 none;
+	padding-bottom: 20px;
+}
+/*
+#result{
+	padding: 50px 0 0 0;
+}
+
+#result .pagination{
+	font-size: 0;
+	overflow: hidden;
+}
+
+#result .pagination > li{
+	font-size: 14px;
+	line-height: 1.0;
+	display: inline-block;
+}
+
+#result .pagination > li + li{
+	margin-left: 5px;
+}
+
+#result .pagination > li.prev,
+#result .pagination > li.next{
+	font-weight: bold;
+	color: #888;
+}
+
+#result .pagination > li > a{
+	background: #e9e8e9 none;
+	display: inline-block;
+	padding: 8px 10px;
+}
+
+#result .pagination > li.current > a{
+	background-color: #7f7d70;
+	color: #fff;
+}
+
+#result .pagination-block{
+	display: block;
+	border: 1px solid #e9e8e9;
+	padding: 14px;
+	text-align: center;
+}
+
+#result .header > .found{
+	width: 700px;
+	float: left;
+}
+
+#result .header > .found .count{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.0;
+	margin-right: 25px;
+}
+
+#result .header > .found .count .num{
+	font-size: 40px;
+}
+
+#result .header > .found .display{
+	float: left;
+	padding-top: 15px;
+}
+
+#result .header > .found .conditions{
+	clear: both;
+	padding-top: 5px;
+}
+
+#result .header > .pagination{
+	width: 280px;
+	float: right;
+	padding-top: 32px;
+	text-align: right;
+}
+*/
