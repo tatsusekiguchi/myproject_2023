@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+    TOP
+///////////////////////////////////////////////////////////*/
+#lottiePc {
+  display: none !important;
+}
+
+#top .topMvPanel {
+  margin: 0 0 40px;
+}
+#top .topMvPanel .mvTitle {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+#top .topMvPanel .mvScroll {
+  text-align: center;
+}
+#top .topMvPanel .mvScroll p {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-family: "Helvetica", sans-serif;
+  background: url("../image/top/top_mv_scroll.png") right center no-repeat;
+  background-size: 5px auto;
+}
+#top .sectionContainer {
+  padding: 100px 0 150px;
+}
+#top .sectionContainer .topPanel {
+  margin: 0 0 150px;
+}
+#top .sectionContainer .topPanel .secTitle {
+  margin: 0 -15px 60px;
+}
+#top .sectionContainer .topPanel .txt {
+  font-size: 15px;
+}
+#top .sectionContainer .groupPanel + .groupPanel {
+  margin: 120px 0 0;
+}
+#top .sectionContainer .groupPanel .titleBox {
+  margin: 0 0 30px;
+}
+#top .sectionContainer .groupPanel .titleBox .title {
+  margin: 0 10px 0 0;
+}
+#top .sectionContainer .groupPanel .titleBox .title span {
+  font-size: 14px;
+}
+#top .sectionContainer .groupPanel .titleBox .title em {
+  font-size: 60px;
+}
+#top .sectionContainer .groupPanel .titleBox .icon {
+  width: 80px;
+}
+#top .sectionContainer .groupPanel .groupBox {
+  padding: 0 15px;
+}
+#top .sectionContainer .groupPanel .groupBox .mv {
+  margin: 0 0 20px;
+}
+#top .sectionContainer .groupPanel .groupBox .intro {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  opacity: 1;
+}
+#top .sectionContainer .groupPanel .groupBox .intro dl dt {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+#top .sectionContainer .groupPanel .groupBox .intro dl dd {
+  font-size: 15px;
+}
+#top .sectionContainer .groupPanel:nth-child(even) > .secWrap {
+  overflow: hidden;
+}
+#top .sectionContainer .groupPanel:nth-child(even) .titleBox {
+  float: right;
+}
+#top .listContainer {
+  padding: 80px 0 120px;
+}
+#top .listContainer h2 {
+  margin: 0 0 60px;
+  font-size: 28px;
+}
+#top .listContainer .listBox {
+  max-width: 350px;
+  margin: 0 auto 120px;
+}
+#top .listContainer .listBox ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px 0 0 -20px;
+}
+#top .listContainer .listBox ol li {
+  width: calc(50% - 20px);
+  margin: 40px 0 0 20px;
+}
+#top .listContainer .listBox ol li .num {
+  top: -30px;
+  right: -25px;
+  font-size: 68px;
+}
+#top .listContainer .listBox ol li .box .inner {
+  height: 70px;
+  padding: 15px;
+}
+#top .listContainer .listBox ol li .box .icon {
+  width: 37px;
+  margin: 0 10px 0 0;
+}
+#top .listContainer .listBox ol li .box p {
+  font-size: 10px;
+}
+#top .listContainer .listBox + p {
+  margin: 0 0 40px;
+  font-size: 20px;
+}
+#top .listContainer .btnVote {
+  max-width: 350px;
+}
+#top .listContainer .btnVote a {
+  padding: 20px 20px;
+  font-size: 20px;
+}

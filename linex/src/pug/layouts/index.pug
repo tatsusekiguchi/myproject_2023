@@ -1,0 +1,76 @@
+// ▽メイン▽
+main#topMain
+	.mvPanel
+		h1 Colorful Days with LINEX
+		.mvMovie.mvMovie--pc
+			video(src=(root_path || '') + "image/top/top_kv_video_pc.mp4" autoplay="" loop="" muted="" playsinline="")
+		.mvMovie.mvMovie--sp
+			video(src=(root_path || '') + "image/top/top_kv_video_sp.mp4" autoplay="" loop="" muted="" playsinline="")
+	.mvScroll
+		img(src=(root_path || '') + "image/top/top_kv_scroll.png", alt="SCROLL")
+	.topTxtPanel
+		.txt.fadeUp
+			p 私たちリネクスは、カーポートや物置、<br class="spBreak">フェンスや石材等の<br>エクステリア商材の販売から輸送をはじめ、<br class="spBreak">設計から外構・造園工事まで<br>エクステリアをトータルにコーディネートします。
+	.sec01
+		.secWrap01
+			.secTitle.fadeUp
+				h2
+					img(src=(root_path || '') + "image/top/top_sec01_title.png", alt="Sensibility")
+			p.fadeUp 感性をたいせつに。
+		.secPanel
+			.secWrap01
+				.txtBox
+					.txt
+						p.fadeUp 感性とは人それぞれの色であり、<br>一人ひとりの個性であり、人生です。
+						p.fadeUp ”一期一会”の感性との出会いをよろこび。<br>わたしたちとつながる全ての人々に、<br>いろどりある人生をご提供したい・・・<br>それが、わたしたちの想いです。
+			.photo
+				img(src=(root_path || '') + "image/top/top_sec01_photo.png", alt="")
+	.sec02
+		.secWrap02
+			.secTitle.fadeUp
+				h2
+					img(src=(root_path || '') + "image/top/top_sec02_title.png", alt="Our Strength")
+			.txtBox
+				dl.fadeUp
+					dt LINEXの5つの強み
+					dd
+						.txt
+							p 付加価値の高い挑戦を続ける<br>最強のパートナーとして
+				.btnLink
+					a(href="")
+						img(src=(root_path || '') + "image/common/btn_read_more.png", alt="")
+		.photo
+			img(src=(root_path || '') + "image/top/top_sec02_photo.png", alt="")
+	.linkPanel01
+		.inner
+			ul
+				li
+					.img.fadeUp
+						img(src=(root_path || '') + "image/top/top_link_business_pc.png", class="switch" alt="")
+					.btnLink01.btnLink
+						a(href="")
+							img(src=(root_path || '') + "image/common/btn_read_more.png", alt="")
+				li
+					.img.fadeUp
+						img(src=(root_path || '') + "image/top/top_link_recruit_pc.png", class="switch" alt="")
+					.btnLink02.btnLink
+						a(href="recruit")
+							img(src=(root_path || '') + "image/common/btn_read_more.png", alt="")
+	.linkPanel02
+		ul
+			li.fadeUp
+				p 代表メッセージ
+				.btnLink
+					a(href="")
+						img(src=(root_path || '') + "image/common/btn_read_more.png", alt="")
+			li.fadeUp
+				p 会社概要
+				.btnLink
+					a(href="")
+						img(src=(root_path || '') + "image/common/btn_read_more.png", alt="")
+			li.fadeUp
+				p お問い合わせ
+				.btnLink
+					a(href="")
+						img(src=(root_path || '') + "image/common/btn_read_more.png", alt="")
+// △メイン△

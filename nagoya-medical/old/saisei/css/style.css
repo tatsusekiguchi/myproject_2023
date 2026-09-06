@@ -1,0 +1,263 @@
+/*共通 ここから*/
+
+html,
+body,
+header,
+ul,
+h1,
+h2,
+h3 {
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    border: 0px;
+}
+
+a {
+    color: #004b12;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #80b28c;
+}
+
+a:hover img {
+    filter: alpha(opacity=60 style=0);
+    opacity: 0.6;
+}
+
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 18px;
+    display: inline;
+}
+
+h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 994px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#sp_space {
+    display: none;
+}
+
+#header {
+    width: 994px;
+    height: 129px;
+    line-height: 0px;
+}
+
+#header_sp {
+    display: none;
+}
+
+.header_left {
+    float: left;
+}
+
+.header_right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+div#floating-menu {
+    display: none;
+}
+
+#nav {
+    width: 994px;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+}
+
+#left {
+    width: 660px;
+    float: left;
+}
+
+.pankuzu {
+    margin-top: 10px;
+}
+
+.pankuzu_name {
+    height: 23px;
+    padding-left: 5px;
+    padding-top: 8px;
+    background-color: #cccccc;
+    float: left;
+}
+
+.pankuzu_yajirusi {
+    padding-left: 0px;
+    float: left;
+}
+
+.title {
+    width: 643px;
+    height: 33px;
+    margin: 10px 0px 10px 0px;
+    padding-left: 18px;
+    padding-top: 8px;
+    font-size: 25px;
+    color: #0059b4;
+    background-image: url(../images/title.gif);
+    float: left;
+}
+
+.documents {
+    width: 640px;
+    padding: 10px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.documents_title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.link_menu {
+    width: 370px;
+    border: 1px solid #0059b4;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.link_menu li {
+    list-style-type: none;
+}
+
+#right {
+    width: 323px;
+    padding-top: 10px;
+    float: right;
+}
+
+.contents {
+    margin-bottom: 10px;
+    line-height: 0px;
+}
+
+.contents_bar {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contents_box01 {
+    border: 2px solid #0059b4;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+.contents_title {
+    width: 295px;
+    margin-left: 10px;
+    font-size: 1em;
+    line-height: 25px;
+    font-weight: bold;
+    color: #004b12;
+}
+
+.contents_txt {
+    width: 295px;
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.contents_button {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.banar {
+    margin-bottom: 10px;
+}
+
+#footer {
+    width: 984px;
+    height: 45px;
+    color: white;
+    padding-top: 50px;
+    padding-left: 10px;
+    line-height: 20px;
+    font-size: 13px;
+    background-image: url(../images/footer.gif);
+}
+
+.pc_banar {}
+
+.sp_banar {
+    display: none;
+}
+
+
+/*共通 ここまで*/
+
+
+/*setti.html ここから*/
+
+.nintei {
+    padding-top: 50px;
+    padding-left: 87px;
+    padding-bottom: 50px;
+}
+
+
+/*setti.html ここまで*/
+
+
+/*meibo.html ここから*/
+
+.meibo_table {
+    padding-left: 0px;
+    margin: 5%;
+    line-height: 1.5em;
+}
+
+.meibo_list {
+    padding: 2%;
+    width: 100%;
+    border: solid 1px black;
+}
+
+.meibo_list tr,
+.meibo_list th,
+.meibo_list td {
+    padding: 2%;
+    border: solid 1px black;
+}
+
+
+/*meibo.html ここまで*/
+
+.text_bold{
+    font-weight: bold;
+}

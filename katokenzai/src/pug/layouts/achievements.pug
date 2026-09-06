@@ -1,0 +1,72 @@
+// ▽メイン▽
+main#achievementsMain.pageMain
+	.pageKvPanel
+		.pageKvTitle
+			p Achievements
+			h1 施工実績
+	.topTitlePanel
+		.secWrap01
+			h2 数字で見る！<br>カトー建材工業の<br class="spBreak">施工実績
+			.txt
+				p カトー建材工業は愛知県・岐阜県を中心に<br>600件以上の豊富な施工実績を誇っています。
+			.secBoxList
+				.secBox
+					.ttl
+						img(src=(root_path || '') + "image/achievements/achievements_top_ttl_01_pc.png", class="switch" alt="")
+					.countList
+						.countBox
+							dl
+								dt 愛知県
+								dd
+									em 500
+									span 件
+						.countBox
+							dl
+								dt 岐阜県
+								dd
+									em 130
+									span 件
+				.secBox
+					.ttl
+						img(src=(root_path || '') + "image/achievements/achievements_top_ttl_02_pc.png", class="switch" alt="")
+					.countList
+						.countBox
+							dl
+								dt 官公庁
+								dd
+									em 240
+									span 件
+						.countBox
+							dl
+								dt 企　業
+								dd
+									em 160
+									span 件
+	.mv
+		img(src=(root_path || '') + "image/achievements/achievements_mv_01_pc.png", class="switch" alt="")
+	.caseSection
+		.secWrap01
+			h2 施工事例
+			.caseTable
+				table
+					thead
+						tr
+							th 工事名
+							th 受注先
+							th 年月日
+					tbody
+						tr
+							td(data-label="工事名")
+								p せとっ子ファミリー交流館屋上防水等改修工事
+							td(data-label="受注先")
+								p 瀬戸市
+							td(data-label="年月日")
+								p 2022年10月
+						tr
+							td(data-label="工事名")
+								p ライオンズマンション三郷第2外壁その他大規模修繕工事
+							td(data-label="受注先")
+								p ライオンズマンション三郷第2管理組合
+							td(data-label="年月日")
+								p 2022年10月
+// △メイン△

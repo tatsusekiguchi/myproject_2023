@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>fashion design</title>
+
+    <!-- カルーセル部分 css -->
+    <link rel="stylesheet" href="../css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.min.css" />
+
+    <!-- ドロアー部分 css -->
+    <link rel="stylesheet" href="../css/drawer.min.css" />
+
+    <!-- lightbox部分 css -->
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
+
+    <!-- スクロールアニメーション部分 css -->
+    <link href="../css/aos.css" rel="stylesheet" />
+
+    <!-- ページ全体 css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body class="drawer drawer--right">
+    <!--ここからheader-->
+    <section id="header">
+        <div class="wrapper">
+            <div class="left">
+                <img src="../assets/logo/02.png" alt="" />kir
+            </div>
+            <div class="right">
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                </button>
+                <!-- ドロアーの内容 -->
+                <nav class="drawer-nav" role="navigation">
+                    <ul class="drawer-menu">
+                        <li><a class="drawer-brand" href="#">コンテンツ</a></li>
+                        <li><a class="drawer-menu-item" href="#">リンク1</a></li>
+                        <li><a class="drawer-menu-item" href="#">リンク2</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+   <!--ページ内ナビゲーション -->
+
+   <nav class="navigation">
+    <ul>
+      <li><a href="../index.html#">Top</a></li>
+      <li><a href="https://xd.adobe.com/view/e20be012-d91c-4331-9969-5d73ccdd7726-b758/?fullscreen&hints=off"
+          target="_blank">Online store</a></li>
+      <li><a href="https://www.instagram.com/kir_official_account/" target="_blank">Instagram</a></li>
+    </ul>
+  </nav>
+
+    <!--サブメニュー -->
+    <script>
+        $(function () {
+            $(".submenu").hover(
+                function () {
+                    $(".sub").css("display", "block");
+                },
+                function () {
+                    $(".sub").css("display", "none");
+                }
+            );
+        });
+    </script>
+
+    <!--。個人制作 -->
+    <div class="personal">
+        <div class="contents">
+            <div class="personal_left">
+                <img src="../assets/PC/about/pc_saito.png" alt="">
+                <!-- <div class="yajirushi_wrap">
+                    <a href="../index.html#">
+                        <p>Top</p>
+                        <img src="../assets/PC/about/yajirushi.png" alt="" />
+                    </a>
+                </div> -->
+            </div>
+            <div class="personal_right">
+                <h1>Fashion Design</h1>
+                <h2><Ri:a>Taiki Saito</Ri:a></h2>
+                <p>「kir」PR動画用の衣装の制作<br>レディースは「崩したモード」をコンセプトにアシンメトリーやアンバランス、ダメージカットなどで角度によって見え方が変わるよう制作。メンズは「黒の陰影」をコンセプトにレディースとの対を考え、右肩と左肩がそれぞれレースで見えるよう制作。</p>
+            </div>
+        </div>
+        <div class="yajirushi_wrap">
+            <a href="../index.html#">
+                <p>Top</p>
+                <img src="../assets/PC/about/yajirushi.png" alt="" />
+            </a>
+        </div>
+    </div>
+
+    <footer>&copy;&nbsp;フッター表示 All Rights Reserved.</footer>
+
+    <!-- topへ戻るボタン -->
+    <div class="totop">
+        <a href="#"><img src="../images/totop.png" alt="topへ戻る" /></a>
+    </div>
+
+    <!-- javascript -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/iscroll.min.js"></script>
+    <script src="js/drawer.min.js"></script>
+    <script src="js/aos.js"></script>
+
+</html>

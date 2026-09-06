@@ -1,0 +1,1321 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  margin: 0;
+  .topKvPanel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 215px);
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #f5f3f0;
+    }
+    .topKv {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(100% - 400px);
+      height: 100%;
+      transition: 0.6s;
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .kv01 {
+          background: url("../image/top/top_kv_01_pc.png") center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url("../image/top/top_kv_02_pc.png") center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url("../image/top/top_kv_03_pc.png") center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    .topKvPanel {
+      min-height: calc(100vh - 160px);
+      .topKv {
+        width: calc(100% - 200px);
+      }
+    }
+  }
+  .topItemPanel {
+  }
+  .section {
+    &__concept {
+      padding: 215px 40px 0;
+      &__wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 150px 0 0;
+      }
+      h1 {
+        margin: 0 0 50px;
+        font-size: 46px;
+        line-height: 1.5;
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    &__features {
+      padding: 250px 0 0;
+      &__wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+      &__intro {
+        margin: 0 0 140px;
+        padding: 0 40px;
+        .titleBox {
+          h2 {
+            font-family: "Forum";
+            font-size: 60px;
+            line-height: 1;
+          }
+        }
+        .txtBox {
+          dl {
+            + dl {
+              margin: 60px 0 0;
+            }
+            dt {
+              margin: 0 0 30px;
+              font-size: 30px;
+            }
+            dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      &__photo {
+        .photo {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -120px;
+            width: calc(100% - 180px);
+            height: 100%;
+            z-index: -1;
+            background: #f5f3f0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        &__intro {
+          display: flex;
+          justify-content: space-between;
+          .titleBox {
+            width: 460px;
+            text-align: center;
+            h2 {
+              position: relative;
+              &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -380px;
+                width: 1px;
+                height: 290px;
+                margin: 0 auto;
+                background: #583f3f;
+              }
+            }
+          }
+          .txtBox {
+            width: 560px;
+            padding: 10px 0 0;
+          }
+        }
+        &__photo {
+          padding: 0 0 130px 300px;
+        }
+      }
+    }
+    &__openHouse {
+      position: relative;
+      padding: 250px 40px 0;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 940px;
+        height: 1px;
+        background: #707070;
+      }
+      &__wrap {
+        max-width: 1320px;
+        margin: 0 auto;
+      }
+      &__container {
+        .titleBox {
+          h2 {
+            font-family: "Forum";
+            font-size: 60px;
+            line-height: 1;
+          }
+        }
+        .txtBox {
+          .infoBox {
+            dl {
+              display: flex;
+              align-items: center;
+              font-size: 20px;
+              + dl {
+                margin: 10px 0 0;
+              }
+              dt {
+                width: 140px;
+              }
+              dd {
+                width: calc(100% - 140px);
+              }
+            }
+            .place {
+              dd {
+                display: flex;
+                align-items: flex-end;
+                p {
+                  padding: 0 15px 0 0;
+                }
+                a {
+                  display: block;
+                  width: 20px;
+                  padding: 0 0 2px;
+                }
+              }
+            }
+            + p {
+              margin: 60px 0 0;
+              font-family: $notoSans;
+              font-size: 10px;
+              line-height: 2;
+            }
+          }
+        }
+      }
+      &__entry {
+        position: relative;
+        padding: 120px 0 40px;
+        text-align: right;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 335px;
+          height: 1px;
+          background: #707070;
+        }
+        a {
+          display: inline-block;
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 1025px) {
+        &__container {
+          position: relative;
+          min-height: 800px;
+          // display: flex;
+          // justify-content: space-between;
+          .titleBox {
+            width: 460px;
+            margin: 0 0 150px;
+          }
+          .txtBox {
+            // width: 850px;
+            .photoList {
+              position: absolute;
+              top: 0;
+              right: 100px;
+              width: 500px;
+              // display: flex;
+              // margin: 0 0 80px;
+              // > * {
+              //   width: 50%;
+              // }
+            }
+            .photoSlider {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &__news {
+      padding: 250px 40px 0;
+      &__wrap {
+        max-width: 1320px;
+        margin: 0 auto;
+      }
+      &__container {
+        .titleBox {
+          h2 {
+            font-family: "Forum";
+            font-size: 60px;
+            line-height: 1;
+          }
+        }
+      }
+      &__entry {
+        position: relative;
+        padding: 120px 0 40px;
+        text-align: right;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 335px;
+          height: 1px;
+          background: #707070;
+        }
+        a {
+          display: inline-block;
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 1025px) {
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          .titleBox {
+            width: 460px;
+          }
+          .txtBox {
+            width: 850px;
+          }
+        }
+      }
+      &__list {
+        ul {
+          li {
+            position: relative;
+            padding: 0 0 60px;
+            + li {
+              padding: 60px 0;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 470px;
+                height: 1px;
+                background: #000000;
+              }
+            }
+          }
+          a {
+            display: block;
+            font-size: 20px;
+          }
+          .txtBox {
+            .info {
+              margin: 0 0 40px;
+              .time {
+                display: inline-block;
+                margin: 0 10px 0 0;
+                vertical-align: middle;
+              }
+              .cate {
+                display: inline-block;
+                min-width: 115px;
+                padding: 1px 25px;
+                font-family: $gothic;
+                font-size: 12px;
+                border-radius: 13px;
+                text-align: center;
+                vertical-align: middle;
+                border: 1px solid #000000;
+              }
+            }
+            .date {
+              margin: 0 0 5px;
+            }
+          }
+        }
+      }
+    }
+    &__faq {
+      padding: 250px 0 0;
+      &__wrap {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+      &__container {
+        margin: 0 0 250px;
+        .titleBox {
+          h2 {
+            font-family: "Forum";
+            font-size: 60px;
+            line-height: 1;
+          }
+        }
+      }
+      &__photo {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -60px;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: #f5f3f0;
+        }
+      }
+      @media (min-width: 1025px) {
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          .titleBox {
+            width: 460px;
+          }
+          .txtBox {
+            width: 850px;
+          }
+        }
+        &__photo {
+          padding: 0 300px 60px 0;
+        }
+      }
+      &__box {
+        dl {
+          font-size: 18px;
+          + dl {
+            margin: 70px 0 0;
+          }
+          dt {
+            position: relative;
+            padding: 0 20px 0 30px;
+            cursor: pointer;
+            background: url("../image/common/accord_arrow_down.png") right
+              center no-repeat;
+            background-size: 15px auto;
+            &.active {
+              background: url("../image/common/accord_arrow_up.png") right
+                center no-repeat;
+              background-size: 15px auto;
+            }
+            span {
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+          dd {
+            display: none;
+            opacity: 0.5;
+            padding: 10px 20px 0 30px;
+          }
+        }
+      }
+    }
+    &__contact {
+      padding: 250px 40px 0;
+      &__wrap {
+        max-width: 1320px;
+        margin: 0 auto;
+      }
+      &__topBox {
+        margin: 0 0 80px;
+        h2 {
+          margin: 0 0 80px;
+          font-family: "Forum";
+          font-size: 60px;
+          line-height: 1;
+        }
+        .txt {
+          margin: 0 0 70px;
+          font-size: 18px;
+          line-height: 2;
+        }
+        ul {
+          li {
+            a {
+              display: block;
+            }
+          }
+          .line {
+            max-width: 128px;
+            margin: 0 0 25px;
+          }
+          .tel {
+            max-width: 260px;
+          }
+        }
+      }
+    }
+    &__company {
+      padding: 250px 40px;
+      &__wrap {
+        max-width: 1320px;
+        margin: 0 auto;
+      }
+      h2 {
+        margin: 0 0 100px;
+        font-family: "Forum";
+        font-size: 60px;
+        line-height: 1;
+      }
+      &__box {
+        max-width: 1220px;
+        dl {
+          display: flex;
+          line-height: 2;
+          + dl {
+            border-top: 1px solid #707070;
+          }
+          dt {
+            width: 190px;
+            padding: 10px;
+            text-align: center;
+            border-right: 1px solid #707070;
+            span {
+              display: inline-block;
+              min-width: 80px;
+              text-align: left;
+            }
+          }
+          dd {
+            padding: 10px 70px;
+            a {
+              display: inline-block;
+            }
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	EVENT
+///////////////////////////////////////////////////////////*/
+.postPanel {
+  padding: 120px 40px 140px;
+  &__wrap {
+    max-width: 1820px;
+    margin: 0 auto;
+  }
+  .titleBox {
+    margin: 0 0 150px;
+    font-family: "Forum";
+    font-size: 60px;
+    line-height: 1;
+  }
+  .categoryList {
+    dl {
+      dt {
+        margin: 0 0 40px;
+        padding: 0 0 40px;
+        font-family: "Forum";
+        font-size: 26px;
+        border-bottom: 1px solid #000000;
+      }
+      ul {
+        li {
+          + li {
+            margin: 15px 0 0;
+          }
+          a {
+            display: inline-block;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .list__event {
+    ul {
+      li {
+        padding: 0 0 115px;
+        border-bottom: 1px solid #000000;
+        + li {
+          margin: 120px 0 0;
+        }
+      }
+      a {
+        display: block;
+        font-size: 20px;
+      }
+      .photoBox {
+        margin: 0 0 60px;
+        .photo {
+          background: url("../image/common/footer_logo.png") center no-repeat
+            #beb6a6;
+          background-size: 180px auto;
+        }
+      }
+      .txtBox {
+        .info {
+          margin: 0 0 40px;
+          .time {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            vertical-align: middle;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 115px;
+            padding: 1px 25px;
+            font-family: $gothic;
+            font-size: 12px;
+            border-radius: 13px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #000000;
+          }
+        }
+        .date {
+          margin: 0 0 5px;
+        }
+      }
+    }
+  }
+  .list__pagination {
+    margin: 140px 0 0;
+    .pagination {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      li {
+        + li {
+          margin: 0 0 0 40px;
+        }
+        a {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+          height: 30px;
+          font-size: 18px;
+          letter-spacing: 0.15em;
+          opacity: 0.5;
+        }
+        &.current {
+          a {
+            font-weight: bold;
+            color: #000000;
+            opacity: 1;
+          }
+        }
+        &.previous {
+          a {
+            opacity: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 9px;
+              height: 8px;
+              margin: auto;
+              background: url("../image/common/pagination_prev.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+        &.next {
+          a {
+            opacity: 1;
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 9px;
+              height: 8px;
+              margin: auto;
+              background: url("../image/common/pagination_next.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .detail__event {
+    .titleHeader {
+      padding: 0 0 10px;
+      &__info {
+        margin: 0 0 60px;
+      }
+      .time {
+        display: inline-block;
+        margin: 0 20px 0 0;
+        font-size: 20px;
+        vertical-align: middle;
+      }
+      .cateBox {
+        display: inline-block;
+        vertical-align: middle;
+        .cate {
+          display: inline-block;
+          min-width: 115px;
+          padding: 1px 25px;
+          font-family: $gothic;
+          font-size: 15px;
+          border-radius: 13px;
+          text-align: center;
+          border: 1px solid #64584d;
+        }
+      }
+      .title {
+        font-size: 35px;
+      }
+    }
+    .thumbnailBox {
+      margin: 65px 0 0;
+    }
+    .postContents {
+      margin: 120px 0 0;
+      line-height: 1.7;
+      img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  .btnBack {
+    position: relative;
+    margin: 120px 0 0;
+    padding: 0 0 45px;
+    text-align: right;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 335px;
+      height: 1px;
+      background: #707070;
+    }
+    a {
+      display: inline-block;
+      font-size: 20px;
+    }
+  }
+  .btnContact {
+    margin: 120px 0 0;
+    a {
+      display: block;
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 10px;
+      font-family: $notoSans;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      letter-spacing: 0.2em;
+      border: none;
+      background: #beb6a6;
+    }
+  }
+}
+#eventList {
+  .postPanel {
+    @media (min-width: 1025px) {
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+      &__left {
+        width: 255px;
+      }
+      &__right {
+        width: 585px;
+      }
+      .list__event {
+        ul {
+          .photoBox {
+            .photo {
+              overflow: hidden;
+              position: relative;
+              height: 370px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#eventDetail {
+  .postPanel {
+    &__wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    &__left {
+      margin: 0 0 150px;
+    }
+    &__right {
+      padding: 150px 0 0;
+      border-top: 1px solid #000000;
+    }
+    .categoryList {
+      dl {
+        dt {
+          max-width: 255px;
+        }
+      }
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  form .mwform-radio-field {
+    display: block;
+    font-size: 18px;
+    + .mwform-radio-field {
+      margin: 15px 0 0;
+    }
+    label {
+      position: relative;
+      display: inline-block;
+    }
+    input[type="radio"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .mwform-radio-field-text {
+      display: inline-block;
+      padding: 0 0 0 34px;
+      background: url("../image/common/form_radio_off.png") left center
+        no-repeat;
+      background-size: 24px auto;
+    }
+    input[type="radio"]:checked + .mwform-radio-field-text {
+      background: url("../image/common/form_radio_on.png") left center no-repeat;
+      background-size: 24px auto;
+    }
+    // &:first-child {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+    // &:nth-child(n + 2) {
+    //   margin: 50px 60px 0 0;
+    // }
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    height: 60px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+      "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 18px;
+    border: none;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  textarea {
+    width: 100%;
+    // height: 280px;
+    height: 60px;
+    padding: 20px 0;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+      "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 18px;
+    border: none;
+    background: #ffffff;
+    resize: none;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: 0;
+    border: none;
+  }
+  .submitButton {
+    margin: 50px 0 0;
+  }
+  input[type="submit"] {
+    display: block;
+    max-width: 470px;
+    width: 100%;
+    height: 78px;
+    margin: 0 auto;
+    font-family: $notoSans;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    border: none;
+    background: #b4a693;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &[disabled] {
+      cursor: default;
+      opacity: 0.1;
+    }
+  }
+  .radioArea {
+    padding: 0 0 50px;
+  }
+  .selectBox {
+    display: inline-block;
+    width: 225px;
+    select {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      color: #64584d;
+      line-height: 1.5em;
+      text-align: center;
+      border-radius: 0;
+      border: 1px solid #212121;
+      // background: url("../image/common/form_select_arrow.png") right 20px center
+      //   no-repeat #ffffff;
+      // background-size: 12px auto;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+  .checkTxt {
+    margin: 0 0 30px;
+    font-family: $notoSans;
+    text-align: center;
+  }
+  .checkItem {
+    font-family: $notoSans;
+    text-align: center;
+    > label {
+      position: relative;
+      display: block;
+    }
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+    }
+    span {
+      display: block;
+      padding-left: 25px;
+      position: relative;
+      line-height: 1;
+    }
+    span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      bottom: 0;
+      width: 15px;
+      height: 15px;
+      margin: auto 0;
+      border: 1px solid #64584d;
+      background: #ffffff;
+    }
+    input:checked + span::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 4px;
+      width: 10px;
+      height: 16px;
+      transform: rotate(40deg);
+      border-bottom: 2px solid #64584d;
+      border-right: 2px solid #64584d;
+    }
+    &.agreeCheck {
+      > label {
+        display: inline-block;
+      }
+    }
+  }
+  form > dl {
+    + dl {
+      margin: 10px 0 0;
+    }
+    dt {
+      font-size: 18px;
+      em {
+        display: inline-block;
+        margin: 0 0 0 5px;
+      }
+    }
+    dd {
+      padding: 0 0 10px;
+      border-bottom: 1px solid #212121;
+    }
+  }
+  .dateFormContainer {
+    padding: 100px 0;
+    .dateFormPanel {
+      &:nth-child(1) {
+        .selectList {
+          dl + dl {
+            width: calc(100% - 365px);
+            dd {
+              width: calc(100% - 110px);
+            }
+          }
+        }
+      }
+      + .dateFormPanel {
+        margin: 90px 0 0;
+        padding: 50px 0 0;
+        border-top: 1px solid #212121;
+      }
+      .ttl {
+        margin: 0 0 50px;
+        font-size: 18px;
+      }
+      .selectList {
+        display: flex;
+        align-items: center;
+        dl {
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          + dl {
+            margin: 0 0 0 30px;
+          }
+          dt {
+            min-width: 50px;
+            margin: 0 30px 0 0;
+          }
+          + dl {
+            input {
+              padding: 0;
+              text-align: center;
+              border: 1px solid #212121;
+            }
+          }
+        }
+        .inputBox {
+          width: 225px;
+          &.inputTime {
+            width: 100%;
+            max-width: 580px;
+            position: relative;
+            input {
+              padding: 0 5px;
+              text-align: left;
+              background: none;
+            }
+            .placeholder {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 60px;
+              padding: 0 5px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              line-height: 1.3;
+              z-index: -1;
+              opacity: 0.35;
+              &.none {
+                display: none;
+              }
+            }
+          }
+        }
+        .selectDate {
+          input {
+            padding: 0;
+            text-align: center;
+            border: 1px solid #212121;
+          }
+        }
+        + p {
+          margin: 35px 0 0;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .privacy {
+    margin: 0 0 90px;
+    border-top: 1px solid #212121;
+    .agreeBox {
+      overflow: scroll;
+      height: 260px;
+      padding: 40px 0;
+      font-family: $gothic;
+      font-size: 14px;
+      background: #ffffff;
+    }
+    .box {
+      + .box {
+        margin: 10px 0 0;
+      }
+    }
+    dl {
+      dt {
+        margin: 0 0 3px;
+        font-weight: bold;
+      }
+      dd {
+        line-height: 1.2;
+      }
+    }
+    a {
+      display: inline-block;
+    }
+  }
+  @media (min-width: 1025px) {
+    form > dl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &.radioForm {
+        align-items: flex-start;
+      }
+      &.msg {
+        align-items: flex-start;
+        dt {
+          padding: 15px 0 0;
+        }
+      }
+      dt {
+        width: 260px;
+      }
+      dd {
+        width: calc(100% - 260px);
+      }
+    }
+  }
+}
+#contactConfirm,
+#contactComplete {
+  .contactTitlePanel {
+    margin: 140px 0 0;
+    text-align: center;
+    .contactTitle {
+      font-family: "Forum";
+      font-size: 60px;
+    }
+    h2 {
+      max-width: 480px;
+      margin: 120px auto 0;
+      padding: 40px 10px;
+      font-size: 24px;
+      border: 1px solid #000000;
+    }
+  }
+  .confirmPanel {
+    padding: 140px 40px 90px;
+    &__wrap {
+      max-width: 970px;
+      margin: 0 auto;
+    }
+    .formConfirm {
+      .selectList + p,
+      .privacy,
+      .checkTxt,
+      .agreeCheck {
+        display: none;
+      }
+      dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        > * {
+          padding: 30px 0;
+        }
+        dt {
+          width: 300px;
+        }
+        dd {
+          width: 655px;
+          border-bottom: 1px solid #000000;
+        }
+      }
+      .dateFormPanel {
+        margin: 40px 0 0;
+        .ttl {
+          font-family: $notoSans;
+          font-size: 20px;
+        }
+      }
+      .submitButton {
+        position: relative;
+        padding: 230px 0 0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 100px;
+          left: 0;
+          right: 0;
+          width: 450px;
+          height: 45px;
+          margin: 0 auto;
+          background: url("../image/common/form_flow_confirm.png") no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      input[type="submit"] {
+        display: block;
+        max-width: 450px;
+        width: 100%;
+        height: 75px;
+        margin: 0 auto;
+        font-family: $notoSans;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        letter-spacing: 0.2em;
+        cursor: pointer;
+        border: none;
+        background: #b4a693;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &[disabled] {
+          cursor: default;
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+  .completePanel {
+    padding: 100px 40px;
+    &__wrap {
+      max-width: 970px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    dl {
+      margin: 0 0 140px;
+      dt {
+        margin: 0 0 30px;
+        font-size: 38px;
+      }
+      dd {
+        font-size: 16px;
+        line-height: 2;
+      }
+    }
+    ul {
+      margin: 0 0 50px;
+      li {
+        display: inline-block;
+        width: 44px;
+        + li {
+          margin: 0 0 0 30px;
+        }
+        a {
+          display: block;
+        }
+      }
+    }
+    .flow {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+  .btnBack {
+    margin: 120px auto 0;
+    text-align: center;
+    a {
+      display: inline-block;
+      font-size: 22px;
+    }
+  }
+  button.btnBack {
+    display: block;
+    width: 165px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+      "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}

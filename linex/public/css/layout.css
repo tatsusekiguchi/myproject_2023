@@ -1,0 +1,1252 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (min-width: 1025px) {
+  #topMain .mvPanel {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 80px);
+  }
+  #topMain .mvPanel .mvMovie {
+    overflow: hidden;
+    position: absolute;
+    width: 125vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  #topMain .mvPanel .mvMovie--sp {
+    display: none;
+  }
+  #topMain .mvPanel .mvMovie video {
+    width: 100%;
+  }
+  #topMain .mvPanel h1 {
+    font-size: 0;
+  }
+}
+#topMain .mvScroll {
+  position: relative;
+  top: -40px;
+  width: 60px;
+  height: 85px;
+  margin: 0 auto;
+  z-index: 2;
+}
+#topMain .topTxtPanel {
+  padding: 80px 20px 120px;
+  text-align: center;
+}
+#topMain .sec01 {
+  margin: 0 0 240px;
+}
+#topMain .sec01 .secTitle {
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+#topMain .sec01 .secTitle h2 {
+  max-width: 420px;
+}
+#topMain .sec01 .secTitle + p {
+  margin: 0 0 40px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+#topMain .sec01 .secPanel {
+  position: relative;
+}
+#topMain .sec01 .secPanel .txtBox {
+  position: relative;
+  padding: 60px 0;
+  z-index: 1;
+}
+#topMain .sec01 .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  #topMain .sec01 .secPanel .txtBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 500px;
+  }
+  #topMain .sec01 .secPanel .txtBox .txt {
+    position: relative;
+    width: 50%;
+  }
+  #topMain .sec01 .secPanel .txtBox .txt:after {
+    content: "";
+    position: absolute;
+    right: 80px;
+    bottom: -300px;
+    width: 240px;
+    height: 360px;
+    background: url("../image/top/top_sec_slash_bg.png") no-repeat;
+    background-size: 100% auto;
+  }
+  #topMain .sec01 .secPanel .photo {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 800px;
+  }
+}
+#topMain .sec02 {
+  position: relative;
+  min-height: 570px;
+  margin: 0 0 200px;
+}
+#topMain .sec02:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -150px;
+  width: 2px;
+  height: 60px;
+  margin: 0 auto;
+  background: #000000;
+}
+#topMain .sec02 .secTitle {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 0 0 30px;
+}
+#topMain .sec02 .secTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background: #000000;
+}
+#topMain .sec02 .secTitle h2 {
+  max-width: 540px;
+}
+#topMain .sec02 .txtBox {
+  position: relative;
+}
+#topMain .sec02 .txtBox dl {
+  margin: 0 0 60px;
+}
+#topMain .sec02 .txtBox dl dt {
+  margin: 0 0 20px;
+  font-size: 29px;
+}
+#topMain .sec02 .txtBox .btnLink {
+  max-width: 300px;
+}
+#topMain .sec02 .txtBox .btnLink a {
+  display: block;
+}
+#topMain .sec02 .txtBox .comingSoon {
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  #topMain .sec02 .photo {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 1000px;
+    z-index: -1;
+  }
+}
+#topMain .linkPanel01 {
+  padding: 0 20px;
+  background: url("../image/top/top_link_slash_bg_01.png") left top no-repeat, url("../image/top/top_link_slash_bg_02.png") right 100px bottom no-repeat;
+  background-size: auto 100%, auto 340px;
+}
+#topMain .linkPanel01 .inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+#topMain .linkPanel01 ul li {
+  position: relative;
+}
+#topMain .linkPanel01 ul li + li {
+  margin: 120px 0 0;
+  padding: 0 0 0 100px;
+}
+#topMain .linkPanel01 ul li .img {
+  max-width: 880px;
+}
+#topMain .linkPanel01 ul .btnLink {
+  position: absolute;
+  bottom: 0;
+  width: 260px;
+}
+#topMain .linkPanel01 ul .btnLink a {
+  display: block;
+}
+#topMain .linkPanel01 ul .btnLink01 {
+  right: 120px;
+}
+#topMain .linkPanel01 ul .btnLink02 {
+  right: 30px;
+}
+#topMain .linkPanel01 ul .comingSoon {
+  pointer-events: none;
+}
+#topMain .linkPanel02 {
+  padding: 140px 20px;
+  background: url("../image/top/top_link_grad_bg.png") center no-repeat;
+}
+#topMain .linkPanel02 ul {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#topMain .linkPanel02 ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 210px;
+  background: #ffffff;
+}
+#topMain .linkPanel02 ul li p {
+  position: relative;
+  width: 100%;
+  padding: 0 0 20px;
+  text-align: center;
+}
+#topMain .linkPanel02 ul li p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  margin: 0 auto;
+  background: #000000;
+}
+#topMain .linkPanel02 ul .btnLink {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 190px;
+  margin: 0 auto;
+}
+#topMain .linkPanel02 ul .btnLink a {
+  display: block;
+}
+#topMain .linkPanel02 ul .comingSoon {
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  #topMain .linkPanel02 ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #topMain .linkPanel02 ul li {
+    width: calc(33.3333333333% - 15px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+#strengthMain .pageKvPanel {
+  background: url("../image/strength/kv_bg.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .pageKvPanel .pageKvTitle img {
+  max-width: 400px;
+}
+#strengthMain .topPanel {
+  padding: 150px 20px;
+}
+#strengthMain .topPanel .message {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+#strengthMain .secPanel {
+  padding: 120px 20px 0;
+  color: #ffffff;
+}
+#strengthMain .secPanel .secTtlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+#strengthMain .secPanel .secTtlBox p {
+  font-size: 70px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  background: url("../image/common/page_kv_title_line.png") center bottom no-repeat;
+  background-size: 120px auto;
+}
+#strengthMain .secPanel .secTtlBox h2 {
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+#strengthMain .secPanel .secBox {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#strengthMain .secPanel .secBox .txtBox {
+  width: 450px;
+  font-size: 16px;
+}
+#strengthMain .secPanel .secBox .numBox {
+  width: 300px;
+}
+@media (min-width: 1025px) {
+  #strengthMain .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    min-height: 290px;
+  }
+  #strengthMain .secPanel:nth-child(odd) .secBox {
+    flex-direction: row-reverse;
+  }
+}
+#strengthMain .secPanel01 {
+  background: url("../image/strength/sec_bg_01_pc.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel02 {
+  background: url("../image/strength/sec_bg_02_pc.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel03 {
+  background: url("../image/strength/sec_bg_03_pc.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel04 {
+  background: url("../image/strength/sec_bg_04_pc.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel05 {
+  background: url("../image/strength/sec_bg_05_pc.png") center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+#businessMain .pageKvPanel {
+  background: url("../image/business/kv_bg.png") center no-repeat;
+  background-size: cover;
+}
+#businessMain .pageKvPanel .pageKvTitle img {
+  max-width: 280px;
+}
+#businessMain .introContainer {
+  padding: 160px 0 0;
+}
+#businessMain .introContainer .introPanel {
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px 100px;
+}
+#businessMain .introContainer .introPanel .title01 {
+  position: relative;
+  max-width: 600px;
+  margin: 0 0 30px;
+  z-index: 1;
+}
+#businessMain .introContainer .introPanel .title02 {
+  position: relative;
+  margin: 0 0 80px;
+  font-size: 36px;
+  z-index: 1;
+}
+#businessMain .introContainer .introPanel .txt {
+  position: relative;
+  font-size: 16px;
+  z-index: 1;
+}
+#businessMain .introContainer .introPanel .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  #businessMain .introContainer .introPanel {
+    min-height: 700px;
+  }
+  #businessMain .introContainer .introPanel .imgBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 700px;
+  }
+}
+#businessMain .listContainer {
+  padding: 160px 20px;
+}
+#businessMain .listContainer .secTtl {
+  margin: 0 0 60px;
+  font-size: 36px;
+  text-align: center;
+}
+#businessMain .listContainer .listBox {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#businessMain .listContainer .listBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px 0 0 -20px;
+}
+#businessMain .listContainer .listBox ul li {
+  width: calc(25% - 20px);
+  margin: 20px 0 0 20px;
+}
+#businessMain .listContainer .listBox ul .photo {
+  position: relative;
+  height: 180px;
+}
+#businessMain .listContainer .listBox ul .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#businessMain .listContainer .listBox ul .comment {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////
+	message
+///////////////////////////////////////////////////////////*/
+#messageMain .pageKvPanel {
+  background: url("../image/message/kv_bg.png") center no-repeat;
+  background-size: cover;
+}
+#messageMain .pageKvPanel .pageKvTitle img {
+  max-width: 280px;
+}
+#messageMain .messageSection {
+  padding: 0 0 200px;
+}
+#messageMain .messageSection .mvPanel {
+  position: relative;
+  padding: 200px 0 120px;
+}
+#messageMain .messageSection .mvPanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background: #ecf2f8;
+}
+#messageMain .messageSection .mvPanel .mvBox {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#messageMain .messageSection .mvPanel .mvBox .nameBox {
+  position: absolute;
+  right: 50px;
+  bottom: -100px;
+  width: 230px;
+  padding: 20px 30px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background: #000000;
+}
+#messageMain .messageSection .mvPanel .mvBox .nameBox dl dt {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #ffffff;
+}
+#messageMain .messageSection .mvPanel .mvBox .nameBox dl dt + dd {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+#messageMain .messageSection .messagePanel {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 20px 200px;
+  background: url("../image/message/panel_bg.png") right bottom no-repeat;
+  background-size: auto 400px;
+}
+#messageMain .messageSection .messagePanel .messageBox .title02 {
+  max-width: 620px;
+  margin: 0 0 30px;
+}
+#messageMain .messageSection .messagePanel .messageBox .txt {
+  font-size: 16px;
+}
+#messageMain .messageSection .messagePanel .messageBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  #messageMain .messageSection .messagePanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  #messageMain .messageSection .messagePanel .title01 {
+    position: relative;
+    width: 150px;
+    font-size: 50px;
+    writing-mode: vertical-rl;
+  }
+  #messageMain .messageSection .messagePanel .title01::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: 40px;
+    width: 1px;
+    height: 130px;
+    background: #000000;
+  }
+  #messageMain .messageSection .messagePanel .messageBox {
+    width: calc(100% - 220px);
+    padding: 150px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruitment
+///////////////////////////////////////////////////////////*/
+#recruitmentMain .pageKvPanel {
+  background: url("../image/recruitment/kv_bg.png") center no-repeat;
+  background-size: cover;
+}
+#recruitmentMain .pageKvPanel .pageKvTitle img {
+  max-width: 380px;
+}
+#recruitmentMain .topPanel {
+  padding: 150px 20px;
+}
+#recruitmentMain .topPanel .message {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#recruitmentMain .sec01 .secPanel {
+  position: relative;
+}
+#recruitmentMain .sec01 .secPanel .txtBox {
+  position: relative;
+  padding: 20px 0;
+  z-index: 1;
+}
+#recruitmentMain .sec01 .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  #recruitmentMain .sec01 .secPanel .txtBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 700px;
+  }
+  #recruitmentMain .sec01 .secPanel .txtBox .txt {
+    position: relative;
+    width: 50%;
+  }
+  #recruitmentMain .sec01 .secPanel .txtBox .txt:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 240px;
+    height: 360px;
+    z-index: -1;
+    background: url("../image/recruitment/cnt_slash_bg.png") no-repeat;
+    background-size: 100% auto;
+  }
+  #recruitmentMain .sec01 .secPanel .photo {
+    position: absolute;
+    top: 0;
+    left: -220px;
+    width: 1000px;
+  }
+}
+#recruitmentMain .sec02 .secPanel {
+  position: relative;
+}
+#recruitmentMain .sec02 .secPanel .txtBox {
+  position: relative;
+  z-index: 1;
+}
+#recruitmentMain .sec02 .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  #recruitmentMain .sec02 .secPanel .txtBox {
+    min-height: 600px;
+  }
+  #recruitmentMain .sec02 .secPanel .txtBox .txt {
+    position: relative;
+    width: 50%;
+  }
+  #recruitmentMain .sec02 .secPanel .photo {
+    position: absolute;
+    right: -220px;
+    bottom: 0;
+    width: 1200px;
+  }
+}
+#recruitmentMain .bnrPanel {
+  padding: 200px 20px 0;
+}
+#recruitmentMain .bnrPanel a {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#recruitmentMain .gallerySection {
+  padding: 200px 20px;
+}
+#recruitmentMain .gallerySection .galleryContainer {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  #recruitmentMain .gallerySection .galleryContainer {
+    min-height: 1180px;
+  }
+  #recruitmentMain .gallerySection .galleryTitle {
+    position: absolute;
+    top: 600px;
+    left: 30px;
+    width: 600px;
+  }
+  #recruitmentMain .gallerySection .galleryTitle h2 {
+    width: 480px;
+  }
+  #recruitmentMain .gallerySection .imgBlock a {
+    overflow: hidden;
+    position: relative;
+    display: block;
+  }
+  #recruitmentMain .gallerySection .imgBlock img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #recruitmentMain .gallerySection .imgBlock01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock01 a {
+    width: 350px;
+    height: 290px;
+  }
+  #recruitmentMain .gallerySection .imgBlock02 {
+    position: absolute;
+    top: 0;
+    left: 360px;
+  }
+  #recruitmentMain .gallerySection .imgBlock02 ul li + li {
+    margin: 10px 0 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock02 a {
+    width: 110px;
+    height: 90px;
+  }
+  #recruitmentMain .gallerySection .imgBlock03 {
+    position: absolute;
+    top: 0;
+    right: 245px;
+  }
+  #recruitmentMain .gallerySection .imgBlock03 a {
+    width: 235px;
+    height: 190px;
+  }
+  #recruitmentMain .gallerySection .imgBlock04 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock04 a {
+    width: 235px;
+    height: 190px;
+  }
+  #recruitmentMain .gallerySection .imgBlock05 {
+    position: absolute;
+    top: 300px;
+    left: 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock05 a {
+    width: 230px;
+    height: 190px;
+  }
+  #recruitmentMain .gallerySection .imgBlock06 {
+    position: absolute;
+    top: 300px;
+    left: 240px;
+  }
+  #recruitmentMain .gallerySection .imgBlock06 a {
+    width: 230px;
+    height: 190px;
+  }
+  #recruitmentMain .gallerySection .imgBlock07 {
+    position: absolute;
+    top: 200px;
+    left: 480px;
+  }
+  #recruitmentMain .gallerySection .imgBlock07 ul li + li {
+    margin: 10px 0 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock07 a {
+    width: 110px;
+    height: 90px;
+  }
+  #recruitmentMain .gallerySection .imgBlock08 {
+    position: absolute;
+    top: 200px;
+    right: 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock08 a {
+    width: 360px;
+    height: 290px;
+  }
+  #recruitmentMain .gallerySection .imgBlock09 {
+    position: absolute;
+    top: 700px;
+    right: 370px;
+  }
+  #recruitmentMain .gallerySection .imgBlock09 a {
+    width: 110px;
+    height: 90px;
+  }
+  #recruitmentMain .gallerySection .imgBlock10 {
+    position: absolute;
+    top: 500px;
+    right: 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock10 a {
+    width: 360px;
+    height: 290px;
+  }
+  #recruitmentMain .gallerySection .imgBlock11 {
+    position: absolute;
+    top: 800px;
+    left: 0;
+    height: 390px;
+  }
+  #recruitmentMain .gallerySection .imgBlock11 > a {
+    width: 350px;
+    height: 290px;
+  }
+  #recruitmentMain .gallerySection .imgBlock11 ul {
+    display: flex;
+    margin: 10px 0 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock11 ul li + li {
+    margin: 0 0 0 10px;
+  }
+  #recruitmentMain .gallerySection .imgBlock11 ul a {
+    width: 110px;
+    height: 90px;
+  }
+  #recruitmentMain .gallerySection .imgBlock12 {
+    position: absolute;
+    top: 800px;
+    left: 360px;
+    height: 390px;
+  }
+  #recruitmentMain .gallerySection .imgBlock12 ul li + li {
+    margin: 10px 0 0;
+  }
+  #recruitmentMain .gallerySection .imgBlock12 a {
+    width: 230px;
+    height: 190px;
+  }
+  #recruitmentMain .gallerySection .imgBlock13 {
+    position: absolute;
+    top: 800px;
+    right: 0;
+    height: 390px;
+  }
+  #recruitmentMain .gallerySection .imgBlock13 ul {
+    display: flex;
+    margin: 0 0 10px;
+  }
+  #recruitmentMain .gallerySection .imgBlock13 ul li + li {
+    margin: 0 0 0 10px;
+  }
+  #recruitmentMain .gallerySection .imgBlock13 ul a {
+    width: 113px;
+    height: 90px;
+  }
+  #recruitmentMain .gallerySection .imgBlock13 > a {
+    width: 360px;
+    height: 290px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#companyMain .pageKvPanel {
+  background: url("../image/company/kv_bg.png") center no-repeat;
+  background-size: cover;
+}
+#companyMain .pageKvPanel .pageKvTitle img {
+  max-width: 500px;
+}
+#companyMain .companySection {
+  position: relative;
+  padding: 60px 20px 90px;
+  background: #f4f4f4;
+}
+#companyMain .companySection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 120px);
+  height: 90px;
+  background: url("../image/company/sec_bg_band.png") no-repeat;
+  background-size: 100% auto;
+}
+#companyMain .companySection .section {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+#companyMain .companySection .section + .section {
+  margin: 60px auto 0;
+}
+#companyMain .companySection .section .inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+#companyMain .companySection .section h2 {
+  margin: 0 0 30px;
+  padding: 0 0 5px;
+  font-size: 24px;
+  color: #004d9a;
+  border-bottom: 1px solid #004d9a;
+}
+#companyMain .companySection .section .infoBox dl {
+  display: flex;
+  font-size: 18px;
+  line-height: 2;
+}
+#companyMain .companySection .section .infoBox dl + dl {
+  margin: 15px 0 0;
+}
+#companyMain .companySection .section .infoBox dl dt {
+  width: 130px;
+  color: #004d9a;
+}
+#companyMain .companySection .section .infoBox dl dd {
+  width: calc(100% - 130px);
+}
+#companyMain .companySection .section .infoBox dl a {
+  display: inline-block;
+}
+#companyMain .companySection .section .txt {
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain .pageKvPanel {
+  background: url("../image/contact/kv_bg.png") center no-repeat;
+  background-size: cover;
+}
+#contactMain .pageKvPanel .pageKvTitle img {
+  max-width: 270px;
+}
+#contactMain .formContainer {
+  padding: 120px 0;
+}
+#contactMain .formContainer .topTxt {
+  margin: 0 0 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  max-width: 840px;
+  margin: 0 auto;
+  font-size: 16px;
+  /*テキストエリア*/
+}
+.formBox form > dl {
+  letter-spacing: 0.1em;
+}
+.formBox form > dl + dl {
+  margin: 25px 0 0;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formBox textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  background: #ffffff;
+  resize: none;
+}
+.formBox input[type=text]:focus,
+.formBox input[type=email]:focus,
+.formBox input[type=tel]:focus,
+.formBox textarea:focus {
+  outline: 0;
+  border: 1px solid #cccccc;
+}
+.formBox .birthBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid #000000;
+}
+.formBox .birthBox ul {
+  display: flex;
+  align-items: center;
+}
+.formBox .birthBox ul li {
+  position: relative;
+  width: 100px;
+}
+.formBox .birthBox ul li + li {
+  padding: 0 0 0 20px;
+}
+.formBox .birthBox ul li + li:before {
+  content: "／";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: #7d7c2c;
+}
+.formBox .birthBox input {
+  height: 30px;
+  padding: 0 10px;
+  text-align: center;
+  border: none;
+}
+.formBox .checkItem {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.formBox .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formBox .checkItem input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.formBox .checkItem span {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1;
+}
+.formBox .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  margin: auto 0;
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+.formBox .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 2px;
+  width: 10px;
+  height: 16px;
+  transform: rotate(40deg);
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+.formBox .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formBox .nameBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+.formBox .nameBox > dl {
+  width: 49%;
+}
+.formBox .nameBox > dl dt {
+  margin: 0 0 5px;
+}
+.formBox .nameBox > dl dt em {
+  color: red;
+}
+.formBox form > dl + dl {
+  margin: 15px 0 0;
+}
+.formBox form > dl dt {
+  margin: 0 0 5px;
+}
+.formBox form > dl dt em {
+  color: red;
+}
+@media (min-width: 1025px) {
+  .formBox .msg {
+    align-items: flex-start;
+  }
+  .formBox .msg dt {
+    padding: 10px 0 0;
+  }
+}
+.formBox .privacy {
+  max-width: 388px;
+  margin: 50px auto 20px;
+  border: 1px solid #000000;
+}
+.formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 80px;
+  padding: 10px;
+  font-size: 12px;
+  background: #ffffff;
+}
+.formBox .privacy .box + .box {
+  margin: 10px 0 0;
+}
+.formBox .privacy dl dt {
+  margin: 0 0 3px;
+}
+.formBox .privacy a {
+  display: inline-block;
+  color: #000000;
+}
+.formBox .submitButton {
+  position: relative;
+  text-align: center;
+}
+.formBox input[type=submit] {
+  display: block;
+  width: 260px;
+  height: 50px;
+  margin: 50px auto 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: #0a5aaa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formBox input[type=submit][disabled] {
+  cursor: default;
+  opacity: 0.3;
+}
+
+#contactConfirm #section__contact,
+#contactComplete #section__contact {
+  padding: 200px 0 250px;
+}
+#contactConfirm #section__contact .contactContainer,
+#contactComplete #section__contact .contactContainer {
+  padding: 0 0 50px;
+}
+#contactConfirm #section__contact .secTitleBox,
+#contactComplete #section__contact .secTitleBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  #contactConfirm #section__contact .secTitleBox h2,
+#contactComplete #section__contact .secTitleBox h2 {
+    font-size: 40px;
+  }
+}
+#contactConfirm #section__contact .topTxt,
+#contactComplete #section__contact .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+#contactConfirm .formConfirm,
+#contactComplete .formConfirm {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+#contactConfirm .formConfirm .selectList + p,
+#contactConfirm .formConfirm .privacy,
+#contactConfirm .formConfirm .checkTxt,
+#contactConfirm .formConfirm .agreeCheck,
+#contactComplete .formConfirm .selectList + p,
+#contactComplete .formConfirm .privacy,
+#contactComplete .formConfirm .checkTxt,
+#contactComplete .formConfirm .agreeCheck {
+  display: none;
+}
+#contactConfirm .formConfirm .nameBox,
+#contactComplete .formConfirm .nameBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #000000;
+}
+#contactConfirm .formConfirm .nameBox > dl,
+#contactComplete .formConfirm .nameBox > dl {
+  width: 49%;
+  font-size: 16px;
+}
+#contactConfirm .formConfirm .nameBox > dl dt,
+#contactComplete .formConfirm .nameBox > dl dt {
+  margin: 0 0 5px;
+}
+#contactConfirm .formConfirm .nameBox > dl dt em,
+#contactComplete .formConfirm .nameBox > dl dt em {
+  color: red;
+}
+#contactConfirm .formConfirm form > dl,
+#contactComplete .formConfirm form > dl {
+  padding: 10px 0;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  border-bottom: 1px dashed #000000;
+}
+#contactConfirm .formConfirm form > dl + dl,
+#contactComplete .formConfirm form > dl + dl {
+  margin: 15px 0 0;
+}
+#contactConfirm .formConfirm form > dl dt,
+#contactComplete .formConfirm form > dl dt {
+  margin: 0 0 5px;
+}
+#contactConfirm .formConfirm form > dl dt em,
+#contactComplete .formConfirm form > dl dt em {
+  color: red;
+}
+#contactConfirm .formConfirm .dateFormPanel,
+#contactComplete .formConfirm .dateFormPanel {
+  margin: 40px 0 0;
+}
+#contactConfirm .formConfirm .dateFormPanel .ttl,
+#contactComplete .formConfirm .dateFormPanel .ttl {
+  font-size: 20px;
+}
+#contactConfirm .formConfirm .submitButton,
+#contactComplete .formConfirm .submitButton {
+  position: relative;
+  text-align: center;
+}
+#contactConfirm .formConfirm input[type=submit],
+#contactComplete .formConfirm input[type=submit] {
+  display: block;
+  width: 260px;
+  height: 50px;
+  margin: 50px auto 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: #0a5aaa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#contactConfirm .formConfirm input[type=submit][disabled],
+#contactComplete .formConfirm input[type=submit][disabled] {
+  cursor: default;
+  opacity: 0.3;
+}
+#contactConfirm .formConfirm button.btnBack,
+#contactComplete .formConfirm button.btnBack {
+  display: block;
+  width: 260px;
+  height: 50px;
+  margin: 30px auto 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#contactConfirm .formConfirm .birthBox ul li,
+#contactComplete .formConfirm .birthBox ul li {
+  display: inline-block;
+}
+#contactConfirm .formConfirm .birthBox ul li:nth-child(1)::after,
+#contactComplete .formConfirm .birthBox ul li:nth-child(1)::after {
+  content: "年";
+}
+#contactConfirm .formConfirm .birthBox ul li:nth-child(2)::after,
+#contactComplete .formConfirm .birthBox ul li:nth-child(2)::after {
+  content: "月";
+}
+#contactConfirm .formConfirm .birthBox ul li:nth-child(3)::after,
+#contactComplete .formConfirm .birthBox ul li:nth-child(3)::after {
+  content: "日";
+}
+#contactConfirm .btnToTop,
+#contactComplete .btnToTop {
+  margin: 40px auto 0;
+  text-align: center;
+}
+#contactConfirm .btnToTop a,
+#contactComplete .btnToTop a {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: underline;
+}

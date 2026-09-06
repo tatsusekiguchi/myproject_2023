@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- css-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="stylesheet" href="../css/validationEngine.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      type="text/css"
+      href="../css/common_sp.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      type="text/css"
+      href="../css/layout_sp.css"
+    />
+    <link rel="stylesheet" href="../css/attach.css" />
+    <!-- js-->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="../js/infiniteslide.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/scrollAnimation.js"></script>
+    <script src="../js/validate.js"></script>
+    <script src="../js/validateJa.js"></script>
+    <script src="../js/jpostal.js"></script>
+    <script src="../js/autokana.js"></script>
+    <script src="../js/formContact.js"></script>
+    <!-- title-->
+    <title></title>
+  </head>
+
+  <body class="page" id="search">
+    <!-- ▽header▽-->
+    <div class="header">
+      <div class="headerContainer">
+        <div class="headWrap">
+          <div class="logo">
+            <a href="/">
+              <div>
+                <img
+                  src="https://hauskahaus.com/system_panel/uploads/images/header_logo.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <h1>HAUSKA HAUS</h1>
+          </div>
+          <div class="navBox">
+            <div class="navList">
+              <div class="ul">
+                <div class="li spBreak">
+                  <a href="/">
+                    <div>
+                      <p class="em">トップ</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="about">
+                    <div>
+                      <p class="em">私たちについて</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="service">
+                    <div>
+                      <p class="em">事業内容</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="company">
+                    <div>
+                      <p class="em">代表紹介</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="bloglist">
+                    <div>
+                      <p class="em">ブログ</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="search">
+                    <div>
+                      <p class="em">物件検索</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li spBreak">
+                  <a href="contact">
+                    <div>
+                      <p class="em">無料相談お問い合わせ</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="snsList spBreak">
+              <div class="ul">
+                <div class="li">
+                  <a href="#" target="_blank" rel="noopener">
+                    <div>
+                      <img
+                        src="https://hauskahaus.com/system_panel/uploads/images/sns_fb.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="#" target="_blank" rel="noopener">
+                    <div>
+                      <img
+                        src="https://hauskahaus.com/system_panel/uploads/images/sns_x.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a
+                    href="https://www.instagram.com/setsuyaku_ie_oo/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <div>
+                      <img
+                        src="https://hauskahaus.com/system_panel/uploads/images/sns_insta.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headContactBtn">
+        <a href="contact">
+          <div>
+            <img
+              src="https://hauskahaus.com/system_panel/uploads/images/header_contact.png"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+      <div class="hamburger">
+        <div class="span"></div>
+        <div class="span"></div>
+        <div class="span"></div>
+      </div>
+    </div>
+    <!-- △header△-->
+    <!-- ▽メイン▽-->
+    <div class="searchMain main pageMain">
+      <div class="pageKvPanel">
+        <img
+          src="https://hauskahaus.com/system_panel/uploads/images/search_kv.png"
+          alt=""
+        />
+      </div>
+      <div class="pageHeadTitlePanel">
+        <div class="secWrap">
+          <div class="pageHeadBox">
+            <div class="pageHeadTitle">
+              <p class="futura">Search</p>
+              <h2>知多半島エリアの不動産を探す</h2>
+            </div>
+            <div class="pageHeadTxt">
+              <div class="txt">
+                <p>
+                  知多半島エリアの土地、物件の購入は株式会社HAUSKA
+                  HAUSにご相談ください。<br />エリアや価格帯からご希望の条件で不動産をお探しいただけます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="searchConditionContainer">
+        <div class="secWrap01">
+          <div class="secTtl">
+            <p>条件</p>
+            <p class="em">検索</p>
+          </div>
+          <div class="topTxt">
+            <div class="txt">
+              <p>ご希望の条件をご指定ください。表示する物件を絞り込めます。</p>
+            </div>
+          </div>
+          <div class="searchPanel">
+            <form
+              class="webgene-search-form"
+              method="get"
+              action="./testproperty"
+            >
+              <div
+                rel="物件種類"
+                title="物件種類"
+                class="webgene-search-form-block"
+              >
+                <div class="search-title-wrapper">
+                  <p class="search-title">物件種類</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_type_cd"
+                        name="s0l0[]"
+                        value="7"
+                      />賃貸中古物件</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_type_cd"
+                        name="s0l0[]"
+                        value="6"
+                      />賃貸一戸建て</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_type_cd"
+                        name="s0l0[]"
+                        value="5"
+                      />賃貸マンション</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_type_cd"
+                        name="s0l0[]"
+                        value="4"
+                      />売中古物件</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_type_cd"
+                        name="s0l0[]"
+                        value="3"
+                      />売新築物件</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_type_cd"
+                        name="s0l0[]"
+                        value="1"
+                      />売土地</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                rel="エリア"
+                title="エリア"
+                class="webgene-search-form-block"
+              >
+                <div class="search-title-wrapper">
+                  <p class="search-title">エリア</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="11"
+                      />美浜町</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="10"
+                      />南知多町</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="9"
+                      />東浦町</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="8"
+                      />阿久比町</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="7"
+                      />知多市</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="6"
+                      />大府市</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="5"
+                      />武豊町</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="4"
+                      />東海市</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="3"
+                      />常滑市</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="2"
+                      />半田市</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_parking_cd"
+                        name="s1l0[]"
+                        value="1"
+                      />★エリア管理</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                rel="物件状況"
+                title="物件状況"
+                class="webgene-search-form-block"
+              >
+                <div class="search-title-wrapper">
+                  <p class="search-title">物件状況</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_status_cd"
+                        name="s2l0[]"
+                        value="1"
+                      />★物件状況管理</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                rel="物件名"
+                title="物件名"
+                class="webgene-search-form-block"
+              >
+                <div class="search-title-wrapper">
+                  <p class="search-title">物件名</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <input type="text" name="s3l0" value="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="search-area-parent webgene-search-form-block"
+                rel="沿線1|沿線2|沿線3"
+                group="1"
+              >
+                <p class="search-area-title">沿線から検索</p>
+                <section
+                  rel="沿線管理"
+                  title="沿線"
+                  class="search-area-wrapper"
+                >
+                  <div class="search-subtitle-wrapper">
+                    <p class="search-subtitle">沿線</p>
+                  </div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_large_cd"
+                        name="s4l1[]"
+                        value="4"
+                      />JR武豊線</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_large_cd"
+                        name="s4l1[]"
+                        value="3"
+                      />名鉄知多新線</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_large_cd"
+                        name="s4l1[]"
+                        value="2"
+                      />名鉄河和線</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_large_cd"
+                        name="s4l1[]"
+                        value="1"
+                      />名鉄常滑線</label
+                    >
+                  </div>
+                </section>
+                <section
+                  rel="駅名管理"
+                  title="駅名"
+                  class="search-area-wrapper"
+                >
+                  <div class="search-subtitle-wrapper">
+                    <p class="search-subtitle">駅名</p>
+                  </div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="26"
+                        wayside_large_cd="4"
+                      />武豊駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="25"
+                        wayside_large_cd="4"
+                      />半田駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="24"
+                        wayside_large_cd="4"
+                      />東浦駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="23"
+                        wayside_large_cd="4"
+                      />大府駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="22"
+                        wayside_large_cd="4"
+                      />共和駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="21"
+                        wayside_large_cd="3"
+                      />内海駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="20"
+                        wayside_large_cd="3"
+                      />野間駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="19"
+                        wayside_large_cd="3"
+                      />上野間駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="18"
+                        wayside_large_cd="2"
+                      />河和駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="17"
+                        wayside_large_cd="2"
+                      />知多武豊駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="16"
+                        wayside_large_cd="2"
+                      />青山駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="15"
+                        wayside_large_cd="2"
+                      />知多半田駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="14"
+                        wayside_large_cd="2"
+                      />住吉町駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="13"
+                        wayside_large_cd="2"
+                      />阿久比駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="12"
+                        wayside_large_cd="2"
+                      />巽ヶ丘駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="11"
+                        wayside_large_cd="2"
+                      />南加木屋駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="10"
+                        wayside_large_cd="2"
+                      />高横須賀駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="9"
+                        wayside_large_cd="1"
+                      />常滑駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="8"
+                        wayside_large_cd="1"
+                      />新舞子駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="7"
+                        wayside_large_cd="1"
+                      />朝倉駅周辺</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="wayside_small_cd"
+                        name="s4l0[]"
+                        value="5"
+                        wayside_large_cd="1"
+                      />太田川駅周辺</label
+                    >
+                  </div>
+                </section>
+              </div>
+              <div
+                rel="利用目的"
+                title="利用目的"
+                class="webgene-search-form-block"
+              >
+                <div class="search-title-wrapper">
+                  <p class="search-title">利用目的</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_direction_cd"
+                        name="s7l0[]"
+                        value="3"
+                      />駐車場として</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_direction_cd"
+                        name="s7l0[]"
+                        value="2"
+                      />居住用として</label
+                    >
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_direction_cd"
+                        name="s7l0[]"
+                        value="1"
+                      />事業用として</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div rel="価格" title="価格" class="webgene-search-form-block">
+                <div class="search-title-wrapper">
+                  <p class="search-title">価格</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_facility_cd4"
+                        name="s9l0[]"
+                        value="1"
+                      />★価格管理</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                rel="間取り"
+                title="間取り"
+                class="webgene-search-form-block"
+              >
+                <div class="search-title-wrapper">
+                  <p class="search-title">間取り</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_plan_cd"
+                        name="s8l0[]"
+                        value="1"
+                      />★間取り管理</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                rel="土地状況"
+                title="土地状況"
+                class="webgene-search-form-block"
+              >
+                <div class="search-title-wrapper">
+                  <p class="search-title">土地状況</p>
+                </div>
+                <div class="search-area-wrapper">
+                  <div class="search-subtitle-wrapper"></div>
+                  <div class="search-contents-wrapper">
+                    <label
+                      ><input
+                        type="checkbox"
+                        class="property_age_cd"
+                        name="s10l0[]"
+                        value="1"
+                      />★土地状況管理</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <input
+                type="submit"
+                class="search-submit"
+                value="検索する"
+              /><input type="hidden" name="wgsearch" value="property" /><input
+                type="hidden"
+                name="sg[]"
+                value="s4|s5|s6"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- △メイン△-->
+    <!-- ▽footer▽-->
+    <div class="footer">
+      <div class="fixedContact">
+        <a href="contact">
+          <div>
+            <p>無料相談<br />お問い合わせ</p>
+          </div>
+        </a>
+      </div>
+      <div class="secWrap01">
+        <div class="logo">
+          <img
+            src="https://hauskahaus.com/system_panel/uploads/images/footer_logo.png"
+            alt=""
+          />
+        </div>
+        <div class="footPanel">
+          <div class="footBox">
+            <div class="searchBox">
+              <a href="search">
+                <div>
+                  <p>不動産を探す</p>
+                </div>
+              </a>
+            </div>
+            <div class="footNav">
+              <div class="ul">
+                <div class="li">
+                  <a href="about">
+                    <div>
+                      <p>HAUSKA HAUS について</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="service">
+                    <div>
+                      <p>事業紹介</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="company">
+                    <div>
+                      <p>代表紹介</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="ul">
+                <div class="li">
+                  <a href="company">
+                    <div>
+                      <p>会社概要</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="bloglist">
+                    <div>
+                      <p>ブログ</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="bloglist">
+                    <div>
+                      <p>事例紹介</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="ul">
+                <div class="li">
+                  <a href="contact">
+                    <div>
+                      <p>お問い合わせ</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sns">
+            <div class="ul">
+              <div class="li">
+                <a href="#" target="_blank" rel="noopener">
+                  <div>
+                    <img
+                      src="https://hauskahaus.com/system_panel/uploads/images/sns_fb.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="#" target="_blank" rel="noopener">
+                  <div>
+                    <img
+                      src="https://hauskahaus.com/system_panel/uploads/images/sns_x.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a
+                  href="https://www.instagram.com/setsuyaku_ie_oo/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div>
+                    <img
+                      src="https://hauskahaus.com/system_panel/uploads/images/sns_insta.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy">
+          <p>&copy;2023 HAUSKA HAUS Co., Ltd.</p>
+        </div>
+      </div>
+    </div>
+    <!-- △footer△-->
+  </body>
+</html>

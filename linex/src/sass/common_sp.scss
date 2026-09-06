@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  padding: 0 20px;
+  .headWrap {
+    min-height: 70px;
+  }
+  .logo {
+    width: 125px;
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  top: 70px;
+  height: calc(100% - 70px);
+  .navList {
+    ul {
+      li {
+        + li {
+          margin: 20px 0 0;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 70px 0 0;
+}
+.pageKvPanel {
+  height: 350px;
+  .pageKvTitle {
+    .imgTitle {
+      padding: 0 0 20px;
+      background: url("../image/common/page_kv_title_line.png") center bottom
+        no-repeat;
+      background-size: 100px auto;
+    }
+  }
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footPanel {
+    padding: 60px 20px;
+    .logo {
+      max-width: 100px;
+    }
+    .footNav {
+      display: none;
+    }
+  }
+  .copy {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

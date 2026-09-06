@@ -1,0 +1,155 @@
+// ▽メイン▽
+.contactMain.main
+    .pageKv
+        .kvWrap
+            .kvBox
+            .kvTtlBox
+                h1.fadeUp CONTACT
+                p.fadeUp お問い合わせ
+    .sec01
+        .secWrap03
+            .secTtl.fadeUp
+                .ttl
+                    .img
+                        img(src="https://compassion210817.smooooth.jp/system_panel/uploads/images/contact_ttl_01.png", alt="")
+                h2 電話・ライン
+            .ul.fadeLeft
+                .li.telBox
+                    .dl
+                        .dt
+                            p 電話でのお問い合わせ  
+                        .dd
+                            a(href="tel:0366386907")
+                                div
+                                    p.span tel.
+                                    p.em 03-6638-6907
+                            p 8：30－17：30
+                .li.lineBox
+                    .dl
+                        .dt
+                            p LINEでのお問い合わせ  
+                        .dd
+                            a(href="http://", target="_blank", rel="noopener")
+                                div
+                                    p ご質問・お問い合わせは<br>LINEでもお気軽にどうぞ！
+    .sec02
+        .secWrap03
+            .secTtl.fadeUp
+                .ttl
+                    .img
+                        img(src="https://compassion210817.smooooth.jp/system_panel/uploads/images/contact_ttl_02.png", alt="")
+                h2 メール
+            p 下記の応募フォームより、ご応募ください。<br>必要事項を記入の上【応募する】ボタンをクリック下さい。
+            .contactForm.fadeUp
+                form(data-formtype="2" method="post").form
+                    .formBox
+                        .dl
+                            .dt
+                                p.span お名前
+                                p.em 必須
+                            .dd
+                                input(type="text" class="name" name="name" placeholder="例）山田 太郎" data-displaynameattr="お名前" required)
+                        .dl
+                            .dt
+                                p.span ふりがな
+                                p.em 必須
+                            .dd
+                                input(type="text" class="kana" name="kana" placeholder="例）やまだ たろう" data-displaynameattr="ふりがな" required)
+                        .dl
+                            .dt
+                                p.span 会社名・団体名
+                                p.em 必須
+                            .dd
+                                input(type="text" class="company" name="company" placeholder="例）コンパッション" data-displaynameattr="会社名・団体名" required)
+                        .dl.postal
+                            .dt
+                                p.span 郵便番号
+                                p.em 必須
+                            .dd
+                                input(type="text" class="postal_01 zip1" name="postal_01" data-displaynameattr="郵便番号上3桁"  placeholder="例）272" required)
+                                p.span -
+                                input(type="text" class="postal_02 zip2" name="postal_02" data-displaynameattr="郵便番号下4桁" placeholder="0815" required)
+                        .dl
+                            .dt
+                                p.span 住所
+                                p.em 必須
+                            .dd
+                                input(type="text" class="address01" name="address01" placeholder="例） 千葉県市川市北方町4-1834-19" data-displaynameattr="住所" required)
+                        .dl
+                            .dt
+                                p.span 電話番号
+                                p.em 必須
+                            .dd
+                                input(type="tel" class="tel" name="tel" placeholder="例） 03-6638-6907" data-displaynameattr="電話番号" required)
+                        .dl
+                            .dt
+                                p.span メールアドレス
+                                p.em 必須
+                            .dd
+                                input(type="email" class="mail" name="mail" placeholder="例） compassion＠com" data-displaynameattr="メールアドレス" required)
+                        .dl
+                            .dt
+                                p.span メールアドレス（確認用）
+                                p.em 必須
+                            .dd
+                                input(type="email" class="mailConfirm" name="mailConfirm" placeholder="確認のため再度お願いいたします。" data-displaynameattr="メールアドレス（確認用）" required)
+                        .dl.formTopItem
+                            .dt
+                                p.span お問い合わせ内容
+                            .dd
+                                textarea(name="お問い合わせ内容" class="msg" placeholder="お問い合わせ内容をご入力ください。" data-displaynameattr="お問い合わせ内容")
+                        .aside
+                            p 配送をご希望の方は、以下の入力をしていただけるとスムーズに手配が可能です。
+                    .formBox
+                        .dl.dateInput
+                            .dt
+                                p.span 配送希望日
+                            .dd
+                                input(type="text" class="month" name="配送希望月" placeholder="例） 4" data-displaynameattr="配送希望月")
+                                p.span 月
+                                input(type="text" class="day" name="配送希望日" placeholder="例） 24" data-displaynameattr="配送希望日")
+                                p.span 日
+                        .formBox
+                        .dl.numInput
+                            .dt
+                                p.span 荷物の数
+                            .dd
+                                input(type="text" class="num" name="荷物の数" placeholder="例） 3" data-displaynameattr="荷物の数")
+                        .dl
+                            .dt
+                                p.span 発送元住所
+                            .dd
+                                input(type="text" class="fromAddress" name="発送元住所" placeholder="県名から入力をお願いいたします。" data-displaynameattr="発送元住所")
+                        .dl
+                            .dt
+                                p.span 発送先住所
+                            .dd
+                                input(type="text" class="toAddress" name="発送先住所" placeholder="県名から入力をお願いいたします。" data-displaynameattr="発送先住所")
+                        .dl.formTopItem
+                            .dt
+                                p.span 荷物種別
+                            .dd
+                                textarea(name="荷物種別" class="kind" placeholder="配送する荷物に関してご記入ください。例）コピー機３台" data-displaynameattr="荷物種別")
+                                
+                    .privacy
+                        .agreeBox
+                            p 個人情報の取り扱いについて
+                            p トラストコーポレーションでは個人情報を適切に管理運用するための基本的事項を定めています。<br>・個人情報の利用目的<br>個人情報は当社からご連絡する目的のためのみに取得し、取得した個人情報については不正利用・紛失・破壊・改ざん、<br>および漏えいに対し適切な予防ならびに是正に関する措置を適切に講じます。<br>・個人情報の第三者への開示・提供の禁止<br>お客様の個人情報について、お客様の承諾が無い限り第三者に開示、提供を一切いたしません。 ご提供いただいた個人情報を取り扱うにあたり管理責任者を置き、適切な管理を行っております。<br>・ご本人の照会<br>個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上対応させていただきます。<br>・法令、規範の遵守と見直し<br>保有する個人情報について日本の法令その他規範を遵守するとともに、本規約の内容を適宜見直しその改善に努めます。
+                            p 本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。
+                            p 会社名：株式会社コンパッション
+                            p 住所：東京都江戸川区江戸川2丁目3番地13
+                            .tel
+                                p 電話番号：
+                                a(href="tel:0366386907")
+                                    div
+                                        p 03-6638-6907
+                    .agreeCheck
+                        .checkBox
+                            label 
+                                input(type="checkbox")
+                                span 個人情報の取り扱いについて同意する
+                    .submitBtn
+                        button(type="submit") 送信する
+// △メイン△
+script(src="../js/jquery.jpostal.js")
+script(src="../js/formContact.js")

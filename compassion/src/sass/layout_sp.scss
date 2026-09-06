@@ -1,0 +1,1258 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	#fp-nav {
+		right: 0 !important;
+	}
+		
+	.topMain {
+
+		.topKv {
+
+			&:before,
+			&:after {
+				display: none;
+			}
+
+		}
+
+		.topKv .kvBox {
+			margin: 0;
+		}
+
+		.kvTtlBox {
+			position: absolute;
+			top: 40%;
+			left: 20px;
+			font-style: italic;
+			color: #ffffff;
+			z-index: 1;
+
+			h1 {
+				font-size: 26px;
+				font-weight: bold;
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+		}
+
+		.section {
+			padding: 60px 0 0;
+		}
+
+		.section01 {
+			
+			.photoBox {
+				display: none;
+			}
+
+			.secBox01 {
+				margin: 0 0 40px;
+				padding: 30px 10px;
+
+				h2 {
+					margin: 0 0 20px;
+					font-size: 30px;
+				}
+
+			}
+
+			.slideText {
+				position: relative;
+				margin: 20px 0 0;
+				-webkit-animation: loop-en_animation 20s linear infinite;
+				animation: loop-en_animation 20s linear infinite;
+			}
+
+		}
+
+		.secBox {
+			padding: 30px 20px;
+
+			.secTtl {
+				margin: 0 0 30px;
+				
+				p {
+					font-size: 40px;
+				}
+
+				h2 {
+					padding: 0 15px 2px;
+					font-size: 16px;
+				}
+
+			}
+
+			.txt {
+				margin: 0 0 30px;
+			}
+
+		}
+
+		.section02 {
+
+		}
+
+		.section03 {
+
+			.secWrap01 {
+				padding: 0 10px;
+			}
+
+			.secBox {
+				float: none;
+			}
+			
+		}
+
+		.section04 {
+			
+		}
+
+		.section05 {
+			
+			.newsPanel {
+				display: block;
+				padding: 20px 0;
+			}
+
+			.secTtl {
+				width: 280px;
+				margin: 0 auto 30px;
+				text-align: center;
+
+				p {
+					font-size: 40px;
+				}
+
+				h2 {
+					padding: 0 15px 2px;
+					font-size: 16px;
+				}
+
+			}
+
+			.webgene-blog {
+				width: 100%;
+			}
+
+			.webgene-header {
+				position: static;
+			}
+
+			.webgene-item {
+				padding: 0;
+			}
+
+			.left {
+				float: none;
+				width: 100%;
+				background: #d4d4d4;
+			}
+
+			.right {
+				float: none;
+				width: 100%;
+				padding: 10px 0 0;
+			}
+
+			.photo {
+				top: -5px;
+				left: -5px;
+			}
+
+			.info {
+				margin: 0 0 10px;
+
+				.time {
+					margin: 0 10px 0 0;
+				}
+
+			}
+
+		}
+
+		.section06 {
+
+			.secWrap01 {
+				padding: 0 10px;
+			}
+
+			.secBox {
+				float: none;
+			}
+			
+		}
+
+		.btmSection {
+			padding: 0;
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.strengthMain {
+
+		.section {
+			padding: 60px 0;
+		}
+
+		.secBox {
+
+			+ .secBox {
+				margin-top: 80px;
+			}
+
+			.photo {
+				margin: 0 auto 30px;
+			}
+
+			.num {
+				width: 90px;
+				margin: 0 auto 20px;
+			}
+
+			.box {
+
+				h2 {
+					margin: 0 0 20px;
+					font-size: 25px;
+					font-weight: bold;
+					line-height: 1.2;
+					letter-spacing: -0.01em;
+
+					br {
+						display: none;
+					}
+
+				}
+
+				p {
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 2;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+	rental
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.transportMain,
+	.rentalMain {
+		overflow: hidden;
+
+		.topSec {
+			padding: 60px 0 0;
+
+			.secBox {
+				margin: 0 0 50px;
+				padding: 30px 10px;
+
+				h2 {
+					margin: 0 0 10px;
+					padding: 20px 0;
+					font-size: 30px;
+					background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/business_top_logo.png) center top no-repeat;
+					background-size: 150px auto;
+				}
+
+			}
+
+			.slideTextBox {
+				position: relative;
+			}
+
+			.slideText {
+				width: 100%;
+				-webkit-animation: loop-en_animation 50s linear infinite;
+				animation: loop-en_animation 50s linear infinite;
+			}
+
+		}
+
+		.secTtl {
+			
+			.ttl {
+				
+				.img {
+					max-width: 280px;
+				}
+
+			}
+
+		}
+
+		.flowSec {
+			padding: 50px 0;
+
+			.secTtl {
+				margin: 0 0 40px;
+			}
+
+			.stepBox {
+
+				+ .stepBox {
+					position: relative;
+					margin: 80px 0 0;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: -50px;
+						left: 0;
+						right: 0;
+						width: 45px;
+						height: 28px;
+						margin: 0 auto;
+					}
+
+				}
+
+				.step {
+					width: 80px;
+					margin: 0 auto;
+				}
+
+				.ttlBox {
+					padding: 0 10px 10px;
+					
+					.num {
+						position: static;
+						font-size: 34px;
+
+						p {
+							display: inline-block;
+							text-indent: -10px;
+						}
+
+					}
+
+					.ttl {
+						font-size: 24px;
+					}
+
+				}
+
+				.txtBox {
+					padding: 20px 10px;
+					
+					.contactList {
+						max-width: 280px;
+						margin: 20px auto 0;
+
+						.tel {
+							float: none;
+							width: 100%;
+							margin: 0 0 20px;
+						}
+
+						.contact {
+							float: none;
+							width: 100%;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.transportMain {
+
+		.sec01 {
+			
+			.secBox {
+				padding: 50px 0 0;
+
+				.txtBox {
+					width: 100%;
+					padding: 0 0 30px;
+
+					h2 {
+						margin: 0 0 20px;
+						font-size: 20px;
+					}
+
+				}
+
+				.photo {
+					position: static;
+					width: 100%;
+					max-width: 600px;
+				}
+
+			}
+
+		}
+
+		.secService {
+			padding: 60px 0;
+		
+			.secBoxList {
+
+				.secBox {
+				
+					+ .secBox {
+						margin: 40px 0 0;
+					}
+
+					.photo {
+						width: 100%;
+					}
+
+					.txtBox {
+						width: 100%;
+						padding: 20px 10px;
+						background: #ffffff;
+
+						h3 {
+							margin: 0 0 20px;
+							padding: 0;
+							font-size: 24px;
+						}
+
+						p {
+							padding: 0;
+						}
+
+					}
+
+				}
+
+				.secBox:nth-child(odd) {
+
+					.photo {
+						float: none;
+					}
+
+					.txtBox {
+						float: none;
+					}
+
+				}
+
+				.secBox:nth-child(even) {
+
+					.photo {
+						float: none;
+					}
+
+					.txtBox {
+						float: none;
+					}
+					
+				}
+
+			}
+
+		}
+
+		.ownedSec {
+			padding: 50px 0;
+
+			.vehicleList {
+				display: block;
+				
+				.list {
+					width: 100%;
+				}
+
+				.txt {
+					padding: 0 10px;
+				}
+
+			}
+
+			h3 {
+				margin: 0 0 40px;
+				font-size: 18px;
+			}
+
+			.dealList {
+				padding: 30px 10px;
+		
+				.dl {
+
+					.dt {
+						margin: 0 0 20px;
+
+						p {
+							padding: 0 40px;
+							font-size: 20px;
+							background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_ttl_icon.png) left center no-repeat,  url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_ttl_icon.png) right center no-repeat;
+							background-size: 20px auto,  20px auto;
+						}
+
+					}
+
+					.dd {
+						max-width: 250px;
+						margin: 0 auto;
+					}
+
+					.ul {
+						
+						+ .ul {
+							margin: 10px 0 0;
+						}
+
+						.li {
+							display: block;
+
+							+ .li {
+								margin: 10px 0 0;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	rental
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.rentalMain {
+
+		.sec01 {
+			padding: 50px 0;
+
+			h2 {
+				margin: 0 0 30px;
+				font-size: 24px;
+			}
+
+			.dl {
+				display: block;
+				margin: 0 0 40px;
+
+				.dt {
+					display: block;
+					width: 100%;
+					padding: 20px 10px;
+
+					p {
+						padding: 40px 0 0;
+						font-size: 20px;
+						font-weight: bold;
+						background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_sec01_icon.png) center top no-repeat;
+						background-size: 30px auto;
+					}
+
+				}
+
+				.dd {
+					display: block;
+					padding: 20px 10px;
+				}
+
+			}
+
+			.logo {
+				max-width: 250px;
+			}
+
+		}
+
+		.pointSec {
+			padding: 60px 0;
+
+			.pointList {
+				max-width: 400px;
+				margin: 0 auto;
+
+				.list {
+					padding: 10px;
+
+					+ .list {
+						margin: 40px 0 0;
+					}
+
+				}
+
+				.dl {
+
+					.dt {
+						font-size: 18px;
+					}
+
+					.dd {
+						font-size: 13px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.staffMain {
+
+		.staffListPanel {
+
+			.staffListBox {
+				padding: 50px 0;
+
+				.secBox {
+					margin: 0 0 30px;
+					padding: 10px 0;
+				}
+
+				.txtBox {
+					
+					.ttl {
+						margin: 0 0 30px;
+						
+						p {
+							font-size: 40px;
+						}
+
+						h2 {
+							font-size: 18px;
+						}
+
+					}
+
+					.dl {
+
+						.dt {
+							font-size: 20px;
+						}
+
+					}
+
+				}
+
+				.infoTxt {
+					font-weight: bold;
+					line-height: 2;
+				}
+
+			}
+
+			.staffListBox:nth-child(odd) {
+				background: none;
+
+				.photo {
+					position: static;
+					width: 100%;
+					max-width: 400px;
+					margin: 0 auto 20px;
+				}
+
+			}
+
+			.staffListBox:nth-child(even) {
+				background: none;
+
+				.photo {
+					position: static;
+					width: 100%;
+					max-width: 400px;
+					margin: 0 auto 20px;
+				}
+
+				.txtBox {
+					text-align: left;
+				}
+
+			}
+
+		}
+
+		.slidePanel {
+			padding: 100px 0;
+
+			.slideBox {
+				
+				.ul {
+					
+					.li {
+						width: calc(100% / 2);
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.companyMain {
+
+		.secTtl {
+			
+			.ttl {
+				
+				.img {
+					max-width: 280px;
+				}
+
+			}
+
+		}
+
+		.sec01 {
+			padding: 60px 0;
+
+			.secBox {
+				display: block;
+
+				.photo {
+					display: block;
+					width: 100%;
+				}
+
+				.txtBox {
+					display: block;
+				}
+
+				.txt {
+					padding: 30px 0 0;
+				}
+
+			}
+
+		}
+
+		.sec02 {
+			padding: 60px 0;
+
+			.imgBox {
+				margin: 0 auto 40px;
+			}
+
+			.txtBox {
+
+				.dl {
+					display: block;
+					line-height: 1.5;
+
+					+ .dl {
+						margin: 10px 0 0;
+					}
+
+					.dt {
+						display: block;
+						width: 100%;
+						font-size: 30px;
+						text-align: center;
+						border-bottom: 1px solid #000000;
+
+						&:after {
+							display: none;
+						}
+
+					}
+
+					.dd {
+						display: block;
+						font-size: 18px;
+						padding: 10px 0;
+					}
+
+				}
+
+			}
+
+		}
+
+		.sec03 {
+			padding: 60px 0;
+
+			.ttl {
+				margin: 0 0 40px;
+		
+				p {
+					font-size: 34px;
+				}
+
+				h2 {
+					font-size: 16px;
+				}
+
+			}
+
+			.infoBox {
+
+				.dl {
+					
+					.dt {
+						width: 90px;
+						padding: 0;
+					}
+
+					.dd {
+						padding: 0 10px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.recruitMain {
+
+		.secTtl {
+			margin: 0 0 40px;
+			
+			.ttl {
+				
+				.img {
+					max-width: 280px;
+				}
+
+			}
+
+		}
+
+		.sec01 {
+			padding: 60px 0;
+
+			.secBox {
+				float: none;
+				margin: 0 auto;
+				padding: 30px 10px;
+				
+				h3 {
+					margin: 0 0 20px;
+					font-size: 30px;
+				}
+
+			}
+
+		}
+
+		.sec02 {
+			padding: 60px 0;
+
+			.ul {
+				display: block;
+				margin: 0 auto 50px;
+				padding: 0 15px;
+
+				.li {
+					width: 100%;
+					padding: 30px 10px;
+					font-size: 18px;
+		
+					+ .li {
+						margin: 40px 0 0;
+					}
+
+				}
+
+			}
+
+			.moreLink {
+				max-width: 280px;
+			}
+
+		}
+
+		.sec03 {
+			padding: 60px 0;
+
+			.ol {
+
+				.li {
+					padding: 10px 5px 30px;
+
+					+ .li {
+						margin: 80px 0 0;
+					}
+
+					+ .li:before {
+						content: '';
+						position: absolute;
+						top: -55px;
+						left: 0;
+						right: 0;
+						width: 46px;
+						height: 30px;
+						margin: 0 auto;
+						background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_flow_arrow_02.png) no-repeat;
+						background-size: 46px auto;
+					}
+
+				}
+
+				.step {
+					font-size: 20px;
+				}
+
+				.num {
+					margin: 0 0 10px;
+					font-size: 30px;
+				}
+
+				.txt {
+					font-size: 30px;
+				}
+
+			}
+
+		}
+
+		.sec04 {
+			padding: 120px 0;
+
+			.infoBox {
+
+				.dl {
+					
+					.dt {
+						width: 90px;
+						padding: 0;
+					}
+
+					.dd {
+						padding: 0 10px;
+					}
+
+				}
+
+			}
+
+		}
+
+		.sec05 {
+			padding: 0 0 60px;
+
+			.secTtl + p {
+				margin: 0 0 30px;
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.contactMain {
+
+		.secTtl {
+			margin: 0 0 40px;
+			
+			.ttl {
+				
+				.img {
+					max-width: 280px;
+				}
+
+			}
+
+		}
+
+		.sec01 {
+			padding: 60px 0;
+
+			.ul {
+				display: block;
+				padding: 0 10px;
+				
+				.li {
+					width: 100%;
+
+					+ .li {
+						margin: 40px 0 0;
+					}
+
+				}
+
+				.dl {
+					
+					.dt {
+						font-size: 20px;
+					}
+
+					.dd {
+						min-height: 0;
+					}
+
+				}
+
+				.telBox {
+
+					.dl {
+
+						.dd {
+							padding: 20px 10px;
+
+							.span {
+								font-size: 16px;
+							}
+
+							.em {
+								font-size: 30px;
+							}
+
+						}
+
+					}
+
+				}
+
+				.lineBox {
+
+					.dl {
+
+						.dd {
+							padding: 20px 10px;
+
+							a {
+								padding: 0 0 0 50px;
+								line-height: 1.5;
+								background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/contact_line.png) left center no-repeat;
+								background-size: 45px auto;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.sec02 {
+			padding: 60px 0;
+
+			.secTtl + p {
+				margin: 0 0 30px;
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.contactForm {
+
+		.formBox {
+
+			> .dl {
+				display: block;
+				padding: 15px 0;
+
+				> .dt {
+					display: block;
+					width: 100%;
+					padding: 5px 0;
+					text-align: left;
+
+					.em {
+						font-size: 12px;
+					}
+
+				}
+
+				.dd {
+					display: block;
+					padding: 10px 0;
+				}
+
+			}
+
+		}
+
+		.privacy {
+			
+			.agreeBox {
+				height: 250px;
+				padding: 20px 10px;
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+
+	.newsMain {
+
+		.blogBox {
+			padding: 40px 10px 60px;
+
+			.left {
+				float: none;
+				width: 100%;
+				margin-bottom: 40px;
+			}
+
+			.right {
+				float: none;
+				width: 100%;
+		
+				.menu {
+
+					.ttl {
+						font-size: 20px;
+					}
+
+				}
+
+			}
+
+			.blogListBox {
+
+				.webgene-item {
+
+					.photo {
+						float: none;
+						width: 100%;
+					}
+
+					.txt {
+						float: none;
+						width: 100%;
+						padding: 20px 10px;
+					}
+
+				}
+
+				.webgene-pagination {
+					margin: 30px 0 0;
+				}
+
+			}
+
+			.blogDetailBox {
+
+				.webgene-item {
+					padding: 10px;
+				}
+
+				.ttlBox {
+					margin-bottom: 20px;
+
+					.topTtl {
+						font-size: 22px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

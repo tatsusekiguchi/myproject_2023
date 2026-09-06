@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 53px;
+  z-index: 999;
+  background: #f8f8f8;
+}
+.header .headBox {
+  padding: 15px 30px;
+}
+.header .logo {
+  width: 80px;
+}
+.header .logo a {
+  display: block;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox__list {
+  display: none;
+}
+.navBox__item .contactLink {
+  display: none;
+}
+.navBox .hamburger {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 20px;
+  height: 15px;
+  z-index: 9999;
+}
+.navBox .hamburger span {
+  background: #64584d;
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.navBox .hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.navBox .hamburger span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navBox .hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+.navBox .is-open.hamburger span:nth-of-type(1) {
+  transform: translate(-50%, 5px) rotate(-45deg);
+}
+.navBox .is-open.hamburger span:nth-of-type(2) {
+  opacity: 0;
+}
+.navBox .is-open.hamburger span:nth-of-type(3) {
+  transform: translate(-50%, -8px) rotate(45deg);
+}
+
+.subNavigation {
+  position: fixed;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 123px);
+  z-index: 1000;
+  background: #beb6a6;
+}
+.subNavigation__wrap {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.subNavigation__main__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  background: url("../image/common/navigation_logo_bg.png") center no-repeat;
+  background-size: cover;
+}
+.subNavigation__main__logo img {
+  width: 120px;
+}
+.subNavigation__main__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 40px;
+}
+.subNavigation__main__list ul {
+  width: 55%;
+}
+.subNavigation__main__list ul + ul {
+  width: 40%;
+}
+.subNavigation__main__list ul li + li {
+  margin: 45px 0 0;
+}
+.subNavigation__main__list ul li a {
+  display: inline-block;
+  padding: 0 0 0 15px;
+  color: #ffffff;
+  background: url("../image/common/navigation_list_arrow.png") left top 12px no-repeat;
+  background-size: 8px auto;
+}
+.subNavigation__main__list ul li a em {
+  display: block;
+  font-size: 20px;
+}
+.subNavigation__main__list ul li a span {
+  display: block;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 10px;
+}
+.subNavigation__bottom--pc {
+  display: none;
+}
+.subNavigation__bottom--sp {
+  margin: auto 0 0;
+  padding: 0 0 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.subNavigation__bottom--sp .sns {
+  margin: 0 0 30px;
+}
+.subNavigation__bottom--sp .sns dt {
+  margin: 0 0 20px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 12px;
+}
+.subNavigation__bottom--sp .sns ul li {
+  display: inline-block;
+}
+.subNavigation__bottom--sp .sns ul li + li {
+  margin: 0 0 0 30px;
+}
+.subNavigation__bottom--sp .sns ul li a {
+  display: block;
+}
+.subNavigation__bottom--sp .sns ul .insta {
+  width: 18px;
+}
+.subNavigation__bottom--sp .sns ul .tweet {
+  width: 22px;
+}
+.subNavigation__bottom--sp .sns ul .youtube {
+  width: 26px;
+}
+.subNavigation__bottom--sp .copy {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 53px 0 0;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 60px 40px 185px;
+}
+.footer__items {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+}
+.footer__items > * {
+  width: 50%;
+  height: 85px;
+  text-align: center;
+}
+.footer__items > * a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 11px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+.footer__items > * a span {
+  display: inline-block;
+}
+.footer__items__entry {
+  background: #64584d;
+}
+.footer__items__entry a span {
+  padding: 24px 0 0;
+  background: url("../image/common/footer_item_entry.png") center top no-repeat;
+  background-size: 22px auto;
+}
+.footer__items__contact {
+  background: #b4a693;
+}
+.footer__items__contact a span {
+  padding: 20px 0 0;
+  background: url("../image/common/footer_item_mail.png") center top no-repeat;
+  background-size: 24px auto;
+}
+.footer .logo {
+  max-width: 150px;
+  margin: 0 auto 80px;
+}
+.footer .sns {
+  margin: 0 0 60px;
+}
+.footer .sns dt {
+  font-size: 12px;
+}
+.footer .sns ul li + li {
+  margin: 0 0 0 30px;
+}
+.footer .sns ul li a {
+  display: block;
+}
+.footer .sns ul .insta {
+  width: 18px;
+}
+.footer .sns ul .tweet {
+  width: 22px;
+}
+.footer .sns ul .youtube {
+  width: 26px;
+}
+.footer .copy {
+  font-size: 8px;
+}

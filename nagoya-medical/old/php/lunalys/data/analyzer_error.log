@@ -1,0 +1,569 @@
+[24-Jan-2015 12:57:34 UTC] PHP Notice:  Undefined variable: display_width in /var/www/sites/doctor-naito.com/web/php/lunalys/analyzer/modules/client_size.php on line 35
+[24-Jan-2015 12:57:34 UTC] PHP Notice:  Undefined variable: display_height in /var/www/sites/doctor-naito.com/web/php/lunalys/analyzer/modules/client_size.php on line 36
+[20-Mar-2015 23:47:14 UTC] PHP Notice:  Undefined variable: display_width in /var/www/sites/doctor-naito.com/web/php/lunalys/analyzer/modules/client_size.php on line 35
+[20-Mar-2015 23:47:14 UTC] PHP Notice:  Undefined variable: display_height in /var/www/sites/doctor-naito.com/web/php/lunalys/analyzer/modules/client_size.php on line 36
+[09-Jul-2015 08:46:12 UTC] PHP Warning:  mb_convert_encoding(): Unable to detect character encoding in /var/www/sites/doctor-naito.com/web/php/lunalys/analyzer/modules/logging.php on line 878
+[05-Aug-2015 23:28:09 UTC] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /var/www/sites/doctor-naito.com/web/php/lunalys/analyzer/modules/logging.php on line 992
+[13-Oct-2015 09:27:08 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[15-Oct-2015 11:15:44 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[12-Nov-2015 16:36:53 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[18-Nov-2015 17:09:52 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[13-Jan-2016 14:32:02 Asia/Tokyo] PHP Warning:  mb_convert_encoding(): Unable to detect character encoding in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 878
+[14-Jan-2016 13:02:22 Asia/Tokyo] PHP Warning:  mb_convert_encoding(): Unable to detect character encoding in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 878
+[16-Jan-2016 14:53:24 Asia/Tokyo] PHP Warning:  mb_convert_encoding(): Unable to detect character encoding in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 878
+[21-Jan-2016 10:14:00 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[19-Feb-2016 10:23:31 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[20-Mar-2016 09:29:08 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[10-Apr-2016 00:24:20 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[10-Apr-2016 22:10:51 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 14720 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 266
+[11-Apr-2016 00:58:40 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[11-Apr-2016 16:17:39 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[11-Apr-2016 23:01:48 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[11-Apr-2016 23:44:26 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[12-Apr-2016 09:17:48 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[12-Apr-2016 12:49:56 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[12-Apr-2016 12:50:05 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[12-Apr-2016 21:17:56 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[12-Apr-2016 21:59:26 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[12-Apr-2016 22:00:21 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[13-Apr-2016 12:14:31 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[13-Apr-2016 12:14:33 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[13-Apr-2016 12:48:05 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[13-Apr-2016 21:26:51 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[13-Apr-2016 21:27:17 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[13-Apr-2016 22:47:19 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[13-Apr-2016 23:14:33 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[13-Apr-2016 23:17:17 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[14-Apr-2016 22:03:45 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[14-Apr-2016 23:54:08 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[14-Apr-2016 23:55:15 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[15-Apr-2016 11:26:26 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[15-Apr-2016 12:04:14 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[16-Apr-2016 10:11:45 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[19-Apr-2016 09:24:02 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[20-Apr-2016 16:56:52 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[21-Apr-2016 08:16:52 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[21-Apr-2016 12:22:44 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[21-Apr-2016 16:19:26 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[21-Apr-2016 23:14:01 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[22-Apr-2016 08:51:04 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[22-Apr-2016 08:51:09 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[22-Apr-2016 08:51:24 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[23-Apr-2016 17:35:31 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[25-Apr-2016 09:52:16 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 12160 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 231
+[25-Apr-2016 09:52:20 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[26-Apr-2016 21:46:39 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[26-Apr-2016 21:47:07 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[28-Apr-2016 06:07:11 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[30-Apr-2016 21:37:43 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[01-May-2016 21:49:11 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[02-May-2016 09:57:57 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[02-May-2016 16:07:52 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[03-May-2016 22:55:24 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[04-May-2016 21:58:08 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[04-May-2016 21:58:42 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[05-May-2016 12:11:05 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[06-May-2016 17:11:42 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[06-May-2016 18:58:06 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[06-May-2016 19:22:34 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[07-May-2016 11:18:42 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[07-May-2016 11:19:26 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 11520 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 225
+[08-May-2016 09:16:04 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[08-May-2016 16:05:16 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[08-May-2016 16:45:07 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[08-May-2016 16:45:11 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[08-May-2016 23:08:41 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[08-May-2016 23:44:50 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[09-May-2016 17:13:44 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[09-May-2016 17:13:45 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 16000 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 288
+[10-May-2016 13:13:01 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[10-May-2016 15:03:37 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[10-May-2016 15:03:39 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[16-May-2016 13:56:58 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[17-May-2016 16:16:49 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[18-May-2016 11:21:59 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[22-May-2016 00:39:41 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[22-May-2016 10:33:02 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[22-May-2016 23:15:13 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[23-May-2016 08:44:29 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[23-May-2016 08:44:37 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[25-May-2016 00:12:35 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:91
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(91): PDO->query('update access_t...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(536): DB->query('update access_t...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 91
+[25-May-2016 09:09:13 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[26-May-2016 00:42:27 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[26-May-2016 13:57:15 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[26-May-2016 21:26:14 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[26-May-2016 22:21:40 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[02-Jun-2016 18:18:09 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[04-Jun-2016 08:49:31 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[06-Jun-2016 16:37:45 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[06-Jun-2016 16:38:04 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[26-Jun-2016 10:29:01 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[29-Jun-2016 07:17:25 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[29-Jun-2016 07:17:25 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10880 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 218
+[29-Jun-2016 21:09:41 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[30-Jun-2016 21:22:05 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 9600 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 198
+[03-Jul-2016 19:39:16 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[05-Jul-2016 07:10:14 Asia/Tokyo] PHP Warning:  mb_convert_encoding(): Unable to detect character encoding in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 878
+[08-Jul-2016 15:57:34 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[13-Jul-2016 17:39:58 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[20-Jul-2016 13:00:26 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[22-Jul-2016 10:14:27 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 7 out of memory' in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php:117
+Stack trace:
+#0 /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php(117): PDO->query('select seq,l_ti...')
+#1 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php(356): DB->query_fetch('select seq,l_ti...')
+#2 /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/write.php(22): Logging::execute('/home/kir703818...', '/home/kir703818...')
+#3 {main}
+  thrown in /home/kir703818/public_html/doctor-naito.com/php/lunalys/framework/modules/core/db.php on line 117
+[31-Jul-2016 13:40:13 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 13440 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 243
+[31-Jul-2016 23:48:49 Asia/Tokyo] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 16000 bytes) in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/user_agent.php on line 288
+[20-Aug-2016 09:48:59 Asia/Tokyo] PHP Warning:  mb_convert_encoding(): Unable to detect character encoding in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 878
+[31-Aug-2016 10:19:41 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[17-Oct-2016 20:49:50 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[27-Oct-2016 13:27:01 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[28-Oct-2016 08:58:36 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[07-Nov-2016 11:25:31 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[09-Nov-2016 16:13:35 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[09-Nov-2016 16:13:35 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[11-Nov-2016 09:14:25 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[01-Dec-2016 08:40:40 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[22-Jan-2017 08:27:38 Asia/Tokyo] PHP Warning:  mb_convert_encoding(): Unable to detect character encoding in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 878
+[25-Jan-2017 16:07:27 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992
+[22-Feb-2017 09:20:48 Asia/Tokyo] PHP Warning:  gethostbyaddr(): Address is not a valid IPv4 or IPv6 address in /home/kir703818/public_html/doctor-naito.com/php/lunalys/analyzer/modules/logging.php on line 992

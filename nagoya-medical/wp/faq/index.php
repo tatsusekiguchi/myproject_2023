@@ -1,0 +1,348 @@
+<?php
+/*
+Template Name: よくある質問
+*/
+?>
+<?php get_header(); ?>
+	<!-- ▽メイン▽-->
+	<main class="main" id="faq">
+		<div class="pageKvPanel">
+			<div class="pageKvTitle">
+				<h1>よくあるご質問</h1>
+			</div>
+		</div>
+		<div class="mainContainer">
+			<div class="secWrap01">
+				<div class="pageSecTtl">
+					<p class="secTtl">よくあるご質問</p>
+					<p class="futura">Q&anp;A</p>
+				</div>
+				<div class="topContainer">
+					<div class="topTitle gothic">
+						<p>当院に寄せられるよくあるご質問を紹介いたします。</p>
+					</div>
+					<div class="linkList">
+						<ul>
+							<li data-target="sec01"><span>免疫療法について</span></li>
+							<li data-target="sec02"><span>採血・投与について</span></li>
+							<li data-target="sec03"><span>費用について</span></li>
+							<li data-target="sec04"><span>初診・相談について</span></li>
+							<li data-target="sec05"><span>その他</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="listContainer">
+					<div class="listSection sec01">
+						<div class="pageSecTtlSub gothic">
+							<h2>免疫療法について</h2>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">免疫療法とはどういう治療法ですか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>当院で実施している免疫細胞を使用した免疫療法は、患者さんから抹消血液を採取し、生化学的な培養技術で約2週間無菌状態で、免疫細胞を増殖・活性化させ、再び患者さんの体内へ点滴で戻すという治療です。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">科学的根拠はありますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>免疫療法は、がんの最先端の治療法として注目を集めており、大学病院を始め各医療機関でも研究がすすめられています。また、先進医療として、医療機関（主に大学病院）ですでに治療が行われております。</p>
+										<p><a href="<?php echo home_url(); ?>/nk/">活性NK細胞療法の概要</a></p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">副作用はありますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>患者さんご自身の血液を採取し、増殖・活性化するためごくまれに発熱がある場合がございますが、培養後の細胞を投与した後の発熱は、免疫力が高まっている過程での発熱です。<br>発熱は個人差にもよりますが1日程度でおさまります。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">がんの部位によって有効性の違いはありますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>有効性の大きな違いはないと考えられます。一番重要とされるのは、患者さんの免疫細胞がどのような状態にあるかです。免疫細胞の状態が良ければ治療効果も期待できますし、悪い状態であれば治療効果が現れるには時間を要することとなります。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">自分のがん組織がなくても、免疫療法は受けられますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>受けられます。<br>新樹状細胞ワクチン療法は、自分のがん組織がなくても、人工的に作成したがん抗原を用いて行っております。他の免疫療法に関しましても、がん組織を持参いただかなくても、免疫療法を受けていただく事ができます。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">他の治療との併用は可能ですか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>問題ありません。他の代替治療（例：サプリメント、食事療法、その他の免疫療法）との併用は可能です。<br>また、念のため「おくすり手帳」をご持参ください。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">化学療法（抗がん剤）や放射線療法との併用は可能ですか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>可能です。但し、点滴の抗がん剤投与前後は2～3日空けてからの免疫細胞療法施行となります。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">がんが転移していますが効果はありますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>もちろん期待できます。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">再発予防にと考えていますがどうですか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>有効性は高いと考えられます。最近は再発の予防を目的として受ける方が非常に増えてきています。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">がんと診断された場合、どの時期より免疫療法を開始すればよいのでしょうか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>勿論、診断いただいた時期より免疫療法を開始されるのが望ましいと思います。又、他の治療で効果が確認できないと気づかれた時期に免疫療法を開始されるのもよいと思います。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">免疫療法の効果はどれくらい続きますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>個人差が大きいところではありますが、当院が把握している研究報告から申し上げますと、まとまった治療を行い免疫力が高まった状態は約6ヵ月間無治療でいると、元の状態に戻ってしまうという研究報告があります。早い人は3～5ヵ月で戻ってしまう方もお見えになります。したがい、治療で安定した状態にある方でも、3～6ヵ月毎の治療をお勧めいたします。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">この治療を国は認めていますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>認めています。<br>当院は、再生医療等安全性確保法(平成26年11月25日施行)に基づき既に 厚生労働省へ細胞培養加工施設（平成27年1月16日　No.FC4140001）の届出が済んでおり、認定再生医療等委員会（平成27年2月20日　No.NB4140001）を設置して、当院で行う全ての免疫療法の提供計画（活性NK細胞療法　平成27年6月2日　PC4150005、新樹状細胞ワクチン療法　平成27年6月2日　PC4150006、ガンマデルタT細胞療法　平成27年6月2日　PC4150007、活性T細胞療法　平成27年6月2日　PC4150008）の届出が済み受理されました。当院は再生医療を迅速かつ安全に受けられる医療機関です。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="listSection sec02">
+						<div class="pageSecTtlSub gothic">
+							<h2>採血・投与について</h2>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">採血・培養スケジュールはどうなっているのですか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>選択されます治療法により採血量は異なりますが、採取しました血液を専用の培養施設にて増殖・活性化させ、約2週間後に投与いたします。標準的には2週間ごとに採血・投与を行うスケジュールになります。これを6回繰り返し、1クールとなります。又、患者さんの年齢・病状経過により約1週間ごとの採血・投与を行う集中的なスケジュールを患者さんとご相談の上、選択する場合もございます。 各治療法の組み合わせ、選択につきましても、患者さん・ご家族様とご相談の上選択をさせていただいております。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">リンパ球の凍結保存について</span></dt>
+								<dd>
+									<div class="txt">
+										<p>抗がん剤と併用治療される場合、抗がん剤を受けられる前のリンパ球を凍結保存し、その都度培養に使用することも可能です。<br>リンパ球は、元気な免疫細胞を採取して培養するのが良いとされています。抗がん剤治療や放射線治療等による免疫細胞が減少し機能低下するため、その前に凍結保存することがベストです。 凍結は液体窒素タンクで、リンパ球を-196℃に凍結保存します。 毎週温度の調整をし、液体窒素を使用しているため、停電時などでも安全です。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="listSection sec03">
+						<div class="pageSecTtlSub gothic">
+							<h2>費用について</h2>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">健康保険は使えますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>使えません。当院は保険外治療（自由診療）となります。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">医療費控除の対象になりますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>当院の治療は医療費控除の対象となります。<br>※くわしくは最寄りの所轄税務署へお問い合わせください。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">高額医療の対象になりますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>なりません。<br>当院は保険外治療（自由診療）となりますので高額医療の対象にはなりません。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">生命保険（先進医療）の対象になりますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>当院の治療が生命保険（先進医療）の対象になるかどうかの判断は生命保険会社様へお問い合わせ下さい。<br>契約・対象により異なる為、当院パンフレットを生命保険会社様へお渡し頂き、確認をなさってください。<br>※当院から生命保険会社へ確認は行っておりません。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">費用はどれぐらいかかりますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>当院の活性NK細胞療法は1回につき240,000円ですが1クール分の一括前払いではなく治療ごとのお支払いとなっております。</p>
+										<p>名古屋メディカルクリニックでの治療は６回の投与で１クールとさせていただいております。 ただ、当院では１クールまとめて費用を頂くのではなく、培養に入る回数毎で頂きます。</p>
+										<p>治療の間隔は、標準のコースであれば約３か月程度で行いますが、院長との面談内容によっては約１か月半で１クールを行う場合もあります。 また、新樹状細胞ワクチン療法+活性Ｔ細胞療法を組み合わせた治療方法もございます。その場合、費用がプラスで発生致しますので組み合わせた場合の費用も参考にしてください。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">支払方法はどうなりますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>採血時毎にお支払いいただきます。<br>お支払方法は現金、各種カード（クレジット、デビット、銀聯）またはお振込みにてお願いいたします。各種カードでのお支払いは、当院窓口でのお支払いの場合に限らせていただきます。詳細は、来院時にお尋ねください。<br>培養費用は培養開始となりました、その日（採血もしくは凍結解除となった日）に発生致します。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">培養をキャンセルした場合の培養費用はどうなりますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>採血・培養開始後に、治療をキャンセルした場合、すでに培養作業・準備に入っておりますので採血・培養開始後にキャンセルを承りましても、費用のご返金はできかねますので予めご了承ください。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="listSection sec04">
+						<div class="pageSecTtlSub gothic">
+							<h2>初診・相談について</h2>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">初診には必ず行かねばいけませんか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>当院では患者さんと十分な時間をとり、精神的な不安や、心理的な問題点を改善していただき、ご本人の意欲を高める心理治療も大切な治療と考えております。そのため、可能な限り患者さんご本人様に来院していただいております。病状やその他ご都合により患者さんが来院不可能な場合には、家族の方のみの来院相談も可能でございます。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">治療開始までの流れはどうなりますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>当院では完全予約制をとっております。<br>まず、お電話にて初診のご予約をお願いいたします。初診時に問診、採血・培養の詳しいご説明及びに費用のご説明をさせていただきます。その後、治療への同意を頂いた上で治療の開始となります。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">初診時に必要な検査データはありますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>ＣＴ・レントゲンフィルム・検査データ等を、可能な限りご用意ください。中には「担当の先生にはいい難くて…」「嫌な顔をされるのでは…」という方もいらっしゃるとは思いますが、セカンドオピニオンという言葉が定着してきた現在、担当の先生にお話し頂ければ問題なくデータをお借りできると思います。また、お借りできない場合は当院近くの提携医療機関で保険証持参の上、ＣＴ検査が可能です。<br>また、念のため「おくすり手帳」をご持参ください。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">初診時に検査はありますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>一般スクリーニング血液検査及び腫瘍マーカー検査を行っています。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">初診時（治療開始時）に必要なものはありますか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>一般血液検査費用、腫瘍マーカー検査費用、治療管理料は当日必要となります。培養費用に関しましては振込での対応も行っております。初診時の費用に関しましては、現金もしくは各種カードでのお支払いをお願い致します。協力医療機関・外部医療機関を使われる場合は外部医療機関管理料も必要となります。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="listSection sec05">
+						<div class="pageSecTtlSub gothic">
+							<h2>その他</h2>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">現在受診している先生（病院）には説明したほうが良いですか？</span></dt>
+								<dd>
+									<div class="txt">
+										<p>免疫細胞療法は厚生労働省も承認している治療方法ではありますが、未だご理解されていない先生もいらっしゃいますので、必ずしも主治医のご理解を得る必要はありません。<br>当院の治療は現在主治医で行われている治療と併用して頂いても問題ありません。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="faqBox">
+							<dl class="accord">
+								<dt><em class="futura">Q</em><span class="gothic">混合診療について</span></dt>
+								<dd>
+									<div class="txt">
+										<p>一つの病気に対して、同一の医療機関にて保険診療と自費診療の双方を行うことを禁じています。<br>しかし、保険診療の医療機関と自費診療（名古屋メディカルクリニック等）の医療機関の2つの医療機関を受診・治療を行うことで、合法的に三大治療（手術・抗がん剤・放射線）と自由診療（免疫細胞療法等）を受けて頂くことができます。 主治医の先生や、現在受診されている病院から、「保険診療で現在治療しているので、自由診療を行うと保険診療ができなくなります。」ということを聞かれている場合もありますが、 自由診療の治療を別の医療機関で行うことであれば問題はありません。<br>※大学病院・がんセンター・大病院などで実施されている先進医療は別途法律にて混合診療を一部認めています。</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+<?php get_footer(); ?>

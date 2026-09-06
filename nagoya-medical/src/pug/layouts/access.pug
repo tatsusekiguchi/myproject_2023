@@ -1,0 +1,73 @@
+// ▽メイン▽
+main#access.main
+    .pageKvPanel
+        .pageKvTitle
+            h1 交通のご案内
+    .mainContainer
+        .secWrap01
+            .pageSecTtl
+                p.secTtl 交通のご案内
+                p.futura Access
+            .topSection
+                .topTitle.gothic
+                    h2 名古屋メディカルクリニック
+                .secBox
+                    .mapBox
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3262.5433339382544!2d136.898658!3d35.143068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600377520f4b045d%3A0x93c4eb131fb30dbe!2z5YaF6Jek44Oh44OH44Kj44Kr44Or44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sus!4v1675515549500!5m2!1sja!2sus" allow="fullscreen"></iframe>
+                    .txtBox
+                        .pageSecTtlSub.gothic
+                            h3 フロアマップ
+                        .imgMap
+                            img(src=(root_path || '') + "image/access/floor_map.png", alt="")
+                        .txt
+                            p 〒460-0024<br>愛知県名古屋市中区正木4-8-7 れんが橋ビル5階
+            .secListContainer
+                .linkList
+                    ul
+                        li(data-target="sec01")
+                            span 電車・タクシーを<br>ご利用の場合
+                        li(data-target="sec02")
+                            span 飛行機を<br>ご利用の場合
+                        li(data-target="sec03")
+                            span 車を<br>ご利用の場合
+                .sec01.section
+                    .secTtl.gothic
+                        h3 電車・タクシーをご利用の場合
+                    .secBox
+                        .map
+                            img(src=(root_path || '') + "image/access/access_map_01.png", alt="")
+                        .txtBox
+                            .txt
+                                p ●電車をご利用の場合<br>名古屋駅からＪＲ中央線・ＪＲ東海道線または名鉄に乗り換えて頂き、 金山駅で下車、南口から徒歩で３分。
+                                p ●タクシーをご利用の場合<br>名古屋駅からタクシーにて約１０分～１５分。
+                .sec02.section
+                    .secTtl.gothic
+                        h3 飛行機をご利用の場合
+                    .secBox
+                        .map
+                            img(src=(root_path || '') + "image/access/access_map_02.png", alt="")
+                        .txtBox
+                            .txt
+                                p ●中部国際空港をご利用の場合<br>1.名鉄常滑・空港線にて中部国際空港から金山駅へ。<br>2.金山駅より徒歩3分で名古屋メディカルクリニックへ到着いたします。<br>最寄りの高速道路出口からの道順をご案内いたします。<br>詳細は各PDFにてご確認いただけます。<br>当院に専用の駐車場はございません。近くの時間貸駐車場をご利用下さい。
+                                p ●県営名古屋空港をご利用の場合<br>1.あおい交通バスにて県営名古屋空港から名古屋駅へ。<br>2.名古屋駅からタクシーで15分です。<br>3.電車をご利用の際は、JRもしくは名鉄にて名古屋駅より金山駅へお越しください。<br>4.金山駅より徒歩3分で名古屋メディカルクリニックへ到着いたします。
+                .sec03.section
+                    .secTtl.gothic
+                        h3 車をご利用の場合
+                    .txt
+                        p 最寄りの高速道路出口からの道順をご案内いたします。<br>詳細は各PDFにてご確認いただけます。
+                    .pdfList
+                        ul.gothic
+                            li
+                                a(href=(root_path || '') + "image/access/map_higashibetsuin.pdf", target="_blank", rel="noopener") 東別院出口からルート：PDF
+                            li
+                                a(href=(root_path || '') + "image/access/map_shirakawa.pdf", target="_blank", rel="noopener") 白川出口からからルート：PDF
+                            li
+                                a(href=(root_path || '') + "image/access/map_yobitsugi.pdf", target="_blank", rel="noopener") 呼続出口から：PDF
+                .sec04.section
+                    .secTtl.gothic
+                        h3 当院周辺のコインパーキング
+                    .txt
+                        p 当院に専用の駐車場はございません。近くの時間貸駐車場をご利用下さい。
+                    .parking
+                        img(src=(root_path || '') + "image/access/parking_map.png", alt="")
+// △メイン△

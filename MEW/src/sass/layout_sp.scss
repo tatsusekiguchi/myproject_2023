@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+    TOP
+///////////////////////////////////////////////////////////*/
+#lottiePc {
+  display: none !important;
+}
+#top {
+  .topMvPanel {
+    margin: 0 0 40px;
+    .mvTitle {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 70px 0;
+    }
+    .mvScroll {
+      text-align: center;
+      p {
+        display: inline-block;
+        padding: 0 20px 0 0;
+        font-family: "Helvetica", sans-serif;
+        background: url("../image/top/top_mv_scroll.png") right center no-repeat;
+        background-size: 5px auto;
+      }
+    }
+  }
+  .sectionContainer {
+    padding: 100px 0 150px;
+    .topPanel {
+      margin: 0 0 150px;
+      .secTitle {
+        margin: 0 -15px 60px;
+      }
+      .txt {
+        font-size: 15px;
+      }
+    }
+    .groupPanel {
+      + .groupPanel {
+        margin: 120px 0 0;
+      }
+      .titleBox {
+        margin: 0 0 30px;
+        .title {
+          margin: 0 10px 0 0;
+          span {
+            font-size: 14px;
+          }
+          em {
+            font-size: 60px;
+          }
+        }
+        .icon {
+          width: 80px;
+        }
+      }
+      .groupBox {
+        padding: 0 15px;
+        .mv {
+          margin: 0 0 20px;
+        }
+        .intro {
+          position: static;
+          display: block;
+          width: 100%;
+          height: auto;
+          z-index: 1;
+          opacity: 1;
+          dl {
+            dt {
+              margin: 0 0 10px;
+              font-size: 24px;
+            }
+            dd {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    .groupPanel {
+      &:nth-child(even) {
+        > .secWrap {
+          overflow: hidden;
+        }
+        .titleBox {
+          float: right;
+        }
+      }
+    }
+  }
+  .listContainer {
+    padding: 80px 0 120px;
+    h2 {
+      margin: 0 0 60px;
+      font-size: 28px;
+    }
+    .listBox {
+      max-width: 350px;
+      margin: 0 auto 120px;
+      ol {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -40px 0 0 -20px;
+        li {
+          width: calc((100% / 2) - 20px);
+          margin: 40px 0 0 20px;
+          .num {
+            top: -30px;
+            right: -25px;
+            font-size: 68px;
+          }
+          .box {
+            .inner {
+              height: 70px;
+              padding: 15px;
+            }
+            .icon {
+              width: 37px;
+              margin: 0 10px 0 0;
+            }
+            p {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      + p {
+        margin: 0 0 40px;
+        font-size: 20px;
+      }
+    }
+    .btnVote {
+      max-width: 350px;
+      a {
+        padding: 20px 20px;
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,531 @@
+a img:hover {
+  opacity: 0.7; }
+
+#tab1 p {
+  text-align: center;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #1A3D81; }
+  #tab1 p span {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #000000; }
+#tab1 .tab1_sptxt01 {
+  color: #973232;
+  font-size: 5vw;
+  padding: 10px 0 0 0;
+  margin: 0; }
+#tab1 .tab1_sptxt02 {
+  color: #606060;
+  font-size: 5vw;
+  padding: 0;
+  margin: 0; }
+#tab1 .tab1_spimg01 {
+  width: 100%;
+  background-color: #C6D6ef; }
+  #tab1 .tab1_spimg01 img {
+    display: block;
+    max-width: 640px;
+    margin: 0 auto; }
+#tab1 h1 {
+  display: block;
+  margin: 0px auto 0px auto;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 8vw;
+  font-weight: bold;
+  color: #1A3D81; }
+#tab1 .tab1_pcimg,
+#tab1 .tab1_pr {
+  display: none; }
+
+.sptop_img {
+  width: 100%;
+  background-color: firebrick;
+  padding-top: 0px; }
+  .sptop_img:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .sptop_img .sptop_c {
+    display: inline-block;
+    float: left;
+    width: 45%;
+    padding-left: 10px; }
+    .sptop_img .sptop_c img {
+      display: inline-block;
+      float: right;
+      max-width: 300px;
+      margin: 10px 0px; }
+  .sptop_img .sptop_r {
+    display: inline-block;
+    float: right;
+    width: 45%;
+    padding-right: 10px; }
+    .sptop_img .sptop_r img {
+      display: inline-block;
+      float: left;
+      max-width: 300px;
+      margin: 10px 0px; }
+
+.top_bnr {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto 0px auto; }
+  .top_bnr .top_guide,
+  .top_bnr .top_message {
+    flex-basis: 48%;
+    text-align: center; }
+  .top_bnr .top_guide img,
+  .top_bnr .top_message img {
+    margin: 0px;
+    max-width: 290px; }
+
+.therapy_txt {
+  display: none; }
+
+.therapy {
+  clear: both; }
+  .therapy h2 {
+    margin: 0;
+    padding: 0; }
+    .therapy h2 a {
+      display: block;
+      margin: 10px 10px;
+      padding: 10px 10px 10px 35px;
+      border: 1px solid #1A3D81;
+      border-bottom: 5px solid #00194C;
+      border-radius: 8px;
+      background-color: #1A3D81;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.1s; }
+      .therapy h2 a:hover {
+        text-decoration: underline; }
+      .therapy h2 a:active {
+        -ms-transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+        border-bottom: 1px solid #1A3D81; }
+
+#time table {
+  margin: 0 auto; }
+  #time table thead tr {
+    background-color: #d3d3d3; }
+    #time table thead tr th {
+      background-color: #b0c4de;
+      text-align: center; }
+      @media screen and (min-width: 981px), print {
+        #time table thead tr th {
+          padding: 10px 15px; } }
+      @media screen and (max-width: 980px) {
+        #time table thead tr th {
+          padding: 5px 5px; } }
+      @media screen and (min-width: 981px), print {
+        #time table thead tr th:first-child {
+          width: 130px; } }
+      @media screen and (max-width: 980px) {
+        #time table thead tr th:first-child {
+          width: 110px; } }
+
+#time table tbody tr {
+  background-color: #E6F1FF;
+  text-align: center;
+  height: 50px; }
+
+#time p:nth-child(1) {
+  display: block;
+  margin: 0px auto 0px auto;
+  padding: 5px 0px;
+  text-align: center;
+  letter-spacing: 20px;
+  color: cornflowerblue;
+  font-weight: bold; }
+  @media screen and (min-width: 981px), print {
+    #time p:nth-child(1) {
+      width: 500px; } }
+
+#time p:nth-child(3) {
+  display: block;
+  margin: 10px auto 10px auto;
+  color: firebrick; }
+  @media screen and (min-width: 981px), print {
+    #time p:nth-child(3) {
+      width: 500px; } }
+
+#time p:nth-child(4) {
+  display: block;
+  margin: 0px auto 0px auto;
+  text-align: right; }
+  @media screen and (min-width: 981px), print {
+    #time p:nth-child(4) {
+      width: 500px; } }
+
+#time p:nth-child(5) {
+  display: block;
+  margin: 0px auto 0px auto;
+  text-align: right; }
+  @media screen and (min-width: 981px), print {
+    #time p:nth-child(5) {
+      width: 500px; } }
+
+.cpc {
+  clear: both;
+  padding: 10px 0px; }
+  .cpc .center_ttl,
+  .cpc .center_img {
+    display: none; }
+  .cpc .center_ttl_sp {
+    max-width: 640px;
+    display: block;
+    margin: 0 auto; }
+  .cpc .center_img_sp {
+    max-width: 640px;
+    display: block;
+    margin: 0 auto; }
+  .cpc .cpc_text {
+    display: block;
+    margin: 0px auto;
+    padding: 0 0 10px 0;
+    max-width: 640px;
+    background-color: #E6F1FF;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 28px; }
+    .cpc .cpc_text:after {
+      content: "";
+      clear: both;
+      display: block; }
+    .cpc .cpc_text p {
+      padding: 0px 10px 10px 10px; }
+      .cpc .cpc_text p:nth-child(2) {
+        text-align: center; }
+    .cpc .cpc_text .cpc_button a {
+      display: inline-block;
+      margin: 0px auto;
+      padding: 10px 20px 10px 20px;
+      border: 1px solid #1A3D81;
+      border-bottom: 5px solid #00194C;
+      border-radius: 20px;
+      background-color: #1A3D81;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.1s; }
+      .cpc .cpc_text .cpc_button a:hover {
+        text-decoration: underline; }
+      .cpc .cpc_text .cpc_button a:active {
+        -ms-transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+        border-bottom: none; }
+
+.policy {
+  clear: both;
+  margin: 0px 10px; }
+  .policy p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 28px;
+    margin-bottom: 20px; }
+    .policy p:nth-child(4) {
+      margin: 5px 0px 15px 0px;
+      color: #00194C; }
+
+.cancer_ttl {
+  display: none; }
+
+.cancer_ttl_sp {
+  max-width: 640px;
+  display: block;
+  margin: 50px auto 20px auto; }
+
+.cancer_img {
+  display: none; }
+
+#point {
+  background-image: url(../images/index-point-bg.png);
+  background-size: cover;
+  padding: 50px 0px; }
+  #point .point {
+    max-width: 980px;
+    display: block;
+    margin: 0 auto; }
+    #point .point p {
+      padding: 0 20px; }
+      #point .point p a {
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: none; }
+        #point .point p a:hover {
+          text-decoration: underline; }
+    #point .point ul {
+      color: #fff;
+      list-style: none;
+      padding: 0px; }
+      #point .point ul li {
+        float: left;
+        clear: both;
+        margin: 10px 0px 0px 20px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        line-height: 25px;
+        padding: 0px 20px 0px 20px; }
+        #point .point ul li a {
+          color: #fff;
+          text-decoration: none;
+          position: relative; }
+          #point .point ul li a:before {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: #ffffff;
+            border-radius: 100%;
+            top: .200em;
+            left: -1.200em; }
+          #point .point ul li a:after {
+            position: absolute;
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            width: 3px;
+            height: 3px;
+            border: 4px solid transparent;
+            border-left: 7px solid #1A3D81;
+            top: .450em;
+            left: -.900em; }
+          #point .point ul li a:hover {
+            text-decoration: underline; }
+  #point:after {
+    content: "";
+    clear: both;
+    display: block; }
+
+#immunity_therapy {
+  margin: 0px 10px; }
+  #immunity_therapy h2 {
+    overflow: hidden;
+    text-align: center; }
+    #immunity_therapy h2 span {
+      display: inline-block;
+      padding: 0 0.5em;
+      color: #1A3D81;
+      position: relative;
+      font-size: 20px; }
+      #immunity_therapy h2 span:after, #immunity_therapy h2 span:before {
+        border-top: 2px solid #1A3D81;
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 99em; }
+      #immunity_therapy h2 span:before {
+        right: 100%; }
+      #immunity_therapy h2 span:after {
+        left: 100%; }
+
+.content_txt {
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: justify;
+  line-height: 28px;
+  margin-bottom: 40px; }
+
+.immunity_image {
+  display: block;
+  margin: 0px auto 40px auto;
+  max-width: 750px;
+  border: 1px solid #1A3D81; }
+
+.nk_img {
+  display: block;
+  max-width: 337px;
+  margin: 0px auto; }
+
+.nkmovieright {
+  width: 320px;
+  display: block;
+  margin: 0 auto; }
+  .nkmovieright iframe {
+    width: 320px;
+    height: 255px; }
+  .nkmovieright p {
+    text-align: center;
+    font-size: 0.8em;
+    width: 320px; }
+    .nkmovieright p a {
+      font-size: 14px;
+      position: relative;
+      text-decoration: none;
+      color: #1A3D81; }
+      .nkmovieright p a:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #1A3D81;
+        border-radius: 100%;
+        top: .200em;
+        left: -1.500em; }
+      .nkmovieright p a:after {
+        position: absolute;
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 4px solid transparent;
+        border-left: 7px solid #ffffff;
+        top: .490em;
+        left: -1.100em; }
+      .nkmovieright p a:hover {
+        text-decoration: underline; }
+
+#column .column_banner {
+  display: none; }
+#column .column_banner_sp {
+  clear: both;
+  max-width: 640px;
+  display: block;
+  margin: 0px; }
+
+#pr {
+  background-color: #E6F1FF;
+  padding: 0 10px; }
+  #pr .banner_left,
+  #pr .banner_right,
+  #pr .banner_movie,
+  #pr .banner_pamphlet {
+    display: none; }
+  #pr .banner_left_sp,
+  #pr .banner_right_sp,
+  #pr .banner_movie_sp {
+    display: none; }
+  #pr .banner_pamphlet_sp {
+    clear: both;
+    max-width: 640px;
+    display: block;
+    margin: 20px auto; }
+
+#news {
+  background-image: linear-gradient(-45deg, #E6F1FF 25%, #f4f8ff 25%, #f4f8ff 50%, #E6F1FF 50%, #E6F1FF 75%, #f4f8ff 75%, #f4f8ff);
+  background-size: 10px 10px;
+  margin: 0px auto;
+  padding: 40px 10px; }
+  #news:after {
+    content: "";
+    clear: both;
+    display: block; }
+
+.whatnew {
+  background-color: #ffffff;
+  margin: 0px auto;
+  max-width: 580px;
+  position: relative; }
+  .whatnew p {
+    font-size: 24px;
+    display: block;
+    color: #1A3D81;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px; }
+    .whatnew p:nth-child(3) {
+      font-size: 16px; }
+      .whatnew p:nth-child(3) a {
+        padding-left: 20px;
+        color: #1A3D81;
+        text-decoration: none;
+        position: relative; }
+        .whatnew p:nth-child(3) a:before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 16px;
+          height: 16px;
+          background-color: #1A3D81;
+          border-radius: 100%;
+          top: .200em;
+          left: .000em; }
+        .whatnew p:nth-child(3) a:after {
+          position: absolute;
+          content: "";
+          display: block;
+          box-sizing: border-box;
+          width: 3px;
+          height: 3px;
+          border: 4px solid transparent;
+          border-left: 7px solid #ffffff;
+          top: .450em;
+          left: .350em; }
+        .whatnew p:nth-child(3) a:hover {
+          text-decoration: underline; }
+  .whatnew ul {
+    display: block;
+    margin: 0px 10px;
+    list-style: none;
+    padding: 0px 0px 20px 0px; }
+  .whatnew li {
+    line-height: 30px;
+    padding: 5px 0px;
+    border-bottom: 1px solid #CED8F6; }
+    .whatnew li:first-child {
+      border-top: 1px solid #CED8F6; }
+
+.banner_saisei,
+.banner_book {
+  display: none; }
+
+.banner_saisei_sp,
+.banner_book_sp,
+.health_bnr_sp {
+  display: block;
+  max-width: 580px;
+  margin: 20px auto; }
+
+.holiday {
+  border: 2px solid #973232;
+  font-size: 1.5em;
+  padding: 1%;
+  font-weight: bold;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  color: #1A3D81; }
+  .holiday table {
+    background-color: #0c336d; }
+  .holiday table tr th {
+    width: 100px;
+    background-color: white; }
+
+.holidayb {
+  font-size: 1.5em;
+  padding-bottom: 0px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #973232; }
+
+.holidaybb {
+  font-size: 1.5em;
+  padding-bottom: 0px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #973232; }
+
+.topnews {
+  border: 1px solid #1A3D81;
+  border-radius: 5px;
+  color: #1A3D81;
+  margin: 10px;
+  padding: 5px;
+  line-height: 30px;
+  text-align: justify; }
+
+/*# sourceMappingURL=top_sp.css.map */

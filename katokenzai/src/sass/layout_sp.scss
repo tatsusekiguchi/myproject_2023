@@ -1,0 +1,1040 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain {
+  .mvPanel {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 150%;
+    .mvMovie {
+      &--pc {
+        display: none;
+      }
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .topTitlePanel {
+    padding: 60px 0;
+    h1 {
+      font-size: 23px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .topNavContainer {
+    padding: 0 0 60px;
+    &::before {
+      top: 160px;
+      height: 440px;
+    }
+    .linkBox {
+      max-width: 320px;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      + .linkBox {
+        margin: 50px auto 0;
+      }
+      .inner {
+        min-height: 200px;
+        padding: 0 20px;
+      }
+      .ttlBox {
+        color: #ffffff;
+        p {
+          font-size: 26px;
+        }
+        h2 {
+          font-size: 14px;
+        }
+      }
+      .btnMore {
+        bottom: 20px;
+        width: 120px;
+      }
+      .btnMore01,
+      .btnMore04 {
+        right: 0;
+      }
+      .btnMore02 {
+        left: 0;
+      }
+      .btnMore03 {
+        right: 0;
+        bottom: 0;
+      }
+      &.linkBox01 {
+        background: url("../image/top/top_nav_img_01_sp.png") no-repeat;
+        background-size: 100% auto;
+      }
+      &.linkBox02 {
+        position: relative;
+        left: 0;
+        background: url("../image/top/top_nav_img_02_sp.png") no-repeat;
+        background-size: 100% auto;
+      }
+      &.linkBox03 {
+        max-width: 320px;
+        height: auto;
+        margin: 50px auto 0;
+        background: url("../image/top/top_nav_img_03_sp.png") no-repeat;
+        background-size: 100% auto;
+        .inner {
+          min-height: 120px;
+        }
+      }
+      &.linkBox04 {
+        background: url("../image/top/top_nav_img_04_sp.png") no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .subNavContainer {
+    padding: 60px 0;
+    ul {
+      max-width: 320px;
+      margin: 0 auto;
+      li {
+        + li {
+          margin: 30px 0 0;
+        }
+        .ttl {
+          height: 150px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+#businessMain {
+  .pageKvPanel {
+    background: url("../image/business/business_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .topTitlePanel {
+    padding: 60px 0 80px;
+    h2 {
+      margin: 0 0 20px;
+      font-size: 23px;
+    }
+    .txt {
+      font-size: 13px;
+    }
+    .pageLinkBox {
+      margin: 30px 0 0;
+      ul {
+        max-width: 600px;
+        margin: 0 auto;
+        li {
+          + li {
+            margin: 50px 0 0;
+          }
+          .ttl {
+            height: 150px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .section {
+    padding: 0 0 80px;
+    .mv {
+      height: 200px;
+      margin: 0 0 50px;
+      .mvTitle {
+        p {
+          margin: 0 0 10px;
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+    .secPanel {
+      .txtBox {
+        padding: 0 0 40px;
+        .txt {
+          text-align: center;
+        }
+        .list {
+          max-width: 400px;
+          margin: 40px auto 0;
+        }
+        .single {
+          max-width: 80px;
+        }
+      }
+      .photo {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+  #section01 {
+    .mv {
+      background: url("../image/business/business_mv_01_sp.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  #section02 {
+    .mv {
+      background: url("../image/business/business_mv_02_sp.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  #section03 {
+    .mv {
+      background: url("../image/business/business_mv_03_sp.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	features
+///////////////////////////////////////////////////////////*/
+#featuresMain {
+  .pageKvPanel {
+    background: url("../image/features/features_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .topTitlePanel {
+    padding: 60px 0;
+    h2 {
+      font-size: 23px;
+    }
+  }
+  .section {
+    + .section {
+      margin: 20px 0 0;
+    }
+    .secWrap01 {
+      padding: 0;
+    }
+    .secPanel {
+      height: 400px;
+      .txtBox {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          width: 85%;
+        }
+        .ttl01 {
+          max-width: 410px;
+        }
+        .ttl02 {
+          max-width: 440px;
+        }
+        .ttl03 {
+          max-width: 400px;
+        }
+        .ttl04 {
+          max-width: 440px;
+        }
+        .ttl05 {
+          max-width: 420px;
+        }
+        .txt {
+          margin: 10px 0 0;
+          padding: 0 25px;
+          font-size: 14px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      .secPanel {
+        align-items: flex-end;
+        .txtBox {
+          align-items: flex-end;
+          .txt {
+            padding: 0 25px 0 40px;
+          }
+        }
+      }
+    }
+  }
+  #section01 {
+    background: url("../image/features/features_mv_01_sp.png") no-repeat;
+    background-size: cover;
+  }
+  #section02 {
+    background: url("../image/features/features_mv_02_sp.png") no-repeat;
+    background-size: cover;
+  }
+  #section03 {
+    background: url("../image/features/features_mv_03_sp.png") no-repeat;
+    background-size: cover;
+  }
+  #section04 {
+    background: url("../image/features/features_mv_04_sp.png") no-repeat;
+    background-size: cover;
+  }
+  #section05 {
+    background: url("../image/features/features_mv_05_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .chartSection {
+    padding: 60px 0;
+    .txt {
+      margin: 0 0 40px;
+      font-size: 14px;
+    }
+    .chart {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	achievements
+///////////////////////////////////////////////////////////*/
+#achievementsMain {
+  .pageKvPanel {
+    background: url("../image/achievements/achievements_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .topTitlePanel {
+    padding: 60px 0 80px;
+    h2 {
+      margin: 0 0 20px;
+      font-size: 23px;
+    }
+    .txt {
+      font-size: 13px;
+    }
+    .secBoxList {
+      max-width: 300px;
+      margin: 40px auto 0;
+    }
+    .secBox {
+      + .secBox {
+        margin: 40px 0 0;
+      }
+      .ttl {
+        margin: 0 0 15px;
+      }
+      .countList {
+        .countBox {
+          dl {
+            dt {
+              font-size: 18px;
+            }
+            dd {
+              font-size: 18px;
+              em {
+                font-size: 70px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .caseSection {
+    padding: 60px 0;
+    h2 {
+      margin: 0 0 30px;
+      font-size: 23px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#companyMain {
+  .pageKvPanel {
+    background: url("../image/company/company_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .companyLinkContainer {
+    padding: 100px 0 150px;
+    .secBox {
+      max-width: 600px;
+      + .secBox {
+        margin: 60px auto 0;
+      }
+      .img {
+        max-width: 600px;
+      }
+      .btnMore {
+        right: 0;
+        bottom: 40px;
+        width: 40%;
+        max-width: 250px;
+        min-width: 150px;
+      }
+    }
+  }
+}
+/*////////////////////////////////////////////////////////////
+	message
+///////////////////////////////////////////////////////////*/
+#messageMain {
+  .pageKvPanel {
+    background: url("../image/message/message_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .topContainer {
+    margin: 100px 0 0;
+    &::before {
+      top: 20px;
+      width: calc(100% - 25px);
+    }
+    .secWrap01 {
+      padding: 0 25px 0 0;
+    }
+    .img {
+      max-width: 600px;
+    }
+    dl {
+      right: 0;
+      bottom: 30px;
+      width: 250px;
+      dt {
+        margin: 0 15px 0 0;
+        font-size: 14px;
+      }
+      dd {
+        font-size: 24px;
+      }
+    }
+  }
+  .message01 {
+    padding: 60px 0;
+    p {
+      font-size: 20px;
+    }
+  }
+  .videoPanel {
+    margin: 0 0 60px;
+    .videoThumbnail {
+      max-width: 600px;
+    }
+  }
+  .introContainer {
+    padding: 0 25px;
+  }
+  .introPanel {
+    + .introPanel {
+      margin: 50px 0 0;
+    }
+    .txtBox {
+      padding: 20px 0 0;
+      .txt {
+        max-width: 600px;
+      }
+    }
+  }
+  .message02 {
+    padding: 80px 0 100px;
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	profile
+///////////////////////////////////////////////////////////*/
+#profileMain {
+  .pageKvPanel {
+    background: url("../image/profile/profile_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .profileContainer {
+    padding: 60px 0 100px;
+    .section {
+      + .section {
+        margin: 60px 0 0;
+      }
+    }
+    .title {
+      max-width: 600px;
+      margin: 0 0 20px;
+    }
+    .infoBox {
+      font-size: 14px;
+      dl {
+        display: block;
+        + dl {
+          margin: 10px 0 0;
+        }
+        dt {
+          width: 100%;
+          text-align: left;
+        }
+        dd {
+          width: 100%;
+        }
+      }
+    }
+    .infoBox03 {
+      max-width: 100%;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+#recruitMain {
+  .pageKvPanel {
+    background: url("../image/recruit/recruit_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .recruitLinkContainer {
+    padding: 60px 0;
+    .secBox {
+      max-width: 600px;
+      + .secBox {
+        margin: 60px auto 0;
+      }
+      .img {
+        max-width: 600px;
+      }
+      .btnMore {
+        right: 0;
+        bottom: 40px;
+        width: 40%;
+        max-width: 250px;
+        min-width: 150px;
+      }
+    }
+  }
+  .subNavContainer {
+    padding: 0 0 60px;
+    ul {
+      max-width: 400px;
+      .ttl {
+        height: 150px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruitmessage
+///////////////////////////////////////////////////////////*/
+#recruitmessageMain {
+  .pageKvPanel {
+    background: url("../image/recruitmessage/recruitmessage_kv_sp.png")
+      no-repeat;
+    background-size: cover;
+  }
+  .topContainer {
+    padding: 60px 0 40px;
+    .topTitleBox {
+      max-width: 100%;
+      margin: 0 auto 50px;
+      .topTitle {
+        max-width: 580px;
+      }
+    }
+    .secBox {
+      .txtBox {
+        h2 {
+          margin: 0 0 20px;
+          font-size: 22px;
+          em {
+            color: #f24193;
+          }
+        }
+      }
+      .slash {
+        padding: 0;
+        text-align: right;
+        img {
+          display: inline-block;
+          max-width: 480px;
+        }
+      }
+    }
+  }
+  .videoPanel {
+    margin: 0 0 60px;
+    .videoThumbnail {
+      max-width: 600px;
+    }
+  }
+  .section01 {
+    padding: 60px 0;
+    h2 {
+      margin: 0 0 20px;
+      font-size: 23px;
+    }
+    .topTxt {
+      margin: 0 0 20px;
+    }
+    .chart {
+      max-width: 380px;
+      margin: 0 auto 50px;
+    }
+    .flowBox {
+      + .flowBox {
+        margin: 30px 0 0;
+      }
+      &:nth-child(1) {
+        border-bottom: none;
+        dl {
+          dt {
+            border-bottom: 2px solid #f36c3b;
+          }
+        }
+      }
+      &:nth-child(2) {
+        border-bottom: none;
+        dl {
+          dt {
+            border-bottom: 2px solid #f24193;
+          }
+        }
+      }
+      &:nth-child(3) {
+        border-bottom: none;
+        dl {
+          dt {
+            border-bottom: 2px solid #a33fa3;
+          }
+        }
+      }
+      &:nth-child(4) {
+        border-bottom: none;
+        dl {
+          dt {
+            border-bottom: 2px solid #5776c2;
+          }
+        }
+      }
+      &:nth-child(5) {
+        border-bottom: none;
+        dl {
+          dt {
+            border-bottom: 2px solid #69cdb9;
+          }
+        }
+      }
+      &:nth-child(6) {
+        border-bottom: none;
+        dl {
+          dt {
+            border-bottom: 2px solid #e0bd52;
+          }
+        }
+      }
+      dl {
+        dt {
+          margin: 0 0 10px;
+          span {
+            margin: 0 20px 0 0;
+            font-size: 30px;
+          }
+          em {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	member
+///////////////////////////////////////////////////////////*/
+#memberMain {
+  .pageKvPanel {
+    background: url("../image/member/member_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .pageLinkContainer {
+    padding: 60px 0 40px;
+    .pageLinkBox {
+      ul {
+        max-width: 450px;
+        margin: 0 auto;
+        li + li {
+          margin: 20px 0 0;
+        }
+        .nameBox {
+          top: -30px;
+          max-width: 250px;
+
+          dl {
+            padding: 0 10px;
+            dt {
+              margin: 0 15px 0 0;
+              font-size: 13px;
+            }
+            dd {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            width: calc((100% / 2) - 30px);
+          }
+          .photo {
+            position: relative;
+            height: 297px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section {
+    padding: 80px 0 0;
+  }
+  .mvContainer {
+    .secWrap01 {
+      padding: 0;
+    }
+    .mvPanel {
+      position: relative;
+      margin: 0 auto 60px;
+      background: none;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: url("../image/member/member_staff_mv_bg.png") left bottom
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .mv {
+        position: relative;
+        top: -30px;
+        left: 0;
+        padding: 0 25px 0 0;
+      }
+      .num {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        font-size: 90px;
+      }
+      .nameBox {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 250px;
+        padding: 15px 10px;
+        dl {
+          dt {
+            margin: 0 15px 0 0;
+            font-size: 13px;
+          }
+          dd {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .videoPanel {
+    margin: 0 0 60px;
+    .videoThumbnail {
+      max-width: 600px;
+    }
+  }
+  .message {
+    padding: 0 0 60px;
+    p {
+      font-size: 20px;
+    }
+  }
+  .introPanel {
+    + .introPanel {
+      margin: 50px 0 0;
+    }
+    .txtBox {
+      padding: 20px 25px 0;
+      .txt {
+        max-width: 600px;
+      }
+    }
+  }
+  .flowContainer {
+    margin: 80px 0 0;
+    padding: 0 0 60px;
+    .title {
+      top: -20px;
+      max-width: 300px;
+    }
+    .photoList {
+      padding: 20px 0 0;
+      ul {
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 0 0 30px 30px;
+        background: url("../image/member/member_flow_arrow_sp.png") left top
+          20px no-repeat;
+        background-size: 20px auto;
+        li {
+          display: flex;
+          justify-content: space-between;
+          + li {
+            margin: 30px 0 0;
+          }
+        }
+        .photo {
+          width: 100px;
+        }
+        dl {
+          width: calc(100% - 120px);
+          dt {
+            margin: 0 0 10px;
+            font-size: 34px;
+          }
+          dd {
+            font-size: 12px;
+            line-height: 1.5;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	requirements
+///////////////////////////////////////////////////////////*/
+#requirementsMain {
+  .pageKvPanel {
+    background: url("../image/requirements/requirements_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .requirementsSection {
+    padding: 60px 0 200px;
+    .secPanel {
+      + .secPanel {
+        margin: 40px 0 0;
+      }
+      .accordHead {
+        padding: 10px 20px;
+        .title {
+          width: calc(100% - 30px);
+          font-size: 18px;
+        }
+        .arrow {
+          width: 15px;
+        }
+      }
+      .accordBody {
+        padding: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain {
+  .pageKvPanel {
+    background: url("../image/contact/contact_kv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .formContainer {
+    padding: 60px 0;
+    .topTxt {
+      margin: 0 0 40px;
+      font-size: 18px;
+    }
+  }
+  .itemContainer {
+    padding: 50px 0;
+    .itemList {
+      max-width: 400px;
+    }
+    .itemBox {
+      + .itemBox {
+        margin: 40px 0 0;
+      }
+      dl {
+        dt {
+          width: 110px;
+          font-size: 10px;
+          padding: 0 0 0 30px;
+        }
+        dd {
+          width: calc(100% - 120px);
+        }
+      }
+    }
+    .tel {
+      dl {
+        dt {
+          background: url("../image/contact/contact_icon_tel.png") left center
+            no-repeat;
+          background-size: 26px auto;
+        }
+      }
+      a {
+        font-size: 20px;
+      }
+    }
+    .mail {
+      dl {
+        dt {
+          background: url("../image/contact/contact_icon_mail.png") left center
+            no-repeat;
+          background-size: 28px auto;
+        }
+      }
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  form > dl {
+    font-size: 12px;
+  }
+  .radioForm {
+    display: flex;
+    dt {
+      width: 85px;
+    }
+    dd {
+      width: calc(100% - 85px);
+    }
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .birthBox {
+    padding: 0 10px;
+    ul {
+      li {
+        width: 70px;
+        + li {
+          padding: 0 0 0 15px;
+        }
+      }
+    }
+    input {
+      height: 30px;
+      padding: 0 5px;
+    }
+  }
+  .checkItem {
+    margin: 0 0 40px;
+    span {
+      padding-left: 20px;
+    }
+  }
+  form .mwform-radio-field {
+    display: block;
+    + .mwform-radio-field {
+      margin: 10px 0 0;
+    }
+  }
+  .privacy {
+    max-width: 205px;
+    margin: 35px auto 20px;
+    .agreeBox {
+      height: 80px;
+      padding: 10px;
+      font-size: 10px;
+    }
+    .box {
+      + .box {
+        margin: 5px 0 0;
+      }
+    }
+  }
+}
+
+#contactConfirm,
+#contactComplete {
+  #section__contact {
+    padding: 90px 0 0;
+    .contactContainer {
+      padding: 40px 0 60px;
+    }
+    .secWrap01 {
+      padding: 0 30px;
+    }
+    .secTitleBox {
+      margin: 0 0 20px;
+      p {
+        margin: 0 0 5px;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+      }
+      h2 {
+        font-size: 18px;
+        letter-spacing: 0.2em;
+      }
+    }
+    .topTxt {
+      margin: 0 0 40px;
+      .txt {
+        letter-spacing: 0;
+      }
+    }
+  }
+  .btnToTop {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,701 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain .mvPanel {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150%;
+}
+#topMain .mvPanel .mvMovie--pc {
+  display: none;
+}
+#topMain .mvPanel video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#topMain .mvPanel h1 {
+  font-size: 0;
+}
+#topMain .mvScroll {
+  display: none;
+  top: -20px;
+  width: 40px;
+  height: 65px;
+}
+#topMain .topTxtPanel {
+  padding: 80px 20px 100px;
+}
+#topMain .sec01 {
+  margin: 0 0 120px;
+}
+#topMain .sec01 .secTitle {
+  margin: 0 auto 15px;
+}
+#topMain .sec01 .secTitle h2 {
+  max-width: 230px;
+}
+#topMain .sec01 .secTitle + p {
+  margin: 0 0 30px;
+  font-size: 23px;
+}
+#topMain .sec01 .secPanel {
+  position: relative;
+}
+#topMain .sec01 .secPanel .txtBox {
+  padding: 0;
+}
+#topMain .sec01 .secPanel .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+#topMain .sec01 .secPanel .photo {
+  padding: 0 20px 0 0;
+}
+#topMain .sec02 {
+  min-height: 0;
+  margin: 0 0 120px;
+}
+#topMain .sec02:after {
+  display: none;
+}
+#topMain .sec02 .secTitle {
+  margin: 0 0 30px;
+  padding: 0 0 15px;
+}
+#topMain .sec02 .secTitle:after {
+  width: 60px;
+  height: 1px;
+}
+#topMain .sec02 .secTitle h2 {
+  max-width: 300px;
+}
+#topMain .sec02 .txtBox dl {
+  margin: 0 0 20px;
+}
+#topMain .sec02 .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 26px;
+}
+#topMain .sec02 .txtBox .btnLink {
+  max-width: 200px;
+}
+#topMain .sec02 .photo {
+  padding: 0 0 0 20px;
+}
+#topMain .linkPanel01 {
+  background: none;
+}
+#topMain .linkPanel01 .inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0 100px;
+}
+#topMain .linkPanel01 ul li + li {
+  margin: 80px 0 0;
+  padding: 0;
+}
+#topMain .linkPanel01 ul li .img {
+  max-width: 880px;
+}
+#topMain .linkPanel01 ul .btnLink {
+  width: 200px;
+}
+#topMain .linkPanel01 ul .btnLink01 {
+  right: 30px;
+}
+#topMain .linkPanel01 ul .btnLink02 {
+  right: 30px;
+}
+#topMain .linkPanel02 {
+  padding: 100px 20px;
+}
+#topMain .linkPanel02 ul {
+  max-width: 590px;
+}
+#topMain .linkPanel02 ul li {
+  min-height: 200px;
+}
+#topMain .linkPanel02 ul li + li {
+  margin: 80px 0 0;
+}
+#topMain .linkPanel02 ul li p {
+  padding: 0 0 15px;
+  font-size: 20px;
+}
+#topMain .linkPanel02 ul li p:after {
+  width: 110px;
+}
+#topMain .linkPanel02 ul .btnLink {
+  bottom: -20px;
+  width: 180px;
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+#strengthMain .pageKvPanel .pageKvTitle img {
+  max-width: 200px;
+}
+#strengthMain .topPanel {
+  padding: 60px 20px;
+}
+#strengthMain .topPanel .message {
+  font-size: 20px;
+}
+#strengthMain .secPanel {
+  padding: 60px 20px 0;
+}
+#strengthMain .secPanel .secTtlBox {
+  margin: 0 0 30px;
+}
+#strengthMain .secPanel .secTtlBox p {
+  font-size: 40px;
+  background: url("../image/common/page_kv_title_line.png") center bottom no-repeat;
+  background-size: 100px auto;
+}
+#strengthMain .secPanel .secTtlBox h2 {
+  font-size: 20px;
+}
+#strengthMain .secPanel .secBox {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#strengthMain .secPanel .secBox .txtBox {
+  width: 100%;
+  max-width: 500px;
+  font-size: 14px;
+  margin: 0 auto 30px;
+}
+#strengthMain .secPanel .secBox .numBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+#strengthMain .secPanel .secBox .numBox .num {
+  width: 180px;
+}
+#strengthMain .secPanel01 {
+  background: url("../image/strength/sec_bg_01_sp.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel02 {
+  background: url("../image/strength/sec_bg_02_sp.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel03 {
+  background: url("../image/strength/sec_bg_03_sp.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel04 {
+  background: url("../image/strength/sec_bg_04_sp.png") center no-repeat;
+  background-size: cover;
+}
+#strengthMain .secPanel05 {
+  background: url("../image/strength/sec_bg_05_sp.png") center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+#businessMain .pageKvPanel .pageKvTitle img {
+  max-width: 200px;
+}
+#businessMain .introContainer {
+  padding: 80px 0 0;
+}
+#businessMain .introContainer .introPanel {
+  padding: 0 20px 50px;
+}
+#businessMain .introContainer .introPanel .title01 {
+  max-width: 600px;
+}
+#businessMain .introContainer .introPanel .title02 {
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+#businessMain .introContainer .introPanel .imgBox {
+  margin: 0 0 50px;
+}
+#businessMain .introContainer .introPanel .txt {
+  font-size: 16px;
+}
+#businessMain .listContainer {
+  padding: 80px 20px;
+}
+#businessMain .listContainer .secTtl {
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+#businessMain .listContainer .listBox {
+  max-width: 470px;
+}
+#businessMain .listContainer .listBox ul {
+  margin: -20px 0 0 -20px;
+}
+#businessMain .listContainer .listBox ul li {
+  width: calc(50% - 20px);
+  margin: 20px 0 0 20px;
+}
+#businessMain .listContainer .listBox ul .photo {
+  height: 180px;
+}
+#businessMain .listContainer .listBox ul .comment {
+  margin: 5px 0 0;
+  font-size: 13px;
+}
+
+/*////////////////////////////////////////////////////////////
+	message
+///////////////////////////////////////////////////////////*/
+#messageMain .pageKvPanel .pageKvTitle img {
+  max-width: 200px;
+}
+#messageMain .messageSection {
+  padding: 0 0 60px;
+}
+#messageMain .messageSection .mvPanel {
+  padding: 60px 0;
+}
+#messageMain .messageSection .mvPanel::before {
+  display: none;
+}
+#messageMain .messageSection .mvPanel .mvBox .nameBox {
+  position: absolute;
+  right: 50px;
+  bottom: -100px;
+  width: 200px;
+  padding: 20px;
+  font-size: 12px;
+}
+#messageMain .messageSection .mvPanel .mvBox .nameBox dl dt {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #ffffff;
+}
+#messageMain .messageSection .mvPanel .mvBox .nameBox dl dt + dd {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+#messageMain .messageSection .messagePanel {
+  margin: 0 0 100px;
+  padding: 80px 20px 100px;
+  background: url("../image/message/panel_bg.png") right -80px bottom no-repeat;
+  background-size: auto 200px;
+}
+#messageMain .messageSection .messagePanel .title01 {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+#messageMain .messageSection .messagePanel .messageBox .title02 {
+  max-width: 310px;
+  margin: 0 0 30px;
+}
+#messageMain .messageSection .messagePanel .messageBox .txt {
+  font-size: 14px;
+}
+#messageMain .messageSection .messagePanel .messageBox .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  #messageMain .messageSection .messagePanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  #messageMain .messageSection .messagePanel .title01 {
+    position: relative;
+    width: 150px;
+    font-size: 50px;
+    writing-mode: vertical-rl;
+  }
+  #messageMain .messageSection .messagePanel .title01::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: 40px;
+    width: 1px;
+    height: 130px;
+    background: #000000;
+  }
+  #messageMain .messageSection .messagePanel .messageBox {
+    width: calc(100% - 220px);
+    padding: 150px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruitment
+///////////////////////////////////////////////////////////*/
+#recruitmentMain .pageKvPanel .pageKvTitle img {
+  max-width: 280px;
+}
+#recruitmentMain .topPanel {
+  padding: 120px 20px 100px;
+}
+#recruitmentMain .topPanel .message {
+  max-width: 350px;
+}
+#recruitmentMain .sec01 {
+  margin: 0 0 80px;
+}
+#recruitmentMain .sec01 .secPanel {
+  position: relative;
+}
+#recruitmentMain .sec01 .secPanel .txtBox {
+  padding: 0 0 40px;
+}
+#recruitmentMain .sec01 .secPanel .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+#recruitmentMain .sec01 .secPanel .photo {
+  position: relative;
+  left: -70px;
+  max-width: 780px;
+  padding: 0 20px 0 0;
+}
+#recruitmentMain .sec02 .secPanel {
+  position: relative;
+}
+#recruitmentMain .sec02 .secPanel .txtBox {
+  padding: 0 0 40px;
+}
+#recruitmentMain .sec02 .secPanel .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+#recruitmentMain .sec02 .secPanel .photo {
+  position: relative;
+  right: -60px;
+  max-width: 780px;
+  padding: 0 0 0 20px;
+}
+#recruitmentMain .bnrPanel {
+  padding: 120px 20px 0;
+}
+#recruitmentMain .bnrPanel a {
+  max-width: 400px;
+}
+#recruitmentMain .gallerySection {
+  padding: 120px 0;
+}
+#recruitmentMain .gallerySection .galleryTitle {
+  max-width: 350px;
+  margin: 0 0 40px;
+  padding: 0 20px;
+}
+#recruitmentMain .gallerySection .galleryPanel {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+#recruitmentMain .gallerySection .imgBlock a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+#recruitmentMain .gallerySection .imgBlock img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#recruitmentMain .gallerySection .imgBlock01 {
+  width: calc(100% - 105px);
+  margin: 0 5px 0 0;
+}
+#recruitmentMain .gallerySection .imgBlock01 a {
+  height: 250px;
+}
+#recruitmentMain .gallerySection .imgBlock02 {
+  width: 100px;
+}
+#recruitmentMain .gallerySection .imgBlock02 ul li + li {
+  margin: 5px 0 0;
+}
+#recruitmentMain .gallerySection .imgBlock02 ul a {
+  width: 100px;
+  height: 80px;
+}
+#recruitmentMain .gallerySection .imgBlock03 {
+  width: calc(50% - 4px);
+  margin: 5px 8px 5px 0;
+}
+#recruitmentMain .gallerySection .imgBlock03 a {
+  height: 200px;
+}
+#recruitmentMain .gallerySection .imgBlock04 {
+  width: calc(50% - 4px);
+  margin: 5px 0;
+}
+#recruitmentMain .gallerySection .imgBlock04 a {
+  height: 200px;
+}
+#recruitmentMain .gallerySection .imgBlock05 {
+  width: calc(50% - 4px);
+  margin: 0 8px 5px 0;
+}
+#recruitmentMain .gallerySection .imgBlock05 a {
+  height: 200px;
+}
+#recruitmentMain .gallerySection .imgBlock06 {
+  width: calc(50% - 4px);
+  margin: 0 0 5px;
+}
+#recruitmentMain .gallerySection .imgBlock06 a {
+  height: 200px;
+}
+#recruitmentMain .gallerySection .imgBlock07 {
+  width: 100px;
+}
+#recruitmentMain .gallerySection .imgBlock07 ul li + li {
+  margin: 5px 0 0;
+}
+#recruitmentMain .gallerySection .imgBlock07 ul a {
+  width: 100px;
+  height: 80px;
+}
+#recruitmentMain .gallerySection .imgBlock08 {
+  width: calc(100% - 105px);
+  margin: 0 0 0 5px;
+}
+#recruitmentMain .gallerySection .imgBlock08 a {
+  height: 250px;
+}
+#recruitmentMain .gallerySection .imgBlock09 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100px;
+  margin: 5px 0 0;
+}
+#recruitmentMain .gallerySection .imgBlock09 a {
+  width: 100px;
+  height: 80px;
+}
+#recruitmentMain .gallerySection .imgBlock10 {
+  width: calc(100% - 105px);
+  margin: 5px 0 0 5px;
+}
+#recruitmentMain .gallerySection .imgBlock10 a {
+  height: 250px;
+}
+#recruitmentMain .gallerySection .imgBlock11 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px 0 0;
+}
+#recruitmentMain .gallerySection .imgBlock11 > a {
+  width: calc(100% - 105px);
+  height: 250px;
+}
+#recruitmentMain .gallerySection .imgBlock11 ul li + li {
+  margin: 5px 0 0;
+}
+#recruitmentMain .gallerySection .imgBlock11 ul a {
+  width: 100px;
+  height: 80px;
+}
+#recruitmentMain .gallerySection .imgBlock12 {
+  width: 100%;
+  margin: 5px 0;
+}
+#recruitmentMain .gallerySection .imgBlock12 ul {
+  display: flex;
+  justify-content: space-between;
+}
+#recruitmentMain .gallerySection .imgBlock12 ul li {
+  width: calc(50% - 4px);
+}
+#recruitmentMain .gallerySection .imgBlock12 ul a {
+  height: 200px;
+}
+#recruitmentMain .gallerySection .imgBlock13 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#recruitmentMain .gallerySection .imgBlock13 > a {
+  width: calc(100% - 105px);
+  height: 250px;
+}
+#recruitmentMain .gallerySection .imgBlock13 ul li + li {
+  margin: 5px 0 0;
+}
+#recruitmentMain .gallerySection .imgBlock13 ul a {
+  width: 100px;
+  height: 80px;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#companyMain .pageKvPanel .pageKvTitle img {
+  max-width: 280px;
+}
+#companyMain .companySection {
+  padding: 40px 20px 80px;
+}
+#companyMain .companySection::before {
+  width: calc(100% - 60px);
+  height: 60px;
+}
+#companyMain .companySection .section {
+  padding: 30px 20px;
+}
+#companyMain .companySection .section + .section {
+  margin: 40px auto 0;
+}
+#companyMain .companySection .section h2 {
+  margin: 0 0 25px;
+  font-size: 20px;
+}
+#companyMain .companySection .section .infoBox {
+  font-size: 16px;
+}
+#companyMain .companySection .section .infoBox dl {
+  display: block;
+}
+#companyMain .companySection .section .infoBox dl dt {
+  width: 100%;
+}
+#companyMain .companySection .section .infoBox dl dd {
+  width: 100%;
+}
+#companyMain .companySection .section .txt {
+  font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain .pageKvPanel .pageKvTitle img {
+  max-width: 200px;
+}
+#contactMain .formContainer {
+  padding: 60px 0;
+}
+#contactMain .formContainer .topTxt {
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox form > dl {
+  font-size: 12px;
+}
+.formBox .radioForm {
+  display: flex;
+}
+.formBox .radioForm dt {
+  width: 85px;
+}
+.formBox .radioForm dd {
+  width: calc(100% - 85px);
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  padding: 0 10px;
+  font-size: 16px;
+}
+.formBox textarea {
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+}
+.formBox .birthBox {
+  padding: 0 10px;
+}
+.formBox .birthBox ul li {
+  width: 70px;
+}
+.formBox .birthBox ul li + li {
+  padding: 0 0 0 15px;
+}
+.formBox .birthBox input {
+  height: 30px;
+  padding: 0 5px;
+}
+.formBox .checkItem {
+  margin: 0 0 40px;
+}
+.formBox .checkItem span {
+  padding-left: 20px;
+}
+.formBox form .mwform-radio-field {
+  display: block;
+}
+.formBox form .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox .privacy {
+  max-width: 205px;
+  margin: 35px auto 20px;
+}
+.formBox .privacy .agreeBox {
+  height: 80px;
+  padding: 10px;
+  font-size: 10px;
+}
+.formBox .privacy .box + .box {
+  margin: 5px 0 0;
+}
+
+#contactConfirm #section__contact,
+#contactComplete #section__contact {
+  padding: 90px 0 0;
+}
+#contactConfirm #section__contact .contactContainer,
+#contactComplete #section__contact .contactContainer {
+  padding: 40px 0 60px;
+}
+#contactConfirm #section__contact .secWrap01,
+#contactComplete #section__contact .secWrap01 {
+  padding: 0 30px;
+}
+#contactConfirm #section__contact .secTitleBox,
+#contactComplete #section__contact .secTitleBox {
+  margin: 0 0 20px;
+}
+#contactConfirm #section__contact .secTitleBox p,
+#contactComplete #section__contact .secTitleBox p {
+  margin: 0 0 5px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+#contactConfirm #section__contact .secTitleBox h2,
+#contactComplete #section__contact .secTitleBox h2 {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+#contactConfirm #section__contact .topTxt,
+#contactComplete #section__contact .topTxt {
+  margin: 0 0 40px;
+}
+#contactConfirm #section__contact .topTxt .txt,
+#contactComplete #section__contact .topTxt .txt {
+  letter-spacing: 0;
+}
+#contactConfirm .btnToTop,
+#contactComplete .btnToTop {
+  font-size: 14px;
+}

@@ -1,0 +1,42 @@
+﻿@charset "UTF-8";
+
+/* ------------------------------------------------------- */
+/*
+/*  _cartexample_.html用のCSS（実際の設置には無関係）
+/*
+/* ------------------------------------------------------- */
+body {margin: 0; padding: 0;}
+div#content {margin: 0 auto; width: 800px;}
+#sp div#content {margin: 0 auto; width: auto;}
+
+div#header {margin: 0; padding: 0; background: #0088CC;}
+div#header h1 {margin: 0 auto; padding: 5px; width: 800px; color: #FFFFFF;}
+div#header h2 {margin: 0 auto; padding: 10px 0; width: 800px; color: #FFFFFF;}
+
+#sp div#header h1 {margin: 0 auto; padding: 5px; width: auto; font-size: 14px; color: #FFFFFF;}
+#sp div#header h2 {margin: 0 auto; padding: 10px 0; width: auto; font-size: 12px; color: #FFFFFF;}
+
+
+div#gnavi {padding: 5px; width: auto; background: #00CCFF; text-align: center;}
+
+dl {margin: 50px 0 100px 0; width: 600px;}
+#sp dl {margin: 50px 0 100px 0; width: auto;}
+dt {margin: 0; padding: 5px; border: 1px solid #DADADD; border-width: 0 0 1px 0; font-weight: bold;}
+dd {margin: 0; padding: 5px; font-size: 11px;}
+dd .code {font-weight: normal; font-size: 11px;}
+dd .detail, dd p.price {margin: 0; padding: 0;}
+dd .price {margin: 5px 0; color: #FF0000;}
+dd .price span.en { font-size: 20px;}
+#sp dd td input.form_submit_sp { margin-left: -3px;}
+
+form {margin: 0;}
+fieldset {margin: 0; padding: 0;border: 0;}
+table {margin: 0;}
+th {vertical-align: top; width:70px; text-align: left;}
+td {vertical-align: top;}
+table.data { width: 300px;}
+td img {border: 1px solid #DDDDDD; border-width: 0 1px 1px 0;}
+td.button {padding-top: 20px; text-align: center;}
+input.submit {margin: 0;}
+
+div#footer {position: fixed; bottom: 0; margin: 0; padding: 0; width: 100%; background: #0088CC; color: #FFFFFF;}

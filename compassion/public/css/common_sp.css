@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    padding: 10px;
+  }
+  .header .logo {
+    max-width: 60px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .menuBtn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  .header .menuBtn .span {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 9999;
+    background: #000000;
+    transition: all .4s;
+  }
+  .header .menuBtn .span:nth-child(1) {
+    top: 0;
+  }
+  .header .menuBtn .span:nth-child(2) {
+    top: 10px;
+  }
+  .header .menuBtn .span:nth-child(3) {
+    top: 20px;
+  }
+  .header .menuBtn.active {
+    width: 30px;
+    height: 30px;
+  }
+  .header .menuBtn.active .span:nth-child(1) {
+    top: 6px;
+    transform: rotate(-45deg);
+  }
+  .header .menuBtn.active .span:nth-child(2) {
+    right: -50%;
+    opacity: 0;
+    animation: active-menu-bar02 1s forwards;
+  }
+  .header .menuBtn.active .span:nth-child(3) {
+    top: 7px;
+    transform: rotate(45deg);
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .navBox .navList .ul {
+    border-top: 1px solid #cccccc;
+  }
+  .navBox .navList .ul > .li {
+    padding: 5px 0;
+    border-bottom: 1px solid #cccccc;
+  }
+  .navBox .navList .ul > .li:nth-child(even) {
+    border-left: 1px solid #cccccc;
+  }
+  .navBox .navList .ul > .li > a {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .navBox .navList .ul > .li > p {
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .contactTel {
+    border-right: 1px solid #cccccc;
+  }
+  .navBox .navList .ul .contactTel a {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .navBox .navList .ul .contactTel p {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background: url(https://torasuto210524.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+  .navBox .contactBtn {
+    width: 250px;
+    margin: 10px auto 0;
+  }
+  .navBox .contactBtn a {
+    display: block;
+    color: #ffffff;
+    padding: 14px 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/header_contact_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .navBox .contactBtn a p {
+    display: inline-block;
+    padding: 0 0 0 15px;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/nav_arrow_white.png) left center no-repeat;
+    background-size: 8px auto;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin-top: 66px;
+  }
+  .pageKv {
+    padding: 0 0 20px;
+  }
+  .pageKv .kvWrap {
+    margin: 0 0 0 30px;
+  }
+  .pageKv:before {
+    top: 20px;
+    height: 300px;
+  }
+  .pageKv .kvBox {
+    height: 300px;
+  }
+  .pageKv .kvTtlBox {
+    top: 30%;
+    left: 10px;
+  }
+  .pageKv .kvTtlBox h1 {
+    font-size: 40px;
+  }
+  .pageKv .kvTtlBox p {
+    font-size: 20px;
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .more {
+    top: -5px;
+    left: -5px;
+    padding: 15px 10px;
+    font-size: 16px;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 100px 0 40px;
+  }
+  .footer .footContact .secWrap02 {
+    display: block;
+  }
+  .footer .footContact .secTtl {
+    text-align: center;
+  }
+  .footer .footContact .secTtl p {
+    margin: 0 0 10px;
+    font-size: 40px;
+  }
+  .footer .footContact .secTtl h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .footer .footContact .contactList {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .footer .footContact .contactList .dl .dt {
+    font-size: 16px;
+  }
+  .footer .footContact .contactList .dl .dd .tel {
+    font-size: 30px;
+  }
+  .footer .footContact .contactBtn {
+    margin: 0 auto;
+  }
+  .footer .footBox .pagetop {
+    position: absolute;
+    top: -25px;
+    right: 30px;
+    width: 50px;
+  }
+  .footer .footBox .box {
+    padding: 100px 0;
+  }
+  .footer .footBox .left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footBox .left .logo {
+    width: 150px;
+    margin: 0 auto 20px;
+  }
+  .footer .footBox .right {
+    display: none;
+  }
+  .footer .footBox .copy {
+    padding: 10px;
+  }
+}

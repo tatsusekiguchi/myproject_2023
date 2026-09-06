@@ -1,0 +1,1062 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKvContainer {
+        height: 100svh;
+      }
+      .topKv {
+        width: 100%;
+      }
+    }
+    .topSection {
+      .secContainer01 {
+        padding: 60px 0;
+        .secTtl {
+          margin: 0 0 40px;
+          font-size: 20px;
+        }
+        .listBox {
+          margin: 0 0 40px;
+          .ul {
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            // align-items: flex-start;
+            max-width: 400px;
+            margin: -40px auto 0;
+            .li {
+              margin: 40px auto 0;
+              &:nth-child(1) {
+                // width: 180px;
+                width: 42%;
+              }
+              &:nth-child(2) {
+                // width: 200px;
+                width: 42%;
+              }
+              &:nth-child(3) {
+                // width: 240px;
+                width: 48%;
+              }
+              &:nth-child(4) {
+                // width: 160px;
+                width: 30%;
+              }
+            }
+          }
+        }
+        .txt {
+          margin: 0 0 40px;
+        }
+        .message {
+          font-size: 20px;
+        }
+      }
+      .secContainer02 {
+        margin: -140px 0 0;
+        padding: 200px 0 60px;
+        .dl {
+          .dt {
+            margin: 0 0 30px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 80px 0;
+      .ttlBox {
+        margin: 0 0 30px;
+        text-align: center;
+        h3 {
+          margin: 0 0 15px;
+          font-size: 20px;
+        }
+      }
+      .listBox {
+        display: none;
+      }
+      .listChart {
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+      .listTxt {
+        margin: 0 0 80px;
+      }
+    }
+    .bnrPanel {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      .bnrBox {
+        max-width: 500px;
+        margin: 0 auto;
+        .dl {
+          margin: 0 0 40px;
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+        .itemBox {
+          .circle {
+            position: absolute;
+            left: -20px;
+            bottom: 20px;
+            width: 60px;
+            z-index: 1;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .bnrBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          .dl {
+            width: calc(100% - 300px);
+          }
+          .itemBox {
+            width: 250px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      .secContainer01 {
+        padding: 40px 0;
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+      .secContainer02 {
+        .secPanelList {
+          .secPanel {
+            .dl {
+              position: relative;
+              .dt {
+                position: absolute;
+                left: 20px;
+                bottom: 110px;
+                z-index: 1;
+                font-size: 16px;
+              }
+              .btnMore {
+                position: absolute;
+                left: 20px;
+                bottom: 50px;
+                z-index: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .topBox {
+        margin: 0 auto 50px;
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+          .txt {
+            margin: 0 0 20px;
+          }
+        }
+      }
+      .photoList {
+        margin: 0 0 60px;
+        .photo01 {
+          width: 44%;
+        }
+        .photo02 {
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain {
+    .pageHeadTitlePanel {
+      padding: 60px 0;
+    }
+    .topSection {
+      padding: 0 0 100px;
+      .txtBox {
+        padding: 20px;
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 100px 0;
+      .secPanel {
+        padding: 40px 20px;
+        border: 4px solid #beb2a7;
+        + .secPanel {
+          margin: 30px 0 0;
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            font-size: 20px;
+          }
+        }
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+          .aside {
+            margin: 20px 0 0;
+            padding: 20px;
+            font-size: 13px;
+          }
+          .map {
+            max-width: 360px;
+            margin: 20px auto 0;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 0 0 100px;
+      .topBox {
+        margin: 0 auto 40px;
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+        }
+      }
+      .list {
+        max-width: 230px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      &::before {
+        height: 100%;
+      }
+      .topBox {
+        margin: 0 0 40px;
+        h4 {
+          margin: 0 0 30px;
+          font-size: 20px;
+        }
+        .txt {
+          p + p {
+            margin: 15px 0 0;
+          }
+        }
+      }
+      .photoList {
+        margin: 0 0 50px;
+      }
+      .targetBox {
+        padding: 30px 10px;
+        border: 4px solid #beb2a7;
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            p {
+              font-size: 20px;
+            }
+          }
+          .ul {
+            max-width: 400px;
+            .li {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .listBox {
+        max-width: 500px;
+        margin: 0 auto;
+        .ul {
+          .li + .li {
+            margin: 30px 0 0;
+          }
+          .inner {
+            padding: 15px;
+          }
+          .photo {
+            margin: 0 0 15px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+            .dd {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .secTtl {
+        margin: 0 0 30px;
+        font-size: 20px;
+      }
+      .bandPanel {
+        padding: 40px 20px;
+        p {
+          font-size: 18px;
+        }
+      }
+      .secContainer01 {
+        padding: 40px 0 80px;
+        .txtBox {
+          margin: 0 0 40px;
+        }
+        .meritBox {
+          .ttl {
+            max-width: 300px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+          }
+          .ul {
+            max-width: 360px;
+            margin: 0 auto;
+            .li + .li {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+      .secContainer02 {
+        padding: 50px 0;
+        .ttl {
+          margin: 0 0 40px;
+          padding: 0 40px;
+          font-size: 20px;
+          background: url(https://hauskahaus.com/system_panel/uploads/images/service_sec03_ttl_slash_01.png)
+              left center no-repeat,
+            url(https://hauskahaus.com/system_panel/uploads/images/service_sec03_ttl_slash_02.png)
+              right center no-repeat;
+          background-size: 25px auto, 25px auto;
+        }
+        .dl {
+          margin: 0 0 40px;
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+      .secContainer03 {
+        padding: 80px 0 0;
+        .section {
+          + .section {
+            margin: 80px 0 0;
+          }
+          > .ttl {
+            max-width: 300px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+          }
+        }
+        .priceTable {
+          .leftBox {
+            display: none;
+          }
+          .rightBox {
+            .dl {
+              .dt {
+                padding: 10px;
+                color: #ffffff;
+                text-align: center;
+                border-bottom: 1px solid #d7d7d7;
+                background: #8b817e;
+              }
+              .dd {
+                padding: 20px 10px;
+                background: #f2f2f2;
+              }
+              .dt + .dd {
+                text-align: center;
+                border-bottom: 1px solid #d7d7d7;
+              }
+              .dd + .dd {
+                text-align: center;
+                line-height: 2;
+              }
+            }
+          }
+        }
+        .flowList {
+          max-width: 500px;
+          .ul {
+            text-align: center;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              width: 1px;
+              height: 100%;
+              margin: 0 auto;
+              background: #dedede;
+            }
+            .li {
+              padding: 15px;
+              + .li {
+                margin: 50px 0 0;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: -16px;
+                  left: 0;
+                  right: 0;
+                  width: 28px;
+                  height: 16px;
+                  margin: 0 auto;
+                  background: url(https://hauskahaus.com/system_panel/uploads/images/service_flow_arrow_02.png)
+                    no-repeat;
+                  background-size: 100% auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 80px 0;
+      .section {
+        + .section {
+          margin: 60px 0 0;
+        }
+        .secPanel01 {
+          .txtBox {
+            padding: 20px 0 0;
+            .box01 {
+              padding: 0 20px 20px;
+              background: #f2f2f2;
+              .dl {
+                .dt {
+                  font-size: 16px;
+                }
+              }
+            }
+            .box02 {
+              padding: 15px;
+              .aside {
+                font-size: 12px;
+              }
+            }
+            .box03 {
+              .ul {
+                .li {
+                  padding: 10px 15px;
+                  font-size: 12px;
+                  p {
+                    min-width: 0;
+                  }
+                  &:nth-child(1) {
+                    width: 100px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .secPanel02 {
+          padding: 0 15px 20px;
+        }
+      }
+    }
+    .sec05 {
+      padding: 80px 0;
+      .topBox {
+        margin: 0 0 40px;
+        h4 {
+          margin: 0 0 30px;
+          font-size: 20px;
+        }
+        .txt {
+          p + p {
+            margin: 15px 0 0;
+          }
+        }
+      }
+      .listBox {
+        margin: 0 0 60px;
+        .ul {
+          .li + .li {
+            margin: 30px 0 0;
+          }
+          .img {
+            max-width: 250px;
+          }
+          .txt {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .bnrPanel {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      .bnrBox {
+        max-width: 500px;
+        margin: 0 auto;
+        .dl {
+          margin: 0 0 40px;
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+        .itemBox {
+          .circle {
+            position: absolute;
+            left: -20px;
+            bottom: 20px;
+            width: 60px;
+            z-index: 1;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .bnrBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          .dl {
+            width: calc(100% - 300px);
+          }
+          .itemBox {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .topSection {
+      padding: 60px 0;
+      .secBox {
+        .title01 {
+          font-size: 14px;
+        }
+        .title02 {
+          margin: 0 0 20px;
+          p {
+            font-size: 18px;
+          }
+          .span {
+            margin: 0 10px 0 0;
+          }
+          .em {
+            font-size: 22px;
+          }
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        .secBox {
+          width: 50%;
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .nameBox {
+        margin: 0 0 40px;
+        .name01 {
+          font-size: 12px;
+        }
+        .name02 {
+          font-size: 20px;
+        }
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .numberContainer {
+        padding: 30px 0 60px;
+        .numberPanel {
+          padding: 60px 20px 50px;
+          + .numberPanel {
+            margin: 40px 0 0;
+          }
+          .num {
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            font-size: 60px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 15px;
+              font-size: 20px;
+            }
+            .dd {
+              p + p {
+                margin: 15px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .detailContainer {
+        .txtBox {
+          padding: 20px 0 0;
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .secBox {
+        .photoBox {
+          .name {
+            margin: 15px 0 0;
+            .em {
+              margin: 0 10px 0 0;
+              font-size: 24px;
+            }
+          }
+        }
+        .txtBox {
+          .infoBox {
+            .dl {
+              + .dl {
+                margin: 15px 0 0;
+              }
+              .dt {
+                margin: 0 0 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .section {
+      padding: 0 0 100px;
+      .secTtl {
+        p {
+          font-size: 20px;
+        }
+      }
+      .instaLink {
+        a {
+          padding: 0 0 0 40px;
+          font-size: 24px;
+          background: url(https://hauskahaus.com/system_panel/uploads/images/contact_icon_insta.png)
+            left center no-repeat;
+          background-size: 30px auto;
+        }
+      }
+      .telLink {
+        a {
+          padding: 0 0 0 30px;
+          font-size: 30px;
+          background: url(https://hauskahaus.com/system_panel/uploads/images/contact_icon_tel.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        > p {
+          display: block;
+          margin: 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+        > .dl {
+          display: block;
+          width: 100%;
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px;
+
+            .em {
+              font-size: 12px;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+        .checkList {
+          .ul {
+            .li {
+              width: 100%;
+            }
+          }
+        }
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 70px;
+        }
+
+        .ageInput {
+          display: block;
+          input {
+            width: 70px;
+          }
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+
+      .fileUploadBox {
+        display: block;
+        .fileArea {
+          display: block;
+
+          .inputFile {
+            width: 260px;
+          }
+
+          > p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .complete {
+    padding: 0 0 80px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	search
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .searchMain {
+    .searchConditionContainer {
+      padding: 0 0 80px;
+      .secTtl {
+        p {
+          font-size: 20px;
+        }
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+    }
+    .searchPanel {
+      .webgene-search-form {
+        .search-title-wrapper,
+        .search-area-title {
+          padding: 10px 20px;
+        }
+        .search-area-wrapper {
+          padding: 20px;
+        }
+        .area .search-area-wrapper {
+          label {
+            display: block;
+          }
+        }
+        .trouble .search-contents-wrapper {
+          label {
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .searchResultContainer {
+      padding: 50px 0 80px;
+      .secTtl {
+        p {
+          font-size: 20px;
+        }
+      }
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 40px 0 0;
+          }
+          a {
+            padding: 15px;
+          }
+          .price {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	post
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .webgene-pagination {
+    margin: 60px auto 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	property
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .propertyMain {
+    .propertyContainer {
+      padding: 60px 0;
+    }
+    .propertyDetail {
+      .webgene-blog {
+        .webgene-item-info {
+          display: block;
+          padding: 15px;
+          .area {
+            margin: 0 0 5px;
+          }
+          .title {
+            font-size: 20px;
+          }
+        }
+        .btnContact {
+          max-width: 350px;
+          margin: 20px auto 0;
+        }
+        .infoBox {
+          dl {
+            padding: 15px 0;
+            dt {
+              margin: 0 0 5px;
+            }
+          }
+        }
+        .photoPanel {
+          margin: 30px 0;
+        }
+      }
+    }
+    .btnBack {
+      margin: 60px auto 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain {
+    .blogSection {
+      padding: 80px 0;
+    }
+    .catePanel {
+      max-width: 400px;
+      margin: 0 auto 40px;
+      .webgene-blog {
+        padding: 0 0 20px;
+      }
+      .webgene-header {
+        margin: 0 0 10px;
+        padding: 10px;
+        > * {
+          font-size: 20px;
+        }
+      }
+      .webgene-item {
+        text-align: center;
+        + .webgene-item {
+          margin: 10px 0 0;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 60px 0 0;
+            }
+            a {
+              padding: 10px 10px 30px;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+          .thumb-item {
+            &.slider {
+              .li {
+                > div {
+                  overflow: hidden;
+                  position: relative;
+                  padding: 0 0 100%;
+                }
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,647 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  margin: 110px 0 0;
+}
+#top .topKvPanel {
+  min-height: calc(100vh - 138px);
+}
+#top .topKvPanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #f5f3f0;
+}
+#top .topKvPanel .topKv {
+  width: 100%;
+}
+#top .topKvPanel .topKv .kvBox .kv01 {
+  background: url("../image/top/top_kv_01_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top .topKvPanel .topKv .kvBox .kv02 {
+  background: url("../image/top/top_kv_02_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top .topKvPanel .topKv .kvBox .kv03 {
+  background: url("../image/top/top_kv_03_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top .topItemPanel {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 60px;
+  margin: 30px 0 0;
+}
+#top .topItemPanel .scroll {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: 0 auto;
+}
+#top .topItemPanel .scroll:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: 0 auto;
+  background: #000000;
+  animation: pathmoveSp 2s ease-in-out infinite;
+  opacity: 0;
+}
+#top .section__concept {
+  padding: 110px 40px 0;
+  text-align: center;
+}
+#top .section__concept__wrap {
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+}
+#top .section__concept h1 {
+  margin: 0 0 40px;
+  font-size: 26px;
+}
+#top .section__features {
+  padding: 120px 0 0;
+}
+#top .section__features__intro {
+  margin: 0 0 75px;
+}
+#top .section__features__intro .titleBox {
+  margin: 0 0 60px;
+}
+#top .section__features__intro .titleBox h2 {
+  font-size: 30px;
+}
+#top .section__features__intro .txtBox dl dt {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#top .section__features__photo {
+  padding: 0 0 0 40px;
+}
+#top .section__features__photo .photo {
+  position: relative;
+}
+#top .section__features__photo .photo:before {
+  bottom: -55px;
+  width: calc(100% - 55px);
+  height: 100%;
+}
+#top .section__openHouse {
+  padding: 150px 40px 0;
+}
+#top .section__openHouse::before {
+  display: none;
+}
+#top .section__openHouse__container .titleBox {
+  margin: 0 0 50px;
+}
+#top .section__openHouse__container .titleBox h2 {
+  font-size: 30px;
+}
+#top .section__openHouse__container .txtBox .photoSlider {
+  display: none;
+}
+#top .section__openHouse__container .txtBox .infoBox {
+  margin: 50px 0 0;
+}
+#top .section__openHouse__container .txtBox .infoBox dl {
+  display: block;
+  font-size: 12px;
+}
+#top .section__openHouse__container .txtBox .infoBox dl + dl {
+  margin: 15px 0 0;
+}
+#top .section__openHouse__container .txtBox .infoBox dl dt {
+  width: 100%;
+}
+#top .section__openHouse__container .txtBox .infoBox dl dd {
+  width: 100%;
+  font-size: 16px;
+}
+#top .section__openHouse__container .txtBox .infoBox .place dd a {
+  display: block;
+  width: 15px;
+}
+#top .section__openHouse__container .txtBox .infoBox + p {
+  margin: 30px 0 0;
+  font-size: 8px;
+}
+#top .section__openHouse__entry {
+  padding: 60px 0 30px;
+}
+#top .section__openHouse__entry::after {
+  width: 180px;
+}
+#top .section__openHouse__entry a {
+  font-size: 12px;
+}
+#top .section__news {
+  padding: 85px 40px 0;
+}
+#top .section__news__container .titleBox {
+  margin: 0 0 65px;
+}
+#top .section__news__container .titleBox h2 {
+  font-size: 30px;
+}
+#top .section__news__entry {
+  padding: 60px 0 30px;
+}
+#top .section__news__entry::after {
+  width: 180px;
+}
+#top .section__news__entry a {
+  font-size: 12px;
+}
+#top .section__news__list ul li {
+  padding: 0 0 50px;
+}
+#top .section__news__list ul li + li {
+  padding: 50px 0;
+}
+#top .section__news__list ul li + li::before {
+  width: 100%;
+}
+#top .section__news__list ul a {
+  font-size: 12px;
+}
+#top .section__news__list ul .txtBox .info {
+  margin: 0 0 30px;
+}
+#top .section__news__list ul .txtBox .info .time {
+  margin: 0 10px 0 0;
+  font-size: 16px;
+}
+#top .section__news__list ul .txtBox .info .cate {
+  min-width: 100px;
+  padding: 1px 20px;
+  font-size: 10px;
+}
+#top .section__faq {
+  padding: 85px 0 100px;
+}
+#top .section__faq__container {
+  margin: 0 0 80px;
+}
+#top .section__faq__container .titleBox {
+  margin: 0 0 60px;
+}
+#top .section__faq__container .titleBox h2 {
+  font-size: 30px;
+}
+#top .section__faq__photo {
+  padding: 0 40px;
+}
+#top .section__faq__photo:before {
+  top: 25px;
+  left: auto;
+  right: 0;
+  bottom: auto;
+  width: calc(100% - 100px);
+  height: calc(100% + 75px);
+}
+#top .section__faq__box dl {
+  font-size: 14px;
+}
+#top .section__faq__box dl + dl {
+  margin: 40px 0 0;
+}
+#top .section__faq__box dl dt {
+  padding: 0 15px 0 20px;
+  background: url("../image/common/accord_arrow_down.png") right center no-repeat;
+  background-size: 8px auto;
+}
+#top .section__faq__box dl dt.active {
+  background: url("../image/common/accord_arrow_up.png") right center no-repeat;
+  background-size: 8px auto;
+}
+#top .section__faq__box dl dd {
+  padding: 10px 15px 0 20px;
+}
+#top .section__contact {
+  padding: 85px 40px 0;
+}
+#top .section__contact__topBox {
+  margin: 0 0 70px;
+}
+#top .section__contact__topBox h2 {
+  margin: 0 0 40px;
+  font-size: 30px;
+}
+#top .section__contact__topBox .txt {
+  margin: 0 0 70px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+#top .section__contact__topBox ul .line {
+  max-width: 100px;
+  margin: 0 0 20px;
+}
+#top .section__contact__topBox ul .tel {
+  max-width: 220px;
+}
+#top .section__company {
+  padding: 85px 40px;
+}
+#top .section__company h2 {
+  margin: 0 0 25px;
+  font-size: 30px;
+}
+#top .section__company__box dl dt {
+  width: 65px;
+  padding: 10px 0;
+  text-align: left;
+}
+#top .section__company__box dl dt span {
+  min-width: 0;
+}
+#top .section__company__box dl dd {
+  width: calc(100% - 65px);
+  padding: 10px 20px;
+}
+#top .section__company__box dl dd p + p {
+  margin: 10px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	EVENT
+///////////////////////////////////////////////////////////*/
+.postPanel {
+  padding: 45px 40px 65px;
+}
+.postPanel .titleBox {
+  margin: 0 0 40px;
+  font-size: 30px;
+}
+.postPanel .categoryList dl dt {
+  max-width: 140px;
+  margin: 0 0 10px;
+  padding: 0 0 15px;
+  font-size: 20px;
+}
+.postPanel .categoryList dl ul li a {
+  font-size: 14px;
+}
+.postPanel .categoryList dl ul li,
+.postPanel .categoryList dl ul li + li {
+  display: inline-block;
+  margin: 10px 20px 0 0;
+}
+.postPanel .list__event ul li {
+  padding: 0 0 50px;
+}
+.postPanel .list__event ul li + li {
+  margin: 65px 0 0;
+}
+.postPanel .list__event ul a {
+  font-size: 12px;
+}
+.postPanel .list__event ul .photoBox {
+  margin: 0 0 35px;
+}
+.postPanel .list__event ul .photoBox .photo {
+  min-height: 225px;
+  background: url("../image/common/footer_logo.png") center no-repeat #beb6a6;
+  background-size: 105px auto;
+}
+.postPanel .list__event ul .txtBox .info {
+  margin: 0 0 30px;
+}
+.postPanel .list__event ul .txtBox .info .time {
+  margin: 0 10px 0 0;
+  font-size: 16px;
+}
+.postPanel .list__event ul .txtBox .info .cate {
+  min-width: 100px;
+  padding: 1px 20px;
+  font-size: 10px;
+}
+.postPanel .list__event ul .txtBox .title {
+  font-size: 16px;
+}
+.postPanel .list__pagination {
+  margin: 65px 0 0;
+}
+.postPanel .list__pagination .pagination {
+  justify-content: center;
+}
+.postPanel .list__pagination .pagination li + li {
+  margin: 0 0 0 25px;
+}
+.postPanel .list__pagination .pagination li a {
+  width: 20px;
+  height: 20px;
+  font-size: 17px;
+}
+.postPanel .detail__event .titleHeader__info {
+  margin: 0 0 20px;
+}
+.postPanel .detail__event .titleHeader .time {
+  font-size: 16px;
+}
+.postPanel .detail__event .titleHeader .cateBox .cate {
+  min-width: 80px;
+  padding: 1px 20px;
+  font-size: 10px;
+}
+.postPanel .detail__event .titleHeader .title .date {
+  margin: 0 0 50px;
+  font-size: 16px;
+}
+.postPanel .detail__event .titleHeader .title h2 {
+  font-size: 20px;
+}
+.postPanel .detail__event .thumbnailBox {
+  margin: 50px 0 0;
+}
+.postPanel .detail__event .postContents {
+  margin: 90px 0 0;
+}
+.postPanel .btnBack {
+  margin: 50px 0 0;
+  padding: 0 0 35px;
+}
+.postPanel .btnBack:after {
+  width: 180px;
+}
+.postPanel .btnBack a {
+  font-size: 12px;
+}
+.postPanel .btnContact {
+  margin: 50px 0 0;
+}
+.postPanel .btnContact a {
+  max-width: 350px;
+  padding: 17px 10px;
+  font-size: 18px;
+}
+
+#eventList .postPanel__left {
+  margin: 0 0 80px;
+}
+
+#eventDetail .postPanel__left {
+  margin: 0 0 40px;
+}
+#eventDetail .postPanel__right {
+  padding: 40px 0 0;
+}
+#eventDetail .postPanel .categoryList dl dt {
+  max-width: 140px;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox form .mwform-radio-field {
+  font-size: 16px;
+}
+.formBox form .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox form .mwform-radio-field .mwform-radio-field-text {
+  padding: 0 0 0 15px;
+  background: url("../image/common/form_radio_off.png") left top 6px no-repeat;
+  background-size: 12px auto;
+}
+.formBox form .mwform-radio-field input[type=radio]:checked + .mwform-radio-field-text {
+  background: url("../image/common/form_radio_on.png") left top 6px no-repeat;
+  background-size: 12px auto;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  height: 40px;
+  padding-left: 15px;
+}
+.formBox textarea {
+  padding: 15px;
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formBox .selectBox select {
+  padding: 7px 15px;
+  font-size: 16px;
+  background: url("../image/common/form_select_arrow.png") right 15px center no-repeat #ffffff;
+  background-size: 12px auto;
+}
+.formBox .submitButton {
+  margin: 40px 0 0;
+}
+.formBox input[type=submit] {
+  max-width: 350px;
+  height: 60px;
+  font-size: 18px;
+}
+.formBox .checkTxt {
+  margin: 0 0 40px;
+  font-size: 12px;
+}
+.formBox form > dl + dl {
+  margin: 20px 0 0;
+}
+.formBox form > dl dt {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.formBox form > dl dd .inputBox input,
+.formBox form > dl dd .inputBox textarea {
+  padding: 0;
+}
+.formBox form > dl.radioForm {
+  padding: 0 0 10px;
+}
+.formBox form > dl.radioForm dt {
+  margin: 0 0 20px;
+}
+.formBox .dateFormContainer {
+  padding: 60px 0 40px;
+}
+.formBox .dateFormContainer .dateFormPanel:nth-child(1) .selectList dl + dl {
+  width: 100%;
+  max-width: 100%;
+}
+.formBox .dateFormContainer .dateFormPanel:nth-child(1) .selectList dl + dl dd {
+  width: calc(100% - 80px);
+}
+.formBox .dateFormContainer .dateFormPanel + .dateFormPanel {
+  margin: 60px 0 0;
+}
+.formBox .dateFormContainer .dateFormPanel .ttl {
+  margin: 0 0 40px;
+}
+.formBox .dateFormContainer .dateFormPanel .ttl p {
+  font-size: 14px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList {
+  display: block;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList dl {
+  max-width: 350px;
+  font-size: 14px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList dl + dl {
+  margin: 20px 0 0;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList dl dt {
+  width: 70px;
+  margin: 0;
+  font-size: 14px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList .inputBox {
+  max-width: 215px;
+  width: 100%;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList .inputBox input {
+  height: 60px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList .inputBox.inputTime .placeholder {
+  font-size: 13px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList + p {
+  font-size: 10px;
+}
+.formBox .privacy {
+  margin: 0 0 40px;
+  border: none;
+}
+.formBox .privacy .agreeBox {
+  height: 350px;
+  padding: 20px 0;
+  font-size: 12px;
+}
+.formBox .privacy .box + .box {
+  margin: 10px 0 0;
+}
+
+#contactConfirm .contactTitlePanel,
+#contactComplete .contactTitlePanel {
+  margin: 40px 0 0;
+}
+#contactConfirm .contactTitlePanel .contactTitle,
+#contactComplete .contactTitlePanel .contactTitle {
+  font-size: 30px;
+}
+#contactConfirm .contactTitlePanel h2,
+#contactComplete .contactTitlePanel h2 {
+  max-width: 250px;
+  margin: 55px auto 0;
+  padding: 15px 10px;
+  font-size: 16px;
+}
+#contactConfirm .confirmPanel,
+#contactComplete .confirmPanel {
+  padding: 80px 40px 65px;
+}
+#contactConfirm .confirmPanel .formConfirm dl,
+#contactComplete .confirmPanel .formConfirm dl {
+  display: block;
+  padding: 10px 0;
+  font-size: 14px;
+}
+#contactConfirm .confirmPanel .formConfirm dl > *,
+#contactComplete .confirmPanel .formConfirm dl > * {
+  padding: 0;
+}
+#contactConfirm .confirmPanel .formConfirm dl dt,
+#contactComplete .confirmPanel .formConfirm dl dt {
+  width: 100%;
+  margin: 0 0 10px;
+}
+#contactConfirm .confirmPanel .formConfirm dl dd,
+#contactComplete .confirmPanel .formConfirm dl dd {
+  width: 100%;
+  padding: 0 0 25px;
+  font-size: 18px;
+}
+#contactConfirm .confirmPanel .formConfirm .dateFormPanel,
+#contactComplete .confirmPanel .formConfirm .dateFormPanel {
+  margin: 20px 0 0;
+}
+#contactConfirm .confirmPanel .formConfirm .dateFormPanel .ttl,
+#contactComplete .confirmPanel .formConfirm .dateFormPanel .ttl {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+#contactConfirm .confirmPanel .formConfirm .submitButton,
+#contactComplete .confirmPanel .formConfirm .submitButton {
+  padding: 125px 0 0;
+}
+#contactConfirm .confirmPanel .formConfirm .submitButton::before,
+#contactComplete .confirmPanel .formConfirm .submitButton::before {
+  top: 50px;
+  width: 290px;
+  height: 28px;
+}
+#contactConfirm .confirmPanel .formConfirm input[type=submit],
+#contactComplete .confirmPanel .formConfirm input[type=submit] {
+  max-width: 350px;
+  height: 60px;
+  font-size: 14px;
+}
+#contactConfirm .completePanel,
+#contactComplete .completePanel {
+  padding: 70px 40px 65px;
+}
+#contactConfirm .completePanel dl,
+#contactComplete .completePanel dl {
+  margin: 0 0 70px;
+}
+#contactConfirm .completePanel dl dt,
+#contactComplete .completePanel dl dt {
+  font-size: 20px;
+}
+#contactConfirm .completePanel dl dd,
+#contactComplete .completePanel dl dd {
+  font-size: 10px;
+}
+#contactConfirm .completePanel ul li,
+#contactComplete .completePanel ul li {
+  width: 27px;
+}
+#contactConfirm .completePanel ul li + li,
+#contactComplete .completePanel ul li + li {
+  margin: 0 0 0 50px;
+}
+#contactConfirm .completePanel .flow,
+#contactComplete .completePanel .flow {
+  max-width: 300px;
+}
+#contactConfirm .btnBack,
+#contactComplete .btnBack {
+  margin: 50px auto 0;
+}
+#contactConfirm .btnBack a,
+#contactComplete .btnBack a {
+  font-size: 12px;
+}
+#contactConfirm button.btnBack,
+#contactComplete button.btnBack {
+  width: 115px;
+  font-size: 12px;
+}

@@ -1,0 +1,128 @@
+// ▽メイン▽
+main#profile.main
+    .pageKvPanel
+        .pageKvTitle
+            h1 医師紹介
+    .mainContainer
+        .secWrap01
+            .pageSecTtl
+                p.secTtl 医師紹介
+                p.futura Doctor referral
+            .topContainer
+                .topTitle.gothic
+                    p 当院の医師の紹介です。
+                .linkList
+                    ul
+                        li(data-target="sec01")
+                            span 院長 亀井智貴
+                        li(data-target="sec02")
+                            span 非常勤医師 西山智広
+                        li(data-target="sec03")
+                            span 非常勤医師 三好得司
+                        li(data-target="sec04")
+                            span 顧問 内藤康弘
+            .sec01
+                .pageSecTtlSub.gothic
+                    h2 院長　亀井智貴
+                .secBox
+                    .photoBox
+                        .photo
+                            img(src=(root_path || '') + "image/profile/profile_doctor_01.png", alt="")
+                    .txtBox
+                        .infoBox
+                            dl
+                                dt ■所属
+                                dd 産業医
+                            dl
+                                dt ■略歴
+                                dd
+                                    p １９８９年 福岡大学医学部 卒業
+                                    p ２００１年 名古屋大学大学院外科学博士課程
+                                    p ２０２２年 名古屋メディカルクリニック所属
+                        .commentBox
+                            .txt
+                                p 簡単な挨拶文が入ります<br>紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。
+            .sectionContainer
+                .sec02
+                    .pageSecTtlSub.gothic
+                        h2 非常勤医師　西山智弘
+                    .infoBox
+                        dl
+                            dt ■所属
+                            dd 日本形成外科学会認定医
+                        dl
+                            dt ■略歴
+                            dd
+                                p １９８８年 藤田学園保健衛生大学医学部 卒業
+                                p １９９６年 慶應義塾大学伊勢慶應病院形成外科診療部長
+                                p １９９７年 にしやま形成外科を開設
+                                p １９９９年 にしやま形成外科皮フ科クリニックに名称変更
+                                p ２００２年 医療法人桃姫メディカルを設立
+                    .commentBox
+                        .txt
+                            p 簡単な挨拶文が入ります<br>紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。
+                .sec03
+                    .pageSecTtlSub.gothic
+                        h2 非常勤医師 三好得司
+                    .infoBox
+                        dl
+                            dt ■所属
+                            dd
+                                p 日本産婦人科学会専門医／母体保護法指定医師<br>ダイビングインストラクター（BSAC・NAUI）
+
+                        dl
+                            dt ■略歴
+                            dd
+                                p １９７７年　東邦大学医学部 卒業
+                                p １９７７年　近畿大学付属病院
+                                p １９８６年　特定医療法人　一祐会藤本病院産婦人科部長
+                                p １９９５年　三好産婦人科 継承
+                                p ２００７年　活性NK細胞の研究及び治療開始
+                    .specialty
+                        dl
+                            dt ■専門とする疾患
+                            dd
+                                p 更年期、老年期医療／プラセンタ療法／悪性腫瘍診断／<br>ガン遺伝子検査／ガン免疫ドッグ／<br>ガン免疫療法（活性ＮＫ細胞療法・その他）<br>一般不妊治療／皮フ疾患（にきび、魚の目、アトピー肌）
+                    .commentBox
+                        .txt
+                            p 簡単な挨拶文が入ります<br>紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。
+            .sec04
+                .pageSecTtlSub.gothic
+                    h2 顧問 内藤康弘（前理事長）
+                .secBox
+                    .photoBox
+                        .photo
+                            img(src=(root_path || '') + "image/profile/profile_doctor_02.png", alt="")
+                    .txtBox
+                        .topBook
+                            dl
+                                dt ■書籍
+                                dd
+                                    .book
+                                        img(src=(root_path || '') + "image/profile/profile_book_top.png", alt="")
+                                    .txt
+                                        p
+                                            | ・がんに克つ
+                                            span （幻冬舎メディアコンサルティング）
+                .bookList
+                    ul
+                        li
+                            .book
+                                img(src=(root_path || '') + "image/profile/profile_book_01.png", alt="")
+                            .txt
+                                p
+                                    | ・がん最先端医療<br>活性ＮＫ細胞療法
+                        li
+                            .book
+                                img(src=(root_path || '') + "image/profile/profile_book_02.png", alt="")
+                            .txt
+                                p
+                                    | ・ガンとの握手
+                                    span （文芸社）
+                        li
+                            .book
+                                img(src=(root_path || '') + "image/profile/profile_book_03.png", alt="")
+                            .txt
+                                p
+                                    | ・２１世紀のがん先端医療<br>  がん免疫細胞医療  活性ＮＫ細胞療法<br>今日から、あなたの考え方、生き方を変えてください
+// △メイン△

@@ -1,0 +1,613 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #64584d;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+/*リンク */
+a {
+  color: #64584d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 100px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 130px;
+    opacity: 0;
+  }
+}
+@keyframes pathmoveSp {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 40px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 80px;
+    opacity: 0;
+  }
+}
+@keyframes fixed-slide {
+  from {
+    transform: translate3d(0, -90px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header .logo a {
+    display: block;
+  }
+  .header .headItem {
+    display: none;
+  }
+  .header .navBox {
+    width: 90%;
+    padding: 0 0 0 20px;
+  }
+
+  .topHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 2;
+  }
+  .topHeader .headBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 215px;
+  }
+  .topHeader .headBox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 215px;
+    z-index: -1;
+    background: #f5f3f0;
+  }
+  .topHeader .headBox .logo {
+    position: absolute;
+    top: 30%;
+    left: 120px;
+    width: 190px;
+  }
+  .topHeader .headBox .headItem {
+    position: absolute;
+    top: 70%;
+    left: 180px;
+    display: block;
+    width: 40px;
+  }
+  .topHeader .headBox .headItem__insta {
+    width: 20px;
+    margin: 0 auto 30px;
+  }
+  .topHeader .headBox .headItem__insta a {
+    display: block;
+  }
+  .topHeader .headBox .headItem__scroll {
+    position: relative;
+    height: 155px;
+  }
+  .topHeader .headBox .headItem__scroll:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1px;
+    height: 155px;
+    margin: 0 auto;
+    background: #000000;
+    animation: pathmove 2s ease-in-out infinite;
+    opacity: 0;
+  }
+  .topHeader.fixed {
+    position: fixed;
+    height: 160px;
+    z-index: 999;
+    animation: fixed-slide 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+  }
+  .topHeader.fixed .headBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: initial;
+    width: 100%;
+    padding: 0 0 0 120px;
+  }
+  .topHeader.fixed .headBox .logo {
+    position: static;
+    width: 10%;
+    max-width: 130px;
+  }
+  .topHeader.fixed .headBox .headItem {
+    display: none;
+  }
+
+  .pageHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #f5f3f0;
+  }
+  .pageHeader .headBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: initial;
+    width: 100%;
+    height: 160px;
+    padding: 0 0 0 120px;
+  }
+  .pageHeader .headBox .logo {
+    width: 10%;
+    max-width: 130px;
+  }
+}
+@media (max-width: 1400px) {
+  .topHeader .headBox {
+    height: 160px;
+  }
+  .topHeader .headBox::before {
+    height: 160px;
+  }
+  .topHeader .headBox .logo {
+    left: 50px;
+    width: 100px;
+  }
+  .topHeader .headBox .headItem {
+    left: 80px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Forum";
+    font-weight: 400;
+  }
+  .navBox__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+  }
+  .navBox__list ul li {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .navBox__list ul li + li {
+    margin: 0 0 0 5px;
+    padding: 0 0 0 20px;
+  }
+  .navBox__list ul li + li:before {
+    content: "/";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .navBox__list ul li a {
+    position: relative;
+    display: inline-block;
+    color: #000000;
+    line-height: 1;
+  }
+  .navBox__list ul li a:after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background: #64584d;
+    transition: 0.6s;
+  }
+  .navBox__list ul li a:hover {
+    opacity: 1;
+  }
+  .navBox__list ul li a:hover:after {
+    width: 80%;
+  }
+  .navBox__list ul li a.active {
+    pointer-events: none;
+  }
+  .navBox__list ul li a.active:after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: -10px;
+    width: 80%;
+    height: 2px;
+    background: #64584d;
+    transition: 0.6s;
+  }
+  .navBox__item {
+    width: 20%;
+    margin: 0 0 0 40px;
+    border-left: 1px solid #000000;
+  }
+  .navBox__item ul {
+    display: flex;
+    min-height: 82px;
+  }
+  .navBox__item ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .navBox__item ul .contactLink {
+    width: 150px;
+  }
+  .navBox__item ul .contactLink a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #000000;
+  }
+  .navBox__item ul .hamburgerBox {
+    width: 100px;
+  }
+  .navBox__item ul .hamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 15px;
+    z-index: 9999;
+  }
+  .navBox__item ul .hamburger span {
+    background: #212121;
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .navBox__item ul .hamburger span:nth-of-type(1) {
+    top: 0;
+  }
+  .navBox__item ul .hamburger span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navBox__item ul .hamburger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .navBox__item ul .is-open.hamburger span:nth-of-type(1) {
+    transform: translate(-50%, 7px) rotate(-45deg);
+  }
+  .navBox__item ul .is-open.hamburger span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .navBox__item ul .is-open.hamburger span:nth-of-type(3) {
+    transform: translate(-50%, -7px) rotate(45deg);
+  }
+
+  .subNavigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: "Forum";
+    z-index: 1000;
+    background: #f5f3f0;
+  }
+  .subNavigation__wrap {
+    height: 100%;
+  }
+  .subNavigation__main {
+    height: 100%;
+  }
+  .subNavigation__main__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .subNavigation__main__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+  .subNavigation__main__logo a {
+    position: relative;
+    top: -120px;
+    display: block;
+    max-width: 190px;
+    margin: 0 auto;
+  }
+  .subNavigation__main__list {
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: calc(100% - 70px);
+    background: #beb6a6;
+  }
+  .subNavigation__main__list__wrap {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .subNavigation__main__list .navList li + li {
+    margin: 30px 0 0;
+  }
+  .subNavigation__main__list .navList li a {
+    display: inline-block;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  .subNavigation__main__list .navList li.contact {
+    max-width: 200px;
+    margin: 50px 0 0;
+    padding: 40px 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  .subNavigation__main__list .iconList {
+    margin: 0 0 0 auto;
+  }
+  .subNavigation__main__list .iconList li + li {
+    margin: 40px 0 0;
+  }
+  .subNavigation__main__list .iconList li a {
+    display: inline-block;
+    padding: 0 0 0 55px;
+    font-size: 35px;
+    color: #ffffff;
+  }
+  .subNavigation__main__list .iconList .insta {
+    background: url("../image/common/navigation_insta.png") left center no-repeat;
+    background-size: 38px auto;
+  }
+  .subNavigation__main__list .iconList .line {
+    background: url("../image/common/navigation_line.png") left center no-repeat;
+    background-size: 38px auto;
+  }
+  .subNavigation__main__list .iconList .tel {
+    background: url("../image/common/navigation_tel.png") left -8px center no-repeat;
+    background-size: 55px auto;
+  }
+}
+@media (min-width: 1025px) and (max-height: 950px) {
+  .subNavigation__main__list {
+    height: calc(100% - 30px);
+  }
+  .subNavigation__main__list .navList li + li {
+    margin: 20px 0 0;
+  }
+  .subNavigation__main__list .navList li a {
+    font-size: 30px;
+  }
+  .subNavigation__main__list .navList li.contact {
+    margin: 30px 0 0;
+    padding: 20px 0;
+  }
+  .subNavigation__main__list .iconList li + li {
+    margin: 20px 0 0;
+  }
+  .subNavigation__main__list .iconList li a {
+    padding: 0 0 0 45px;
+    font-size: 20px;
+  }
+  .subNavigation__main__list .iconList .insta {
+    background: url("../image/common/navigation_insta.png") left center no-repeat;
+    background-size: 30px auto;
+  }
+  .subNavigation__main__list .iconList .line {
+    background: url("../image/common/navigation_line.png") left center no-repeat;
+    background-size: 30px auto;
+  }
+  .subNavigation__main__list .iconList .tel {
+    background: url("../image/common/navigation_tel.png") left -4px center no-repeat;
+    background-size: 42px auto;
+  }
+}
+.subNavigationContainer {
+  display: none;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+  margin: 215px 0 0;
+}
+
+.secWrap {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 440px;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 125px 20px 70px;
+  color: #ffffff;
+  text-align: center;
+  background: #beb6a6;
+}
+.footer__items {
+  display: none;
+}
+.footer .logo {
+  max-width: 214px;
+  margin: 0 auto 100px;
+}
+.footer .txt {
+  margin: 0 0 25px;
+  font-family: "Forum";
+  font-size: 20px;
+}
+.footer .sns {
+  margin: 0 0 25px;
+  text-align: center;
+}
+.footer .sns .insta {
+  display: inline-block;
+  width: 22px;
+}
+.footer .sns a {
+  display: inline-block;
+}
+.footer .copy {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}

@@ -1,0 +1,436 @@
+// ▽メイン▽
+main#contactConfirm
+	.contactTitlePanel
+		.contactTitle
+			p CONTACT
+			h1 お問い合わせ
+		h2 送信内容確認
+	.confirmPanel
+		.confirmPanel__wrap
+			.formConfirm
+				<form method="post" action="" enctype="multipart/form-data">
+					<dl class="radioForm">
+						<dt>
+							<span>お問い合わせ内容</span>
+							<em>※</em>
+						</dt>
+						<dd>
+							<div class="radioArea">イベント予約
+								<input type="hidden" name="radio_cnt" value="イベント予約">
+								<input type="hidden" name="__children[radio_cnt][]" value="{&quot;u30a4u30d9u30f3u30c8u4e88u7d04&quot;:&quot;u30a4u30d9u30f3u30c8u4e88u7d04&quot;,&quot;u5185u89a7u4e88u7d04&quot;:&quot;u5185u89a7u4e88u7d04&quot;,&quot;u3054u76f8u8ac7&quot;:&quot;u3054u76f8u8ac7&quot;,&quot;u305du306eu4ed6&quot;:&quot;u305du306eu4ed6&quot;}">
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>お名前</span>
+							<em>※</em>
+						</dt>
+						<dd>
+							<div class="inputBox">ああああ
+								<input type="hidden" name="name" value="ああああ">
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>フリガナ</span>
+							<em>※</em>
+						</dt>
+						<dd>
+							<div class="inputBox">フリガナ
+								<input type="hidden" name="kana" value="フリガナ">
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>E-mail</span>
+							<em>※</em>
+						</dt>
+						<dd>
+							<div class="inputBox">tatsu.sekiguchi@gmail.com
+								<input type="hidden" name="mail" value="tatsu.sekiguchi@gmail.com">
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>E-mail確認</span>
+							<em>※</em>
+						</dt>
+						<dd>
+							<div class="inputBox">tatsu.sekiguchi@gmail.com
+								<input type="hidden" name="mailConfirm" value="tatsu.sekiguchi@gmail.com">
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>電話番号</span>
+							<em>※</em>
+						</dt>
+						<dd>
+							<div class="inputBox">00011112222
+								<input type="hidden" name="tel" value="00011112222">
+							</div>
+						</dd>
+					</dl>
+					<dl class="msg">
+						<dt>
+							<span>お問い合わせ内容</span>
+						</dt>
+						<dd>
+							<div class="inputBox">お問い合わせ内容
+								<input type="hidden" name="msg" value="お問い合わせ内容">
+							</div>
+						</dd>
+					</dl>
+					<div class="dateFormContainer">
+						<div class="dateFormPanel">
+							<div class="ttl">
+								<p>イベント参加希望の方は
+									<br class="spBreak">以下の記入をお願いいたします。
+								</p>
+								<p></p>
+							</div>
+							<div class="selectList">
+								<dl>
+									<dt>希望日</dt>
+									<dd>
+										<div class="selectBox selectDate">2022/2/20
+											<input type="hidden" name="select_event_date" value="2022/2/20">
+											<input type="hidden" name="__children[select_event_date][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>希望の部</dt>
+									<dd>
+										<div class="selectBox">1
+											<input type="hidden" name="select_event_section" value="1">
+											<input type="hidden" name="__children[select_event_section][]" value="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;}">
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>参加人数</dt>
+									<dd>
+										<div class="selectBox">1
+											<input type="hidden" name="select_event_people" value="1">
+											<input type="hidden" name="__children[select_event_people][]" value="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;}">
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<p>※申し込みが定員に達しておりましたら、ご参加いただけないこともございます。ご了承ください。</p>
+							<p></p>
+						</div>
+						<div class="dateFormPanel">
+							<div class="ttl">
+								<p>内覧希望の方は
+									<br class="spBreak">希望日をご記入をお願いいたします。
+								</p>
+								<p></p>
+							</div>
+							<div class="selectList">
+								<dl>
+									<dt>第1希望</dt>
+									<dd>
+										<div class="selectBox selectDate">2022/2/20
+											<input type="hidden" name="select_preview_date_1" value="2022/2/20">
+											<input type="hidden" name="__children[select_preview_date_1][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>第2希望</dt>
+									<dd>
+										<div class="selectBox selectDate">2022/2/20
+											<input type="hidden" name="select_preview_date_2" value="2022/2/20">
+											<input type="hidden" name="__children[select_preview_date_2][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>第3希望</dt>
+									<dd>
+										<div class="selectBox selectDate">2022/2/20
+											<input type="hidden" name="select_preview_date_3" value="2022/2/20">
+											<input type="hidden" name="__children[select_preview_date_3][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<p>※1枠60分程度、1家族様限定の内覧となります。</p>
+							<p></p>
+						</div>
+					</div>
+					<div class="privacy">
+						<div class="agreeBox">
+							<div class="box">
+								<dl>
+									<dt>個人情報の取り扱いについて</dt>
+									<dd>ラーゴムは個人情報を適切に管理運用するための基本的事項を定めています。</dd>
+								</dl>
+							</div>
+							<div class="box">
+								<dl>
+									<dt>・個人情報の利用目的</dt>
+									<dd>個人情報は当社から連絡する目的のためのみに取得し、取得した個人情報については不正利用・紛失・破壊・改ざん、および漏えいに対し適切な予防ならびに是正に関する措置を適切に講じます。</dd>
+								</dl>
+							</div>
+							<div class="box">
+								<dl>
+									<dt>・個人情報の第三者への開示・提供の禁止</dt>
+									<dd>お客様の個人情報について、お客様の承諾が無い限り第三者に開示、提供を一切いたしません。ご提供いただいた個人情報を取り扱うにあたり管理責任者を置き、適切な管理を行っております。</dd>
+								</dl>
+							</div>
+							<div class="box">
+								<dl>
+									<dt>・ご本人の照会</dt>
+									<dd>個人情報の照会・修正・削除などを希望される場合には、ご本人であることを確認の上対応させていただきます。</dd>
+								</dl>
+							</div>
+							<div class="box">
+								<dl>
+									<form method="post" action="" enctype="multipart/form-data">
+										<dl class="radioForm">
+											<dt>
+												<span>お問い合わせ内容</span>
+												<em>※</em>
+											</dt>
+											<dd>
+												<div class="radioArea">イベント予約
+													<input type="hidden" name="radio_cnt" value="イベント予約">
+													<input type="hidden" name="__children[radio_cnt][]" value="{&quot;u30a4u30d9u30f3u30c8u4e88u7d04&quot;:&quot;u30a4u30d9u30f3u30c8u4e88u7d04&quot;,&quot;u5185u89a7u4e88u7d04&quot;:&quot;u5185u89a7u4e88u7d04&quot;,&quot;u3054u76f8u8ac7&quot;:&quot;u3054u76f8u8ac7&quot;,&quot;u305du306eu4ed6&quot;:&quot;u305du306eu4ed6&quot;}">
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<span>お名前</span>
+												<em>※</em>
+											</dt>
+											<dd>
+												<div class="inputBox">ああああ
+													<input type="hidden" name="name" value="ああああ">
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<span>フリガナ</span>
+												<em>※</em>
+											</dt>
+											<dd>
+												<div class="inputBox">フリガナ
+													<input type="hidden" name="kana" value="フリガナ">
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<span>E-mail</span>
+												<em>※</em>
+											</dt>
+											<dd>
+												<div class="inputBox">tatsu.sekiguchi@gmail.com
+													<input type="hidden" name="mail" value="tatsu.sekiguchi@gmail.com">
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<span>E-mail確認</span>
+												<em>※</em>
+											</dt>
+											<dd>
+												<div class="inputBox">tatsu.sekiguchi@gmail.com
+													<input type="hidden" name="mailConfirm" value="tatsu.sekiguchi@gmail.com">
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<span>電話番号</span>
+												<em>※</em>
+											</dt>
+											<dd>
+												<div class="inputBox">00011112222
+													<input type="hidden" name="tel" value="00011112222">
+												</div>
+											</dd>
+										</dl>
+										<dl class="msg">
+											<dt>
+												<span>お問い合わせ内容</span>
+											</dt>
+											<dd>
+												<div class="inputBox">お問い合わせ内容
+													<input type="hidden" name="msg" value="お問い合わせ内容">
+												</div>
+											</dd>
+										</dl>
+										<div class="dateFormContainer">
+											<div class="dateFormPanel">
+												<div class="ttl">
+													<p>イベント参加希望の方は
+														<br class="spBreak">以下の記入をお願いいたします。
+													</p>
+													<p></p>
+												</div>
+												<div class="selectList">
+													<dl>
+														<dt>希望日</dt>
+														<dd>
+															<div class="selectBox selectDate">2022/2/20
+																<input type="hidden" name="select_event_date" value="2022/2/20">
+																<input type="hidden" name="__children[select_event_date][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+															</div>
+														</dd>
+													</dl>
+													<dl>
+														<dt>希望の部</dt>
+														<dd>
+															<div class="selectBox">1
+																<input type="hidden" name="select_event_section" value="1">
+																<input type="hidden" name="__children[select_event_section][]" value="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;}">
+															</div>
+														</dd>
+													</dl>
+													<dl>
+														<dt>参加人数</dt>
+														<dd>
+															<div class="selectBox">1
+																<input type="hidden" name="select_event_people" value="1">
+																<input type="hidden" name="__children[select_event_people][]" value="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;}">
+															</div>
+														</dd>
+													</dl>
+												</div>
+												<p>※申し込みが定員に達しておりましたら、ご参加いただけないこともございます。ご了承ください。</p>
+												<p></p>
+											</div>
+											<div class="dateFormPanel">
+												<div class="ttl">
+													<p>内覧希望の方は
+														<br class="spBreak">希望日をご記入をお願いいたします。
+													</p>
+													<p></p>
+												</div>
+												<div class="selectList">
+													<dl>
+														<dt>第1希望</dt>
+														<dd>
+															<div class="selectBox selectDate">2022/2/20
+																<input type="hidden" name="select_preview_date_1" value="2022/2/20">
+																<input type="hidden" name="__children[select_preview_date_1][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+															</div>
+														</dd>
+													</dl>
+													<dl>
+														<dt>第2希望</dt>
+														<dd>
+															<div class="selectBox selectDate">2022/2/20
+																<input type="hidden" name="select_preview_date_2" value="2022/2/20">
+																<input type="hidden" name="__children[select_preview_date_2][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+															</div>
+														</dd>
+													</dl>
+													<dl>
+														<dt>第3希望</dt>
+														<dd>
+															<div class="selectBox selectDate">2022/2/20
+																<input type="hidden" name="select_preview_date_3" value="2022/2/20">
+																<input type="hidden" name="__children[select_preview_date_3][]" value="{&quot;2022/2/20&quot;:&quot;2022/2/20&quot;,&quot;2022/2/21&quot;:&quot;2022/2/21&quot;}">
+															</div>
+														</dd>
+													</dl>
+												</div>
+												<p>※1枠60分程度、1家族様限定の内覧となります。</p>
+												<p></p>
+											</div>
+										</div>
+										<div class="privacy">
+											<div class="agreeBox">
+												<div class="box">
+													<dl>
+														<dt>個人情報の取り扱いについて</dt>
+														<dd>ラーゴムは個人情報を適切に管理運用するための基本的事項を定めています。</dd>
+													</dl>
+												</div>
+												<div class="box">
+													<dl>
+														<dt>・個人情報の利用目的</dt>
+														<dd>個人情報は当社から連絡する目的のためのみに取得し、取得した個人情報については不正利用・紛失・破壊・改ざん、および漏えいに対し適切な予防ならびに是正に関する措置を適切に講じます。</dd>
+													</dl>
+												</div>
+												<div class="box">
+													<dl>
+														<dt>・個人情報の第三者への開示・提供の禁止</dt>
+														<dd>お客様の個人情報について、お客様の承諾が無い限り第三者に開示、提供を一切いたしません。ご提供いただいた個人情報を取り扱うにあたり管理責任者を置き、適切な管理を行っております。</dd>
+													</dl>
+												</div>
+												<div class="box">
+													<dl>
+														<dt>・ご本人の照会</dt>
+														<dd>個人情報の照会・修正・削除などを希望される場合には、ご本人であることを確認の上対応させていただきます。</dd>
+													</dl>
+												</div>
+												<div class="box">
+													<dl>
+														<dt>・法令、規範の遵守と見直し</dt>
+														<dd>保有する個人情報について日本の法令その他規範を遵守するとともに、本規約の内容を適宜見直しその改善に努めます。</dd>
+													</dl>
+												</div>
+												<p></p>
+											</div>
+										</div>
+										<div class="checkTxt">
+											<p>個人情報の取り扱いに関しては上記を一読いただき、同意のうえお問い合わせください。</p>
+										</div>
+										<div class="checkItem agreeCheck">
+											<label>
+												<br>
+												<input type="checkbox">
+												<span>個人情報の取り扱いについて同意する</span>
+												<br>
+											</label>
+										</div>
+										<p></p>
+										<input type="hidden" id="mw_wp_form_token" name="mw_wp_form_token" value="f84c219dbd">
+										<input type="hidden" name="_wp_http_referer" value="/contactConfirm/">
+										<input type="hidden" name="mw-wp-form-form-id" value="26">
+										<input type="hidden" name="mw-wp-form-form-verify-token" value="9f88dfdcffa404ee330fb5dd13822797b056a682">
+									</form>
+									<dt>・法令、規範の遵守と見直し</dt>
+									<dd>保有する個人情報について日本の法令その他規範を遵守するとともに、本規約の内容を適宜見直しその改善に努めます。</dd>
+								</dl>
+							</div>
+							<p></p>
+						</div>
+					</div>
+					<div class="checkTxt">
+						<p>個人情報の取り扱いに関しては上記を一読いただき、同意のうえお問い合わせください。</p>
+					</div>
+					<div class="checkItem agreeCheck">
+						<label>
+							<br>
+							<input type="checkbox">
+							<span>個人情報の取り扱いについて同意する</span>
+							<br>
+						</label>
+					</div>
+					<p></p>
+					.submitButton
+						<input type="submit" name="mwform_submitButton-244" value="送信する">
+						<button type="submit" name="submitBack" value="back" class="btnBack">TOPへ戻る</button>
+						<input type="hidden" id="mw_wp_form_token" name="mw_wp_form_token" value="f84c219dbd">
+						<input type="hidden" name="_wp_http_referer" value="/contactConfirm/">
+						<input type="hidden" name="mw-wp-form-form-id" value="26">
+						<input type="hidden" name="mw-wp-form-form-verify-token" value="9f88dfdcffa404ee330fb5dd13822797b056a682">
+				</form>
+			//- .btnBack
+			//- 	a(href="", onclick="window.history.back(); return false;") TOPへ戻る
+// △メイン△

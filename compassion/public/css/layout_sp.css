@@ -1,0 +1,767 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  #fp-nav {
+    right: 0 !important;
+  }
+  .topMain .topKv:before, .topMain .topKv:after {
+    display: none;
+  }
+  .topMain .topKv .kvBox {
+    margin: 0;
+  }
+  .topMain .kvTtlBox {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    font-style: italic;
+    color: #ffffff;
+    z-index: 1;
+  }
+  .topMain .kvTtlBox h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .topMain .kvTtlBox p {
+    font-size: 18px;
+  }
+  .topMain .section {
+    padding: 60px 0 0;
+  }
+  .topMain .section01 .photoBox {
+    display: none;
+  }
+  .topMain .section01 .secBox01 {
+    margin: 0 0 40px;
+    padding: 30px 10px;
+  }
+  .topMain .section01 .secBox01 h2 {
+    margin: 0 0 20px;
+    font-size: 30px;
+  }
+  .topMain .section01 .slideText {
+    position: relative;
+    margin: 20px 0 0;
+    -webkit-animation: loop-en_animation 20s linear infinite;
+    animation: loop-en_animation 20s linear infinite;
+  }
+  .topMain .secBox {
+    padding: 30px 20px;
+  }
+  .topMain .secBox .secTtl {
+    margin: 0 0 30px;
+  }
+  .topMain .secBox .secTtl p {
+    font-size: 40px;
+  }
+  .topMain .secBox .secTtl h2 {
+    padding: 0 15px 2px;
+    font-size: 16px;
+  }
+  .topMain .secBox .txt {
+    margin: 0 0 30px;
+  }
+  .topMain .section03 .secWrap01 {
+    padding: 0 10px;
+  }
+  .topMain .section03 .secBox {
+    float: none;
+  }
+  .topMain .section05 .newsPanel {
+    display: block;
+    padding: 20px 0;
+  }
+  .topMain .section05 .secTtl {
+    width: 280px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .topMain .section05 .secTtl p {
+    font-size: 40px;
+  }
+  .topMain .section05 .secTtl h2 {
+    padding: 0 15px 2px;
+    font-size: 16px;
+  }
+  .topMain .section05 .webgene-blog {
+    width: 100%;
+  }
+  .topMain .section05 .webgene-header {
+    position: static;
+  }
+  .topMain .section05 .webgene-item {
+    padding: 0;
+  }
+  .topMain .section05 .left {
+    float: none;
+    width: 100%;
+    background: #d4d4d4;
+  }
+  .topMain .section05 .right {
+    float: none;
+    width: 100%;
+    padding: 10px 0 0;
+  }
+  .topMain .section05 .photo {
+    top: -5px;
+    left: -5px;
+  }
+  .topMain .section05 .info {
+    margin: 0 0 10px;
+  }
+  .topMain .section05 .info .time {
+    margin: 0 10px 0 0;
+  }
+  .topMain .section06 .secWrap01 {
+    padding: 0 10px;
+  }
+  .topMain .section06 .secBox {
+    float: none;
+  }
+  .topMain .btmSection {
+    padding: 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .strengthMain .section {
+    padding: 60px 0;
+  }
+  .strengthMain .secBox + .secBox {
+    margin-top: 80px;
+  }
+  .strengthMain .secBox .photo {
+    margin: 0 auto 30px;
+  }
+  .strengthMain .secBox .num {
+    width: 90px;
+    margin: 0 auto 20px;
+  }
+  .strengthMain .secBox .box h2 {
+    margin: 0 0 20px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .strengthMain .secBox .box h2 br {
+    display: none;
+  }
+  .strengthMain .secBox .box p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+	rental
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .transportMain,
+  .rentalMain {
+    overflow: hidden;
+  }
+  .transportMain .topSec,
+  .rentalMain .topSec {
+    padding: 60px 0 0;
+  }
+  .transportMain .topSec .secBox,
+  .rentalMain .topSec .secBox {
+    margin: 0 0 50px;
+    padding: 30px 10px;
+  }
+  .transportMain .topSec .secBox h2,
+  .rentalMain .topSec .secBox h2 {
+    margin: 0 0 10px;
+    padding: 20px 0;
+    font-size: 30px;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/business_top_logo.png) center top no-repeat;
+    background-size: 150px auto;
+  }
+  .transportMain .topSec .slideTextBox,
+  .rentalMain .topSec .slideTextBox {
+    position: relative;
+  }
+  .transportMain .topSec .slideText,
+  .rentalMain .topSec .slideText {
+    width: 100%;
+    -webkit-animation: loop-en_animation 50s linear infinite;
+    animation: loop-en_animation 50s linear infinite;
+  }
+  .transportMain .secTtl .ttl .img,
+  .rentalMain .secTtl .ttl .img {
+    max-width: 280px;
+  }
+  .transportMain .flowSec,
+  .rentalMain .flowSec {
+    padding: 50px 0;
+  }
+  .transportMain .flowSec .secTtl,
+  .rentalMain .flowSec .secTtl {
+    margin: 0 0 40px;
+  }
+  .transportMain .flowSec .stepBox + .stepBox,
+  .rentalMain .flowSec .stepBox + .stepBox {
+    position: relative;
+    margin: 80px 0 0;
+  }
+  .transportMain .flowSec .stepBox + .stepBox:before,
+  .rentalMain .flowSec .stepBox + .stepBox:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 45px;
+    height: 28px;
+    margin: 0 auto;
+  }
+  .transportMain .flowSec .stepBox .step,
+  .rentalMain .flowSec .stepBox .step {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .transportMain .flowSec .stepBox .ttlBox,
+  .rentalMain .flowSec .stepBox .ttlBox {
+    padding: 0 10px 10px;
+  }
+  .transportMain .flowSec .stepBox .ttlBox .num,
+  .rentalMain .flowSec .stepBox .ttlBox .num {
+    position: static;
+    font-size: 34px;
+  }
+  .transportMain .flowSec .stepBox .ttlBox .num p,
+  .rentalMain .flowSec .stepBox .ttlBox .num p {
+    display: inline-block;
+    text-indent: -10px;
+  }
+  .transportMain .flowSec .stepBox .ttlBox .ttl,
+  .rentalMain .flowSec .stepBox .ttlBox .ttl {
+    font-size: 24px;
+  }
+  .transportMain .flowSec .stepBox .txtBox,
+  .rentalMain .flowSec .stepBox .txtBox {
+    padding: 20px 10px;
+  }
+  .transportMain .flowSec .stepBox .txtBox .contactList,
+  .rentalMain .flowSec .stepBox .txtBox .contactList {
+    max-width: 280px;
+    margin: 20px auto 0;
+  }
+  .transportMain .flowSec .stepBox .txtBox .contactList .tel,
+  .rentalMain .flowSec .stepBox .txtBox .contactList .tel {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .transportMain .flowSec .stepBox .txtBox .contactList .contact,
+  .rentalMain .flowSec .stepBox .txtBox .contactList .contact {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .transportMain .sec01 .secBox {
+    padding: 50px 0 0;
+  }
+  .transportMain .sec01 .secBox .txtBox {
+    width: 100%;
+    padding: 0 0 30px;
+  }
+  .transportMain .sec01 .secBox .txtBox h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .transportMain .sec01 .secBox .photo {
+    position: static;
+    width: 100%;
+    max-width: 600px;
+  }
+  .transportMain .secService {
+    padding: 60px 0;
+  }
+  .transportMain .secService .secBoxList .secBox + .secBox {
+    margin: 40px 0 0;
+  }
+  .transportMain .secService .secBoxList .secBox .photo {
+    width: 100%;
+  }
+  .transportMain .secService .secBoxList .secBox .txtBox {
+    width: 100%;
+    padding: 20px 10px;
+    background: #ffffff;
+  }
+  .transportMain .secService .secBoxList .secBox .txtBox h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 24px;
+  }
+  .transportMain .secService .secBoxList .secBox .txtBox p {
+    padding: 0;
+  }
+  .transportMain .secService .secBoxList .secBox:nth-child(odd) .photo {
+    float: none;
+  }
+  .transportMain .secService .secBoxList .secBox:nth-child(odd) .txtBox {
+    float: none;
+  }
+  .transportMain .secService .secBoxList .secBox:nth-child(even) .photo {
+    float: none;
+  }
+  .transportMain .secService .secBoxList .secBox:nth-child(even) .txtBox {
+    float: none;
+  }
+  .transportMain .ownedSec {
+    padding: 50px 0;
+  }
+  .transportMain .ownedSec .vehicleList {
+    display: block;
+  }
+  .transportMain .ownedSec .vehicleList .list {
+    width: 100%;
+  }
+  .transportMain .ownedSec .vehicleList .txt {
+    padding: 0 10px;
+  }
+  .transportMain .ownedSec h3 {
+    margin: 0 0 40px;
+    font-size: 18px;
+  }
+  .transportMain .ownedSec .dealList {
+    padding: 30px 10px;
+  }
+  .transportMain .ownedSec .dealList .dl .dt {
+    margin: 0 0 20px;
+  }
+  .transportMain .ownedSec .dealList .dl .dt p {
+    padding: 0 40px;
+    font-size: 20px;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_ttl_icon.png) left center no-repeat, url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_ttl_icon.png) right center no-repeat;
+    background-size: 20px auto,  20px auto;
+  }
+  .transportMain .ownedSec .dealList .dl .dd {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .transportMain .ownedSec .dealList .dl .ul + .ul {
+    margin: 10px 0 0;
+  }
+  .transportMain .ownedSec .dealList .dl .ul .li {
+    display: block;
+  }
+  .transportMain .ownedSec .dealList .dl .ul .li + .li {
+    margin: 10px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	rental
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .rentalMain .sec01 {
+    padding: 50px 0;
+  }
+  .rentalMain .sec01 h2 {
+    margin: 0 0 30px;
+    font-size: 24px;
+  }
+  .rentalMain .sec01 .dl {
+    display: block;
+    margin: 0 0 40px;
+  }
+  .rentalMain .sec01 .dl .dt {
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .rentalMain .sec01 .dl .dt p {
+    padding: 40px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_sec01_icon.png) center top no-repeat;
+    background-size: 30px auto;
+  }
+  .rentalMain .sec01 .dl .dd {
+    display: block;
+    padding: 20px 10px;
+  }
+  .rentalMain .sec01 .logo {
+    max-width: 250px;
+  }
+  .rentalMain .pointSec {
+    padding: 60px 0;
+  }
+  .rentalMain .pointSec .pointList {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .rentalMain .pointSec .pointList .list {
+    padding: 10px;
+  }
+  .rentalMain .pointSec .pointList .list + .list {
+    margin: 40px 0 0;
+  }
+  .rentalMain .pointSec .pointList .dl .dt {
+    font-size: 18px;
+  }
+  .rentalMain .pointSec .pointList .dl .dd {
+    font-size: 13px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .staffMain .staffListPanel .staffListBox {
+    padding: 50px 0;
+  }
+  .staffMain .staffListPanel .staffListBox .secBox {
+    margin: 0 0 30px;
+    padding: 10px 0;
+  }
+  .staffMain .staffListPanel .staffListBox .txtBox .ttl {
+    margin: 0 0 30px;
+  }
+  .staffMain .staffListPanel .staffListBox .txtBox .ttl p {
+    font-size: 40px;
+  }
+  .staffMain .staffListPanel .staffListBox .txtBox .ttl h2 {
+    font-size: 18px;
+  }
+  .staffMain .staffListPanel .staffListBox .txtBox .dl .dt {
+    font-size: 20px;
+  }
+  .staffMain .staffListPanel .staffListBox .infoTxt {
+    font-weight: bold;
+    line-height: 2;
+  }
+  .staffMain .staffListPanel .staffListBox:nth-child(odd) {
+    background: none;
+  }
+  .staffMain .staffListPanel .staffListBox:nth-child(odd) .photo {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  .staffMain .staffListPanel .staffListBox:nth-child(even) {
+    background: none;
+  }
+  .staffMain .staffListPanel .staffListBox:nth-child(even) .photo {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  .staffMain .staffListPanel .staffListBox:nth-child(even) .txtBox {
+    text-align: left;
+  }
+  .staffMain .slidePanel {
+    padding: 100px 0;
+  }
+  .staffMain .slidePanel .slideBox .ul .li {
+    width: calc(100% / 2);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .secTtl .ttl .img {
+    max-width: 280px;
+  }
+  .companyMain .sec01 {
+    padding: 60px 0;
+  }
+  .companyMain .sec01 .secBox {
+    display: block;
+  }
+  .companyMain .sec01 .secBox .photo {
+    display: block;
+    width: 100%;
+  }
+  .companyMain .sec01 .secBox .txtBox {
+    display: block;
+  }
+  .companyMain .sec01 .secBox .txt {
+    padding: 30px 0 0;
+  }
+  .companyMain .sec02 {
+    padding: 60px 0;
+  }
+  .companyMain .sec02 .imgBox {
+    margin: 0 auto 40px;
+  }
+  .companyMain .sec02 .txtBox .dl {
+    display: block;
+    line-height: 1.5;
+  }
+  .companyMain .sec02 .txtBox .dl + .dl {
+    margin: 10px 0 0;
+  }
+  .companyMain .sec02 .txtBox .dl .dt {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+  .companyMain .sec02 .txtBox .dl .dt:after {
+    display: none;
+  }
+  .companyMain .sec02 .txtBox .dl .dd {
+    display: block;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .companyMain .sec03 {
+    padding: 60px 0;
+  }
+  .companyMain .sec03 .ttl {
+    margin: 0 0 40px;
+  }
+  .companyMain .sec03 .ttl p {
+    font-size: 34px;
+  }
+  .companyMain .sec03 .ttl h2 {
+    font-size: 16px;
+  }
+  .companyMain .sec03 .infoBox .dl .dt {
+    width: 90px;
+    padding: 0;
+  }
+  .companyMain .sec03 .infoBox .dl .dd {
+    padding: 0 10px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain .secTtl {
+    margin: 0 0 40px;
+  }
+  .recruitMain .secTtl .ttl .img {
+    max-width: 280px;
+  }
+  .recruitMain .sec01 {
+    padding: 60px 0;
+  }
+  .recruitMain .sec01 .secBox {
+    float: none;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+  .recruitMain .sec01 .secBox h3 {
+    margin: 0 0 20px;
+    font-size: 30px;
+  }
+  .recruitMain .sec02 {
+    padding: 60px 0;
+  }
+  .recruitMain .sec02 .ul {
+    display: block;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+  }
+  .recruitMain .sec02 .ul .li {
+    width: 100%;
+    padding: 30px 10px;
+    font-size: 18px;
+  }
+  .recruitMain .sec02 .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .recruitMain .sec02 .moreLink {
+    max-width: 280px;
+  }
+  .recruitMain .sec03 {
+    padding: 60px 0;
+  }
+  .recruitMain .sec03 .ol .li {
+    padding: 10px 5px 30px;
+  }
+  .recruitMain .sec03 .ol .li + .li {
+    margin: 80px 0 0;
+  }
+  .recruitMain .sec03 .ol .li + .li:before {
+    content: '';
+    position: absolute;
+    top: -55px;
+    left: 0;
+    right: 0;
+    width: 46px;
+    height: 30px;
+    margin: 0 auto;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_flow_arrow_02.png) no-repeat;
+    background-size: 46px auto;
+  }
+  .recruitMain .sec03 .ol .step {
+    font-size: 20px;
+  }
+  .recruitMain .sec03 .ol .num {
+    margin: 0 0 10px;
+    font-size: 30px;
+  }
+  .recruitMain .sec03 .ol .txt {
+    font-size: 30px;
+  }
+  .recruitMain .sec04 {
+    padding: 120px 0;
+  }
+  .recruitMain .sec04 .infoBox .dl .dt {
+    width: 90px;
+    padding: 0;
+  }
+  .recruitMain .sec04 .infoBox .dl .dd {
+    padding: 0 10px;
+  }
+  .recruitMain .sec05 {
+    padding: 0 0 60px;
+  }
+  .recruitMain .sec05 .secTtl + p {
+    margin: 0 0 30px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .secTtl {
+    margin: 0 0 40px;
+  }
+  .contactMain .secTtl .ttl .img {
+    max-width: 280px;
+  }
+  .contactMain .sec01 {
+    padding: 60px 0;
+  }
+  .contactMain .sec01 .ul {
+    display: block;
+    padding: 0 10px;
+  }
+  .contactMain .sec01 .ul .li {
+    width: 100%;
+  }
+  .contactMain .sec01 .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .contactMain .sec01 .ul .dl .dt {
+    font-size: 20px;
+  }
+  .contactMain .sec01 .ul .dl .dd {
+    min-height: 0;
+  }
+  .contactMain .sec01 .ul .telBox .dl .dd {
+    padding: 20px 10px;
+  }
+  .contactMain .sec01 .ul .telBox .dl .dd .span {
+    font-size: 16px;
+  }
+  .contactMain .sec01 .ul .telBox .dl .dd .em {
+    font-size: 30px;
+  }
+  .contactMain .sec01 .ul .lineBox .dl .dd {
+    padding: 20px 10px;
+  }
+  .contactMain .sec01 .ul .lineBox .dl .dd a {
+    padding: 0 0 0 50px;
+    line-height: 1.5;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/contact_line.png) left center no-repeat;
+    background-size: 45px auto;
+  }
+  .contactMain .sec02 {
+    padding: 60px 0;
+  }
+  .contactMain .sec02 .secTtl + p {
+    margin: 0 0 30px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactForm .formBox > .dl {
+    display: block;
+    padding: 15px 0;
+  }
+  .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-align: left;
+  }
+  .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+  }
+  .contactForm .formBox > .dl .dd {
+    display: block;
+    padding: 10px 0;
+  }
+  .contactForm .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .blogBox {
+    padding: 40px 10px 60px;
+  }
+  .newsMain .blogBox .left {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .newsMain .blogBox .right {
+    float: none;
+    width: 100%;
+  }
+  .newsMain .blogBox .right .menu .ttl {
+    font-size: 20px;
+  }
+  .newsMain .blogBox .blogListBox .webgene-item .photo {
+    float: none;
+    width: 100%;
+  }
+  .newsMain .blogBox .blogListBox .webgene-item .txt {
+    float: none;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .newsMain .blogBox .blogListBox .webgene-pagination {
+    margin: 30px 0 0;
+  }
+  .newsMain .blogBox .blogDetailBox .webgene-item {
+    padding: 10px;
+  }
+  .newsMain .blogBox .blogDetailBox .ttlBox {
+    margin-bottom: 20px;
+  }
+  .newsMain .blogBox .blogDetailBox .ttlBox .topTtl {
+    font-size: 22px;
+  }
+}

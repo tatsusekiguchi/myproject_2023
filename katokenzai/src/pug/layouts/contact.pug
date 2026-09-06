@@ -1,0 +1,79 @@
+// ▽メイン▽
+main#contactMain.pageMain
+    .pageKvPanel
+        .pageKvTitle
+            p Contact
+            h1 お問い合わせ
+    .formContainer
+        .secWrap01
+            .topTxt
+                p 下記フォームに必要事項をご記入の上、<br class="spBreak">お問い合わせください。
+            .formBox
+                form
+                    .nameBox
+                        dl
+                            dt
+                                span 姓(漢字)
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="text")
+                        dl
+                            dt
+                                span 名(漢字)
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="text")
+                    .nameBox
+                        dl
+                            dt
+                                span 姓(カナ)
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="text")
+                        dl
+                            dt
+                                span 名(カナ)
+                                em ※
+                            dd
+                                .inputBox
+                                    input(type="text")
+                    dl
+                        dt
+                            span メールアドレス
+                            em ※
+                        dd
+                            .inputBox
+                                input(type="email")
+                    dl
+                        dt
+                            span メールアドレス(確認)
+                            em ※
+                        dd
+                            .inputBox
+                                input(type="email")
+                    dl.msg
+                        dt
+                            span お問い合わせ内容
+                            em ※
+                        dd
+                            .inputBox
+                                textarea
+                    .submitButton
+                        <input type="submit" value="確認画面へ" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+    .itemContainer
+        .secWrap01
+            .itemList
+                .itemBox.tel
+                    dl
+                        dt お電話での<br>お問い合わせ
+                        dd
+                            a(href="tel:0561849811") （0561）84-9811
+                .itemBox.mail
+                    dl
+                        dt メールでの<br>お問い合わせ
+                        dd
+                            a(href="mailto:info@katokenzai.net") info@katokenzai.net
+// △メイン△

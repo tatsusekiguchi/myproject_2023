@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>商品カート（非決決済型）サンプル</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	
+	<link rel="stylesheet" href="./_cartexample_/_cartexample_.css" type="text/css">
+	
+	<!-- [ Cart Include Files ] -->
+	<link rel="stylesheet" href="./contact/cart/cart.lib/cart.css" type="text/css">
+	<script type="text/javascript" src="./contact/fmail.lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./contact/cart/cart.lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="./contact/cart/cart.lib/base64.js"></script>
+	<script type="text/javascript" src="./contact/cart/cart.lib/cart_insert.js"></script>
+	<!-- [ Cart Include Files EOF ] -->
+	
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQN83K9VQZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YQN83K9VQZ');
+</script>
+</head>
+<body id="sp">
+
+	<div id="header">
+		<h1>商品カート（非決決済型）サンプル</h1>
+		<h2>カートに入れて一括問い合わせ</h2>
+	</div>
+	
+	<div id="content">
+		<div class="section">
+			<p>
+				設置サンプルです。<br /><br />
+				./_cartexample_/_cartexample_.css　はサンプルページ用の為、本番環境課でのコーディング時には関係ありません。<br />
+				マニュアルにも記載しますが、設置については関連するclass名やname値に注意しながら設置してください。
+			</p>
+		</div>
+		
+		<!-- .section start -->
+		<div class="section">
+			
+			<dl>
+				<dt>エンピツ</dt>
+				<dd>
+					
+					<!-- cart sender start -->
+					<form method="POST" class="cart_sender">
+						<fieldset>
+							<input type="hidden" name="pcode" class="pcode" value="0000001">
+							<input type="hidden" name="pname" class="pname" value="エンピツ">
+							<input type="hidden" name="pprice" class="pprice" value="315">
+							<img src="./_cartexample_/pencil.jpg" alt="エンピツ">
+							<table class="data">
+								<tr>
+									<th>商品コード：</th>
+									<td class="code">0000001</td>
+								</tr>
+								<tr>
+									<th>濃さ：</th>
+									<td class="detail1">HB / B / 2B / 3B / 4B</td>
+								</tr>
+								<tr>
+									<th>カバー色：</th>
+									<td class="detail2">オレンジ / グリーン / イエロー / レッド</td>
+								</tr>
+								<tr>
+									<th>価格：</th>
+									<td class="price"><span class="en">315円</span>（税込）</td>
+								</tr>
+								<tr>
+									<th>濃さ：</th>
+									<td>
+										<select name="pdetail1" class="pdetail1">
+											<option value="HB">HB</option>
+											<option value="B">B</option>
+											<option value="2B">2B</option>
+											<option value="3B">3B</option>
+											<option value="4B">4B</option>
+										</select><br>
+									</td>
+								</tr>
+								<tr>
+									<th>カバー色：</th>
+									<td>
+										<select name="pdetail2" class="pdetail2">
+											<option value="オレンジ">オレンジ</option>
+											<option value="グリーン">グリーン</option>
+											<option value="イエロー">イエロー</option>
+											<option value="レッド">レッド</option>
+										</select><br>
+									</td>
+								</tr>
+								<tr>
+									<th>個数：</th>
+									<td>
+										<select name="pnum" class="pnum">
+											<option value="1">1 本</option>
+											<option value="2">2 本</option>
+											<option value="3">3 本</option>
+											<option value="4">4 本</option>
+											<option value="5">5 本</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="button">
+										<div class="loading">カートに入れました</div>
+										<input type="hidden" name="mode" class="mode" value="cart_in" />
+										<input type="submit" value="" class="form_submit_sp" />
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</form>
+					<!-- cart sender end -->
+					
+				</dd>
+			</dl>
+			
+			
+			<dl>
+				<dt>定規</dt>
+				<dd>
+					
+					<!-- cart sender start -->
+					<form method="POST" class="cart_sender">
+						<fieldset>
+							<input type="hidden" name="pcode" class="pcode" value="0000002">
+							<input type="hidden" name="pname" class="pname" value="定規">
+							<input type="hidden" name="pprice" class="pprice" value="1000">
+							<img src="./_cartexample_/ruler.jpg" alt="定規">
+							<table class="data">
+								<tr>
+									<th>商品コード：</th>
+									<td class="code">0000002</td>
+								</tr>
+								<tr>
+									<th>サイズ：</th>
+									<td class="detail1">15cm / 20cm / 30cm</td>
+								</tr>
+								<tr>
+									<th>価格：</th>
+									<td class="price"><span class="en">1,000円</span>（税込）</td>
+								</tr>
+								<tr>
+									<th>濃さ：</th>
+									<td>
+										<select name="pdetail1" class="pdetail1">
+											<option value="15cm">15cm</option>
+											<option value="20cm">20cm</option>
+											<option value="30cm">30cm</option>
+										</select><br>
+									</td>
+								</tr>
+								<tr>
+									<th>個数：</th>
+									<td>
+										<select name="pnum" class="pnum">
+											<option value="1">1 本</option>
+											<option value="10">10 本</option>
+											<option value="20">20 本</option>
+											<option value="30">30 本</option>
+											<option value="100">100 本</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="button">
+										<div class="loading">カートに入れました</div>
+										<input type="hidden" name="mode" class="mode" value="cart_in" />
+										<input type="submit" value="" class="form_submit_sp" />
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</form>
+					<!-- cart sender end -->
+					
+				</dd>
+			</dl>
+			
+			<dl>
+				<dt>消しゴム</dt>
+				<dd>
+					
+					<!-- cart sender start -->
+					<form method="POST" class="cart_sender">
+						<fieldset>
+							<input type="hidden" name="pcode" class="pcode" value="0000003">
+							<input type="hidden" name="pname" class="pname" value="消しゴム">
+							<input type="hidden" name="pprice" class="pprice" value="525">
+							<input type="hidden" name="pnum" class="pnum" value="1">
+							<img src="./_cartexample_/eraser.jpg" alt="消しゴム" />
+							<table class="data">
+								<tr>
+									<th>商品コード：</th>
+									<td class="code">0000003</td>
+								</tr>
+								<tr>
+									<th>価格：</th>
+									<td class="price"><span class="en">525円</span>（税込）</td>
+								</tr>
+								<tr>
+									<th>個数：</th>
+									<td>1個</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="button">
+										<div class="loading">カートに入れました</div>
+										<input type="hidden" name="mode" class="mode" value="cart_in" />
+										<input type="submit" value="" class="form_submit_sp" />
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</form>
+					<!-- cart sender end -->
+					
+				</dd>
+			</dl>
+			
+		</div>
+		<!-- .section end -->
+		
+	</div>
+	
+	<div id="footer">
+		<p><small>Copyright(C) フリーセル All Rights Reserved.</small></p>
+	</div>
+	
+	<!-- cart header start -->
+	<div id="cart_icon"><a href="./contact/cart/">カートを確認</a></div>
+	<!-- cart header end -->
+	
+</body>
+</html>

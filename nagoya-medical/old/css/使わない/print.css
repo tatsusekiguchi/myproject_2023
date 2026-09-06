@@ -1,0 +1,8 @@
+@media print {
+    .pagetop_back {
+        display: none;
+    }
+    .pagetop2 {
+        display: none;
+    }
+}

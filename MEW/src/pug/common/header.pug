@@ -1,0 +1,27 @@
+// ▽header▽
+header.header
+    .headBox
+        .logo
+            a(href="#")
+                img(src=(root_path || '') + "image/common/header_logo.png", alt="学校法人・専門学校 東京モード学園")
+        .navBox
+            .navList
+                p メニュー
+                ul
+                    li
+                        p.linkBtn(data-target="listContainer")
+                            em Group
+                            span グループ
+                    li
+                        p.linkBtn(data-target="sectionContainer")
+                            em Theme
+                            span テーマ
+                    li
+                        p.linkBtn(data-target="voteTxt")
+                            em Vote
+                            span 投票
+    .hamburger
+        span
+        span
+        span
+// △header△

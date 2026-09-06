@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 15px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  z-index: 999;
+  background: #ffffff;
+}
+.header .logo {
+  max-width: 200px;
+}
+.header .logo a {
+  display: block;
+}
+.header .headItem {
+  display: none;
+}
+
+.hamburger {
+  top: 10px;
+  right: 20px;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+}
+
+.subNavigation {
+  width: 80%;
+}
+.subNavigation .subNavigationList {
+  padding: 80px 0;
+}
+.subNavigation .subNavigationList ul li a {
+  padding: 10px 20px;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 73px 0 0;
+}
+
+.mainContainer {
+  padding: 60px 0 120px;
+}
+.mainContainer .pageSecTtl {
+  margin: 0 0 50px;
+}
+
+.pageKvPanel {
+  height: 250px;
+}
+.pageKvPanel .pageKvTitle {
+  padding: 0 20px;
+}
+.pageKvPanel .pageKvTitle h1 {
+  max-width: 340px;
+  padding: 20px 10px;
+  font-size: 22px;
+}
+
+.pageSecTtl {
+  margin: 0 0 40px;
+}
+.pageSecTtl h1,
+.pageSecTtl h2,
+.pageSecTtl .secTtl {
+  display: block;
+  margin: 0 0 5px;
+  padding: 0 0 5px;
+  font-size: 22px;
+}
+.pageSecTtl h1:after,
+.pageSecTtl h2:after,
+.pageSecTtl .secTtl:after {
+  display: none;
+}
+.pageSecTtl h1 + p,
+.pageSecTtl h2 + p,
+.pageSecTtl .secTtl + p {
+  display: block;
+  font-size: 16px;
+}
+
+.pageSecTtlSub {
+  margin: 0 auto 40px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+.videoBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 0 0 80px;
+}
+.footer .footContact .logo {
+  max-width: 240px;
+  margin: 0 auto 40px;
+}
+.footer .footContact .contactTitle {
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+.footer .footContact .contactLink {
+  max-width: 350px;
+  margin: 0 auto 20px;
+}
+.footer .footContact .contactLink ul li + li {
+  margin: 20px 0 0;
+}
+.footer .footContact .contactLink ul a {
+  padding: 10px;
+}
+.footer .footContact .contactLink ul dl {
+  display: block;
+  text-align: center;
+}
+.footer .footContact .contactLink ul dl dt {
+  width: 100%;
+  margin: 0 0 5px;
+}
+.footer .footContact .contactLink ul dl dt:after {
+  display: none;
+}
+.footer .footContact .contactLink ul dl dt em {
+  font-size: 18px;
+}
+.footer .footContact .contactLink ul dl dd > p {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  background: url("../image/common/footer_btn_arrow.png") right center no-repeat;
+  background-size: 5px auto;
+}
+.footer .footContact .contactLink ul dl dd .tel {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  font-size: 26px;
+  background: url("../image/common/footer_contact_tel.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footContact .contactLink ul dl dd .attention {
+  font-size: 12px;
+}
+.footer .footContact .calendarContainer .leftBox {
+  margin: 0 0 20px;
+}
+.footer .footContact .calendarContainer .calendarPanel {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 20px;
+}
+.footer .footContact .calendarContainer .calendarPanel > dl {
+  display: block;
+  margin: 0 0 20px;
+  padding: 0 10px;
+  text-align: center;
+}
+.footer .footContact .calendarContainer .calendarPanel > dl dt {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+.footer .footContact .calendarContainer .calendarPanel table tr + tr th {
+  font-size: 12px;
+}
+.footer .footContact .calendarContainer .calendarPanel table th {
+  padding: 2px;
+}
+.footer .footContact .calendarContainer .calendarPanel table td {
+  padding: 2px;
+}
+.footer .footContact .calendarContainer .calendarPanel table .slash {
+  width: 15px;
+}
+.footer .footContact .calendarContainer .infoBox {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer .footContact .calendarContainer .infoBox dl {
+  display: block;
+}
+.footer .footContact .calendarContainer .infoBox dl + dl {
+  margin: 20px 0 0;
+}
+.footer .footContact .calendarContainer .infoBox dl dt {
+  width: 100%;
+  margin: 0 0 10px;
+}
+.footer .footContact .calendarContainer .infoBox dl dt span {
+  display: block;
+  width: 120px;
+  padding: 2px;
+}
+.footer .footContact .calendarContainer .clinicBox {
+  max-width: 600px;
+  margin: 30px 0 0;
+  text-align: center;
+}
+.footer .footContact .calendarContainer .clinicBox .name {
+  font-size: 24px;
+}
+.footer .footPanel {
+  padding: 60px 0 20px;
+}
+.footer .footPanel .pagetop {
+  top: -50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: url("../image/common/pagetop_arrow.png") center no-repeat #f0f6f7;
+  background-size: 15px auto;
+}
+.footer .footPanel .footNav {
+  display: none;
+}
+.footer .footPanel .copy {
+  font-size: 13px;
+  text-align: center;
+}

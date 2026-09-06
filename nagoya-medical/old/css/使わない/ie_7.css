@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*----------▼印刷専用----------*/
+@media print {
+
+body {
+	zoom:96%;
+}
+.break{
+	page-break-before:always;
+
+}
+.break_aft{
+	page-break-after:always;
+
+}
+
+
+#temp_side{
+	float:left;
+	width:200px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	background-color:#FFFFFF;
+}
+
+
+
+}
+
+/*----------▲印刷専用----------*/
+

@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 14px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header .logo {
+    width: 190px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox .navList ul li {
+    display: inline-block;
+  }
+  .navBox .navList ul li + li {
+    margin: 0 0 0 20px;
+  }
+  .navBox .navList ul li a {
+    display: inline-block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+  margin: 77px 0 0;
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 380px;
+}
+.pageKvPanel .pageKvTitle {
+  color: #ffffff;
+  text-align: center;
+}
+.pageKvPanel .pageKvTitle p {
+  position: relative;
+  margin: 0 0 10px;
+  font-family: Futura, "Century Gothic", "游ゴシック体", "YuGothic";
+  font-size: 64px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+.pageKvPanel .pageKvTitle p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  height: 2px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+.pageKvPanel .pageKvTitle h1 {
+  font-size: 28px;
+  letter-spacing: 0.2em;
+}
+
+.secWrap {
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.secWrap01 {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footPanel {
+  padding: 80px 0;
+  text-align: center;
+}
+.footer .footPanel .footBox .logo {
+  display: inline-block;
+  width: 280px;
+  margin: 0 40px 0 0;
+  vertical-align: middle;
+}
+.footer .footPanel .footBox .txtBox {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.footer .footPanel .footBox .telFax > * {
+  display: inline-block;
+}
+.footer .footPanel .footBox .telFax .tel {
+  margin: 0 10px 0 0;
+}
+.footer .footPanel .footBox .telFax a {
+  display: inline-block;
+}
+.footer .footPanel .footNav {
+  max-width: 960px;
+  margin: 60px auto 0;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #000000;
+}
+.footer .footPanel .footNav ul {
+  text-align: center;
+}
+.footer .footPanel .footNav ul li {
+  display: inline-block;
+}
+.footer .footPanel .footNav ul li + li {
+  margin: 0 0 0 40px;
+}
+.footer .footPanel .footNav ul a {
+  display: inline-block;
+}
+.footer .copy {
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.05em;
+  background: #000000;
+}
+
+.pageMain + .footer {
+  background: #e1e5e5;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

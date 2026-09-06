@@ -1,0 +1,2234 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKv {
+  position: relative;
+  width: 100%;
+}
+
+.topMain .topKv:before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: #26346e;
+}
+
+.topMain .topKv:after {
+  content: '';
+  position: absolute;
+  left: 150px;
+  bottom: -40px;
+  width: 640px;
+  height: 326px;
+  z-index: -1;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_kv_tri.png) center no-repeat;
+  background-size: 640px auto;
+}
+
+.topMain .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 300px;
+}
+
+.topMain .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.topMain .topKv .kvBox .kv01 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+
+.topMain .topKv .kvBox .kv02 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+
+.topMain .topKv .kvBox .kv03 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1025px) {
+  .topMain .kvTtlBox {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    width: 100%;
+    font-style: italic;
+    color: #ffffff;
+    z-index: 1;
+  }
+  .topMain .kvTtlBox h1 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .topMain .kvTtlBox p {
+    font-size: 24px;
+  }
+}
+
+.topMain .wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.topMain .section01 {
+  position: relative;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.topMain .section01 .photoBox {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 645px;
+}
+
+.topMain .section01 .photoBox:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  width: 300px;
+  height: 340px;
+  z-index: 1;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_sec01_line.png) no-repeat;
+  background-size: 300px auto;
+}
+
+.topMain .section01 .secBox01 {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 60px 10px;
+  text-align: center;
+  z-index: 2;
+  background: #ffffff;
+}
+
+.topMain .section01 .secBox01 h2 {
+  margin: 0 0 30px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.topMain .section01 .secBox01 h2 + p {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.topMain .section01 .slideText {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  -webkit-animation: loop-en_animation 50s linear infinite;
+  animation: loop-en_animation 50s linear infinite;
+}
+
+.topMain .secBox {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.topMain .secBox .secTtl {
+  margin: 0 0 40px;
+  font-style: italic;
+}
+
+.topMain .secBox .secTtl p {
+  margin: 0 0 15px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.topMain .secBox .secTtl h2 {
+  display: inline-block;
+  padding: 0 20px 2px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.topMain .secBox .txt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: right;
+  line-height: 2;
+}
+
+.topMain .section02 {
+  position: relative;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.topMain .section02:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  opacity: 0.4;
+  background: #db1a16;
+  transition: 0.6s;
+}
+
+.topMain .section02.active:before {
+  left: 0;
+}
+
+.topMain .section02 .secBox .secTtl p {
+  color: #db1a16;
+}
+
+.topMain .section02 .secBox .secTtl h2 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_ttl_red.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.topMain .section03 {
+  position: relative;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.topMain .section03:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50%;
+  width: 50%;
+  height: 100%;
+  opacity: 0.4;
+  background: #00a610;
+  transition: 0.6s;
+}
+
+.topMain .section03.active:before {
+  right: 0;
+}
+
+.topMain .section03 .secWrap01 {
+  padding: 0 80px;
+}
+
+.topMain .section03 .secBox {
+  float: right;
+}
+
+.topMain .section03 .secBox .secTtl p {
+  color: #00a610;
+}
+
+.topMain .section03 .secBox .secTtl h2 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_ttl_green.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.topMain .section04 {
+  position: relative;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.topMain .section04:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  opacity: 0.4;
+  background: #26346e;
+  transition: 0.6s;
+}
+
+.topMain .section04.active:before {
+  left: 0;
+}
+
+.topMain .section04 .secBox .secTtl p {
+  color: #26346e;
+}
+
+.topMain .section04 .secBox .secTtl h2 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_ttl_blue.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.topMain .section05 {
+  position: relative;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_sec05_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.topMain .section05 .newsPanel {
+  padding: 60px 0;
+}
+
+.topMain .section05 .secTtl {
+  width: 300px;
+  font-style: italic;
+}
+
+.topMain .section05 .secTtl p {
+  margin: 0 0 15px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.topMain .section05 .secTtl h2 {
+  display: inline-block;
+  padding: 0 20px 2px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_ttl_black.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.topMain .section05 .webgene-blog {
+  position: relative;
+}
+
+.topMain .section05 .webgene-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 130px;
+  margin: auto 0;
+}
+
+.topMain .section05 .webgene-item {
+  padding: 0 0 0 400px;
+}
+
+.topMain .section05 .webgene-item + .webgene-item {
+  margin: 30px 0 0;
+}
+
+.topMain .section05 .left {
+  float: left;
+  width: 300px;
+  background: #d4d4d4;
+}
+
+.topMain .section05 .right {
+  float: right;
+  width: calc(100% - 360px);
+  font-style: italic;
+}
+
+.topMain .section05 .photo {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+.topMain .section05 .info {
+  margin: 0 0 20px;
+}
+
+.topMain .section05 .info .time {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+.topMain .section05 .info .cate {
+  display: inline-block;
+  padding: 0 15px;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_ttl_blue.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.topMain .section05 .txt a {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.topMain .section06 {
+  position: relative;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_sec06_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.topMain .section06:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50%;
+  width: 50%;
+  height: 100%;
+  opacity: 0.4;
+  background: #eb7a00;
+  transition: 0.6s;
+}
+
+.topMain .section06.active:before {
+  right: 0;
+}
+
+.topMain .section06 .secWrap01 {
+  padding: 0 80px;
+}
+
+.topMain .section06 .secBox {
+  float: right;
+}
+
+.topMain .section06 .secBox .secTtl p {
+  color: #eb7a00;
+}
+
+.topMain .section06 .secBox .secTtl h2 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/top_ttl_orange.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.topMain .blogListBox,
+.topMain .secBox {
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+
+.topMain .active .blogListBox,
+.topMain .active .secBox,
+.topMain .active .secBox01 {
+  animation-name: fadeleft;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.topMain .active .secBox01 {
+  animation-delay: 0.4s;
+}
+
+.topMain .section05 {
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+
+.topMain .active.section05 {
+  animation-name: fadeleft;
+  animation-duration: 1s;
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes loop-en_animation {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes loop-en_animation {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes loop-en_animation_page {
+  0% {
+    left: 2000px;
+  }
+  100% {
+    left: -2000px;
+  }
+}
+
+@keyframes loop-en_animation_page {
+  0% {
+    left: 2000px;
+  }
+  100% {
+    left: -2000px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain .pageKv:before {
+  background: #26346e;
+}
+
+.strengthMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/strength_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.strengthMain .section {
+  padding: 120px 0;
+}
+
+@media (min-width: 1025px) {
+  .strengthMain .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .strengthMain .secBox + .secBox {
+    margin-top: 100px;
+  }
+  .strengthMain .photo {
+    width: 56%;
+  }
+  .strengthMain .txtBox {
+    position: relative;
+    width: 44%;
+  }
+  .strengthMain .num {
+    width: 150px;
+  }
+  .strengthMain .box h2 {
+    margin: 0 0 20px;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .strengthMain .box p {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+  }
+  .strengthMain .secBox:nth-child(odd) .photo {
+    order: 2;
+  }
+  .strengthMain .secBox:nth-child(odd) .txtBox {
+    order: 1;
+  }
+  .strengthMain .secBox:nth-child(odd) .num {
+    position: absolute;
+    top: -120px;
+    left: 0;
+  }
+  .strengthMain .secBox:nth-child(odd) .box {
+    padding: 0 50px 0 120px;
+  }
+  .strengthMain .secBox:nth-child(even) .num {
+    position: absolute;
+    top: -60px;
+    right: 0;
+  }
+  .strengthMain .secBox:nth-child(even) .box {
+    padding: 0 120px 0 50px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+	rental
+///////////////////////////////////////////////////////////*/
+.transportMain,
+.rentalMain {
+  overflow: hidden;
+}
+
+.transportMain .topSec,
+.rentalMain .topSec {
+  position: relative;
+  padding: 120px 0 0;
+}
+
+.transportMain .topSec .secBox,
+.rentalMain .topSec .secBox {
+  position: relative;
+  margin: 0 0 100px;
+  padding: 40px 10px;
+  text-align: center;
+  z-index: 1;
+  background: #f3f4f5;
+}
+
+.transportMain .topSec .secBox h2,
+.rentalMain .topSec .secBox h2 {
+  margin: 0 0 10px;
+  padding: 20px 0;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/business_top_logo.png) center top no-repeat;
+  background-size: 220px auto;
+}
+
+.transportMain .topSec .secBox p,
+.rentalMain .topSec .secBox p {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.transportMain .topSec .slideTextBox,
+.rentalMain .topSec .slideTextBox {
+  position: relative;
+}
+
+.transportMain .topSec .slideText,
+.rentalMain .topSec .slideText {
+  position: relative;
+  bottom: -1px;
+  width: 2000px;
+  -webkit-animation: loop-en_animation_page 50s linear infinite;
+  animation: loop-en_animation_page 50s linear infinite;
+}
+
+.transportMain .secTtl,
+.rentalMain .secTtl {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.transportMain .secTtl .ttl,
+.rentalMain .secTtl .ttl {
+  margin: 0 0 15px;
+}
+
+.transportMain .secTtl .ttl .img,
+.rentalMain .secTtl .ttl .img {
+  display: inline-block;
+}
+
+.transportMain .secTtl h2,
+.rentalMain .secTtl h2 {
+  display: inline-block;
+  min-width: 120px;
+  padding: 0 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.transportMain .flowSec,
+.rentalMain .flowSec {
+  padding: 100px 0;
+}
+
+.transportMain .flowSec .secTtl,
+.rentalMain .flowSec .secTtl {
+  margin: 0;
+}
+
+.transportMain .flowSec .stepBox + .stepBox,
+.rentalMain .flowSec .stepBox + .stepBox {
+  position: relative;
+  margin: 60px 0 0;
+}
+
+.transportMain .flowSec .stepBox + .stepBox:before,
+.rentalMain .flowSec .stepBox + .stepBox:before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  width: 45px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+.transportMain .flowSec .stepBox .step,
+.rentalMain .flowSec .stepBox .step {
+  width: 120px;
+  margin: 0 0 0 20px;
+}
+
+.transportMain .flowSec .stepBox .ttlBox,
+.rentalMain .flowSec .stepBox .ttlBox {
+  position: relative;
+  padding: 10px 60px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.transportMain .flowSec .stepBox .ttlBox .num,
+.rentalMain .flowSec .stepBox .ttlBox .num {
+  position: absolute;
+  top: 5px;
+  left: 45px;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.transportMain .flowSec .stepBox .ttlBox .ttl,
+.rentalMain .flowSec .stepBox .ttlBox .ttl {
+  font-size: 40px;
+}
+
+.transportMain .flowSec .stepBox .txtBox,
+.rentalMain .flowSec .stepBox .txtBox {
+  padding: 20px;
+  background: #ffffff;
+}
+
+.transportMain .flowSec .stepBox .txtBox .txt,
+.rentalMain .flowSec .stepBox .txtBox .txt {
+  max-width: 850px;
+  margin: 0 auto;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.transportMain .flowSec .stepBox .txtBox .contactList,
+.rentalMain .flowSec .stepBox .txtBox .contactList {
+  overflow: hidden;
+  max-width: 650px;
+  margin: 20px auto 0;
+}
+
+.transportMain .flowSec .stepBox .txtBox .contactList .tel,
+.rentalMain .flowSec .stepBox .txtBox .contactList .tel {
+  float: left;
+  width: 48%;
+}
+
+.transportMain .flowSec .stepBox .txtBox .contactList .contact,
+.rentalMain .flowSec .stepBox .txtBox .contactList .contact {
+  float: right;
+  width: 48%;
+}
+
+.transportMain .flowSec .stepBox .txtBox .contactList a,
+.rentalMain .flowSec .stepBox .txtBox .contactList a {
+  display: block;
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+.transportMain .pageKv:before {
+  background: #db1a16;
+}
+
+.transportMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.transportMain .topSec {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_top_bg.png) center no-repeat;
+  background-size: cover;
+}
+
+.transportMain .topSec .slideTextBox:before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: 0;
+  width: 160px;
+  height: 170px;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_top_line.png) center no-repeat;
+  background-size: 160px auto;
+}
+
+.transportMain .sec01 {
+  background: #f1f2f4;
+}
+
+.transportMain .sec01 .secBox {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0 100px;
+}
+
+.transportMain .sec01 .secBox .txtBox {
+  width: 50%;
+  padding: 0 20px 0 0;
+}
+
+.transportMain .sec01 .secBox .txtBox h2 {
+  margin: 0 0 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.transportMain .sec01 .secBox .txtBox p {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.transportMain .sec01 .secBox .photo {
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  width: 50%;
+}
+
+.transportMain .secTtl h2 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_ttl_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.transportMain .secService {
+  padding: 120px 0 60px;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_service_bg.png) right bottom no-repeat;
+  background-size: cover;
+}
+
+.transportMain .secService .secBoxList .secBox {
+  overflow: hidden;
+}
+
+.transportMain .secService .secBoxList .secBox + .secBox {
+  margin: 60px 0 0;
+}
+
+.transportMain .secService .secBoxList .secBox .photo {
+  width: 49%;
+}
+
+.transportMain .secService .secBoxList .secBox .txtBox {
+  width: 49%;
+}
+
+.transportMain .secService .secBoxList .secBox .txtBox h3 {
+  margin: 0 0 20px;
+  padding: 0 20px;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 2px solid #db1a16;
+}
+
+.transportMain .secService .secBoxList .secBox .txtBox p {
+  padding: 0 20px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.transportMain .secService .secBoxList .secBox:nth-child(odd) .photo {
+  float: right;
+}
+
+.transportMain .secService .secBoxList .secBox:nth-child(odd) .txtBox {
+  float: left;
+}
+
+.transportMain .secService .secBoxList .secBox:nth-child(even) .photo {
+  float: left;
+}
+
+.transportMain .secService .secBoxList .secBox:nth-child(even) .txtBox {
+  float: right;
+}
+
+.transportMain .flowSec {
+  background: #faf3f3;
+}
+
+.transportMain .flowSec .stepBox + .stepBox:before {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_flow_arrow.png) no-repeat;
+  background-size: 45px auto;
+}
+
+.transportMain .flowSec .stepBox .ttlBox {
+  background: #e32927;
+}
+
+.transportMain .ownedSec {
+  padding: 100px 0;
+}
+
+.transportMain .ownedSec .vehicleList {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 40px;
+}
+
+.transportMain .ownedSec .vehicleList .list {
+  width: calc((100% / 2) - 40px);
+}
+
+.transportMain .ownedSec .vehicleList .img {
+  margin: 0 0 20px;
+}
+
+.transportMain .ownedSec .vehicleList .txt {
+  padding: 0 20px;
+  font-weight: bold;
+  line-height: 2;
+  border-left: 3px solid #db1a16;
+}
+
+.transportMain .ownedSec h3 {
+  margin: 0 0 60px;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #e32927;
+}
+
+.transportMain .ownedSec .dealList {
+  padding: 40px 10px;
+  text-align: center;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.transportMain .ownedSec .dealList .dl .dt {
+  margin: 0 0 30px;
+}
+
+.transportMain .ownedSec .dealList .dl .dt p {
+  display: inline-block;
+  padding: 0 50px;
+  font-size: 24px;
+  font-weight: bold;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_ttl_icon.png) left center no-repeat, url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_ttl_icon.png) right center no-repeat;
+  background-size: 30px auto,  30px auto;
+}
+
+.transportMain .ownedSec .dealList .dl .dd {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.transportMain .ownedSec .dealList .dl .ul {
+  text-align: left;
+}
+
+.transportMain .ownedSec .dealList .dl .ul + .ul {
+  margin: 10px 0 0;
+}
+
+.transportMain .ownedSec .dealList .dl .ul .li {
+  display: inline-block;
+  padding: 0 0 0 15px;
+  font-weight: bold;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/transport_owned_list_icon.png) left center no-repeat;
+  background-size: 12px auto;
+}
+
+.transportMain .ownedSec .dealList .dl .ul .li + .li {
+  margin: 0 0 0 40px;
+}
+
+/*////////////////////////////////////////////////////////////
+	rental
+///////////////////////////////////////////////////////////*/
+.rentalMain .pageKv:before {
+  background: #00a610;
+}
+
+.rentalMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.rentalMain .topSec {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_top_bg.png) center no-repeat;
+  background-size: cover;
+}
+
+.rentalMain .topSec .slideTextBox:before {
+  content: '';
+  position: absolute;
+  top: -280px;
+  right: 0;
+  width: 240px;
+  height: 260px;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_top_line.png) center no-repeat;
+  background-size: 240px auto;
+}
+
+.rentalMain .sec01 {
+  padding: 100px 0;
+  background: #eff8f0;
+}
+
+.rentalMain .sec01 h2 {
+  margin: 0 0 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #00a610;
+  text-align: center;
+}
+
+.rentalMain .sec01 .dl {
+  display: table;
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.rentalMain .sec01 .dl .dt {
+  display: table-cell;
+  width: 200px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: #00a610;
+}
+
+.rentalMain .sec01 .dl .dt p {
+  padding: 50px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_sec01_icon.png) center top no-repeat;
+  background-size: 40px auto;
+}
+
+.rentalMain .sec01 .dl .dd {
+  display: table-cell;
+  padding: 30px;
+  font-weight: bold;
+  line-height: 2;
+  vertical-align: middle;
+  background: #ffffff;
+}
+
+.rentalMain .sec01 .logo {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.rentalMain .secTtl h2 {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_ttl_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.rentalMain .pointSec {
+  padding: 120px 0;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_point_bg.png) right bottom no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1025px) {
+  .rentalMain .pointSec .pointList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .rentalMain .pointSec .pointList .list {
+    width: calc((100% / 3) - 40px);
+  }
+  .rentalMain .pointSec .pointList + .pointList {
+    max-width: 670px;
+    margin: 40px auto 0;
+  }
+  .rentalMain .pointSec .pointList + .pointList .list {
+    width: calc((100% / 2) - 40px);
+  }
+}
+
+.rentalMain .pointSec .pointList .list {
+  padding: 20px;
+  background: #f3f3f3;
+}
+
+.rentalMain .pointSec .pointList .img {
+  margin: 0 0 10px;
+}
+
+.rentalMain .pointSec .pointList .dl .dt {
+  margin: 0 0 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.rentalMain .pointSec .pointList .dl .dd {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.rentalMain .flowSec {
+  background: #f4f5f9;
+}
+
+.rentalMain .flowSec .stepBox + .stepBox:before {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/rental_flow_arrow.png) no-repeat;
+  background-size: 45px auto;
+}
+
+.rentalMain .flowSec .stepBox .ttlBox {
+  background: #00a610;
+}
+
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+.staffMain .pageKv:before {
+  background: #26346e;
+}
+
+.staffMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/staff_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.staffMain .staffListPanel .staffListBox {
+  padding: 100px 0;
+}
+
+.staffMain .staffListPanel .staffListBox .secBox {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 10px 0 60px;
+}
+
+.staffMain .staffListPanel .staffListBox .txtBox {
+  position: relative;
+}
+
+.staffMain .staffListPanel .staffListBox .txtBox .ttl {
+  margin: 0 0 60px;
+  padding: 0 10px;
+  color: #26346e;
+}
+
+.staffMain .staffListPanel .staffListBox .txtBox .ttl p {
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.staffMain .staffListPanel .staffListBox .txtBox .ttl h2 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.staffMain .staffListPanel .staffListBox .txtBox .dl .dt {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.staffMain .staffListPanel .staffListBox .txtBox .dl .dd {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.staffMain .staffListPanel .staffListBox .infoTxt {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.staffMain .staffListPanel .staffListBox:nth-child(odd) {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/staff_sec_bg_01.png) no-repeat;
+  background-size: cover;
+}
+
+.staffMain .staffListPanel .staffListBox:nth-child(odd) .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+}
+
+.staffMain .staffListPanel .staffListBox:nth-child(even) {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/staff_sec_bg_02.png) no-repeat;
+  background-size: cover;
+}
+
+.staffMain .staffListPanel .staffListBox:nth-child(even) .photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+}
+
+.staffMain .staffListPanel .staffListBox:nth-child(even) .txtBox {
+  text-align: right;
+}
+
+.staffMain .slidePanel {
+  padding: 250px 0;
+}
+
+.staffMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.staffMain .slidePanel .slideBox .ul .li {
+  width: calc(100% / 5);
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .pageKv:before {
+  background: #26346e;
+}
+
+.companyMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/company_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.companyMain .secTtl {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.companyMain .secTtl .ttl {
+  margin: 0 0 15px;
+}
+
+.companyMain .secTtl .ttl .img {
+  display: inline-block;
+}
+
+.companyMain .secTtl h2 {
+  display: inline-block;
+  min-width: 120px;
+  padding: 0 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/company_ttl_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.companyMain .sec01 {
+  padding: 120px 0;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/company_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.companyMain .sec01 .secBox {
+  display: table;
+  width: 100%;
+}
+
+.companyMain .sec01 .secBox .photo {
+  display: table-cell;
+  width: 38%;
+  vertical-align: middle;
+}
+
+.companyMain .sec01 .secBox .txtBox {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.companyMain .sec01 .secBox .txt {
+  padding: 0 0 0 60px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.companyMain .sec02 {
+  padding: 120px 0;
+  background: #e0e3e8;
+}
+
+.companyMain .sec02 .imgBox {
+  margin: 0 auto 60px;
+}
+
+.companyMain .sec02 .txtBox .dl {
+  display: table;
+  width: 100%;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.companyMain .sec02 .txtBox .dl + .dl {
+  margin: 15px 0 0;
+}
+
+.companyMain .sec02 .txtBox .dl .dt {
+  position: relative;
+  display: table-cell;
+  width: 70px;
+  font-size: 40px;
+  color: #26346e;
+  vertical-align: middle;
+}
+
+.companyMain .sec02 .txtBox .dl .dt:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 30px;
+  margin: auto 0;
+  background: #000000;
+}
+
+.companyMain .sec02 .txtBox .dl .dd {
+  display: table-cell;
+  font-size: 24px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.companyMain .sec03 {
+  padding: 120px 0;
+}
+
+.companyMain .sec03 .ttl {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.companyMain .sec03 .ttl p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.companyMain .sec03 .ttl h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.companyMain .sec03 .infoBox .dl {
+  display: table;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #324079;
+}
+
+.companyMain .sec03 .infoBox .dl .dt {
+  display: table-cell;
+  width: 150px;
+  padding: 0 20px;
+  font-weight: bold;
+  color: #26346e;
+  text-align: center;
+}
+
+.companyMain .sec03 .infoBox .dl .dd {
+  display: table-cell;
+  padding: 0 120px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .pageKv:before {
+  background: #eb7a00;
+}
+
+.recruitMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.recruitMain .secTtl {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.recruitMain .secTtl .ttl {
+  margin: 0 0 15px;
+}
+
+.recruitMain .secTtl .ttl .img {
+  display: inline-block;
+}
+
+.recruitMain .secTtl h2 {
+  display: inline-block;
+  min-width: 120px;
+  padding: 0 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_ttl_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.recruitMain .sec01 {
+  padding: 120px 0;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.recruitMain .sec01 .secBoxWrap {
+  overflow: hidden;
+}
+
+.recruitMain .sec01 .secBox {
+  float: right;
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.recruitMain .sec01 .secBox h3 {
+  margin: 0 0 30px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.recruitMain .sec01 .secBox p {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.recruitMain .sec02 {
+  padding: 120px 0;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.recruitMain .sec02 .ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 100px;
+}
+
+.recruitMain .sec02 .ul .li {
+  position: relative;
+  width: calc((100% / 3) - 20px);
+  padding: 50px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_list_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.recruitMain .sec02 .ul .li:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f8f8f8;
+}
+
+.recruitMain .sec02 .moreLink {
+  max-width: 340px;
+}
+
+.recruitMain .sec03 {
+  padding: 120px 0;
+  background: #f6f3f0;
+}
+
+.recruitMain .sec03 .ol .li {
+  position: relative;
+  padding: 10px 5px 60px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #eb7a00;
+}
+
+.recruitMain .sec03 .ol .li:last-child {
+  background: #bf6300;
+}
+
+.recruitMain .sec03 .ol .step {
+  font-size: 26px;
+  color: #f9b163;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.recruitMain .sec03 .ol .num {
+  margin: 0 0 15px;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.recruitMain .sec03 .ol .txt {
+  font-size: 40px;
+}
+
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec03 .ol .li {
+    width: calc((100% / 5) - 110px);
+  }
+  .recruitMain .sec03 .ol .li + .li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80px;
+    bottom: 0;
+    width: 26px;
+    height: 45px;
+    margin: auto 0;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/recruit_flow_arrow_01.png) no-repeat;
+    background-size: 26px auto;
+  }
+  .recruitMain .sec03 .ol .txt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+  .recruitMain .sec03 .ol .txt p {
+    writing-mode: vertical-rl;
+  }
+}
+
+.recruitMain .sec04 {
+  padding: 120px 0;
+}
+
+.recruitMain .sec04 .infoBox .dl {
+  display: table;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #eb7a00;
+}
+
+.recruitMain .sec04 .infoBox .dl .dt {
+  display: table-cell;
+  width: 150px;
+  padding: 0 20px;
+  font-weight: bold;
+  color: #eb7a00;
+  text-align: center;
+}
+
+.recruitMain .sec04 .infoBox .dl .dd {
+  display: table-cell;
+  padding: 0 120px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.recruitMain .sec05 {
+  padding: 0 0 120px;
+}
+
+.recruitMain .sec05 .secTtl + p {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+}
+
+.recruitMain .contactForm .formBox > .dl > .dt {
+  border-bottom: 1px solid #eb7a00;
+}
+
+.recruitMain .contactForm .formBox > .dl > .dt .em {
+  background: #eb7a00;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKv:before {
+  background: #26346e;
+}
+
+.contactMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/contact_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.contactMain .secTtl {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.contactMain .secTtl .ttl {
+  margin: 0 0 15px;
+}
+
+.contactMain .secTtl .ttl .img {
+  display: inline-block;
+}
+
+.contactMain .secTtl h2 {
+  display: inline-block;
+  min-width: 120px;
+  padding: 0 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/contact_ttl_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.contactMain .sec01 {
+  padding: 120px 0;
+  background: #f4f5f9;
+}
+
+.contactMain .sec01 .ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.contactMain .sec01 .ul .li {
+  position: relative;
+  width: calc((100% / 2) - 20px);
+  background: #d4d4d4;
+}
+
+.contactMain .sec01 .ul .dl {
+  position: relative;
+  top: -8px;
+  left: -8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contactMain .sec01 .ul .dl .dt {
+  padding: 5px 10px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.contactMain .sec01 .ul .dl .dd {
+  min-height: 124px;
+  background: #ffffff;
+}
+
+.contactMain .sec01 .ul .telBox .dl .dt {
+  background: #26346e;
+}
+
+.contactMain .sec01 .ul .telBox .dl .dd {
+  padding: 20px;
+}
+
+.contactMain .sec01 .ul .telBox .dl .dd a {
+  display: inline-block;
+}
+
+.contactMain .sec01 .ul .telBox .dl .dd .span {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.contactMain .sec01 .ul .telBox .dl .dd .em {
+  display: inline-block;
+  font-size: 40px;
+}
+
+.contactMain .sec01 .ul .lineBox .dl .dt {
+  background: #27ad37;
+}
+
+.contactMain .sec01 .ul .lineBox .dl .dd {
+  padding: 30px 20px 20px;
+}
+
+.contactMain .sec01 .ul .lineBox .dl .dd a {
+  display: inline-block;
+  padding: 0 0 0 60px;
+  text-align: left;
+  line-height: 1.8;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/contact_line.png) left center no-repeat;
+  background-size: 55px auto;
+}
+
+.contactMain .sec02 {
+  padding: 120px 0;
+}
+
+.contactMain .sec02 .secTtl + p {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.contactForm .formBox > .dl {
+  display: table;
+  width: 100%;
+}
+
+.contactForm .formBox > .dl > .dt {
+  display: table-cell;
+  width: 270px;
+  padding: 5px 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #26346e;
+}
+
+.contactForm .formBox > .dl > .dt p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contactForm .formBox > .dl > .dt .span {
+  margin-right: 5px;
+}
+
+.contactForm .formBox > .dl > .dt .em {
+  padding: 0 5px;
+  font-weight: normal;
+  color: #ffffff;
+  background: #26346e;
+}
+
+.contactForm .formBox > .dl .dd {
+  display: table-cell;
+  padding: 5px 10px 5px 20px;
+  vertical-align: middle;
+  border-bottom: 1px solid #26346e;
+}
+
+.contactForm .formBox .formTopItem > .dt {
+  vertical-align: top;
+}
+
+.contactForm .aside {
+  margin: 0 0 80px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media (min-width: 1025px) {
+  .contactForm .radioList {
+    padding: 10px 0 0;
+  }
+  .contactForm .radioList .list {
+    display: inline-block;
+    margin: 0 60px 0 0;
+  }
+}
+
+.contactForm .radioBox {
+  margin: 0 0 15px;
+}
+
+.contactForm .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+
+.contactForm .radioBox input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.contactForm .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+  font-weight: bold;
+}
+
+.contactForm .radioBox label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d0d0d0;
+  background: #f1f3f4;
+  box-sizing: border-box;
+}
+
+.contactForm .radioBox input[type="radio"]:checked + label:before {
+  border: 8px solid #eb7a00;
+}
+
+.contactForm .checkBox + .checkBox {
+  margin-top: 10px;
+}
+
+.contactForm .checkBox input {
+  display: none;
+}
+
+.contactForm .checkBox span {
+  padding-left: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.contactForm .checkBox span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.contactForm .checkBox input:checked + span {
+  color: #35417d;
+}
+
+.contactForm .checkBox input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #35417d;
+  border-right: 3px solid #35417d;
+}
+
+.contactForm .checkList .ul .li + .li {
+  margin-top: 10px;
+}
+
+.contactForm .postal input[type="text"],
+.contactForm .ageInput input[type="text"],
+.contactForm .dateInput input[type="text"],
+.contactForm .numInput input[type="text"] {
+  width: 90px;
+}
+
+.contactForm .postal input[type="text"] + .span,
+.contactForm .ageInput input[type="text"] + .span,
+.contactForm .dateInput input[type="text"] + .span,
+.contactForm .numInput input[type="text"] + .span {
+  display: inline-block;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.contactForm .privacy {
+  max-width: 960px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.contactForm .privacy .infoTel {
+  margin: 0 0 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contactForm .privacy .infoTel p {
+  display: inline-block;
+}
+
+.contactForm .privacy .infoTel a {
+  display: inline-block;
+}
+
+.contactForm .privacy .agreeBox {
+  overflow: scroll;
+  height: 300px;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid #cccccc;
+  background: #f9f9f9;
+}
+
+.contactForm .privacy .agreeBox p {
+  line-height: 2;
+}
+
+.contactForm .privacy .agreeBox .em {
+  font-weight: bold;
+}
+
+.contactForm .privacy .agreeBox .tel p,
+.contactForm .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+
+.contactForm .agreeCheck {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.complete {
+  padding: 60px 0;
+}
+
+.complete .txt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+}
+
+/* 入力項目
+--------------------------------------*/
+/*テキストボックス・メール・電話*/
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="tel"] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #d0d0d0;
+  background: #f1f3f4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*テキストエリア*/
+.contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d0d0d0;
+  background: #f1f3f4;
+  resize: none;
+}
+
+.contactForm input[type="text"]:focus,
+.contactForm input[type="email"]:focus,
+.contactForm input[type="tel"]:focus,
+.contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90CEFD;
+}
+
+.contactForm .submitBtn {
+  max-width: 280px;
+  margin: 0 auto;
+  background: #d3d4d4;
+}
+
+.contactForm button[type="submit"] {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  display: block;
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/more_arrow_blue.png) right 10px center no-repeat #26346e;
+  background-size: 40px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.6s;
+}
+
+.contactForm button[type="submit"][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+
+@media (min-width: 1025px) {
+  .contactForm button[type="submit"]:hover {
+    color: #26346e;
+    border: 1px solid #26346e;
+    background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/more_arrow_blue.png) right 5px center no-repeat #ffffff;
+    background-size: 40px auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .pageKv:before {
+  background: #26346e;
+}
+
+.newsMain .pageKv .kvBox {
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/news_kv.png) no-repeat;
+  background-size: cover;
+}
+
+.newsMain .sec01 {
+  background: #f4f5f9;
+}
+
+.newsMain .blogBox {
+  overflow: hidden;
+  padding: 100px 10px 120px;
+}
+
+.newsMain .blogBox .left {
+  float: left;
+  width: 75%;
+  text-align: left;
+}
+
+.newsMain .blogBox .right {
+  float: right;
+  width: 20%;
+}
+
+.newsMain .blogBox .right .menu {
+  font-style: italic;
+  text-align: center;
+}
+
+.newsMain .blogBox .right .menu .ttl {
+  margin: 0 0 20px;
+  padding: 0 20px 2px;
+  font-size: 24px;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/news_cate_ttl.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.newsMain .blogBox .right .menu .webgene-item a {
+  position: relative;
+  display: block;
+  padding: 15px 0 15px 30px;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: underline;
+  border-bottom: 1px solid #000000;
+}
+
+.newsMain .blogBox .right .menu .webgene-item a:before {
+  content: '＞';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+}
+
+.newsMain .blogBox .blogListBox .webgene-header {
+  display: none;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item + .webgene-item {
+  margin: 40px 0 0;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .photo {
+  float: left;
+  width: 45%;
+  background: #d4d4d4;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .photo .img {
+  position: relative;
+  top: -8px;
+  left: -8px;
+  border: 2px solid #ffffff;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .txt {
+  float: right;
+  width: 47%;
+  font-style: italic;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .txt .info {
+  margin-bottom: 20px;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .txt .info > * {
+  display: inline-block;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .txt .info .time {
+  margin: 0 10px 0 0;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .txt .info .cate {
+  padding: 0 20px 2px;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/news_list_cate.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.newsMain .blogBox .blogListBox .webgene-item .txt a {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination {
+  width: 100%;
+  margin: 60px 0 0;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul {
+  text-align: center;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul li a {
+  display: block;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #cdcdcd;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul .prev {
+  margin: 0 10px 0 0;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul .prev a {
+  color: #ffffff;
+  background: #cdcdcd;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 10px;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul .next a {
+  color: #ffffff;
+  background: #cdcdcd;
+}
+
+.newsMain .blogBox .blogListBox .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #26346e;
+}
+
+.newsMain .blogBox .blogDetailBox .webgene-header {
+  display: none;
+}
+
+.newsMain .blogBox .blogDetailBox .webgene-item {
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+.newsMain .blogBox .blogDetailBox .ttlBox {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.newsMain .blogBox .blogDetailBox .ttlBox .info {
+  margin-bottom: 20px;
+}
+
+.newsMain .blogBox .blogDetailBox .ttlBox .info > * {
+  display: inline-block;
+}
+
+.newsMain .blogBox .blogDetailBox .ttlBox .info .time {
+  margin: 0 10px 0 0;
+}
+
+.newsMain .blogBox .blogDetailBox .ttlBox .info .cate {
+  padding: 0 20px 2px;
+  color: #ffffff;
+  background: url(https://compassion210817.smooooth.jp/system_panel/uploads/images/news_list_cate.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.newsMain .blogBox .blogDetailBox .ttlBox .topTtl {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.newsMain .blogBox .blogDetailBox .postBox {
+  font-weight: bold;
+}
+
+.newsMain .blogBox .blogDetailBox .postBox .photo {
+  margin-bottom: 20px;
+}
+
+.newsMain .blogBox .blogDetailBox .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+
+.newsMain .blogBox .blogDetailBox .postBox .postTxt {
+  line-height: 2;
+}

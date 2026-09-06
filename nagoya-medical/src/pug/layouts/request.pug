@@ -1,0 +1,119 @@
+// ▽メイン▽
+main#request.main
+    .pageKvPanel
+        .pageKvTitle
+            h1 資料請求
+    .mainContainer
+        .secWrap01
+            .pageSecTtl
+                p.secTtl 資料請求
+                p.futura Request Documents
+            .sec01
+                .pageSecTtlSub.gothic
+                    h2 パンフレット（無料）にて送付いたします。
+                .txt
+                    p ご希望の方へ当院のパンフレットを無料にて送付させていただきます。<br>※日本国内の方にのみ発送させて頂いております。<br>海外在住の方につきましては、日本国内在住の友人や知人、ご家族の方から資料請求くださいますようお願い致します。
+            .sec02
+                .secContainer
+                    .pageSecTtlSub.gothic
+                        h2 電話でのお問い合わせ
+                    .txt
+                        p パンフレット送付をご希望の方はお電話にて承ります。お気軽にお問い合わせ下さい。<br>受付時間にどうしてもお電話ができない場合は下記メールフォームよりお問い合わせください。
+                    .telBox
+                        dl
+                            dt 電話でのお問合わせ
+                            dd
+                                .tel.futura
+                                    a(href="tel:0120681731")
+                                        p 0120-681-731
+                                .attention.gothic
+                                    p 受付時間：8：15 ～16：00　休診日：日祝日<br>※土曜は12：00迄となります。
+            .sec03
+                .pageSecTtlSub.gothic
+                    h2 メールでのお問い合わせ
+                .topTxt
+                    .txt
+                        p お使いの端末の利用環境等によってフォームから送信できない場合については、お手数ですが当院までお電話頂ますようお願い致します。<br>現在できる限りお電話での資料請求をお願いしております。お電話でのご請求にご協力ください。
+                .formBox
+                    form
+                        dl
+                            dt
+                                span.gothic お名前
+                                em 必須
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder="例）山田　太郎"></span>
+                        dl
+                            dt
+                                span.gothic ふりがな
+                                em 必須
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder="例）やまだ　たろう"></span>
+                        dl.postal
+                            dt
+                                span.gothic  郵便番号
+                            dd
+                                .inputBox.zip1
+                                    <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder=""></span>
+                                span -
+                                .inputBox.zip2
+                                    <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder=""></span>
+                        dl.address
+                            dt
+                                span.gothic  住所
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder="例）愛知県名古屋市中区正木4-8-7 れんが橋ビル5階"></span>
+                        dl
+                            dt
+                                span.gothic 電話番号
+                                em 必須
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name="tel"><input type="text" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text length-m text" aria-invalid="false" placeholder="例）09012345678"></span>
+                        dl
+                            dt
+                                span.gothic メールアドレス
+                                em 必須
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name="email"><input type="email" name="email" value="" size="60" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email length-l text" aria-required="true" aria-invalid="false" placeholder="例）info＠example.com"></span>
+                        dl
+                            dt
+                                span.gothic メールアドレス（再確認）
+                                em 必須
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name="email"><input type="email" name="email" value="" size="60" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email length-l text" aria-required="true" aria-invalid="false" placeholder="例）確認のため再度お願いいたします"></span>
+                        //- dl.msg
+                        //-     dt
+                        //-         span.gothic お問い合わせ内容
+                        //-         em 必須
+                        //-     dd
+                        //-         .inputBox
+                        //-             <span class="wpcf7-form-control-wrap" data-name="content"><textarea name="content" cols="60" rows="7" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder=""></textarea></span>
+                        .privacy
+                            .agreeBox.gothic
+                                p 名古屋メディカルクリニックでは個人情報を適切に管理運用するための基本的事項を定めています。
+                                p ・個人情報の利用目的
+                                p 個人情報は当社からご連絡する目的のためのみに取得し、取得した個人情報については不正利用・紛失・破壊・および漏えいに対し適切な予防ならびに是正に関する措置を適切に講じます。
+                                p ・個人情報の第三者への開示・提供の禁止
+                                p お客様の個人情報について、お客様の承諾が無い限り第三者に開示、提供を一切いたしません。 ご提供いただいた個人情報を取り扱うにあたり管理責任者を置き、適切な管理を行っております。
+                                p ・ご本人の照会
+                                p 個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上対応させていただきます。
+                                p ・法令、規範の遵守と見直し
+                                p 保有する個人情報について日本の法令その他規範を遵守するとともに、本規約の内容を適宜見直しその改善に努めます。
+                                p 本ポリシーに関するお問合せに関しては下記よりお願いします。
+                                p 会社名:　 名古屋メディカルクリニック
+                                p
+                                    | 電話番号:
+                                    a(href="tel:0120681731") 0120-681-731
+                                p 住所:〒460-0024
+                                p 愛知県名古屋市中区正木4-8-7 れんが橋ビル5階
+                        .checkItem.agreeCheck.gothic
+                            label
+                                input(type="checkbox")
+                                span 個人情報の取り扱いについて同意する
+                        <input type="submit" value="送信する" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+// △メイン△

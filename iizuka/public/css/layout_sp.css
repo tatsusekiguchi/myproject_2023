@@ -1,0 +1,621 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvPanel .topKv {
+    width: 100%;
+  }
+  .topMain .topSection {
+    padding: 50px 0;
+    background: url(https://ika-talk.net/system_panel/uploads/images/top_top_bg.png) right 30px bottom no-repeat;
+    background-size: 200px auto;
+  }
+  .topMain .topSection .secBox01 {
+    margin: 0 0 80px;
+  }
+  .topMain .topSection .secBox01 .ttlBox {
+    margin: 0 0 40px;
+  }
+  .topMain .topSection .secBox01 .ttlBox p {
+    font-size: 20px;
+  }
+  .topMain .topSection .secBox01 .ul {
+    max-width: 350px;
+    margin: -30px auto 0;
+  }
+  .topMain .topSection .secBox01 .ul .li {
+    width: calc(50% - 10px);
+    margin: 30px 0 0;
+  }
+  .topMain .topSection .secBox01 .ul .li .icon {
+    margin: 0 auto 15px;
+  }
+  .topMain .topSection .secBox01 .ul .li:nth-child(1) .icon {
+    width: 90px;
+  }
+  .topMain .topSection .secBox01 .ul .li:nth-child(2) .icon {
+    width: 95px;
+  }
+  .topMain .topSection .secBox01 .ul .li:nth-child(3) .icon {
+    width: 80px;
+  }
+  .topMain .topSection .secBox01 .ul .li:nth-child(4) .icon {
+    width: 65px;
+  }
+  .topMain .topSection .secBox02 .ttlBox {
+    margin: 0 0 30px;
+  }
+  .topMain .topSection .secBox02 .ttlBox p {
+    font-size: 20px;
+  }
+  .topMain .topSection .secBox02 .txt p + p {
+    margin: 15px 0 0;
+  }
+  .topMain .sec01 .secWrap01 {
+    padding: 60px 10px;
+    background: url(https://ika-talk.net/system_panel/uploads/images/top_sec01_bg_img.png) left 20px bottom no-repeat;
+    background-size: 200px auto;
+  }
+  .topMain .sec01 .secTtlBox {
+    margin: 0 0 40px;
+    padding: 20px 0 0 50px;
+  }
+  .topMain .sec01 .secTtlBox::before {
+    font-size: 30px;
+  }
+  .topMain .sec01 .secTtlBox .inner {
+    max-width: 280px;
+    padding: 0 10px 10px;
+  }
+  .topMain .sec01 .secTtlBox .secTtl {
+    font-size: 0;
+  }
+  .topMain .sec01 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .topMain .sec01 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .topMain .sec01 .listPanel .listContainer + .listContainer {
+    margin: 50px 0 0;
+  }
+  .topMain .sec01 .listPanel .listBox + .listBox {
+    margin: 50px 0 0;
+  }
+  .topMain .sec01 .listPanel .listBox .txtBox {
+    margin: -40px 20px 0;
+  }
+  .topMain .sec01 .listPanel .listBox .txtBox .dl .dt {
+    font-size: 18px;
+  }
+  .topMain .sec01 .listPanel .listBox .txtBox .dl .dd p {
+    padding: 0 30px 0 0;
+  }
+  .topMain .sec01 .listPanel .listBox .txtBox .arrow {
+    width: 45px;
+    height: 45px;
+  }
+  .topMain .sec01 .listPanel .listBox .txtBox .arrow__box {
+    width: 45px;
+  }
+  .topMain .sec01 .listPanel .listBox .txtBox .arrow__icon {
+    left: -20px;
+    width: 45px;
+  }
+  .topMain .sec02 {
+    padding: 60px 0 100px;
+  }
+  .topMain .sec02 .secTtlBox {
+    margin: 0 0 40px;
+    padding: 0 0 15px;
+  }
+  .topMain .sec02 .secTtlBox:after {
+    width: 200px;
+  }
+  .topMain .sec02 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .topMain .sec02 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .topMain .sec02 .topBox {
+    margin: 0 0 60px;
+  }
+  .topMain .sec02 .topBox .dl .dt {
+    margin: 0 0 20px;
+  }
+  .topMain .sec02 .topBox .dl .dt .ttl p {
+    font-size: 20px;
+  }
+  .topMain .sec02 .caseSliderPanel {
+    margin: 0 0 120px;
+  }
+  .topMain .sec02 .caseSliderPanel .counterBox {
+    position: static;
+    margin: 0 0 20px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .topMain .sec02 .caseSliderPanel .counterBox .ttl {
+    margin: 0 0 5px;
+    font-size: 22px;
+  }
+  .topMain .sec02 .caseSliderPanel .counterBox .slick-counter p {
+    font-size: 30px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide img {
+    height: 60vw;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide .dl {
+    bottom: -80px;
+    width: 90%;
+    padding: 20px 10px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide .dl .dt {
+    margin: 0 0 5px;
+    font-size: 20px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-current {
+    transform: translateY(0);
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .is-active-next {
+    transform: translateY(0);
+  }
+  .topMain .sec02 .linkList .ul {
+    max-width: 300px;
+  }
+  .topMain .sec02 .linkList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .topMain .sec02 .linkList .ul .li a:after {
+    width: 40px;
+    height: 8px;
+  }
+  .topMain .sec02 .linkList .ul .li a p {
+    padding: 0 0 0 23px;
+  }
+  .topMain .sec02 .linkList .ul .li.about a p {
+    background: url(https://ika-talk.net/system_panel/uploads/images/top_sec02_list_icon_01.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+  .topMain .sec02 .linkList .ul .li.site a p {
+    background: url(https://ika-talk.net/system_panel/uploads/images/top_sec02_list_icon_02.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain .sec01 {
+    padding: 60px 0;
+  }
+  .aboutMain .sec01 .secTtlBox {
+    margin: 0 0 40px;
+  }
+  .aboutMain .sec01 .secTtlBox .inner {
+    padding: 0 0 10px;
+  }
+  .aboutMain .sec01 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .aboutMain .sec01 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .aboutMain .sec01 .listPanel .listContainer + .listContainer {
+    margin: 20px 0 0;
+  }
+  .aboutMain .sec01 .listPanel .listBox .txt {
+    margin: 20px 0 0;
+  }
+  .aboutMain .sec01 .listPanel .listBox .txt p + p {
+    margin: 15px 0 0;
+  }
+  .aboutMain .fixedPhotoPanel {
+    height: auto;
+    background: none;
+  }
+  .aboutMain .fixedPhotoPanel .photo {
+    display: block;
+  }
+  .aboutMain .sec02 {
+    padding: 100px 0;
+    background: url(https://ika-talk.net/system_panel/uploads/images/about_sec02_bg_img.png) right 30px bottom no-repeat;
+    background-size: 200px auto;
+  }
+  .aboutMain .sec02 .topTtlBox {
+    margin: 0 0 30px;
+  }
+  .aboutMain .sec02 .topTtlBox p {
+    font-size: 20px;
+  }
+  .aboutMain .sec02 .topTtlBox h2 {
+    font-size: 20px;
+  }
+  .aboutMain .sec02 .secPanel {
+    padding: 30px 20px;
+    border: 6px solid #efe641;
+  }
+  .aboutMain .sec02 .secPanel + .secPanel {
+    margin: 40px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .secBox .secTtlBox .inner {
+    padding: 0 0 10px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .secTtlBox .secTtl h3 {
+    font-size: 20px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox p + p {
+    margin: 16px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .list01 {
+    margin: 30px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .list01 .ul {
+    max-width: 280px;
+  }
+  .aboutMain .sec02 .secPanel .list01 .ul .li:nth-child(1), .aboutMain .sec02 .secPanel .list01 .ul .li:nth-child(3) {
+    width: 140px;
+  }
+  .aboutMain .sec02 .secPanel .list01 .ul .li:nth-child(2) {
+    width: 20px;
+    margin: 0 20px;
+  }
+  .aboutMain .sec02 .secPanel .list02 {
+    margin: 30px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .list02 .ul {
+    max-width: 280px;
+    margin: -20px auto 0;
+  }
+  .aboutMain .sec02 .secPanel .list02 .ul .li {
+    width: calc(50% - 10px);
+    margin: 20px 0 0;
+  }
+  .aboutMain .sec03 {
+    padding: 60px 0 120px;
+  }
+  .aboutMain .sec03 .secTtlBox {
+    margin: 0 0 40px;
+    padding: 0 0 15px;
+  }
+  .aboutMain .sec03 .secTtlBox:after {
+    width: 200px;
+  }
+  .aboutMain .sec03 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .aboutMain .sec03 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .aboutMain .sec03 .secPanel::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    width: 70%;
+    height: 60%;
+    background: url(https://ika-talk.net/system_panel/uploads/images/about_sec03_box_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .aboutMain .sec03 .secPanel::after {
+    border-top: 50px solid transparent;
+    border-right: 50px solid #ededed;
+  }
+  .aboutMain .sec03 .secBox {
+    padding: 30px 20px;
+  }
+  .aboutMain .sec03 .secBox h3 {
+    font-size: 16px;
+  }
+  .aboutMain .sec03 .secBox .box .photo {
+    max-width: 400px;
+    margin: 0 0 20px;
+  }
+  .aboutMain .sec04 {
+    padding: 60px 0;
+  }
+  .aboutMain .sec04 .secTtlBox {
+    max-width: 200px;
+    margin: 0 auto 40px;
+    padding: 0 0 10px;
+    font-size: 20px;
+  }
+  .aboutMain .sec04 .infoBox .dl .dt {
+    width: 90px;
+  }
+  .aboutMain .sec04 .infoBox .dl .dd {
+    width: calc(100% - 110px);
+    padding: 15px 10px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain .sec01 {
+    padding: 60px 0px 100px;
+    background: url(https://ika-talk.net/system_panel/uploads/images/service_sec01_bg.png) left 20px bottom no-repeat;
+    background-size: 200px auto;
+  }
+  .serviceMain .sec01 .ttlBox {
+    margin: 0 0 30px;
+  }
+  .serviceMain .sec01 .ttlBox p {
+    font-size: 20px;
+  }
+  .serviceMain .sec01 .ttlBox h2 {
+    font-size: 20px;
+  }
+  .serviceMain .sec01 .txt {
+    margin: 0 0 30px;
+  }
+  .serviceMain .sec01 .photoBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .serviceMain .sec01 .photoBox > * {
+    position: relative;
+    width: 48%;
+    padding: 0 0 30%;
+  }
+  .serviceMain .sec01 .photoBox > * img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .serviceMain .sec02 {
+    padding: 40px 0;
+  }
+  .serviceMain .sec02 .secBpx .secTtlBox {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+  }
+  .serviceMain .sec02 .secBpx .secTtlBox:after {
+    width: 80%;
+  }
+  .serviceMain .sec02 .secBpx .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .serviceMain .sec02 .secBpx .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .serviceMain .sec02 .secBpx .txtBox {
+    padding: 20px 0 0;
+  }
+  .serviceMain .sec03 {
+    padding: 80px 10px;
+  }
+  .serviceMain .sec03 .secTtlBox {
+    margin: 0 0 20px;
+  }
+  .serviceMain .sec03 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .serviceMain .sec03 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .serviceMain .sec03 .secBox {
+    padding: 20px 0 30px 20px;
+    background: #ffffff;
+  }
+  .serviceMain .sec03 .secBox .ul .li {
+    padding: 0 0 0 30px;
+    font-size: 18px;
+    background: url(https://ika-talk.net/system_panel/uploads/images/service_sec03_check.png) left top 6px no-repeat;
+    background-size: 20px auto;
+  }
+  .serviceMain .sec03 .secBox .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .serviceMain .sec04 {
+    padding: 60px 0 80px;
+  }
+  .serviceMain .sec04 .secTtlBox {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+  }
+  .serviceMain .sec04 .secTtlBox:after {
+    width: 250px;
+  }
+  .serviceMain .sec04 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .serviceMain .sec04 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .serviceMain .sec04 .secPanel + .secPanel {
+    margin: 50px 0 0;
+  }
+  .serviceMain .sec04 .secPanel::after {
+    border-top: 40px solid transparent;
+    border-right: 40px solid #ededed;
+  }
+  .serviceMain .sec04 .secBox {
+    padding: 30px 20px;
+  }
+  .serviceMain .sec04 .secBox h3 {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+  .serviceMain .sec04 .secBox .box .txt {
+    padding: 20px 0 0;
+  }
+  .serviceMain .sec04 .secBox .box .txt p + p {
+    margin: 15px 0 0;
+  }
+  .serviceMain .sec05 {
+    padding: 60px 0;
+  }
+  .serviceMain .sec05 .secTtlBox {
+    margin: 0 0 40px;
+  }
+  .serviceMain .sec05 .secTtlBox .secTtl {
+    padding: 0 10px 5px;
+  }
+  .serviceMain .sec05 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .serviceMain .sec05 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .serviceMain .sec05 .panelTtl {
+    margin: 0 0 20px;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+  .serviceMain .sec05 .panelTtl:after {
+    bottom: 2px;
+    height: 5px;
+  }
+  .serviceMain .sec05 .conceptPanel {
+    margin: 0 0 50px;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt01 {
+    margin: 0 0 40px;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt01 .dl .dt {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt01 .dl .dd .info {
+    padding: 15px;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt01 .dl .dd .info:before {
+    display: none;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt01 .dl .dd .info:after {
+    border-top: 20px solid transparent;
+    border-right: 20px solid #ffffff;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt02 {
+    padding: 20px;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt02 .dl {
+    padding: 0 5px;
+  }
+  .serviceMain .sec05 .conceptPanel .secCnt02 .dl .dt {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .serviceMain .sec05 .suggestionPanel .panelTtl {
+    margin: 0 0 30px;
+  }
+  .serviceMain .sec05 .suggestionPanel .secBox {
+    padding: 0;
+  }
+  .serviceMain .sec05 .suggestionPanel .secBox + .secBox {
+    margin: 50px 0 0;
+  }
+  .serviceMain .sec05 .suggestionPanel .secBox .photoBox .photo {
+    position: relative;
+  }
+  .serviceMain .sec05 .suggestionPanel .secBox .photoBox .num {
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+  }
+  .serviceMain .sec05 .suggestionPanel .secBox .txtBox {
+    margin: 0 10px;
+    padding: 30px 20px;
+  }
+  .serviceMain .sec05 .suggestionPanel .secBox .txtBox .dl .dt {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
+  .serviceMain .sec06 {
+    padding: 0 0 60px;
+  }
+  .serviceMain .sec06 .secTtlBox {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+  }
+  .serviceMain .sec06 .secTtlBox:after {
+    width: 220px;
+  }
+  .serviceMain .sec06 .secTtlBox .secTtl p {
+    font-size: 20px;
+  }
+  .serviceMain .sec06 .secTtlBox .secTtl h2 {
+    font-size: 20px;
+  }
+  .serviceMain .sec06 .topTxt {
+    margin: 0 0 20px;
+  }
+  .serviceMain .sec06 .caseSliderPanel {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec06 .caseSliderPanel .caseSlider .slick-slide {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  .serviceMain .sec06 .caseSliderPanel .caseSlider .slick-slide img {
+    height: 60vw;
+  }
+  .serviceMain .sec06 .caseSliderPanel .caseSlider .slick-current {
+    transform: translateY(0);
+  }
+  .serviceMain .sec06 .caseSliderPanel .caseSlider .is-active-next {
+    transform: translateY(0);
+  }
+  .serviceMain .sec06 .linkButton {
+    max-width: 280px;
+  }
+  .serviceMain .sec06 .linkButton a:after {
+    width: 40px;
+    height: 8px;
+  }
+  .serviceMain .sec06 .linkButton a p {
+    padding: 0 0 0 23px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	improve
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .improveMain .pageKvPanel .pageKvTitle:before {
+    top: -15px;
+    left: -50px;
+    font-size: 14px;
+    transform: rotate(-5deg);
+  }
+}
+/*////////////////////////////////////////////////////////////
+	increase
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .increaseMain .pageKvPanel .pageKvTitle:before {
+    top: -15px;
+    left: -50px;
+    font-size: 14px;
+    transform: rotate(-5deg);
+  }
+}
+/*////////////////////////////////////////////////////////////
+	empty
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .emptyMain .pageKvPanel .pageKvTitle:before {
+    top: -15px;
+    left: -50px;
+    font-size: 14px;
+    transform: rotate(-5deg);
+  }
+}

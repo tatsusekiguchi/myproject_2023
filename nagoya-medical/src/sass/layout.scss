@@ -1,0 +1,2159 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvPanel {
+    .topKv {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 900px;
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .kvBox > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: right;
+      }
+      .kv01 {
+        background: url(../image/top/top_kv_01.png) center no-repeat;
+        background-size: cover;
+      }
+      .kv02 {
+        background: url(../image/top/top_kv_02.png) center no-repeat;
+        background-size: cover;
+      }
+      .kv03 {
+        background: url(../image/top/top_kv_03.png) center no-repeat;
+        background-size: cover;
+      }
+      .kvTitle {
+        position: relative;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        z-index: 1;
+        h1 {
+          font-size: 50px;
+          writing-mode: vertical-rl;
+        }
+      }
+    }
+  }
+  .newsSection {
+    padding: 100px 0;
+    .newsPanel {
+      + .newsPanel {
+        margin: 100px 0 0;
+      }
+      .newsList {
+        ul {
+          border-top: 1px solid #dde9eb;
+          li {
+            display: flex;
+            padding: 20px 10px;
+            line-height: 2;
+            border-bottom: 1px solid #dde9eb;
+          }
+          .time {
+            width: 120px;
+            font-size: 15px;
+          }
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .courseSection {
+    padding: 100px 0 150px;
+    .courseContainer {
+      padding: 30px;
+      border-radius: 10px;
+      background: #f0f2f8;
+    }
+    .coursePanel {
+      padding: 50px 20px;
+      border-radius: 10px;
+      border: 1px solid #d3d6df;
+      background: #ffffff;
+      + .coursePanel {
+        margin: 30px 0 0;
+      }
+      .panelWrap {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .title {
+        max-width: 770px;
+        margin: 0 auto 30px;
+        padding: 15px 25px;
+        font-size: 26px;
+        text-align: center;
+        border-top: 1px solid #9ca7bf;
+        border-bottom: 1px solid #9ca7bf;
+        + .txt {
+          margin: 0 0 30px;
+        }
+      }
+      .btnLink {
+        max-width: 450px;
+        width: 100%;
+        a {
+          display: block;
+          padding: 25px 10px;
+          font-size: 22px;
+          text-align: center;
+          border-radius: 10px;
+          border: 1px solid #d3d6df;
+          background: url("../image/top/top_course_link_arrow.png") right 30px
+            center no-repeat #f0f2f8;
+          background-size: 6px auto;
+          span {
+            display: block;
+            font-size: 16px;
+          }
+        }
+      }
+      .linkList {
+        margin: 40px 0 0;
+        @media (min-width: 1025px) {
+          ul {
+            display: flex;
+            justify-content: space-between;
+            max-width: 950px;
+            margin: 0 auto;
+            li {
+              width: 49%;
+            }
+          }
+        }
+      }
+      .secBox {
+        .txtBox {
+          .txt {
+            margin: 0 0 30px;
+            p + p {
+              margin: 30px 0 0;
+            }
+          }
+        }
+        .itemBox {
+          .chart {
+            max-width: 350px;
+            margin: 30px auto 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .txtBox {
+            width: 53%;
+          }
+          .itemBox {
+            width: 40%;
+          }
+        }
+      }
+    }
+    .linkPanel {
+      margin: 40px 0 0;
+      ul {
+        li {
+          &:nth-child(1) {
+            a {
+              background: url("../image/top/top_course_link_img_01.png") center
+                no-repeat;
+              background-size: cover;
+            }
+          }
+          &:nth-child(2) {
+            a {
+              background: url("../image/top/top_course_link_img_02.png") center
+                no-repeat;
+              background-size: cover;
+            }
+          }
+          &:nth-child(3) {
+            a {
+              background: url("../image/top/top_course_link_img_03.png") center
+                no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          min-height: 260px;
+        }
+        dl {
+          width: 100%;
+          max-width: 220px;
+          padding: 20px;
+          border-radius: 10px 0 0 0;
+          background: rgba(255, 255, 255, 0.9);
+          dt {
+            margin: 0 0 10px;
+            font-size: 18px;
+          }
+          dd {
+            font-size: 22px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	nk
+///////////////////////////////////////////////////////////*/
+#nk {
+  .pageKvPanel {
+    background: url(../image/nk/nk_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    margin: 0 0 150px;
+    .pageSecTtlSub {
+      max-width: 600px;
+      margin: 0;
+    }
+    .secBox01 {
+      margin: 0 0 40px;
+      .txtBox {
+        padding: 20px 0 0;
+        dl {
+          margin: 60px 0 0;
+          dt {
+            margin: 0 0 10px;
+            font-size: 32px;
+            font-weight: bold;
+          }
+          dd {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .secBox02 {
+      margin: 0 0 60px;
+      .videoPanel {
+        aside {
+          margin: 10px 0 0;
+          font-size: 15px;
+          line-height: 2;
+          p {
+            color: #3f3f3f;
+          }
+          a {
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .message {
+      max-width: 680px;
+      margin: 60px auto 0;
+      padding: 25px 10px;
+      font-size: 22px;
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #d3d6df;
+      background: #f0f2f8;
+    }
+    @media (min-width: 1025px) {
+      .secBox01 {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          order: 2;
+          width: 40%;
+        }
+        .txtBox {
+          order: 1;
+          width: 55%;
+        }
+      }
+      .secBox02 {
+        display: flex;
+        justify-content: space-between;
+        .videoPanel {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 150px;
+    .secBox {
+      margin: 0 0 40px;
+      .txtBox {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .photo {
+          order: 2;
+          width: 25%;
+        }
+        .txtBox {
+          order: 1;
+          width: 65%;
+        }
+      }
+    }
+    .chart {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  .sec03 {
+    margin: 0 0 150px;
+    .secBox {
+      margin: 50px 0;
+      .chartPanel {
+        .chart {
+          max-width: 280px;
+          margin: 0 auto;
+        }
+      }
+      .videoPanel {
+        aside {
+          margin: 10px 0 0;
+          font-size: 15px;
+          line-height: 2;
+          p {
+            color: #3f3f3f;
+          }
+          a {
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > * {
+          width: 50%;
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 150px;
+    .txt {
+      margin: 0 0 40px;
+    }
+    ol {
+      line-height: 2;
+      counter-reset: item;
+      li {
+        position: relative;
+        padding: 0 0 0 1.3em;
+        &::before {
+          content: counter(item) ".";
+          counter-increment: item;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+  .sec05 {
+    margin: 0 0 150px;
+    .innerSection {
+      padding: 20px 0 0;
+    }
+    .secTtl {
+      position: relative;
+      margin: 0 0 40px;
+      font-size: 26px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: calc(100% - 380px);
+        height: 1px;
+        margin: auto 0;
+        background: #113b7a;
+      }
+      h3 {
+        display: inline-block;
+      }
+    }
+    .secBox {
+      .chartBox {
+        .chart {
+          max-width: 250px;
+          margin: 0 auto;
+        }
+      }
+      .txtBox {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .chartBox {
+          order: 2;
+          width: 30%;
+        }
+        .txtBox {
+          order: 1;
+          width: 65%;
+        }
+      }
+    }
+  }
+  .sec06 {
+    margin: 0 0 150px;
+    .txt {
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	schedule
+///////////////////////////////////////////////////////////*/
+#schedule {
+  .pageKvPanel {
+    background: url(../image/schedule/schedule_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    .secBox {
+      .txtBox {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .txtBox {
+          width: 38%;
+        }
+        .chartBox {
+          width: 58%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+#flow {
+  .pageKvPanel {
+    background: url(../image/flow/flow_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .reserveTtl {
+    max-width: 750px;
+    margin: 0 auto 100px;
+    padding: 30px 10px;
+    font-size: 22px;
+    color: #7a1111;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #8f4747;
+  }
+  .stepContainer {
+    .stepBox {
+      + .stepBox {
+        margin: 100px 0 0;
+      }
+      .stepTitleBox {
+        display: flex;
+        align-items: center;
+        margin: 0 0 50px;
+        padding: 20px 30px;
+        border-top: 1px solid #9ca7bf;
+        border-bottom: 1px solid #9ca7bf;
+        .step {
+          width: 180px;
+          font-size: 30px;
+        }
+        .title {
+          font-size: 26px;
+        }
+      }
+      .telBox {
+        max-width: 480px;
+        a {
+          display: block;
+          padding: 10px 15px;
+          border-radius: 10px;
+          border: 1px solid #d3d6df;
+          background: #f8f9fd;
+        }
+        dl {
+          display: flex;
+          align-items: center;
+          min-height: 100px;
+          dt {
+            position: relative;
+            width: 120px;
+            margin: 0 20px 0 0;
+            text-align: center;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              width: 1px;
+              height: 50px;
+              margin: 0 auto;
+              background: #d3d6df;
+            }
+            em {
+              display: block;
+              font-size: 23px;
+            }
+          }
+          dd {
+            .tel {
+              padding: 0 0 0 40px;
+              font-size: 30px;
+              background: url("../image/common/footer_contact_tel.png") left
+                center no-repeat;
+              background-size: 28px auto;
+            }
+            .attention {
+              font-size: 14px;
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+      .secBox {
+        .docBox {
+          padding: 30px;
+          border-radius: 10px;
+          border: 1px solid #d3d6df;
+          background: #f8f9fd;
+          dl {
+            dt {
+              margin: 0 0 30px;
+              em {
+                display: block;
+                font-size: 22px;
+              }
+              span {
+                font-size: 16px;
+              }
+            }
+            ol {
+              line-height: 2;
+              counter-reset: item;
+              li {
+                position: relative;
+                padding: 0 0 0 1.3em;
+                &::before {
+                  content: counter(item) ".";
+                  counter-increment: item;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .txtBox {
+            width: 52%;
+          }
+          .docBox {
+            width: 43%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	results
+///////////////////////////////////////////////////////////*/
+#results {
+  .pageKvPanel {
+    background: url(../image/results/results_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .topPanel {
+    margin: 0 0 150px;
+    .txt {
+      margin: 0 0 60px;
+    }
+    .chart {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  }
+  .topSection {
+    margin: 0 0 150px;
+    .topContainer {
+      margin: 0 0 100px;
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .linkList {
+        margin: 0 0 25px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #f0f2f8;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -15px 0 0 -15px;
+          li {
+            width: calc((100% / 6) - 15px);
+            margin: 15px 0 0 15px;
+            padding: 15px 10px;
+            font-size: 20px;
+            font-weight: normal;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid #d3d6df;
+            background: #ffffff;
+          }
+        }
+        @media (min-width: 1025px) {
+          ul {
+            li {
+              transition: 0.6s;
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        padding: 30px 60px;
+        border-radius: 10px;
+        border: 1px solid #d3d6df;
+        background: #f1f1f1;
+        dl {
+          color: #3f3f3f;
+          dt {
+            margin: 0 0 20px;
+            font-size: 22px;
+            font-weight: normal;
+            text-align: center;
+          }
+          dd {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .listContainer {
+      padding: 30px;
+      border-radius: 10px;
+      background: #f0f2f8;
+    }
+    .listSection {
+      + .listSection {
+        margin: 45px 0 0;
+      }
+      .listPanel {
+        padding: 45px 10px;
+        border-radius: 10px;
+        background: #ffffff;
+        .inner {
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        .listTitle {
+          margin: 0 0 40px;
+          padding: 10px;
+          font-size: 22px;
+          text-align: center;
+          border-top: 1px solid #9ca7bf;
+          border-bottom: 1px solid #9ca7bf;
+        }
+      }
+      .backTop {
+        margin: 10px 0 0;
+        text-align: right;
+        p {
+          display: inline-block;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+      .commentBox {
+        margin: 30px 0 0;
+      }
+      .chartListBox {
+        margin: 50px 0 0;
+        dl {
+          dt {
+            margin: 0 0 10px;
+            span {
+              font-size: 14px;
+              color: #3f3f3f;
+            }
+          }
+          dd {
+            > p {
+              margin: 0 0 10px;
+              font-size: 14px;
+              color: #3f3f3f;
+            }
+          }
+        }
+        .chartTable {
+          max-width: 400px;
+          table {
+            width: 100%;
+            color: #3f3f3f;
+            border-top: 1px solid #d6d6e2;
+            tr {
+              border-bottom: 1px solid #d6d6e2;
+              th,
+              td {
+                width: 50%;
+                padding: 5px;
+                text-align: center;
+                border-right: 1px solid #d6d6e2;
+              }
+              th {
+                border-left: 1px solid #d6d6e2;
+                background: #f2f4f5;
+              }
+              td {
+                p {
+                  display: inline-block;
+                  min-width: 100px;
+                  text-align: left;
+                }
+              }
+              &:nth-child(even) {
+                th {
+                  background: #f9fafb;
+                }
+              }
+            }
+          }
+        }
+      }
+      .progressChart {
+        margin: 50px 0 40px;
+        p {
+          margin: 0 0 5px;
+        }
+        .chart {
+          max-width: 500px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .beforeAfterBox {
+          display: flex;
+          justify-content: space-between;
+          .leftBox {
+            width: 48%;
+            ul {
+              display: flex;
+              justify-content: space-between;
+              + ul {
+                margin: 15px 0 0;
+              }
+              li {
+                width: calc((100% / 2) - 15px);
+                + li {
+                  .img {
+                    position: relative;
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: -22px;
+                      bottom: 0;
+                      width: 15px;
+                      height: 16px;
+                      margin: auto 0;
+                      background: url("../image/results/results_list_arrow_right.png")
+                        no-repeat;
+                      background-size: 100% auto;
+                    }
+                  }
+                }
+                p {
+                  margin: 5px 0 0;
+                  font-size: 22px;
+                  font-weight: normal;
+                  text-align: center;
+                }
+              }
+            }
+          }
+          .rightBox {
+            width: 46%;
+          }
+        }
+        .chartListBox {
+          display: flex;
+          justify-content: space-between;
+          &.col2 {
+            > * {
+              width: 50%;
+            }
+          }
+          &.col3 {
+            > * {
+              width: 33%;
+            }
+            .chartTable {
+              max-width: 260px;
+            }
+          }
+        }
+        .backTop {
+          p {
+            transition: 0.6s;
+            &:hover {
+              opacity: 0.6;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .otherTxtBox {
+    padding: 20px 40px;
+    font-size: 15px;
+    color: #3f3f3f;
+    border-radius: 10px;
+    border: 1px solid #d3d6df;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	network
+///////////////////////////////////////////////////////////*/
+#network {
+  .pageKvPanel {
+    background: url(../image/network/network_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .topPanel {
+    margin: 0 0 100px;
+    .txt {
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 150px;
+    .topTxt {
+      margin: 0 0 60px;
+    }
+    .innerSection {
+      .secTtl {
+        position: relative;
+        margin: 0 0 40px;
+        font-size: 26px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: calc(100% - 620px);
+          height: 1px;
+          margin: auto 0;
+          background: #113b7a;
+        }
+        h3 {
+          display: inline-block;
+        }
+      }
+    }
+    .faqPanel {
+      padding: 10px 40px;
+      border-radius: 10px;
+      background: #f0f2f8;
+      dl {
+        dt,
+        dd {
+          display: flex;
+          align-items: center;
+          padding: 15px 0;
+          em {
+            margin: 0 20px 0 0;
+            font-size: 40px;
+          }
+          span {
+            line-height: 2;
+          }
+        }
+        dt {
+          border-bottom: 1px solid #d5d9e6;
+        }
+      }
+    }
+  }
+  .sec02 {
+    .topTxt {
+      margin: 0 0 60px;
+    }
+    .listPanel {
+      margin: -50px 0 0;
+      .listBox {
+        margin: 50px 0 0;
+        h3 {
+          position: relative;
+          margin: 0 0 40px;
+          font-size: 26px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            margin: auto 0;
+            background: #113b7a;
+          }
+          span {
+            position: relative;
+            display: inline-block;
+            padding: 0 50px 0 0;
+            background: #ffffff;
+          }
+        }
+        .infoBox {
+          padding: 20px 30px;
+          border-radius: 10px;
+          background: #f0f2f8;
+          dl {
+            line-height: 2;
+            + dl {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .listPanel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > * {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	vitamin
+///////////////////////////////////////////////////////////*/
+#vitamin {
+  .pageKvPanel {
+    background: url(../image/vitamin/vitamin_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    margin: 0 0 150px;
+    .topTitle {
+      margin: 0 0 60px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #3f3f3f;
+      text-align: center;
+      letter-spacing: 0;
+    }
+    .secBox {
+      .photoBox {
+        font-size: 15px;
+        color: #3f3f3f;
+        line-height: 1.7;
+        .photo {
+          margin: 0 0 15px;
+        }
+        .txt01 {
+          margin: 0 0 10px;
+          padding: 0 0 10px;
+          border-bottom: 1px solid #aaaaaa;
+        }
+      }
+      .txtBox {
+        padding: 20px 0 0;
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photoBox {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 150px;
+    .txt {
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+    .secBoxList {
+      margin: 0 0 80px;
+    }
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+        &:nth-child(odd) {
+          .photo {
+            order: 2;
+          }
+          .txtBox {
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    .txt {
+      margin: 0 0 100px;
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+    .message {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 25px 10px;
+      font-size: 22px;
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #d3d6df;
+      background: #f0f2f8;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	faq
+///////////////////////////////////////////////////////////*/
+#faq {
+  .pageKvPanel {
+    background: url(../image/faq/faq_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .topContainer {
+    margin: 0 0 200px;
+    .topTitle {
+      margin: 0 0 30px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #3f3f3f;
+      text-align: center;
+      letter-spacing: 0;
+    }
+    .linkList {
+      padding: 20px 60px;
+      border-radius: 10px;
+      background: #f0f2f8;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px 0 0 -40px;
+        li {
+          width: calc((100% / 3) - 40px);
+          margin: 20px 0 0 40px;
+          padding: 20px 10px 10px;
+          font-size: 20px;
+          font-weight: normal;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 10px;
+          border: 1px solid #d3d6df;
+          background: #ffffff;
+          span {
+            display: inline-block;
+            padding: 0 0 15px;
+            background: url("../image/faq/faq_btn_arrow.png") center bottom
+              no-repeat;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          li {
+            transition: 0.6s;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+  .listSection {
+    + .listSection {
+      margin: 150px 0 0;
+    }
+    .faqBox {
+      dl {
+        dt {
+          display: flex;
+          align-items: center;
+          padding: 15px 50px 15px 0;
+          cursor: pointer;
+          background: url("../image/faq/faq_accord_plus.png") right 40px center
+            no-repeat;
+          background-size: 14px auto;
+          &.active {
+            background: url("../image/faq/faq_accord_minus.png") right 40px
+              center no-repeat;
+            background-size: 6px auto;
+          }
+          em {
+            margin: 0 20px 0 0;
+            font-size: 30px;
+          }
+          span {
+            font-size: 22px;
+          }
+        }
+        dt {
+          border-bottom: 1px solid #d5d9e6;
+        }
+        dd {
+          display: none;
+          padding: 20px 0 50px;
+          a {
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+#price {
+  .pageKvPanel {
+    background: url(../image/price/price_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .sec01,
+  .sec02 {
+    margin: 0 0 150px;
+    .topTitle {
+      margin: 0 0 100px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #3f3f3f;
+      text-align: center;
+      letter-spacing: 0;
+    }
+    .pageSecTtlSub {
+      margin: 0 auto 10px;
+      + p {
+        margin: 0 0 60px;
+        color: #3f3f3f;
+        text-align: center;
+      }
+    }
+    .priceList {
+      margin: 0 0 50px;
+      ul {
+        li {
+          padding: 0 0 10px;
+          border-bottom: 1px solid #c6cbd5;
+          + li {
+            margin: 30px 0 0;
+          }
+          dl {
+            display: flex;
+            justify-content: space-between;
+            dt {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .expBox {
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #d3d6df;
+      background: #f8f9fd;
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        dl {
+          width: 48%;
+          &:nth-child(1) {
+            border-right: 1px solid #d3d6df;
+          }
+          &:nth-child(2) {
+            width: 48%;
+          }
+          dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          dd {
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+  .sectionContainer {
+    margin: 0 0 150px;
+    .pageSecTtlSub {
+      margin: 0 auto 20px;
+    }
+    .credit {
+      max-width: 400px;
+      margin: 30px 0 0;
+    }
+  }
+  @media (min-width: 1025px) {
+    .sectionContainer {
+      display: flex;
+      justify-content: space-between;
+      > * {
+        width: 48%;
+      }
+    }
+  }
+  .sec05 {
+    .pageSecTtlSub {
+      margin: 0 auto 10px;
+      + p {
+        margin: 0 0 60px;
+        color: #3f3f3f;
+        text-align: center;
+      }
+    }
+    .innerSection {
+      + .innerSection {
+        margin: 80px 0 0;
+      }
+      .secTtl {
+        position: relative;
+        margin: 0 0 30px;
+        font-size: 26px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto 0;
+          background: #113b7a;
+        }
+        h3 {
+          position: relative;
+          display: inline-block;
+          padding: 0 60px 0 0;
+          background: #ffffff;
+        }
+      }
+      .pricePanel {
+        padding: 30px 40px 60px;
+        border-radius: 10px;
+        border: 1px solid #d6d6e2;
+      }
+      .priceList {
+        margin: 0 0 50px;
+        ul {
+          li {
+            padding: 0 0 10px;
+            border-bottom: 1px solid #c6cbd5;
+            dl {
+              display: flex;
+              justify-content: space-between;
+              dt {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -30px 0 0 -50px;
+            li {
+              width: calc((100% / 2) - 50px);
+              margin: 30px 0 0 50px;
+            }
+          }
+        }
+      }
+      .totalBox {
+        max-width: 550px;
+        margin: 0 auto;
+        dl {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 40px 2px;
+          border-bottom: 1px solid #c6cbd5;
+          dt {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	profile
+///////////////////////////////////////////////////////////*/
+#profile {
+  .pageKvPanel {
+    background: url(../image/profile/profile_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .topContainer {
+    margin: 0 0 200px;
+    .topTitle {
+      margin: 0 0 30px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #3f3f3f;
+      text-align: center;
+      letter-spacing: 0;
+    }
+    .linkList {
+      padding: 20px 60px;
+      border-radius: 10px;
+      background: #f0f2f8;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px 0 0 -40px;
+        li {
+          width: calc((100% / 3) - 40px);
+          margin: 20px 0 0 40px;
+          padding: 20px 10px 10px;
+          font-size: 20px;
+          font-weight: normal;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 10px;
+          border: 1px solid #d3d6df;
+          background: #ffffff;
+          span {
+            display: inline-block;
+            padding: 0 0 15px;
+            background: url("../image/profile/profile_btn_arrow.png") center
+              bottom no-repeat;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          li {
+            transition: 0.6s;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+  .infoBox {
+    dl {
+      display: flex;
+      line-height: 2;
+      + dl {
+        margin: 10px 0 0;
+      }
+      dt {
+        width: 80px;
+      }
+    }
+  }
+  .specialty {
+    margin: 10px 0 0;
+    dl {
+      line-height: 2;
+      dd {
+        padding: 0 0 0 80px;
+      }
+    }
+  }
+  .commentBox {
+    margin: 30px 0 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f0f2f8;
+  }
+  .sec01,
+  .sec04 {
+    .secBox {
+      .photoBox {
+        .photo {
+          max-width: 320px;
+          margin: 0 auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photoBox {
+          width: 50%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 150px;
+  }
+  .sectionContainer {
+    margin: 0 0 150px;
+  }
+  .topBook {
+    line-height: 2;
+    dl {
+      dt {
+        margin: 0 0 10px;
+      }
+    }
+    .book {
+      max-width: 200px;
+    }
+    .txt {
+      margin: 20px 0 0;
+      span {
+        display: block;
+        font-size: 14px;
+      }
+    }
+  }
+  .bookList {
+    margin: 60px 0 0;
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 100px 0 0;
+        vertical-align: top;
+      }
+    }
+    .book {
+      width: 160px;
+    }
+    .txt {
+      margin: 20px 0 0;
+      span {
+        display: block;
+        font-size: 14px;
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .sectionContainer {
+      display: flex;
+      justify-content: space-between;
+      > * {
+        width: 48%;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	sitemap
+///////////////////////////////////////////////////////////*/
+#sitemap {
+  .pageKvPanel {
+    background: url(../image/sitemap/sitemap_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .sitemapContainer {
+    .sitemapPanel {
+      a {
+        display: inline-block;
+        text-decoration: underline;
+      }
+    }
+    .sitemapBox {
+      padding: 40px;
+      + .sitemapBox {
+        border-top: 1px solid #9ca7bf;
+      }
+      dl {
+        dt {
+          margin: 0 0 20px;
+        }
+        dd {
+          padding: 0 0 0 20px;
+        }
+      }
+      ul {
+        li {
+          + li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .sitemapContainer {
+      display: flex;
+      justify-content: space-between;
+      > * {
+        width: 46%;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	request
+///////////////////////////////////////////////////////////*/
+#request {
+  .pageKvPanel {
+    background: url(../image/request/request_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    margin: 0 0 80px;
+  }
+  .sec02 {
+    margin: 0 0 150px;
+    padding: 40px;
+    border-radius: 10px;
+    background: #f0f2f8;
+    .secContainer {
+      padding: 40px 60px;
+      border-radius: 10px;
+      border: 1px solid #d3d6df;
+      background: #ffffff;
+    }
+    .txt {
+      margin: 0 0 30px;
+    }
+    .telBox {
+      max-width: 480px;
+      margin: 0 auto;
+      border-radius: 10px;
+      border: 1px solid #d3d6df;
+      dl {
+        text-align: center;
+        dt {
+          padding: 10px;
+          font-size: 22px;
+          background: #f8f9fd;
+        }
+        dd {
+          padding: 20px 10px;
+          .tel {
+            a {
+              display: inline-block;
+              padding: 0 0 0 40px;
+              font-size: 30px;
+              background: url("../image/common/footer_contact_tel.png") left
+                center no-repeat;
+              background-size: 28px auto;
+            }
+          }
+          .attention {
+            display: inline-block;
+            font-size: 12px;
+            text-align: left;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+  }
+  .formBox {
+    form > dl {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #dde9eb;
+      dt {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        font-weight: bold;
+        span {
+          margin: 0 15px 0 0;
+        }
+        em {
+          display: inline-block;
+          padding: 2px 5px;
+          border-radius: 6px;
+          background: #f2f4f5;
+        }
+      }
+      dd {
+        width: calc(100% - 300px);
+      }
+    }
+    .msg {
+      dt {
+        align-items: flex-start;
+        padding: 20px 0 0;
+      }
+      dd {
+      }
+    }
+    .postal {
+      .inputBox {
+        display: inline-block;
+        width: 130px;
+        + span {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      }
+    }
+    .wpcf7-form-control-wrap {
+      position: relative;
+    }
+    .wpcf7-not-valid-tip {
+      padding: 0 0 5px 25px;
+    }
+    .wpcf7-response-output {
+      font-weight: bold;
+      text-align: center;
+      border: none;
+    }
+    .privacy {
+      margin: 30px 0 50px;
+      .agreeBox {
+        overflow: scroll;
+        height: 400px;
+        padding: 40px;
+        font-family: $baseFont;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2;
+        border-radius: 10px;
+        border: 1px solid #d3d6df;
+        background: #f8f9fd;
+      }
+      .box {
+        + .box {
+          margin: 40px 0 0;
+        }
+      }
+      dl {
+        dt {
+          margin: 0 0 5px;
+          font-weight: bold;
+        }
+      }
+      span {
+        display: block;
+      }
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	form
+-------------------------------------------------- */
+.formBox {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    height: 60px;
+    padding-left: 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #d3d6df;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  textarea {
+    width: 100%;
+    height: 180px;
+    padding: 20px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #d3d6df;
+    background: #ffffff;
+    resize: none;
+  }
+  // input[type="text"]:focus,
+  // input[type="email"]:focus,
+  // input[type="tel"]:focus,
+  // textarea:focus {
+  //   outline: 0;
+  //   border: none;
+  // }
+  ::placeholder {
+    color: #000000;
+    opacity: 0.3;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 300px;
+    height: 60px;
+    margin: 100px auto 0;
+    padding: 15px 10px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+      "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 18px;
+    color: #113b7a;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #d3d6df;
+    background: url("../image/common/footer_btn_arrow.png") right 20px center
+      no-repeat #f8f9fd;
+    background-size: 8px auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: 0.4s;
+    &[disabled] {
+      cursor: default;
+      opacity: 0.1;
+    }
+  }
+  .checkItem {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 0 15px;
+    text-align: center;
+    > label {
+      position: relative;
+      display: block;
+    }
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+    }
+    span {
+      display: block;
+      padding-left: 50px;
+      position: relative;
+    }
+    span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 30px;
+      height: 30px;
+      margin: auto 0;
+      border-radius: 10px;
+      border: 2px solid #eef0f1;
+      background: #eef0f1;
+    }
+    input:checked + span::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 10px;
+      height: 16px;
+      transform: rotate(40deg);
+      border-bottom: 3px solid #000000;
+      border-right: 3px solid #000000;
+    }
+    &.agreeCheck {
+      > label {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	cpc
+///////////////////////////////////////////////////////////*/
+#cpc {
+  .pageKvPanel {
+    background: url(../image/cpc/cpc_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 40px;
+    border-radius: 10px;
+    background: #f0f2f8;
+    .secContainer {
+      padding: 60px 60px 200px;
+      border-radius: 10px;
+      border: 1px solid #d3d6df;
+      background: #ffffff;
+    }
+    .photo {
+      margin: 0 0 40px;
+    }
+    .txt {
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	access
+///////////////////////////////////////////////////////////*/
+#access {
+  .pageKvPanel {
+    background: url(../image/access/access_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    margin: 0 0 150px;
+    .topTitle {
+      margin: 0 0 60px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .secBox {
+      .txtBox {
+        .imgMap {
+          max-width: 480px;
+          margin: 0 auto 40px;
+        }
+        .txt {
+          padding: 20px 30px;
+          border-radius: 10px;
+          border: 1px solid #d3d6df;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .mapBox {
+          width: 50%;
+        }
+        .txtBox {
+          width: 46%;
+        }
+      }
+    }
+  }
+  .secListContainer {
+    .linkList {
+      margin: 0 0 100px;
+      padding: 20px 60px;
+      border-radius: 10px;
+      background: #f0f2f8;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px 0 0 -40px;
+        li {
+          width: calc((100% / 3) - 40px);
+          margin: 20px 0 0 40px;
+          padding: 20px 10px 10px;
+          font-size: 20px;
+          font-weight: normal;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 10px;
+          border: 1px solid #d3d6df;
+          background: #ffffff;
+          span {
+            display: inline-block;
+            padding: 0 0 15px;
+            background: url("../image/profile/profile_btn_arrow.png") center
+              bottom no-repeat;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          li {
+            transition: 0.6s;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+    .section {
+      + .section {
+        margin: 100px 0 0;
+      }
+      .secTtl {
+        position: relative;
+        margin: 0 0 30px;
+        font-size: 26px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto 0;
+          background: #113b7a;
+        }
+        h3 {
+          position: relative;
+          display: inline-block;
+          padding: 0 60px 0 0;
+          background: #ffffff;
+        }
+      }
+    }
+    .sec01,
+    .sec02 {
+      .secBox {
+        .txtBox {
+          padding: 60px 0 0;
+          .txt {
+            padding: 20px 30px;
+            border-radius: 10px;
+            border: 1px solid #d3d6df;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .map {
+            width: 55%;
+          }
+          .txtBox {
+            width: 42%;
+          }
+        }
+      }
+    }
+    .sec03 {
+      .txt {
+        margin: 0 0 60px;
+      }
+      .pdfList {
+        ul {
+          li {
+            padding: 0 10px 10px;
+            text-align: center;
+            border-bottom: 1px solid #c6cbd5;
+            a {
+              display: inline-block;
+              padding: 0 25px 0 0;
+              background: url("../image/common/icon_target_blank.png") right
+                center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+              width: calc((100% / 3) - 30px);
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      .txt {
+        margin: 0 0 40px;
+      }
+      .parking {
+        max-width: 780px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	saisei
+///////////////////////////////////////////////////////////*/
+#saisei {
+  .pageKvPanel {
+    background: url(../image/saisei/saisei_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .topTxt {
+    margin: 0 0 100px;
+    p + p {
+      margin: 30px 0 0;
+    }
+  }
+  .sec01 {
+    .innerSection {
+      + .innerSection {
+        margin: 60px 0 0;
+      }
+      .secTtl {
+        position: relative;
+        margin: 0 0 30px;
+        font-size: 26px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto 0;
+          background: #113b7a;
+        }
+        h3 {
+          position: relative;
+          display: inline-block;
+          padding: 0 60px 0 0;
+          background: #ffffff;
+        }
+      }
+      .txt {
+        padding: 20px 30px;
+        border-radius: 10px;
+        border: 1px solid #d3d6df;
+        a {
+          display: inline-block;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

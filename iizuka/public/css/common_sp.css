@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header .logo {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .headContactBtn {
+    width: 100px;
+    height: 100px;
+  }
+  .header .headContactBtn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50%;
+    background: #efe641;
+    transition: transform 0.25s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  .header .headContactBtn a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 0;
+  }
+  .header .headContactBtn a .em {
+    margin: 0 0 5px;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .header .headContactBtn a .span {
+    font-family: "Pinyon Script";
+    font-size: 14px;
+    color: #b3ac28;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+    background: #f1f1f1;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+  .header.topHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .header.topHeader .headerContainer {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    padding: 0 0 20px;
+    z-index: 999;
+    background: url(../image/top/top_header_bg.png) center no-repeat;
+    background-size: cover;
+  }
+  .header.topHeader .headContactBtn {
+    position: absolute;
+    top: 70%;
+    right: 20px;
+    z-index: 99;
+  }
+  .header.pageHeader .logo {
+    display: none;
+  }
+  .header.pageHeader .headContactBtn {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    height: 100%;
+    padding: 80px 40px 60px;
+    z-index: 999;
+    background: #f3f3f3;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .navBox .navList {
+    margin: 0 0 20px;
+    border-bottom: 2px dotted #444444;
+  }
+  .navBox .navList .ul {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li {
+    text-align: left;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 2px dotted #444444;
+  }
+  .navBox .navList .ul a {
+    display: block;
+  }
+  .navBox .navList .ul a,
+.navBox .navList .ul > .li > div {
+    padding: 5px 20px;
+  }
+  .navBox .navList .ul .em {
+    margin: 0 0 2px;
+  }
+  .navBox .navList .ul .span {
+    font-family: "Pinyon Script";
+    font-size: 14px;
+    color: #c5c064;
+  }
+  .navBox .snsList {
+    margin: 40px 0 0;
+    padding: 0 15px;
+  }
+  .navBox .snsList .ul .li {
+    display: inline-block;
+  }
+  .navBox .snsList .ul .li + .li {
+    margin: 0 0 0 40px;
+  }
+  .navBox .snsList .ul .li a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: 0;
+  }
+
+  .pageKvPanel {
+    height: 200px;
+    text-align: center;
+  }
+  .pageKvPanel .pageKvTitle:before {
+    top: -15px;
+    left: -15px;
+    font-size: 20px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    font-size: 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .fixedContact {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    width: 100%;
+    z-index: 999;
+  }
+  .footer .fixedContact a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: #efe641;
+  }
+  .footer .fixedContact a .em {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .footer .footContact {
+    padding: 80px 0 50px;
+  }
+  .footer .footContact .secBox .ttlBox {
+    margin: 0 0 80px;
+  }
+  .footer .footContact .secBox .ttlBox .ttl {
+    padding: 15px 0 0 25px;
+  }
+  .footer .footContact .secBox .ttlBox .ttl::before {
+    font-size: 30px;
+  }
+  .footer .footContact .secBox .ttlBox h2 {
+    font-size: 20px;
+  }
+  .footer .footContact .secBox .btnBox .btn {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .footer .footContact .secBox .btnBox .btn .circle {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+  }
+  .footer .footContact .secBox .btnBox .btn a {
+    padding: 15px 10px;
+  }
+  .footer .footContact .secBox .btnBox .btn a:after {
+    width: 45px;
+    height: 10px;
+  }
+  .footer .footContact .secBox .btnBox .btn a p {
+    padding: 0 0 0 25px;
+    background: url(../image/common/footer_contact_mail.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .footer .footContact .secBox .btnBox > p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer .footPanel {
+    padding: 80px 0 20px;
+    text-align: center;
+  }
+  .footer .footPanel .logo {
+    max-width: 120px;
+    margin: 0 auto 25px;
+  }
+  .footer .footPanel .logo + p {
+    margin: 0 0 60px;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+  }
+  .footer .footPanel .footBox .footNav {
+    display: none;
+  }
+  .footer .footPanel .footBox .copy {
+    font-size: 12px;
+  }
+}

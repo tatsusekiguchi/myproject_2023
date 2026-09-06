@@ -1,0 +1,63 @@
+// ▽メイン▽
+main#topMain
+	.mvPanel
+		.mvMovie.mvMovie--pc
+			video(src=(root_path || '') + "image/top/top_kv_movie_pc.mp4" autoplay="" loop="" muted="" playsinline="")
+		.mvMovie.mvMovie--sp
+			video(src=(root_path || '') + "image/top/top_kv_movie_sp.mp4" autoplay="" loop="" muted="" playsinline="")
+	.mvScroll
+		img(src=(root_path || '') + "image/top/top_kv_scroll.png", alt="SCROLL")
+	.topTitlePanel
+		.secWrap
+			h1.fadeUp 建物の美観を護る<br>街の景観を護る
+			p.fadeUp 私たちは持続可能な<br class="spBreak">街づくりに貢献し続けます。
+	.topNavContainer
+		.secWrap01
+			.topNavPanel
+				.linkBox01.linkBox.fadeUp
+					.inner
+						.ttlBox
+							p Our business
+							h2 事業・サービス領域
+						.btnMore01.btnMore
+							a(href="")
+								img(src=(root_path || '') + "image/common/btn_more_black.png", alt="")
+				.linkBox02.linkBox.fadeUp
+					.inner
+						.ttlBox
+							p Our Features
+							h2 私たちの特長
+						.btnMore02.btnMore
+							a(href="")
+								img(src=(root_path || '') + "image/common/btn_more_black.png", alt="")
+				.linkBox03.linkBox.fadeUp
+					.inner
+						.ttlBox
+							h2 施工実績
+						.btnMore03.btnMore
+							a(href="")
+								img(src=(root_path || '') + "image/common/btn_more_black.png", alt="")
+				.linkBox04.linkBox.fadeUp
+					.inner
+						.ttlBox
+							p Recruit
+							h2 採用情報
+						.btnMore04.btnMore
+							a(href="")
+								img(src=(root_path || '') + "image/common/btn_more_black.png", alt="")
+	.subNavContainer
+		.secWrap01
+			ul
+				li.link01.fadeUp
+					a(href="")
+						.ttl
+							p 企業情報
+						.linkButton
+							img(src=(root_path || '') + "image/top/top_sub_nav_btn.png", alt="")
+				li.link02.fadeUp
+					a(href="")
+						.ttl
+							p お問い合わせ
+						.linkButton
+							img(src=(root_path || '') + "image/top/top_sub_nav_btn.png", alt="")
+// △メイン△

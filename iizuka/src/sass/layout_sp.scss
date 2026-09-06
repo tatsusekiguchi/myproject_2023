@@ -1,0 +1,771 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKv {
+        width: 100%;
+      }
+    }
+    .topSection {
+      padding: 50px 0;
+      background: url(https://ika-talk.net/system_panel/uploads/images/top_top_bg.png)
+        right 30px bottom no-repeat;
+      background-size: 200px auto;
+      .secBox01 {
+        margin: 0 0 80px;
+        .ttlBox {
+          margin: 0 0 40px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .ul {
+          max-width: 350px;
+          margin: -30px auto 0;
+          .li {
+            width: calc((100% / 2) - 10px);
+            margin: 30px 0 0;
+            .icon {
+              margin: 0 auto 15px;
+            }
+            &:nth-child(1) {
+              .icon {
+                width: 90px;
+              }
+            }
+            &:nth-child(2) {
+              .icon {
+                width: 95px;
+              }
+            }
+            &:nth-child(3) {
+              .icon {
+                width: 80px;
+              }
+            }
+            &:nth-child(4) {
+              .icon {
+                width: 65px;
+              }
+            }
+          }
+        }
+      }
+      .secBox02 {
+        .ttlBox {
+          margin: 0 0 30px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .txt {
+          p + p {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+    .sec01 {
+      .secWrap01 {
+        padding: 60px 10px;
+        background: url(https://ika-talk.net/system_panel/uploads/images/top_sec01_bg_img.png)
+          left 20px bottom no-repeat;
+        background-size: 200px auto;
+      }
+      .secTtlBox {
+        margin: 0 0 40px;
+        padding: 20px 0 0 50px;
+        &::before {
+          font-size: 30px;
+        }
+        .inner {
+          max-width: 280px;
+          padding: 0 10px 10px;
+        }
+        .secTtl {
+          font-size: 0;
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .listPanel {
+        .listContainer {
+          + .listContainer {
+            margin: 50px 0 0;
+          }
+        }
+        .listBox {
+          + .listBox {
+            margin: 50px 0 0;
+          }
+          .txtBox {
+            margin: -40px 20px 0;
+            .dl {
+              .dt {
+                font-size: 18px;
+              }
+              .dd {
+                p {
+                  padding: 0 30px 0 0;
+                }
+              }
+            }
+            .arrow {
+              width: 45px;
+              height: 45px;
+              &__box {
+                width: 45px;
+              }
+              &__icon {
+                left: -20px;
+                width: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0 100px;
+      .secTtlBox {
+        margin: 0 0 40px;
+        padding: 0 0 15px;
+        &:after {
+          width: 200px;
+        }
+        .secTtl {
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .topBox {
+        margin: 0 0 60px;
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            .ttl {
+              p {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .caseSliderPanel {
+        margin: 0 0 120px;
+        .counterBox {
+          position: static;
+          margin: 0 0 20px;
+          padding: 0 20px;
+          text-align: center;
+          .ttl {
+            margin: 0 0 5px;
+            font-size: 22px;
+          }
+          .slick-counter {
+            p {
+              font-size: 30px;
+            }
+          }
+        }
+        .caseSlider {
+          .slick-slide {
+            margin: 0 10px;
+            padding: 10px;
+            img {
+              height: 60vw;
+            }
+            .dl {
+              bottom: -80px;
+              width: 90%;
+              padding: 20px 10px;
+              .dt {
+                margin: 0 0 5px;
+                font-size: 20px;
+              }
+            }
+          }
+          .slick-current {
+            transform: translateY(0);
+          }
+          .is-active-next {
+            transform: translateY(0);
+          }
+        }
+      }
+      .linkList {
+        .ul {
+          max-width: 300px;
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+            a {
+              &:after {
+                width: 40px;
+                height: 8px;
+              }
+              p {
+                padding: 0 0 0 23px;
+              }
+            }
+            &.about {
+              a {
+                p {
+                  background: url(https://ika-talk.net/system_panel/uploads/images/top_sec02_list_icon_01.png)
+                    left center no-repeat;
+                  background-size: 18px auto;
+                }
+              }
+            }
+            &.site {
+              a {
+                p {
+                  background: url(https://ika-talk.net/system_panel/uploads/images/top_sec02_list_icon_02.png)
+                    left center no-repeat;
+                  background-size: 18px auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain {
+    .sec01 {
+      padding: 60px 0;
+      .secTtlBox {
+        margin: 0 0 40px;
+        .inner {
+          padding: 0 0 10px;
+        }
+        .secTtl {
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .listPanel {
+        .listContainer {
+          + .listContainer {
+            margin: 20px 0 0;
+          }
+        }
+        .listBox {
+          .txt {
+            margin: 20px 0 0;
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .fixedPhotoPanel {
+      height: auto;
+      background: none;
+      .photo {
+        display: block;
+      }
+    }
+    .sec02 {
+      padding: 100px 0;
+      background: url(https://ika-talk.net/system_panel/uploads/images/about_sec02_bg_img.png)
+        right 30px bottom no-repeat;
+      background-size: 200px auto;
+      .topTtlBox {
+        margin: 0 0 30px;
+        p {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .secPanel {
+        padding: 30px 20px;
+        border: 6px solid #efe641;
+        + .secPanel {
+          margin: 40px 0 0;
+        }
+        .secBox {
+          .secTtlBox {
+            .inner {
+              padding: 0 0 10px;
+            }
+            .secTtl {
+              p {
+                font-size: 20px;
+              }
+              h3 {
+                font-size: 20px;
+              }
+            }
+          }
+          .txtBox {
+            p + p {
+              margin: 16px 0 0;
+            }
+          }
+        }
+        .list01 {
+          margin: 30px 0 0;
+          .ul {
+            max-width: 280px;
+            .li {
+              &:nth-child(1),
+              &:nth-child(3) {
+                width: 140px;
+              }
+              &:nth-child(2) {
+                width: 20px;
+                margin: 0 20px;
+              }
+            }
+          }
+        }
+        .list02 {
+          margin: 30px 0 0;
+          .ul {
+            max-width: 280px;
+            margin: -20px auto 0;
+            .li {
+              width: calc((100% / 2) - 10px);
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0 120px;
+      .secTtlBox {
+        margin: 0 0 40px;
+        padding: 0 0 15px;
+        &:after {
+          width: 200px;
+        }
+        .secTtl {
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .secPanel {
+        &::before {
+          content: "";
+          position: absolute;
+          left: -15px;
+          bottom: -15px;
+          width: 70%;
+          height: 60%;
+          background: url(https://ika-talk.net/system_panel/uploads/images/about_sec03_box_bg.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+        &::after {
+          border-top: 50px solid transparent;
+          border-right: 50px solid #ededed;
+        }
+      }
+      .secBox {
+        padding: 30px 20px;
+        h3 {
+          font-size: 16px;
+        }
+        .box {
+          .photo {
+            max-width: 400px;
+            margin: 0 0 20px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .secTtlBox {
+        max-width: 200px;
+        margin: 0 auto 40px;
+        padding: 0 0 10px;
+        font-size: 20px;
+      }
+      .infoBox {
+        .dl {
+          .dt {
+            width: 90px;
+          }
+          .dd {
+            width: calc(100% - 110px);
+            padding: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .sec01 {
+      padding: 60px 0px 100px;
+      background: url(https://ika-talk.net/system_panel/uploads/images/service_sec01_bg.png)
+        left 20px bottom no-repeat;
+      background-size: 200px auto;
+      .ttlBox {
+        margin: 0 0 30px;
+        p {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .txt {
+        margin: 0 0 30px;
+      }
+      .photoBox {
+        display: flex;
+        justify-content: space-between;
+        max-width: 500px;
+        margin: 0 auto;
+        > * {
+          position: relative;
+          width: 48%;
+          padding: 0 0 30%;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 40px 0;
+      .secBpx {
+        .secTtlBox {
+          margin: 0 0 20px;
+          padding: 0 0 10px;
+          &:after {
+            width: 80%;
+          }
+          .secTtl {
+            p {
+              font-size: 20px;
+            }
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+        .txtBox {
+          padding: 20px 0 0;
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 10px;
+      .secTtlBox {
+        margin: 0 0 20px;
+        .secTtl {
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .secBox {
+        padding: 20px 0 30px 20px;
+        background: #ffffff;
+        .ul {
+          .li {
+            padding: 0 0 0 30px;
+            font-size: 18px;
+            background: url(https://ika-talk.net/system_panel/uploads/images/service_sec03_check.png)
+              left top 6px no-repeat;
+            background-size: 20px auto;
+            + .li {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0 80px;
+      .secTtlBox {
+        margin: 0 0 30px;
+        padding: 0 0 10px;
+        &:after {
+          width: 250px;
+        }
+        .secTtl {
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 50px 0 0;
+        }
+        &::after {
+          border-top: 40px solid transparent;
+          border-right: 40px solid #ededed;
+        }
+      }
+      .secBox {
+        padding: 30px 20px;
+        h3 {
+          margin: 0 0 30px;
+          font-size: 18px;
+        }
+        .box {
+          .txt {
+            padding: 20px 0 0;
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 60px 0;
+      .secTtlBox {
+        margin: 0 0 40px;
+        .secTtl {
+          padding: 0 10px 5px;
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .panelTtl {
+        margin: 0 0 20px;
+        padding: 0 5px;
+        font-size: 20px;
+        &:after {
+          bottom: 2px;
+          height: 5px;
+        }
+      }
+      .conceptPanel {
+        margin: 0 0 50px;
+        .secCnt01 {
+          margin: 0 0 40px;
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+            .dd {
+              .info {
+                padding: 15px;
+                &:before {
+                  display: none;
+                }
+                &:after {
+                  border-top: 20px solid transparent;
+                  border-right: 20px solid #ffffff;
+                }
+              }
+            }
+          }
+        }
+        .secCnt02 {
+          padding: 20px;
+          .dl {
+            padding: 0 5px;
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .suggestionPanel {
+        .panelTtl {
+          margin: 0 0 30px;
+        }
+        .secBox {
+          padding: 0;
+          + .secBox {
+            margin: 50px 0 0;
+          }
+          .photoBox {
+            .photo {
+              position: relative;
+            }
+            .num {
+              right: 20px;
+              bottom: 20px;
+              font-size: 30px;
+            }
+          }
+          .txtBox {
+            margin: 0 10px;
+            padding: 30px 20px;
+            .dl {
+              .dt {
+                margin: 0 0 5px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec06 {
+      padding: 0 0 60px;
+      .secTtlBox {
+        margin: 0 0 30px;
+        padding: 0 0 10px;
+        &:after {
+          width: 220px;
+        }
+        .secTtl {
+          p {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .caseSliderPanel {
+        margin: 0 0 60px;
+        .caseSlider {
+          .slick-slide {
+            margin: 0 10px;
+            padding: 10px;
+            img {
+              height: 60vw;
+            }
+          }
+          .slick-current {
+            transform: translateY(0);
+          }
+          .is-active-next {
+            transform: translateY(0);
+          }
+        }
+      }
+      .linkButton {
+        max-width: 280px;
+        a {
+          &:after {
+            width: 40px;
+            height: 8px;
+          }
+          p {
+            padding: 0 0 0 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	improve
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .improveMain {
+    .pageKvPanel {
+      .pageKvTitle {
+        &:before {
+          top: -15px;
+          left: -50px;
+          font-size: 14px;
+          transform: rotate(-5deg);
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	increase
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .increaseMain {
+    .pageKvPanel {
+      .pageKvTitle {
+        &:before {
+          top: -15px;
+          left: -50px;
+          font-size: 14px;
+          transform: rotate(-5deg);
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	empty
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .emptyMain {
+    .pageKvPanel {
+      .pageKvTitle {
+        &:before {
+          top: -15px;
+          left: -50px;
+          font-size: 14px;
+          transform: rotate(-5deg);
+        }
+      }
+    }
+  }
+}

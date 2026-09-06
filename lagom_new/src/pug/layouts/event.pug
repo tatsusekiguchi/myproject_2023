@@ -1,0 +1,41 @@
+// ▽メイン▽
+main#eventDetail
+    .postPanel
+        .postPanel__wrap
+            .postPanel__left
+                .titleBox
+                    h1 News and<br>Event
+                .categoryList
+                    dl
+                        dt Category
+                        dd
+                            ul
+                                li
+                                    a(href="") イベント
+                                li
+                                    a(href="") 見学会
+                                li
+                                    a(href="") ニュース
+                                li
+                                    a(href="") その他
+            .postPanel__right
+                .detail__event
+                    .titleHeader
+                        .titleHeader__info
+                            .time
+                                p 2022.12.01
+                            .cateBox
+                                .cate
+                                    p 見学会
+                        .title
+                            .date
+                                p 2月25日（土）
+                            h2 見学会イベント「馴染む陶器を見つけよう」を行います！
+                    .thumbnailBox
+                        img(src=(root_path || '') + "image/top/top_concept_img_01_pc.png", alt="")
+                    .postContents
+                .btnContact
+                    a(href="") イベントの予約はこちら
+                .btnBack
+                    a(href="") PAGE BACK
+// △メイン△

@@ -1,0 +1,933 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain .mvPanel {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150%;
+}
+#topMain .mvPanel .mvMovie--pc {
+  display: none;
+}
+#topMain .mvPanel video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#topMain .topTitlePanel {
+  padding: 60px 0;
+}
+#topMain .topTitlePanel h1 {
+  font-size: 23px;
+}
+#topMain .topTitlePanel p {
+  font-size: 14px;
+}
+#topMain .topNavContainer {
+  padding: 0 0 60px;
+}
+#topMain .topNavContainer::before {
+  top: 160px;
+  height: 440px;
+}
+#topMain .topNavContainer .linkBox {
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+#topMain .topNavContainer .linkBox + .linkBox {
+  margin: 50px auto 0;
+}
+#topMain .topNavContainer .linkBox .inner {
+  min-height: 200px;
+  padding: 0 20px;
+}
+#topMain .topNavContainer .linkBox .ttlBox {
+  color: #ffffff;
+}
+#topMain .topNavContainer .linkBox .ttlBox p {
+  font-size: 26px;
+}
+#topMain .topNavContainer .linkBox .ttlBox h2 {
+  font-size: 14px;
+}
+#topMain .topNavContainer .linkBox .btnMore {
+  bottom: 20px;
+  width: 120px;
+}
+#topMain .topNavContainer .linkBox .btnMore01,
+#topMain .topNavContainer .linkBox .btnMore04 {
+  right: 0;
+}
+#topMain .topNavContainer .linkBox .btnMore02 {
+  left: 0;
+}
+#topMain .topNavContainer .linkBox .btnMore03 {
+  right: 0;
+  bottom: 0;
+}
+#topMain .topNavContainer .linkBox.linkBox01 {
+  background: url("../image/top/top_nav_img_01_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#topMain .topNavContainer .linkBox.linkBox02 {
+  position: relative;
+  left: 0;
+  background: url("../image/top/top_nav_img_02_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#topMain .topNavContainer .linkBox.linkBox03 {
+  max-width: 320px;
+  height: auto;
+  margin: 50px auto 0;
+  background: url("../image/top/top_nav_img_03_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#topMain .topNavContainer .linkBox.linkBox03 .inner {
+  min-height: 120px;
+}
+#topMain .topNavContainer .linkBox.linkBox04 {
+  background: url("../image/top/top_nav_img_04_sp.png") no-repeat;
+  background-size: 100% auto;
+}
+#topMain .subNavContainer {
+  padding: 60px 0;
+}
+#topMain .subNavContainer ul {
+  max-width: 320px;
+  margin: 0 auto;
+}
+#topMain .subNavContainer ul li + li {
+  margin: 30px 0 0;
+}
+#topMain .subNavContainer ul li .ttl {
+  height: 150px;
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+#businessMain .pageKvPanel {
+  background: url("../image/business/business_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#businessMain .topTitlePanel {
+  padding: 60px 0 80px;
+}
+#businessMain .topTitlePanel h2 {
+  margin: 0 0 20px;
+  font-size: 23px;
+}
+#businessMain .topTitlePanel .txt {
+  font-size: 13px;
+}
+#businessMain .topTitlePanel .pageLinkBox {
+  margin: 30px 0 0;
+}
+#businessMain .topTitlePanel .pageLinkBox ul {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#businessMain .topTitlePanel .pageLinkBox ul li + li {
+  margin: 50px 0 0;
+}
+#businessMain .topTitlePanel .pageLinkBox ul li .ttl {
+  height: 150px;
+  font-size: 20px;
+}
+#businessMain .section {
+  padding: 0 0 80px;
+}
+#businessMain .section .mv {
+  height: 200px;
+  margin: 0 0 50px;
+}
+#businessMain .section .mv .mvTitle p {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+#businessMain .section .mv .mvTitle h3 {
+  font-size: 18px;
+}
+#businessMain .section .secPanel .txtBox {
+  padding: 0 0 40px;
+}
+#businessMain .section .secPanel .txtBox .txt {
+  text-align: center;
+}
+#businessMain .section .secPanel .txtBox .list {
+  max-width: 400px;
+  margin: 40px auto 0;
+}
+#businessMain .section .secPanel .txtBox .single {
+  max-width: 80px;
+}
+#businessMain .section .secPanel .photo {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#businessMain #section01 .mv {
+  background: url("../image/business/business_mv_01_sp.png") no-repeat;
+  background-size: cover;
+}
+#businessMain #section02 .mv {
+  background: url("../image/business/business_mv_02_sp.png") no-repeat;
+  background-size: cover;
+}
+#businessMain #section03 .mv {
+  background: url("../image/business/business_mv_03_sp.png") no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	features
+///////////////////////////////////////////////////////////*/
+#featuresMain .pageKvPanel {
+  background: url("../image/features/features_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#featuresMain .topTitlePanel {
+  padding: 60px 0;
+}
+#featuresMain .topTitlePanel h2 {
+  font-size: 23px;
+}
+#featuresMain .section + .section {
+  margin: 20px 0 0;
+}
+#featuresMain .section .secWrap01 {
+  padding: 0;
+}
+#featuresMain .section .secPanel {
+  height: 400px;
+}
+#featuresMain .section .secPanel .txtBox {
+  display: flex;
+  flex-direction: column;
+}
+#featuresMain .section .secPanel .txtBox h3 {
+  width: 85%;
+}
+#featuresMain .section .secPanel .txtBox .ttl01 {
+  max-width: 410px;
+}
+#featuresMain .section .secPanel .txtBox .ttl02 {
+  max-width: 440px;
+}
+#featuresMain .section .secPanel .txtBox .ttl03 {
+  max-width: 400px;
+}
+#featuresMain .section .secPanel .txtBox .ttl04 {
+  max-width: 440px;
+}
+#featuresMain .section .secPanel .txtBox .ttl05 {
+  max-width: 420px;
+}
+#featuresMain .section .secPanel .txtBox .txt {
+  margin: 10px 0 0;
+  padding: 0 25px;
+  font-size: 14px;
+}
+#featuresMain .section:nth-child(even) .secPanel {
+  align-items: flex-end;
+}
+#featuresMain .section:nth-child(even) .secPanel .txtBox {
+  align-items: flex-end;
+}
+#featuresMain .section:nth-child(even) .secPanel .txtBox .txt {
+  padding: 0 25px 0 40px;
+}
+#featuresMain #section01 {
+  background: url("../image/features/features_mv_01_sp.png") no-repeat;
+  background-size: cover;
+}
+#featuresMain #section02 {
+  background: url("../image/features/features_mv_02_sp.png") no-repeat;
+  background-size: cover;
+}
+#featuresMain #section03 {
+  background: url("../image/features/features_mv_03_sp.png") no-repeat;
+  background-size: cover;
+}
+#featuresMain #section04 {
+  background: url("../image/features/features_mv_04_sp.png") no-repeat;
+  background-size: cover;
+}
+#featuresMain #section05 {
+  background: url("../image/features/features_mv_05_sp.png") no-repeat;
+  background-size: cover;
+}
+#featuresMain .chartSection {
+  padding: 60px 0;
+}
+#featuresMain .chartSection .txt {
+  margin: 0 0 40px;
+  font-size: 14px;
+}
+#featuresMain .chartSection .chart {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	achievements
+///////////////////////////////////////////////////////////*/
+#achievementsMain .pageKvPanel {
+  background: url("../image/achievements/achievements_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#achievementsMain .topTitlePanel {
+  padding: 60px 0 80px;
+}
+#achievementsMain .topTitlePanel h2 {
+  margin: 0 0 20px;
+  font-size: 23px;
+}
+#achievementsMain .topTitlePanel .txt {
+  font-size: 13px;
+}
+#achievementsMain .topTitlePanel .secBoxList {
+  max-width: 300px;
+  margin: 40px auto 0;
+}
+#achievementsMain .topTitlePanel .secBox + .secBox {
+  margin: 40px 0 0;
+}
+#achievementsMain .topTitlePanel .secBox .ttl {
+  margin: 0 0 15px;
+}
+#achievementsMain .topTitlePanel .secBox .countList .countBox dl dt {
+  font-size: 18px;
+}
+#achievementsMain .topTitlePanel .secBox .countList .countBox dl dd {
+  font-size: 18px;
+}
+#achievementsMain .topTitlePanel .secBox .countList .countBox dl dd em {
+  font-size: 70px;
+}
+#achievementsMain .caseSection {
+  padding: 60px 0;
+}
+#achievementsMain .caseSection h2 {
+  margin: 0 0 30px;
+  font-size: 23px;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#companyMain .pageKvPanel {
+  background: url("../image/company/company_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#companyMain .companyLinkContainer {
+  padding: 100px 0 150px;
+}
+#companyMain .companyLinkContainer .secBox {
+  max-width: 600px;
+}
+#companyMain .companyLinkContainer .secBox + .secBox {
+  margin: 60px auto 0;
+}
+#companyMain .companyLinkContainer .secBox .img {
+  max-width: 600px;
+}
+#companyMain .companyLinkContainer .secBox .btnMore {
+  right: 0;
+  bottom: 40px;
+  width: 40%;
+  max-width: 250px;
+  min-width: 150px;
+}
+
+/*////////////////////////////////////////////////////////////
+	message
+///////////////////////////////////////////////////////////*/
+#messageMain .pageKvPanel {
+  background: url("../image/message/message_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#messageMain .topContainer {
+  margin: 100px 0 0;
+}
+#messageMain .topContainer::before {
+  top: 20px;
+  width: calc(100% - 25px);
+}
+#messageMain .topContainer .secWrap01 {
+  padding: 0 25px 0 0;
+}
+#messageMain .topContainer .img {
+  max-width: 600px;
+}
+#messageMain .topContainer dl {
+  right: 0;
+  bottom: 30px;
+  width: 250px;
+}
+#messageMain .topContainer dl dt {
+  margin: 0 15px 0 0;
+  font-size: 14px;
+}
+#messageMain .topContainer dl dd {
+  font-size: 24px;
+}
+#messageMain .message01 {
+  padding: 60px 0;
+}
+#messageMain .message01 p {
+  font-size: 20px;
+}
+#messageMain .videoPanel {
+  margin: 0 0 60px;
+}
+#messageMain .videoPanel .videoThumbnail {
+  max-width: 600px;
+}
+#messageMain .introContainer {
+  padding: 0 25px;
+}
+#messageMain .introPanel + .introPanel {
+  margin: 50px 0 0;
+}
+#messageMain .introPanel .txtBox {
+  padding: 20px 0 0;
+}
+#messageMain .introPanel .txtBox .txt {
+  max-width: 600px;
+}
+#messageMain .message02 {
+  padding: 80px 0 100px;
+}
+#messageMain .message02 p {
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	profile
+///////////////////////////////////////////////////////////*/
+#profileMain .pageKvPanel {
+  background: url("../image/profile/profile_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#profileMain .profileContainer {
+  padding: 60px 0 100px;
+}
+#profileMain .profileContainer .section + .section {
+  margin: 60px 0 0;
+}
+#profileMain .profileContainer .title {
+  max-width: 600px;
+  margin: 0 0 20px;
+}
+#profileMain .profileContainer .infoBox {
+  font-size: 14px;
+}
+#profileMain .profileContainer .infoBox dl {
+  display: block;
+}
+#profileMain .profileContainer .infoBox dl + dl {
+  margin: 10px 0 0;
+}
+#profileMain .profileContainer .infoBox dl dt {
+  width: 100%;
+  text-align: left;
+}
+#profileMain .profileContainer .infoBox dl dd {
+  width: 100%;
+}
+#profileMain .profileContainer .infoBox03 {
+  max-width: 100%;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+#recruitMain .pageKvPanel {
+  background: url("../image/recruit/recruit_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#recruitMain .recruitLinkContainer {
+  padding: 60px 0;
+}
+#recruitMain .recruitLinkContainer .secBox {
+  max-width: 600px;
+}
+#recruitMain .recruitLinkContainer .secBox + .secBox {
+  margin: 60px auto 0;
+}
+#recruitMain .recruitLinkContainer .secBox .img {
+  max-width: 600px;
+}
+#recruitMain .recruitLinkContainer .secBox .btnMore {
+  right: 0;
+  bottom: 40px;
+  width: 40%;
+  max-width: 250px;
+  min-width: 150px;
+}
+#recruitMain .subNavContainer {
+  padding: 0 0 60px;
+}
+#recruitMain .subNavContainer ul {
+  max-width: 400px;
+}
+#recruitMain .subNavContainer ul .ttl {
+  height: 150px;
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruitmessage
+///////////////////////////////////////////////////////////*/
+#recruitmessageMain .pageKvPanel {
+  background: url("../image/recruitmessage/recruitmessage_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#recruitmessageMain .topContainer {
+  padding: 60px 0 40px;
+}
+#recruitmessageMain .topContainer .topTitleBox {
+  max-width: 100%;
+  margin: 0 auto 50px;
+}
+#recruitmessageMain .topContainer .topTitleBox .topTitle {
+  max-width: 580px;
+}
+#recruitmessageMain .topContainer .secBox .txtBox h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+}
+#recruitmessageMain .topContainer .secBox .txtBox h2 em {
+  color: #f24193;
+}
+#recruitmessageMain .topContainer .secBox .slash {
+  padding: 0;
+  text-align: right;
+}
+#recruitmessageMain .topContainer .secBox .slash img {
+  display: inline-block;
+  max-width: 480px;
+}
+#recruitmessageMain .videoPanel {
+  margin: 0 0 60px;
+}
+#recruitmessageMain .videoPanel .videoThumbnail {
+  max-width: 600px;
+}
+#recruitmessageMain .section01 {
+  padding: 60px 0;
+}
+#recruitmessageMain .section01 h2 {
+  margin: 0 0 20px;
+  font-size: 23px;
+}
+#recruitmessageMain .section01 .topTxt {
+  margin: 0 0 20px;
+}
+#recruitmessageMain .section01 .chart {
+  max-width: 380px;
+  margin: 0 auto 50px;
+}
+#recruitmessageMain .section01 .flowBox + .flowBox {
+  margin: 30px 0 0;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(1) {
+  border-bottom: none;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(1) dl dt {
+  border-bottom: 2px solid #f36c3b;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(2) {
+  border-bottom: none;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(2) dl dt {
+  border-bottom: 2px solid #f24193;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(3) {
+  border-bottom: none;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(3) dl dt {
+  border-bottom: 2px solid #a33fa3;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(4) {
+  border-bottom: none;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(4) dl dt {
+  border-bottom: 2px solid #5776c2;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(5) {
+  border-bottom: none;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(5) dl dt {
+  border-bottom: 2px solid #69cdb9;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(6) {
+  border-bottom: none;
+}
+#recruitmessageMain .section01 .flowBox:nth-child(6) dl dt {
+  border-bottom: 2px solid #e0bd52;
+}
+#recruitmessageMain .section01 .flowBox dl dt {
+  margin: 0 0 10px;
+}
+#recruitmessageMain .section01 .flowBox dl dt span {
+  margin: 0 20px 0 0;
+  font-size: 30px;
+}
+#recruitmessageMain .section01 .flowBox dl dt em {
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	member
+///////////////////////////////////////////////////////////*/
+#memberMain .pageKvPanel {
+  background: url("../image/member/member_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#memberMain .pageLinkContainer {
+  padding: 60px 0 40px;
+}
+#memberMain .pageLinkContainer .pageLinkBox ul {
+  max-width: 450px;
+  margin: 0 auto;
+}
+#memberMain .pageLinkContainer .pageLinkBox ul li + li {
+  margin: 20px 0 0;
+}
+#memberMain .pageLinkContainer .pageLinkBox ul .nameBox {
+  top: -30px;
+  max-width: 250px;
+}
+#memberMain .pageLinkContainer .pageLinkBox ul .nameBox dl {
+  padding: 0 10px;
+}
+#memberMain .pageLinkContainer .pageLinkBox ul .nameBox dl dt {
+  margin: 0 15px 0 0;
+  font-size: 13px;
+}
+#memberMain .pageLinkContainer .pageLinkBox ul .nameBox dl dd {
+  font-size: 18px;
+}
+@media (min-width: 1025px) {
+  #memberMain .pageLinkContainer .pageLinkBox ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #memberMain .pageLinkContainer .pageLinkBox ul li {
+    width: calc(50% - 30px);
+  }
+  #memberMain .pageLinkContainer .pageLinkBox ul .photo {
+    position: relative;
+    height: 297px;
+  }
+  #memberMain .pageLinkContainer .pageLinkBox ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+#memberMain .section {
+  padding: 80px 0 0;
+}
+#memberMain .mvContainer .secWrap01 {
+  padding: 0;
+}
+#memberMain .mvContainer .mvPanel {
+  position: relative;
+  margin: 0 auto 60px;
+  background: none;
+}
+#memberMain .mvContainer .mvPanel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: url("../image/member/member_staff_mv_bg.png") left bottom no-repeat;
+  background-size: 100% auto;
+}
+#memberMain .mvContainer .mvPanel .mv {
+  position: relative;
+  top: -30px;
+  left: 0;
+  padding: 0 25px 0 0;
+}
+#memberMain .mvContainer .mvPanel .num {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  font-size: 90px;
+}
+#memberMain .mvContainer .mvPanel .nameBox {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 250px;
+  padding: 15px 10px;
+}
+#memberMain .mvContainer .mvPanel .nameBox dl dt {
+  margin: 0 15px 0 0;
+  font-size: 13px;
+}
+#memberMain .mvContainer .mvPanel .nameBox dl dd {
+  font-size: 18px;
+}
+#memberMain .videoPanel {
+  margin: 0 0 60px;
+}
+#memberMain .videoPanel .videoThumbnail {
+  max-width: 600px;
+}
+#memberMain .message {
+  padding: 0 0 60px;
+}
+#memberMain .message p {
+  font-size: 20px;
+}
+#memberMain .introPanel + .introPanel {
+  margin: 50px 0 0;
+}
+#memberMain .introPanel .txtBox {
+  padding: 20px 25px 0;
+}
+#memberMain .introPanel .txtBox .txt {
+  max-width: 600px;
+}
+#memberMain .flowContainer {
+  margin: 80px 0 0;
+  padding: 0 0 60px;
+}
+#memberMain .flowContainer .title {
+  top: -20px;
+  max-width: 300px;
+}
+#memberMain .flowContainer .photoList {
+  padding: 20px 0 0;
+}
+#memberMain .flowContainer .photoList ul {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 0 30px 30px;
+  background: url("../image/member/member_flow_arrow_sp.png") left top 20px no-repeat;
+  background-size: 20px auto;
+}
+#memberMain .flowContainer .photoList ul li {
+  display: flex;
+  justify-content: space-between;
+}
+#memberMain .flowContainer .photoList ul li + li {
+  margin: 30px 0 0;
+}
+#memberMain .flowContainer .photoList ul .photo {
+  width: 100px;
+}
+#memberMain .flowContainer .photoList ul dl {
+  width: calc(100% - 120px);
+}
+#memberMain .flowContainer .photoList ul dl dt {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+#memberMain .flowContainer .photoList ul dl dd {
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/*////////////////////////////////////////////////////////////
+	requirements
+///////////////////////////////////////////////////////////*/
+#requirementsMain .pageKvPanel {
+  background: url("../image/requirements/requirements_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#requirementsMain .requirementsSection {
+  padding: 60px 0 200px;
+}
+#requirementsMain .requirementsSection .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+#requirementsMain .requirementsSection .secPanel .accordHead {
+  padding: 10px 20px;
+}
+#requirementsMain .requirementsSection .secPanel .accordHead .title {
+  width: calc(100% - 30px);
+  font-size: 18px;
+}
+#requirementsMain .requirementsSection .secPanel .accordHead .arrow {
+  width: 15px;
+}
+#requirementsMain .requirementsSection .secPanel .accordBody {
+  padding: 20px;
+  font-size: 14px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain .pageKvPanel {
+  background: url("../image/contact/contact_kv_sp.png") no-repeat;
+  background-size: cover;
+}
+#contactMain .formContainer {
+  padding: 60px 0;
+}
+#contactMain .formContainer .topTxt {
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+#contactMain .itemContainer {
+  padding: 50px 0;
+}
+#contactMain .itemContainer .itemList {
+  max-width: 400px;
+}
+#contactMain .itemContainer .itemBox + .itemBox {
+  margin: 40px 0 0;
+}
+#contactMain .itemContainer .itemBox dl dt {
+  width: 110px;
+  font-size: 10px;
+  padding: 0 0 0 30px;
+}
+#contactMain .itemContainer .itemBox dl dd {
+  width: calc(100% - 120px);
+}
+#contactMain .itemContainer .tel dl dt {
+  background: url("../image/contact/contact_icon_tel.png") left center no-repeat;
+  background-size: 26px auto;
+}
+#contactMain .itemContainer .tel a {
+  font-size: 20px;
+}
+#contactMain .itemContainer .mail dl dt {
+  background: url("../image/contact/contact_icon_mail.png") left center no-repeat;
+  background-size: 28px auto;
+}
+#contactMain .itemContainer .mail a {
+  font-size: 20px;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox form > dl {
+  font-size: 12px;
+}
+.formBox .radioForm {
+  display: flex;
+}
+.formBox .radioForm dt {
+  width: 85px;
+}
+.formBox .radioForm dd {
+  width: calc(100% - 85px);
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  padding: 0 10px;
+  font-size: 16px;
+}
+.formBox textarea {
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+}
+.formBox .birthBox {
+  padding: 0 10px;
+}
+.formBox .birthBox ul li {
+  width: 70px;
+}
+.formBox .birthBox ul li + li {
+  padding: 0 0 0 15px;
+}
+.formBox .birthBox input {
+  height: 30px;
+  padding: 0 5px;
+}
+.formBox .checkItem {
+  margin: 0 0 40px;
+}
+.formBox .checkItem span {
+  padding-left: 20px;
+}
+.formBox form .mwform-radio-field {
+  display: block;
+}
+.formBox form .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox .privacy {
+  max-width: 205px;
+  margin: 35px auto 20px;
+}
+.formBox .privacy .agreeBox {
+  height: 80px;
+  padding: 10px;
+  font-size: 10px;
+}
+.formBox .privacy .box + .box {
+  margin: 5px 0 0;
+}
+
+#contactConfirm #section__contact,
+#contactComplete #section__contact {
+  padding: 90px 0 0;
+}
+#contactConfirm #section__contact .contactContainer,
+#contactComplete #section__contact .contactContainer {
+  padding: 40px 0 60px;
+}
+#contactConfirm #section__contact .secWrap01,
+#contactComplete #section__contact .secWrap01 {
+  padding: 0 30px;
+}
+#contactConfirm #section__contact .secTitleBox,
+#contactComplete #section__contact .secTitleBox {
+  margin: 0 0 20px;
+}
+#contactConfirm #section__contact .secTitleBox p,
+#contactComplete #section__contact .secTitleBox p {
+  margin: 0 0 5px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+#contactConfirm #section__contact .secTitleBox h2,
+#contactComplete #section__contact .secTitleBox h2 {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+#contactConfirm #section__contact .topTxt,
+#contactComplete #section__contact .topTxt {
+  margin: 0 0 40px;
+}
+#contactConfirm #section__contact .topTxt .txt,
+#contactComplete #section__contact .topTxt .txt {
+  letter-spacing: 0;
+}
+#contactConfirm .btnToTop,
+#contactComplete .btnToTop {
+  font-size: 14px;
+}

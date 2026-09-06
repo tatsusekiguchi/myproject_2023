@@ -1,0 +1,231 @@
+// ▽メイン▽
+.searchMain.main.pageMain
+	.pageKvPanel
+		img(src="https://hauskahaus.com/system_panel/uploads/images/search_kv.png", alt="")
+	.pageHeadTitlePanel
+		.secWrap
+			.pageHeadBox
+				.pageHeadTitle
+					p.futura Search
+					h2 知多半島エリアの不動産を探す
+				.pageHeadTxt
+					.txt
+						p 知多半島エリアの土地、物件の購入は株式会社HAUSKA HAUSにご相談ください。<br>エリアや価格帯からご希望の条件で不動産をお探しいただけます。
+	.searchConditionContainer
+		.secWrap01
+			.secTtl
+				p 条件
+				p.em 検索
+			.topTxt
+				.txt
+					p ご希望の条件をご指定ください。表示する物件を絞り込めます。
+			.searchPanel
+				<form class="webgene-search-form" method="get" action="./testproperty">
+					<div rel="物件種類" title="物件種類" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">物件種類</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="property_type_cd" name="s0l0[]" value="7">賃貸中古物件</label>
+					<label><input type="checkbox" class="property_type_cd" name="s0l0[]" value="6">賃貸一戸建て</label>
+					<label><input type="checkbox" class="property_type_cd" name="s0l0[]" value="5">賃貸マンション</label>
+					<label><input type="checkbox" class="property_type_cd" name="s0l0[]" value="4">売中古物件</label>
+					<label><input type="checkbox" class="property_type_cd" name="s0l0[]" value="3">売新築物件</label>
+					<label><input type="checkbox" class="property_type_cd" name="s0l0[]" value="1">売土地</label>
+					</div>
+					</div>
+					</div>
+					<div rel="エリア" title="エリア" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">エリア</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="11">美浜町</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="10">南知多町</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="9">東浦町</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="8">阿久比町</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="7">知多市</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="6">大府市</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="5">武豊町</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="4">東海市</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="3">常滑市</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="2">半田市</label>
+					<label><input type="checkbox" class="property_parking_cd" name="s1l0[]" value="1">★エリア管理</label>
+					</div>
+					</div>
+					</div>
+					<div rel="物件状況" title="物件状況" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">物件状況</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="property_status_cd" name="s2l0[]" value="1">★物件状況管理</label>
+					</div>
+					</div>
+					</div>
+					<div rel="物件名" title="物件名" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">物件名</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<input type="text" name="s3l0" value="">
+					</div>
+					</div>
+					</div>
+					<div class="search-area-parent webgene-search-form-block" rel="沿線1|沿線2|沿線3" group="1">
+					<p class="search-area-title">沿線から検索</p>
+					<section rel="沿線管理" title="沿線" class=" search-area-wrapper"><div class="search-subtitle-wrapper">
+					<p class="search-subtitle">沿線</p>
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="wayside_large_cd" name="s4l1[]" value="4">JR武豊線</label>
+					<label><input type="checkbox" class="wayside_large_cd" name="s4l1[]" value="3">名鉄知多新線</label>
+					<label><input type="checkbox" class="wayside_large_cd" name="s4l1[]" value="2">名鉄河和線</label>
+					<label><input type="checkbox" class="wayside_large_cd" name="s4l1[]" value="1">名鉄常滑線</label>
+					</div></section>
+					<section rel="駅名管理" title="駅名" class=" search-area-wrapper"><div class="search-subtitle-wrapper">
+					<p class="search-subtitle">駅名</p>
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="26" wayside_large_cd="4">武豊駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="25" wayside_large_cd="4">半田駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="24" wayside_large_cd="4">東浦駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="23" wayside_large_cd="4">大府駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="22" wayside_large_cd="4">共和駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="21" wayside_large_cd="3">内海駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="20" wayside_large_cd="3">野間駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="19" wayside_large_cd="3">上野間駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="18" wayside_large_cd="2">河和駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="17" wayside_large_cd="2">知多武豊駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="16" wayside_large_cd="2">青山駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="15" wayside_large_cd="2">知多半田駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="14" wayside_large_cd="2">住吉町駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="13" wayside_large_cd="2">阿久比駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="12" wayside_large_cd="2">巽ヶ丘駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="11" wayside_large_cd="2">南加木屋駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="10" wayside_large_cd="2">高横須賀駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="9" wayside_large_cd="1">常滑駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="8" wayside_large_cd="1">新舞子駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="7" wayside_large_cd="1">朝倉駅周辺</label>
+					<label><input type="checkbox" class="wayside_small_cd" name="s4l0[]" value="5" wayside_large_cd="1">太田川駅周辺</label>
+					</div></section>
+					</div>
+					<div rel="利用目的" title="利用目的" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">利用目的</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="property_direction_cd" name="s7l0[]" value="3">駐車場として</label>
+					<label><input type="checkbox" class="property_direction_cd" name="s7l0[]" value="2">居住用として</label>
+					<label><input type="checkbox" class="property_direction_cd" name="s7l0[]" value="1">事業用として</label>
+					</div>
+					</div>
+					</div>
+					<div rel="価格" title="価格" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">価格</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="property_facility_cd4" name="s9l0[]" value="1">★価格管理</label>
+					</div>
+					</div>
+					</div>
+					<div rel="間取り" title="間取り" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">間取り</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="property_plan_cd" name="s8l0[]" value="1">★間取り管理</label>
+					</div>
+					</div>
+					</div>
+					<div rel="土地状況" title="土地状況" class=" webgene-search-form-block">
+					<div class="search-title-wrapper">
+					<p class="search-title">土地状況</p>
+					</div>
+					<div class="search-area-wrapper">
+					<div class="search-subtitle-wrapper">
+					</div>
+					<div class="search-contents-wrapper">
+					<label><input type="checkbox" class="property_age_cd" name="s10l0[]" value="1">★土地状況管理</label>
+					</div>
+					</div>
+					</div>
+
+					<input type="submit" class="search-submit" value="検索する"><input type="hidden" name="wgsearch" value="property"><input type="hidden" name="sg[]" value="s4|s5|s6">
+				</form>
+	.searchResultContainer
+		.secWrap01
+			section.webgene-blog
+				.webgene-header
+					.secTtl
+						p 不動産
+						p.em 情報
+				.webgene-legend
+					p
+						em 15
+						span 件中　1 ～ 15 件を表示
+				.webgene-item
+					a(href="")
+						.photo
+							img(src="https://hauskahaus.com/system_panel/uploads/images/search_sample_01.png", alt="")
+						.txtBox
+							.type
+								p 売土地
+							.address
+								p 知多郡南知多町 大字片名字長谷
+							.area
+								p 土地面積：公簿 154.40㎡
+							.price
+								p 500万円
+							.description
+								p 名鉄河和線 / 河和駅　【バス】15分<br>師崎中学校前 停歩2分<br>補足文が入ります。
+				.webgene-item
+					a(href="")
+						.photo
+							img(src="https://hauskahaus.com/system_panel/uploads/images/search_sample_01.png", alt="")
+						.txtBox
+							.type
+								p 売土地
+							.address
+								p 知多郡南知多町 大字片名字長谷
+							.area
+								p 土地面積：公簿 154.40㎡
+							.price
+								p 500万円
+							.description
+								p 名鉄河和線 / 河和駅　【バス】15分<br>師崎中学校前 停歩2分<br>補足文が入ります。
+				.webgene-pagination
+					ul
+						li.prev
+							a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 前へ
+						li.number
+							a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=1") 1
+						li.number
+							a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 2
+						li.number.selected
+							a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=3") 3
+						li.next
+							a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 次へ
+// △メイン△

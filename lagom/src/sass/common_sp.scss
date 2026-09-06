@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 53px;
+  z-index: 999;
+  // background: rgba(255, 255, 255, 0.75);
+  background: #f8f8f8;
+  .headBox {
+    padding: 15px 30px;
+  }
+  .logo {
+    width: 80px;
+    a {
+      display: block;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  &__list {
+    display: none;
+  }
+  &__item {
+    .contactLink {
+      display: none;
+    }
+  }
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 20px;
+    height: 15px;
+    z-index: 9999;
+  }
+  .hamburger span {
+    background: #64584d;
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .hamburger span:nth-of-type(1) {
+    top: 0;
+  }
+  .hamburger span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hamburger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .is-open.hamburger span:nth-of-type(1) {
+    transform: translate(-50%, 5px) rotate(-45deg);
+  }
+  .is-open.hamburger span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .is-open.hamburger span:nth-of-type(3) {
+    transform: translate(-50%, -8px) rotate(45deg);
+  }
+}
+.subNavigation {
+  position: fixed;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 123px);
+  z-index: 1000;
+  background: #beb6a6;
+  &__wrap {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__main {
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 220px;
+      background: url("../image/common/navigation_logo_bg.png") center no-repeat;
+      background-size: cover;
+      img {
+        width: 120px;
+      }
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 40px;
+      ul {
+        width: 55%;
+        + ul {
+          width: 40%;
+        }
+        li {
+          + li {
+            margin: 45px 0 0;
+          }
+          a {
+            display: inline-block;
+            padding: 0 0 0 15px;
+            color: #ffffff;
+            background: url("../image/common/navigation_list_arrow.png") left
+              top 12px no-repeat;
+            background-size: 8px auto;
+            em {
+              display: block;
+              font-size: 20px;
+            }
+            span {
+              display: block;
+              font-family: $gothic;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    &--pc {
+      display: none;
+    }
+    &--sp {
+      margin: auto 0 0;
+      padding: 0 0 20px;
+      color: #ffffff;
+      text-align: center;
+      .sns {
+        margin: 0 0 30px;
+        dt {
+          margin: 0 0 20px;
+          font-family: $gothic;
+          font-size: 12px;
+        }
+        ul {
+          li {
+            display: inline-block;
+            + li {
+              margin: 0 0 0 30px;
+            }
+            a {
+              display: block;
+            }
+          }
+          .insta {
+            width: 18px;
+          }
+          .tweet {
+            width: 22px;
+          }
+          .youtube {
+            width: 26px;
+          }
+        }
+      }
+      .copy {
+        font-family: $gothic;
+        font-size: 8px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 53px 0 0;
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 60px 40px 185px;
+  &__items {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    > * {
+      width: 50%;
+      height: 85px;
+      text-align: center;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-family: $serif;
+        font-size: 11px;
+        color: #ffffff;
+        letter-spacing: 0.05em;
+        span {
+          display: inline-block;
+        }
+      }
+    }
+    &__entry {
+      background: #64584d;
+      a {
+        span {
+          padding: 24px 0 0;
+          background: url("../image/common/footer_item_entry.png") center top
+            no-repeat;
+          background-size: 22px auto;
+        }
+      }
+    }
+    &__contact {
+      background: #b4a693;
+      a {
+        span {
+          padding: 20px 0 0;
+          background: url("../image/common/footer_item_mail.png") center top
+            no-repeat;
+          background-size: 24px auto;
+        }
+      }
+    }
+  }
+  .logo {
+    max-width: 150px;
+    margin: 0 auto 80px;
+  }
+  .sns {
+    margin: 0 0 60px;
+    dt {
+      font-size: 12px;
+    }
+    ul {
+      li {
+        + li {
+          margin: 0 0 0 30px;
+        }
+        a {
+          display: block;
+        }
+      }
+      .insta {
+        width: 18px;
+      }
+      .tweet {
+        width: 22px;
+      }
+      .youtube {
+        width: 26px;
+      }
+    }
+  }
+  .copy {
+    font-size: 8px;
+  }
+}

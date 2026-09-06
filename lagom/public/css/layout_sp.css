@@ -1,0 +1,920 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topKvPanel {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+#top .topKvPanel .topKv {
+  position: relative;
+  left: 0;
+  right: auto;
+  width: calc(100% - 60px);
+  height: auto;
+  margin: 0 0 0 60px;
+}
+#top .topKvPanel .topKv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("../image/top/top_kv_bg_sp.png") no-repeat;
+  background-size: cover;
+}
+#top .topKvPanel .topKv img {
+  position: static;
+  width: 100%;
+  height: auto;
+}
+#top .topKvPanel .topKvWrap {
+  display: block;
+  height: auto;
+  margin: -50px 0 0;
+  padding: 0 0 40px;
+}
+#top .topKvPanel .kvTitleBox {
+  position: relative;
+  max-width: 345px;
+  padding: 25px 40px 0;
+}
+#top .topKvPanel .kvTitleBox .mainTitle {
+  margin: 0 0 10px;
+  font-size: 63px;
+}
+#top .topKvPanel .kvTitleBox h1 {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+#top .topKvPanel .kvTitleBox h1 + p {
+  margin: 20px 0 0;
+  padding: 15px 0 0;
+  font-size: 15px;
+}
+#top .infoPanel {
+  padding: 25px 40px;
+  font-size: 15px;
+}
+#top .section__header_title p {
+  font-size: 30px;
+}
+#top .section__header_title h2 {
+  font-size: 15px;
+}
+#top .section__concept {
+  padding: 60px 40px 80px;
+}
+#top .section__concept h2 {
+  margin: 0 0 30px;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+#top .section__concept h2 + p {
+  font-size: 14px;
+  line-height: 2.5;
+}
+@media (max-width: 460px) {
+  #top .section__concept h2 + p {
+    font-size: 3.2608695652vw;
+    white-space: nowrap;
+  }
+}
+#top .section__concept__box .photo {
+  margin: 0 -40px;
+}
+#top .section__concept__box .txtBox {
+  padding: 60px 0;
+}
+#top .section__concept__box .txtBox p {
+  font-size: 14px;
+  text-align: center;
+}
+#top .section__event {
+  padding: 60px 0 0;
+  background: none;
+}
+#top .section__event::before {
+  content: "";
+  top: 2px;
+  left: 0;
+  right: 0;
+  max-width: 458px;
+  width: 100%;
+  height: 95px;
+  margin: 0 auto;
+  background: url("../image/top/top_event_openhouse.png") no-repeat;
+  background-size: 100% auto;
+}
+#top .section__event__wrap {
+  padding: 0;
+}
+#top .section__event__titleContainer {
+  position: relative;
+}
+#top .section__event__title {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  height: auto;
+  min-height: 160px;
+  font-size: 16px;
+}
+#top .section__event__title:after {
+  display: none;
+}
+#top .section__event__container {
+  margin: 0;
+  padding: 0 40px 40px;
+  background: rgba(180, 166, 147, 0.25);
+}
+#top .section__event__container .photo {
+  margin: 0 -40px 40px;
+}
+#top .section__event__container .txtBox .ttlBox {
+  margin: 0 0 40px;
+}
+#top .section__event__container .txtBox .ttlBox p {
+  margin: 0 0 5px;
+  font-size: 15px;
+}
+#top .section__event__container .txtBox .ttlBox h3 {
+  font-size: 40px;
+}
+#top .section__event__container .txtBox .txt {
+  margin: 0 0 40px;
+  font-size: 15px;
+}
+#top .section__event__container .txtBox .infoBox dl {
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+#top .section__event__container .txtBox .infoBox dl dt {
+  width: 80px;
+}
+#top .section__event__container .txtBox .infoBox dl dd {
+  width: calc(100% - 80px);
+  padding: 0;
+}
+#top .section__event__container .txtBox .infoBox .place dd {
+  display: block;
+}
+#top .section__event__container .txtBox .infoBox .place dd p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#top .section__event__container .txtBox .infoBox .place dd a {
+  display: inline-block;
+  width: 15px;
+  vertical-align: middle;
+}
+#top .section__event__map {
+  max-width: 100%;
+  padding: 0 40px 35px;
+  background: rgba(180, 166, 147, 0.25);
+}
+#top .section__event__map p {
+  margin: 15px 0 0;
+  font-size: 11px;
+}
+#top .section__news {
+  padding: 50px 40px;
+}
+#top .section__news__wrap {
+  position: relative;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+#top .section__news__list {
+  margin: 80px 0 0;
+}
+#top .section__news__list ul li {
+  padding: 0 0 30px;
+}
+#top .section__news__list ul li + li {
+  padding: 30px 0;
+}
+#top .section__news__list ul a {
+  font-size: 12px;
+}
+#top .section__news__list ul .photoBox .photo {
+  background: url("../image/top/top_news_logo.png") center no-repeat;
+  background-size: 53px auto;
+}
+#top .section__news__list ul .txtBox {
+  padding: 0;
+}
+#top .section__news__list ul .txtBox .info {
+  margin: 0 0 15px;
+}
+#top .section__news__list ul .txtBox .info .cate {
+  padding: 1px 20px;
+  font-size: 9px;
+}
+#top .section__news__list ul .txtBox .date {
+  margin: 0;
+}
+#top .section__news__list ul .txtBox .title {
+  line-height: 1.5;
+}
+#top .section__news__list ul .photoBox {
+  width: 130px;
+  padding: 0 15px 0 0;
+}
+#top .section__news__list ul .photoBox .photo {
+  max-width: 115px;
+  height: 85px;
+}
+#top .section__news__list ul .photoBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top .section__news__list ul .txtBox {
+  width: calc(100% - 130px);
+}
+#top .section__news__btn {
+  position: static;
+  width: 140px;
+  margin: 20px auto 0;
+}
+#top .section__news__btn a {
+  padding: 8px 10px;
+  font-size: 12px;
+}
+#top .section__point {
+  padding: 60px 0 0;
+}
+#top .section__point__top .section__header_title {
+  padding: 0 40px;
+}
+#top .section__point__top .txt01 {
+  margin: 50px 0;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2;
+}
+#top .section__point__top .txt02 {
+  margin: 50px 0;
+  font-size: 16px;
+  line-height: 2;
+}
+#top .section__point__list ol li {
+  padding: 40px;
+}
+#top .section__point__list ol .txtBox {
+  padding: 15px 0 0;
+}
+#top .section__point__list ol .txtBox dl dt {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #64584d;
+}
+#top .section__point__list ol .txtBox dl dt span {
+  font-size: 12px;
+}
+#top .section__point__list ol .txtBox dl dt em {
+  font-size: 20px;
+}
+#top .section__point__list ol .txtBox dl dd {
+  font-size: 12px;
+}
+#top .section__point__list.list01 ol li:nth-child(odd) {
+  background: rgba(180, 166, 147, 0.25);
+}
+#top .section__point__list.list02 ol li:nth-child(even) {
+  background: rgba(180, 166, 147, 0.25);
+}
+#top .section__point__panel {
+  margin: 20px 0 0;
+}
+#top .section__point__panel .txtBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 210px;
+  padding: 0 40px;
+  background: rgba(180, 166, 147, 0.25);
+}
+#top .section__point__panel .txtBox .ttl {
+  font-size: 30px;
+  letter-spacing: 0.05em;
+}
+#top .section__story__top {
+  padding: 40px;
+}
+#top .section__story__top h2 {
+  margin: 0 0 15px;
+  font-size: 30px;
+}
+#top .section__story__top p {
+  font-size: 12px;
+  line-height: 2;
+}
+#top .section__story__container {
+  padding: 50px 20px;
+  background: url("../image/top/top_story_mv_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top .section__story__mv {
+  max-width: 380px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
+  background: none;
+}
+#top .section__story__mv .nameBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#top .section__story__mv .nameBox .box {
+  align-items: flex-end;
+}
+#top .section__story__mv .nameBox dl {
+  width: calc(50% - 23px);
+  white-space: nowrap;
+}
+#top .section__story__mv .nameBox dl dt {
+  font-size: 13px;
+}
+#top .section__story__mv .nameBox dl dd {
+  font-size: 17px;
+}
+#top .section__story__mv .nameBox .iconBox {
+  width: 23px;
+  padding: 0 0 4px;
+}
+#top .section__story__mv .nameBox .iconBox .icon {
+  width: 23px;
+}
+#top .section__story__list {
+  padding: 25px 0 0;
+}
+#top .section__story__list ul {
+  margin: 0 -20px;
+  padding: 40px;
+  background: #ffffff;
+}
+#top .section__story__list ul li {
+  padding: 0;
+}
+#top .section__story__list ul li + li {
+  margin: 40px 0 0;
+}
+#top .section__story__list ul dl dt {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+#top .section__story__list ul dl dd {
+  font-size: 12px;
+  line-height: 1.7;
+}
+#top .section__faq {
+  padding: 60px 40px;
+}
+#top .section__faq__box {
+  padding: 20px 0 0;
+}
+#top .section__faq__box dl {
+  font-size: 15px;
+}
+#top .section__faq__box dl dt span {
+  margin: 0 10px 0 0;
+}
+#top .section__faq__box dl dd {
+  padding: 15px 0 0;
+  font-size: 12px;
+}
+#top .section__flow {
+  padding: 60px 40px;
+}
+#top .section__flow__wrap {
+  padding: 0;
+}
+#top .section__flow__list {
+  padding: 40px 0 0;
+}
+#top .section__flow__list ol li {
+  padding: 20px 0 0;
+  border-top: 1px solid #707070;
+}
+#top .section__flow__list ol li + li {
+  margin: 50px 0 0;
+}
+#top .section__flow__list ol dl dt {
+  position: relative;
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+#top .section__flow__list ol dl dt span {
+  margin: 0 20px 0 0;
+}
+#top .section__flow__list ol dl dd {
+  font-size: 12px;
+}
+#top .section__contact {
+  padding: 0;
+}
+#top .section__contact__top {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+#top .section__contact__top .section__header_title {
+  order: 2;
+  padding: 0 40px;
+}
+#top .section__contact__top__box {
+  order: 3;
+  padding: 0 40px;
+}
+#top .section__contact__top__box dl {
+  padding: 40px 0;
+  text-align: center;
+}
+#top .section__contact__top__box dl dt {
+  margin: 0 0 10px;
+  font-size: 25px;
+  white-space: nowrap;
+}
+#top .section__contact__top__box dl dd {
+  font-size: 12px;
+}
+#top .section__contact__top__box dl.line .btn, #top .section__contact__top__box dl.tel .btn {
+  position: static;
+}
+#top .section__contact__top__box .btn {
+  width: 205px;
+  margin: 20px auto 0;
+}
+#top .section__contact__top__box .btn a {
+  padding: 5px 10px;
+  font-size: 17px;
+}
+#top .section__contact__top__box .btn.line a span {
+  padding: 0 0 0 25px;
+  background: url("../image/top/top_contact_line.png") left center no-repeat;
+  background-size: 22px auto;
+}
+#top .section__contact__top__box .btn.tel a span {
+  padding: 0 0 0 25px;
+  background: url("../image/top/top_contact_tel.png") left center no-repeat;
+  background-size: 24px auto;
+}
+#top .section__contact__top__photo {
+  order: 1;
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 60px;
+  padding: 0 0 0 40px;
+}
+#top .section__company {
+  padding: 60px 40px;
+}
+#top .section__company__box {
+  padding: 40px 0 0;
+}
+#top .section__company__box dl {
+  font-size: 15px;
+}
+#top .section__company__box dl dt {
+  width: 78px;
+  padding: 10px 0;
+}
+#top .section__company__box dl dt span {
+  min-width: 100%;
+}
+#top .section__company__box dl dd {
+  width: calc(100% - 78px);
+  padding: 10px 0 10px 15px;
+}
+#top .section__company__box dl:nth-child(1) {
+  line-height: 1;
+}
+#top .section__company__box dl:nth-child(1) dt {
+  padding: 0 0 20px;
+}
+#top .section__company__box dl:nth-child(1) dd {
+  padding: 0 0 20px 15px;
+}
+
+.bnr__entry .txtBox .inner {
+  padding: 40px 30px;
+}
+.bnr__entry .txtBox .logo {
+  max-width: 90px;
+}
+.bnr__entry .txtBox dl {
+  margin: 0 0 20px;
+}
+.bnr__entry .txtBox dl dt {
+  margin: 0 0 15px;
+  font-size: 19px;
+}
+.bnr__entry .txtBox dl dd {
+  font-size: 10px;
+  line-height: 1.5;
+}
+.bnr__entry .txtBox .btn {
+  max-width: 170px;
+}
+.bnr__entry .txtBox .btn a {
+  padding: 10px;
+  font-size: 12px;
+}
+
+/*////////////////////////////////////////////////////////////
+	EVENT
+///////////////////////////////////////////////////////////*/
+.eventKvPanel {
+  height: 300px;
+}
+.eventKvPanel .kvTitle {
+  padding: 15px 40px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.postPanel {
+  padding: 50px 40px 80px;
+}
+.postPanel .categoryList dl {
+  font-size: 15px;
+}
+.postPanel .categoryList dl dt {
+  margin: 0 0 5px;
+  padding: 0 0 15px;
+  text-align: center;
+}
+.postPanel .categoryList dl ul {
+  max-width: 410px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.postPanel .categoryList dl ul li {
+  position: relative;
+}
+.postPanel .categoryList dl ul li::before {
+  content: "-";
+  display: inline-block;
+  margin: 0 3px 0 0;
+  vertical-align: middle;
+}
+.postPanel .categoryList dl ul li a {
+  font-size: 12px;
+}
+.postPanel .categoryList dl ul li,
+.postPanel .categoryList dl ul li + li {
+  display: inline-block;
+  margin: 10px 60px 0 0;
+}
+.postPanel .list__event ul li + li {
+  margin: 50px 0 0;
+}
+.postPanel .list__event ul a {
+  font-size: 13px;
+}
+.postPanel .list__event ul .photoBox .photo {
+  min-height: 200px;
+  background: url("../image/top/top_news_logo.png") center no-repeat;
+  background-size: 120px auto;
+}
+.postPanel .list__event ul .txtBox .info {
+  margin: 0 0 20px;
+  padding: 15px 0;
+}
+.postPanel .list__event ul .txtBox .info .cate {
+  padding: 1px 20px;
+  font-size: 13px;
+}
+.postPanel .list__event ul .txtBox .info .time {
+  margin: 0 0 0 10px;
+  font-size: 15px;
+}
+.postPanel .list__event ul .txtBox .date {
+  margin: 0 auto 5px;
+}
+.postPanel .list__pagination {
+  margin: 80px 0 0;
+}
+.postPanel .list__pagination .pagination li + li {
+  margin: 0 0 0 25px;
+}
+.postPanel .list__pagination .pagination li a {
+  width: 20px;
+  height: 20px;
+  font-size: 17px;
+}
+.postPanel .detail__event {
+  max-width: 1060px;
+}
+.postPanel .detail__event .titleHeader__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+.postPanel .detail__event .titleHeader .time {
+  font-size: 12px;
+}
+.postPanel .detail__event .titleHeader .cateBox .cate {
+  min-width: 80px;
+  padding: 1px 20px;
+  font-size: 10px;
+}
+.postPanel .detail__event .titleHeader .title {
+  font-size: 13px;
+}
+.postPanel .detail__event .thumbnailBox {
+  margin: 25px 0 0;
+}
+.postPanel .detail__event .postContents {
+  margin: 30px 0 0;
+}
+.postPanel .btnBack {
+  margin: 50px 0 0;
+}
+.postPanel .btnBack a {
+  width: 115px;
+  padding: 0 0 10px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  border-bottom: 1px solid #292f49;
+}
+
+#eventList .postPanel__wrap {
+  display: flex;
+  flex-direction: column;
+}
+#eventList .postPanel__left {
+  order: 2;
+}
+#eventList .postPanel__right {
+  order: 1;
+  margin: 0 0 50px;
+}
+
+#eventDetail .postPanel {
+  padding: 50px 40px 80px;
+}
+#eventDetail .postPanel__left {
+  margin: 0 0 80px;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  padding: 0 40px 60px;
+}
+.formBox .mwform-radio-field {
+  font-size: 15px;
+}
+.formBox .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox .mwform-radio-field .mwform-radio-field-text {
+  padding: 0 0 0 15px;
+  background: url("../image/common/form_radio_off.png") left top 6px no-repeat;
+  background-size: 12px auto;
+}
+.formBox .mwform-radio-field input[type=radio]:checked + .mwform-radio-field-text {
+  background: url("../image/common/form_radio_on.png") left top 6px no-repeat;
+  background-size: 12px auto;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  height: 40px;
+  padding-left: 15px;
+}
+.formBox textarea {
+  padding: 15px;
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formBox .selectBox select {
+  padding: 7px 15px;
+  font-size: 16px;
+  background: url("../image/common/form_select_arrow.png") right 15px center no-repeat #ffffff;
+  background-size: 12px auto;
+}
+.formBox .submitButton {
+  margin: 40px 0 0;
+}
+.formBox input[type=submit] {
+  max-width: 350px;
+  height: 60px;
+  font-size: 18px;
+}
+.formBox .checkTxt {
+  margin: 0 0 40px;
+  font-size: 12px;
+}
+.formBox form > dl + dl {
+  margin: 20px 0 0;
+}
+.formBox form > dl dt {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+.formBox form > dl.radioForm {
+  padding: 0 0 10px;
+}
+.formBox form > dl.radioForm dt {
+  font-size: 12px;
+}
+.formBox .dateFormContainer {
+  padding: 60px 0 40px;
+}
+.formBox .dateFormContainer .dateFormPanel + .dateFormPanel {
+  margin: 60px 0 0;
+}
+.formBox .dateFormContainer .dateFormPanel .ttl {
+  margin: 0 0 40px;
+}
+.formBox .dateFormContainer .dateFormPanel .ttl p {
+  max-width: 270px;
+  font-size: 12px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList {
+  display: block;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList dl {
+  max-width: 350px;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList dl + dl {
+  margin: 20px 0 0;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList dl dt {
+  width: 80px;
+  font-size: 15px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList .inputBox {
+  width: 200px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList .inputBox input {
+  height: 40px;
+  padding-left: 15px;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList .selectDate input {
+  background: url("../image/common/form_select_arrow.png") right 18px center no-repeat #ffffff;
+  background-size: 12px auto;
+}
+.formBox .dateFormContainer .dateFormPanel .selectList + p {
+  margin: 20px 0 0;
+  font-size: 12px;
+  text-align: left;
+}
+.formBox .privacy {
+  margin: 0 0 40px;
+}
+.formBox .privacy .agreeBox {
+  height: 480px;
+  padding: 20px 30px;
+  font-size: 12px;
+}
+.formBox .privacy .box + .box {
+  margin: 10px 0 0;
+}
+
+#contactConfirm .contactTitlePanel,
+#contactComplete .contactTitlePanel {
+  margin: 0;
+  padding: 40px 0;
+}
+#contactConfirm .contactTitlePanel .contactTitle p,
+#contactComplete .contactTitlePanel .contactTitle p {
+  font-size: 30px;
+  letter-spacing: 0.05em;
+}
+#contactConfirm .contactTitlePanel .contactTitle h1,
+#contactComplete .contactTitlePanel .contactTitle h1 {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+}
+#contactConfirm .contactTitlePanel h2,
+#contactComplete .contactTitlePanel h2 {
+  max-width: 210px;
+  margin: 40px auto 0;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+#contactConfirm .confirmPanel,
+#contactComplete .confirmPanel {
+  padding: 0 40px 80px;
+}
+#contactConfirm .confirmPanel .formConfirm dl,
+#contactComplete .confirmPanel .formConfirm dl {
+  display: block;
+  padding: 10px 0;
+  font-size: 15px;
+  background: url("../image/common/form_confirm_line.png") left bottom repeat-x;
+  background-size: auto 2px;
+}
+#contactConfirm .confirmPanel .formConfirm dl > *,
+#contactComplete .confirmPanel .formConfirm dl > * {
+  padding: 0;
+}
+#contactConfirm .confirmPanel .formConfirm dl dt,
+#contactComplete .confirmPanel .formConfirm dl dt {
+  width: 100%;
+  margin: 0 0 5px;
+  font-size: 11px;
+}
+#contactConfirm .confirmPanel .formConfirm dl dd,
+#contactComplete .confirmPanel .formConfirm dl dd {
+  width: 100%;
+  background: none;
+}
+#contactConfirm .confirmPanel .formConfirm .dateFormPanel,
+#contactComplete .confirmPanel .formConfirm .dateFormPanel {
+  margin: 10px 0 0;
+}
+#contactConfirm .confirmPanel .formConfirm .dateFormPanel .ttl,
+#contactComplete .confirmPanel .formConfirm .dateFormPanel .ttl {
+  font-size: 11px;
+}
+#contactConfirm .confirmPanel .formConfirm .submitButton,
+#contactComplete .confirmPanel .formConfirm .submitButton {
+  padding: 125px 0 0;
+}
+#contactConfirm .confirmPanel .formConfirm .submitButton::before,
+#contactComplete .confirmPanel .formConfirm .submitButton::before {
+  top: 50px;
+  width: 290px;
+  height: 26px;
+}
+#contactConfirm .confirmPanel .formConfirm input[type=submit],
+#contactComplete .confirmPanel .formConfirm input[type=submit] {
+  max-width: 350px;
+  height: 60px;
+  font-size: 18px;
+}
+#contactConfirm .completePanel,
+#contactComplete .completePanel {
+  padding: 0 40px 80px;
+}
+#contactConfirm .completePanel dl dt,
+#contactComplete .completePanel dl dt {
+  font-size: 20px;
+}
+#contactConfirm .completePanel dl dd,
+#contactComplete .completePanel dl dd {
+  font-size: 12px;
+}
+#contactConfirm .completePanel ul li,
+#contactComplete .completePanel ul li {
+  width: 27px;
+}
+#contactConfirm .completePanel ul li + li,
+#contactComplete .completePanel ul li + li {
+  margin: 0 0 0 50px;
+}
+#contactConfirm .completePanel .flow,
+#contactComplete .completePanel .flow {
+  max-width: 290px;
+}
+#contactConfirm .btnBack,
+#contactComplete .btnBack {
+  margin: 80px auto 0;
+}
+#contactConfirm .btnBack a,
+#contactComplete .btnBack a {
+  width: 115px;
+  padding: 0 0 5px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+#contactConfirm button.btnBack,
+#contactComplete button.btnBack {
+  width: 115px;
+  padding: 0 0 5px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}

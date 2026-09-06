@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  // background: rgba(255, 255, 255, 0.75);
+  background: #ffffff;
+  &.pageHeader {
+    background: #f5f3f0;
+  }
+  &.topHeader.headBox,
+  .headBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 110px;
+    padding: 25px 40px;
+  }
+  .logo {
+    width: 90px;
+    a {
+      display: block;
+    }
+  }
+  .headItem {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  &__list {
+    display: none;
+  }
+  &__item {
+    .contactLink {
+      display: none;
+    }
+  }
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 20px;
+    height: 15px;
+    z-index: 9999;
+  }
+  .hamburger span {
+    background: #212121;
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .hamburger span:nth-of-type(1) {
+    top: 0;
+  }
+  .hamburger span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hamburger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .is-open.hamburger span {
+    background: #ffffff;
+  }
+  .is-open.hamburger span:nth-of-type(1) {
+    transform: translate(-50%, 5px) rotate(-35deg);
+  }
+  .is-open.hamburger span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .is-open.hamburger span:nth-of-type(3) {
+    transform: translate(-50%, -8px) rotate(35deg);
+  }
+}
+.subNavigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Forum";
+  z-index: 1000;
+  background: #beb6a6;
+  &__wrap {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__main {
+    &__logo {
+      display: none;
+    }
+    &__list {
+      padding: 120px 40px;
+      .navList {
+        li {
+          + li {
+            margin: 20px 0 0;
+          }
+          a {
+            display: inline-block;
+            font-size: 20px;
+            color: #ffffff;
+          }
+          &.contact {
+            max-width: 130px;
+            margin: 40px 0 0;
+            padding: 30px 0;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+          }
+        }
+      }
+      .iconList {
+        margin: 50px 0 0;
+        li {
+          + li {
+            margin: 20px 0 0;
+          }
+          a {
+            padding: 0 0 0 45px;
+            font-size: 20px;
+            color: #ffffff;
+          }
+        }
+        .insta {
+          background: url("../image/common/navigation_insta.png") left center
+            no-repeat;
+          background-size: 30px auto;
+        }
+        .line {
+          background: url("../image/common/navigation_line.png") left center
+            no-repeat;
+          background-size: 30px auto;
+        }
+        .tel {
+          background: url("../image/common/navigation_tel.png") left -4px center
+            no-repeat;
+          background-size: 42px auto;
+        }
+      }
+    }
+  }
+  // &__bottom {
+  //   &--pc {
+  //     display: none;
+  //   }
+  //   &--sp {
+  //     margin: auto 0 0;
+  //     padding: 0 0 20px;
+  //     color: #ffffff;
+  //     text-align: center;
+  //     .sns {
+  //       margin: 0 0 30px;
+  //       dt {
+  //         margin: 0 0 20px;
+  //         font-family: $gothic;
+  //         font-size: 12px;
+  //       }
+  //       ul {
+  //         li {
+  //           display: inline-block;
+  //           + li {
+  //             margin: 0 0 0 30px;
+  //           }
+  //           a {
+  //             display: block;
+  //           }
+  //         }
+  //         .insta {
+  //           width: 18px;
+  //         }
+  //         .tweet {
+  //           width: 22px;
+  //         }
+  //         .youtube {
+  //           width: 26px;
+  //         }
+  //       }
+  //     }
+  //     .copy {
+  //       font-family: $gothic;
+  //       font-size: 8px;
+  //       letter-spacing: 0.1em;
+  //     }
+  //   }
+  // }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 110px 0 0;
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 90px 40px 150px;
+  &__items {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 110px;
+    > * {
+      width: 50%;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+      }
+    }
+    &__insta {
+      position: relative;
+      a {
+        margin: 0 auto;
+        background: #ffffff;
+        img {
+          width: 20px;
+        }
+      }
+    }
+    &__contact {
+      a {
+        font-family: "Forum";
+        font-size: 20px;
+        text-align: center;
+        background: #f5f3f0;
+      }
+    }
+  }
+  .logo {
+    max-width: 130px;
+    margin: 0 auto 40px;
+  }
+  .txt {
+    margin: 0 0 60px;
+    font-size: 12px;
+  }
+  .sns {
+    display: none;
+  }
+  .copy {
+    font-size: 8px;
+  }
+}

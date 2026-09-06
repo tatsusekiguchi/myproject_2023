@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>web design</title>
+
+    <!-- カルーセル部分 css -->
+    <link rel="stylesheet" href="../css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.min.css" />
+
+    <!-- ドロアー部分 css -->
+    <link rel="stylesheet" href="../css/drawer.min.css" />
+
+    <!-- lightbox部分 css -->
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
+
+    <!-- スクロールアニメーション部分 css -->
+    <link href="../css/aos.css" rel="stylesheet" />
+
+    <!-- ページ全体 css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body class="drawer drawer--right">
+    <!--ここからheader-->
+    <section id="header">
+      <div class="wrapper">
+        <div class="left"><img src="../assets/logo/02.png" alt="" />kir</div>
+        <div class="right">
+          <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+          </button>
+          <!-- ドロアーの内容 -->
+          <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-brand" href="#">MENU</a></li>
+              <li><a class="drawer-menu-item" href="#">Top</a></li>
+              <li>
+                <a
+                  class="drawer-menu-item"
+                  href="https://xd.adobe.com/view/20e88207-447c-4fe3-b675-69fbb02c83b6-75bb/?fullscreen&hints=off"
+                  target="_blank"
+                  >Online store</a
+                >
+              </li>
+              <li>
+                <a
+                  class="drawer-menu-item"
+                  href="https://www.instagram.com/kir_official_account/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!--ページ内ナビゲーション -->
+
+    <nav class="navigation">
+      <ul>
+        <li><a href="../index.html#">Top</a></li>
+        <li>
+          <a
+            href="https://xd.adobe.com/view/e20be012-d91c-4331-9969-5d73ccdd7726-b758/?fullscreen&hints=off"
+            target="_blank"
+            >Online store</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/kir_official_account/"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!--サブメニュー -->
+    <script>
+      $(function () {
+        $(".submenu").hover(
+          function () {
+            $(".sub").css("display", "block");
+          },
+          function () {
+            $(".sub").css("display", "none");
+          }
+        );
+      });
+    </script>
+
+    <!--。個人制作 -->
+    <div class="personal">
+      <div class="contents">
+        <div class="personal_left">
+          <img src="../assets/PC/about/pc_ebara.png" alt="" />
+          <!-- <div class="yajirushi_wrap">
+                    <a href="../index.html#">
+                        <p>Top</p>
+                        <img src="../assets/PC/about/yajirushi.png" alt="" />
+                    </a>
+                </div> -->
+        </div>
+        <div class="personal_right">
+          <h1>Web Design</h1>
+          <h2>Kyosuke Ebara</h2>
+          <p>
+            PRサイトとECサイトの制作<br />モード好きの若者に”異質さ”をアシンメトリーなレイアウトで表現。一転してECサイトは落ち着きを取り入れるため安定したデザインに。
+          </p>
+        </div>
+      </div>
+      <div class="yajirushi_wrap">
+        <a href="../index.html#">
+          <p>Top</p>
+          <img src="../assets/PC/about/yajirushi.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <footer>&copy;&nbsp;フッター表示 All Rights Reserved.</footer>
+
+    <!-- topへ戻るボタン -->
+    <div class="totop">
+      <a href="#"><img src="../images/totop.png" alt="topへ戻る" /></a>
+    </div>
+
+    <!-- javascript -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/iscroll.min.js"></script>
+    <script src="../js/drawer.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".drawer").drawer();
+      });
+    </script>
+  </body>
+</html>

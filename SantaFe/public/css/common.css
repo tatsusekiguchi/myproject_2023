@@ -1,0 +1,429 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #2e2e36;
+  font-size: 18px;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #2e2e36;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 0 0 20px;
+  z-index: 999;
+}
+.header .logo {
+  position: fixed;
+  top: 35px;
+  left: 3%;
+  max-width: 165px;
+  width: 8%;
+}
+.header .logo a {
+  display: block;
+}
+.header .headItem {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  max-width: 704px;
+  width: 34%;
+}
+.header .btnReserve {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 352px;
+  width: 17%;
+}
+.header .btnReserve a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.5vw + 20px) 10px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.1em;
+  background: #2e2e36;
+}
+.header .btnReserve a em {
+  display: block;
+  font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 46px;
+  font-size: clamp(0.625rem, 2vw, 2.875rem);
+  line-height: 1.2;
+}
+.header .btnReserve a span {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: clamp(0.625rem, 1vw, 1.125rem);
+}
+.header .btnReserveAccordion {
+  position: relative;
+  width: 50%;
+}
+.header .btnReserveAccordion dt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.5vw + 20px) 10px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  background: #2e2e36;
+}
+.header .btnReserveAccordion dt em {
+  display: block;
+  font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 46px;
+  font-size: clamp(0.625rem, 2vw, 2.875rem);
+  line-height: 1.2;
+}
+.header .btnReserveAccordion dt span {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: clamp(0.625rem, 1vw, 1.125rem);
+}
+.header .btnReserveAccordion dd {
+  display: none;
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  padding: 2vw 20px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(46, 46, 54, 0.78);
+}
+.header .btnReserveAccordion dd ul li + li {
+  position: relative;
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+}
+.header .btnReserveAccordion dd ul li + li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 1px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+.header .btnReserveAccordion dd ul li a {
+  display: inline-block;
+  font-size: 25px;
+  font-size: clamp(1.125rem, 0.3472rem + 1.2153vw, 1.5625rem);
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+.header .btnReserveAccordion dd .close {
+  width: 140px;
+  margin: 25px auto 0;
+  padding: 5px;
+  font-size: 21px;
+  font-size: clamp(1rem, 0.4444rem + 0.8681vw, 1.3125rem);
+  letter-spacing: 0.1em;
+  border-radius: 26px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+}
+.header .btnStyleGallery {
+  width: 50%;
+  background: #6066a8;
+}
+.header .btnStyleGallery a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.5vw + 20px) 10px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.header .btnStyleGallery a em {
+  display: block;
+  font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 46px;
+  font-size: clamp(0.625rem, 2vw, 2.875rem);
+  line-height: 1.12;
+}
+.header .btnStyleGallery a img {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  max-width: 17px;
+  width: 10%;
+}
+.header .btnStyleGallery a span {
+  display: inline-block;
+  padding: 0 0 0 5px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: clamp(0.625rem, 1vw, 1.125rem);
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+}
+
+.secWrap {
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.secWrap01 {
+  max-width: 1530px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.secWrap02 {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 135px 0 60px;
+  color: #ffffff;
+  background: #2e2e36;
+}
+.footer .logo {
+  max-width: 274px;
+  width: 15%;
+  margin: 0 auto 110px;
+}
+.footer .footBox01 {
+  margin: 0 0 60px;
+}
+.footer .footBox01 > dl > dt {
+  font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 45px;
+  font-size: clamp(1rem, 2.2vw, 2.813rem);
+  letter-spacing: 0.08em;
+}
+.footer .footBox01 .btnReserve {
+  max-width: 475px;
+}
+.footer .footBox01 .btnReserve a {
+  display: block;
+  padding: 30px 10px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 25px;
+  font-size: clamp(0.625rem, 1.5vw, 1.563rem);
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  background: #6066a8;
+}
+.footer .footBox01 .btnReserveAccordion {
+  max-width: 475px;
+}
+.footer .footBox01 .btnReserveAccordion dl {
+  position: relative;
+}
+.footer .footBox01 .btnReserveAccordion dl dt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 30px 10px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 25px;
+  font-size: clamp(0.625rem, 1.5vw, 1.563rem);
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  background: #6066a8;
+  cursor: pointer;
+}
+.footer .footBox01 .btnReserveAccordion dl dd {
+  display: none;
+  width: 100%;
+  padding: 2vw 20px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(96, 102, 168, 0.8);
+}
+.footer .footBox01 .btnReserveAccordion dl dd ul li + li {
+  position: relative;
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+}
+.footer .footBox01 .btnReserveAccordion dl dd ul li + li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 1px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+.footer .footBox01 .btnReserveAccordion dl dd ul li a {
+  display: inline-block;
+  font-size: 25px;
+  font-size: clamp(1.125rem, 0.3472rem + 1.2153vw, 1.5625rem);
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+.footer .footBox01 .btnReserveAccordion dl dd .close {
+  width: 140px;
+  margin: 25px auto 0;
+  padding: 5px;
+  font-size: 21px;
+  font-size: clamp(1rem, 0.4444rem + 0.8681vw, 1.3125rem);
+  letter-spacing: 0.1em;
+  border-radius: 26px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+}
+.footer .footBox02 .insta {
+  width: 170px;
+}
+.footer .footBox02 .insta a {
+  display: block;
+}
+.footer .footBox02 .copy {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+@media (min-width: 1025px) {
+  .footer .secWrap {
+    padding: 0 5%;
+  }
+  .footer .footBox01 > dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footBox01 > dl > dt {
+    width: 70%;
+    padding: 15px 0 0;
+  }
+  .footer .footBox01 > dl > dd {
+    width: 30%;
+  }
+  .footer .footBox02 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

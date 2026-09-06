@@ -1,0 +1,552 @@
+@charset "UTF-8";
+
+/*---------- ページ全体の指定 ----------*/
+
+html,
+body,
+header,
+section,
+article,
+nav,
+footer,
+div,
+span,
+p,
+h1,
+h2,
+h4,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+th,
+td,
+tbody,
+thead,
+tfoot {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+    background-color: #0c336d;
+    color: #FFFFFF;
+}
+
+images {
+    border: 0;
+}
+
+body {
+    width: auto;
+    background-color: #ffffff;
+    font: 14px/1.231 'ヒラギノ角ゴ pro W3', "Hiragino KaKu Gothic Pro", Osaka, sans-serif;
+    line-height: 1.7;
+}
+
+a:link {
+    color: #0c336d;
+}
+
+a:hover {
+    color: #0c336d;
+}
+
+a:visited {
+    color: #0c336d;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/*---------- ヘッダー ----------*/
+
+header {
+    margin-top: 80px;
+    width: 100%;
+}
+
+#title {
+    width: 100%;
+}
+
+h1 {
+    font-size: 13px;
+}
+
+h2 {
+    font-size: 13px;
+}
+
+#page_top {
+    margin: 0;
+    padding: 0;
+}
+
+.header_pc {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+
+/*---------- コンテンツ ----------*/
+
+.kokuti {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.kokuti_b {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+#nav02 ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#nav02 ul li {
+    display: table-cell;
+    border-right: 1px solid #0d5722;
+    border-top: 1px solid #0d5722;
+    border-bottom: 1px solid #0d5722;
+}
+
+#nav02 ul li a {
+    display: block;
+    padding: 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    background: url(../images/nav_bg.gif) repeat-x;
+}
+
+#nav02 ul li a:hover {
+    background-color: #a4a4a6;
+}
+
+.clear {
+    clear: both;
+}
+
+#content {
+    padding: 6px;
+}
+
+section {
+    margin: 0 0 8px 0;
+}
+
+section h1 {
+    margin: 0 0 8px 0;
+    padding: 5px 0 3px 14px;
+    font-size: 14px;
+    color: #ffffff;
+    border-bottom: solid 1px;
+    border-bottom-color: #cccccc;
+    background: url(../images/h_bg.gif) center repeat-x;
+    text-align: center
+}
+
+section h2 {
+    margin: 0 0 8px 0;
+    padding: 5px 0 3px 14px;
+    font-size: 14px;
+    color: #ffffff;
+    border-bottom: solid 1px;
+    border-bottom-color: #cccccc;
+    background: url(../images/h_bg.gif) center repeat-x;
+    text-align: center
+}
+
+section p {
+    margin: 0 0 12px 0;
+    padding: 3px 0;
+    line-height: 1.8;
+}
+
+section .gray_bg {
+    margin: 8px 0 8px 0;
+    padding: 2px 8px 2px 8px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    border-top: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+    border-bottom: solid 1px #dddddd;
+    border-left: solid 1px #dddddd;
+    background-color: #eeeeee;
+}
+
+section .gray_bg p {
+    padding: 3px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+section images.picture {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+section images.picture_r {
+    margin: 0 0 10px 10px;
+    float: right;
+}
+
+section span.red {
+    color: #e60033;
+}
+
+section span.red_b {
+    color: #e60033;
+    font-weight: bold;
+}
+
+section span.blue {
+    color: #007bbb;
+}
+
+section span.pink {
+    color: #c53d43;
+}
+
+section span.brown {
+    color: #993300;
+}
+
+section span.brown_b {
+    color: #993300;
+    font-weight: bold;
+}
+
+section span.green {
+    color: #00ae4f;
+}
+
+section table.table_line {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px #bbbbbb;
+    margin: 8px 0 8px 0;
+}
+
+section td.table_line {
+    border-collapse: collapse;
+    border: solid 1px #bbbbbb;
+    padding: 8px 10px 8px 10px;
+}
+
+
+/*---------- ナビ ----------*/
+
+nav {
+    width: 100%;
+    text-decoration: none;
+    margin: 0 0 10px 0;
+    background: url(../images/nav_bg.gif) repeat-x;
+}
+
+nav h2 {
+    padding: 5px 0 3px 14px;
+    font-size: 14px;
+    color: #ffffff;
+    border-bottom: solid 1px;
+    border-bottom-color: #cccccc;
+    background: url(../images/h_bg_gray.gif) center repeat-x;
+}
+
+nav ul {
+    width: 100%;
+    border-top: solid 1px;
+    border-top-color: #cccccc;
+}
+
+nav li {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+nav li a {
+    padding: 10px;
+    display: block;
+    color: #135823 !important;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: solid 2px;
+    border-bottom-color: #cccccc;
+    background: url(../images/nav_bg.gif) repeat-x;
+}
+
+nav li a:hover {
+    color: #004080 !important;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: solid 2px;
+    border-bottom-color: #cccccc;
+    background: url(../images/nav_bg_hover.gif) repeat-x;
+}
+
+
+/*---------- トップに戻る ----------*/
+
+#page_back {
+    margin: 0 0 8px 0;
+    padding: 0 6px 0 0;
+    text-align: right;
+}
+
+
+/*---------- フッター ----------*/
+
+footer {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: #333333;
+    text-align: center;
+    border-top: solid 1px;
+    border-top-color: #cccccc;
+    background-color: #eeeeee;
+}
+
+footer p {
+    padding: 10px;
+    color: #555555;
+}
+
+footer a {
+    color: #555555 !important;
+}
+
+footer a:hover {
+    color: #777777 !important;
+}
+
+footer a:visited {
+    color: #555555;
+}
+
+footer p.copy {
+    padding: 10px;
+    font-size: 12px;
+    color: #555555;
+}
+
+footer p.copy a {
+    color: #005ebb !important;
+    text-decoration: none;
+}
+
+footer p.copy a:hover {
+    color: #004080 !important;
+    text-decoration: underline;
+}
+
+footer p.copy a:visited {
+    color: #005ebb;
+    text-decoration: none;
+}
+
+
+/* アコーディオン */
+
+.list6 dl.acordion {
+    margin: 0 10px 0 10px;
+}
+
+.list6 dt.trigger {
+    background: #ffffff -webkit-gradient(linear, 0% 0%, 0% 100%, );
+    background: #ffffff linear-gradient(#ffffff);
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #135823;
+    color: #000;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.list6 dt.active {
+    border-radius: 10px 10px 0 0;
+}
+
+.list6 dt.trigger span.open-close {
+    background: url(../images/point_plus.png) no-repeat right top;
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999em;
+}
+
+.list6 dt.active span.open-close {
+    background: url(../images/point_none.png) no-repeat right top;
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+.list6 dd.acordion_tree {
+    padding: 10px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f0f0f0));
+    background: #9bd8ff linear-gradient(#fff, #f0f0f0);
+    border: 1px solid #135823;
+    border-top: none;
+}
+
+
+/* 各設定 */
+
+#button_area {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#button_area_in {
+    margin: 0;
+    padding: 0;
+}
+
+#main_photo_second {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#main_photo_third {
+    width: 100%;
+    height: auto;
+}
+
+#main-contents .access_map {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+}
+
+#main-contents .access_map iframe,
+#main-contents .access_map object,
+#main-contents .access_map embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#red {
+    color: red;
+    font-style: bold;
+}
+
+.red {
+    color: red;
+    font-style: bold;
+}
+
+#column_box {
+    padding: 5px;
+}
+
+#spLinkBlockInPc {
+    display: none;
+}
+
+.yasumi {
+    margin: 5px;
+    padding: 5px;
+    font-size: 13px;
+    color: #1561ce;
+    border: solid 1px;
+}
+
+.tel {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*---------- meneki/index.html ここから----------*/
+
+#saiyou_subtitle {
+    background-color: #fff;
+    border-bottom: 4px solid #23474f;
+    border-top: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+/*---------- meneki/index.html ここまで----------*/
+
+
+/*---------- osirase/index.html ここから----------*/
+
+#osirase_list {
+    border-bottom: 1px solid #c0c0c0;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+
+/*---------- osirase/index.html ここまで----------*/
+
+
+/* resalt ここから */
+
+
+/* resalt ここまで */
+
+
+/*-- グローバルナビ　ここから--*/
+
+#global_navi {
+    position: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    z-index: 9999;
+}
+
+#menu {
+    position: fixed;
+    position: absolute;
+}
+
+.slicknav_menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+@media screen {
+    /* #menu is the original menu */
+    .js #menu {
+        display: none;
+    }
+    .js .slicknav_menu {
+        display: block;
+    }
+}
+
+
+/*-- グローバルナビ　ここまで--*/

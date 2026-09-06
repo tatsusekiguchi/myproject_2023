@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 12px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+}
+.header.pageHeader {
+  background: #f5f3f0;
+}
+.header.topHeader.headBox,
+.header .headBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 110px;
+  padding: 25px 40px;
+}
+.header .logo {
+  width: 90px;
+}
+.header .logo a {
+  display: block;
+}
+.header .headItem {
+  display: none;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox__list {
+  display: none;
+}
+.navBox__item .contactLink {
+  display: none;
+}
+.navBox .hamburger {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 20px;
+  height: 15px;
+  z-index: 9999;
+}
+.navBox .hamburger span {
+  background: #212121;
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 1px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.navBox .hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.navBox .hamburger span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navBox .hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+.navBox .is-open.hamburger span {
+  background: #ffffff;
+}
+.navBox .is-open.hamburger span:nth-of-type(1) {
+  transform: translate(-50%, 5px) rotate(-35deg);
+}
+.navBox .is-open.hamburger span:nth-of-type(2) {
+  opacity: 0;
+}
+.navBox .is-open.hamburger span:nth-of-type(3) {
+  transform: translate(-50%, -8px) rotate(35deg);
+}
+
+.subNavigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Forum";
+  z-index: 1000;
+  background: #beb6a6;
+}
+.subNavigation__wrap {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.subNavigation__main__logo {
+  display: none;
+}
+.subNavigation__main__list {
+  padding: 120px 40px;
+}
+.subNavigation__main__list .navList li + li {
+  margin: 20px 0 0;
+}
+.subNavigation__main__list .navList li a {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+}
+.subNavigation__main__list .navList li.contact {
+  max-width: 130px;
+  margin: 40px 0 0;
+  padding: 30px 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.subNavigation__main__list .iconList {
+  margin: 50px 0 0;
+}
+.subNavigation__main__list .iconList li + li {
+  margin: 20px 0 0;
+}
+.subNavigation__main__list .iconList li a {
+  padding: 0 0 0 45px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.subNavigation__main__list .iconList .insta {
+  background: url("../image/common/navigation_insta.png") left center no-repeat;
+  background-size: 30px auto;
+}
+.subNavigation__main__list .iconList .line {
+  background: url("../image/common/navigation_line.png") left center no-repeat;
+  background-size: 30px auto;
+}
+.subNavigation__main__list .iconList .tel {
+  background: url("../image/common/navigation_tel.png") left -4px center no-repeat;
+  background-size: 42px auto;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 110px 0 0;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 90px 40px 150px;
+}
+.footer__items {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  height: 110px;
+}
+.footer__items > * {
+  width: 50%;
+}
+.footer__items > * a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+}
+.footer__items__insta {
+  position: relative;
+}
+.footer__items__insta a {
+  margin: 0 auto;
+  background: #ffffff;
+}
+.footer__items__insta a img {
+  width: 20px;
+}
+.footer__items__contact a {
+  font-family: "Forum";
+  font-size: 20px;
+  text-align: center;
+  background: #f5f3f0;
+}
+.footer .logo {
+  max-width: 130px;
+  margin: 0 auto 40px;
+}
+.footer .txt {
+  margin: 0 0 60px;
+  font-size: 12px;
+}
+.footer .sns {
+  display: none;
+}
+.footer .copy {
+  font-size: 8px;
+}

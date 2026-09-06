@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+    画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+    TOP
+///////////////////////////////////////////////////////////*/
+#logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #ffffff;
+}
+#logoContainer .logoBox .logo {
+  width: 170px;
+  margin: 0 auto;
+}
+
+#lottieContainer .lottie,
+.lottieBox .lottie {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (min-width: 1025px) {
+  #lottieSp {
+    display: none !important;
+  }
+}
+#top {
+  position: relative;
+  z-index: 99;
+}
+#top .topMvPanel {
+  margin: 0 0 80px;
+}
+#top .topMvPanel .mvTitle {
+  opacity: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+  transition: 0.6s;
+}
+#top .topMvPanel .mvScroll {
+  text-align: center;
+}
+#top .topMvPanel .mvScroll p {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-family: "Helvetica", sans-serif;
+  background: url("../image/top/top_mv_scroll.png") right center no-repeat;
+  background-size: 5px auto;
+}
+#top .sectionContainer {
+  padding: 200px 0 250px;
+  color: #ffffff;
+  background: #000000;
+}
+#top .sectionContainer .topPanel {
+  margin: 0 0 200px;
+}
+#top .sectionContainer .topPanel .secTitle {
+  margin: 0 0 120px;
+}
+#top .sectionContainer .topPanel .txt {
+  font-size: 24px;
+}
+#top .sectionContainer .groupPanel + .groupPanel {
+  margin: 180px 0 0;
+}
+#top .sectionContainer .groupPanel .titleBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px;
+}
+#top .sectionContainer .groupPanel .titleBox .title {
+  margin: 0 20px 0 0;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+#top .sectionContainer .groupPanel .titleBox .title span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+#top .sectionContainer .groupPanel .titleBox .title em {
+  display: block;
+  font-size: 120px;
+  line-height: 1;
+}
+#top .sectionContainer .groupPanel .titleBox .icon {
+  width: 140px;
+}
+#top .sectionContainer .groupPanel .groupBox {
+  position: relative;
+}
+#top .sectionContainer .groupPanel .groupBox a {
+  position: relative;
+  display: block;
+  max-width: 1680px;
+  color: #ffffff;
+}
+#top .sectionContainer .groupPanel .groupBox a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.6s;
+}
+#top .sectionContainer .groupPanel .groupBox .intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.6s;
+}
+#top .sectionContainer .groupPanel .groupBox .intro .secWrap {
+  width: 100%;
+}
+#top .sectionContainer .groupPanel .groupBox .intro dl dt {
+  margin: 0 0 40px;
+  font-size: 52px;
+}
+#top .sectionContainer .groupPanel .groupBox .intro dl dd {
+  font-size: 20px;
+  line-height: 2.5;
+}
+@media (min-width: 1025px) {
+  #top .sectionContainer .groupPanel .groupBox a:hover {
+    opacity: 1;
+  }
+  #top .sectionContainer .groupPanel .groupBox a:hover::before {
+    right: 0;
+  }
+  #top .sectionContainer .groupPanel .groupBox a:hover .intro {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+@media (min-width: 1025px) {
+  #top .sectionContainer .groupPanel:nth-child(odd) .groupBox a::before {
+    right: auto;
+    left: -100%;
+  }
+  #top .sectionContainer .groupPanel:nth-child(odd) .groupBox a:hover:before {
+    left: 0;
+  }
+  #top .sectionContainer .groupPanel:nth-child(even) > .secWrap {
+    overflow: hidden;
+  }
+  #top .sectionContainer .groupPanel:nth-child(even) .titleBox {
+    float: right;
+  }
+  #top .sectionContainer .groupPanel:nth-child(even) .groupBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #top .sectionContainer .groupPanel:nth-child(even) .groupBox .intro dl {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+#top .listContainer {
+  padding: 120px 0 200px;
+  color: #ffffff;
+  background: #af0000;
+}
+#top .listContainer h2 {
+  margin: 0 0 120px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+#top .listContainer .listBox {
+  max-width: 890px;
+  margin: 0 auto 140px;
+}
+#top .listContainer .listBox ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -80px 0 0 -45px;
+}
+#top .listContainer .listBox ol li {
+  width: calc(33.3333333333% - 45px);
+  margin: 80px 0 0 45px;
+}
+#top .listContainer .listBox ol li a {
+  position: relative;
+  display: block;
+}
+#top .listContainer .listBox ol li .num {
+  position: absolute;
+  top: -60px;
+  right: -40px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 119px;
+  color: #ffffff;
+  line-height: 1;
+  z-index: 1;
+  opacity: 0.3;
+  transition: 0.6s;
+}
+#top .listContainer .listBox ol li .box {
+  position: relative;
+  z-index: 2;
+  border-radius: 14px;
+}
+#top .listContainer .listBox ol li .box .inner {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  padding: 10px 25px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: 0.6s;
+}
+#top .listContainer .listBox ol li .box .icon {
+  width: 60px;
+  margin: 0 15px 0 0;
+}
+#top .listContainer .listBox ol li .box p {
+  font-weight: bold;
+}
+@media (min-width: 1025px) {
+  #top .listContainer .listBox ol li a:hover {
+    opacity: 1;
+  }
+  #top .listContainer .listBox ol li a:hover .num {
+    opacity: 1;
+  }
+  #top .listContainer .listBox ol li a:hover .box .inner {
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
+#top .listContainer .listBox ol li:nth-child(1) a .box {
+  background: url("../image/top/top_group_mv_01.png") center no-repeat;
+  background-size: cover;
+}
+#top .listContainer .listBox ol li:nth-child(2) a .box {
+  background: url("../image/top/top_group_mv_02.png") center no-repeat;
+  background-size: cover;
+}
+#top .listContainer .listBox ol li:nth-child(3) a .box {
+  background: url("../image/top/top_group_mv_03.png") center no-repeat;
+  background-size: cover;
+}
+#top .listContainer .listBox ol li:nth-child(4) a .box {
+  background: url("../image/top/top_group_mv_04.png") center no-repeat;
+  background-size: cover;
+}
+#top .listContainer .listBox ol li:nth-child(5) a .box {
+  background: url("../image/top/top_group_mv_05.png") center no-repeat;
+  background-size: cover;
+}
+#top .listContainer .listBox ol li:nth-child(6) a .box {
+  background: url("../image/top/top_group_mv_06.png") center no-repeat;
+  background-size: cover;
+}
+#top .listContainer .listBox + p {
+  margin: 0 0 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+#top .listContainer .btnVote {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#top .listContainer .btnVote a {
+  display: block;
+  padding: 22px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 80px;
+  background: url("../image/top/btn_vote_arrow.png") right 40px center no-repeat #ffffff;
+  background-size: 20px auto;
+}

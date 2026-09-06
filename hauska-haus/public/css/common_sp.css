@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header .logo {
+    max-width: 100px;
+    margin: 0 0 0 6%;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .logo h1 {
+    display: none;
+  }
+  .header .headContactBtn {
+    width: 100px;
+    height: 100px;
+  }
+  .header .headContactBtn a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+    background: #f1f1f1;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+  .header.topHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+  }
+  .header.topHeader .headerContainer {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    padding: 0 0 20px;
+    z-index: 999;
+    background: url(https://hauskahaus.com/system_panel/uploads/images/top_header_bg.png) center no-repeat;
+    background-size: cover;
+  }
+  .header.topHeader .headContactBtn {
+    position: absolute;
+    top: 70%;
+    right: 20px;
+    z-index: 99;
+  }
+  .header.pageHeader .logo {
+    display: none;
+  }
+  .header.pageHeader .headContactBtn {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    height: 100%;
+    padding: 80px 40px 60px;
+    z-index: 999;
+    background: #8b817e;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .navBox .navList {
+    margin: 0 0 20px;
+    border-bottom: 2px dotted #444444;
+  }
+  .navBox .navList .ul {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li {
+    text-align: left;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 2px dotted #444444;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    color: #ffffff;
+  }
+  .navBox .navList .ul a,
+.navBox .navList .ul > .li > div {
+    padding: 5px 20px;
+  }
+  .navBox .snsList {
+    margin: 40px 0 0;
+    padding: 0 15px;
+  }
+  .navBox .snsList .ul .li {
+    display: inline-block;
+  }
+  .navBox .snsList .ul .li + .li {
+    margin: 0 0 0 40px;
+  }
+  .navBox .snsList .ul .li a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: 0;
+  }
+
+  .pageKvPanel {
+    height: 150px;
+  }
+
+  .pageHeadTitlePanel {
+    padding: 60px 0;
+  }
+  .pageHeadTitlePanel .pageHeadTitle p {
+    font-size: 16px;
+  }
+  .pageHeadTitlePanel .pageHeadTitle h2 {
+    font-size: 22px;
+  }
+  .pageHeadTitlePanel .pageHeadTxt {
+    margin: 20px 0 0;
+  }
+
+  .pageSecTtlPanel .pageSecTtlBox p {
+    padding: 25px 0 0;
+    font-size: 26px;
+  }
+  .pageSecTtlPanel .pageSecTtlBox p::before {
+    left: 10px;
+    width: 150px;
+    height: 30px;
+  }
+  .pageSecTtlPanel .pageSecTtlBox .pageSecTtl {
+    font-size: 12px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .logo {
+    max-width: 300px;
+    margin: -50px auto 0;
+  }
+  .footer .footPanel {
+    padding: 40px 0 0;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+  }
+  .footer .footPanel .footBox .searchBox {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .footer .footPanel .footBox .footNav {
+    display: none;
+  }
+  .footer .footPanel .sns {
+    position: static;
+    margin: 40px 0 0;
+    text-align: center;
+  }
+  .footer .copy {
+    margin: 50px 0 0;
+    font-size: 12px;
+  }
+  .footer .fixedContact {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    z-index: 999;
+  }
+  .footer .fixedContact a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    background: #d19a3f;
+  }
+  .footer .fixedContact a p {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+}

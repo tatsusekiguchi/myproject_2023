@@ -1,0 +1,227 @@
+<?php
+/*
+Template Name: 社員紹介
+*/
+?>
+<?php get_header(); ?>
+	<!-- ▽メイン▽-->
+	<main class="pageMain" id="memberMain">
+		<div class="pageKvPanel">
+			<div class="pageKvTitle">
+				<p>Member</p>
+				<h1>社員紹介</h1>
+			</div>
+		</div>
+		<div class="pageLinkContainer">
+			<div class="secWrap01">
+				<div class="pageLinkBox">
+					<ul>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_top_staff_01.png" alt=""></div>
+							<div class="nameBox"><a href="#section01">
+									<dl>
+										<dt>営業職</dt>
+										<dd>山本 正太郎</dd>
+									</dl>
+									<p>Click</p>
+								</a></div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_top_staff_02.png" alt=""></div>
+							<div class="nameBox"><a href="#section02">
+									<dl>
+										<dt>営業職</dt>
+										<dd>浅井 恵介</dd>
+									</dl>
+									<p>Click</p>
+								</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sectionContainer">
+			<div class="section" id="section01">
+				<div class="mvContainer">
+					<div class="secWrap01">
+						<div class="mvPanel">
+							<div class="mv"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_top.png" alt=""></div>
+							<div class="num">
+								<p>01</p>
+							</div>
+							<div class="nameBox">
+								<dl>
+									<dt>営業職</dt>
+									<dd>山本 正太郎</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="videoPanel">
+					<div class="secWrap01">
+						<div class="videoThumbnail" data-video-id="1wLY0Sofw68"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_video_thumbnail.png" alt=""></div>
+					</div>
+				</div>
+				<div class="message">
+					<div class="secWrap01">
+						<p>相手に的確に物事を伝えること、<br>そして信頼されることが大切。</p>
+					</div>
+				</div>
+				<div class="introContainer">
+					<div class="introPanel">
+						<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_intro_01.png" alt=""></div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>自分たちの仕事内容を把握し、元請から下請に伝達することは当然大事なことですが、仲介している営業の立場として相手に的確に物事を伝えること、そして信頼されることが大切だと自分なりに学びました。<br>現場をこなしていくうちに、相手が今、何を思っているのかをできる限り察知し、スムーズに対応することができるようになった時に成長を感じます。</p>
+							</div>
+						</div>
+					</div>
+					<div class="introPanel">
+						<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_intro_02.png" alt=""></div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>新入社員に対して自分はできる限り近い距離感で接したいと思っています。歳の差を気にせずに言いたいこと、聞きたいことを迷いなく話してくれるような雰囲気にしようと心がけています。<br>そのためには、自分から新入社員の性格や人柄を知る必要があるので、仕事を教えることよりも先にコミュニケーションを取ることを大事にしています。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flowContainer">
+					<div class="secWrap01">
+						<div class="title"><img src="<?php bloginfo('template_url'); ?>/image/member/member_flow_title.png" alt=""></div>
+						<div class="photoList">
+							<ul>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_flow_01.png" alt=""></div>
+									<dl>
+										<dt>8:00</dt>
+										<dd>朝礼<br>事務所又は<br class="pcBreak">現場管理</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_flow_02.png" alt=""></div>
+									<dl>
+										<dt>10:00</dt>
+										<dd>現場に移動し<br>打ち合わせ</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_flow_03.png" alt=""></div>
+									<dl>
+										<dt>13:00</dt>
+										<dd>現調、<br>現場管理</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_flow_04.png" alt=""></div>
+									<dl>
+										<dt>15:00</dt>
+										<dd>見積もり、<br>提出書類等の作成</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff01_flow_05.png" alt=""></div>
+									<dl>
+										<dt>16:00</dt>
+										<dd>材料の準備等<br>翌日の現場段取り</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section02">
+				<div class="mvContainer">
+					<div class="secWrap01">
+						<div class="mvPanel">
+							<div class="mv"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_top.png" alt=""></div>
+							<div class="num">
+								<p>02</p>
+							</div>
+							<div class="nameBox">
+								<dl>
+									<dt>営業職</dt>
+									<dd>浅井 恵介</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="videoPanel">
+					<div class="secWrap01">
+						<div class="videoThumbnail" data-video-id="wAyzhXTqj8M"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_video_thumbnail.png" alt=""></div>
+					</div>
+				</div>
+				<div class="message">
+					<div class="secWrap01">
+						<p>効率の良い方法を考え、<br>実践することにやりがいを感じる。</p>
+					</div>
+				</div>
+				<div class="introContainer">
+					<div class="introPanel">
+						<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_intro_01.png" alt=""></div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>私が成長できたと感じることは、諸先輩方に仕事のイロハを教わり、ある程度一人で仕事を進めることができるようになったことです。<br>自分なりに効率の良い方法を考えて実践し、結果が出た時にはやりがいを感じます。</p>
+							</div>
+						</div>
+					</div>
+					<div class="introPanel">
+						<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_intro_02.png" alt=""></div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>私もまだ見習いで、周りが見えていないことが多々あるので、情報を共有しながら接していきたいと思います。<br>もし後輩ができたなら、切磋琢磨しながら一緒に仕事を覚えていければいいなと思います。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flowContainer">
+					<div class="secWrap01">
+						<div class="title"><img src="<?php bloginfo('template_url'); ?>/image/member/member_flow_title.png" alt=""></div>
+						<div class="photoList">
+							<ul>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_flow_01.png" alt=""></div>
+									<dl>
+										<dt>8:00</dt>
+										<dd>メールの確認、<br>工事に関わる<br class="pcBreak">見積書内容の確認</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_flow_02.png" alt=""></div>
+									<dl>
+										<dt>10:00</dt>
+										<dd>工事現場の図面の確認<br>工事内容を理解する</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_flow_03.png" alt=""></div>
+									<dl>
+										<dt>13:00</dt>
+										<dd>塗装や防水の材料の<br class="pcBreak">片づけ整理整頓、<br>材料の性能等把握、<br>明日の工事の準備・段取り</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_flow_04.png" alt=""></div>
+									<dl>
+										<dt>15:00</dt>
+										<dd>在庫の管理、<br>在庫のエクセル<br class="pcBreak">データ入力</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/member/member_staff02_flow_05.png" alt=""></div>
+									<dl>
+										<dt>16:00</dt>
+										<dd>新規営業、<br class="pcBreak">ルート営業のための<br>工事数量の入力及び積算</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+<?php get_footer(); ?>

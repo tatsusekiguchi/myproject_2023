@@ -1,0 +1,36 @@
+<?php
+/*
+Template Name: 当院直属・免疫細胞培養センター
+*/
+?>
+<?php get_header(); ?>
+	<!-- ▽メイン▽-->
+	<main class="main" id="cpc">
+		<div class="pageKvPanel">
+			<div class="pageKvTitle">
+				<h1>当院直属・<br>免疫細胞培養センター</h1>
+			</div>
+		</div>
+		<div class="mainContainer">
+			<div class="secWrap01">
+				<div class="pageSecTtl">
+					<p class="secTtl">免疫細胞培養センター</p>
+					<p class="futura">IMMUNOLOGY CENTER</p>
+				</div>
+				<div class="sec01">
+					<div class="secContainer">
+						<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/cpc/cpc_sec01_img.png" alt=""></div>
+						<div class="txt">
+							<p>医療機関として大規模な培養センターを持つ当院では、クリニック部門と培養部門が連携し徹底した管理下で行っています。</p>
+							<p>同じビル内に培養センターを設置する事で、検体（血液）を速やかに処理し、即時に培養を行う事が出来ます。点滴やワクチンなども患者さんの来院時間に合わせ作成することも出来るので、適切な状態で患者さんへの投与が可能です。</p>
+							<p>また、名古屋という交通の便が良いことから、全国（協力医療機関）への点滴やワクチンの発送も速やかに行なうことが出来、遠方の患者さんでも当院の治療が受けられます。</p>
+							<p>患者さんへの治療は勿論、これからの再生医療を担うため、日々患者さんに適した治療の研究を積み重ねています。</p>
+							<p>再生医療等安全性確保法（平成26年11月25日施行）の施行後、東海北陸地方で特定細胞培養加工物の製造届出（届出日：平成27年1月16日）がいち早く受理された施設（番号：FC4140001）です。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+<?php get_footer(); ?>

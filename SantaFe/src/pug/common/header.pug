@@ -1,0 +1,34 @@
+// ▽header▽
+header.header
+    .headBox
+        .logo
+            a(href=(root_path || ''))
+                img(src=(root_path || '') + "image/common/header_logo.png", alt="SantaFe")
+        //- .btnReserve
+        //-     a(href="https://beauty.hotpepper.jp/slnH000641281/", target="_blank", rel="noopener")
+        //-         em Reserve
+        //-         span ご予約はこちら
+        .headItem
+            .btnStyleGallery
+                a(href="https://www.instagram.com/iwa.hikaru.www/", target="_blank", rel="noopener")
+                    em Style Gallery
+                    span
+                        img(src=(root_path || '') + "image/common/header_btn_insta.png", alt="")
+                        span 施術写真はこちら
+            .btnReserveAccordion
+                dl.accord
+                    dt
+                        em Reserve
+                        span ご予約はこちら
+                    dd
+                        ul
+                            li
+                                a(href="https://beauty.hotpepper.jp/slnH000641281/", target="_blank", rel="noopener") 名駅店
+                            li
+                                a(href="https://beauty.hotpepper.jp/slnH000648125/", target="_blank", rel="noopener") 岐阜島店
+                            li
+                                a(href="https://beauty.hotpepper.jp/slnH000646000/", target="_blank", rel="noopener") 安城店
+                            li
+                                a(href="", target="_blank", rel="noopener") 岐阜柳津店
+                        p.close CLOSE
+// △header△
