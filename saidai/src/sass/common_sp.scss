@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+  }
+  .pageKvPanel {
+    height: 200px;
+    .pageKvTitle {
+      max-width: 280px;
+      padding: 15px 20px;
+      font-size: 24px;
+    }
+  }
+  .secTitleBox {
+    p {
+      font-size: 34px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 40px 0;
+      .footContactInner {
+        padding: 0 10px;
+      }
+      .list {
+        max-width: 300px;
+        margin: 0 auto 20px;
+        .ul {
+          .li {
+            font-size: 16px;
+            + .li {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+      .ttlTxt {
+        margin: 0 0 15px;
+        font-size: 16px;
+      }
+      .contactItem {
+        max-width: 400px;
+        margin: 0 auto;
+        .telBox {
+          a {
+            min-height: 0;
+            padding: 10px;
+            .em {
+              display: inline-block;
+              padding: 0 0 0 35px;
+              font-size: 30px;
+              font-weight: bold;
+              background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+                left center no-repeat;
+              background-size: 30px auto;
+            }
+            .span {
+              font-size: 12px;
+            }
+          }
+        }
+        .mailBox {
+          margin: 20px 0 0;
+          a {
+            min-height: 0;
+            padding: 10px;
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 15px;
+      text-align: center;
+      .footBox {
+        display: block;
+        margin: 0 0 40px;
+        .leftBox {
+          width: 100%;
+          .logo {
+            max-width: 150px;
+            margin: 0 auto 30px;
+          }
+        }
+        .rightBox {
+          display: none;
+        }
+      }
+    }
+  }
+}

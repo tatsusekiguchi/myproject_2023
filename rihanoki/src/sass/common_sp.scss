@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageHeadTitlePanel {
+    padding: 40px 20px 20px;
+    .pageHeadTitle {
+      p {
+        margin: 0 0 5px;
+        font-size: 26px;
+      }
+      .pageSecTtl {
+        font-size: 15px;
+      }
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    p {
+      margin: 0 0 5px;
+      font-size: 26px;
+    }
+    .pageSecTtl {
+      font-size: 15px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 0 20px 100px;
+
+      .contactPanel {
+        padding: 40px 20px;
+        .secBox {
+          .dl {
+            .dd {
+              a {
+                .span {
+                  font-size: 18px;
+                }
+                .em {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .txtBox {
+            padding: 20px;
+            .btnMore {
+              margin: 15px auto 0;
+            }
+          }
+        }
+      }
+      .pagetop {
+        right: 0;
+        bottom: -60px;
+        width: 40px;
+      }
+    }
+    .footPanel {
+      padding: 40px 20px 15px;
+      .footBox {
+        display: block;
+        text-align: center;
+        .logo {
+          width: 200px;
+          margin: 0 auto 30px;
+        }
+        .txt {
+          font-size: 14px;
+        }
+      }
+      .copy {
+        margin: 50px 0 0;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

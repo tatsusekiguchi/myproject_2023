@@ -1,0 +1,239 @@
+// ▽メイン▽
+#column
+    h1 開催日程
+    #left_column
+        table
+            thead
+                tr
+                    th
+                        .inner
+                            p 日時・場所
+                            dl
+                                dt 出欠数
+                                dd
+                                    span 参加
+                                    span 多分
+                                    span 未定
+                                    span 欠席
+                    th 内容
+                    th
+                        p 出欠数
+                        p
+                            span 参加
+                            span 多分
+                            span 未定
+                            span 欠席
+            tbody
+                tr.active
+                    td(colspan="3")
+                        .tdContainer
+                            .dateBox
+                                <a href="/tsfc%E5%87%BA%E6%AC%A0/schedules/21?access_token=Oq8nB5VS">2023年01月04日(水)</a><br>17:00 ～ 19:00<br>朝宮公園(NEK招待)
+                            .cntBox
+                                p エルニーニョ招待、<br>ユニフォームは緑
+                                .accordBody
+                                    .attendBox
+                                        dl
+                                            dt 参加
+                                            dd
+                                                ul
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 長：
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 西尾：
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 大久保：
+                                        dl
+                                            dt 多分
+                                            dd
+                                        dl
+                                            dt 未定
+                                            dd
+                                        dl
+                                            dt 欠席
+                                            dd
+                                                 ul
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 守屋：
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 川鍋：
+                                    .formBox
+                                        form
+                                            .inputItems
+                                                dl
+                                                    dt 名前：
+                                                    dd
+                                                        <input placeholder="必須項目" class="schedule_class" type="text" name="answer[name]" id="answer_name" />
+                                                dl
+                                                    dt 選択：
+                                                    dd
+                                                        <select class="schedule_class" name="answer[reason]" id="answer_reason"><option value="sanka">参加</option>
+                                                            <option value="tabun">多分参加</option>
+                                                            <option value="mitei">未定</option>
+                                                            <option value="kesseki">欠席</option>
+                                                        </select>
+                                            dl
+                                                dt コメント：
+                                                dd
+                                                    <input class="schedule_class" type="text" name="answer[comment]" id="answer_comment" />
+                                            .buttonBox
+                                                <input type="submit" name="commit" value="登録する" data-disable-with="登録する" />
+                                                <p>※名前の入力は必須です。<br>※×は削除ボタンです。<br>※同名前での更新は出来ません。<br>※変更したい場合は一旦削除してから再登録して下さい。</p>
+                            .attendCount
+                                ul
+                                    li 12
+                                    li 0
+                                    li 0
+                                    li 0
+                tr
+                    td(colspan="3")
+                        .tdContainer
+                            .dateBox
+                                <a href="/tsfc%E5%87%BA%E6%AC%A0/schedules/21?access_token=Oq8nB5VS">2023年01月04日(水)</a><br>17:00 ～ 19:00<br>朝宮公園(NEK招待)
+                            .cntBox
+                                p エルニーニョ招待、<br>ユニフォームは緑
+                                .accordBody
+                                    .attendBox
+                                        dl
+                                            dt 参加
+                                            dd
+                                                ul
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 長：
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 西尾：
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 大久保：
+                                        dl
+                                            dt 多分
+                                            dd
+                                        dl
+                                            dt 未定
+                                            dd
+                                        dl
+                                            dt 欠席
+                                            dd
+                                                 ul
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 守屋：
+                                                    li
+                                                        .delete
+                                                            <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a>
+                                                        .name
+                                                            p 川鍋：
+                                    .formBox
+                                        form
+                                            .inputItems
+                                                dl
+                                                    dt 名前：
+                                                    dd
+                                                        <input placeholder="必須項目" class="schedule_class" type="text" name="answer[name]" id="answer_name" />
+                                                dl
+                                                    dt 選択：
+                                                    dd
+                                                        <select class="schedule_class" name="answer[reason]" id="answer_reason"><option value="sanka">参加</option>
+                                                            <option value="tabun">多分参加</option>
+                                                            <option value="mitei">未定</option>
+                                                            <option value="kesseki">欠席</option>
+                                                        </select>
+                                            dl
+                                                dt コメント：
+                                                dd
+                                                    <input class="schedule_class" type="text" name="answer[comment]" id="answer_comment" />
+                                            .buttonBox
+                                                <input type="submit" name="commit" value="登録する" data-disable-with="登録する" />
+                                                <p>※名前の入力は必須です。<br>※×は削除ボタンです。<br>※同名前での更新は出来ません。<br>※変更したい場合は一旦削除してから再登録して下さい。</p>
+                            .attendCount
+                                ul
+                                    li 12
+                                    li 0
+                                    li 0
+                                    li 0
+    #right_column
+        table(style="margin-bottom: 30px;")
+            tr
+                th.border_n(bgcolor="#99ffcc") 参加
+                td.border_l
+                    | 小笠原：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+                    | 武田：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+                    | 大久保：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+                    | 守屋：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+                    | 飯田：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+                    | 安東：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+                    | 大久保（弟）：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+                    | 長：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/152?access_token=Oq8nB5VS">×</a><br>
+            tr
+                th.border_t(bgcolor="#ffffcc") 多分参加
+                td.border_tl
+            tr
+                th.border_t(bgcolor="#d3d3d3") 未定
+                td.border_tl
+                    | 尾内：足の調子良くなれば
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/249?access_token=Oq8nB5VS">×</a><br>
+                    | 川崎：仕事初め
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/259?access_token=Oq8nB5VS">×</a><br>
+            tr
+                th.border_t(bgcolor="#ffb6c1") 欠席
+                td.border_tl
+                    | 安西：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/157?access_token=Oq8nB5VS">×</a><br>
+                    | 林：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/170?access_token=Oq8nB5VS">×</a><br>
+                    | 山田：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/225?access_token=Oq8nB5VS">×</a><br>
+                    | 河鍋：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/402?access_token=Oq8nB5VS">×</a><br>
+                    | 三輪：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/423?access_token=Oq8nB5VS">×</a><br>
+                    | 市川：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/468?access_token=Oq8nB5VS">×</a><br>
+                    | 土田：
+                    <a data-confirm="本当に削除してもよろしいですか？" class="btn-border2" rel="nofollow" data-method="delete" href="/answers/480?access_token=Oq8nB5VS">×</a><br>
+        <form class="new_answer" id="new_answer" action="/answers" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="uyH2NkP+n2KQgENd0ZXN3d+uetEhPHimVyu68u8M+9QF63AcQilZ/+z0mLO6EP1sANPxyi4J+X5N/D9UVh3hSQ==" />
+        <p><input value="21" type="hidden" name="answer[schedule_id]" id="answer_schedule_id" /></p>
+        <p><input type="hidden" name="access_token" id="access_token" value="Oq8nB5VS" /></p>
+        <p>名前：<input placeholder="必須項目" class="schedule_class" type="text" name="answer[name]" id="answer_name" /></p>
+        <p>選択：<select class="schedule_class" name="answer[reason]" id="answer_reason"><option value="sanka">参加</option>
+        <option value="tabun">多分参加</option>
+        <option value="mitei">未定</option>
+        <option value="kesseki">欠席</option></select></p>
+        <p>コメント：<input class="schedule_class" type="text" name="answer[comment]" id="answer_comment" /></p>
+        <p><input type="submit" name="commit" value="登録する" data-disable-with="登録する" /></p>
+        <p>※名前の入力は必須です。<br>※×は削除ボタンです。<br>※同名前での更新は出来ません。<br>※変更したい場合は一旦削除してから再登録して下さい。</p>
+        </form>
+// △メイン△

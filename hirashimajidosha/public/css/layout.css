@@ -1,0 +1,1814 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  position: relative;
+}
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 100vh;
+  padding: 0 20px;
+}
+.topMain .topKvPanel .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvPanel .topKv .kvBox .kv01 {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv02 {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv03 {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvContents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  color: #ffffff;
+  z-index: 1;
+}
+.topMain .topKvPanel .kvContents .kvContentsWrap {
+  width: 50%;
+}
+.topMain .topKvPanel .kvContents h1 {
+  max-width: 500px;
+  margin: 0 auto 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-indent: 0.5em;
+  padding-left: -0.5em;
+}
+.topMain .topKvPanel .kvContents .title {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.topMain .topKvPanel .kvContents .txtList {
+  text-align: center;
+}
+.topMain .topKvPanel .kvContents .txtList .box + .box {
+  margin: 10px 0 0;
+}
+.topMain .topKvPanel .kvContents .txtList .box p {
+  display: inline-block;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px 30px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid #ffffff;
+  background: rgba(3, 134, 215, 0.5);
+}
+.topMain .topKvPanel .kvContents .txtList .box02 {
+  position: relative;
+  left: 60px;
+}
+.topMain .topSection {
+  padding: 60px 0 120px;
+  color: #ffffff;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_top_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .topSection .secWrap01 {
+  max-width: 1300px;
+}
+.topMain .topSection .titlePanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.topMain .topSection .titlePanel .img {
+  width: 25%;
+}
+.topMain .topSection .titlePanel .titleBox {
+  width: 70%;
+}
+.topMain .topSection .titlePanel .titleBox .title p {
+  display: inline;
+  font-size: 50px;
+  font-weight: bold;
+}
+.topMain .topSection .titlePanel .titleBox .title .em {
+  color: #f9e000;
+}
+.topMain .topSection .txt {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.topMain .listContainer {
+  padding: 200px 0;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_list_cnt_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .listContainer .listPanel + .listPanel {
+  margin: 200px 0 0;
+}
+.topMain .listContainer .listPanel .photo {
+  max-width: 1150px;
+}
+.topMain .listContainer .listPanel .secBox {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.topMain .listContainer .listPanel .secBox .txtBox {
+  position: relative;
+}
+.topMain .listContainer .listPanel .secBox .txtBox::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_list_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .listContainer .listPanel .secBox .txtBox .inner {
+  position: relative;
+  padding: 50px;
+  background: #ffffff;
+}
+.topMain .listContainer .listPanel .secBox .txtBox .ttlBox {
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+.topMain .listContainer .listPanel .secBox .txtBox .ttlBox .num {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 50px;
+  color: #f9e000;
+  line-height: 1;
+  vertical-align: middle;
+}
+.topMain .listContainer .listPanel .secBox .txtBox .ttlBox .ttl {
+  display: inline-block;
+  font-size: 40px;
+  vertical-align: middle;
+}
+.topMain .listContainer .listPanel .secBox .txtBox .txt {
+  padding: 0 0 30px;
+}
+.topMain .listContainer .listPanel .secBox .txtBox .btnMore {
+  margin: auto 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .listContainer .listPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox {
+    max-width: 700px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox .inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+  }
+  .topMain .listContainer .listPanel:nth-child(odd) {
+    align-items: flex-end;
+  }
+  .topMain .listContainer .listPanel:nth-child(odd) .secBox .txtBox {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+  }
+  .topMain .listContainer .listPanel:nth-child(even) .secBox .txtBox {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+  }
+}
+.topMain .sec01 {
+  padding: 200px 0;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secPanel {
+  padding: 60px 10px;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.topMain .sec01 .secPanel .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.topMain .sec01 .secPanel .txt {
+  margin: 0 0 30px;
+}
+.topMain .sec01 .secPanel .listBox .ul .li a {
+  display: block;
+}
+.topMain .sec01 .secPanel .listBox .ul .li .photo {
+  margin: 0 0 10px;
+}
+.topMain .sec01 .secPanel .listBox .ul .li p {
+  padding: 5px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #002d72;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secPanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secPanel .listBox .ul .li {
+    width: calc(33.3333333333% - 5px);
+  }
+  .topMain .sec01 .secPanel .listBox .ul .li .photo {
+    position: relative;
+    height: 235px;
+  }
+  .topMain .sec01 .secPanel .listBox .ul .li .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .secRecruit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 600px;
+  padding: 100px 0;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_recruit_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .secRecruit .secWrap01 {
+  width: 100%;
+}
+.topMain .secRecruit .secBox {
+  width: 100%;
+}
+.topMain .secRecruit .secBox .leftBox .title {
+  max-width: 350px;
+  margin: 0 0 40px;
+}
+.topMain .secRecruit .secBox .rightBox .title {
+  display: inline-block;
+  margin: 0 0 30px;
+  padding: 0 0 5px;
+  font-size: 50px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_recruit_title_line.png) bottom no-repeat;
+  background-size: 100% auto;
+}
+@media (min-width: 1025px) {
+  .topMain .secRecruit .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .secRecruit .secBox .leftBox {
+    width: 45%;
+  }
+  .topMain .secRecruit .secBox .rightBox {
+    width: 45%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+.reasonMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_kv.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .topSection {
+  padding: 200px 0 120px;
+  color: #ffffff;
+  background: #000000;
+}
+.reasonMain .topSection .secPanel {
+  position: relative;
+}
+.reasonMain .topSection .secPanel .photo {
+  max-width: 1150px;
+}
+.reasonMain .topSection .secPanel .secBox .txtBox {
+  position: relative;
+}
+.reasonMain .topSection .secPanel .secBox .txtBox::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_top_box_bg.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .topSection .secPanel .secBox .txtBox .inner {
+  position: relative;
+  padding: 40px 60px;
+  background: #002d72;
+}
+.reasonMain .topSection .secPanel .secBox .txtBox .titleBox .title p {
+  display: inline;
+  font-size: 26px;
+  font-weight: bold;
+}
+.reasonMain .topSection .secPanel .secBox .txtBox .titleBox .title .em {
+  color: #f9e000;
+}
+@media (min-width: 1025px) {
+  .reasonMain .topSection .secPanel .secBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 45%;
+    min-height: 580px;
+    padding: 0 20px;
+  }
+  .reasonMain .topSection .secPanel .secBox .txtBox {
+    width: 100%;
+  }
+}
+.reasonMain .topSection .txt {
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+.reasonMain .sec01 {
+  padding: 150px 0 200px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .sec01 .secPanel + .secPanel {
+  margin: 120px 0 0;
+}
+.reasonMain .sec01 .secPanel .mvBox .secWrap01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+}
+.reasonMain .sec01 .secPanel .mvBox .inner {
+  max-width: 540px;
+  width: 100%;
+}
+.reasonMain .sec01 .secPanel .mvBox .title {
+  position: relative;
+  top: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 110px;
+  padding: 15px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_sec01_title_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.reasonMain .sec01 .secPanel .txtBox {
+  margin: 40px 0 0;
+}
+.reasonMain .sec01 .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.reasonMain .sec01 .secPanel:nth-child(even) .mvBox .secWrap01 {
+  align-items: flex-end;
+}
+.reasonMain .sec01 .secPanel01 .mvBox {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_sec01_img_01.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .sec01 .secPanel02 .mvBox {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_sec01_img_02.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .sec01 .secPanel03 .mvBox {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_sec01_img_03.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .sec01 .secPanel04 .mvBox {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/reason_sec01_img_04.png) no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .topSection {
+  padding: 150px 0 120px;
+  color: #ffffff;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/top_top_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .topSection .secWrap01 {
+  max-width: 1300px;
+}
+.serviceMain .topSection .titlePanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.serviceMain .topSection .titlePanel .img {
+  width: 20%;
+}
+.serviceMain .topSection .titlePanel .titleBox {
+  width: 75%;
+}
+.serviceMain .topSection .titlePanel .titleBox .title p {
+  display: inline;
+  font-size: 40px;
+  font-weight: bold;
+}
+.serviceMain .topSection .titlePanel .titleBox .title .em {
+  color: #f9e000;
+}
+.serviceMain .topSection .txt {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.serviceMain .serviceContainer {
+  padding: 150px 0;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/service_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .serviceSection + .serviceSection {
+  margin: 120px 0 0;
+}
+.serviceMain .servicePanel {
+  padding: 50px 0;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.serviceMain .servicePanel + .servicePanel {
+  margin: 50px 0 0;
+}
+.serviceMain .servicePanel .panelInner {
+  padding: 0 50px;
+}
+.serviceMain .servicePanel .mvBox {
+  position: relative;
+  margin: 0 0 40px;
+}
+.serviceMain .servicePanel .mvBox .point {
+  position: absolute;
+  right: 20px;
+  bottom: -15px;
+  width: 140px;
+  padding: 5px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #002d72;
+}
+.serviceMain .servicePanel .mvBox .point p {
+  display: inline;
+  line-height: 1.2;
+}
+.serviceMain .servicePanel .mvBox .point .em {
+  font-size: 24px;
+  color: #f9e000;
+}
+.serviceMain .servicePanel .mainBox h3 {
+  margin: 0 0 30px;
+  padding: 0 0 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+  border-left: 5px solid #002d72;
+}
+.serviceMain .servicePanel .mainBox .txt p + p {
+  margin: 30px 0 0;
+}
+.serviceMain .slidePanel {
+  margin: 40px 0 0;
+}
+.serviceMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.serviceMain .slidePanel .slideBox .ul .li {
+  width: 16.6666666667%;
+  margin: 0 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	paint
+///////////////////////////////////////////////////////////*/
+.paintMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/paint_kv.png) no-repeat;
+  background-size: cover;
+}
+.paintMain .servicePanel .listBox {
+  margin: 60px 0 0;
+  padding: 0 40px 30px;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.paintMain .servicePanel .listBox h4 {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #303030;
+}
+.paintMain .servicePanel .listBox .list .ul .li {
+  padding: 15px;
+  border-bottom: 1px solid #303030;
+}
+@media (min-width: 1025px) {
+  .paintMain .servicePanel .listBox .list .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -5px 0 0;
+  }
+  .paintMain .servicePanel .listBox .list .ul .li {
+    width: 48%;
+    margin: 5px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	maintenance
+///////////////////////////////////////////////////////////*/
+.maintenanceMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/maintenance_kv.png) no-repeat;
+  background-size: cover;
+}
+.maintenanceMain .servicePanel .listBox {
+  margin: 60px 0 0;
+  padding: 0 40px 30px;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.maintenanceMain .servicePanel .listBox h4 {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #303030;
+}
+.maintenanceMain .servicePanel .listBox .list {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.maintenanceMain .servicePanel .listBox .list .ul .li {
+  padding: 20px 15px;
+  border-bottom: 1px solid #303030;
+}
+.maintenanceMain .servicePanel .listBox .list .dl {
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+.maintenanceMain .servicePanel .listBox .list .dl .dt {
+  width: 140px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*////////////////////////////////////////////////////////////
+	other
+///////////////////////////////////////////////////////////*/
+.otherMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/other_kv.png) no-repeat;
+  background-size: cover;
+}
+.otherMain .servicePanel .listBox {
+  margin: 60px 0 0;
+}
+.otherMain .servicePanel .listBox .ul .li {
+  border: 1px solid #303030;
+}
+.otherMain .servicePanel .listBox .ul .dl .dt {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #303030;
+}
+.otherMain .servicePanel .listBox .ul .dl .dd {
+  padding: 20px 30px;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .otherMain .servicePanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .otherMain .servicePanel .listBox .ul .li {
+    width: 48%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/recruit_kv.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec01 {
+  padding: 160px 0 80px;
+  color: #ffffff;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/recruit_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec01 .pageSecTitleBox {
+  text-align: left;
+}
+.recruitMain .sec01 .dl {
+  font-weight: bold;
+}
+.recruitMain .sec01 .dl .dt {
+  margin: 0 0 20px;
+  font-size: 26px;
+}
+.recruitMain .sec01 .dl .dd {
+  line-height: 2;
+}
+.recruitMain .sec01 .name {
+  margin: 20px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+.recruitMain .sec02 {
+  padding: 100px 0;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/recruit_sec_bg_01.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec02 .listBox {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.recruitMain .sec02 .listBox .ul {
+  text-align: center;
+}
+.recruitMain .sec02 .listBox .ul .ttl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #303030;
+}
+.recruitMain .sec02 .listBox .ul .txt {
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec02 .listBox .ul .li {
+    width: 48%;
+  }
+  .recruitMain .sec02 .listBox .ul .photo {
+    position: relative;
+    height: 340px;
+  }
+  .recruitMain .sec02 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.recruitMain .sec03 {
+  padding: 100px 0 150px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/recruit_sec_bg_01.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec03 .secTtl {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  padding: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #7abbe4;
+}
+.recruitMain .sec03 .secPanel {
+  position: relative;
+}
+.recruitMain .sec03 .secPanel::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/recruit_sec03_box_bg.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec03 .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.recruitMain .sec03 .secPanel .secBox {
+  position: relative;
+  padding: 40px;
+  background: #ffffff;
+}
+.recruitMain .sec03 .secPanel .secBox .txtBox .dl .dt {
+  margin: 0 0 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.recruitMain .sec03 .secPanel .secBox .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .recruitMain .sec03 .secPanel .secBox .photo {
+    width: 25%;
+  }
+  .recruitMain .sec03 .secPanel .secBox .txtBox {
+    width: 70%;
+  }
+  .recruitMain .sec03 .secPanel:nth-child(even) .secBox {
+    flex-direction: row-reverse;
+  }
+}
+.recruitMain .sec04 {
+  padding: 150px 0;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/recruit_sec_bg_02.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec04 .secPanel {
+  padding: 10px;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.recruitMain .sec04 .infoBox {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.recruitMain .sec04 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+.recruitMain .sec04 .infoBox .dl .dt {
+  width: 160px;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #002d72;
+}
+.recruitMain .sec04 .infoBox .dl .dd {
+  width: calc(100% - 170px);
+  padding: 20px;
+  border-bottom: 1px solid #002d72;
+}
+.recruitMain .sec04 .infoBox .dl .ul {
+  display: inline-block;
+}
+.recruitMain .sec04 .infoBox .dl .ul + .ul {
+  margin: 0 0 0 60px;
+}
+.recruitMain .sec05 {
+  padding: 100px 0;
+  color: #ffffff;
+  background: #002d72;
+}
+.recruitMain .sec05 .secPanelList .secPanel {
+  text-align: center;
+}
+.recruitMain .sec05 .secPanelList .secPanel .ttl {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 15px;
+}
+.recruitMain .sec05 .secPanelList .secPanel .txtBox {
+  min-height: 95px;
+  margin: 0 0 20px;
+  text-align: left;
+  line-height: 2;
+}
+.recruitMain .sec05 .secPanelList .secPanel .txtBox a {
+  display: inline-block;
+  color: #ffffff;
+}
+.recruitMain .sec05 .secPanelList .secPanel .txtBox .txt p {
+  display: inline;
+}
+.recruitMain .sec05 .secPanelList .secPanel .telBox,
+.recruitMain .sec05 .secPanelList .secPanel .lineBox {
+  border: 1px solid #ffffff;
+  background: #33578e;
+}
+.recruitMain .sec05 .secPanelList .telPanel .ttl {
+  max-width: 400px;
+}
+.recruitMain .sec05 .secPanelList .telPanel .telBox {
+  padding: 28px 10px;
+}
+.recruitMain .sec05 .secPanelList .telPanel .telBox a {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 0 0 0 30px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/recruit_sec05_tel.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.recruitMain .sec05 .secPanelList .telPanel .telBox > p {
+  font-size: 14px;
+}
+.recruitMain .sec05 .secPanelList .linePanel .ttl {
+  max-width: 450px;
+}
+.recruitMain .sec05 .secPanelList .linePanel .lineBox {
+  padding: 25px 10px;
+}
+.recruitMain .sec05 .secPanelList .linePanel .lineBox a {
+  display: inline-block;
+  width: 90px;
+  margin: 0 40px 0 0;
+}
+.recruitMain .sec05 .secPanelList .linePanel .lineBox p {
+  display: inline-block;
+  text-align: left;
+  line-height: 2;
+  vertical-align: middle;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec05 .secPanelList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec05 .secPanelList > * {
+    width: 46%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/company_kv.png) no-repeat;
+  background-size: cover;
+}
+.companyMain .sec01 {
+  padding: 200px 0 100px;
+}
+.companyMain .sec01 .pageSecTitleBox + .txt {
+  padding: 0 0 30px;
+  text-align: center;
+}
+.companyMain .sec01 .secPanel {
+  padding: 100px 0 0;
+}
+.companyMain .sec01 .secPanel .secBox .photoBox .name {
+  margin: 15px 0 0;
+  text-align: right;
+}
+.companyMain .sec01 .secPanel .secBox .photoBox .name p {
+  display: inline-block;
+  font-weight: bold;
+}
+.companyMain .sec01 .secPanel .secBox .photoBox .name .em {
+  margin: 0 0 0 20px;
+  font-size: 24px;
+}
+.companyMain .sec01 .secPanel .secBox .txtBox .txt {
+  line-height: 2.5;
+}
+.companyMain .sec01 .secPanel .secBox .txtBox .txt p + p {
+  margin: 40px 0 0;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .secPanel .secBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .companyMain .sec01 .secPanel .secBox .photoBox {
+    width: 45%;
+  }
+  .companyMain .sec01 .secPanel .secBox .txtBox {
+    width: 50%;
+  }
+}
+.companyMain .sec02 {
+  padding: 120px 0 160px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/company_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+.companyMain .sec02 .secPanel {
+  padding: 10px;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.companyMain .sec02 .infoBox {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.companyMain .sec02 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+.companyMain .sec02 .infoBox .dl .dt {
+  width: 160px;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #002d72;
+}
+.companyMain .sec02 .infoBox .dl .dd {
+  width: calc(100% - 170px);
+  padding: 20px;
+  border-bottom: 1px solid #002d72;
+}
+.companyMain .sec02 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.companyMain .sec02 .infoBox .dl .ul {
+  display: inline-block;
+}
+.companyMain .sec02 .infoBox .dl .ul + .ul {
+  margin: 0 0 0 60px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/contact_kv.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .topSection {
+  padding: 200px 0 120px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/contact_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .topSection .secWrap {
+  max-width: 1450px;
+}
+.contactMain .topSection .secPanel {
+  position: relative;
+}
+.contactMain .topSection .secPanel .photo {
+  max-width: 1100px;
+}
+.contactMain .topSection .secPanel .secBox {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  width: 50%;
+  max-width: 740px;
+  padding: 40px;
+  background: #ffffff;
+}
+.contactMain .topSection .secPanel .secBox .list {
+  margin: 0 0 30px;
+}
+.contactMain .topSection .secPanel .secBox .list .ul .li {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid #303030;
+}
+.contactMain .topSection .secPanel .secBox .list .ul .li + .li {
+  margin: 20px 0 0;
+}
+.contactMain .topSection .secPanel .secBox .list .ul .li p {
+  padding: 0 0 0 35px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/contact_top_check.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.contactMain .topSection .secPanel .secBox .ttl {
+  padding: 0 0 10px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/contact_top_ttl_line.png) left bottom no-repeat;
+  background-size: 100% auto;
+}
+.contactMain .topSection .secPanel .secBox .ttl p {
+  display: inline;
+  font-size: 24px;
+  font-weight: bold;
+}
+.contactMain .topSection .secPanel .secBox .ttl .em {
+  color: #002d72;
+}
+.contactMain .telContainer {
+  padding: 60px 0;
+  color: #ffffff;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/contact_tel_bg.png);
+}
+.contactMain .telContainer .secBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactMain .telContainer .secBox .img {
+  width: 300px;
+}
+.contactMain .telContainer .secBox .dl {
+  width: calc(100% - 340px);
+}
+.contactMain .telContainer .secBox .dl .dt {
+  margin: 0 0 20px;
+  font-size: 0;
+}
+.contactMain .telContainer .secBox .dl .dt p {
+  display: inline;
+  font-size: 36px;
+  font-weight: bold;
+}
+.contactMain .telContainer .secBox .dl .dt .em {
+  color: #f9e000;
+}
+.contactMain .telContainer .secBox .dl .dd a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/contact_tel_icon.png) left center no-repeat;
+  background-size: 24px auto;
+}
+.contactMain .telContainer .secBox .dl .dd > p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  line-height: 2;
+}
+.contactMain .formSection {
+  padding: 150px 0 300px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/contact_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .formSection .secPanel {
+  padding: 60px 10px 100px;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.contactMain .formSection .topTxt {
+  margin: 0 0 50px;
+  text-align: center;
+  line-height: 2;
+}
+.contactMain .formSection .contactForm {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #303030;
+  background: #f7f8fa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #303030;
+  background: #f7f8fa;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat #0060e4;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList {
+  max-width: 540px;
+}
+.formMain .contactForm .form .checkList .ul {
+  margin: -10px -20px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li {
+  display: inline-block;
+  width: 45%;
+  margin: 10px 20px 0 0;
+}
+.formMain .contactForm .form .checkList02 {
+  margin: 20px 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0 20px;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  border: 1px solid #303030;
+  background: #f7f8fa;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #002d72;
+  border-right: 3px solid #002d72;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList {
+  padding: 5px 0;
+}
+.formMain .contactForm .form .radioList .list + .list {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .radioList + input {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .form .radioList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formMain .contactForm .form .radioList .list + .list {
+    margin: 0 0 0 30px;
+  }
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
+  background: #fcfcfc;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #32a44a;
+}
+.formMain .contactForm .form .postal {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postal input {
+  width: 90px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 120px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 6px;
+  border: 1px solid #cbc0b6;
+  background: #ffffff;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .ageInput {
+  display: inline-block;
+}
+.formMain .contactForm .form .ageInput input {
+  width: 100px;
+}
+.formMain .contactForm .form .ageInput .ageTxt {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 2;
+}
+.formMain .contactForm .form .addressTxt {
+  padding: 3px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.formMain .contactForm {
+  font-weight: bold;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #303030;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl.checkForm {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 300px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #002d72;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 14px;
+  font-weight: normal;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 300px);
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+  width: 60px;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  border: 1px solid #303030;
+  background: #ededed;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .aside {
+  padding: 10px 0;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox + .fileBox {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 40%;
+  font-size: 16px;
+  color: #404142;
+  text-align: center;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 40px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p {
+  width: 58%;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 200px 0 100px;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain .pageKvPanel {
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/blog_kv.png) no-repeat;
+  background-size: cover;
+}
+.blogMain .blogSection {
+  padding: 200px 0 150px;
+  background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/blog_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.blogMain .catePanel {
+  margin: 0 0 60px;
+}
+.blogMain .catePanel .categoryBox {
+  padding: 15px 0;
+}
+.blogMain .catePanel .webgene-header {
+  display: none;
+}
+.blogMain .catePanel .webgene-item a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #0060e4;
+}
+@media (min-width: 1025px) {
+  .blogMain .catePanel .webgene-blog {
+    display: flex;
+    align-items: center;
+  }
+  .blogMain .catePanel .webgene-blog > * {
+    width: calc(20% - 10px);
+  }
+  .blogMain .catePanel .webgene-blog .webgene-header {
+    margin: 0;
+  }
+  .blogMain .catePanel .webgene-blog .webgene-item {
+    margin: 0 0 0 20px;
+  }
+}
+.blogMain .blogPanel {
+  padding: 60px;
+  border: 1px solid #303030;
+  background: #ffffff;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item {
+  padding: 0 0 20px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  font-size: 15px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #002d72;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -50px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 50px);
+    margin: 60px 0 0 50px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: center;
+  background: #cdcdcd;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #002d72;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .blogMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #002d72;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 40px 0 0;
+  vertical-align: middle;
+}
+.blogMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .thumb-item {
+  max-width: 800px;
+  margin: 0 auto 10px;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item img {
+    display: block;
+    width: auto;
+    max-height: 500px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 95%;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.blogMain .blogPanel--detail .btnBackBox {
+  margin: 80px 0 0;
+  text-align: center;
+}
+.blogMain .blogPanel--detail .btnBack {
+  display: inline-block;
+  width: 220px;
+  margin: 0 5px;
+}
+.blogMain .blogPanel--detail .btnBack a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #0060e4;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink {
+  display: inline-block;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink a {
+  display: block;
+  width: 40px;
+  color: #ffffff;
+  line-height: 44px;
+  background: #0060e4;
+}

@@ -1,0 +1,754 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #222020;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #222020;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax {
+  pointer-events: none;
+}
+
+.mincho {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes loop-en_animation {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes loop-en_animation {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-webkit-keyframes loop-en_animation_page {
+  0% {
+    left: 2000px;
+  }
+  100% {
+    left: -2000px;
+  }
+}
+@keyframes loop-en_animation_page {
+  0% {
+    left: 2000px;
+  }
+  100% {
+    left: -2000px;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1356px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 0 0 5%;
+    color: #efefef;
+    z-index: 999;
+    background: #222020;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .logoBox {
+    width: 400px;
+    padding: 10px;
+  }
+  .header .logoBox .logo {
+    display: inline-block;
+    width: 200px;
+    margin: 0 20px 0 0;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .logoBox .snsList {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+  }
+  .header .logoBox .snsList .sns {
+    display: inline-block;
+    width: 35px;
+  }
+  .header .logoBox .snsList .sns + .sns {
+    margin: 0 0 0 10px;
+  }
+  .header .logoBox .snsList .sns a {
+    display: block;
+  }
+  .header .navContainer {
+    width: 900px;
+  }
+  .header .menuBtn {
+    display: none;
+  }
+}
+@media (max-width: 1355px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    color: #efefef;
+    z-index: 999;
+    background: #222020;
+  }
+  .header .logoBox > p {
+    display: none;
+  }
+  .header .logoBox .logo {
+    display: inline-block;
+    width: 150px;
+    margin: 0 20px 0 0;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .logoBox .snsList {
+    display: inline-block;
+  }
+  .header .logoBox .snsList .sns {
+    display: inline-block;
+    width: 25px;
+  }
+  .header .logoBox .snsList .sns + .sns {
+    margin: 0 0 0 10px;
+  }
+  .header .logoBox .snsList .sns a {
+    display: block;
+  }
+  .header .menuBtn {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  .header .menuBtn .span {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 9999;
+    background: #efefef;
+    transition: all 0.4s;
+  }
+  .header .menuBtn .span:nth-child(1) {
+    top: 0;
+  }
+  .header .menuBtn .span:nth-child(2) {
+    top: 10px;
+  }
+  .header .menuBtn .span:nth-child(3) {
+    top: 20px;
+  }
+  .header .menuBtn.active {
+    width: 30px;
+    height: 30px;
+  }
+  .header .menuBtn.active .span:nth-child(1) {
+    top: 6px;
+    transform: rotate(-45deg);
+  }
+  .header .menuBtn.active .span:nth-child(2) {
+    right: -50%;
+    opacity: 0;
+    animation: active-menu-bar02 1s forwards;
+  }
+  .header .menuBtn.active .span:nth-child(3) {
+    top: 7px;
+    transform: rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1356px) {
+  .navBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navBox .navList .ul {
+    display: flex;
+  }
+  .navBox .navList .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  .navBox .navList .ul > .li + .li {
+    margin: 0 0 0 60px;
+  }
+  .navBox .navList .ul > .li > a {
+    display: block;
+    color: #eeeeef;
+  }
+  .navBox .navList .ul .linkTxt {
+    position: relative;
+    color: #eeeeef;
+  }
+  .navBox .navList .ul .pulldown {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/header_nav_arrow.png) center bottom 15px no-repeat;
+  }
+  .navBox .navList .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList .ul .pulldown:hover .subList {
+    top: 90px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .subList {
+    position: absolute;
+    top: 70px;
+    left: -90px;
+    width: 250px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    border: 1px solid #373737;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .navBox .subList .li + .li {
+    border-top: 1px solid #373737;
+  }
+  .navBox .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    color: #222020;
+    text-align: center;
+  }
+  .navBox .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #c39547;
+  }
+  .navBox .navContact {
+    width: 260px;
+  }
+  .navBox .navContact a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/header_contact_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .navBox .navContact p {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    text-indent: 1em;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+}
+@media (max-width: 1355px) {
+  .navBox {
+    display: none;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    color: #efefef;
+    text-align: center;
+    z-index: 999;
+    background: #222020;
+  }
+  .navBox .navList .ul .li {
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+    color: #efefef;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+    color: #efefef;
+  }
+  .navBox .navList .ul .li .accordBtn {
+    display: none;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navList .subList .li + .li {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navContact {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navContact a {
+    display: inline-block;
+    padding: 15px;
+    font-size: 15px;
+    color: #efefef;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.pageMain {
+  overflow: hidden;
+  margin: 90px 0 0;
+}
+
+@media (max-width: 1355px) {
+  .pageMain {
+    margin: 55px 0 0;
+  }
+}
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+}
+.pageKvPanel .pageKvTitleBox {
+  max-width: 700px;
+  width: 90%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.pageKvPanel .pageKvTitleBox .pageKvTitle {
+  font-size: 30px;
+  text-align: center;
+}
+.pageKvPanel .pageKvTitleBox .pageKvTitle p {
+  display: inline-block;
+  color: #c39547;
+}
+.pageKvPanel .pageKvTitleBox .pageKvTitle h1 {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 0 0 0 35px;
+}
+.pageKvPanel .pageKvTitleBox .pageKvTitle h1::before {
+  content: "／";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topSecTtlBox {
+  margin: 0 0 30px;
+}
+.topSecTtlBox .topSecTtl {
+  font-size: 30px;
+}
+.topSecTtlBox .topSecTtl p {
+  display: inline-block;
+}
+.topSecTtlBox .topSecTtl h2 {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 0 0 0 30px;
+  background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_ttl_slash_02.png) left center no-repeat;
+  background-size: 18px auto;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.pageSecTtlBox .pageSecTtl {
+  font-size: 30px;
+}
+.pageSecTtlBox .pageSecTtl h2 {
+  display: inline-block;
+}
+.pageSecTtlBox .pageSecTtl p {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 0 0 0 30px;
+  color: #c39547;
+  background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_ttl_slash_02.png) left center no-repeat;
+  background-size: 18px auto;
+}
+
+.secWrap {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 260px;
+}
+.btnMore a {
+  display: block;
+  padding: 15px 10px;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #3e3a39;
+  background: #c39547;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover {
+    color: #222020;
+    border: 1px solid #c39547;
+    background: #ffffff;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.btmSection {
+  background: #3e3a39;
+}
+.btmSection .footer .footContact {
+  padding: 190px 0 100px;
+}
+
+.footer {
+  background: #3e3a39;
+}
+.footer .footContact {
+  padding: 70px 0;
+  background: #c39547;
+}
+.footer .footContact .topSecTtlBox {
+  text-align: center;
+}
+.footer .footContact .contactBox {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 60px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.footer .footContact .contactBox .telBox > p {
+  text-indent: -3em;
+}
+.footer .footContact .contactBox .telBox a {
+  display: inline-block;
+  line-height: 1.2;
+}
+.footer .footContact .contactBox .telBox a p {
+  display: inline-block;
+  font-size: 30px;
+}
+.footer .footContact .contactBox .telBox a .em {
+  font-size: 40px;
+}
+.footer .footContact .contactBox .mailBox .btnMail {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.footer .footContact .contactBox .mailBox .btnMail a {
+  position: relative;
+  display: block;
+  color: #ffffff;
+}
+.footer .footContact .contactBox .mailBox .btnMail a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222020;
+  transform: skew(-30deg);
+}
+.footer .footContact .contactBox .mailBox .btnMail a > div {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  font-size: 0;
+}
+.footer .footContact .contactBox .mailBox .btnMail a > div p {
+  display: inline-block;
+  font-size: 24px;
+}
+.footer .footContact .contactBox .mailBox .btnMail a > div .span {
+  padding: 0 0 0 30px;
+  background: url(https://haraunyu.co.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footContact .contactBox .mailBox .btnMail a > div .em {
+  color: #c39547;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactBox {
+    display: flex;
+    align-items: flex-end;
+  }
+  .footer .footContact .contactBox > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+}
+.footer .footPanel {
+  position: relative;
+  padding: 300px 0 50px;
+  color: #eeeeef;
+}
+.footer .footPanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://haraunyu.co.jp/system_panel/uploads/images/footer_panel_bg.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.footer .footPanel .footBox {
+  position: relative;
+  margin: 0 0 90px;
+}
+.footer .footPanel .footBox .logoBox {
+  margin: 0 0 60px;
+}
+.footer .footPanel .footBox .logoBox > p {
+  margin: 0 0 5px;
+}
+.footer .footPanel .footBox .logoBox .logo {
+  width: 250px;
+}
+.footer .footPanel .footBox .infoBox .txt {
+  display: inline-block;
+  margin: 0 40px 0 0;
+}
+.footer .footPanel .footBox .infoBox .snsList {
+  display: inline-block;
+}
+.footer .footPanel .footBox .infoBox .snsList .sns {
+  display: inline-block;
+  width: 35px;
+}
+.footer .footPanel .footBox .infoBox .snsList .sns + .sns {
+  margin: 0 0 0 20px;
+}
+.footer .footPanel .footBox .infoBox .snsList .sns a {
+  display: block;
+}
+.footer .footPanel .footBox .pagetop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  cursor: pointer;
+}
+.footer .footPanel .copy {
+  position: relative;
+  text-align: center;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,0 +1,24 @@
+// ▽header▽
+header.header
+	.headWrap
+		.logo
+			a(href="/")
+				img(src=(root_path || '') + "image/common/header_logo.png", alt="株式会社ONE")
+		.navBox
+			nav
+				ul
+					li
+						a(href="/") トップページ
+					li
+						a(href=(root_path || '') + "service") サービス紹介
+					li
+						a(href=(root_path || '') + "company") 会社概要
+					li
+						a(href=(root_path || '') + "recruit") 採用情報
+					li
+						a(href=(root_path || '') + "contact") お問い合わせ
+	.hamburger
+		span
+		span
+		span
+// △header△

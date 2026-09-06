@@ -1,0 +1,434 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #202020;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #202020;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.gothic {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header .headBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+  }
+  .header .logo {
+    width: 150px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+
+  .topHeader {
+    position: relative;
+    height: 100vh;
+  }
+  .topHeader .headContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .topHeader.fixed .headContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: auto;
+  }
+
+  .pageHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox .navList .ul {
+    text-align: right;
+  }
+  .navBox .navList .ul .li {
+    display: inline-block;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 0 0 0 60px;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+  }
+  .navBox .navList .ul .spBreak {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.pageKvPanel .kvTtlBox {
+  position: relative;
+  min-height: 260px;
+  font-size: 0;
+  color: #ffffff;
+  writing-mode: vertical-rl;
+}
+.pageKvPanel .kvTtlBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 120px;
+  height: 1px;
+  background: #ffffff;
+}
+.pageKvPanel .kvTtlBox::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 1px;
+  height: 300px;
+  background: #ffffff;
+}
+.pageKvPanel .kvTtlBox .kvTtlBoxInner {
+  position: relative;
+  padding: 50px 30px;
+}
+.pageKvPanel .kvTtlBox .kvTtlBoxInner::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -30px;
+  width: 120px;
+  height: 1px;
+  background: #ffffff;
+}
+.pageKvPanel .kvTtlBox .kvTtlBoxInner::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -5px;
+  width: 1px;
+  height: 300px;
+  background: #ffffff;
+}
+.pageKvPanel .kvTtlBox .kvTtl {
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+
+@media (min-width: 1025px) {
+  .pageMain {
+    margin: 69px 0 0;
+  }
+
+  .pageSecTtlBox {
+    position: relative;
+    min-height: 260px;
+    font-size: 0;
+    writing-mode: vertical-rl;
+  }
+  .pageSecTtlBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 120px;
+    height: 1px;
+    background: #202020;
+  }
+  .pageSecTtlBox::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 1px;
+    height: 260px;
+    background: #202020;
+  }
+  .pageSecTtlBox .pageSecTtlBoxInner {
+    position: relative;
+    padding: 40px 30px;
+  }
+  .pageSecTtlBox .pageSecTtlBoxInner::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    width: 120px;
+    height: 1px;
+    background: #d1d1d1;
+  }
+  .pageSecTtlBox .pageSecTtlBoxInner::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    width: 1px;
+    height: 260px;
+    background: #d1d1d1;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+  }
+  .pageSecTtlBox.large {
+    min-height: 340px;
+  }
+  .pageSecTtlBox.large::after {
+    height: 380px;
+  }
+  .pageSecTtlBox.large .pageSecTtlBoxInner::after {
+    height: 380px;
+  }
+}
+.secWrap {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 90%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  filter: grayscale(80%);
+  -webkit-filter: grayscale(80%);
+}
+
+.btnMore a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  padding: 15px 10px;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+}
+.btnMore a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #168044;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover {
+    border: 1px solid #168044;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+  z-index: 2;
+  padding: 80px 0 30px;
+  color: #f2f2f1;
+  background: #252525;
+}
+.footer .secWrap01 {
+  position: relative;
+}
+.footer .footBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 100px;
+}
+.footer .footBox .logoBox {
+  width: 180px;
+}
+.footer .footBox .footNav .ul .li {
+  display: inline-block;
+}
+.footer .footBox .footNav .ul .li + .li {
+  margin: 0 0 0 60px;
+}
+.footer .footBox .footNav .ul .li a {
+  display: inline-block;
+  color: #f2f2f1;
+}
+.footer .pageTop {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  width: 40px;
+  cursor: pointer;
+}
+.footer .copy {
+  font-size: 14px;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

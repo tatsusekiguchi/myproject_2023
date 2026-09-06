@@ -1,0 +1,15 @@
+- title = ''
+- description = ''
+- keywords = ''
+- root_path = '../'
+- page_name = 'painting'
+doctype html
+//- サイトの設定の読み込み
+include /site.pug
+html(lang='ja')
+  head
+    include /common/head.pug
+  body#painting.page
+    include /common/header.pug
+    include ../../layouts/painting.pug
+    include /common/footer.pug

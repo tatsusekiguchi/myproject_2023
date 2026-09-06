@@ -1,0 +1,3406 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvPanel {
+    position: relative;
+    .topKv {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 850px;
+    }
+    .kvBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .kv01 {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/top_kv_01.png)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv02 {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/top_kv_02.png)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv03 {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/top_kv_03.png)
+          center no-repeat;
+        background-size: cover;
+      }
+    }
+    .kvTitleBox {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+      .kvTitle {
+        margin: 0 0 40px;
+        font-size: 60px;
+        color: #d9d6d3;
+      }
+      .sub {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 22px;
+        color: #b5a89b;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+  .sec01 {
+    padding: 200px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      position: relative;
+      .ul {
+        a {
+          display: block;
+        }
+        .dl {
+          margin: 20px 0 0;
+          .dt {
+            margin: 0 0 10px;
+            font-size: 22px;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 15px);
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 200px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secWrap01 {
+      position: relative;
+    }
+    .listBox {
+      position: relative;
+      .ul {
+        a {
+          display: block;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 15px);
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .btnReadMore {
+        position: absolute;
+        top: -20px;
+        right: 50px;
+      }
+    }
+  }
+  .sec03 {
+    padding: 200px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/top_sec03_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secWrap02 {
+      position: relative;
+    }
+    .secBox {
+      position: relative;
+      h3 {
+        margin: 0 0 60px;
+        font-size: 34px;
+        color: #9c8c78;
+      }
+    }
+    .listBox {
+      margin: 60px 0 0;
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 20px);
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .btnReadMore {
+        position: absolute;
+        top: -20px;
+        right: 50px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+.conceptMain {
+  .sec01 {
+    padding: 140px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/concept_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1200px;
+        height: 400px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/concept_sec01_img.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 400px;
+        margin: 0 0 60px;
+        font-size: 34px;
+        color: #ffffff;
+        h3 {
+          line-height: 2;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 140px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/concept_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .reasonContainer {
+      .mvPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 400px;
+        .mvTitle {
+          max-width: 1200px;
+          width: 100%;
+          margin: 0 auto;
+          h3 {
+            position: relative;
+            max-width: 650px;
+            padding: 20px;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            background: #212020;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -20px;
+              width: 50px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -25px;
+              width: 50px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+          }
+        }
+        &.mvPanel01 {
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/concept_sec02_mv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        &.mvPanel02 {
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/concept_sec02_mv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        &.mvPanel03 {
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/concept_sec02_mv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+      .txtPanel {
+        padding: 60px 0 120px;
+        .txt {
+          p + p {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      &:nth-child(even) {
+        .mvPanel {
+          .mvTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            h3 {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	bodyCoating
+///////////////////////////////////////////////////////////*/
+.bodyCoatingMain {
+  .sec01 {
+    padding: 140px 0 200px;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1200px;
+        height: 400px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec01_img_01.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 400px;
+        margin: 0 0 60px;
+        font-size: 34px;
+        color: #ffffff;
+        h3 {
+          line-height: 2;
+        }
+      }
+    }
+    .section {
+      margin: 200px 0 0;
+      .title {
+        position: relative;
+        margin: 0 0 60px;
+        padding: 0 10px;
+        font-size: 34px;
+        color: #ffffff;
+        text-align: center;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 600px;
+          height: 380px;
+          margin: auto;
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/sec_ttl_bg.png)
+            center no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      .listBox {
+        .ul {
+          .li {
+            .box {
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              height: 400px;
+              .ttl {
+                width: 100%;
+                max-width: 650px;
+                p {
+                  position: relative;
+                  max-width: 650px;
+                  padding: 20px;
+                  font-size: 22px;
+                  color: #ffffff;
+                  text-align: center;
+                  background: #212020;
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                    width: 50px;
+                    height: 100%;
+                    transform: skew(-30deg);
+                    background: #212020;
+                  }
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -20px;
+                    width: 50px;
+                    height: 100%;
+                    transform: skew(30deg);
+                    background: #212020;
+                  }
+                }
+              }
+            }
+            .txtBox {
+              padding: 60px 60px 0;
+              .txt {
+                max-width: 650px;
+              }
+            }
+            &:nth-child(1) {
+              .box {
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec01_list_01.png)
+                  center no-repeat;
+                background-size: cover;
+              }
+            }
+            &:nth-child(2) {
+              .box {
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec01_list_02.png)
+                  center no-repeat;
+                background-size: cover;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 2) - 10px);
+              &:nth-child(1) {
+                .box {
+                  align-items: flex-end;
+                }
+                .txtBox {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .before_after_slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .box_before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    border-right: 5px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 0 15px -13px #000;
+  }
+  .box_before img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+  }
+  .box_before::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 10px 0 15px -13px #000;
+  }
+  .slider_range {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: col-resize;
+  }
+  .sec02 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBoxList {
+      margin: 0 0 100px;
+    }
+    .secBox {
+      position: relative;
+      + .secBox {
+        margin: 150px 0 0;
+      }
+      .txtBox {
+        padding: 30px 0 0;
+        h3 {
+          margin: 0 0 20px;
+          font-size: 34px;
+          color: #9c8c78;
+        }
+        .txt {
+          max-width: 520px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+        &:nth-child(odd) {
+          &::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec02_line_01.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec02_line_02.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          .txtBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+          }
+        }
+        &:nth-child(1) {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/bodyCoating_sec03_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      position: relative;
+      margin: 0 0 80px;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          a {
+            display: block;
+            .photo {
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                z-index: 1;
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec04_frame.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+            .ttl {
+              margin: 20px 0 0;
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          margin: 0 0 0 -30px;
+          .webgene-item {
+            width: calc((100% / 3) - 30px);
+            margin: 0 0 0 30px;
+            .photo {
+              position: relative;
+              height: 320px;
+              img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+.priceMain {
+  .sec01 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/price_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .pricePanelList {
+    padding: 0 0 200px;
+  }
+  .pricePanel {
+    + .pricePanel {
+      margin: 80px 0 0;
+    }
+    h3 {
+      margin: 0 0 20px;
+      font-size: 24px;
+    }
+    .priceTable {
+      .table {
+        .tr {
+          display: table;
+          width: 100%;
+          > * {
+            display: table-cell;
+            padding: 15px 20px;
+            &:nth-child(1) {
+              width: 30%;
+            }
+            &:nth-child(3) {
+              width: 30%;
+            }
+          }
+        }
+        .thead {
+          border-bottom: 2px solid #928c85;
+        }
+        .tbody {
+          .tr {
+            border-bottom: 1px solid #423e3a;
+          }
+        }
+        + .txt {
+          margin: 10px 0 0;
+          color: #636363;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .cautionContainer {
+    .mvPanel {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 400px;
+      .mvTitle {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        h3 {
+          position: relative;
+          max-width: 650px;
+          padding: 20px;
+          font-size: 30px;
+          color: #ffffff;
+          text-align: center;
+          background: #1c1616;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            width: 50px;
+            height: 100%;
+            transform: skew(-30deg);
+            background: #1c1616;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -25px;
+            width: 50px;
+            height: 100%;
+            transform: skew(-30deg);
+            background: #1c1616;
+          }
+        }
+      }
+      &.mvPanel01 {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/price_sec01_mv.png)
+          center no-repeat;
+        background-size: cover;
+      }
+    }
+    .txtPanel {
+      padding: 60px 0 120px;
+      h4 {
+        margin: 0 0 20px;
+        font-size: 30px;
+        color: #9c8c78;
+      }
+      .txt {
+        p + p {
+          margin: 40px 0 0;
+        }
+      }
+      .em {
+        margin: 60px 0 0;
+        font-size: 24px;
+      }
+    }
+    &:nth-child(even) {
+      .mvPanel {
+        .mvTitle {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          h3 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	security
+///////////////////////////////////////////////////////////*/
+.securityMain {
+  .sec01 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1200px;
+        height: 400px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec01_img.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        max-width: 1000px;
+        min-height: 400px;
+        margin: 0 auto 60px;
+        font-size: 34px;
+        color: #ffffff;
+        h2 {
+          line-height: 2;
+        }
+      }
+    }
+    .bnrBox {
+      margin: 100px 0 0;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 330px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec01_bnr.png)
+          center no-repeat;
+        background-size: cover;
+        .dl {
+          width: 100%;
+          padding: 30px 10px;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.7);
+          .dt {
+            margin: 0 0 10px;
+            font-size: 34px;
+            color: #b19e85;
+            p {
+              display: inline-block;
+              padding: 0 100px;
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/btn_reabmore_arrow.png)
+                right center no-repeat;
+              background-size: 50px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 1400px;
+        height: 400px;
+      }
+      .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 400px;
+        margin: 0 auto 60px;
+        font-size: 34px;
+        color: #ffffff;
+        h3 {
+          line-height: 2;
+        }
+      }
+      .txt {
+        p + p {
+          margin: 40px 0 0;
+        }
+      }
+      &:nth-child(odd) {
+        &::before {
+          left: 0;
+        }
+        .title {
+          align-items: flex-end;
+        }
+      }
+      &:nth-child(even) {
+        &::before {
+          right: 0;
+        }
+      }
+    }
+    .secBox01 {
+      &::before {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec02_img_01.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+    }
+    .secBox02 {
+      &::before {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec02_img_02.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+    }
+    .secBox03 {
+      &::before {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec02_img_03.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .sec03 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec03_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBoxList {
+      margin: 0 0 100px;
+    }
+    .secBox {
+      position: relative;
+      + .secBox {
+        margin: 150px 0 0;
+      }
+      .txtBox {
+        padding: 30px 0 0;
+        h3 {
+          margin: 0 0 20px;
+          font-size: 34px;
+          color: #9c8c78;
+        }
+        .txt {
+          max-width: 520px;
+          .card {
+            p {
+              display: inline;
+            }
+            .span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+        &:nth-child(odd) {
+          &::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec03_line_01.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec03_line_02.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          .txtBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+          }
+        }
+        &:nth-child(1) {
+          &::before {
+            display: none;
+          }
+        }
+        &.center {
+          align-items: center;
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec04_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      position: relative;
+      margin: 0 0 80px;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          a {
+            display: block;
+            .photo {
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                z-index: 1;
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec04_frame.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+            .ttl {
+              margin: 20px 0 0;
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          margin: 0 0 0 -30px;
+          .webgene-item {
+            width: calc((100% / 3) - 30px);
+            margin: 0 0 0 30px;
+            .photo {
+              position: relative;
+              height: 320px;
+              img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	makerSecurity
+///////////////////////////////////////////////////////////*/
+.makerSecurityMain {
+  .sec01 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerSecurity_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      .ul {
+        .li {
+          position: relative;
+          min-height: 250px;
+          padding: 40px 20px 20px;
+          background: rgba(0, 0, 0, 0.8);
+          &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            margin: auto;
+            z-index: 1;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerSecurity_sec01_frame.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          .dl {
+            height: 100%;
+            .dt {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              min-height: 60px;
+              margin: 0 0 15px;
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          .li {
+            width: calc((100% / 4) - 30px);
+            margin: 30px 0 0 30px;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0 200px;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerSecurity_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .brandList {
+      position: relative;
+      margin: 0 0 100px;
+      .ul {
+        .li {
+          a {
+            display: block;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerSecurity_brand_list_bg.png)
+              no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -10px 0 0 -10px;
+          .li {
+            width: calc((100% / 6) - 10px);
+            margin: 10px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .productContainer {
+    + .productContainer {
+      margin: 200px 0 0;
+    }
+    .productPanel {
+      + * {
+        margin: 100px 0 0;
+      }
+      h3 {
+        margin: 0 0 30px;
+        font-size: 30px;
+        color: #9c8c78;
+      }
+      .secBox {
+        .photoBox {
+          .dl {
+            margin: 15px 0 0;
+            color: #9c8c78;
+            .dt {
+              margin: 0 0 10px;
+            }
+            .dd {
+              font-size: 10px;
+              .ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -4px 0 0 -4px;
+                .li {
+                  width: calc((100% / 4) - 4px);
+                  margin: 4px 0 0 4px;
+                  padding: 2px 1px;
+                  text-align: center;
+                  border: 1px solid #b19e85;
+                }
+              }
+            }
+          }
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          h4 {
+            margin: 0 0 20px;
+            font-size: 26px;
+            color: #ffffff;
+          }
+          .txt {
+            + .txt {
+              margin: 40px 0 0;
+            }
+            &.right {
+              text-align: right;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photoBox {
+            width: 46%;
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .listPanel {
+      .itemList {
+        .itemBox {
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 26px;
+            color: #9c8c78;
+            text-align: center;
+          }
+          .img {
+            margin: 0 0 10px;
+          }
+          .txt {
+            .span {
+              margin: 20px 0 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .itemList {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -120px;
+          .itemBox {
+            width: calc((100% / 2) - 120px);
+            margin: 60px 0 0 120px;
+          }
+        }
+      }
+    }
+    .optionPanel {
+      margin: 60px 0 0;
+      .title {
+        margin: 0 0 30px;
+        font-size: 26px;
+        color: #9c8c78;
+        text-align: center;
+      }
+      .optionTable {
+        .table {
+          border: 1px solid #928c85;
+          background: #110d0d;
+          .tr {
+            display: table;
+            width: 100%;
+            > * {
+              display: table-cell;
+              padding: 10px 20px;
+              width: 25%;
+              &:nth-child(2) {
+                width: 50%;
+                border-left: 1px solid #423e3a;
+                border-right: 1px solid #423e3a;
+              }
+            }
+          }
+          .thead {
+            text-align: center;
+            border-bottom: 1px solid #928c85;
+          }
+          .tbody {
+            .tr {
+              + .tr {
+                border-top: 1px solid #423e3a;
+              }
+            }
+            .td {
+              &:nth-child(2) {
+                text-align: center;
+              }
+              &:nth-child(3) {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnArea {
+      padding: 40px 0 0;
+      text-align: right;
+      .btnReadMore {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	driveRecorder
+///////////////////////////////////////////////////////////*/
+.driveRecorderMain {
+  .sec01 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/driveRecorder_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1200px;
+        height: 400px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/driveRecorder_sec01_img.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        max-width: 1000px;
+        min-height: 400px;
+        margin: 0 auto 60px;
+        font-size: 34px;
+        color: #ffffff;
+        h2 {
+          line-height: 2;
+        }
+      }
+    }
+    .bnrBox {
+      margin: 80px 0 0;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 330px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/driveRecorder_sec01_bnr.png)
+          center no-repeat;
+        background-size: cover;
+        .dl {
+          width: 100%;
+          padding: 30px 10px;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.7);
+          .dt {
+            margin: 0 0 10px;
+            font-size: 34px;
+            color: #b19e85;
+            p {
+              display: inline-block;
+              padding: 0 100px;
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/btn_reabmore_arrow.png)
+                right center no-repeat;
+              background-size: 50px auto;
+            }
+          }
+        }
+      }
+    }
+    .requestBox {
+      margin: 60px 0 0;
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid #45403a;
+      .dl {
+        .dt {
+          margin: 0 0 20px;
+          font-size: 30px;
+          color: #b19e85;
+        }
+        .dd {
+          max-width: 800px;
+          margin: 0 auto;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/driveRecorder_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .section01 {
+      margin: 0 0 80px;
+      h3 {
+        margin: 0 0 20px;
+        font-size: 34px;
+        color: #9c8c78;
+      }
+      .listBox {
+        .ul {
+          .dl {
+            .dt {
+              padding: 15px;
+              font-size: 26px;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 4) - 10px);
+            }
+          }
+        }
+      }
+    }
+    .section02 {
+      margin: 0 0 120px;
+      h3 {
+        margin: 0 0 20px;
+        font-size: 34px;
+        color: #9c8c78;
+      }
+      .recordList {
+        .record {
+          padding: 20px 60px;
+          border-top: 1px solid #c7c7c7;
+          border-bottom: 1px solid #c7c7c7;
+          + .record {
+            margin: 30px 0 0;
+          }
+          .dl {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 64px;
+            .dt {
+              width: 30%;
+              font-size: 26px;
+              color: #ffffff;
+            }
+            .dd {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+    .section03 {
+      .secBox {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1200px;
+          height: 400px;
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/driveRecorder_sec02_mv.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+        .title {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          max-width: 1000px;
+          min-height: 400px;
+          margin: 0 auto 60px;
+          font-size: 34px;
+          color: #ffffff;
+          h3 {
+            line-height: 2;
+          }
+        }
+        .txt {
+          p + p {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .listBox {
+        margin: 30px 0 60px;
+        .list {
+          margin: 0 0 30px;
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: 48%;
+            }
+          }
+        }
+        .txt {
+          max-width: 450px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/driveRecorder_sec03_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      position: relative;
+      margin: 0 0 80px;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          a {
+            display: block;
+            .photo {
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                z-index: 1;
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec04_frame.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+            .ttl {
+              margin: 20px 0 0;
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          margin: 0 0 0 -30px;
+          .webgene-item {
+            width: calc((100% / 3) - 30px);
+            margin: 0 0 0 30px;
+            .photo {
+              position: relative;
+              height: 320px;
+              img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	makerDriveRecorder
+///////////////////////////////////////////////////////////*/
+.makerDriveRecorderMain {
+  .sec01 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerDriveRecorder_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      .ul {
+        .li {
+          position: relative;
+          min-height: 125px;
+          padding: 20px;
+          background: rgba(0, 0, 0, 0.8);
+          &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            margin: auto;
+            z-index: 1;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerDriveRecorder_sec01_frame.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          .li {
+            width: calc((100% / 4) - 30px);
+            margin: 30px 0 0 30px;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0 200px;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerDriveRecorder_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .brandList {
+      position: relative;
+      margin: 0 0 100px;
+      .ul {
+        .li {
+          a {
+            display: block;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://leroy-carprotect.jp/system_panel/uploads/images/makerDriveRecorder_brand_list_bg.png)
+              no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: -10px 0 0 -10px;
+          .li {
+            width: calc((100% / 6) - 10px);
+            margin: 10px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .productContainer {
+    + .productContainer {
+      margin: 200px 0 0;
+    }
+    .productPanel {
+      + * {
+        margin: 100px 0 0;
+      }
+      h3 {
+        margin: 0 0 30px;
+        font-size: 30px;
+        color: #9c8c78;
+      }
+      .secBox {
+        .photoBox {
+          .dl {
+            margin: 15px 0 0;
+            color: #9c8c78;
+            .dt {
+              margin: 0 0 10px;
+            }
+            .dd {
+              font-size: 10px;
+              .ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -4px 0 0 -4px;
+                .li {
+                  width: calc((100% / 4) - 4px);
+                  margin: 4px 0 0 4px;
+                  padding: 2px 1px;
+                  text-align: center;
+                  border: 1px solid #b19e85;
+                }
+              }
+            }
+          }
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          h4 {
+            margin: 0 0 20px;
+            font-size: 26px;
+            color: #ffffff;
+          }
+          .txt {
+            + .txt {
+              margin: 40px 0 0;
+            }
+            &.right {
+              text-align: right;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photoBox {
+            width: 46%;
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .listPanel {
+      .itemList {
+        .itemBox {
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 26px;
+            color: #9c8c78;
+            text-align: center;
+          }
+          .img {
+            margin: 0 0 10px;
+          }
+          .txt {
+            .span {
+              margin: 20px 0 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .itemList {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -120px;
+          .itemBox {
+            width: calc((100% / 2) - 120px);
+            margin: 60px 0 0 120px;
+          }
+        }
+      }
+    }
+    .optionPanel {
+      margin: 60px 0 0;
+      .title {
+        margin: 0 0 30px;
+        font-size: 26px;
+        color: #9c8c78;
+        text-align: center;
+      }
+      .optionTable {
+        .table {
+          border: 1px solid #928c85;
+          background: #110d0d;
+          .tr {
+            display: table;
+            width: 100%;
+            > * {
+              display: table-cell;
+              padding: 10px 20px;
+              width: 25%;
+              &:nth-child(2) {
+                width: 50%;
+                border-left: 1px solid #423e3a;
+                border-right: 1px solid #423e3a;
+              }
+            }
+          }
+          .thead {
+            text-align: center;
+            border-bottom: 1px solid #928c85;
+          }
+          .tbody {
+            .tr {
+              + .tr {
+                border-top: 1px solid #423e3a;
+              }
+            }
+            .td {
+              &:nth-child(2) {
+                text-align: center;
+              }
+              &:nth-child(3) {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	interiorCoating
+///////////////////////////////////////////////////////////*/
+.interiorCoatingMain {
+  .sec01 {
+    padding: 140px 0 200px;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1200px;
+        height: 400px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec01_img.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 400px;
+        margin: 0 0 60px;
+        font-size: 34px;
+        color: #ffffff;
+        h2 {
+          line-height: 2;
+        }
+      }
+      h3 {
+        margin: 0 0 20px;
+        font-size: 34px;
+        color: #ffffff;
+      }
+      .txt {
+        p + p {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    .requestBox {
+      margin: 60px 0 0;
+      padding: 30px 20px;
+      text-align: center;
+      background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec01_recommend.png)
+        no-repeat;
+      background-size: cover;
+      .dl {
+        .dt {
+          margin: 0 0 20px;
+          font-size: 30px;
+          color: #b19e85;
+        }
+        .dd {
+          max-width: 850px;
+          margin: 0 auto;
+          text-align: left;
+          .txtList {
+            display: flex;
+            justify-content: space-between;
+            .txt {
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section {
+    padding: 120px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec02_bg.png);
+    .secTtl {
+      position: relative;
+      margin: 0 0 60px;
+      padding: 0 10px;
+      font-size: 34px;
+      color: #ffffff;
+      text-align: center;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 600px;
+        height: 380px;
+        margin: auto;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/sec_ttl_bg.png)
+          center no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .sec02 {
+    .listContainer {
+      margin: 0 0 100px;
+      .listBox {
+        + .listBox {
+          margin: 100px 0 0;
+        }
+        .ul {
+          .li {
+            .box {
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              height: 400px;
+              .ttl {
+                width: 100%;
+                max-width: 650px;
+                p {
+                  position: relative;
+                  max-width: 650px;
+                  padding: 20px;
+                  font-size: 22px;
+                  color: #ffffff;
+                  text-align: center;
+                  background: #342828;
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                    width: 50px;
+                    height: 100%;
+                    transform: skew(-30deg);
+                    background: #342828;
+                  }
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -20px;
+                    width: 50px;
+                    height: 100%;
+                    transform: skew(30deg);
+                    background: #342828;
+                  }
+                }
+              }
+            }
+            .txtBox {
+              padding: 40px 40px 0;
+              .txt {
+                max-width: 560px;
+              }
+            }
+            .box01 {
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec02_list_01.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .box02 {
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec02_list_02.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .box03 {
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec02_list_03.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .box04 {
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec02_list_04.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .box05 {
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec02_list_05.png)
+                center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 2) - 10px);
+              &:nth-child(1) {
+                .box {
+                  align-items: flex-end;
+                }
+                .txtBox {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                }
+              }
+            }
+          }
+        }
+      }
+      .introBox {
+        max-width: 600px;
+        padding: 40px 30px;
+        border: 1px solid #45403a;
+        .dl {
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            margin: 0 0 15px;
+            font-size: 22px;
+            color: #9c8c78;
+          }
+        }
+      }
+    }
+    .typeContainer {
+      margin: 0 0 100px;
+      .typePanel {
+        padding: 60px 30px;
+        border: 1px solid #45403a;
+        .ttl {
+          margin: 0 0 60px;
+          font-size: 30px;
+          color: #9c8c78;
+          text-align: center;
+        }
+      }
+      .typeList {
+        .dl {
+          .dt {
+            padding: 0 15px 5px;
+            font-size: 24px;
+            border-bottom: 1px solid #423e3a;
+          }
+          .dd {
+            padding: 15px;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -50px 0 0 -30px;
+            .li {
+              width: calc((100% / 3) - 30px);
+              margin: 50px 0 0 30px;
+            }
+          }
+        }
+      }
+    }
+    .bnrBox {
+      margin: 80px 0 0;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 330px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec02_bnr.png)
+          center no-repeat;
+        background-size: cover;
+        .dl {
+          width: 100%;
+          padding: 30px 10px;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.7);
+          .dt {
+            margin: 0 0 10px;
+            font-size: 34px;
+            color: #b19e85;
+            p {
+              display: inline-block;
+              padding: 0 100px;
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/btn_reabmore_arrow.png)
+                right center no-repeat;
+              background-size: 50px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    .topTxt {
+      margin: 0 0 60px;
+      font-size: 22px;
+      text-align: center;
+    }
+    .videoList {
+      text-align: center;
+      .ul {
+        p {
+          margin: 0 0 20px;
+          text-align: center;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    .topTxt {
+      margin: 0 0 60px;
+      font-size: 22px;
+      text-align: center;
+    }
+    .img {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  .sec05 {
+    .secPanel {
+      .photo {
+        + .photo {
+          margin: 25px 0;
+        }
+      }
+      .txtBox {
+        margin: 25px 0 0;
+        padding: 30px;
+        border: 1px solid #45403a;
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 22px;
+            color: #9c8c78;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        > * {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .sec06 {
+    .img {
+      margin: 0 0 40px;
+    }
+    .txtBox {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 40px;
+      border: 1px solid #45403a;
+      background: #181212;
+    }
+  }
+  .sec07 {
+    padding: 150px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/interiorCoating_sec07_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      position: relative;
+      margin: 0 0 80px;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          a {
+            display: block;
+            .photo {
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                z-index: 1;
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/security_sec04_frame.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+            .ttl {
+              margin: 20px 0 0;
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          margin: 0 0 0 -30px;
+          .webgene-item {
+            width: calc((100% / 3) - 30px);
+            margin: 0 0 0 30px;
+            .photo {
+              position: relative;
+              height: 320px;
+              img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	priceInteriorCoating
+///////////////////////////////////////////////////////////*/
+.priceInteriorCoatingMain {
+  .sec01 {
+    .topContainer {
+      padding: 100px 0 30px;
+      background: url(https://leroy-carprotect.jp/system_panel/uploads/images/priceInteriorCoating_sec01_top_bg.png)
+        no-repeat;
+      background-size: cover;
+      .topTxt {
+        margin: 0 0 40px;
+        text-align: center;
+      }
+      .classList {
+        .ul {
+          .li {
+            a {
+              display: block;
+              min-height: 100px;
+              padding: 20px 20px 10px;
+              text-align: center;
+              background: url(https://leroy-carprotect.jp/system_panel/uploads/images/priceInteriorCoating_sec01_top_list_bg.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+            .dl {
+              .dt {
+                margin: 0 0 5px;
+                font-size: 18px;
+                color: #ffffff;
+              }
+              .dd {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 45px;
+                font-size: 14px;
+                color: #c5c5c5;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 4) - 10px);
+            }
+          }
+        }
+      }
+    }
+    .priceContainer {
+      padding: 100px 0;
+      &:nth-child(odd) {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/priceInteriorCoating_sec01_cnt_bg_01.png)
+          no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(even) {
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/priceInteriorCoating_sec01_cnt_bg_02.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .secTtl {
+        margin: 0 0 30px;
+        font-size: 24px;
+      }
+    }
+    .pricePanel {
+      + .pricePanel {
+        margin: 100px 0 0;
+      }
+      .pTitle {
+        margin: 0 0 20px;
+        font-size: 22px;
+        color: #9c8c78;
+      }
+    }
+    .priceTable {
+      .table {
+        font-size: 13px;
+        .tr {
+          display: table;
+          width: 100%;
+          > * {
+            display: table-cell;
+            padding: 15px 10px;
+            width: 20%;
+            vertical-align: middle;
+          }
+        }
+        .thead {
+          text-align: center;
+          border-bottom: 2px solid #928c85;
+          p {
+            display: inline-block;
+            text-align: left;
+          }
+        }
+        .tbody {
+          .tr {
+            min-height: 60px;
+            border-bottom: 1px solid #423e3a;
+          }
+          .td {
+            text-align: center;
+          }
+          .em {
+            font-size: 14px;
+            + * {
+              margin: 5px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .txtBox {
+      margin: 40px 0 0;
+      padding: 30px 50px;
+      border: 1px solid #423e3a;
+    }
+  }
+  .sec02 {
+    padding: 140px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/priceInteriorCoating_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .txt {
+      margin: 0 0 40px;
+    }
+    .list {
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 15px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	access
+///////////////////////////////////////////////////////////*/
+.accessMain {
+  .sec01 {
+    padding: 140px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/access_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1200px;
+        height: 400px;
+        background: url(https://leroy-carprotect.jp/system_panel/uploads/images/access_sec01_top_img.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        max-width: 1000px;
+        min-height: 400px;
+        margin: 0 0 60px;
+        font-size: 34px;
+        color: #ffffff;
+        h3 {
+          line-height: 2;
+        }
+      }
+      .dl {
+        .dt {
+          margin: 0 0 20px;
+          font-size: 30px;
+          color: #9c8c78;
+        }
+        + .dl {
+          margin: 40px 0 0;
+          padding: 40px 0 0;
+          border-top: 1px solid #423e3a;
+        }
+      }
+    }
+    .accessContainerList {
+      padding: 100px 0 0;
+    }
+    .accessContainer {
+      .mvPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 400px;
+        .mvTitle {
+          max-width: 1200px;
+          width: 100%;
+          margin: 0 auto;
+          h3 {
+            position: relative;
+            max-width: 650px;
+            padding: 20px;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            background: #212020;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -20px;
+              width: 50px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -25px;
+              width: 50px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+          }
+        }
+        &.mvPanel01 {
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/access_sec01_mv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        &.mvPanel02 {
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/access_sec01_mv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        &.mvPanel03 {
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/access_sec01_mv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+      .txtPanel {
+        padding: 60px 0 120px;
+        .txt {
+          p + p {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .parking {
+        margin: 60px 0 80px;
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: 48%;
+          }
+        }
+      }
+      .rentalPanel {
+        margin: 100px 0 0;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 20px;
+          color: #9c8c78;
+        }
+      }
+      .rentalTable {
+        .table {
+          .tr {
+            display: table;
+            width: 100%;
+            > * {
+              display: table-cell;
+              padding: 15px 20px;
+              &:nth-child(1) {
+                width: 30%;
+              }
+            }
+          }
+          .thead {
+            border-bottom: 2px solid #928c85;
+          }
+          .tbody {
+            .tr {
+              border-bottom: 1px solid #423e3a;
+            }
+          }
+          + .txt {
+            margin: 10px 0 0;
+            color: #636363;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shop
+///////////////////////////////////////////////////////////*/
+.shopMain {
+  .sec01 {
+    padding: 140px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/shop_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topContainer {
+      margin: 0 0 120px;
+      .mv {
+        margin: 0 0 60px;
+      }
+      .infoBox {
+        .dl {
+          display: flex;
+          padding: 20px 100px;
+          line-height: 2;
+          border-bottom: 1px solid #423e3a;
+          .dt {
+            width: 240px;
+          }
+        }
+      }
+    }
+    .shopContainer {
+      .mvPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 400px;
+        .mvTitle {
+          max-width: 1200px;
+          width: 100%;
+          margin: 0 auto;
+          h3 {
+            position: relative;
+            max-width: 650px;
+            padding: 20px;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            background: #212020;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -20px;
+              width: 50px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -25px;
+              width: 50px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+          }
+        }
+        &.mvPanel01 {
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/shop_sec01_img_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+      .txtPanel {
+        padding: 60px 0 0;
+        .txt {
+          p + p {
+            margin: 40px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .sec01 {
+    padding: 140px 0;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/contact_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 60px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #45403a;
+    background: #201f1f;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #45403a;
+    background: #201f1f;
+    resize: none;
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+
+  .contactForm button[type="submit"] {
+    position: relative;
+    display: block;
+    max-width: 380px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 20px 10px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: #0c0a0a;
+    transition: 0.6s;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -20px;
+      bottom: 0;
+      width: 50px;
+      height: 4px;
+      margin: auto 0;
+      background: url(https://leroy-carprotect.jp/system_panel/uploads/images/btn_reabmore_arrow.png)
+        no-repeat;
+      background-size: 50px auto;
+      transition: 0.6s;
+    }
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  @media (min-width: 1025px) {
+    .contactForm button:hover {
+      opacity: 0.6;
+      &:after {
+        right: -30px;
+      }
+    }
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        margin: -10px 0 0;
+        .li {
+          display: inline-block;
+          margin: 10px 20px 0 0;
+        }
+      }
+    }
+    .checkList02 {
+      margin: 20px 0;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0 20px;
+          }
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 35px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+        border: 1px solid #45403a;
+        background: #252424;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+    .radioList {
+      padding: 5px 0;
+      .list {
+        + .list {
+          margin: 20px 0 0;
+        }
+      }
+      + input {
+        margin: 10px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .radioList {
+        display: flex;
+        flex-wrap: wrap;
+        .list {
+          + .list {
+            margin: 0 0 0 30px;
+          }
+        }
+      }
+    }
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #d7d7d7;
+        background: #fcfcfc;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #32a44a;
+      }
+    }
+    .postal {
+      margin: 0 0 10px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .postalAddress {
+      display: flex;
+      align-items: center;
+      + .postalAddress {
+        margin: 10px 0 0;
+      }
+      .postalTxt {
+        width: 90px;
+      }
+    }
+    .ageInput {
+      + .ageInput {
+        margin: 10px 0 0;
+      }
+      input {
+        width: 100px;
+      }
+      .ageTxt {
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 2;
+      }
+    }
+  }
+  .contactForm {
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid #423e3a;
+        &.line {
+          align-items: initial;
+        }
+        > .dt {
+          width: 340px;
+          padding: 15px 10px 10px;
+          .span {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+          }
+          .em {
+            display: inline-block;
+            padding: 2px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #4d3009;
+          }
+        }
+
+        > .dd {
+          position: relative;
+          width: calc(100% - 360px);
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+          width: 60px;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border: 1px solid #45403a;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .aside {
+        padding: 10px 0;
+        // p {
+        //   padding-left: 1em;
+        //   text-indent: -1em;
+        // }
+      }
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+        + .fileBox {
+          margin: 20px 0 0;
+        }
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+        .inputFile {
+          position: relative;
+          width: 40%;
+          font-size: 16px;
+          color: #404142;
+          text-align: center;
+          border: 1px solid #c4dcc9;
+          background: #f0f9f2;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 40px 10px;
+          }
+        }
+
+        > p {
+          width: 58%;
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 40px 0 100px;
+  background: url(https://leroy-carprotect.jp/system_panel/uploads/images/contact_sec01_bg.png)
+    no-repeat;
+  background-size: cover;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+  .btnMore {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	gallery
+///////////////////////////////////////////////////////////*/
+.galleryMain {
+  .galleryMainContainer {
+    padding: 80px 0 160px;
+    background: url(https://leroy-carprotect.jp/system_panel/uploads/images/gallery_main_bg.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .catePanel {
+    margin: 0 0 80px;
+    .webgene-blog {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px 0 0 -10px;
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        width: calc((100% / 4) - 10px);
+        margin: 10px 0 0 10px;
+        a {
+          display: block;
+          padding: 10px;
+          text-align: center;
+          background: url(https://leroy-carprotect.jp/system_panel/uploads/images/gallery_cate_bg.png)
+            center top no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+  .listPanel {
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        a {
+          display: block;
+        }
+        .infoBox {
+          margin: 10px 0;
+          .cate {
+            display: inline-block;
+            min-width: 130px;
+            font-size: 10px;
+            padding: 2px 20px;
+            color: #948a7c;
+            text-align: center;
+            border: 1px solid #b19e85;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -50px 0 0 -30px;
+        .webgene-item {
+          width: calc((100% / 3) - 30px);
+          margin: 50px 0 0 30px;
+          .img {
+            position: relative;
+            height: 300px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+  .webgene-pagination {
+    overflow: hidden;
+    width: 100%;
+    margin: 100px auto 0;
+    font-size: 14px;
+    ul {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin: 0 2px;
+        a {
+          display: block;
+          width: 45px;
+          line-height: 45px;
+          text-align: center;
+          background: #110d0d;
+        }
+      }
+      .prev {
+        margin: 0 2px 0 0;
+      }
+      .next {
+        position: relative;
+        margin: 0 0 0 2px;
+      }
+      .selected {
+        a {
+          color: #000000;
+          background: #b19e85;
+        }
+      }
+      @media (min-width: 1025px) {
+        li {
+          margin: 0 10px;
+        }
+        .prev {
+          float: left;
+        }
+        .next {
+          float: right;
+        }
+      }
+    }
+  }
+  .postDetail {
+    margin: 0 0 100px;
+    .webgene-header {
+      display: none;
+    }
+    .webgene-item-info {
+      margin: 0 0 20px;
+      padding: 0 0 5px;
+    }
+    .infoBox {
+      margin: 0 0 20px;
+      .cate {
+        display: inline-block;
+        min-width: 130px;
+        font-size: 10px;
+        padding: 2px 20px;
+        color: #948a7c;
+        text-align: center;
+        border: 1px solid #b19e85;
+      }
+    }
+    .title {
+      font-size: 26px;
+      line-height: 1.3;
+    }
+    .slickSlide {
+      margin: 0 0 40px;
+      .slider {
+        .li {
+          > div {
+            overflow: hidden;
+            position: relative;
+            padding: 0 0 60%;
+          }
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .slick-list {
+      margin: 0 0 10px;
+    }
+    .thumb-item {
+      margin: 0 auto 10px;
+    }
+    .slick-slide {
+      margin: 0 10px;
+    }
+    .slideNav {
+      .slick-slide {
+        margin: 0 5px;
+      }
+      .slick-prev,
+      .slick-next {
+        display: none !important;
+      }
+    }
+    .postBox {
+      .photo {
+        margin-bottom: 20px;
+
+        img {
+          width: auto;
+          max-width: 100%;
+        }
+      }
+      .postTxt {
+        line-height: 2;
+
+        p + p {
+          margin: 30px 0 0;
+        }
+
+        img {
+          max-width: 100%;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+    .youtubeBox {
+      margin: 40px 0 0;
+    }
+    .pdfArea {
+      margin: 40px 0 0;
+    }
+    @media (min-width: 1025px) {
+      .slick-prev {
+        left: -60px;
+      }
+      .slick-next {
+        right: -60px;
+      }
+    }
+  }
+}

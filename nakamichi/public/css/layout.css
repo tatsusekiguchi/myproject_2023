@@ -1,0 +1,1727 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  position: relative;
+  margin: 0 0 200px;
+}
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 900px;
+  padding: 0 20px;
+}
+.topMain .topKvPanel .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvPanel .topKv .kvBox .kv01 {
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv02 {
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv03 {
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvContents {
+  position: relative;
+  bottom: -100px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.topMain .topKvPanel .kvContents h1 {
+  margin: 0 0 20px;
+  font-size: 60px;
+  line-height: 1.2;
+}
+.topMain .topKvPanel .kvContents .txtLabel {
+  margin: 0 0 60px;
+  padding: 10px 30px;
+  font-size: 0;
+  background: #142c84;
+}
+.topMain .topKvPanel .kvContents .txtLabel p {
+  display: inline;
+  font-size: 26px;
+}
+.topMain .topKvPanel .kvContents .txtLabel .em {
+  color: #f1ff50;
+}
+.topMain .topKvPanel .kvContents .kvLink {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.topMain .topKvPanel .kvContents .kvLink .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.topMain .topKvPanel .kvContents .kvLink .ul .li {
+  width: calc(50% - 20px);
+}
+.topMain .topKvPanel .kvContents .kvLink .ul .li a {
+  display: block;
+  padding: 30px 10px;
+  color: #ffffff;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_kv_menu_bg.png);
+}
+.topMain .topKvPanel .kvContents .kvLink .ul .li .dl {
+  margin: 20px 0 0;
+}
+.topMain .topKvPanel .kvContents .kvLink .ul .li .dl .dt {
+  color: #9ea7c7;
+}
+.topMain .topKvPanel .kvContents .kvLink .ul .li .dl .dd {
+  font-size: 24px;
+}
+.topMain .sec01 {
+  border-top: 10px solid #c41823;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 900px;
+  padding: 60px 0;
+  color: #ffffff;
+}
+.topMain .sec01 .secBox {
+  font-weight: bold;
+}
+.topMain .sec01 .secBox .ttlBox .ttl p {
+  font-size: 40px;
+}
+.topMain .sec01 .secBox .txtBox h3 {
+  margin: 0 0 40px;
+  font-size: 40px;
+}
+.topMain .sec01 .secBox .txtBox .btnMoreBox {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec01 .secBox .ttlBox {
+    width: 250px;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    width: 52%;
+  }
+}
+.topMain .sec02 {
+  padding: 200px 0;
+}
+.topMain .sec02 .secWrap01 {
+  position: relative;
+}
+.topMain .sec02 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec02 .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec02 .webgene-blog .webgene-item a p {
+  margin: 10px 0 0;
+  font-weight: bold;
+  color: #111937;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -20px;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item {
+    width: calc(25% - 20px);
+    margin: 0 0 0 20px;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec02 .btnMoreBox {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+.conceptMain .sec01 {
+  border-top: 10px solid #c41823;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.conceptMain .sec01 .secPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 900px;
+  padding: 60px 0;
+  color: #ffffff;
+}
+.conceptMain .sec01 .secBox {
+  font-weight: bold;
+}
+.conceptMain .sec01 .secBox .ttlBox .ttl p {
+  font-size: 40px;
+}
+.conceptMain .sec01 .secBox .txtBox h3 {
+  margin: 0 0 40px;
+  font-size: 40px;
+}
+@media (min-width: 1025px) {
+  .conceptMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .conceptMain .sec01 .secBox .ttlBox {
+    width: 250px;
+  }
+  .conceptMain .sec01 .secBox .txtBox {
+    width: 52%;
+  }
+}
+.conceptMain .sec02 {
+  padding: 150px 0;
+}
+.conceptMain .sec02 .topTtl {
+  margin: 0 0 60px;
+  font-size: 0;
+  text-align: center;
+}
+.conceptMain .sec02 .topTtl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.conceptMain .sec02 .topTtl .em {
+  color: #c41823;
+}
+.conceptMain .sec02 .secBox {
+  font-weight: bold;
+}
+.conceptMain .sec02 .secBox .photoBox .dl {
+  margin: 20px 0 0;
+  text-align: center;
+}
+.conceptMain .sec02 .secBox .photoBox .dl .dt {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.conceptMain .sec02 .secBox .photoBox .dl .dd {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+}
+.conceptMain .sec02 .secBox .photoBox .dl .dd p {
+  display: inline;
+  font-size: 30px;
+}
+.conceptMain .sec02 .secBox .photoBox .dl .dd .em {
+  color: #c41823;
+}
+.conceptMain .sec02 .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .conceptMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .conceptMain .sec02 .secBox .photoBox {
+    position: relative;
+    top: -70px;
+    width: 40%;
+  }
+  .conceptMain .sec02 .secBox .txtBox {
+    width: 53%;
+  }
+}
+.conceptMain .sec02 .historyPanel {
+  margin: 80px 0 0;
+}
+.conceptMain .sec02 .historyPanel .ttl {
+  max-width: 300px;
+  margin: 0 auto 60px;
+}
+.conceptMain .sec02 .historyPanel .historyBox {
+  padding: 0 10px;
+  font-weight: bold;
+  border: 1px solid #000000;
+}
+.conceptMain .sec02 .historyPanel .historyBox .dl {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  line-height: 2;
+}
+.conceptMain .sec02 .historyPanel .historyBox .dl + .dl {
+  border-top: 1px solid #000000;
+}
+.conceptMain .sec02 .historyPanel .historyBox .dl .dt {
+  width: 280px;
+  padding: 10px;
+  text-align: center;
+}
+.conceptMain .sec02 .historyPanel .historyBox .dl .dd {
+  width: calc(100% - 280px);
+  padding: 10px 60px;
+  border-left: 1px solid #000000;
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .sec01 {
+  padding: 120px 0 240px;
+}
+.serviceMain .sec01 .topBox {
+  margin: 0 0 40px;
+}
+.serviceMain .sec01 .topBox .topTtl {
+  font-size: 0;
+  text-align: center;
+}
+.serviceMain .sec01 .topBox .topTtl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.serviceMain .sec01 .topBox .topTtl .em {
+  color: #c41823;
+}
+.serviceMain .sec01 .topTxt {
+  margin: 0 0 100px;
+  font-weight: bold;
+}
+.serviceMain .sec01 .topTxt p + p {
+  margin: 30px 0 0;
+}
+.serviceMain .sec01 .secBox {
+  position: relative;
+  font-weight: bold;
+}
+.serviceMain .sec01 .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.serviceMain .sec01 .secBox .txtBox .num {
+  padding: 0 100px;
+  font-size: 100px;
+  color: #f1f1f0;
+  line-height: 1;
+}
+.serviceMain .sec01 .secBox .txtBox .num p {
+  display: inline-block;
+}
+.serviceMain .sec01 .secBox .txtBox .itemBox {
+  background: #f1f1f0;
+}
+.serviceMain .sec01 .secBox .txtBox .itemBox .inner {
+  position: relative;
+  top: -20px;
+  left: -20px;
+  padding: 40px;
+  background: #ffffff;
+}
+.serviceMain .sec01 .secBox .txtBox .itemBox .dl .dt {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 0 80px;
+  font-size: 0;
+}
+.serviceMain .sec01 .secBox .txtBox .itemBox .dl .dt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #000000;
+}
+.serviceMain .sec01 .secBox .txtBox .itemBox .dl .dt p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.serviceMain .sec01 .secBox .txtBox .itemBox .dl .dt .em {
+  color: #c41823;
+}
+.serviceMain .sec01 .secBox .txtBox .itemBox .dl .dd .btnMoreBox {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .serviceMain .sec01 .secBox .photo {
+    width: 760px;
+  }
+  .serviceMain .sec01 .secBox .txtBox {
+    width: 580px;
+    padding: 0 0 30px;
+  }
+  .serviceMain .sec01 .secBox .txtBox .num {
+    position: relative;
+    top: -5px;
+  }
+  .serviceMain .sec01 .secBox:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .serviceMain .sec01 .secBox:nth-child(odd) .txtBox {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+  }
+  .serviceMain .sec01 .secBox:nth-child(even) .txtBox {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+  }
+  .serviceMain .sec01 .secBox:nth-child(even) .txtBox .num {
+    text-align: right;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	custom
+///////////////////////////////////////////////////////////*/
+.customMain .topContainer {
+  padding: 120px 0;
+}
+.customMain .topContainer .topBox {
+  margin: 0 0 40px;
+}
+.customMain .topContainer .topBox .topTtl {
+  font-size: 0;
+  text-align: center;
+}
+.customMain .topContainer .topBox .topTtl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.customMain .topContainer .topBox .topTtl .em {
+  color: #c41823;
+}
+.customMain .topContainer .topTxt {
+  font-weight: bold;
+}
+.customMain .topContainer .topTxt p + p {
+  margin: 30px 0 0;
+}
+.customMain .caseContainer {
+  padding: 120px 0;
+  background: #f8f8fa;
+}
+.customMain .caseContainer .secTtl {
+  max-width: 360px;
+  margin: 0 auto 60px;
+}
+.customMain .caseContainer .listBox .ul .dl {
+  margin: 15px 0 0;
+  font-weight: bold;
+}
+.customMain .caseContainer .listBox .ul .dl .dt {
+  display: inline-block;
+  min-width: 260px;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 26px;
+  border-bottom: 1px solid #000000;
+}
+.customMain .caseContainer .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .customMain .caseContainer .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -50px 0 0 -40px;
+  }
+  .customMain .caseContainer .listBox .ul .li {
+    width: calc(50% - 40px);
+    margin: 50px 0 0 40px;
+  }
+  .customMain .caseContainer .listBox .ul .photo {
+    position: relative;
+    height: 330px;
+  }
+  .customMain .caseContainer .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.customMain .menuContainer {
+  padding: 100px 0;
+}
+.customMain .menuContainer .menuLink {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.customMain .menuContainer .menuLink .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.customMain .menuContainer .menuLink .ul .li {
+  width: calc(50% - 20px);
+}
+.customMain .menuContainer .menuLink .ul .li a {
+  display: block;
+  padding: 30px 10px;
+  color: #ffffff;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_kv_menu_bg.png);
+}
+.customMain .menuContainer .menuLink .ul .li .dl {
+  margin: 20px 0 0;
+}
+.customMain .menuContainer .menuLink .ul .li .dl .dt {
+  color: #9ea7c7;
+}
+.customMain .menuContainer .menuLink .ul .li .dl .dd {
+  font-size: 24px;
+}
+
+/*////////////////////////////////////////////////////////////
+	repair
+///////////////////////////////////////////////////////////*/
+.repairMain .topContainer {
+  padding: 120px 0;
+}
+.repairMain .topContainer .topBox {
+  margin: 0 0 40px;
+}
+.repairMain .topContainer .topBox .topTtl {
+  font-size: 0;
+  text-align: center;
+}
+.repairMain .topContainer .topBox .topTtl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.repairMain .topContainer .topBox .topTtl .em {
+  color: #c41823;
+}
+.repairMain .topContainer .topTxt {
+  font-weight: bold;
+}
+.repairMain .topContainer .topTxt p + p {
+  margin: 30px 0 0;
+}
+.repairMain .bgContainer {
+  padding: 120px 0;
+  font-weight: bold;
+  background: #f8f8fa;
+}
+.repairMain .sec01 {
+  margin: 0 0 120px;
+}
+.repairMain .sec01 .secTtl {
+  max-width: 300px;
+  margin: 0 auto 60px;
+}
+.repairMain .sec01 .secBox {
+  margin: 0 0 40px;
+}
+.repairMain .sec01 .secBox .txtBox {
+  padding: 15px 0 0;
+}
+.repairMain .sec01 .secBox .txtBox .ttl {
+  margin: 400px;
+  margin: 0 auto 20px;
+}
+.repairMain .sec01 .secBox .txtBox .listCheckBox {
+  padding: 35px 40px;
+  font-size: 25px;
+  background: #f2f2f2;
+}
+.repairMain .sec01 .secBox .txtBox .listCheckBox .ul .li {
+  padding: 0 0 0 50px;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/repair_sec01_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+.repairMain .sec01 .secBox .txtBox .listCheckBox .ul .li + .li {
+  margin: 15px 0 0;
+}
+@media (min-width: 1025px) {
+  .repairMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .repairMain .sec01 .secBox .photo {
+    width: 53%;
+  }
+  .repairMain .sec01 .secBox .txtBox {
+    width: 42%;
+  }
+}
+.repairMain .sec01 .messageBox {
+  margin: 0 0 40px;
+  padding: 40px 10px;
+  text-align: center;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/repair_sec01_box_bg.png);
+}
+.repairMain .sec01 .messageBox .message {
+  font-size: 0;
+}
+.repairMain .sec01 .messageBox .message p {
+  display: inline;
+  font-size: 36px;
+}
+.repairMain .sec01 .messageBox .message .em {
+  padding: 2px;
+  color: #ffffff;
+  background: #c41823;
+}
+.repairMain .sec01 .messageBox .message .span {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .repairMain .sec01 .photoList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .repairMain .sec01 .photoList .ul .li {
+    width: 48.5%;
+  }
+}
+.repairMain .sec02 .secTtl {
+  max-width: 500px;
+  margin: 0 auto 60px;
+}
+.repairMain .sec02 .infoBox {
+  padding: 0 10px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+.repairMain .sec02 .infoBox .dl {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  line-height: 2;
+}
+.repairMain .sec02 .infoBox .dl + .dl {
+  border-top: 1px solid #000000;
+}
+.repairMain .sec02 .infoBox .dl .dt {
+  width: 280px;
+  padding: 10px;
+  text-align: center;
+}
+.repairMain .sec02 .infoBox .dl .dd {
+  width: calc(100% - 280px);
+  padding: 10px 60px;
+  border-left: 1px solid #000000;
+}
+.repairMain .sec03 {
+  padding: 120px 0 100px;
+  font-weight: bold;
+}
+.repairMain .sec03 .secTtl {
+  max-width: 320px;
+  margin: 0 auto 60px;
+}
+.repairMain .sec03 .topTtl {
+  margin: 0 0 60px;
+  font-size: 0;
+  text-align: center;
+}
+.repairMain .sec03 .topTtl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.repairMain .sec03 .topTtl .em {
+  color: #c41823;
+}
+.repairMain .sec03 .topBox {
+  margin: 0 0 100px;
+}
+.repairMain .sec03 .topBox .txtBox {
+  padding: 15px 0 0;
+}
+.repairMain .sec03 .topBox .txtBox p + p {
+  margin: 40px 0 0;
+}
+@media (min-width: 1025px) {
+  .repairMain .sec03 .topBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .repairMain .sec03 .topBox .photo {
+    width: 45%;
+  }
+  .repairMain .sec03 .topBox .txtBox {
+    width: 50%;
+  }
+}
+.repairMain .sec03 .secPanel + .secPanel {
+  margin: 80px 0 0;
+}
+.repairMain .sec03 .secPanel .title {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 0 100px;
+  font-size: 0;
+}
+.repairMain .sec03 .secPanel .title::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: #000000;
+}
+.repairMain .sec03 .secPanel .title p {
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}
+.repairMain .sec03 .secPanel .title .em {
+  color: #c41823;
+}
+.repairMain .sec03 .secPanel .txt p {
+  display: inline;
+}
+.repairMain .sec03 .secPanel .txt .em {
+  color: #c41823;
+}
+.repairMain .sec03 .secPanel .infoBox {
+  padding: 0 10px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+.repairMain .sec03 .secPanel .infoBox .dl {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  line-height: 2;
+}
+.repairMain .sec03 .secPanel .infoBox .dl + .dl {
+  border-top: 1px solid #000000;
+}
+.repairMain .sec03 .secPanel .infoBox .dl .dt {
+  width: 380px;
+  padding: 10px;
+  text-align: center;
+}
+.repairMain .sec03 .secPanel .infoBox .dl .dd {
+  width: calc(100% - 380px);
+  padding: 10px 60px;
+  border-left: 1px solid #000000;
+}
+.repairMain .menuContainer {
+  padding: 100px 0;
+}
+.repairMain .menuContainer .menuLink {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.repairMain .menuContainer .menuLink .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.repairMain .menuContainer .menuLink .ul .li {
+  width: calc(50% - 20px);
+}
+.repairMain .menuContainer .menuLink .ul .li a {
+  display: block;
+  padding: 30px 10px;
+  color: #ffffff;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/top_kv_menu_bg.png);
+}
+.repairMain .menuContainer .menuLink .ul .li .dl {
+  margin: 20px 0 0;
+}
+.repairMain .menuContainer .menuLink .ul .li .dl .dt {
+  color: #9ea7c7;
+}
+.repairMain .menuContainer .menuLink .ul .li .dl .dd {
+  font-size: 24px;
+}
+
+/*////////////////////////////////////////////////////////////
+	store
+///////////////////////////////////////////////////////////*/
+.storeMain .sec01 {
+  padding: 100px 0;
+}
+.storeMain .sec01 .secBox {
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+.storeMain .sec01 .secBox .txtBox .ttl {
+  padding: 5px;
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+  background: #000000;
+}
+.storeMain .sec01 .secBox .infoBox {
+  padding: 0 10px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+.storeMain .sec01 .secBox .infoBox .dl {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  line-height: 2;
+}
+.storeMain .sec01 .secBox .infoBox .dl + .dl {
+  border-top: 1px solid #000000;
+}
+.storeMain .sec01 .secBox .infoBox .dl .dt {
+  width: 140px;
+  padding: 10px;
+  text-align: center;
+}
+.storeMain .sec01 .secBox .infoBox .dl .dd {
+  width: calc(100% - 140px);
+  padding: 10px 20px;
+  border-left: 1px solid #000000;
+}
+.storeMain .sec01 .secBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+.storeMain .sec01 .btnMore {
+  width: 230px;
+}
+@media (min-width: 1025px) {
+  .storeMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .storeMain .sec01 .secBox .photo {
+    position: relative;
+    width: 50%;
+    height: 345px;
+  }
+  .storeMain .sec01 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .storeMain .sec01 .secBox .txtBox {
+    width: 48%;
+  }
+}
+.storeMain .slidePanel {
+  margin: 0 0 20px;
+}
+.storeMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.storeMain .slidePanel .slideBox .ul .li {
+  width: 16.6666666667%;
+  margin: 0 5px;
+}
+.storeMain .sec02 {
+  padding: 150px 0;
+}
+.storeMain .sec02 .infoBox {
+  padding: 0 10px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+.storeMain .sec02 .infoBox .dl {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  line-height: 2;
+}
+.storeMain .sec02 .infoBox .dl + .dl {
+  border-top: 1px solid #000000;
+}
+.storeMain .sec02 .infoBox .dl .dt {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+.storeMain .sec02 .infoBox .dl .dd {
+  width: calc(100% - 300px);
+  padding: 10px 60px;
+  border-left: 1px solid #000000;
+}
+.storeMain .sec02 .infoBox .dl .dd a {
+  display: inline-block;
+}
+
+/*////////////////////////////////////////////////////////////
+	access
+///////////////////////////////////////////////////////////*/
+.accessMain {
+  font-weight: bold;
+}
+.accessMain .sec01 {
+  padding: 100px 0;
+}
+.accessMain .sec01 .mapBox {
+  margin: 0 0 20px;
+}
+.accessMain .sec02 {
+  padding: 100px 0;
+  background: #f8f8fa;
+}
+.accessMain .sec02 .topTtl {
+  margin: 0 0 40px;
+  font-size: 0;
+  text-align: center;
+}
+.accessMain .sec02 .topTtl p {
+  display: inline;
+  font-size: 34px;
+}
+.accessMain .sec02 .topTtl .em {
+  color: #c41823;
+}
+.accessMain .sec02 .secBox + .secBox {
+  margin: 40px 0 0;
+}
+.accessMain .sec02 .secBox .txtBox .dl .dt {
+  margin: 0 0 20px;
+  padding: 10px 0;
+  font-size: 26px;
+  border-bottom: 1px solid #000000;
+}
+.accessMain .sec02 .secBox .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .accessMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .accessMain .sec02 .secBox > * {
+    width: 48%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .topContainer {
+  padding: 100px 0 40px;
+}
+.contactMain .topContainer .secBox {
+  position: relative;
+  font-weight: bold;
+}
+.contactMain .topContainer .secBox .txtBox .itemBox {
+  background: #f1f1f0;
+}
+.contactMain .topContainer .secBox .txtBox .itemBox .inner {
+  position: relative;
+  top: -20px;
+  left: -20px;
+  padding: 40px;
+  background: #ffffff;
+}
+.contactMain .topContainer .secBox .txtBox .itemBox .dl .dt {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 0 80px;
+  font-size: 0;
+}
+.contactMain .topContainer .secBox .txtBox .itemBox .dl .dt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #000000;
+}
+.contactMain .topContainer .secBox .txtBox .itemBox .dl .dt p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.contactMain .topContainer .secBox .txtBox .itemBox .dl .dt .em {
+  color: #c41823;
+}
+.contactMain .topContainer .secBox .txtBox .itemBox .dl .dd .btnMoreBox {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .contactMain .topContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .contactMain .topContainer .secBox .photo {
+    width: 760px;
+  }
+  .contactMain .topContainer .secBox .txtBox {
+    width: 660px;
+    padding: 0 0 30px;
+  }
+  .contactMain .topContainer .secBox .txtBox .num {
+    position: relative;
+    top: -5px;
+  }
+  .contactMain .topContainer .secBox .txtBox {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+  }
+  .contactMain .topContainer .secBox .txtBox .num {
+    text-align: right;
+  }
+}
+.contactMain .sec01 {
+  padding: 100px 0;
+}
+.contactMain .sec01 .topTtl {
+  margin: 0 0 20px;
+  font-size: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.contactMain .sec01 .topTtl p {
+  display: inline;
+  font-size: 34px;
+}
+.contactMain .sec01 .topTtl .em {
+  color: #c41823;
+}
+.contactMain .sec01 .telBox a {
+  display: block;
+  text-align: center;
+}
+.contactMain .sec01 .telBox .em {
+  display: inline-block;
+  padding: 0 0 0 35px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.contactMain .sec01 .telBox .span {
+  font-size: 14px;
+}
+.contactMain .sec02 {
+  padding: 100px 0;
+  background: #f8f8fa;
+}
+.contactMain .sec02 .topTxt {
+  margin: 0 0 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #e9eaed;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e9eaed;
+  background: #ffffff;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 20px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/contact_submit_bg.png) no-repeat;
+  background-size: cover;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit] span {
+  display: inline-block;
+  padding: 0 60px;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat, url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/footer_contact_arrow.png) right center no-repeat;
+  background-size: 25px auto, 15px auto;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul {
+  margin: -10px -20px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li {
+  display: inline-block;
+  margin: 10px 20px 0 0;
+}
+.formMain .contactForm .form .checkList02 {
+  margin: 20px 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0 20px;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  border: 1px solid #e9eaed;
+  background: #ffffff;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList {
+  padding: 5px 0;
+}
+.formMain .contactForm .form .radioList .list + .list {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .radioList + input {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .form .radioList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formMain .contactForm .form .radioList .list + .list {
+    margin: 0 0 0 30px;
+  }
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
+  background: #fcfcfc;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #32a44a;
+}
+.formMain .contactForm .form .postal {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postal input {
+  width: 90px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 120px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 6px;
+  border: 1px solid #cbc0b6;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/contact_form_select_arrow.png) right 10px center no-repeat #ffffff;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .ageInput {
+  display: inline-block;
+}
+.formMain .contactForm .form .ageInput input {
+  width: 100px;
+}
+.formMain .contactForm .form .ageInput .ageTxt {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 2;
+}
+.formMain .contactForm .form .addressTxt {
+  padding: 3px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.formMain .contactForm {
+  font-weight: bold;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 340px;
+  padding: 15px 10px 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #c41823;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 14px;
+  font-weight: normal;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 360px);
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+  width: 60px;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 6px;
+  border: 1px solid #e9eaed;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .aside {
+  padding: 10px 0;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox + .fileBox {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 40%;
+  font-size: 16px;
+  color: #404142;
+  text-align: center;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 40px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p {
+  width: 58%;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.complete .btnMoreBox {
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain .blogSection {
+  padding: 120px 0;
+  font-weight: bold;
+}
+.blogMain .catePanel {
+  margin: 0 0 80px;
+}
+.blogMain .catePanel .webgene-blog .webgene-header {
+  font-size: 40px;
+}
+.blogMain .catePanel .webgene-blog .webgene-item {
+  min-width: 180px;
+}
+.blogMain .catePanel .webgene-blog .webgene-item a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #0000ff;
+}
+@media (min-width: 1025px) {
+  .blogMain .catePanel .webgene-blog {
+    display: flex;
+    align-items: center;
+  }
+  .blogMain .catePanel .webgene-blog .webgene-header {
+    margin: 0 40px 0 0;
+  }
+  .blogMain .catePanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 0 0 0 20px;
+  }
+}
+.blogMain .listPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .listPanel .webgene-blog .webgene-item a {
+  position: relative;
+  display: block;
+}
+.blogMain .listPanel .webgene-blog .webgene-item a .cate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  min-width: 110px;
+  padding: 5px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #0000ff;
+}
+.blogMain .listPanel .webgene-blog .webgene-item a .title {
+  margin: 10px 0 0;
+  color: #111937;
+}
+@media (min-width: 1025px) {
+  .blogMain .listPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -20px;
+  }
+  .blogMain .listPanel .webgene-blog .webgene-item {
+    width: calc(25% - 20px);
+    margin: 50px 0 0 20px;
+  }
+  .blogMain .listPanel .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .blogMain .listPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.blogMain .listPanel .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.blogMain .listPanel .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blogMain .listPanel .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.blogMain .listPanel .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: center;
+  background: #cdcdcd;
+}
+.blogMain .listPanel .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.blogMain .listPanel .webgene-pagination ul .prev a {
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) no-repeat;
+  background-size: 40px auto;
+}
+.blogMain .listPanel .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.blogMain .listPanel .webgene-pagination ul .next a {
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) no-repeat;
+  background-size: 40px auto;
+}
+.blogMain .listPanel .webgene-pagination ul .selected a {
+  background: #142c84;
+}
+@media (min-width: 1025px) {
+  .blogMain .listPanel .webgene-pagination ul .prev {
+    float: left;
+  }
+  .blogMain .listPanel .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.blogMain .detailPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .detailPanel .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.blogMain .detailPanel .webgene-blog .info .cate {
+  display: inline-block;
+}
+.blogMain .detailPanel .webgene-blog .info .cate p {
+  display: inline-block;
+  min-width: 100px;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: #0000ff;
+}
+.blogMain .detailPanel .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+.blogMain .detailPanel .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.blogMain .detailPanel .webgene-blog .postBox .photo {
+  margin-bottom: 20px;
+}
+.blogMain .detailPanel .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+  border-radius: 6px;
+}
+.blogMain .detailPanel .webgene-blog .postBox .postTxt {
+  padding: 40px 0;
+  line-height: 2;
+}
+.blogMain .detailPanel .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.blogMain .detailPanel .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+}
+.blogMain .detailPanel .pdfArea {
+  margin: 40px 0 0;
+}
+.blogMain .detailPanel .pdfArea a {
+  color: #2151a3;
+}
+.blogMain .detailPanel .btnBackBox {
+  margin: 80px 0 0;
+  text-align: center;
+}
+.blogMain .detailPanel .btnBackBox .btnBack {
+  display: inline-block;
+  width: 180px;
+}
+.blogMain .detailPanel .btnBackBox .btnBack a {
+  display: block;
+  padding: 15px 0 15px 70px;
+  font-weight: bold;
+  color: #111937;
+  text-align: left;
+  background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left center no-repeat;
+  background-size: 50px auto;
+}

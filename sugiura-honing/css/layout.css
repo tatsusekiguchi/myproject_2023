@@ -1,0 +1,628 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*===================================================
+    各画面作成用CSS
+===================================================*/
+
+/*//////////////////////////////////////////////////
+    トップページ
+///////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+    メインコンテンツ
+-------------------------------------------------- */
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+#topKv {
+	height: 600px;
+}
+	#topKv .kvWrap {
+		position: relative;
+		height: 100%;
+		z-index: -1;
+	}
+	
+#topKv .kvBox {
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+	#topKv .kvBox > div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	#topKv .kvBox .kv01 {
+		background: url("../image/top/kv_01_pc.png") center no-repeat;
+		background-size: cover;
+	}
+	#topKv .kvBox .kv02 {
+		background: url("../image/top/kv_02_pc.png") center no-repeat;
+		background-size: cover;
+	}
+	#topKv .kvBox .kv03 {
+		background: url("../image/top/kv_03_pc.png") center no-repeat;
+		background-size: cover;
+	}
+	#topKv .kvBox .kv04 {
+		background: url("../image/top/kv_04_pc.png") center no-repeat;
+		background-size: cover;
+	}
+
+/* --------------------------------------------------
+	sec01
+-------------------------------------------------- */
+#top #sec01 {
+	overflow: hidden;
+	position: relative;
+	padding: 40px 10px;
+}
+#top #sec01:after {
+	content: '';
+	position: absolute;
+	top: -100px;
+	right: -100px;
+	width: 50%;
+	height: 800px;
+	background: #154590;
+	transform: rotate(20deg);
+}
+#top #sec01 .box {
+	max-width: 770px;
+	width: 65%;
+}
+#top #sec01 h2 {
+	margin-bottom: 10px;
+	padding: 0 0 15px 40px;
+	border-bottom: 1px solid #154590;
+}
+	#top #sec01 h2 img {
+		max-width: 500px;
+	}
+#top #sec01 p {
+	padding: 0 40px;
+}
+#top #sec01 h2 + p {
+	margin-bottom: 20px;
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+	font-size: 28px;
+	color: #2e5254;
+}
+#top #sec01 p + p {
+	margin-bottom: 30px;
+	line-height: 2;
+}
+#top #sec01 a {
+	display: block;
+	margin: 0 0 0 200px;
+	max-width: 280px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 70px;
+	background: url("../image/common/link__arrow_right.png") right 15px center no-repeat #1e9a9f;
+}
+/* --------------------------------------------------
+	sec02
+-------------------------------------------------- */
+#top #sec02 {
+	padding: 40px 0;
+	background: #f7f7f7;
+}
+#top #sec02 #secBox01 {
+	text-align: center;
+}
+#top #sec02 #secBox01 h2 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 30px;
+	font-size: 27px;
+}
+#top #sec02 #secBox01 h2:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	width: 400px;
+	height: 1px;
+	margin: 0 auto;
+	background: #154590;
+}
+#top #sec02 #secBox01 .imgBox {
+	overflow: hidden;
+}
+/*#top #sec02 #secBox01 .imgBox {
+	font-size: 0;
+}
+	#top #sec02 #secBox01 .imgBox div {
+		display: inline-block;
+		width: 25%;
+	}*/
+#top #sec02 #secBox02 {
+	overflow: hidden;
+	padding: 40px 10px 0;
+}
+#top #sec02 #secBox02 h2 {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 0 0 15px 40px;
+	border-bottom: 1px solid #154590;
+}
+#top #sec02 #secBox02 h2:after {
+	content: '';
+	position: absolute;
+	right: -50%;
+	bottom: 0;
+	width: 50%;
+	height: 1px;
+	background: #154590;
+}
+	#top #sec02 #secBox02 h2 img {
+		max-width: 550px;
+	}
+#top #sec02 #secBox02 h2 + p {
+	margin-bottom: 100px;
+	padding-left: 40px;
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+	font-size: 28px;
+	color: #2e5254;
+}
+#top #sec02 #secBox02 ul {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+	#top #sec02 #secBox02 ul li {
+		float: left;
+		width: 32%;
+	}
+	#top #sec02 #secBox02 ul li + li {
+		margin-left: 2%;
+	}
+		#top #sec02 #secBox02 ul li dl {
+			position: relative;
+			min-height: 180px;
+			padding-top: 80px;
+			text-align: center;
+			background: #ffffff;
+		}
+		#top #sec02 #secBox02 ul li dt {
+			position: absolute;
+			top: -60px;
+			left: 0;
+			right: 0;
+			width: 150px;
+			margin: 0 auto;
+		}
+/* --------------------------------------------------
+	sec03
+-------------------------------------------------- */
+#top #sec03 {
+	overflow: hidden;
+	padding: 40px 10px;
+}
+#top #sec03 h2 {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 0 0 15px 40px;
+	border-bottom: 1px solid #154590;
+}
+#top #sec03 h2:after {
+	content: '';
+	position: absolute;
+	right: -50%;
+	bottom: 0;
+	width: 50%;
+	height: 1px;
+	background: #154590;
+}
+	#top #sec03 h2 img {
+		max-width: 120px;
+	}
+#top #sec03 p {
+	padding: 0 40px;
+}
+#top #sec03 h2 + p {
+	margin-bottom: 20px;
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+	font-size: 28px;
+	color: #2e5254;
+}
+
+@media (min-width: 768px) {
+
+	#top #sec03 ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+		#top #sec03 ul li {
+			width: 25%;
+			max-width: 25%;
+			text-align: center;
+		}
+			#top #sec03 ul li img {
+				display: inline-block;
+				max-width: 240px;
+				margin-bottom: 5px;
+			}
+}
+
+/* --------------------------------------------------
+	sec04
+-------------------------------------------------- */
+#top #sec04 {
+	overflow: hidden;
+	padding: 40px 10px;
+}
+#top #sec04 h2 {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 0 0 15px 40px;
+	border-bottom: 1px solid #154590;
+}
+#top #sec04 h2:after {
+	content: '';
+	position: absolute;
+	right: -50%;
+	bottom: 0;
+	width: 50%;
+	height: 1px;
+	background: #154590;
+}
+	#top #sec04 h2 img {
+		max-width: 180px;
+	}
+#top #sec04 h2 + p {
+	margin-bottom: 20px;
+	padding: 0 40px;
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+	font-size: 28px;
+	color: #2e5254;
+}
+
+@media (min-width: 768px) {
+
+	#top #sec04 section {
+		margin-bottom: 30px;
+	}
+	#top #sec04 h3 {
+		margin-bottom: 10px;
+	}
+	#top #sec04 ol {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#top #sec04 section + section ol {
+		max-width: 900px;
+	}
+	#top #sec04 ol li {
+		width: 32%;
+		max-width: 32%;
+		padding: 20px 30px;
+		background: #eeeeee;
+	}
+	#top #sec04 ol .first {
+		width: 50%;
+		max-width: 50%;
+	}
+	#top #sec04 ol .last {
+		background: #c5e5f7;
+	}
+	#top #sec04 ol .first + li,
+	#top #sec04 ol .first + li + li {
+		width: 24%;
+		max-width: 24%;
+	}
+	#top #sec04 ol li dl dt {
+		margin-bottom: 10px;
+		font-size: 22px;
+		color: #154590;
+	}
+	#top #sec04 ol .first dd > p,
+	#top #sec04 ol .first dd div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	#top #sec04 ol .first dd > p {
+		width: 45%;
+	}
+	#top #sec04 ol .first dd div {
+		width: 50%;
+		margin-top: -30px;
+		text-align: center;
+	}
+	#top #sec04 ol .first dd div em {
+		font-size: 28px;
+	}
+
+}
+
+/*//////////////////////////////////////////////////
+    下層ページ
+///////////////////////////////////////////////////*/
+#kv {
+	height: 280px;
+	text-align: center;
+	background: url("../image/common/kv_bg_pc.png") no-repeat;
+	background-size: cover;
+}
+	#kv h2 {
+		display: inline-block;
+		line-height: 280px;
+	}
+
+/*//////////////////////////////////////////////////
+    会社概要
+///////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+    メインコンテンツ
+-------------------------------------------------- */
+#company #sec01 {
+	padding: 40px 0;
+}
+#company #sec01 .box {
+	margin-bottom: 80px;
+	padding: 0 40px;
+}
+#company #sec01 h3 {
+	width: 100px;
+	margin: 0 0 30px;
+}
+#company #sec01 table {
+	width: 100%;
+	border-top: 1px solid #eeeeee;
+}
+	#company #sec01 table tr {
+		font-size: 20px;
+	}
+	#company #sec01 table th {
+		color: #ffffff;
+		text-align: center;
+		border-bottom: 1px solid #ffffff;
+		background: #154590;
+	}
+	#company #sec01 table td {
+		padding: 30px 50px;
+		border-bottom: 1px solid #eeeeee;
+	}
+#company #sec01 .mapBox {
+	overflow: hidden;
+	position: relative;
+	height: 0;
+	padding-bottom: 30%;
+}
+	#company #sec01 .mapBox iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+/*//////////////////////////////////////////////////
+    お問い合わせ
+///////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+    メインコンテンツ
+-------------------------------------------------- */
+#contact #sec01 {
+	padding: 80px 40px;
+}
+#contact #sec01 .contactTop {
+	padding: 20px;
+	color: #ffffff;
+	background: #1e9a9f;
+}
+	#contact #sec01 .contactTop dt {
+		margin-bottom: 10px;
+		font-size: 28px;
+		text-align: center;
+	}
+	#contact #sec01 .contactTop ul {
+		overflow: hidden;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+		#contact #sec01 .contactTop ul li {
+			float: left;
+			width: 50%;
+		}
+		#contact #sec01 .contactTop ul li + li {
+			float: right;
+			width: 50%;
+		}
+		#contact #sec01 .contactTop .num a {
+			color: #ffffff;
+		}
+		#contact #sec01 .contactTop .num span {
+			display: inline-block;
+			margin-right: 10px;
+			padding: 0 5px;
+			font-size: 21px;
+			color: #1e9a9f;
+			line-height: 1.2;
+			background: #ffffff;
+		}
+		#contact #sec01 .contactTop .num em {
+			font-size: 44px;
+		}
+		#contact #sec01 .contactTop .num + p {
+			line-height: 2;
+		}
+#contact #sec01 .list {
+	margin: 40px 0 30px;
+}
+	#contact #sec01 .list li {
+		position: relative;
+		padding-left: 1em;
+	}
+	#contact #sec01 .list li + li {
+		margin-top: 10px;
+	}
+		#contact #sec01 .list li:before {
+			content: '・';
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+/*個人情報保護方針*/
+#contact #sec01 .privacy {
+	overflow: auto;
+	margin-bottom: 30px;
+	height: 330px;
+	padding: 20px 30px;
+	font-size: 17px;
+	border: 1px solid #cccccc;
+	background: #fdfdfd;
+}
+	#contact #sec01 .privacy dl {
+		margin-top: 40px;
+	}
+		#contact #sec01 .privacy dl dt {
+			margin-bottom: 10px;
+		}
+		#contact #sec01 .privacy dl dd {
+			line-height: 2;
+		}
+#contact #sec01 .checkPrivasy {
+	font-size: 17px;
+	text-align: center;
+}
+
+#contact #sec01 table {
+	width: 100%;
+	margin-bottom: 50px;
+	border-top: 1px solid #eeeeee;
+}
+	#contact #sec01 table tr {
+		font-size: 20px;
+	}
+	#contact #sec01 table th {
+		color: #ffffff;
+		text-align: center;
+		border-bottom: 1px solid #ffffff;
+		background: #154590;
+	}
+	#contact #sec01 table .last th {
+		padding: 30px 10px;
+		vertical-align: top;
+	}
+		#contact #sec01 table th em {
+			display: inline-block;
+			margin-left: 10px;
+			padding: 0 5px;
+			font-size: 16px;
+			color: #154590;
+			line-height: 1.2;
+			background: #ffffff;
+		}
+	#contact #sec01 table td {
+		padding: 30px 50px;
+		border-bottom: 1px solid #eeeeee;
+	}
+	#contact #sec01 table td .error {
+		color: #ee0101;
+	}
+#contact #sec01 table + p {
+	margin-bottom: 40px;
+	line-height: 2;
+}
+
+/*  入力項目
+-------------------------------------------------------- */
+#contact #sec01 table input[type="text"],
+#contact #sec01 table input[type="email"],
+#contact #sec01 table input[type="number"],
+#contact #sec01 table input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 1em;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    background: #fdfdfd;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*テキストエリア*/
+#contact #sec01 table textarea {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    background: #fdfdfd;
+    resize: none;
+}
+
+.btnConfirm {
+	max-width: 280px;
+	margin: 40px auto 0;
+}
+	.btnConfirm input {
+		display: block;
+		width: 100%;
+	    height: 60px;
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: #ffffff;
+	    text-align: center;
+	    border: none;
+	    cursor: pointer;
+	    background: url("../image/common/link__arrow_right.png") right 20px center no-repeat #1e9a9f;
+	    background-size: 20px auto;
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	}
+	.btnConfirm input[disabled] {
+		opacity: 0.6;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

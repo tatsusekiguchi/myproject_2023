@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png) left 150px no-repeat;
+    background-size: 100% auto;
+  }
+  .topMain .topKvContainer .sliderPanel .sliderBox {
+    position: relative;
+    margin: 0;
+  }
+  .topMain .topKvContainer .slideTitlePanel {
+    padding: 0 20px;
+  }
+  .topMain .topKvContainer .slideTitlePanel .slideTitleBox.slideTitleBox01 {
+    left: 0;
+  }
+  .topMain .topKvContainer .slideTitlePanel .slideTitleBox.slideTitleBox02 {
+    left: 0;
+  }
+  .topMain .topKvContainer .slideTitlePanel .slideTitle {
+    padding: 5px 15px;
+    text-align: left;
+  }
+  .topMain .topKvContainer .slideTitlePanel .slideTitle p {
+    font-size: 14px;
+  }
+  .topMain .secTitleBox {
+    margin: 0 0 40px;
+  }
+  .topMain .secTitleBox .secTitle01 {
+    margin: 0 0 5px;
+    font-size: 20px;
+  }
+  .topMain .sec01 {
+    padding: 100px 0;
+  }
+  .topMain .sec01 .secTitleBox {
+    max-width: 520px;
+    margin: 0 auto 40px;
+    padding: 80px 0 0;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec01_title_icon_01.png) left top no-repeat, url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec01_title_icon_02.png) right top no-repeat;
+    background-size: 90px auto, 100px auto;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .topMain .sec02 {
+    padding: 0 0 100px;
+  }
+  .topMain .sec02 .secTitleBox {
+    max-width: 360px;
+    margin: 0 auto 40px;
+    padding: 90px 0 0;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec02_title_icon_01.png) left top no-repeat, url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec02_title_icon_02.png) right 20px center no-repeat;
+    background-size: 100px auto, 60px auto;
+  }
+  .topMain .sec02 .secBox {
+    margin: 0 0 40px;
+  }
+  .topMain .sec02 .secBox .dl {
+    margin: 40px 0 0;
+  }
+  .topMain .sec02 .listBox {
+    max-width: 360px;
+    margin: 0 auto 50px;
+  }
+  .topMain .sec02 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .topMain .sec02 .listBox .ul .li .btn {
+    max-width: 300px;
+    font-size: 16px;
+  }
+  .topMain .sec02 .listBox .ul .li .btn .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .topMain .sec02 .listBox .ul .li .btn p {
+    min-height: 50px;
+  }
+  .topMain .sec02 .imgBox {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0 0;
+    text-align: right;
+  }
+  .topMain .sec02 .imgBox .img {
+    display: inline-block;
+    width: 85%;
+  }
+  .topMain .sec03 {
+    min-height: 0;
+    margin: 0 0 50px;
+    padding: 50px 0;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) right top no-repeat;
+    background-size: cover;
+  }
+  .topMain .sec03 .secTitleBox {
+    max-width: 340px;
+    margin: 0 auto 40px;
+    padding: 100px 0 0;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec03_title_icon_01.png) left center no-repeat, url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec03_title_icon_02.png) right top no-repeat;
+    background-size: 60px auto, 120px auto;
+  }
+  .topMain .sec03 .secBox {
+    margin: 0 0 30px;
+  }
+  .topMain .sec03 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .topMain .sec03 .secBox .txtBox .txt {
+    margin: 0 0 50px;
+  }
+  .topMain .sec03 .iconList .icon01 {
+    width: 90px;
+  }
+  .topMain .sec03 .iconList .icon02 {
+    width: 60px;
+  }
+  .topMain .sec04 {
+    padding: 0;
+  }
+  .topMain .sec04 .secTitleBox {
+    max-width: 300px;
+    margin: 0 auto 40px;
+    padding: 20px 0 0;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec04_title_icon_01.png) right bottom no-repeat;
+    background-size: 120px auto;
+  }
+  .topMain .sec05 {
+    padding: 100px 0 80px;
+  }
+  .topMain .sec05 .secTitleBox {
+    max-width: 300px;
+    margin: 0 auto 40px;
+    padding: 20px 0 0;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec05_title_icon_01.png) left bottom no-repeat;
+    background-size: 140px auto;
+  }
+  .topMain .blogSection {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .topMain .blogSection .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .topMain .blogSection .webgene-blog .webgene-item a {
+    min-height: 0;
+    padding: 10px 10px 40px;
+  }
+  .topMain .blogSection .btnMore {
+    margin: 40px auto 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	enjoy
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .enjoyMain .enjoySection {
+    padding: 0 0 50px;
+  }
+  .enjoyMain .section {
+    padding: 70px 0;
+  }
+  .enjoyMain .section .secPanel {
+    margin: 0 0 60px;
+  }
+  .enjoyMain .section .secPanel .photoBox .imageTitle01 {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    max-width: 440px;
+  }
+  .enjoyMain .section .secPanel .photoBox .imageTitle02 {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    max-width: 600px;
+  }
+  .enjoyMain .section .secPanel .photoBox .imageTitle03 {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    max-width: 440px;
+  }
+  .enjoyMain .section .secPanel .photoBox .imageTitle04 {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    max-width: 600px;
+  }
+  .enjoyMain .section .secPanel .photoBox .dl {
+    padding: 15px 0 0;
+  }
+  .enjoyMain .section .secPanel .photoBox .dl .dt {
+    margin: 0 0 5px;
+  }
+  .enjoyMain .section .secPanel .txtBox {
+    padding: 30px 0 0;
+  }
+  .enjoyMain .section .secPanel .txtBox .balloon {
+    left: 10px;
+    width: 150px;
+  }
+  .enjoyMain .section .secPanel .txtBox .secTtl {
+    margin: 0 0 30px;
+    font-size: 24px;
+  }
+  .enjoyMain .section .secPanel .txtBox .txt p + p {
+    margin: 30px 0 0;
+  }
+  .enjoyMain .section .secPanel .txtBox .txt .span {
+    font-size: 12px;
+  }
+  .enjoyMain .section .secPanel .txtBox .txt .dl {
+    margin: 30px 0 0;
+  }
+  .enjoyMain .section .listPanel .ul {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .enjoyMain .section .listPanel .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .enjoyMain .section .listPanel .ul .dl {
+    padding: 10px 0 0;
+  }
+  .enjoyMain .section .listPanel .ul .dl .dt {
+    margin: 0 0 5px;
+  }
+  .enjoyMain .section.sec01 {
+    padding: 0 0 70px;
+  }
+  .enjoyMain .section.sec01 .secPanel .txtBox {
+    padding: 30px 0 0;
+  }
+  .enjoyMain .section.sec02 .secPanel .photoBox {
+    padding: 0;
+  }
+  .enjoyMain .section.sec03 .secPanel .txtBox {
+    padding: 30px 0 0;
+  }
+  .enjoyMain .section.sec04 .secPanel .txtBox {
+    padding: 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .newsSection {
+    padding: 0 0 80px;
+  }
+  .newsMain .newsSection .secTitleBox {
+    margin: 0 0 40px;
+  }
+  .newsMain .newsSection .secTitleBox .secTitle01 {
+    font-size: 20px;
+  }
+  .newsMain .catePanel {
+    margin: 0 0 60px;
+  }
+  .newsMain .catePanel .cateTtl {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+  .newsMain .catePanel .webgene-blog {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-item {
+    width: 100%;
+    margin: 0;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 10px 0 0;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-item a {
+    padding: 4px;
+    font-size: 16px;
+  }
+  .newsMain .postListPanel .webgene-blog {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .newsMain .postListPanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 20px 0 0;
+  }
+  .newsMain .postListPanel .webgene-blog .webgene-item a {
+    min-height: 0;
+  }
+  .newsMain .postListPanel .webgene-blog .webgene-item .photo {
+    height: 220px;
+  }
+  .newsMain .postListPanel .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .postDetailPanel .webgene-blog {
+    padding: 20px 20px 40px;
+  }
+  .newsMain .postDetailPanel .webgene-blog .ttlBox {
+    font-size: 20px;
+  }
+  .newsMain .postDetailPanel .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .postDetailPanel .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .newsMain .postDetailPanel .btnBack {
+    max-width: 280px;
+  }
+  .newsMain .postDetailPanel .btnBack a .inner {
+    font-size: 14px;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left 15px center no-repeat #ffffff;
+    background-size: 6px auto;
+  }
+  .newsMain .postDetailPanel .btnBack a .icon {
+    left: 70px;
+    width: 30px;
+    height: 30px;
+  }
+  .newsMain .postDetailPanel .btnBack a p {
+    min-height: 50px;
+    padding: 10px 10px 10px 30px;
+  }
+}

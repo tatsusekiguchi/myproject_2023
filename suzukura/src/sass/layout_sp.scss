@@ -1,0 +1,587 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topSection {
+      padding: 60px 0;
+      .topSecTtlBox {
+        position: relative;
+        display: inline-block;
+        font-size: 0;
+        margin: 0 0 40px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -20px;
+          width: 105%;
+          height: 1px;
+          background: #202020;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: -20px;
+          right: 0;
+          width: 1px;
+          height: 100%;
+          background: #202020;
+        }
+        .topSecTtlBoxInner {
+          position: relative;
+          padding: 15px 10px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            right: -30px;
+            width: 105%;
+            height: 1px;
+            background: #d1d1d1;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -5px;
+            width: 1px;
+            height: 100%;
+            background: #d1d1d1;
+          }
+        }
+        .topSecTtl01 {
+          p {
+            display: inline;
+            font-size: 20px;
+            letter-spacing: 0.2em;
+          }
+          .em {
+            font-size: 34px;
+          }
+        }
+        .topSecTtl02 {
+          font-size: 20px;
+          text-indent: 3em;
+          letter-spacing: 0.2em;
+        }
+      }
+      .txtBox {
+        margin: 0 0 40px;
+      }
+      .btnMoreVertical {
+        a {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 220px;
+          padding: 15px 10px;
+          border: 1px solid #898989;
+          background: #f9f9f9;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -30px;
+            bottom: 0;
+            width: 60px;
+            height: 1px;
+            margin: auto 0;
+            background: #168044;
+          }
+        }
+      }
+    }
+    .fixedPanel {
+      .img {
+        position: relative;
+        height: 200px;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .listPanel {
+      padding: 100px 0;
+      .ul {
+        max-width: 180px;
+        margin: 0 auto;
+        .li {
+          + .li {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 90px 0;
+      .secPanel {
+        .listBox {
+          padding: 0;
+          .ul {
+            max-width: 400px;
+            margin: 0 auto;
+            .li + .li {
+              margin: 50px 0 0;
+            }
+            .dl {
+              .dt {
+                padding: 15px 0;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      .secPanel {
+        .rightBox {
+          padding: 40px 20px;
+          .txtBox {
+            h3 {
+              margin: 0 0 20px;
+              font-size: 20px;
+            }
+            .txt {
+              margin: 0 0 40px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .secPanel {
+        .newsBox {
+          height: 400px;
+          padding: 40px 0;
+          .dl {
+            + .dl {
+              margin: 40px 0 0;
+            }
+            .dd {
+              padding: 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	policy
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .policyMain {
+    .sectionContainer {
+      margin: 50px 0;
+    }
+    .section {
+      padding: 80px 0;
+      .txtBox {
+        margin: 0 0 40px;
+      }
+      .btnMore {
+        margin: 30px 0 0;
+      }
+    }
+    .fixedPanel {
+      .img {
+        position: relative;
+        height: 400px;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .infoPanel {
+      padding: 100px 0;
+      .secBox {
+        .leftBox {
+          .infoBox {
+            .dl {
+              display: flex;
+              .dt {
+                width: 120px;
+                padding: 15px 5px;
+              }
+              .dd {
+                width: calc(100% - 120px);
+                padding: 15px 15px;
+              }
+            }
+          }
+        }
+        .rightBox {
+          padding: 40px 0 0;
+          > p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .businessMain {
+    .sectionContainer {
+      padding: 80px 0;
+      .titleContainer {
+        .txtPanel {
+          padding: 20px;
+          .txtBox {
+            padding: 40px 20px;
+            text-align: center;
+            h3 {
+              margin: 0 0 30px;
+              font-size: 18px;
+              line-height: 2;
+            }
+            .txt {
+              p + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .listPanel {
+      padding: 100px 0;
+      .ul {
+        max-width: 180px;
+        margin: 0 auto;
+        .li {
+          + .li {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .beforeAfterPanel {
+      padding: 50px 0;
+      .photoList {
+        margin: 0 0 30px;
+        .ul {
+          .li {
+            + .li {
+              position: relative;
+              margin: 70px 0 0;
+              &::before {
+                content: "";
+                position: absolute;
+                top: -40px;
+                left: 0;
+                right: 0;
+                width: 29px;
+                height: 18px;
+                margin: 0 auto;
+                background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/business_list_arrow_down.png)
+                  no-repeat;
+                background-size: cover;
+              }
+            }
+            > p {
+              max-width: 180px;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      margin: 0 0 100px;
+    }
+    .sec03 {
+      margin: 0 0 100px;
+      .secBox {
+        padding: 0 0 40px;
+      }
+    }
+    .slidePanel {
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 2);
+            padding: 0 0 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	craftsman
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .craftsmanMain {
+    .topPanel {
+      padding: 100px 0 80px;
+      .txtBox {
+        padding: 0 20px 40px;
+      }
+    }
+    .fixedPanel {
+      .img {
+        position: relative;
+        height: 400px;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .sectionContainer {
+      padding: 80px 0;
+    }
+    .sec01 {
+      .secPanel {
+        .rightBox {
+          padding: 40px 20px;
+          .txtBox {
+            h3 {
+              margin: 0 0 20px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 80px 0 0;
+      .secBox {
+        .historyBox {
+          padding: 0 10px;
+          .dl {
+            display: block;
+            padding: 15px 25px;
+            + .dl {
+              margin: 10px 0 0;
+            }
+            .dt {
+              margin: 0 0 5px;
+            }
+          }
+        }
+      }
+    }
+    .photoContainer {
+      margin: 100px 0;
+      .photoPanel {
+        padding: 30px 20px;
+        + .photoPanel {
+          margin: 30px 0 0;
+        }
+        .txtBox {
+          padding: 30px 20px;
+          h3 {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      margin: 0 0 80px;
+      .staffBoxList {
+        padding: 0;
+      }
+      .staffBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topPanel {
+      padding: 80px 0;
+      .logoBox {
+        display: block;
+        max-width: 700px;
+        margin: 0 auto 20px;
+        text-align: center;
+        .logo {
+          width: 120px;
+          margin: 0 auto 20px;
+        }
+      }
+      .telBox {
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 18px;
+          }
+          .dd {
+            max-width: 300px;
+            padding: 10px 0 0;
+            a {
+              p {
+                font-size: 16px;
+              }
+              .em {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .formContainer {
+      padding: 60px 0 80px;
+      h2 {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+    form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm {
+    .formBox {
+      + .formBox {
+        margin-top: 40px;
+      }
+
+      > .dl {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+
+        &.line {
+          padding: 10px 10px 20px;
+          border-bottom: 1px solid #dbdbdb;
+
+          + .dl {
+            padding: 20px 10px 10px;
+          }
+        }
+
+        > .dt {
+          display: block;
+          width: 100%;
+          padding: 10px 0;
+          text-align: left;
+
+          .span {
+            margin-right: 10px;
+            font-size: 16px;
+
+            br {
+              display: none;
+            }
+          }
+
+          .em {
+            font-size: 12px;
+            vertical-align: middle;
+          }
+
+          .aside {
+            margin-top: 5px;
+
+            p {
+              font-size: 12px;
+
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+
+        > .dd {
+          display: block;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: block;
+
+          .dt {
+            display: block;
+            width: 100%;
+          }
+
+          .dd {
+            display: block;
+          }
+        }
+      }
+
+      .dateBox {
+        input[type="text"] {
+          width: 70px;
+        }
+
+        .radioList {
+          display: block;
+          margin: 10px 0 0;
+        }
+      }
+
+      .selectBox {
+        width: 90px;
+      }
+
+      .privacy {
+        .agreeBox {
+          height: 250px;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+}

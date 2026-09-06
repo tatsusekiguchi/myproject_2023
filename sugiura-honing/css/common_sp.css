@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+    スマホ用土台作成用CSS
+===================================================*/
+/*//////////////////////////////////////////////////
+    Base set
+///////////////////////////////////////////////////*/
+html, body {
+    min-width: 0;
+}
+
+body {
+    font-size: 13px;
+}
+
+/* マウスオーバーのスタイル */
+a:hover {
+    text-decoration: none!important;
+    opacity: 1!important;
+    -ms-filter: "alpha(opacity=100)"!important;
+}
+
+/* --------------------------------------------------
+    改行
+-------------------------------------------------- */
+.pcBreak {
+	display: none;
+}
+/*//////////////////////////////////////////////////
+    Base layout(sp)
+///////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+    ヘッダー(header)
+-------------------------------------------------- */
+header {
+    text-align: center;
+}
+header nav,
+header .tel {
+    display: none;
+}
+header h1 {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+    header h1 span {
+        font-size: 10px;
+    }
+    header h1 em {
+        font-size: 20px;
+    }
+
+/* --------------------------------------------------
+    メイン
+-------------------------------------------------- */
+#spNav {
+    overflow: hidden;
+    display: block;
+    background: #154590;
+}
+    #spNav li {
+        float: left;
+        width: 50%;
+        text-align: center;
+        border-bottom: 1px solid #4469a3;
+    }
+    #spNav li:nth-child(even) {
+        border-left: 1px solid #4469a3;
+    }
+        #spNav li a {
+            display: block;
+            color: #ffffff;
+            line-height: 50px;
+        }
+            #spNav li a span {
+                display: inline-block;
+                width: 160px;
+                padding-left: 20px;
+                text-align: left;
+                line-height: 1.2;
+            }
+            #spNav li:nth-child(1) span {
+                background: url("../image/common/sp_nav_01.png") left center no-repeat;
+                background-size: 15px auto;
+            }
+            #spNav li:nth-child(2) span {
+                background: url("../image/common/sp_nav_02.png") left center no-repeat;
+                background-size: 15px auto;
+            }
+            #spNav li:nth-child(3) span {
+                background: url("../image/common/sp_nav_03.png") left center no-repeat;
+                background-size: 15px auto;
+            }
+            #spNav li:nth-child(4) span {
+                background: url("../image/common/sp_nav_04.png") left center no-repeat;
+                background-size: 15px auto;
+            }
+/* --------------------------------------------------
+    フッター(footer)
+-------------------------------------------------- */
+footer .footLinkPc,
+footer .footBox > a {
+    display: none;
+}
+footer .footBox {
+    padding: 30px 0;
+    text-align: center;
+}
+footer .footBox .logo {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+footer .footBox .contact {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: left;
+}
+footer .copy p {
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

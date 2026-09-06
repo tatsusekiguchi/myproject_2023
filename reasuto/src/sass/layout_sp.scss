@@ -1,0 +1,1086 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      padding: 0 30px;
+      .topKv {
+        position: relative;
+        height: calc(100svh - 60px);
+      }
+      .kvTitleBox {
+        left: 20px;
+        bottom: 40px;
+        width: 90%;
+        max-width: 500px;
+      }
+      .scrollBox {
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        width: 10px;
+        height: 140px;
+      }
+    }
+    .topSection {
+      padding: 40px 0 60px;
+      .balloon {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+    .sec01 {
+      margin: 0 0 100px;
+      padding: 60px 20px;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        .secTtl {
+          width: 250px;
+          margin: 0;
+        }
+        h2 {
+          display: block;
+          padding: 5px 0 0;
+        }
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .txtBox {
+          padding: 30px 20px;
+          .ttlBox {
+            align-items: center;
+            margin: 0 0 15px;
+            .num {
+              width: 50px;
+              margin: 0 15px 0 0;
+            }
+            .ttl {
+              p {
+                font-size: 13px;
+              }
+              h3 {
+                font-size: 20px;
+              }
+            }
+          }
+          .txt {
+            margin: 0 0 20px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 100px;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        .secTtl {
+          width: 280px;
+          margin: 0;
+        }
+        h2 {
+          display: block;
+          padding: 5px 0 0;
+        }
+      }
+      .listBox {
+        max-width: 440px;
+        margin: 0 auto 60px;
+        .ul {
+          .li + .li {
+            margin: 40px 0 0;
+          }
+        }
+      }
+    }
+    .sec03 {
+      margin: 0 -30px 100px;
+      padding: 60px 0;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        padding: 0 20px;
+        .secTtl {
+          width: 200px;
+          margin: 0;
+        }
+        h2 {
+          display: block;
+          padding: 5px 0 0;
+        }
+      }
+      .worksListPanel {
+        margin: 0 0 50px;
+        .webgene-blog {
+          .webgene-item {
+            margin: 0 10px;
+            .photo {
+              height: 250px;
+            }
+            .txtBox {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      margin: 0 0 100px;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        padding: 0 20px;
+        .secTtl {
+          width: 260px;
+          margin: 0;
+        }
+        h2 {
+          display: block;
+          padding: 5px 0 0;
+        }
+      }
+      .list {
+        max-width: 550px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .strengthMain {
+    .topSection {
+      padding: 60px 0;
+      .title {
+        margin: 0 0 30px;
+        font-size: 20px;
+      }
+    }
+    .sec01 {
+      margin: 0 0 100px;
+      padding: 60px 20px;
+      .secPanel {
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .txtBox {
+          padding: 30px 20px;
+          .ttlBox {
+            align-items: center;
+            margin: 0 0 15px;
+            .num {
+              width: 50px;
+              margin: 0 15px 0 0;
+            }
+            .ttl {
+              width: calc(100% - 60px);
+              p {
+                font-size: 13px;
+              }
+              h3 {
+                font-size: 20px;
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+          .tel {
+            margin: 10px 0 0;
+            a {
+              padding: 0 0 0 30px;
+              font-size: 30px;
+              background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/strength_sec01_tel.png)
+                left top 5px no-repeat;
+              background-size: 25px auto;
+            }
+          }
+        }
+      }
+      .listContainer {
+        margin: 60px 0 0;
+        .listPanel01 {
+          margin: 0 0 40px;
+          .listBox {
+            max-width: 440px;
+            margin: 0 auto;
+            .ul {
+              .li {
+                width: calc((100% / 2) - 5px);
+                padding: 0 0 20px;
+              }
+            }
+          }
+        }
+        .listPanel02 {
+          .ttl {
+            max-width: 280px;
+          }
+          .listBox {
+            max-width: 600px;
+            padding: 40px 20px;
+            .list {
+              max-width: 200px;
+              .ul {
+                .li + .li {
+                  margin: 20px 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain {
+    .sec01 {
+      margin: 0 0 100px;
+      padding: 60px 0 0;
+      .secTtlBox {
+        margin: 0 0 40px;
+        .secTtl {
+          width: 200px;
+        }
+      }
+      .secContainer {
+        padding: 60px 20px;
+      }
+      .secPanelList {
+        &::before {
+          left: 50%;
+        }
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .photoBox {
+          position: relative;
+          .num {
+            width: 60px;
+          }
+        }
+        .txtBox {
+          padding: 30px 20px;
+          .ttlBox {
+            margin: 0 0 15px;
+            .ttl {
+              h3 {
+                font-size: 20px;
+              }
+            }
+          }
+          .itemBox {
+            margin: 10px 0 0;
+            .tel {
+              display: block;
+              a {
+                padding: 0 0 0 30px;
+                font-size: 30px;
+                background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/strength_sec01_tel.png)
+                  left top 5px no-repeat;
+                background-size: 25px auto;
+              }
+            }
+            .btnMore {
+              display: block;
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 100px;
+      .secTtlBox {
+        margin: 0 0 40px;
+        .secTtl {
+          max-width: 400px;
+        }
+      }
+      .secBox {
+        text-align: center;
+        .dl {
+          margin: 0 0 40px;
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+        .map {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reform
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .reformMain {
+    .topSection {
+      padding: 40px 0 60px;
+      .balloon {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+    .meritSection {
+      margin: 0 auto 100px;
+      .secPanel {
+        + .secPanel {
+          margin: 50px 0 0;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          .ttlBox {
+            display: block;
+            margin: 0 0 15px;
+            .num {
+              width: 60px;
+              margin: 0 0 10px;
+            }
+            .ttl {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .listContainer {
+        margin: 60px 0 0;
+        .listPanel01 {
+          .ttl {
+            width: 250px;
+          }
+          .listBox {
+            max-width: 500px;
+            .ul {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              .li {
+                width: calc((100% / 2) - 5px);
+                padding: 0 0 40px;
+              }
+              .img {
+                margin: 15px 0;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .planSection {
+      margin: 0 0 100px;
+      padding: 60px 20px;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        .secTtl {
+          width: 200px;
+        }
+      }
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .listContainer01 {
+        .listBox {
+          .ul {
+            .li + .li {
+              margin: 40px 0 0;
+            }
+            .txtBox {
+              top: -10px;
+              left: 10px;
+              padding: 30px 20px;
+              .dl {
+                .dt {
+                  margin: 0 0 10px;
+                  .em {
+                    font-size: 18px;
+                  }
+                  .case {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .listContainer02 {
+        margin: 50px 0 0;
+        .listPanel {
+          + .listPanel {
+            margin: 40px 0 0;
+          }
+          .ttl {
+            max-width: 280px;
+          }
+          .listBox {
+            padding: 40px 20px;
+          }
+        }
+      }
+    }
+    .worksSection {
+      margin: 0 0 100px;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        .secTtl {
+          width: 200px;
+        }
+      }
+      .worksPanel {
+        min-height: 0;
+        + .worksPanel {
+          margin: 80px 0 0;
+        }
+        .secBox {
+          position: static;
+          min-height: 0;
+          padding: 50px 20px;
+        }
+        .secBox01 {
+          min-height: 0;
+        }
+        .btnMore {
+          margin: 20px auto 0;
+        }
+      }
+    }
+    .voiceSection {
+      margin: 0 0 100px;
+      padding: 60px 20px;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        .secTtl {
+          width: 200px;
+        }
+      }
+      .voicePanel {
+        padding: 20px;
+        .secBox {
+          display: block;
+          .icon {
+            width: 60px;
+            margin: 0 auto 10px;
+          }
+          .txt {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .faqSection {
+      margin: 0 0 100px;
+      .secTtlBox {
+        margin: 0 auto 40px;
+        .secTtl {
+          width: 150px;
+        }
+      }
+      .secBox {
+        padding: 20px 10px;
+        .ttlHead {
+          padding: 0 10px 10px;
+          background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/accord_plus.png)
+            right 5px center no-repeat;
+          &.active {
+            background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/accord_minus.png)
+              right 5px center no-repeat;
+          }
+          .icon {
+            margin: 0 10px 0 0;
+            font-size: 20px;
+          }
+          .ttl {
+            padding: 0 5px 0 0;
+            font-size: 16px;
+          }
+        }
+        .cntBody {
+          padding: 20px;
+        }
+      }
+      .forBusiness {
+        margin: 60px 0 0;
+        text-align: center;
+        .ttl {
+          max-width: 260px;
+        }
+        .txtBox {
+          top: -20px;
+          padding: 40px 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	partial
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .partialMain {
+    .pageKvPanel {
+      .pageKvTitle {
+        width: 280px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	full
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .fullMain {
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	exterior
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .exteriorMain {
+    .pageKvPanel {
+      .pageKvTitle {
+        width: 280px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .section {
+      margin: 0 0 100px;
+    }
+    .secTtlBox {
+      margin: 0 auto 40px;
+      .secTtl {
+        max-width: 250px;
+      }
+    }
+    .sec01 {
+      padding: 60px 0 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          h3 {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+          .name {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 20px;
+      .secTtlBox {
+        .secTtl {
+          max-width: 200px;
+        }
+      }
+      .mvBox {
+        margin: 0 auto 50px;
+        .mv {
+          top: -10px;
+          left: -10px;
+        }
+      }
+      .listBox {
+        max-width: 600px;
+        .list {
+          .ul {
+            .li {
+              + .li {
+                margin: 40px 0 0;
+              }
+            }
+            .txtBox {
+              padding: 20px 10px 30px;
+              .ttlBox {
+                padding: 0 0 10px;
+                .ttl01 {
+                  font-size: 12px;
+                }
+                .ttl02 {
+                  .em {
+                    font-size: 20px;
+                  }
+                  .span {
+                    font-size: 12px;
+                  }
+                }
+              }
+              .txt {
+                padding: 0;
+                line-height: 2;
+                + .txt {
+                  margin: 15px 0 0;
+                }
+                p + p {
+                  margin: 15px 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      .secTtlBox {
+        .secTtl {
+          max-width: 250px;
+        }
+      }
+      .secPanel {
+        margin: 0 auto 50px;
+        padding: 0;
+        .secBox {
+          .photo {
+            img {
+              border-radius: 10px;
+            }
+          }
+          .txtBox {
+            padding: 20px 0 0;
+          }
+          .infoBox {
+            .dl {
+              > * {
+                padding: 10px;
+                vertical-align: middle;
+              }
+              .dt {
+                width: 80px;
+              }
+            }
+          }
+        }
+        .balloon {
+          width: 80%;
+          max-width: 500px;
+          margin: 20px auto 0;
+        }
+      }
+    }
+    .sec04 {
+      .infoBox {
+        .dl {
+          > * {
+            padding: 10px;
+            vertical-align: middle;
+          }
+          .dt {
+            width: 90px;
+          }
+        }
+      }
+      .snsContainer {
+        margin: 60px 0 0;
+        .ttl {
+          width: 260px;
+        }
+        .secBox {
+          display: block;
+          > * {
+            display: block;
+            padding: 20px;
+          }
+          .ttlBox {
+            width: 100%;
+            font-size: 18px;
+            border-radius: 20px 20px 0 0;
+          }
+          .txtBox {
+            border-radius: 0 0 20px 20px;
+          }
+          .snsBox {
+            display: block;
+            .ul {
+              width: 100%;
+              max-width: 300px;
+              margin: 0 auto 30px;
+              .li {
+                width: 48%;
+              }
+            }
+            .txt {
+              width: 100%;
+              max-width: 260px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .section {
+      margin: 0 0 100px;
+    }
+    .secTtlBox {
+      margin: 0 auto 40px;
+    }
+    .sec01 {
+      padding: 60px 0 0;
+      .secTtlBox {
+        .secTtl {
+          max-width: 260px;
+        }
+      }
+      .secBox {
+        display: block;
+        > * {
+          display: block;
+          padding: 20px;
+          height: auto;
+        }
+        .ttlBox {
+          width: 100%;
+          font-size: 18px;
+          border-radius: 20px 20px 0 0;
+          .ttl01 {
+            width: 100px;
+          }
+          .ttl02 {
+            width: 80px;
+          }
+        }
+        .txtBox {
+          border-radius: 0 0 20px 20px;
+          .tel {
+            max-width: 280px;
+            a {
+              padding: 0 0 0 25px;
+              font-size: 24px;
+              background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/contact_tel.png)
+                left top 10px no-repeat;
+              background-size: 20px auto;
+            }
+          }
+          .line {
+            a {
+              display: block;
+              width: 140px;
+              margin: 0 auto 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 20px;
+      .secTtlBox {
+        .secTtl {
+          max-width: 160px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .datePanel {
+          display: block;
+          font-size: 14px;
+          + .datePanel {
+            margin: 20px 0 0;
+          }
+          > * {
+            padding: 0 0 5px;
+          }
+          input {
+            width: 60px;
+          }
+          .selectBox {
+            width: 60px;
+          }
+          .dateTtl {
+            margin: 0 10px 0 0;
+          }
+          .dateTxt {
+            margin: 0 5px;
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	works
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .worksMain {
+    .blogSection {
+      padding: 80px 0;
+    }
+    .catePanel {
+      max-width: 320px;
+      margin: 0 auto 40px;
+      .webgene-item {
+        margin: 10px 0 0;
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 60px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+          .thumb-item {
+            &.slider {
+              .li {
+                > div {
+                  overflow: hidden;
+                  position: relative;
+                  padding: 0 0 100%;
+                }
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+          .slick-prev {
+            left: -20px;
+          }
+          .slick-next {
+            right: -20px;
+          }
+        }
+        .btnBackBox {
+          margin: 50px 0 0;
+        }
+        .btnBack {
+          width: 180px;
+        }
+      }
+    }
+  }
+}

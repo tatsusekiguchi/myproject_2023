@@ -1,0 +1,1769 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  margin: 0 0 150px;
+}
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 800px;
+}
+.topMain .topKvPanel .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvPanel .kvBox .kv01 {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv02 {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv03 {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvTtl {
+  position: absolute;
+  left: 5%;
+  bottom: 100px;
+  color: #ffffff;
+  z-index: 1;
+}
+.topMain .topKvPanel .kvTtl h1 {
+  margin: 0 0 20px;
+  font-size: 60px;
+}
+.topMain .topKvPanel .kvTtl h1 + p {
+  padding: 0 0 0 30px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+.topMain .sec01 {
+  position: relative;
+}
+.topMain .sec01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background: #cf2b2c;
+}
+.topMain .sec01 .secBox {
+  position: relative;
+}
+.topMain .sec01 .secBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 200px);
+  height: 100%;
+  z-index: -1;
+  background: #cf2b2c;
+}
+.topMain .sec01 .secBox .txtBox {
+  padding: 100px 0 0;
+}
+.topMain .sec01 .secBox .txtBox .pageSecTtlBox {
+  color: #ffffff;
+}
+.topMain .sec01 .secBox .txtBox .pageSecTtlBox .pageSecTtl + * {
+  color: #ffffff;
+}
+.topMain .sec01 .secBox .txtBox .message {
+  margin: 0 0 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffc334;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    min-height: 650px;
+    padding: 50px 0;
+  }
+  .topMain .sec01 .secBox .photoBox {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.topMain .sec02 {
+  padding: 150px 0;
+}
+.topMain .sec02 .listBox .ul a {
+  display: block;
+}
+.topMain .sec02 .listBox .ul .title {
+  position: relative;
+  margin: 20px 0 0;
+}
+.topMain .sec02 .listBox .ul .title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #232729;
+}
+.topMain .sec02 .listBox .ul .title p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -60px 0 0;
+  }
+  .topMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+    margin: 60px 0 0;
+  }
+  .topMain .sec02 .listBox .ul .photo {
+    overflow: hidden;
+    position: relative;
+    height: 280px;
+  }
+  .topMain .sec02 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec03 .secWrap {
+  padding: 50px 30px 50px 100px;
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/top_sec03_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec03 .secBox .leftBox {
+  padding: 40px 60px;
+  color: #ffffff;
+  background: #cf2b2c;
+}
+.topMain .sec03 .secBox .leftBox .pageSecTtlBox .pageSecTtl + * {
+  color: #ed9e9e;
+}
+.topMain .sec03 .secBox .leftBox .txt {
+  margin: 0 0 30px;
+}
+.topMain .sec03 .secBox .rightBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topMain .sec03 .secBox .rightBox .ul .li {
+  width: calc(33.3333333333% - 5px);
+  margin: 10px 0 0;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: #cf2b2c;
+}
+.topMain .sec03 .secBox .rightBox .ul .li p {
+  padding: 20px 5px;
+  border: 1px solid #ffffff;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .topMain .sec03 .secBox .leftBox {
+    width: 48%;
+  }
+  .topMain .sec03 .secBox .rightBox {
+    width: 50%;
+  }
+}
+.topMain .sec04 {
+  padding: 150px 0;
+}
+.topMain .sec04 .secBox .pageSecTtlBox {
+  margin: 0 0 80px;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-item {
+  padding: 10px 0 30px;
+  border-bottom: 1px solid #ecebeb;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-item + .webgene-item {
+  padding: 30px 0;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-item .dl .dt {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-item .dl .dt .time {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-item .dl .dt .cate {
+  display: inline-block;
+  min-width: 90px;
+  padding: 2px 5px;
+  font-size: 14px;
+  text-align: center;
+  background: #ecebeb;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-item .dl .dd {
+  display: inline-block;
+}
+.topMain .sec04 .secBox .webgene-blog .webgene-item .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec04 .secBox .leftBox {
+    width: 35%;
+  }
+  .topMain .sec04 .secBox .rightBox {
+    width: 60%;
+  }
+}
+.topMain .sec05 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.topMain .sec05 .secBox .txtBox .txt {
+  margin: 0 0 40px;
+}
+.topMain .sec05 .secBox .txtBox .btnList .ul .li {
+  border-bottom: 1px solid #ecebeb;
+}
+.topMain .sec05 .secBox .txtBox .btnList .ul .li a {
+  display: block;
+  padding: 30px 10px 30px 60px;
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/btn_more_red.png) right 40px center no-repeat;
+  background-size: 50px auto;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec05 .secBox .photo {
+    order: 2;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 380px;
+  }
+  .topMain .sec05 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec05 .secBox .txtBox {
+    order: 1;
+    width: 45%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+.reasonMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/reason_kv.png) center no-repeat;
+  background-size: cover;
+}
+.reasonMain .sec01 {
+  padding: 100px 0 0;
+}
+.reasonMain .sec01 .secBoxList {
+  margin: 0 0 150px;
+}
+.reasonMain .sec01 .secBoxList .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.reasonMain .sec01 .secBoxList .secBox .txtBox .num {
+  position: relative;
+  margin: 0 0 20px;
+}
+.reasonMain .sec01 .secBoxList .secBox .txtBox .num::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #ecebeb;
+}
+.reasonMain .sec01 .secBoxList .secBox .txtBox .num p {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px 0 0;
+  color: #939597;
+  background: #ffff;
+}
+.reasonMain .sec01 .secBoxList .secBox .txtBox .ttl {
+  margin: 0 0 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media (min-width: 1025px) {
+  .reasonMain .sec01 .secBoxList .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reasonMain .sec01 .secBoxList .secBox .photo {
+    width: 40%;
+    position: relative;
+    height: 370px;
+  }
+  .reasonMain .sec01 .secBoxList .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .reasonMain .sec01 .secBoxList .secBox .txtBox {
+    width: 55%;
+  }
+  .reasonMain .sec01 .secBoxList .secBox:nth-child(even) .photo {
+    order: 2;
+  }
+  .reasonMain .sec01 .secBoxList .secBox:nth-child(even) .txtBox {
+    order: 1;
+  }
+}
+.reasonMain .sec01 .listPanel {
+  padding: 60px;
+  background: #f6eeee;
+}
+.reasonMain .sec01 .listPanel .ttlBox {
+  position: relative;
+  margin: 0 0 40px;
+}
+.reasonMain .sec01 .listPanel .ttlBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #232729;
+}
+.reasonMain .sec01 .listPanel .ttlBox h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 20px 0 0;
+  background: #f6eeee;
+}
+@media (min-width: 1025px) {
+  .reasonMain .sec01 .listPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reasonMain .sec01 .listPanel .secBox .leftBox {
+    width: 48%;
+    padding: 20px 0;
+    border-right: 1px solid #232729;
+  }
+  .reasonMain .sec01 .listPanel .secBox .leftBox .txt {
+    max-width: 440px;
+  }
+  .reasonMain .sec01 .listPanel .secBox .rightBox {
+    width: 48%;
+  }
+  .reasonMain .sec01 .listPanel .secBox .rightBox .txt {
+    display: inline-block;
+  }
+  .reasonMain .sec01 .listPanel .secBox .rightBox .txt:first-child {
+    margin: 0 20px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .sectionContainer {
+  padding: 100px 0 0;
+}
+.serviceMain .section + .section {
+  margin: 150px 0 0;
+}
+@media (min-width: 1025px) {
+  .serviceMain .section .topBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .section .topBox .photo {
+    order: 2;
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    height: 380px;
+  }
+  .serviceMain .section .topBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .serviceMain .section .topBox .txtBox {
+    order: 1;
+    width: 53%;
+  }
+}
+.serviceMain .section .cntBox {
+  margin: 100px 0 0;
+  padding: 60px;
+  background: #f6eeee;
+}
+.serviceMain .section .cntBox .ttlBox {
+  position: relative;
+  margin: 0 0 30px;
+}
+.serviceMain .section .cntBox .ttlBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #232729;
+}
+.serviceMain .section .cntBox .ttlBox h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 20px 0 0;
+  background: #f6eeee;
+}
+.serviceMain .section .cntBox .ttlBox + .txt {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .serviceMain .section .cntBox .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .section .cntBox .secBox .leftBox {
+    width: 30%;
+  }
+  .serviceMain .section .cntBox .secBox .leftBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 270px;
+  }
+  .serviceMain .section .cntBox .secBox .leftBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .serviceMain .section .cntBox .secBox .rightBox {
+    width: 65%;
+  }
+  .serviceMain .section .cntBox .secBox .rightBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .section .cntBox .secBox .rightBox .ul .li {
+    width: 48%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	highway
+///////////////////////////////////////////////////////////*/
+.highwayMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/highway_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	traffic
+///////////////////////////////////////////////////////////*/
+.trafficMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/traffic_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	greeting
+///////////////////////////////////////////////////////////*/
+.greetingMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/greeting_kv.png) center no-repeat;
+  background-size: cover;
+}
+.greetingMain .sec01 {
+  padding: 100px 0 0;
+}
+.greetingMain .sec01 .message {
+  margin: 0 0 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.greetingMain .sec01 .numListBox {
+  padding: 30px 40px;
+  background: #f6eeee;
+}
+.greetingMain .sec01 .numListBox .ol .li {
+  padding: 30px;
+  background: #ffffff;
+}
+.greetingMain .sec01 .numListBox .ol .li + .li {
+  margin: 30px 0 0;
+}
+.greetingMain .sec01 .numListBox .ol .dl .dt .num {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 60px;
+  color: #f6e7e7;
+  line-height: 1;
+}
+.greetingMain .sec01 .numListBox .ol .dl .dt .ttl {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (min-width: 1025px) {
+  .greetingMain .sec01 .numListBox .ol .dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .greetingMain .sec01 .numListBox .ol .dl .dt {
+    width: 45%;
+    padding: 30px 0;
+    border-right: 2px solid #232729;
+  }
+  .greetingMain .sec01 .numListBox .ol .dl .dd {
+    width: 50%;
+  }
+}
+.greetingMain .sec02 {
+  padding: 150px 0 0;
+}
+.greetingMain .sec02 .secBox .photoBox .name {
+  margin: 20px 0 0;
+}
+.greetingMain .sec02 .secBox .photoBox .name p {
+  display: inline-block;
+  font-size: 20px;
+}
+.greetingMain .sec02 .secBox .photoBox .name .span {
+  margin: 0 10px 0 0;
+}
+.greetingMain .sec02 .secBox .photoBox .name .em {
+  font-size: 28px;
+}
+.greetingMain .sec02 .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media (min-width: 1025px) {
+  .greetingMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .greetingMain .sec02 .secBox .photoBox {
+    width: 40%;
+  }
+  .greetingMain .sec02 .secBox .txtBox {
+    width: 55%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/company_kv.png) center no-repeat;
+  background-size: cover;
+}
+.companyMain .sec01 {
+  padding: 100px 0 0;
+}
+.companyMain .sec01 .infoPanel .infoBox .dl {
+  display: flex;
+  padding: 20px 60px;
+  border-bottom: 1px solid #ecebeb;
+}
+.companyMain .sec01 .infoPanel .infoBox .dl + dl {
+  margin: 10px 0 0;
+}
+.companyMain .sec01 .infoPanel .infoBox .dl .dt {
+  width: 30%;
+  color: #939597;
+}
+.companyMain .sec01 .infoPanel .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .infoPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .companyMain .sec01 .infoPanel .infoBox {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+.companyMain .mapPanel {
+  max-width: 1400px;
+  margin: 100px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	voice
+///////////////////////////////////////////////////////////*/
+.voiceMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/voice_kv.png) center no-repeat;
+  background-size: cover;
+}
+.voiceMain .sec01 {
+  padding: 100px 0 0;
+}
+.voiceMain .sec01 h3 {
+  margin: 0 0 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.voiceMain .sec01 .sectionContainer {
+  padding: 30px;
+  background: #f6eeee;
+}
+.voiceMain .sec01 .secPanel {
+  padding: 30px 40px;
+  background: #ffffff;
+}
+.voiceMain .sec01 .secPanel + .secPanel {
+  margin: 25px 0 0;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .num {
+  position: relative;
+  max-width: 160px;
+  margin: 0 0 20px;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .num::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #232729;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .num p {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 15px 0 0;
+  background: #ffff;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .dl .dt {
+  margin: 0 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .dl .dd > * + * {
+  margin: 20px 0 0;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .dl .dd .ol {
+  counter-reset: item;
+  line-height: 2.5;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .dl .dd .ol .li {
+  position: relative;
+  padding: 0 0 0 1em;
+}
+.voiceMain .sec01 .secPanel .secBox .txtBox .dl .dd .ol .li::before {
+  counter-increment: item;
+  content: counter(item) ".";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 1025px) {
+  .voiceMain .sec01 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .voiceMain .sec01 .secPanel .secBox .photo {
+    order: 2;
+    width: 280px;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+  }
+  .voiceMain .sec01 .secPanel .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .voiceMain .sec01 .secPanel .secBox .txtBox {
+    order: 1;
+    width: calc(100% - 340px);
+  }
+}
+.voiceMain .sec02 {
+  padding: 150px 0 0;
+}
+.voiceMain .sec02 .secBoxList {
+  margin: 0 0 100px;
+}
+.voiceMain .sec02 .secBoxList .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.voiceMain .sec02 .secBoxList .secBox .txtBox .num {
+  position: relative;
+  margin: 0 0 20px;
+}
+.voiceMain .sec02 .secBoxList .secBox .txtBox .num::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #ecebeb;
+}
+.voiceMain .sec02 .secBoxList .secBox .txtBox .num p {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px 0 0;
+  color: #939597;
+  background: #ffff;
+}
+.voiceMain .sec02 .secBoxList .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media (min-width: 1025px) {
+  .voiceMain .sec02 .secBoxList .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .voiceMain .sec02 .secBoxList .secBox .photo {
+    width: 43%;
+    position: relative;
+    height: 420px;
+  }
+  .voiceMain .sec02 .secBoxList .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .voiceMain .sec02 .secBoxList .secBox .txtBox {
+    width: 53%;
+  }
+  .voiceMain .sec02 .secBoxList .secBox:nth-child(even) .photo {
+    order: 2;
+  }
+  .voiceMain .sec02 .secBoxList .secBox:nth-child(even) .txtBox {
+    order: 1;
+  }
+}
+.voiceMain .sec02 .btnRecruit {
+  max-width: 500px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ecebeb;
+}
+.voiceMain .sec02 .btnRecruit a {
+  display: block;
+  padding: 30px 10px 30px 60px;
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/btn_more_red.png) right 40px center no-repeat;
+  background-size: 50px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/recruit_kv.png) center no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec01 {
+  position: relative;
+  margin: 100px 0 0;
+}
+.recruitMain .sec01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background: #cf2b2c;
+}
+.recruitMain .sec01 .secBox {
+  position: relative;
+}
+.recruitMain .sec01 .secBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #cf2b2c;
+}
+.recruitMain .sec01 .secBox .txtBox {
+  padding: 100px 0;
+  color: #ffffff;
+}
+.recruitMain .sec01 .secBox .txtBox .pageSecTtlBox .pageSecTtl + * {
+  color: #ed9e9e;
+}
+.recruitMain .sec01 .secBox .txtBox .message {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffc334;
+}
+.recruitMain .sec01 .secBox .txtBox .txt {
+  margin: 0 0 60px;
+}
+.recruitMain .sec01 .secBox .txtBox .name {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: right;
+}
+.recruitMain .sec01 .secBox .txtBox .name .span {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 20px;
+}
+.recruitMain .sec01 .secBox .txtBox .name .em {
+  display: inline-block;
+  font-size: 25px;
+}
+.recruitMain .sec02 {
+  padding: 150px 0 0;
+}
+.recruitMain .sec02 h3 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.recruitMain .sec02 .listBox {
+  padding: 40px 60px;
+  background: #f6eeee;
+}
+.recruitMain .sec02 .listBox .ol .li {
+  padding: 30px 20px;
+  background: #ffffff;
+}
+.recruitMain .sec02 .listBox .ol .dl {
+  font-weight: bold;
+  text-align: center;
+}
+.recruitMain .sec02 .listBox .ol .dl .dt {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  font-size: 30px;
+  color: #cf2b2c;
+  border-bottom: 1px solid #ecebeb;
+}
+.recruitMain .sec02 .listBox .ol .dl .dd {
+  font-size: 26px;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .listBox .ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec02 .listBox .ol .li {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+.recruitMain .sec03 {
+  padding: 150px 0 0;
+}
+.recruitMain .sec03 .secBox {
+  padding: 0 0 20px;
+  border-bottom: 1px solid #ecebeb;
+}
+.recruitMain .sec03 .secBox .leftBox .txt {
+  max-width: 520px;
+}
+.recruitMain .sec03 .secBox .readMore {
+  width: 200px;
+}
+.recruitMain .sec03 .secBox .readMore a {
+  display: block;
+  padding: 30px 0;
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/btn_more_red.png) right center no-repeat;
+  background-size: 50px auto;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+.recruitMain .sec04 {
+  padding: 150px 0 0;
+}
+.recruitMain .sec04 .infoPanel .infoBox .dl {
+  display: flex;
+  padding: 20px 0 20px 50px;
+  line-height: 2.5;
+  border-bottom: 1px solid #ecebeb;
+}
+.recruitMain .sec04 .infoPanel .infoBox .dl + dl {
+  margin: 10px 0 0;
+}
+.recruitMain .sec04 .infoPanel .infoBox .dl .dt {
+  width: 25%;
+  color: #939597;
+}
+.recruitMain .sec04 .infoPanel .infoBox .dl .dd {
+  width: 75%;
+}
+.recruitMain .sec04 .infoPanel .infoBox .dl .dd .txt {
+  display: inline-block;
+  vertical-align: top;
+}
+.recruitMain .sec04 .infoPanel .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec04 .infoPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .recruitMain .sec04 .infoPanel .infoBox {
+    width: 100%;
+    max-width: 900px;
+  }
+  .recruitMain .sec04 .infoPanel .infoBox .dl .dd .txt {
+    width: 47%;
+  }
+  .recruitMain .sec04 .infoPanel .infoBox .dl .dd .txt:first-child {
+    margin: 0 3% 0 0;
+  }
+}
+.recruitMain .sec05 {
+  padding: 150px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/contact_kv.png) center no-repeat;
+  background-size: cover;
+}
+.contactMain .sec01 {
+  padding: 100px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain .entryTelContainer {
+  padding: 50px 60px;
+  background: #f6eeee;
+}
+.formMain .entryTelContainer h3 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.formMain .entryTelContainer h3 + .txt {
+  margin: 0 0 30px;
+}
+.formMain .entryTelContainer .telPanel .ul .li {
+  padding: 30px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+.formMain .entryTelContainer .telPanel .ul .place {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #edecec;
+}
+.formMain .entryTelContainer .telPanel .ul .place .span {
+  margin: 0 0 10px;
+}
+.formMain .entryTelContainer .telPanel .ul .place .em {
+  max-width: 130px;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 15px;
+  background: #ecebeb;
+}
+.formMain .entryTelContainer .telPanel .ul .tel {
+  margin: 0 0 10px;
+}
+.formMain .entryTelContainer .telPanel .ul .tel a {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+}
+.formMain .entryTelContainer .telPanel .ul .time {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .formMain .entryTelContainer .telPanel .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -50px;
+  }
+  .formMain .entryTelContainer .telPanel .ul .li {
+    width: calc(33.3333333333% - 50px);
+    margin: 40px 0 0 50px;
+  }
+}
+.formMain .entryMailContainer {
+  margin: 150px 0 0;
+}
+.formMain .entryMailContainer .topBox {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+.formMain .entryMailContainer .topBox .ttlBox {
+  position: relative;
+  margin: 0 0 30px;
+}
+.formMain .entryMailContainer .topBox .ttlBox:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #232729;
+}
+.formMain .entryMailContainer .topBox .ttlBox h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 20px 0 0;
+  background: #ffffff;
+}
+
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #fbf5f5;
+  background: #fbf5f5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fbf5f5;
+  background: #fbf5f5;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 20px 10px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: #cf2b2c;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit]:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/btn_more_white.png) no-repeat;
+  background-size: 100% auto;
+}
+.formMain .contactForm button[type=submit] span {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 0 0 30px;
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+  background-size: 18px auto;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm button:hover {
+    opacity: 0.6;
+  }
+}
+.formMain .contactForm .form .checkList .ul .li {
+  display: inline-block;
+  margin: 20px 20px 0 0;
+}
+.formMain .contactForm .form .checkList02 {
+  margin: 20px 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0 20px;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  border: 1px solid #fbf5f5;
+  background: #fbf5f5;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #cf2b2c;
+  border-right: 3px solid #cf2b2c;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList {
+  padding: 5px 0;
+}
+.formMain .contactForm .form .radioList .list + .list {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .radioList + input {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .form .radioList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formMain .contactForm .form .radioList .list + .list {
+    margin: 0 0 0 30px;
+  }
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
+  background: #fcfcfc;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #32a44a;
+}
+.formMain .contactForm .form .postal input {
+  width: 90px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .ageInput input {
+  width: 100px;
+}
+.formMain .contactForm .form .ageInput .ageTxt {
+  display: inline-block;
+  margin: 5px 0 0;
+  line-height: 2;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ecebeb;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 340px;
+  padding: 15px 10px 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  color: #939597;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  vertical-align: middle;
+  background: #ecebeb;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 360px);
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+  width: 60px;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  background: #f4f4f4;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .aside {
+  padding: 10px 0;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox + .fileBox {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 40%;
+  font-size: 16px;
+  color: #404142;
+  text-align: center;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 40px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p {
+  width: 58%;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 120px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .pageKvPanel {
+  background: url(https://taiyoukeibi.jp/system_panel/uploads/images/news_kv.png) center no-repeat;
+  background-size: cover;
+}
+.newsMain .postMain {
+  padding: 100px 0 0;
+}
+@media (min-width: 1025px) {
+  .newsMain .postContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newsMain .catePanel {
+    width: 180px;
+  }
+  .newsMain .listPanel,
+.newsMain .postDetail {
+    width: calc(100% - 280px);
+  }
+}
+.newsMain .catePanel .webgene-blog .webgene-header {
+  max-width: 150px;
+  margin: 0 0 40px;
+  padding: 0 0 20px;
+  color: #cf2b2c;
+  border-bottom: 1px solid #ecebeb;
+}
+.newsMain .catePanel .webgene-blog .webgene-item {
+  border-bottom: 1px solid #ecebeb;
+}
+.newsMain .catePanel .webgene-blog .webgene-item a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 0 15px 50px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.newsMain .catePanel .webgene-blog .webgene-item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 1px;
+  margin: auto 0;
+  background: #202020;
+}
+.newsMain .listPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .listPanel .webgene-blog .webgene-item {
+  border-bottom: 1px solid #ecebeb;
+}
+.newsMain .listPanel .webgene-blog .webgene-item a {
+  display: block;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.newsMain .listPanel .webgene-blog .webgene-item .txtBox {
+  margin: 20px 0;
+}
+.newsMain .listPanel .webgene-blog .webgene-item .info {
+  margin: 0 0 10px;
+}
+.newsMain .listPanel .webgene-blog .webgene-item .info > * {
+  display: inline-block;
+}
+.newsMain .listPanel .webgene-blog .webgene-item .info .time {
+  margin: 0 15px 0 0;
+  color: #939597;
+}
+.newsMain .listPanel .webgene-blog .webgene-item .info .cate {
+  padding: 3px 15px;
+  font-size: 15px;
+  text-align: center;
+  background: #ecebeb;
+}
+.newsMain .listPanel .webgene-blog .webgene-item .ttl {
+  font-size: 15px;
+}
+@media (min-width: 1025px) {
+  .newsMain .listPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -30px;
+  }
+  .newsMain .listPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 30px);
+    margin: 50px 0 0 30px;
+  }
+  .newsMain .listPanel .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 70%;
+  }
+  .newsMain .listPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsMain .listPanel .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.newsMain .listPanel .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsMain .listPanel .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.newsMain .listPanel .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #cdcdcd;
+}
+.newsMain .listPanel .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.newsMain .listPanel .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.newsMain .listPanel .webgene-pagination ul .selected a {
+  background: #cf2b2c;
+}
+@media (min-width: 1025px) {
+  .newsMain .listPanel .webgene-pagination ul li {
+    margin: 0 10px;
+  }
+  .newsMain .listPanel .webgene-pagination ul .prev {
+    float: left;
+  }
+  .newsMain .listPanel .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.newsMain .postDetail .webgene-blog {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.newsMain .postDetail .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .postDetail .webgene-blog .webgene-item-info {
+  margin: 0 0 40px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #ecebeb;
+}
+.newsMain .postDetail .webgene-blog .webgene-item-info .infoBox {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+.newsMain .postDetail .webgene-blog .webgene-item-info .infoBox > * {
+  display: inline-block;
+}
+.newsMain .postDetail .webgene-blog .webgene-item-info .infoBox .time {
+  margin: 0 15px 0 0;
+  color: #939597;
+}
+.newsMain .postDetail .webgene-blog .webgene-item-info .infoBox .cate {
+  padding: 3px 15px;
+  font-size: 15px;
+  text-align: center;
+  background: #ecebeb;
+}
+.newsMain .postDetail .webgene-blog .webgene-item-info .title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.newsMain .postDetail .webgene-blog .slickSlide {
+  margin: 0 0 60px;
+}
+.newsMain .postDetail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 70%;
+}
+.newsMain .postDetail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newsMain .postDetail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.newsMain .postDetail .webgene-blog .thumb-item {
+  margin: 0 auto 10px;
+}
+.newsMain .postDetail .webgene-blog .slick-slide {
+  margin: 0 5px;
+}
+.newsMain .postDetail .webgene-blog .postBox .photo {
+  margin-bottom: 20px;
+}
+.newsMain .postDetail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.newsMain .postDetail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.newsMain .postDetail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.newsMain .pdfArea {
+  margin: 40px 0 0;
+}
+.newsMain .pdfArea a {
+  color: #2151a3;
+}
+.newsMain .btnMore {
+  max-width: 200px;
+  margin: 80px auto 0;
+}

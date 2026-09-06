@@ -1,0 +1,211 @@
+<?php
+/*
+Template Name: wacca_recruit_complete
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/wacca/css/reset.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/wacca/css/slick.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/wacca/css/slick-theme.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/wacca/css/common.css?202005301030">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/wacca/css/layout.css?202005301030">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="<?php bloginfo('template_url'); ?>/wacca/css/common_sp.css?202005301030">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="<?php bloginfo('template_url'); ?>/wacca/css/layout_sp.css?202005301030">
+	<!-- js-->
+	<script src="<?php bloginfo('template_url'); ?>/wacca/js/jquery-1.11.3.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/wacca/js/slick.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/wacca/js/common.js?202005301030"></script>
+	<!-- title-->
+	<title>送信完了 | 美容を通じて広がる“幸せの輪”｜wacca</title>
+	<?php wp_head(); ?>
+</head>
+
+<body>
+	<!-- ▽header▽-->
+	<header class="header">
+		<div class="headBox">
+			<div class="instagram"><a href="https://www.instagram.com/hair.wacca/" target="_blank" rel="noopener"><img src="<?php bloginfo('template_url'); ?>/wacca/image/common/header_insta.png" alt=""></a></div>
+			<div class="logo"><a href="<?php echo home_url(); ?>/wacca_recruit/"><img src="<?php bloginfo('template_url'); ?>/wacca/image/common/header_logo.png" alt="wacca"></a></div>
+			<div class="items">
+				<div class="btnEntry"><a href="<?php echo home_url(); ?>/wacca_recruit/#section__entry">Entry</a></div>
+				<div class="hamburgerBox">
+					<div class="hamburger"><span></span><span></span><span></span></div>
+				</div>
+			</div>
+		</div>
+		<div class="subNavigationContainer">
+			<div class="subNavigationContainer__wrap">
+				<div class="subNavigation">
+					<div class="menuPanel">
+						<div class="subNavigation__title">
+							<p>MENU</p>
+						</div>
+						<div class="subNavigation__list">
+							<ol>
+								<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__concept">コンセプト</a></li>
+								<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__work">働き方</a></li>
+								<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__owner">オーナー挨拶</a></li>
+								<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__flow">採用フロー</a></li>
+								<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__job">募集要項</a></li>
+								<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__salon">会社概要</a></li>
+							</ol>
+						</div>
+						<div class="subNavigation__items">
+							<dl>
+								<dt>- LOOK ME</dt>
+								<dd>
+									<ul>
+										<li><a href="https://beauty.hotpepper.jp/slnH000645376/" target="_blank" rel="noopener">＋ HOT PEPPER</a></li>
+										<li><a href="https://www.instagram.com/hair.wacca/" target="_blank" rel="noopener">＋ INSTAGRAM</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="photoPanel">
+						<ul>
+							<li>
+								<div class="photo">
+									<?php
+										$image = SCF::get('shop_photo', 135);
+										echo wp_get_attachment_image($image, 'full');
+									?>
+								</div>
+							</li>
+							<li>
+								<div class="photo"><img src="<?php bloginfo('template_url'); ?>/wacca/image/common/header_nav_img_02_pc.png" alt=""></div>
+							</li>
+						</ul>
+						<div class="infoBox">
+							<div class="inner">
+								<p><?php echo nl2br(SCF::get('shop_address', 135)); ?></p>
+								<dl>
+									<dt>OPEN</dt>
+									<dd><?php echo SCF::get('shop_open', 135); ?></dd>
+								</dl>
+								<dl>
+									<dt>CLOSE</dt>
+									<dd><?php echo SCF::get('shop_close', 135); ?></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imgSp"><img src="<?php bloginfo('template_url'); ?>/wacca/image/common/header_nav_img_bg_sp.png" alt=""></div>
+			</div>
+		</div>
+	</header>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<main id="contactComplete">
+		<div id="section__entry">
+			<div class="entryContainer">
+				<div class="secWrap01">
+					<div class="secTitleBox">
+						<p>ARIGATO!!</p>
+						<h2>送信ありがとうございます。</h2>
+					</div>
+					<div class="topTxt">
+						<div class="txt">
+							<p>この度はご応募いただきありがとうございます。<br>通常2-3営業日以内にご返信させていただいております。<br>万が一、返信がない場合はお手数ですがお電話にてご連絡ください。</p>
+						</div>
+					</div>
+					<div class="btnToTop"><a href="<?php echo home_url(); ?>/wacca_recruit/"><img src="<?php bloginfo('template_url'); ?>/wacca/image/common/form_submit_top.png" alt=""></a></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<footer class="footer">
+		<div class="pagetop"><a href="#contactComplete">TOP</a></div>
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="secTitleBox">
+					<p>Contact</p>
+					<h2>お問い合わせ</h2>
+				</div>
+				<p>お電話、ライン、インスタからも<br class="spBreak">お気軽にお問合せください。</p>
+				<ul>
+					<li><a href="tel:0529828758">＋TEL</a></li>
+					<li><a href="mailto:hair.eli6976@gmail.com"> ＋MAIL</a></li>
+					<li><a href="https://www.instagram.com/hair.wacca/" target="_blank" rel="noopener">＋ INSTAGRAM</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="footBox">
+					<div class="infoBox">
+						<div class="logoBox">
+							<div class="logo">
+								<p>wacca</p>
+							</div><a href="https://www.instagram.com/hair.wacca/" target="_blank" rel="noopener"><img src="<?php bloginfo('template_url'); ?>/wacca/image/common/footer_insta.png" alt=""></a>
+						</div>
+						<div class="info">
+							<p>〒462-0842<br>名古屋市北区志賀南通1-18 西脇ビル 2A</p>
+							<dl>
+								<dt>OPEN</dt>
+								<dd>10:00-20:00</dd>
+							</dl>
+							<dl>
+								<dt>CLOSE</dt>
+								<dd>月曜日 火曜日</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="footNav">
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__concept">コンセプト</a></li>
+							<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__message">メッセージ</a></li>
+							<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__work">働き方</a></li>
+							<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__owner">オーナー挨拶</a></li>
+						</ul>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__flow">採用フロー</a></li>
+							<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__job">募集要項</a></li>
+							<li><a href="<?php echo home_url(); ?>/wacca_recruit/#section__salon">会社概要</a></li>
+						</ul>
+					</div>
+					<div class="footItem">
+						<dl>
+							<dt>- LOOK ME</dt>
+							<dd>
+								<ul>
+									<li><a href="https://beauty.hotpepper.jp/slnH000645376/" target="_blank" rel="noopener">＋ HOT PEPPER</a></li>
+									<li><a href="https://www.instagram.com/hair.wacca/" target="_blank" rel="noopener">＋ INSTAGRAM</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="footLine">
+						<dl>
+							<dt>- LINEお友だち追加</dt>
+							<dd>公式LINEでの応募も承っています。<br>お友だち追加後、メッセージを送信ください。</dd>
+						</dl>
+						<div class="qrBox"><a href="https://page.line.me/?accountId=510dvnfa" target="_blank" rel="noopener"><img src="<?php bloginfo('template_url'); ?>/wacca/image/common/footer_qr_line.png?202005261030" alt=""></a></div>
+						<div class="btnLine"><a href="https://page.line.me/?accountId=510dvnfa" target="_blank" rel="noopener">＋ LINE</a></div>
+					</div>
+					<div class="copy">
+						<p>Copyright &copy; wacca All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- △footer△-->
+	<?php wp_footer(); ?>
+</body>
+
+</html>

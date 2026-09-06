@@ -1,0 +1,29 @@
+body {
+  opacity: 0;
+}
+
+.modalOverlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modalBoxWrap {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 10px;
+  z-index: 10000;
+}
+
+.aboutMain .itemListPanel .itemListSmall {
+  display: none;
+}

@@ -1,0 +1,460 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(13, 17, 28, 0.7);
+}
+.header .headWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 40px;
+}
+.header .logoBox {
+  display: flex;
+  align-items: center;
+}
+.header .logoBox .logo {
+  max-width: 120px;
+  margin: 0 20px 0 0;
+}
+.header .logoBox .logo a {
+  display: block;
+}
+.header .logoBox .ttl {
+  font-size: 14px;
+}
+.header .headBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 100px;
+}
+.header .headNav {
+  padding: 0 40px 20px 0;
+}
+.header .headNav .ul .li {
+  display: inline-block;
+}
+.header .headNav .ul .li + .li {
+  margin: 0 0 0 20px;
+}
+.header .headNav .ul .li a {
+  display: inline-block;
+  text-align: center;
+}
+.header .headNav .ul .li .em {
+  font-family: "Alex Brush";
+  font-size: 28px;
+  line-height: 1.2;
+}
+.header .headNav .ul .li .span {
+  font-size: 12px;
+  color: #909090;
+}
+.header .headItem {
+  display: flex;
+  width: 300px;
+  min-height: 100px;
+}
+.header .headItem .reserve {
+  width: 200px;
+}
+.header .headItem .reserve a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background: #4a2d0e;
+}
+.header .headItem .reserve a .em {
+  font-family: "Alex Brush";
+  font-size: 28px;
+  line-height: 1.2;
+}
+.header .headItem .reserve a .span {
+  font-size: 12px;
+  color: #909090;
+}
+.header .headItem .hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.header .hamburgerBox {
+  padding: 10px 0 0;
+}
+.header .hamburgerBox .hamburger {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 20px;
+}
+.header .hamburgerBox .hamburger .span {
+  background: #464646;
+  position: absolute;
+  left: 50%;
+  width: 35px;
+  height: 2px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.header .hamburgerBox .hamburger .span:nth-of-type(1) {
+  top: 0;
+}
+.header .hamburgerBox .hamburger .span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .hamburgerBox .hamburger .span:nth-of-type(3) {
+  bottom: 0;
+}
+.header .hamburgerBox .is-open.hamburger .span:nth-of-type(1) {
+  transform: translate(-50%, 9px) rotate(-45deg);
+}
+.header .hamburgerBox .is-open.hamburger .span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .hamburgerBox .is-open.hamburger .span:nth-of-type(3) {
+  transform: translate(-50%, -9px) rotate(45deg);
+}
+
+@media (max-width: 1250px) {
+  .header .headNav {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  padding: 120px 20px 30px;
+  z-index: 999;
+  background: rgba(13, 17, 28, 0.7);
+  transition: 0.9s;
+}
+.navBox .navClose {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  width: 25px;
+  cursor: pointer;
+}
+.navBox .navList {
+  max-width: 400px;
+  margin: 0 auto 60px;
+}
+.navBox .navList .ul .li + .li {
+  margin: 20px 0 0;
+}
+.navBox .navList .ul .li a {
+  display: inline-block;
+  font-size: 18px;
+}
+.navBox .infoList {
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+.navBox .infoList .dl {
+  display: flex;
+  align-items: center;
+}
+.navBox .infoList .dl + .dl {
+  margin: 10px 0 0;
+}
+.navBox .infoList .dl .dt {
+  width: 40px;
+  margin: 0 10px 0 0;
+  font-family: "Alex Brush";
+  font-size: 28px;
+  line-height: 1.2;
+}
+.navBox .infoList .dl .dd a {
+  display: inline-block;
+  font-size: 26px;
+}
+.navBox .infoList .dl .dd > p {
+  font-size: 20px;
+}
+.navBox .navItem {
+  display: flex;
+  align-items: flex-end;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.navBox .navItem .logo {
+  width: 100px;
+  margin: 0 20px 0 0;
+}
+.navBox .navItem .sns .ul .li {
+  display: inline-block;
+}
+.navBox .navItem .sns .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.navBox .navItem .sns .ul .li a {
+  color: #ffffff;
+  text-align: center;
+}
+.navBox .navItem .sns .ul .li img {
+  width: 20px;
+}
+.navBox .navItem .sns .ul .li p {
+  margin: 5px 0 0;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 340px;
+  padding: 0 0 60px;
+}
+.pageKvPanel .pageKvTitle {
+  text-align: center;
+}
+.pageKvPanel .pageKvTitle p {
+  font-family: "Alex Brush";
+  font-size: 80px;
+  color: #bc8b58;
+  line-height: 1;
+  transform: skewY(-10deg);
+  background: linear-gradient(90deg, #bf933e 0%, #b78d3c 33%, #8c671e 62%, #b78d3c 83%, #9d874e 100%);
+  background: -webkit-linear-gradient(0deg, #bf933e 0%, #b78d3c 33%, #8c671e 62%, #b78d3c 83%, #9d874e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pageKvPanel .pageKvTitle h1 {
+  font-size: 18px;
+}
+
+.pageSecTtl p {
+  font-family: "Alex Brush";
+  font-size: 100px;
+  color: #bc8b58;
+  line-height: 0.9;
+}
+.pageSecTtl h2 {
+  font-size: 14px;
+  color: #daba99;
+}
+
+.secWrap {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 220px;
+}
+.btnMore a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #4a2d0e;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 120px 20px 60px;
+  text-align: center;
+  background: #000000;
+}
+.footer .logo {
+  max-width: 300px;
+  margin: 0 auto 100px;
+}
+.footer .pagetop {
+  position: fixed;
+  right: 5%;
+  bottom: 60px;
+  width: 70px;
+  z-index: 998;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

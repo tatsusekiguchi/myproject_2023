@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="childcare">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="logo"><a href="/">
+				<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+			</a></div>
+		<div class="navBox">
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="about">
+							<div>
+								<p>アークについて</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>事業紹介</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="hair">
+										<div>
+											<p>ヘアサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="product">
+										<div>
+											<p>商品紹介</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="aesthetic">
+										<div>
+											<p>エステサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="childcare">
+										<div>
+											<p>保育事業</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="hair">
+							<div>
+								<p>ヘアサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="product">
+							<div>
+								<p>商品紹介</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="aesthetic">
+							<div>
+								<p>エステサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="childcare">
+							<div>
+								<p>保育事業</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>採用情報</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="message">
+										<div>
+											<p>メッセージ</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="system">
+										<div>
+											<p>アークの制度</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="interview">
+										<div>
+											<p>先輩の声</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="requirement">
+										<div>
+											<p>募集要項</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="message">
+							<div>
+								<p>メッセージ</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="system">
+							<div>
+								<p>アークの制度</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="interview">
+							<div>
+								<p>先輩の声</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="requirement">
+							<div>
+								<p>募集要項</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="company">
+							<div>
+								<p>会社概要</p>
+							</div>
+						</a></div>
+					<div class="li contact"><a href="contact">
+							<div>
+								<p>ご予約・お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="childcareMain main serviceMain">
+		<div class="pageKvContainer">
+			<div class="topKvPanel">
+				<div class="topKvTitle mincho">
+					<div class="ttl">
+						<h1>保育園</h1>
+					</div>
+					<p>CHILDCARE</p>
+				</div>
+				<div class="topKv"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_kv.png" alt=""></div>
+			</div>
+		</div>
+		<div class="pageMainContainer">
+			<div class="topSection">
+				<div class="secWrap">
+					<div class="secPanel fadeUp">
+						<div class="secBox">
+							<h2 class="mincho">子どもたちの笑顔と<br>働く親御さんの笑顔のために</h2>
+							<div class="photoTxt">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_top_img.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>アーク保育園は、小さなお子さまのいらっしゃるサロンのお客さまや、サロンで働くスタッフのために誕生しました。<br>子どもたちが近くで安心して笑顔で過ごしているからこそ、親御さんも安心して働ける。<br>そんな環境を作るために、サロンのすぐ近くに保育園を開園。<br>少人数だからこそ、お子さま一人ひとりをしっかり見守ることができます。<br>働く親御さんの負担が少しでも軽くなるよう、手ぶら保育など様々な工夫をしています。<br>お子さまも親御さんも、笑顔で過ごせる毎日をアークは願っています。</p>
+									</div>
+									<div class="btnTarget mincho"><a href="https://hc-ark.com/ark-hoikuen/" target="_blank" rel="noopener">
+											<div>
+												<p>保育園HPはこちら</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pointSection">
+				<div class="topContainer">
+					<div class="secWrap01">
+						<div class="pageSecTtl mincho grad fadeUp">
+							<div class="ttl">
+								<h2>アーク保育園の特徴</h2>
+							</div>
+							<div class="sub">
+								<p>POINT</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="introContainer">
+					<div class="secPanelList">
+						<div class="secPanel top fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_point_img_01.png" alt=""></div>
+							<div class="txtBox">
+								<div class="inner">
+									<div class="ttlBox mincho">
+										<div class="num">
+											<p>01</p>
+										</div>
+										<h3>一時預かりしています</h3>
+									</div>
+									<div class="txt">
+										<p>アーク保育園では、時間単位で一時預かりをしています。<br>ヘアサロンやエステサロンをご利用のお客さまも、1時間からお気軽にご利用ください。<br>サロンのすぐ近くなので、送迎不要で安心してお預けいただいています。<br>＜料金＞<br>利用料800円/時間、保険料〇〇、給食費300円（必要な方のみ）<br>＜持ち物＞<br>オムツ、着替え、飲み物、おひるごはん（必要な方）、おやつ、保険証コピー<br>＜予約について＞<br>混み合う場合がございますので、お早目のご予約がおすすめです。<br>できるだけ一週間前にはご連絡ください。</p>
+									</div>
+									<div class="btnMore"><a href="contact">
+											<div>
+												<p>ご予約はこちらから</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_point_img_02.png" alt=""></div>
+							<div class="txtBox">
+								<div class="inner">
+									<div class="ttlBox mincho">
+										<div class="num">
+											<p>02</p>
+										</div>
+										<h3>少人数制で安心見守り</h3>
+									</div>
+									<div class="txt">
+										<p>最大14名の少人数制です。<br>一人ひとりに保育士の目が行き届くからこそ、お子様をずっとそばで見守ります。<br>働く親御さんにも安心していただけるように、保育園にいる間のお子様の様子や表情などをしっかりとお伝えするため、毎日の連絡帳は丁寧に書いております。<br>お子様を安心して預けていただけるよう、保育士一同責任持ってお子様を見守ります。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_point_img_03.png" alt=""></div>
+							<div class="txtBox">
+								<div class="inner">
+									<div class="ttlBox mincho">
+										<div class="num">
+											<p>03</p>
+										</div>
+										<h3>手ぶらde保育</h3>
+									</div>
+									<div class="txt">
+										<p>毎日のご負担を軽減すべく、お布団・オムツは園で用意し、使用済オムツも園で破棄いたします。<br>お布団は心地よい眠りを提供する「おひるね畑」を使用（無料）、季節に合わせた毛布かタオルケットをご準備ください。<br>オムツは肌触りを考えて花王メリーズを使用し、お子様の成長に合わせたサイズをご用意します（有料）。<br>持ち物負担がないので、親御さんと手をつないで登園できます。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menuContainer">
+					<div class="secWrap01">
+						<div class="menuPanel fadeUp">
+							<div class="menuPanelInner">
+								<div class="ttl mincho">
+									<p>園で用意できるもの</p>
+								</div>
+								<div class="iconList">
+									<div class="ul">
+										<div class="li">
+											<div class="icon"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_point_icon_01.png" alt=""></div>
+											<div class="dl">
+												<div class="dt">
+													<p>お昼寝布団</p>
+												</div>
+												<div class="dd">
+													<p>無料</p>
+												</div>
+											</div>
+										</div>
+										<div class="li">
+											<div class="icon"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_point_icon_02.png" alt=""></div>
+											<div class="dl">
+												<div class="dt">
+													<p>おむつ</p>
+												</div>
+												<div class="dd">
+													<p>無料</p>
+												</div>
+											</div>
+										</div>
+										<div class="li">
+											<div class="icon"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_point_icon_03.png" alt=""></div>
+											<div class="dl">
+												<div class="dt">
+													<p>お口拭きタオル</p>
+												</div>
+												<div class="dd">
+													<p>無料</p>
+												</div>
+											</div>
+										</div>
+										<div class="li">
+											<div class="icon"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_point_icon_04.png" alt=""></div>
+											<div class="dl">
+												<div class="dt">
+													<p>お食事エプロン</p>
+												</div>
+												<div class="dd">
+													<p>無料</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="infoSection">
+				<div class="titlePanel">
+					<div class="secWrap01">
+						<div class="pageSecTtl mincho grad fadeUp">
+							<div class="ttl">
+								<h2>保育園紹介</h2>
+							</div>
+							<div class="sub">
+								<p>PRESCHOOL</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="infoPanel fadeUp">
+					<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/childcare_info_img.png" alt=""></div>
+					<div class="txtBox">
+						<div class="inner">
+							<div class="ttl mincho">
+								<h3>アーク保育園</h3>
+							</div>
+							<div class="infoList">
+								<div class="ul">
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>住所</p>
+											</div>
+											<div class="dd">
+												<p>長野県伊那市上新田2401-1</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>電話番号</p>
+											</div>
+											<div class="dd"><a href="tel:0265960245">
+													<div>
+														<p>0265-96-0245</p>
+													</div>
+												</a></div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>開所時間</p>
+											</div>
+											<div class="dd">
+												<p>8:00～18:00</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>開所日</p>
+											</div>
+											<div class="dd">
+												<p>月曜日~日曜日<br>（年末年始・お盆は除く）</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>対象</p>
+											</div>
+											<div class="dd">
+												<p>生後100日～2歳まで（未満児）</p>
+											</div>
+										</div>
+									</div>
+									<div class="li btnBox">
+										<div class="btnTarget mincho"><a href="https://hc-ark.com/ark-hoikuen/" target="_blank" rel="noopener">
+												<div>
+													<p>HPはこちら</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mapPanel">
+					<div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.1752454305536!2d137.965111006716!3d35.82928610633588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601cf1d07183cb4b%3A0xb6ec548459a846ee!2z44Ki44O844Kv5L-d6IKy5ZyS!5e0!3m2!1sja!2sjp!4v1702369488703!5m2!1sja!2sjp" allow="fullscreen"></iframe></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtl mincho white fadeUp">
+					<div class="ttl">
+						<h2>ご予約・お問い合わせ</h2>
+					</div>
+					<div class="sub">
+						<p>CONTACT</p>
+					</div>
+				</div>
+				<div class="contactItem fadeUp">
+					<div class="itemBox">
+						<div class="tel"><a href="tel:0265772227">
+								<div>
+									<p class="em mincho">0265-77-2227</p>
+									<p class="span">平日 10:00～19:00<br>日曜日・祝日 09:00～18:00</p>
+								</div>
+							</a></div>
+						<div class="mail"><a href="contact?sec02">
+								<div>
+									<p class="mincho">メールフォームはこちら</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="itemBox">
+						<div class="reserve"><a href="contact">
+								<div>
+									<p class="mincho">ご予約はこちらから</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="logo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txtBox">
+						<div class="ttl">
+							<p>株式会社アーク</p>
+							<div class="insta"><a href="https://www.instagram.com/haircraftark/" target="_blank" rel="noopener">
+									<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+								</a></div>
+						</div>
+						<div class="txt">
+							<p>〒396-0012長野県伊那市上新田2401-1</p><a href="tel:0265772227">
+								<div>
+									<p>TEL: 0265-77-2227</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy;2023　株式会社アーク.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

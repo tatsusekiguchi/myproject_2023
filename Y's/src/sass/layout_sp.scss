@@ -1,0 +1,959 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      overflow: hidden;
+      margin: 0 0 60px;
+      padding: 0 20px 20px 100px;
+      .topKv {
+        height: 440px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -30px;
+          right: -30px;
+          width: calc(100% - 30px);
+          height: 500px;
+        }
+      }
+      .kvTtl {
+        top: 200px;
+        left: 20px;
+        h1 {
+          margin: 0 0 30px;
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .kvScroll {
+        display: none;
+      }
+    }
+    .sec01 {
+      margin: 0 auto 80px;
+      padding: 40px 0;
+    }
+    .sec02 {
+      margin: 0 0 100px;
+      .secBox {
+        .txtBox {
+          margin: 0 0 20px;
+          .dl {
+            .dt {
+              margin: 0 0 30px;
+              font-size: 20px;
+            }
+            .dd {
+              p + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+        .photoBox {
+          .photo {
+            margin: 0 0 5px;
+          }
+          .ul {
+            .li {
+              width: calc((100% / 3) - 5px);
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      margin: 0 0 100px;
+      .caseSliderPanel {
+        .counterBox {
+          position: static;
+          width: 250px;
+          margin: 0 auto 20px;
+          padding: 0 20px;
+          .ttl {
+            font-size: 24px;
+          }
+        }
+        .caseSlider {
+          .slick-slide {
+            margin: 0 10px;
+            padding: 10px;
+            img {
+              height: 60vw;
+            }
+            .dl {
+              bottom: -80px;
+              width: 90%;
+              padding: 20px 10px;
+              .dt {
+                margin: 0 0 5px;
+                font-size: 16px;
+              }
+            }
+          }
+          .slick-current {
+            transform: translateY(0);
+          }
+          .is-active-next {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+    .sec04 {
+      margin: 0 0 100px;
+      .topBox {
+        margin: 0 0 30px;
+        .pageSecTtl {
+          margin: 0 0 30px;
+        }
+        .btnMore {
+          max-width: 250px;
+        }
+      }
+      .webgene-blog {
+        .webgene-item {
+          a {
+            padding: 20px 10px;
+          }
+          .dl {
+            .dt {
+              margin: 0 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      margin: 0 0 100px;
+      .secContainer {
+        padding: 0;
+        .secPanel {
+          padding: 30px 10px;
+          .leftBox {
+            margin: 0 0 20px;
+            .dl {
+              .dt {
+                margin: 0 0 15px;
+                font-size: 16px;
+              }
+            }
+          }
+          .rightBox {
+            .list {
+              padding: 10px;
+              .ul {
+                .li {
+                  padding: 0 0 0 20px;
+                  font-size: 15px;
+                  background: url(https://ys-labo.jp/system_panel/uploads/images/top_sec05_check.png)
+                    left top 4px no-repeat;
+                  background-size: 16px auto;
+                  + .li {
+                    margin: 10px 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain {
+    .sec01 {
+      margin: 0 0 100px;
+      .secBox {
+        .ttlBox {
+          margin: 0 0 30px;
+          h3 {
+            margin: 20px 0 0;
+            font-size: 20px;
+          }
+        }
+        .txtBox {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 100px;
+      h2 {
+        margin: 0 0 40px;
+        font-size: 20px;
+      }
+      .listContainer {
+        padding: 30px 10px;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .img {
+            width: 150px;
+            margin: 0 auto;
+          }
+          p {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .sec03 {
+      margin: 0 0 100px;
+      h2 {
+        margin: 0 0 40px;
+        font-size: 20px;
+      }
+      .photoList {
+        margin: 0 0 40px;
+        .ul {
+          max-width: 280px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+      .btnMore {
+        max-width: 240px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	trouble
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .troubleMain {
+    padding: 0 0 60px;
+    .topSection {
+      padding: 0 0 40px;
+      .dl {
+        .dt {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+        .dd {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sectionContainer {
+      padding: 40px 0;
+      + .sectionContainer {
+        margin: 60px auto 0;
+      }
+      .topTitleBox {
+        margin: 0 0 60px;
+        p {
+          margin: 0 0 30px;
+          font-size: 20px;
+        }
+        h3 {
+          max-width: 280px;
+          font-size: 18px;
+        }
+      }
+      .troublePanel {
+        margin: 0 auto 30px;
+        padding: 0 10px 30px;
+        .dl {
+          .dt {
+            top: -20px;
+            max-width: 260px;
+            padding: 12px 10px;
+            font-size: 15px;
+          }
+          .ul {
+            .li {
+              padding: 0 0 0 30px;
+              background: url(https://ys-labo.jp/system_panel/uploads/images/trouble_icon_check.png)
+                left top no-repeat;
+              background-size: 20px auto;
+              + .li {
+                margin: 15px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .messageBox {
+        margin: 0 auto 40px;
+        padding: 15px 10px;
+        font-size: 16px;
+      }
+      .messagePanel {
+        margin: 0 auto 40px;
+        padding: 20px 10px;
+        .dl {
+          margin: 0 0 15px;
+          padding: 0 0 15px;
+          font-size: 16px;
+          &::after {
+            width: 60%;
+            max-width: 200px;
+          }
+          .dd {
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .bnrPanel {
+        a {
+          display: block;
+          margin: 0 0 50px;
+          padding: 30px 10px;
+          text-align: center;
+          border: 1px solid #8ec6bf;
+          background: #fffffe;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            font-size: 18px;
+          }
+        }
+      }
+      .voiceContainer {
+        .voiceTopTitle {
+          margin: 0 0 40px;
+          padding: 12px 10px;
+          font-size: 16px;
+        }
+        .secPanel {
+          + .secPanel {
+            margin: 50px 0 0;
+          }
+          .secTitle {
+            margin: 0 0 30px;
+            p {
+              padding: 0 20px 0 10px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .beforeAfterBox {
+        max-width: 400px;
+        .beforeBox {
+          margin: 0 0 40px;
+        }
+        .dl {
+          padding: 20px 0 0;
+          .dt {
+            width: 100px;
+            font-size: 18px;
+          }
+          .dd {
+            padding: 10px;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .searchLinkPanel {
+        margin: 50px auto 0;
+        padding: 30px 10px;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 16px;
+        }
+        .btnMore {
+          max-width: 400px;
+        }
+      }
+      .otherVoice {
+        margin: 60px 0 0;
+      }
+      .permIntroBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .box01 {
+            margin: 0 0 40px;
+            .dl {
+              .dt {
+                margin: 0 0 20px;
+                font-size: 18px;
+              }
+            }
+          }
+          .box02 {
+            .dl {
+              .dt {
+                max-width: 220px;
+                font-size: 15px;
+              }
+              .dd {
+                padding: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      margin: 0 0 80px;
+      .infoBox {
+        .dl {
+          .dt {
+            width: 90px;
+            padding: 20px 10px;
+          }
+          .dd {
+            width: calc(100% - 90px);
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+    .mapPanel {
+      margin: 0 auto 80px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	franchise
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .franchiseMain {
+    .sec01 {
+      margin: 0 0 60px;
+      .dl {
+        .dt {
+          margin: 0 0 30px;
+          font-size: 20px;
+        }
+        .ul {
+          margin: 0 0 30px;
+          .li {
+            display: block;
+            margin: 0 0 20px;
+            font-size: 16px;
+            p {
+              min-width: 210px;
+              background: url(https://ys-labo.jp/system_panel/uploads/images/franchise_sec01_check.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 auto 100px;
+      padding: 50px 0;
+      .topMessage {
+        margin: 0 0 50px;
+        p {
+          font-size: 18px;
+        }
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .secTitle {
+          margin: 0 0 30px;
+          p {
+            padding: 0 20px 0 10px;
+            font-size: 14px;
+          }
+        }
+      }
+      .secPanel01 {
+        .img {
+          margin: 0 auto 40px;
+        }
+        .message {
+          padding: 15px 10px;
+          font-size: 16px;
+        }
+      }
+      .secPanel02 {
+        .checkContainer {
+          padding: 20px 0 0;
+          .checkPanel {
+            margin: 0 0 20px;
+            .dl {
+              .dt {
+                font-size: 18px;
+              }
+              .dd {
+                padding: 15px;
+              }
+            }
+          }
+          .photo01 {
+            display: inline-block;
+            max-width: 300px;
+            margin: 0 10px 0 0;
+          }
+          .photo02 {
+            display: inline-block;
+            max-width: 300px;
+          }
+        }
+      }
+      .voiceContainer {
+        margin: 40px auto 0;
+        .voicePanel {
+          .dl {
+            .dt {
+              font-size: 18px;
+            }
+            .dd {
+              padding: 20px 15px;
+            }
+          }
+        }
+        .arrow {
+          width: 30px;
+          margin: 30px auto;
+        }
+        .message01 {
+          margin: 0 0 40px;
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              font-size: 18px;
+            }
+            .dd {
+              font-size: 20px;
+            }
+          }
+        }
+        .message02 {
+          font-size: 18px;
+        }
+      }
+    }
+    .sec03 {
+      margin: 0 0 100px;
+      .flowPanel {
+        padding: 20px 15px;
+        .leftBox {
+          margin: 0 0 20px;
+          .ttlBox {
+            display: block;
+            margin: 0 0 20px;
+            .step {
+              width: 90px;
+              padding: 5px;
+              margin: 0 0 10px;
+              font-size: 16px;
+            }
+            .ttl {
+              font-size: 18px;
+            }
+          }
+          .txt {
+            padding: 0;
+          }
+        }
+        .rightBox {
+          .btn {
+            max-width: 240px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      margin: 0 0 100px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            padding: 10px 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+
+            + .dl {
+              padding: 20px 10px 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 90px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	post
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .webgene-pagination {
+    margin: 60px auto 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	search
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .searchMain {
+    .sec01 {
+      margin: 0 auto 100px;
+      padding: 40px 0;
+    }
+    .sec02 {
+      margin: 100px 0;
+    }
+  }
+  .searchPanel {
+    .webgene-search-form {
+      .search-title-wrapper {
+        padding: 10px 20px;
+      }
+      .search-area-wrapper {
+        padding: 20px;
+      }
+      .area .search-area-wrapper {
+        label {
+          display: block;
+        }
+      }
+      .trouble .search-contents-wrapper {
+        label {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .searchResultPanel {
+    .webgene-header {
+      .sectionTitle {
+        margin: 0 0 30px;
+        h3 {
+          padding: 0 20px 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+    .webgene-legend {
+      margin: 0 0 20px;
+      padding: 0 10px;
+      font-size: 18px;
+      em {
+        font-size: 34px;
+      }
+    }
+    .webgene-item {
+      padding: 10px;
+      + .webgene-item {
+        margin: 30px 0 0;
+      }
+      .webgene-item-wrap {
+        padding: 20px 10px;
+      }
+      .shop {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+      .address {
+        margin: 0 0 10px;
+      }
+      .reserve {
+        dl {
+          .tel {
+            font-size: 24px;
+          }
+          dd + dd {
+            font-size: 12px;
+          }
+        }
+      }
+      .menuList {
+        dd {
+          font-size: 14px;
+        }
+      }
+      .rightBox {
+        margin: 20px 0 0;
+        padding: 20px 0 0;
+        border-top: 1px solid #dce9e8;
+      }
+    }
+  }
+  .shopMainContainer {
+    padding: 0 0 100px;
+  }
+  .shopDetailContainer {
+    padding: 20px 0 60px;
+    .postDetail {
+      .webgene-item-container {
+        padding: 30px 10px 40px;
+      }
+      .webgene-item-inner {
+        padding: 20px 10px;
+      }
+      .webgene-item-info {
+        margin: 0 0 30px;
+      }
+      .infoBox {
+        display: block;
+        margin: 0 0 10px;
+      }
+      .title {
+        display: block;
+        font-size: 20px;
+      }
+    }
+    .infoPanel {
+      margin: 0 0 50px;
+      > dl {
+        + dl {
+          margin: 20px 0 0;
+        }
+      }
+      dl {
+        + dl {
+          margin: 20px 0 0;
+        }
+        dd {
+          padding: 10px;
+        }
+      }
+      .tel {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+    .photoList {
+      ul {
+        max-width: 300px;
+        margin: 0 auto;
+        li + li {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  .staffListContainer {
+    margin: 50px 0;
+    .ttl {
+      margin: 0 0 30px;
+      h3 {
+        padding: 0 20px 0 10px;
+        font-size: 14px;
+      }
+    }
+    .staffList {
+      .ul {
+        max-width: 300px;
+        margin: 0 auto;
+        .li + .li {
+          margin: 20px 0 0;
+        }
+        p {
+          margin: 10px 0 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain {
+    .sec01 {
+      margin: 0 0 80px;
+    }
+    .catePanel {
+      margin: 0 0 40px;
+      padding: 30px 10px;
+      .webgene-blog {
+        padding: 30px 10px;
+        .webgene-header {
+          width: 120px;
+          margin: 0 auto 10px;
+        }
+        .webgene-item {
+          display: block;
+          min-width: 200px;
+          max-width: 300px;
+          margin: 0 auto 10px;
+        }
+      }
+    }
+    .newsListContainer {
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 10px 0 0;
+          }
+          .dl {
+            display: block;
+            padding: 20px 40px;
+            .dt {
+              margin: 0 0 10px;
+            }
+          }
+        }
+      }
+    }
+    .newsDetailContainer {
+      padding: 30px 0 40px;
+      .postDetail {
+        margin: 0 0 40px;
+        padding: 20px 10px 60px;
+        .webgene-item-info {
+          margin: 0 0 30px;
+        }
+        .infoBox {
+          display: block;
+          margin: 0 0 10px;
+        }
+        .title {
+          display: block;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

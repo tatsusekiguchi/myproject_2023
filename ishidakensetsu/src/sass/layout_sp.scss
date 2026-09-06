@@ -1,0 +1,1336 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      height: 350px;
+      padding: 40px 20px;
+      .kvBox {
+        .kv01 {
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_01_sp.jpg)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_02_sp.jpg)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_03_sp.jpg)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv04 {
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_04_sp.jpg)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+      .kvTitle {
+        max-width: 600px;
+        padding: 0;
+      }
+    }
+    .contactArea {
+      margin: 0 auto;
+      padding: 30px 20px;
+      .contactBox {
+        display: block;
+      }
+      .telBox {
+        margin: 0 0 20px;
+        .dl {
+          padding: 10px;
+          background: none;
+          .dt {
+            font-size: 18px;
+          }
+          .dd {
+            a {
+              padding: 0 0 0 35px;
+              font-size: 30px;
+              color: #ffffff;
+              background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_tel.png)
+                left center no-repeat;
+              background-size: 30px auto;
+            }
+            > p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .mailBox {
+        max-width: 300px;
+        margin: 0 auto;
+        a {
+          padding: 15px 10px;
+          font-size: 20px;
+          color: #ffffff;
+          p {
+            padding: 0 0 0 25px;
+            background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_mail.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+        }
+      }
+    }
+    .topContainer {
+      padding: 40px 0 0;
+      .sectionPanel {
+        .titleBox {
+          margin: 0 0 30px;
+          padding: 20px 40p 0x;
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_top_ttl_icon.png)
+            right top no-repeat;
+          background-size: 30px auto;
+          .title01 {
+            font-size: 16px;
+          }
+          .title02 {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+        .listBox {
+          .ul {
+            max-width: 400px;
+            margin: 0 auto;
+            .li {
+              + .li {
+                margin: 40px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .arrowPanel {
+        position: relative;
+        top: 40px;
+        padding: 30px 20px 40px;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_top_arrow_bg.png)
+          center bottom no-repeat;
+        background-size: auto 200px;
+        .balloon {
+          max-width: 260px;
+          margin: 0 auto 20px;
+        }
+        .imgTxt {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+    .topMainContainer {
+      padding: 100px 0;
+    }
+    .mainSection {
+      margin: 0 0 80px;
+      .secPanel {
+        .txtBox {
+          padding: 30px 20px;
+          .ttlBox {
+            margin: 0 0 20px;
+            .ttl01 {
+              font-size: 16px;
+            }
+            .ttl02 {
+              font-size: 30px;
+            }
+          }
+          .txt {
+            margin: 0 0 30px;
+          }
+        }
+      }
+    }
+    .sliderSection {
+      .titleBox {
+        margin: 0 0 50px;
+        text-align: center;
+        .title {
+          p {
+            font-size: 20px;
+          }
+        }
+        > p {
+          margin: 15px 0 0;
+        }
+      }
+    }
+    .linkList {
+      margin: 120px 0 0;
+      .ul {
+        max-width: 300px;
+        .li {
+          + .li {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .featureMain {
+    .mainContainer {
+      .secPanel {
+        padding: 20px 20px 20px;
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .titleHeader {
+          margin: 0 0 30px;
+          .num {
+            p {
+              width: 60px;
+              height: 60px;
+              font-size: 20px;
+            }
+          }
+          .titleBox {
+            padding: 10px 0 0 20px;
+            font-size: 0;
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+        .secBox {
+          .txtBox {
+            padding: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	thermobarrier
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .thermobarrierMain {
+    .sec01 {
+      margin: 0 0 80px;
+      padding: 40px 10px;
+      .pageSecTitleBox {
+        + p {
+          margin: 0 0 40px;
+          font-size: 16px;
+        }
+      }
+      .inner {
+        > .txt {
+          margin: 0 0 20px;
+        }
+      }
+      .secBox {
+        .txtBox {
+          padding: 0 0 30px;
+        }
+      }
+    }
+    .sec02 {
+      .secPanel {
+        padding: 20px 20px 20px;
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .titleHeader {
+          margin: 0 0 30px;
+          .num {
+            p {
+              width: 60px;
+              height: 60px;
+              font-size: 20px;
+            }
+          }
+          .titleBox {
+            padding: 10px 0 0 20px;
+            font-size: 0;
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+        .secBox {
+          .txtBox {
+            padding: 20px 0 0;
+          }
+        }
+      }
+      .secPanel--merit {
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            font-size: 16px;
+          }
+          .txtList {
+            .ul {
+              flex-wrap: wrap;
+              .li {
+                width: calc((100% / 2) - 2px);
+                min-height: 44px;
+                margin: 5px 0 0;
+                padding: 5px 10px;
+                p {
+                  font-size: 13px;
+                }
+                .span {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      margin: 80px 0;
+    }
+    .sec04 {
+      .topTxt {
+        padding: 0 0 30px;
+      }
+      .secPanel {
+        padding: 60px 0;
+        .titleBox {
+          margin: 0 0 40px;
+          > p {
+            margin: 0 0 10px;
+            font-size: 16px;
+          }
+          h4 {
+            margin: 0 0 20px;
+            padding: 0 0 0 30px;
+            font-size: 20px;
+            &::before {
+              width: 20px;
+              height: 4px;
+            }
+          }
+        }
+      }
+      .imgList01 {
+        margin: 0 0 40px;
+        .ul {
+          max-width: 600px;
+          margin: 0 auto;
+          .li + .li {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .imgList02 {
+        margin: 0 0 40px;
+        .ul {
+          max-width: 600px;
+          margin: 0 auto;
+          .li + .li {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .imgList03 {
+        .ul {
+          max-width: 600px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+            p {
+              margin: 0 0 15px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 80px 0 200px;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .introBox {
+        padding: 10px 30px;
+        border-left: 20px solid #eb0002;
+        .inner {
+          max-width: 980px;
+          margin: 0 auto;
+          .photo {
+            width: 120px;
+            margin: 0 auto 20px;
+          }
+          .txtBox {
+            .dl {
+              .dt {
+                margin: 0 0 15px;
+                padding: 0 0 5px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	seismic
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .seismicMain {
+    .sec01 {
+      margin: 0 0 80px;
+      padding: 40px 10px;
+      .txtList {
+        .ul {
+          .li {
+            width: calc((100% / 2) - 2px);
+            min-height: 44px;
+            margin: 5px 0 0;
+            padding: 5px;
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .dl {
+        margin: 40px 0;
+        .dt {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+      }
+      .message {
+        padding: 15px 10px;
+        font-size: 20px;
+      }
+    }
+    .sec02 {
+      .secPanel {
+        padding: 20px 20px 20px;
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .titleHeader {
+          margin: 0 0 30px;
+          .num {
+            p {
+              width: 60px;
+              height: 60px;
+              font-size: 20px;
+            }
+          }
+          .titleBox {
+            padding: 10px 0 0 20px;
+            font-size: 0;
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+        .secBox {
+          .txtBox {
+            padding: 20px 0 0;
+          }
+        }
+      }
+      .cntBody01 {
+        .listTbl {
+          margin: 0 auto 20px;
+          .dl {
+            .dd {
+              + .dd {
+                border-top: 1px solid #0e0e0e;
+              }
+            }
+          }
+          + p {
+            font-size: 16px;
+          }
+        }
+      }
+      .works {
+        margin: 15px 0 0;
+        padding: 10px 15px;
+      }
+    }
+    .sec03 {
+      margin: 80px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	lsp
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .lspMain {
+    .sec01 {
+      margin: 0 0 80px;
+      padding: 40px 10px;
+      .dl {
+        .dt {
+          margin: 0 0 15px;
+          font-size: 20px;
+        }
+      }
+    }
+    .sec02 {
+      .listPanel {
+        .ul {
+          .li {
+            .inner {
+              padding: 20px;
+            }
+          }
+          .num {
+            position: static;
+            .numTxt {
+              width: 60px;
+              height: 60px;
+            }
+            .span {
+              font-size: 10px;
+            }
+            .em {
+              font-size: 20px;
+            }
+          }
+          .titleBox {
+            padding: 10px 0 20px;
+            .title {
+              font-size: 0;
+              p {
+                font-size: 20px;
+              }
+            }
+          }
+          .img {
+            max-width: 350px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      margin: 80px 0;
+      .secPanel {
+        padding: 20px;
+        .titleHeader {
+          .num {
+            .numTxt {
+              width: 60px;
+              height: 60px;
+            }
+            .span {
+              font-size: 11px;
+            }
+            .em {
+              font-size: 20px;
+            }
+          }
+          .titleBox {
+            width: calc(100% - 80px);
+            .title {
+              p {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      .tblPanel {
+        .dl {
+          text-align: center;
+          border: 1px solid #0e0e0e;
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            padding: 20px;
+          }
+          .dd {
+            padding: 20px;
+            border-top: 1px solid #0e0e0e;
+          }
+          .ul {
+            max-width: 300px;
+            margin: 20px auto 0;
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .balloonTxt {
+        margin: 80px auto 0;
+        padding: 20px 10px;
+        font-size: 20px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -20px;
+          left: 0;
+          right: 0;
+          width: 40px;
+          height: 20px;
+          margin: 0 auto;
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/lsp_sec04_balloon.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+    .sec05 {
+      margin: 80px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	other
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .otherMain {
+    .sec01 {
+      margin: 0 0 80px;
+      padding: 40px 10px;
+      .txt {
+        margin: 0 auto 40px;
+      }
+      .imgList {
+        .ul {
+          margin: -15px 0 0 -5px;
+          .li {
+            width: calc((100% / 2) - 15px);
+            min-height: 0;
+            margin: 15px 0 0 5px;
+            padding: 10px;
+          }
+          .img {
+            height: 130px;
+          }
+          p {
+            min-height: 40px;
+            margin: 10px 0 0;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      .kv {
+        margin: 0 auto 30px;
+      }
+      .pageSecTitleBox {
+        + .txt {
+          margin: 0 0 80px;
+        }
+      }
+      .section {
+        + .section {
+          margin: 80px 0 0;
+        }
+      }
+      .section01 {
+        .secPanel {
+          max-width: 500px;
+          margin: 0 auto;
+          .secBox {
+            + .secBox {
+              margin: 40px 0 0;
+            }
+            .box {
+              + .box {
+                margin: 40px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .section02 {
+        padding: 0 0 30px;
+        .secBox {
+          padding: 40px 0;
+          .txtBox {
+            padding: 0 0 20px;
+            .dl {
+              .dt {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .secBox02 {
+          .photo {
+            width: 180px;
+          }
+        }
+      }
+    }
+    .contactContainer {
+      margin: -40px 0 100px;
+      padding: 0 0 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: calc(100% - 50px);
+        z-index: -1;
+        background: #eb0002;
+      }
+      .balloonTxt {
+        margin: 0 auto 40px;
+        padding: 20px 10px;
+        font-size: 20px;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -22px;
+          width: 40px;
+          height: 22px;
+          margin: 0 auto;
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/other_contact_balloon.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      .contactPanel {
+        padding: 30px 20px;
+        .txtList {
+          .ul {
+            max-width: 300px;
+            margin: 0 auto;
+            .li {
+              display: block;
+              padding: 10px 20px;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+        .contactBox {
+          display: block;
+          margin: 20px 0 0;
+        }
+        .telBox {
+          margin: 0 0 20px;
+          .dl {
+            padding: 10px;
+            background: none;
+            .dt {
+              font-size: 18px;
+            }
+            .dd {
+              a {
+                padding: 0 0 0 35px;
+                font-size: 30px;
+                background: url(https://ishida-kensetsu.net/system_panel/uploads/images/footer_contact_tel.png)
+                  left center no-repeat;
+                background-size: 30px auto;
+              }
+              > p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .mailBox {
+          max-width: 300px;
+          margin: 0 auto;
+          a {
+            padding: 15px 10px;
+            font-size: 20px;
+            color: #ffffff;
+            p {
+              padding: 0 0 0 25px;
+              background: url(https://ishida-kensetsu.net/system_panel/uploads/images/footer_contact_mail.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 0 0 40px;
+      .secBox {
+        padding: 30px 0 0;
+        .txtBox {
+          padding: 20px 10px;
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .slidePanel {
+      margin: 0 0 100px;
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 2);
+            height: 250px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      margin: 0 0 100px;
+      .secBox {
+        padding: 30px 0 0;
+        .txtBox {
+          padding: 20px 10px;
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              .em {
+                font-size: 20px;
+              }
+              .span {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 0 0 60px;
+      .listBox {
+        margin: 0 0 60px;
+        .ul {
+          max-width: 500px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+          .ttlBox {
+            p {
+              font-size: 18px;
+            }
+            .span {
+              margin: 0 10px 0 0;
+            }
+          }
+          .secBox {
+            padding: 0 0 30px;
+            .photo {
+              max-width: 240px;
+            }
+            .txtBox {
+              padding: 20px 0 0;
+            }
+          }
+        }
+      }
+      .campaign {
+        margin: 0 0 50px;
+        padding: 10px;
+        .dl {
+          font-size: 20px;
+          .dt {
+            margin: 0 0 10px;
+          }
+          .dd {
+            padding: 10px;
+          }
+        }
+      }
+      .company {
+        padding: 10px;
+        .secBox {
+          .txtBox {
+            .inner {
+              max-width: 350px;
+              margin: 0 auto;
+            }
+            .logo {
+              margin: 0 0 20px;
+            }
+            .detail {
+              margin: 0 0 20px;
+              .detailTxt {
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+            .btnLink {
+              max-width: 280px;
+              a {
+                position: relative;
+                display: block;
+                padding: 20px 10px;
+                color: #ffffff;
+                text-align: center;
+                background: #0e0e0e;
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  right: -15px;
+                  bottom: 0;
+                  width: 50px;
+                  height: 5px;
+                  margin: auto 0;
+                  background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_list_arrow.png)
+                    no-repeat;
+                  background-size: 100% auto;
+                  transition: 0.6s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .recruitMainContainer {
+      padding: 80px 0;
+    }
+    .sec01 {
+      padding: 40px 10px;
+      .introBox {
+        margin: 0 0 30px;
+        .dt {
+          margin: 0 0 30px;
+          font-size: 18px;
+        }
+      }
+      .secBox {
+        .photo {
+          max-width: 400px;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          .txt {
+            margin: 0 0 40px;
+          }
+          .name {
+            font-size: 18px;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secTitle {
+        margin: 0 0 40px;
+        p {
+          padding: 5px 0 0;
+          font-size: 22px;
+        }
+        .em {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            margin: 0 auto;
+            background: url(https://ishida-kensetsu.net/system_panel/uploads/images/recruit_sec02_circle.png)
+              no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secPanel {
+        padding: 10px;
+        .dl {
+          .dt {
+            .icon {
+              width: 50px;
+              p {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+              }
+            }
+            .ttl {
+              font-size: 20px;
+            }
+          }
+          .dd {
+            padding: 20px 10px 0;
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .accordPanel {
+        + .accordPanel {
+          margin: 20px 0 0;
+        }
+        .accordHead {
+          padding: 10px 50px;
+          font-size: 18px;
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/accord_plus.png)
+            right 15px center no-repeat #0e0e0e;
+          background-size: 20px auto;
+          &.active {
+            background: url(https://ishida-kensetsu.net/system_panel/uploads/images/accord_minus.png)
+              right 15px center no-repeat #0e0e0e;
+            background-size: 13px auto;
+          }
+        }
+        .accordBody {
+          .dl {
+            font-size: 13px;
+            .dt {
+              width: 120px;
+              padding: 15px 5px;
+            }
+            .dd {
+              padding: 15px 10px;
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      margin: 0 0 100px;
+      .secBox {
+        .photo {
+          max-width: 400px;
+          margin: 0 auto 30px;
+        }
+        .txtBox {
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              padding: 0 0 0 25px;
+              font-size: 20px;
+              &::before {
+                top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 80px;
+      .infoBox {
+        margin: 0 auto 60px;
+        .dl {
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            width: 90px;
+            padding: 10px;
+          }
+          .dd {
+            width: calc(100% - 95px);
+            padding: 10px;
+          }
+        }
+      }
+      .introStaff {
+        padding: 20px 10px;
+        .dl {
+          .dt {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+        .btnLink {
+          max-width: 340px;
+          a {
+            padding: 15px 30px;
+            font-size: 12px;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -10px;
+              bottom: 0;
+              width: 40px;
+              height: 4px;
+              margin: auto 0;
+              background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_list_arrow.png)
+                no-repeat;
+              background-size: 100% auto;
+              transition: 0.6s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topTxt {
+      margin: 0 0 40px;
+    }
+    .contactMainContainer {
+      padding: 80px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            padding: 10px 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+
+            + .dl {
+              padding: 20px 10px 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 90px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+
+      .fileUploadBox {
+        display: block;
+
+        .fileBox {
+          width: 100%;
+          margin: 0 0 20px;
+        }
+
+        .fileArea {
+          display: block;
+
+          .inputFile {
+            width: 200px;
+          }
+
+          > p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	case
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .caseMain {
+    .postMain {
+      padding: 0 0 100px;
+    }
+    .catePanel {
+      margin: 0 0 40px;
+    }
+    .listPanel {
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 50px 0 0;
+          }
+        }
+      }
+      .webgene-pagination {
+        margin: 60px 0 0;
+      }
+    }
+    .postDetail {
+      padding: 10px 10px 60px;
+      .webgene-blog {
+        .webgene-item-info {
+          .infoBox {
+            margin: 0 0 10px;
+          }
+          .title {
+            display: block;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .btnBack {
+      max-width: 250px;
+      margin: 60px auto;
+    }
+  }
+}

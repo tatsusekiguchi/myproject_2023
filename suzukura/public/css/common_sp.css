@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 15px 10px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headTitle {
+    display: none;
+  }
+  .header .logo {
+    width: 100px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 90px;
+    z-index: 999;
+    background: white;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .navBox .navList {
+    border-top: 1px solid #cccccc;
+  }
+  .navBox .navList .ul {
+    font-size: 15px;
+  }
+  .navBox .navList .ul > .li {
+    text-align: left;
+    border-bottom: 1px solid #cccccc;
+  }
+  .navBox .navList .ul a {
+    display: block;
+  }
+  .navBox .navList .ul a {
+    padding: 10px 20px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 50px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 300px;
+  }
+  .pageKvPanel .kvTtlBox {
+    min-height: 180px;
+  }
+  .pageKvPanel .kvTtlBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 90px;
+    height: 1px;
+    background: #ffffff;
+  }
+  .pageKvPanel .kvTtlBox::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 1px;
+    height: 200px;
+    background: #ffffff;
+  }
+  .pageKvPanel .kvTtlBox .kvTtlBoxInner {
+    padding: 30px 20px;
+  }
+  .pageKvPanel .kvTtlBox .kvTtlBoxInner::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    width: 90px;
+    height: 1px;
+    background: #ffffff;
+  }
+  .pageKvPanel .kvTtlBox .kvTtlBoxInner::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    width: 1px;
+    height: 200px;
+    background: #ffffff;
+  }
+  .pageKvPanel .kvTtlBox .kvTtl {
+    font-size: 20px;
+  }
+
+  .pageSecTtlBox {
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    font-size: 0;
+    margin: 0 0 40px;
+    text-align: center;
+  }
+  .pageSecTtlBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 105%;
+    height: 1px;
+    background: #202020;
+  }
+  .pageSecTtlBox::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #202020;
+  }
+  .pageSecTtlBox .pageSecTtlBoxInner {
+    position: relative;
+    padding: 15px 10px;
+  }
+  .pageSecTtlBox .pageSecTtlBoxInner::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    width: 105%;
+    height: 1px;
+    background: #d1d1d1;
+  }
+  .pageSecTtlBox .pageSecTtlBoxInner::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    width: 1px;
+    height: 100%;
+    background: #d1d1d1;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+  .footer .footBox {
+    display: block;
+    margin: 0 0 50px;
+  }
+  .footer .footBox .logoBox {
+    width: 100px;
+  }
+  .footer .footBox .footNav {
+    display: none;
+  }
+  .footer .pageTop {
+    right: 20px;
+    bottom: 10px;
+    width: 35px;
+    cursor: pointer;
+  }
+  .footer .copy {
+    font-size: 12px;
+  }
+}

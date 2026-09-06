@@ -1,0 +1,556 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  // font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: "Kiwi Maru", "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  background: $bgBaseColor;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.fax {
+  a {
+    pointer-events: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 0 0 15%;
+    z-index: 999;
+    background: #ffffff;
+    .hamburger {
+      display: none;
+    }
+  }
+  .header {
+    .logo {
+      position: absolute;
+      left: 40px;
+      bottom: -60px;
+      width: 15%;
+      max-width: 200px;
+      padding: 30px;
+      border-radius: 0 0 20px 0;
+      background: #ffffff;
+      transition: 0.6s;
+      a {
+        display: block;
+        max-width: 150px;
+        margin: 0 auto;
+        transition: 0.6s;
+      }
+    }
+    &.fixed {
+      .logo {
+        padding: 10px;
+        left: 10px;
+        bottom: 0;
+        width: 100px;
+        max-width: 100px;
+        a {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  .pageHeader {
+    .logo {
+      position: absolute;
+      padding: 10px;
+      left: 10px;
+      bottom: 0;
+      width: 100px;
+      a {
+        display: block;
+        max-width: 100px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    padding: 0 80px 0 0;
+    .navList {
+      > .ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        > .li {
+          position: relative;
+          height: 100px;
+          padding: 48px 0 30px;
+          + .li {
+            margin: 0 0 0 2%;
+          }
+          .linkTxt {
+            position: relative;
+            > p {
+              padding: 0 10px 10px;
+            }
+          }
+          > a {
+            display: inline-block;
+            > div > p {
+              padding: 0 10px 10px;
+            }
+          }
+          &.spBreak {
+            display: none;
+          }
+        }
+        .pulldown {
+          overflow: hidden;
+          background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/header_nav_arrow.png)
+            center bottom 15px no-repeat;
+        }
+        .pulldown:hover {
+          overflow: visible;
+          .subList {
+            top: 100px;
+            height: auto;
+            opacity: 1;
+            z-index: 9999;
+          }
+        }
+      }
+      .subList {
+        position: absolute;
+        top: 70px;
+        left: -50px;
+        width: 200px;
+        height: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.6s;
+        .li + .li {
+          margin: 1px 0 0;
+        }
+        .li a {
+          display: block;
+          padding: 15px 5px;
+          font-size: 14px;
+          text-align: center;
+          background: #ffffff;
+          p {
+            position: relative;
+            display: inline-block;
+          }
+          &:hover {
+            opacity: 1;
+            color: #ffffff !important;
+            background: #d10b14;
+          }
+        }
+        .li:last-child {
+          a {
+            border-radius: 0 0 10px 10px;
+          }
+        }
+      }
+      .contact {
+        .consult {
+          position: absolute;
+          left: -40px;
+          bottom: -10px;
+          width: 200px;
+          padding: 2px;
+          font-size: 14px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 20px;
+          background: #d10b14;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: 0;
+            right: 0;
+            width: 13px;
+            height: 10px;
+            margin: 0 auto;
+            background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/header_contact_arrow.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+.pageKvContainer {
+  position: relative;
+  padding: 0 80px;
+  .pageKvPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+    height: 340px;
+    border-radius: 10px;
+  }
+  .pageKvTitle {
+    width: 300px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #ffffff;
+    p {
+      font-size: 34px;
+    }
+  }
+  .scrollBox {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 12px;
+    height: 150px;
+    text-align: center;
+    .scroll {
+      display: inline-block;
+    }
+  }
+}
+.mainContainer {
+  padding: 0 80px;
+}
+.secWrap {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.secWrap01 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.secWrap02 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.btnMore {
+  width: 200px;
+  a {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    padding: 8px 15px;
+    color: #d10b14;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #d10b14;
+    p {
+      position: relative;
+      z-index: 3;
+      background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+        right center no-repeat;
+      background-size: 12px auto;
+    }
+  }
+  @media (min-width: 1025px) {
+    a {
+      &::before {
+        content: "";
+        /*絶対配置で位置を指定*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        /*色や形状*/
+        background: #b32619; /*背景色*/
+        width: 100%;
+        height: 100%;
+        /*アニメーション*/
+        transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+        transform: scale(0, 1);
+        transform-origin: right top;
+      }
+      &:hover {
+        opacity: 1;
+        color: #ffffff;
+        &::before {
+          transform-origin: left top;
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContact {
+    .footContactPanel {
+      position: relative;
+      padding: 80px 20px;
+      border-radius: 10px 10px 0 0;
+      background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/footer_contact_bg.png)
+        no-repeat;
+      background-size: cover;
+    }
+    .balloon {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      right: 0;
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .secTtlBox {
+      max-width: 1200px;
+      margin: 0 auto 40px;
+      .secTtl {
+        display: inline-block;
+        width: 440px;
+        margin: 0 10px 0 0;
+        vertical-align: bottom;
+      }
+      h2 {
+        display: inline-block;
+        padding: 0 0 5px;
+        color: #ee9498;
+      }
+    }
+    .itemList {
+      .itemBox {
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        background: #ffffff;
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 20px;
+          }
+          .tel {
+            a {
+              display: inline-block;
+              margin: 0 0 5px;
+              font-size: 40px;
+              color: #d10b14;
+              line-height: 1.1;
+            }
+          }
+          .mail {
+            padding: 10px 0 0;
+            a {
+              display: block;
+              width: 200px;
+              margin: 0 auto;
+              padding: 8px 10px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 20px;
+              background: #d10b14;
+              p {
+                display: inline-block;
+                padding: 0 0 0 20px;
+                background: url(https://reasuto231013.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png)
+                  left center no-repeat;
+                background-size: 15px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .itemList {
+        display: flex;
+        justify-content: space-between;
+        .itemBox {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .footContainer {
+    margin: -100px 0 0;
+    padding: 150px 20px 20px;
+    color: #ffffff;
+    background: #d10b14;
+    .footBox {
+      display: flex;
+      align-items: center;
+      margin: 0 0 40px;
+      .logo {
+        width: 140px;
+        margin: 0 50px 0 0;
+      }
+      .sns {
+        .ul {
+          display: flex;
+          .li {
+            width: 60px;
+            + .li {
+              margin: 0 0 0 30px;
+            }
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .copy {
+      text-align: right;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

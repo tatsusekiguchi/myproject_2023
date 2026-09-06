@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #ffffff;
+    .logoBox {
+      width: 120px;
+      .logo {
+        a {
+          display: block;
+        }
+      }
+      .logo01 {
+        display: none;
+      }
+      .logo02 {
+        display: block;
+      }
+    }
+  }
+  .hamburger {
+    top: 0;
+    right: 10px;
+    &:after {
+      bottom: -8px;
+      font-size: 10px;
+    }
+  }
+  .subNavigation {
+    width: 100%;
+    padding: 80px 20px 60px;
+    .ul {
+      .li {
+        margin: 15px 0 0;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: 48px 0 0;
+  }
+  .pageKvPanel {
+    padding: 60px 0;
+    h1 {
+      left: 0;
+      font-size: 60px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 80px 0 0;
+  }
+  .footerContact {
+    margin: 0;
+    padding: 0;
+    .contactContainer {
+      height: 300px;
+      a {
+        padding: 30px;
+      }
+      .ttlBox {
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .footPanel {
+    padding: 100px 0 20px;
+    .pageTop {
+      top: -70px;
+      right: 20px;
+      width: 45px;
+    }
+    .logo {
+      max-width: 150px;
+      margin: 0 auto 50px;
+    }
+    .footNav {
+      display: none;
+    }
+    .copy {
+      font-size: 12px;
+    }
+  }
+}

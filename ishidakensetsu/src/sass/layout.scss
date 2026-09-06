@@ -1,0 +1,2891 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  background: #f0f0f1;
+  .topKvPanel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    padding: 40px 20px 0;
+    .kvBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .kv01 {
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_01_pc.jpg)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv02 {
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_02_pc.jpg)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv03 {
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_03_pc.jpg)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv04 {
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_04_pc.jpg)
+          center no-repeat;
+        background-size: cover;
+      }
+    }
+    .kvTitle {
+      display: none;
+      position: relative;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 0 80px;
+      z-index: 1;
+    }
+  }
+  .contactArea {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: -150px auto 0;
+    padding: 30px 20px;
+    color: #ffffff;
+    z-index: 9;
+    background: #eb0002;
+    .contactBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .telBox {
+      .dl {
+        padding: 20px;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_tel_bg.png)
+          center no-repeat;
+        background-size: 100% auto;
+        .dt {
+          font-size: 24px;
+        }
+        .dd {
+          a {
+            display: inline-block;
+            padding: 0 0 0 45px;
+            font-size: 40px;
+            color: #ffffff;
+            background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_tel.png)
+              left center no-repeat;
+            background-size: 40px auto;
+          }
+          > p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .mailBox {
+      a {
+        display: block;
+        padding: 30px;
+        font-size: 30px;
+        color: #ffffff;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_mail_bg.png)
+          center no-repeat;
+        background-size: 100% auto;
+        p {
+          display: inline-block;
+          padding: 0 0 0 35px;
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_kv_mail.png)
+            left center no-repeat;
+          background-size: 30px auto;
+        }
+      }
+    }
+  }
+  .topContainer {
+    padding: 60px 0 0;
+    .sectionPanel {
+      text-align: center;
+      .titleBox {
+        display: inline-block;
+        margin: 0 0 40px;
+        padding: 20px 0 0;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_top_ttl_icon.png)
+          right 80px top no-repeat;
+        background-size: 50px auto;
+        .title01 {
+          font-size: 30px;
+        }
+        .title02 {
+          p {
+            display: inline;
+            font-size: 60px;
+          }
+          .em {
+            color: #f58334;
+          }
+        }
+      }
+      .listBox {
+        .ul {
+          .li {
+            p {
+              margin: 10px 0 0;
+              text-align: left;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 3) - 10px);
+              .img {
+                overflow: hidden;
+                position: relative;
+                height: 290px;
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .arrowPanel {
+      position: relative;
+      top: 100px;
+      padding: 0 20px 60px;
+      background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_top_arrow_bg.png)
+        center bottom no-repeat;
+      background-size: 100% auto;
+      .balloon {
+        max-width: 400px;
+        margin: 0 auto 30px;
+      }
+      .imgTxt {
+        max-width: 550px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .topMainContainer {
+    padding: 200px 0;
+    background: #ffffff;
+  }
+  .mainSection {
+    margin: 0 0 200px;
+    .secPanel {
+      .txtBox {
+        padding: 0 60px;
+        .ttlBox {
+          margin: 0 0 40px;
+          .ttl01 {
+            font-size: 20px;
+          }
+          .ttl02 {
+            font-size: 50px;
+          }
+        }
+        .txt {
+          margin: 0 0 40px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        min-height: 500px;
+        > * {
+          width: 50%;
+          min-height: 500px;
+        }
+        .photo {
+          overflow: hidden;
+          position: relative;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .txtBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .inner {
+            max-width: 600px;
+          }
+        }
+        &:nth-child(even) {
+          .photo {
+            order: 2;
+          }
+          .txtBox {
+            order: 1;
+            align-items: flex-end;
+          }
+        }
+      }
+    }
+  }
+  .sliderSection {
+    .titleBox {
+      margin: 0 0 80px;
+      text-align: center;
+      .title {
+        p {
+          display: inline;
+          font-size: 50px;
+          line-height: 1.2;
+        }
+        .em {
+          color: #f79d42;
+        }
+      }
+      > p {
+        margin: 20px 0 0;
+      }
+    }
+  }
+  .linkList {
+    margin: 160px 0 0;
+    padding: 0 20px;
+    .ul {
+      max-width: 840px;
+      margin: 0 auto;
+      .li {
+        a {
+          position: relative;
+          display: block;
+          padding: 20px 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #0e0e0e;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -15px;
+            bottom: 0;
+            width: 50px;
+            height: 5px;
+            margin: auto 0;
+            background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_list_arrow.png)
+              no-repeat;
+            background-size: 100% auto;
+            transition: 0.6s;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        .li {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+.featureMain {
+  .mainContainer {
+    .secPanel {
+      padding: 0 60px 30px;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+      + .secPanel {
+        margin: 70px 0 0;
+      }
+      .titleHeader {
+        position: relative;
+        display: flex;
+        .num {
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            font-size: 35px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.3;
+            border-radius: 50%;
+            background: #e40002;
+          }
+        }
+        .titleBox {
+          padding: 50px 0 0 40px;
+          font-size: 0;
+          p {
+            display: inline-block;
+            font-size: 35px;
+          }
+          .em {
+            color: #f58334;
+          }
+        }
+      }
+      .secBox {
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20x 0 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .titleHeader {
+          position: relative;
+          top: -30px;
+          left: -30px;
+        }
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 36%;
+            position: relative;
+            height: 294px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .txtBox {
+            width: 60%;
+            .txt {
+              max-width: 630px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	thermobarrier
+///////////////////////////////////////////////////////////*/
+.thermobarrierMain {
+  .sec01 {
+    margin: 0 0 150px;
+    padding: 60px 10px;
+    background: #ffffff;
+    .pageSecTitleBox {
+      margin: 0 0 30px;
+      + p {
+        margin: 0 0 60px;
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+    .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      > .txt {
+        margin: 0 0 40px;
+      }
+    }
+    .secBox {
+      .txtBox {
+        padding: 10px 0 0;
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .txtBox {
+          width: 50%;
+        }
+        .photo {
+          width: 46%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    .secPanel {
+      padding: 0 60px 30px;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+      + .secPanel {
+        margin: 70px 0 0;
+      }
+      .titleHeader {
+        position: relative;
+        display: flex;
+        .num {
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            font-size: 35px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.3;
+            border-radius: 50%;
+            background: #e40002;
+          }
+        }
+        .titleBox {
+          padding: 50px 0 0 40px;
+          font-size: 0;
+          p {
+            display: inline-block;
+            font-size: 35px;
+          }
+          .em {
+            color: #f58334;
+          }
+        }
+      }
+      .secBox {
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20x 0 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .titleHeader {
+          position: relative;
+          top: -30px;
+          left: -30px;
+        }
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 36%;
+            position: relative;
+            height: 294px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .txtBox {
+            width: 60%;
+            .txt {
+              max-width: 630px;
+            }
+          }
+        }
+      }
+    }
+    .secPanel--merit {
+      padding: 30px 10px;
+      .dl {
+        max-width: 1000px;
+        margin: 0 auto;
+        .dt {
+          margin: 0 0 30px;
+          font-size: 35px;
+          text-align: center;
+          p {
+            display: inline;
+          }
+          .em {
+            color: #f58334;
+          }
+        }
+        .txtList {
+          text-align: center;
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: calc((100% / 4) - 5px);
+              padding: 5px 30px;
+              color: #ffffff;
+              background: #0e0e0e;
+              p {
+                font-size: 15px;
+              }
+              .span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 180px 0;
+  }
+  .sec04 {
+    .topTxt {
+      padding: 0 0 40px;
+    }
+    .secPanel {
+      padding: 100px 0;
+      &:nth-child(even) {
+        background: #f0f0f1;
+      }
+      .titleBox {
+        margin: 0 0 50px;
+        > p {
+          margin: 0 0 15px;
+          font-size: 22px;
+        }
+        h4 {
+          position: relative;
+          display: inline-block;
+          margin: 0 0 25px;
+          padding: 0 0 0 40px;
+          font-size: 34px;
+          line-height: 1.3;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 25px;
+            height: 8px;
+            margin: auto 0;
+            background: #f79d42;
+          }
+        }
+      }
+    }
+    .imgList01 {
+      margin: 0 0 60px;
+    }
+    .imgList02 {
+      margin: 0 0 60px;
+    }
+    .imgList03 {
+      .ul {
+        max-width: 1000px;
+        margin: 0 auto;
+        .li {
+          + .li {
+            margin: 60px 0 0;
+          }
+          p {
+            margin: 0 0 20px;
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .txtBox {
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .imgList01 {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          max-width: 900px;
+          margin: 0 auto;
+          .li {
+            width: 48%;
+          }
+        }
+      }
+      .imgList02 {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          max-width: 1000px;
+          .li {
+            width: 40%;
+            + .li {
+              width: 52%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 150px 0 200px;
+    .topTxt {
+      margin: 0 0 80px;
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+    .introBox {
+      padding: 30px 40px;
+      border-left: 45px solid #eb0002;
+      background: url(https://ishida-kensetsu.net/system_panel/uploads/images/thermobarrier_sec05_bg.png)
+        no-repeat;
+      background-size: cover;
+      .inner {
+        max-width: 980px;
+        margin: 0 auto;
+        .txtBox {
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              padding: 0 0 15px;
+              font-size: 24px;
+              border-bottom: 1px solid #0e0e0e;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .photo {
+            width: 160px;
+          }
+          .txtBox {
+            width: calc(100% - 200px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	seismic
+///////////////////////////////////////////////////////////*/
+.seismicMain {
+  .sec01 {
+    margin: 0 0 150px;
+    padding: 60px 10px;
+    background: #ffffff;
+    .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .txtList {
+      text-align: center;
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: calc((100% / 3) - 5px);
+          min-height: 55px;
+          margin: 10px 0 0;
+          padding: 10px;
+          color: #ffffff;
+          background: #0e0e0e;
+          p {
+            font-size: 15px;
+          }
+          .span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .dl {
+      margin: 80px 0;
+      .dt {
+        margin: 0 0 30px;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    .message {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 30px 10px;
+      text-align: center;
+      font-size: 50px;
+      color: #e40002;
+      border-top: 2px solid #0e0e0e;
+      border-bottom: 2px solid #0e0e0e;
+    }
+  }
+  .sec02 {
+    .secPanel {
+      padding: 0 60px 30px;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+      + .secPanel {
+        margin: 70px 0 0;
+      }
+      .titleHeader {
+        position: relative;
+        display: flex;
+        .num {
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            font-size: 35px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.3;
+            border-radius: 50%;
+            background: #e40002;
+          }
+        }
+        .titleBox {
+          padding: 40px 0 0 40px;
+          font-size: 0;
+          p {
+            display: inline-block;
+            font-size: 35px;
+          }
+          .em {
+            color: #f58334;
+          }
+        }
+      }
+      .secBox {
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20x 0 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .titleHeader {
+          position: relative;
+          top: -20px;
+          left: -30px;
+        }
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 36%;
+          }
+          .txtBox {
+            width: 60%;
+            .txt {
+              max-width: 630px;
+            }
+          }
+        }
+        .secBox01 {
+          .photo {
+            order: 2;
+            position: relative;
+            top: -40px;
+          }
+          .txtBox {
+            order: 1;
+          }
+        }
+      }
+    }
+    .cntBody01 {
+      .listTbl {
+        max-width: 1000px;
+        margin: 0 auto 30px;
+        .dl {
+          text-align: center;
+          border: 1px solid #0e0e0e;
+          + .dl {
+            margin: 10px 0 0;
+          }
+          .dt {
+            padding: 15px 10px;
+            color: #ffffff;
+            background: #0e0e0e;
+          }
+          .dd {
+            padding: 15px 10px;
+          }
+        }
+        + p {
+          font-size: 24px;
+          text-align: center;
+        }
+        @media (min-width: 1025px) {
+          .dl {
+            display: flex;
+            > * {
+              width: calc(100% / 3);
+            }
+            .dd {
+              + .dd {
+                border-left: 1px solid #0e0e0e;
+              }
+            }
+          }
+        }
+      }
+    }
+    .works {
+      margin: 20px 0 0;
+      padding: 15px 20px;
+      border: 1px dotted #040000;
+      .dl {
+        .dt {
+          margin: 0 0 10px;
+          color: #e40002;
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 180px 0;
+    .caseSliderPanel {
+      .caseSliderContainer {
+        .counterBox {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	lsp
+///////////////////////////////////////////////////////////*/
+.lspMain {
+  .sec01 {
+    margin: 0 0 150px;
+    padding: 60px 10px;
+    background: #ffffff;
+    .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .dl {
+      .dt {
+        margin: 0 0 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+  .sec02 {
+    .listPanel {
+      .ul {
+        .li {
+          .inner {
+            position: relative;
+            padding: 30px;
+            background: #ffffff;
+            box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+          }
+        }
+        .num {
+          position: absolute;
+          top: -30px;
+          left: -10px;
+          .numTxt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.3;
+            border-radius: 50%;
+            background: #e40002;
+          }
+          .span {
+            font-size: 16px;
+          }
+          .em {
+            font-size: 35px;
+            line-height: 1;
+          }
+        }
+        .titleBox {
+          padding: 0 0 20px 80px;
+          .title {
+            font-size: 0;
+            p {
+              display: inline-block;
+              font-size: 35px;
+            }
+            .em {
+              color: #f58334;
+            }
+          }
+        }
+        .img {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .txt + .img {
+          margin: 20px auto 0;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -60px 0 0;
+          .li {
+            width: calc((100% / 2) - 20px);
+            margin: 60px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 180px 0;
+    .secPanel {
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+      + .secPanel {
+        margin: 40px 0 0;
+      }
+      .titleHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 20px;
+        .num {
+          .numTxt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.3;
+            border-radius: 50%;
+            background: #e40002;
+          }
+          .span {
+            font-size: 16px;
+          }
+          .em {
+            font-size: 35px;
+            line-height: 1;
+          }
+        }
+        .titleBox {
+          width: calc(100% - 130px);
+          .title {
+            font-size: 0;
+            p {
+              display: inline-block;
+              font-size: 35px;
+            }
+            .em {
+              color: #f58334;
+            }
+          }
+        }
+      }
+      .txt {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .sec04 {
+    @media (min-width: 1025px) {
+      .tblPanel {
+        border: 1px solid #0e0e0e;
+        .dl {
+          display: table;
+          width: 100%;
+          + .dl {
+            border-top: 1px solid #0e0e0e;
+          }
+          .dt {
+            display: table-cell;
+            width: 25%;
+            font-size: 24px;
+            text-align: center;
+            vertical-align: middle;
+            border-right: 1px solid #0e0e0e;
+          }
+          .dd {
+            display: table-cell;
+            padding: 30px;
+            .txt {
+              margin: 0 0 20px;
+            }
+          }
+          .ul {
+            display: flex;
+            max-width: 780px;
+            .li {
+              width: calc(100% / 3 - 20px);
+              + .li {
+                margin: 0 0 0 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .balloonTxt {
+      position: relative;
+      max-width: 940px;
+      margin: 100px auto 0;
+      padding: 30px 10px;
+      font-size: 40px;
+      text-align: center;
+      border: 1px solid #000000;
+      background: #ffffff;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0;
+        right: 0;
+        width: 50px;
+        height: 30px;
+        margin: 0 auto;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/lsp_sec04_balloon.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .sec05 {
+    margin: 180px 0;
+    .caseSliderPanel {
+      .caseSliderContainer {
+        .counterBox {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	other
+///////////////////////////////////////////////////////////*/
+.otherMain {
+  .sec01 {
+    margin: 0 0 150px;
+    padding: 60px 10px;
+    background: #ffffff;
+    .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .txt {
+      max-width: 1000px;
+      margin: 0 auto 60px;
+    }
+    .imgList {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px 0 0 -15px;
+        .li {
+          width: calc((100% / 4) - 15px);
+          min-height: 300px;
+          margin: 20px 0 0 15px;
+          padding: 15px;
+          cursor: pointer;
+          background: #ffffff;
+          box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+        }
+        .img {
+          overflow: hidden;
+          position: relative;
+          height: 160px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 60px;
+          margin: 15px 0 0;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .sec02 {
+    .kv {
+      max-width: 1000px;
+      margin: 0 auto 40px;
+    }
+    .pageSecTitleBox {
+      + .txt {
+        margin: 0 0 120px;
+      }
+    }
+    .section {
+      + .section {
+        margin: 120px 0 0;
+      }
+      .pageSecTitleBox {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .section01 {
+      .secPanel {
+        .secBox {
+          .box {
+            + .box {
+              margin: 50px 0 0;
+            }
+            p {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          .secBox {
+            width: 48%;
+          }
+        }
+      }
+    }
+    .section02 {
+      padding: 0 0 40px;
+      .secBox {
+        padding: 50px 0;
+        + .secBox {
+          border-top: 1px solid #c5c5c5;
+        }
+        .txtBox {
+          .dl {
+            .dt {
+              position: relative;
+              margin: 0 0 20px;
+              padding: 0 0 0 20px;
+              font-size: 24px;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 15px;
+                height: 4px;
+                margin: auto 0;
+                background: #f79d42;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          > * {
+            width: 48%;
+          }
+        }
+        .secBox02 {
+          .txtBox {
+            width: calc(100% - 300px);
+          }
+          .photo {
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
+  .contactContainer {
+    position: relative;
+    margin: -60px 0 200px;
+    padding: 0 0 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: calc(100% - 60px);
+      z-index: -1;
+      background: #eb0002;
+    }
+    .balloonTxt {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      padding: 30px 10px;
+      font-size: 40px;
+      text-align: center;
+      border: 1px solid #000000;
+      background: #ffffff;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        width: 50px;
+        height: 30px;
+        margin: 0 auto;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/other_contact_balloon.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+    }
+    .contactPanel {
+      padding: 30px 20px 10px;
+      background: #ffffff;
+      .inner {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .txtList {
+        text-align: center;
+        .ul {
+          .li {
+            display: inline-block;
+            padding: 10px 30px;
+            color: #ffffff;
+            background: #0e0e0e;
+            + .li {
+              margin: 0 0 0 10px;
+            }
+          }
+        }
+      }
+      .contactBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 850px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .telBox {
+        .dl {
+          padding: 20px;
+          .dt {
+            font-size: 24px;
+          }
+          .dd {
+            a {
+              display: inline-block;
+              padding: 0 0 0 45px;
+              font-size: 40px;
+              background: url(https://ishida-kensetsu.net/system_panel/uploads/images/footer_contact_tel.png)
+                left center no-repeat;
+              background-size: 40px auto;
+            }
+            > p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .mailBox {
+        a {
+          display: block;
+          padding: 30px;
+          font-size: 30px;
+          color: #ffffff;
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/footer_contact_mail_bg.png)
+            center no-repeat;
+          background-size: 100% auto;
+          p {
+            display: inline-block;
+            padding: 0 0 0 35px;
+            background: url(https://ishida-kensetsu.net/system_panel/uploads/images/footer_contact_mail.png)
+              left center no-repeat;
+            background-size: 30px auto;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 0 0 80px;
+    .secBox {
+      padding: 40px 0 0;
+      .txtBox {
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 35px;
+            color: #f58334;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 50%;
+          position: relative;
+          overflow: hidden;
+          height: 555px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .txtBox {
+          width: 46%;
+          .dl {
+            max-width: 520px;
+          }
+        }
+      }
+    }
+  }
+  .slidePanel {
+    margin: 0 0 200px;
+    .slideBox {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc(100% / 4);
+          position: relative;
+          overflow: hidden;
+          height: 280px;
+          margin: 0 5px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 200px;
+    .secBox {
+      padding: 40px 0 0;
+      .txtBox {
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            .em {
+              font-size: 35px;
+              color: #f58334;
+            }
+            .span {
+              font-size: 20px;
+            }
+          }
+          .dd {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 56%;
+          position: relative;
+          overflow: hidden;
+          height: 320px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .txtBox {
+          width: 40%;
+          .dl {
+            max-width: 400px;
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 0 0 120px;
+    .listBox {
+      margin: 0 0 100px;
+      .ul {
+        .ttlBox {
+          margin: 0 0 20px;
+          p {
+            display: inline-block;
+            font-size: 24px;
+          }
+          .span {
+            margin: 0 15px 0 0;
+          }
+          .em {
+            color: #f58334;
+          }
+        }
+        .secBox {
+          padding: 0 0 40px;
+          border-bottom: 1px solid #0e0e0e;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 40px);
+            margin: 40px 0 0;
+            &:last-child {
+              margin: -80px 0 0;
+            }
+          }
+          .secBox {
+            display: flex;
+            justify-content: space-between;
+            .photo {
+              width: 250px;
+              position: relative;
+              overflow: hidden;
+              height: 220px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .txtBox {
+              width: calc(100% - 275px);
+            }
+          }
+        }
+      }
+    }
+    .campaign {
+      margin: 0 0 80px;
+      padding: 15px;
+      background: url(https://ishida-kensetsu.net/system_panel/uploads/images/other_campaign_bg.png)
+        no-repeat;
+      background-size: cover;
+      .dl {
+        font-size: 34px;
+        text-align: center;
+        .dt {
+          display: inline-block;
+          margin: 0 0 20px;
+          padding: 0 10px;
+          color: #d10000;
+          border-bottom: 1px solid #d10000;
+        }
+        .dd {
+          padding: 20px;
+          background: #ffffff;
+          .campaignTxt {
+            p {
+              display: inline;
+            }
+            .em {
+              color: #d10000;
+              background: linear-gradient(transparent 60%, #ffee9f 60%);
+            }
+          }
+        }
+      }
+    }
+    .company {
+      padding: 25px;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .inner {
+            max-width: 460px;
+            margin: 0 auto;
+          }
+          .logo {
+            margin: 0 0 30px;
+          }
+          .detail {
+            margin: 0 0 30px;
+            .detailTxt {
+              + .detailTxt {
+                margin: 5px 0 0;
+              }
+              p {
+                display: inline;
+                font-size: 24px;
+              }
+              .em01 {
+                color: #f79d42;
+              }
+              .em02 {
+                color: #009e96;
+              }
+            }
+          }
+          .btnLink {
+            max-width: 340px;
+            a {
+              position: relative;
+              display: block;
+              padding: 20px 10px;
+              color: #ffffff;
+              text-align: center;
+              background: #0e0e0e;
+              &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -15px;
+                bottom: 0;
+                width: 50px;
+                height: 5px;
+                margin: auto 0;
+                background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_list_arrow.png)
+                  no-repeat;
+                background-size: 100% auto;
+                transition: 0.6s;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 48%;
+          }
+          .txtBox {
+            width: 52%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain {
+  .recruitMainContainer {
+    padding: 100px 0;
+    background: #f0f0f1;
+  }
+  .sec01 {
+    padding: 60px 10px;
+    background: #ffffff;
+    .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .introBox {
+      margin: 0 0 40px;
+      .dt {
+        position: relative;
+        margin: 0 0 40px;
+        padding: 0 0 0 20px;
+        font-size: 24px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 15px;
+          height: 4px;
+          margin: auto 0;
+          background: #f79d42;
+        }
+      }
+      .dd {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .secBox {
+      .txtBox {
+        .txt {
+          margin: 0 0 60px;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .name {
+          font-size: 20px;
+          text-align: right;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    .secTitle {
+      margin: 0 0 60px;
+      font-size: 0;
+      text-align: center;
+      p {
+        display: inline-block;
+        font-size: 50px;
+        padding: 10px 0 0;
+      }
+      .em {
+        position: relative;
+        color: #f79d42;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          margin: 0 auto;
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/recruit_sec02_circle.png)
+            no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .chart {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+  .sec03 {
+    padding: 100px 0;
+    background: #f0f0f1;
+    .secPanel {
+      padding: 40px;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+      + .secPanel {
+        margin: 25px 0 0;
+      }
+      .dl {
+        .dt {
+          display: flex;
+          align-items: center;
+          .icon {
+            width: 90px;
+            p {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 60px;
+              height: 60px;
+              font-size: 35px;
+              color: #ffffff;
+              border-radius: 50%;
+              background: #e40002;
+            }
+          }
+          .ttl {
+            font-size: 35px;
+          }
+        }
+        .dd {
+          padding: 30px 20px 0;
+          p {
+            position: relative;
+            padding: 0 0 0 1.2em;
+            &::before {
+              content: "－";
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 100px 0;
+    .accordPanel {
+      + .accordPanel {
+        margin: 40px 0 0;
+      }
+      .accordHead {
+        padding: 10px 100px;
+        font-size: 24px;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/accord_plus.png)
+          right 30px center no-repeat #0e0e0e;
+        background-size: 20px auto;
+        &.active {
+          background: url(https://ishida-kensetsu.net/system_panel/uploads/images/accord_minus.png)
+            right 30px center no-repeat #0e0e0e;
+          background-size: 13px auto;
+        }
+      }
+      .accordBody {
+        border: 1px solid #0e0e0e;
+        .dl {
+          display: table;
+          width: 100%;
+          line-height: 2;
+          + .dl {
+            border-top: 1px solid #0e0e0e;
+          }
+          .dt {
+            display: table-cell;
+            width: 25%;
+            padding: 15px 10px;
+            text-align: center;
+            border-right: 1px solid #0e0e0e;
+            background: #f0f0f0;
+          }
+          .dd {
+            display: table-cell;
+            padding: 15px 40px;
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 100px 0;
+    background: #f0f0f1;
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .sec01 {
+    margin: 0 0 200px;
+    .secBox {
+      .txtBox {
+        .dl {
+          .dt {
+            position: relative;
+            margin: 0 0 40px;
+            padding: 0 0 0 30px;
+            font-size: 30px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 25px;
+              left: 0;
+              bottom: 0;
+              width: 15px;
+              height: 4px;
+              background: #f79d42;
+            }
+          }
+          .dd {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          order: 2;
+          width: 33%;
+        }
+        .txtBox {
+          order: 1;
+          width: 67%;
+          .dl {
+            max-width: 550px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 100px;
+    .infoBox {
+      max-width: 1100px;
+      margin: 0 auto 120px;
+      .dl {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.7;
+        + .dl {
+          margin: 30px 0 0;
+        }
+        .dt {
+          width: 24%;
+          padding: 10px 20px;
+          border-bottom: 1px solid #f79d42;
+        }
+        .dd {
+          width: 75%;
+          padding: 10px 20px;
+          border-bottom: 1px solid #0e0e0e;
+        }
+        .telBox {
+          p {
+            display: inline-block;
+          }
+          a {
+            display: inline-block;
+          }
+          .fax {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+    .introStaff {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 10px;
+      box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+      .dl {
+        text-align: center;
+        .dt {
+          margin: 0 0 20px;
+          font-size: 0;
+          p {
+            display: inline;
+            font-size: 40px;
+          }
+          .em {
+            color: #f79d42;
+          }
+        }
+      }
+      .btnLink {
+        max-width: 480px;
+        margin: 0 auto;
+        a {
+          position: relative;
+          display: block;
+          padding: 15px 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #0e0e0e;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -15px;
+            bottom: 0;
+            width: 50px;
+            height: 5px;
+            margin: auto 0;
+            background: url(https://ishida-kensetsu.net/system_panel/uploads/images/top_list_arrow.png)
+              no-repeat;
+            background-size: 100% auto;
+            transition: 0.6s;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .topTxt {
+    margin: 0 0 60px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .contactMainContainer {
+    padding: 100px 0;
+    background: #f0f0f1;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 280px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px 10px;
+    font-family: $baseFont, "游ゴシック Medium", "Yu Gothic Medium",
+      "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
+      "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: url(https://ishida-kensetsu.net/system_panel/uploads/images/btn_more_arrow.png)
+      right 15px center no-repeat #eb0002;
+    background-size: 6px auto;
+    transition: 0.6s;
+    .arrows {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 100%;
+      background: #333333;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 20px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #cbcbcb;
+        background: #ffffff;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #eb0002;
+        border-right: 3px solid #eb0002;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList {
+      padding: 5px 0;
+      .list {
+        + .list {
+          margin: 20px 0 0;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        + .list {
+          margin: 0 0 0 30px;
+        }
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #eb0002;
+      }
+    }
+
+    .postal {
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+
+    .selectBox {
+      display: inline-block;
+      width: 120px;
+      select {
+        display: block;
+        width: 100%;
+        padding: 11px 15px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5em;
+        border-radius: 0;
+        border: 1px solid #ffffff;
+        background: #ffffff;
+        background-size: 10px auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .contactForm {
+    text-align: left;
+
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0 10px 10px;
+
+        &.line {
+          padding: 10px 40px 40px;
+          + .dl {
+            padding: 40px 40px 10px;
+          }
+        }
+
+        > .dt {
+          width: 310px;
+          padding: 15px 0 10px;
+          &.top {
+            vertical-align: top;
+          }
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #eb0002;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 330px);
+          padding: 10px 0;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          background: #fcfcfc;
+          box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+
+    .fileUploadBox {
+      font-weight: 400;
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+        margin: 0 0 10px;
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 35%;
+          font-size: 16px;
+          color: #ffffff;
+          text-align: center;
+          background: #a4a4a4;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 15px 10px;
+          }
+        }
+
+        > p {
+          width: 62%;
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+  }
+
+  .extraContainer {
+    margin: 50px 0;
+    .extraPanel {
+      + .extraPanel {
+        margin: 40px 0 0;
+      }
+      .ttl {
+        padding: 0 5px 10px;
+        color: #eb0002;
+        border-bottom: 1px dotted #000000;
+      }
+      .dl {
+        padding: 20px 0 0 0;
+        .dt {
+          margin: 0 0 10px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: flex;
+          padding: 30px 0 0 20px;
+          .dt {
+            width: 320px;
+            margin: 0;
+            padding: 0 20px;
+          }
+          .dd {
+            width: calc(100% - 320px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 0 0 100px;
+
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	case
+///////////////////////////////////////////////////////////*/
+.caseMain {
+  .postMain {
+    padding: 0 0 150px;
+  }
+  @media (min-width: 1025px) {
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .catePanel {
+      width: 200px;
+      padding: 20px 0 0;
+      .webgene-blog {
+        min-height: 250px;
+      }
+    }
+    .listPanel,
+    .postDetail {
+      width: calc(100% - 230px);
+    }
+  }
+  .catePanel {
+    .cateTtl {
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
+      background: #0e0e0e;
+    }
+    .webgene-blog {
+      padding: 20px;
+      border: 1px solid #0e0e0e;
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        + .webgene-item {
+          margin: 20px 0 0;
+        }
+        a {
+          position: relative;
+          display: inline-block;
+          padding: 0 0 0 1em;
+          text-decoration: underline;
+          &::before {
+            content: "-";
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .listPanel {
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+        a {
+          display: block;
+          padding: 20px;
+        }
+        .txtBox {
+          margin: 10px 0;
+        }
+        .info {
+          margin: 0 0 10px;
+          > * {
+            display: inline-block;
+          }
+          // .time {
+          //   margin: 0 15px 0 0;
+          //   color: #939597;
+          // }
+          .cate {
+            position: relative;
+            padding: 0 0 0 1em;
+            font-size: 20px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              width: 10px;
+              height: 5px;
+              margin: auto 0;
+              background: #f79d42;
+            }
+          }
+        }
+        .ttl {
+          font-size: 15px;
+          text-decoration: underline;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px 0 0 -15px;
+        .webgene-item {
+          width: calc((100% / 3) - 15px);
+          margin: 20px 0 0 15px;
+          .photo {
+            overflow: hidden;
+            position: relative;
+            padding: 0 0 70%;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .webgene-pagination {
+      overflow: hidden;
+      width: 100%;
+      margin: 100px auto 0;
+      font-size: 14px;
+      ul {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        li {
+          display: inline-block;
+          margin: 0 2px;
+
+          a {
+            display: block;
+            width: 45px;
+            line-height: 45px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            background: #cdcdcd;
+          }
+        }
+
+        .prev {
+          margin: 0 2px 0 0;
+        }
+
+        .next {
+          position: relative;
+          margin: 0 0 0 2px;
+        }
+
+        .selected {
+          a {
+            background: #0f0b09;
+          }
+        }
+        @media (min-width: 1025px) {
+          li {
+            margin: 0 10px;
+          }
+          .prev {
+            float: left;
+          }
+          .next {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  .postDetail {
+    padding: 40px 40px 100px;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item-info {
+        margin: 0 0 40px;
+        .infoBox {
+          text-align: right;
+          > * {
+            display: inline-block;
+          }
+          .time {
+            margin: 0 5px 0 0;
+          }
+          .cate {
+          }
+        }
+        .title {
+          position: relative;
+          padding: 0 0 0 0.8em;
+          font-size: 30px;
+          font-weight: bold;
+          vertical-align: middle;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 10px;
+            height: 6px;
+            margin: auto 0;
+            background: #f79d42;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-item-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+        }
+      }
+      .slickSlide {
+        max-width: 780px;
+        margin: 0 0 60px;
+        .slider {
+          .li {
+            > div {
+              overflow: hidden;
+              position: relative;
+              padding: 0 0 70%;
+            }
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      .slick-list {
+        margin: 0 0 10px;
+      }
+      .thumb-item {
+        margin: 0 auto 10px;
+      }
+      .slick-slide {
+        margin: 0 5px;
+      }
+      .postBox {
+        .photo {
+          margin-bottom: 20px;
+        }
+        .postTxt {
+          line-height: 2;
+
+          p + p {
+            margin: 30px 0 0;
+          }
+
+          img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .pdfArea {
+    margin: 40px 0 0;
+    a {
+      color: #2151a3;
+    }
+  }
+  .btnBack {
+    max-width: 340px;
+    margin: 100px auto 0;
+    a {
+      position: relative;
+      display: block;
+      padding: 15px 10px;
+      color: #ffffff;
+      text-align: center;
+      background: #0e0e0e;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        bottom: 0;
+        width: 50px;
+        height: 5px;
+        margin: auto 0;
+        background: url(https://ishida-kensetsu.net/system_panel/uploads/images/btn_back_arrow.png)
+          no-repeat;
+        background-size: 100% auto;
+        transition: 0.6s;
+      }
+    }
+  }
+}

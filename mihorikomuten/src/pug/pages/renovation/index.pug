@@ -1,0 +1,15 @@
+- title = ''
+- description = ''
+- keywords = ''
+- root_path = '../'
+- page_name = 'renovation'
+doctype html
+//- サイトの設定の読み込み
+include /site.pug
+html(lang='ja')
+  head
+    include /common/head.pug
+  body#renovation.page
+    include /common/header.pug
+    include ../../layouts/renovation.pug
+    include /common/footer.pug

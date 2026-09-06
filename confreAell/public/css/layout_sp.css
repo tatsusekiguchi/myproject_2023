@@ -1,0 +1,490 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain {
+  padding: 50px 0 0;
+}
+#topMain .topKvContainer {
+  padding: 20px 0;
+  background: url("../image/common/kv_bg_top.png") left top repeat-x, url("../image/common/kv_bg_bottom.png") left bottom repeat-x;
+  background-size: 30px auto, 30px auto;
+}
+#topMain .topKvContainer .topKvPanel {
+  height: 130px;
+  border-top: 10px solid #f16fb5;
+  border-bottom: 10px solid #f16fb5;
+}
+#topMain .topKvContainer .kvLogo {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+#topMain .topKvContainer .kvTxt {
+  display: none;
+}
+#topMain .topSection {
+  margin: -20px 0 0;
+  padding: 60px 0 0;
+}
+#topMain .topSection .secBox .txtBox .title {
+  margin: 0 0 15px;
+  font-size: 23px;
+  text-shadow: -2px -2px 0 #d56fa7, 2px -2px 0 #d56fa7, -2px 2px 0 #d56fa7, 2px 2px 0 #d56fa7;
+  /* 右下 */
+}
+#topMain .topSection .secBox .txtBox .btnMoreBox {
+  display: none;
+}
+#topMain .topSection .secBox .photo {
+  position: relative;
+  z-index: 1;
+}
+#topMain .section {
+  padding: 60px 0;
+}
+#topMain .section .listPanel {
+  margin: 0 0 40px;
+}
+#topMain .section .listPanel ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -20px;
+}
+#topMain .section .listPanel ul li {
+  width: calc(50% - 20px);
+  margin: 30px 0 0 20px;
+}
+#topMain .section .listPanel ul .photo {
+  height: 200px;
+}
+#topMain .section .listPanel ul .nameBox {
+  bottom: -10px;
+}
+#topMain .section .listPanel ul .nameBox p {
+  max-width: 140px;
+  min-width: 120px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+#topMain .section .listPanel.pink ul .photo {
+  border: 3px solid #ea97c5;
+}
+#topMain .section .listPanel.purple ul .photo {
+  border: 3px solid #8a79ae;
+}
+#topMain #section__cast {
+  position: relative;
+  margin: -60px 0 0;
+  padding: 100px 0 60px;
+}
+#topMain #section__cast .secTtl {
+  max-width: 120px;
+  margin: 0 auto 30px;
+}
+#topMain #section__cast .listPanel .nameBox p:after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 4px;
+  width: 30px;
+  height: 20px;
+}
+#topMain #section__goods .secTtl {
+  max-width: 200px;
+  margin: 0 auto 20px;
+}
+#topMain #section__goods .txt {
+  margin: 0 auto 20px;
+}
+#topMain #section__news .secTtl {
+  max-width: 280px;
+  margin: 0 auto 30px;
+}
+#topMain #section__info .secTtl {
+  max-width: 280px;
+  margin: 0 auto 30px;
+}
+#topMain #section__info .infoBox dl dt {
+  width: 100px;
+  padding: 15px 0 15px 20px;
+}
+#topMain #section__info .infoBox dl dd {
+  width: calc(100% - 100px);
+  padding: 15px 10px;
+}
+#topMain .slidePanel .slideBox ul li {
+  width: 50%;
+  height: 220px;
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+#conceptMain .pageKvContainer .kvTitle {
+  max-width: 200px;
+}
+#conceptMain .sec01 {
+  margin: -60px 0 0;
+  padding: 100px 0 60px;
+}
+#conceptMain .sec01 .title {
+  margin: 0 0 20px;
+  font-size: 23px;
+  text-shadow: -2px -2px 0 #d56fa7, 2px -2px 0 #d56fa7, -2px 2px 0 #d56fa7, 2px 2px 0 #d56fa7;
+  /* 右下 */
+}
+#conceptMain .sec01 .txt {
+  margin: 0 0 40px;
+}
+#conceptMain .sec01 .txt p + p {
+  margin: 20px 0 0;
+}
+#conceptMain .sec01 .photoList {
+  max-width: 350px;
+  margin: 0 auto;
+}
+#conceptMain .sec01 .photoList ul li + li {
+  margin: 20px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	system
+///////////////////////////////////////////////////////////*/
+#systemMain .pageKvContainer .kvTitle {
+  max-width: 180px;
+}
+#systemMain .sec01 {
+  margin: -60px 0 0;
+  padding: 100px 0 60px;
+}
+#systemMain .sec01 .topTxt {
+  margin: 0 0 40px;
+}
+#systemMain .sec01 .infoBox dl {
+  display: block;
+  border: none;
+}
+#systemMain .sec01 .infoBox dl + dl {
+  margin: 20px 0 0;
+}
+#systemMain .sec01 .infoBox dl dt {
+  width: 100%;
+  padding: 5px 20px;
+  border-bottom: 1px solid #ff008d;
+}
+#systemMain .sec01 .infoBox dl dd {
+  width: 100%;
+  padding: 10px 20px;
+}
+#systemMain .sec01 .infoBox aside {
+  padding: 15px 20px 40px;
+}
+#systemMain .sec01 .payment {
+  margin: 60px 0 0;
+}
+#systemMain .sec01 .payment .title {
+  max-width: 90px;
+  margin: 0 auto 30px;
+}
+#systemMain .sec01 .payment .txt {
+  margin: 0 0 40px;
+}
+#systemMain .sec01 .payment .creditCard {
+  max-width: 300px;
+}
+
+/*////////////////////////////////////////////////////////////
+	cast
+///////////////////////////////////////////////////////////*/
+#castMain .pageKvContainer .kvTitle {
+  max-width: 90px;
+}
+#castMain .pageKvContainer .castRecommend {
+  font-size: 28px;
+}
+#castMain .sec01 {
+  margin: -60px 0 0;
+  padding: 100px 0 60px;
+}
+#castMain .listPanel {
+  margin: 0 0 40px;
+}
+#castMain .listPanel ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -20px;
+}
+#castMain .listPanel ul li {
+  width: calc(50% - 20px);
+  margin: 30px 0 0 20px;
+}
+#castMain .listPanel ul .photo {
+  height: 200px;
+}
+#castMain .listPanel ul .nameBox {
+  bottom: -10px;
+}
+#castMain .listPanel ul .nameBox p {
+  max-width: 140px;
+  min-width: 120px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+#castMain .listPanel ul .nameBox p:after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 4px;
+  width: 30px;
+  height: 20px;
+}
+#castMain .listPanel.pink ul .photo {
+  border: 3px solid #ea97c5;
+}
+#castMain .listPanel.purple ul .photo {
+  border: 3px solid #8a79ae;
+}
+#castMain .btnMore.back {
+  margin: 40px auto;
+}
+#castMain .detailSection {
+  padding: 80px 0 60px;
+}
+#castMain .detailContainer {
+  padding: 40px 10px;
+}
+#castMain .detailContainer .messagePanel {
+  margin: 0 0 30px;
+}
+#castMain .detailContainer .messagePanel .title {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+#castMain .detailContainer .infoPanel {
+  margin: 0 0 20px;
+  padding: 20px;
+}
+#castMain .detailContainer .infoPanel .infoList .infoBox dl {
+  font-size: 11px;
+}
+#castMain .detailContainer .infoPanel .infoList .infoBox dl::before {
+  width: 90px;
+}
+#castMain .detailContainer .infoPanel .infoList .infoBox dl::after {
+  width: calc(100% - 90px);
+}
+#castMain .detailContainer .infoPanel .infoList .infoBox dl dt {
+  width: 90px;
+  padding: 10px 0;
+  color: #ff008d;
+}
+#castMain .detailContainer .infoPanel .infoList .infoBox dl dd {
+  width: calc(100% - 90px);
+  padding: 20px 10px;
+}
+#castMain .detailContainer .infoPanel .infoList .infoBox dl .icon {
+  width: 25px;
+}
+#castMain .detailContainer .snsPanel {
+  max-width: 140px;
+  margin: 0 auto 40px;
+  padding: 20px 20px;
+}
+#castMain .detailContainer .snsPanel .title {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  width: 45px;
+  margin: 0 auto;
+}
+#castMain .detailContainer .snsPanel .sns ul li {
+  width: 40px;
+}
+#castMain .detailContainer .innerSection .title {
+  margin: 0 0 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+#castMain .detailContainer .innerSection .title:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  width: 40px;
+  height: 28px;
+}
+#castMain #section__goods {
+  padding: 60px 0;
+}
+#castMain #section__goods .secTtl {
+  max-width: 200px;
+  margin: 0 auto 20px;
+}
+#castMain #section__goods .txt {
+  margin: 0 auto 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	info
+///////////////////////////////////////////////////////////*/
+#infoMain .pageKvContainer .kvTitle {
+  max-width: 320px;
+}
+#infoMain .sec01 {
+  margin: -60px 0 0;
+  padding: 100px 0 60px;
+}
+#infoMain .sec01 .infoBox dl dt {
+  width: 100px;
+  padding: 15px 0 15px 20px;
+}
+#infoMain .sec01 .infoBox dl dd {
+  width: calc(100% - 100px);
+  padding: 15px 10px;
+}
+#infoMain .slidePanel .slideBox ul li {
+  width: 50%;
+  height: 220px;
+}
+#infoMain .sec02 {
+  padding: 60px 0;
+}
+#infoMain .sec02 .secTtl {
+  max-width: 200px;
+  margin: 0 auto 20px;
+}
+#infoMain .sec02 .txt {
+  margin: 0 0 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+#newsMain .pageKvContainer .kvTitle {
+  max-width: 320px;
+}
+#newsMain .sec01 {
+  margin: -60px 0 0;
+  padding: 100px 0;
+}
+#newsMain .sec01 .blogContainer .rightPanel {
+  margin: 0 0 40px;
+}
+#newsMain .sec01 .blogContainer .rightPanel dl dt {
+  max-width: 160px;
+  margin: 0 auto 20px;
+}
+#newsMain .sec01 .blogContainer .leftPanel .newsList ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -20px;
+}
+#newsMain .sec01 .blogContainer .leftPanel .newsList ul li {
+  width: calc(50% - 20px);
+  margin: 30px 0 0 20px;
+}
+#newsMain .sec01 .blogContainer .leftPanel .newsList ul .photo {
+  height: 250px;
+}
+#newsMain .sec01 .blogContainer .leftPanel .newsList ul .nameBox {
+  bottom: -10px;
+}
+#newsMain .sec01 .blogContainer .leftPanel .newsList ul .nameBox p {
+  max-width: 140px;
+  min-width: 120px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+#newsMain .sec01 .blogContainer .leftPanel .newsList ul .timeBox p:after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 4px;
+  width: 30px;
+  height: 20px;
+}
+#newsMain .sec01 .newsDetail .titleHeader {
+  padding: 15px 20px;
+}
+#newsMain .sec01 .newsDetail .titleHeader .title {
+  padding: 0;
+  font-size: 18px;
+}
+#newsMain .sec01 .newsDetail .titleHeader .time {
+  bottom: -45px;
+  width: 120px;
+  font-size: 12px;
+}
+#newsMain .sec01 .newsDetail .cntBody {
+  padding: 60px 20px 30px;
+}
+#newsMain .sec01 .newsDetail .thumbnailBox {
+  margin: 0 auto 30px;
+}
+#newsMain .sec01 .newsDetail .pagingBox {
+  margin: 60px auto 0;
+}
+
+.list__pagination .pagination li {
+  margin: 0 5px;
+}
+.list__pagination .pagination li a {
+  width: 35px;
+  height: 35px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain .pageKvContainer .kvTitle {
+  max-width: 260px;
+}
+#contactMain .sec01 {
+  margin: -60px 0 0;
+  padding: 100px 0;
+}
+#contactMain .sec01 .topTxt {
+  margin: 0 0 50px;
+}
+#contactMain .formBox form > dl {
+  display: block;
+}
+#contactMain .formBox form > dl + dl {
+  margin: 20px 0 0;
+}
+#contactMain .formBox form > dl dt {
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: none;
+}
+#contactMain .formBox form > dl dt em {
+  margin: 0 0 0 5px;
+  font-size: 12px;
+}
+#contactMain .formBox form > dl dd {
+  width: 100%;
+}
+#contactMain .formBox .msg dt {
+  padding: 0 10px;
+}
+#contactMain .formBox .privacy {
+  margin: 30px 0 50px;
+}
+#contactMain .formBox .privacy .agreeBox {
+  height: 300px;
+  padding: 20px;
+  font-size: 14px;
+}
+#contactMain .formBox .privacy .box + .box {
+  margin: 30px 0 0;
+}

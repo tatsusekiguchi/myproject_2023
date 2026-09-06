@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/validationEngine.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="css/layout_sp.css">
+	<link rel="stylesheet" href="css/attach.css">
+	<!-- js-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/scrollAnimation.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/validateJa.js"></script>
+	<script src="js/jpostal.js"></script>
+	<script src="js/autokana.js"></script>
+	<script src="js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body id="top">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="logo"><a href="/">
+						<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+				<div class="ttl">
+					<p>新小岩駅徒歩3分の美顔痩身エステサロン<br>エステ×コンサルのトータルプロデュース</p>
+				</div>
+			</div>
+			<div class="headBox">
+				<div class="headNav">
+					<div class="ul">
+						<div class="li"><a href="concept">
+								<div>
+									<p class="em">Concept</p>
+									<p class="span">こだわり</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="beginners">
+								<div>
+									<p class="em">Beginner</p>
+									<p class="span">初めての方へ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="menu">
+								<div>
+									<p class="em">Menu</p>
+									<p class="span">メニュー</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="staff">
+								<div>
+									<p class="em">Staff</p>
+									<p class="span">スタッフ紹介</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="salon">
+								<div>
+									<p class="em">Salon</p>
+									<p class="span">店舗情報</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="headItem">
+					<div class="reserve"><a href="contact">
+							<div>
+								<p class="em">Reserve</p>
+								<p class="span">無料カウンセリング</p>
+							</div>
+						</a></div>
+					<div class="hamburgerMenu">
+						<div class="hamburgerBox">
+							<div class="hamburger">
+								<div class="span"></div>
+								<div class="span"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navClose"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_close.png" alt=""></div>
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="concept">
+							<div>
+								<p>こだわり</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="beginners">
+							<div>
+								<p>初めての方へ</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="menu">
+							<div>
+								<p>メニュー</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="staff">
+							<div>
+								<p>スタッフ紹介</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="salon">
+							<div>
+								<p>店舗情報</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="bloglist">
+							<div>
+								<p>ブログ</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="recruit">
+							<div>
+								<p>求人</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="contact">
+							<div>
+								<p>ご予約・お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="infoList">
+				<div class="dl">
+					<div class="dt">
+						<p>tel.</p>
+					</div>
+					<div class="dd"><a href="tel:0356076558">
+							<div>
+								<p>03-5607-6558</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="dl">
+					<div class="dt">
+						<p>open</p>
+					</div>
+					<div class="dd">
+						<p>13:00~21:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="navItem">
+				<div class="logo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+				<div class="sns">
+					<div class="ul">
+						<div class="li"><a href="https://www.instagram.com/rebion_shinkoiwa/" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_insta.png" alt="">
+									<p>美容術</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="https://www.instagram.com/rebion_black/" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_insta.png" alt="">
+									<p>モテ術</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_line.png" alt="">
+									<p>公式LINE</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="topMain main">
+		<div class="topKvPanel">
+			<div class="topKv">
+				<div class="kvTitleBox">
+					<div class="kvTitle">
+						<h1>カッコよくなると、気持ちが変わる。<br>気持ちが変わると、モテ期が始まる。</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="messageSection">
+			<div class="titlePanel fadeUp">
+				<div class="secWrap">
+					<div class="title"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_message_title.png" alt=""></div>
+				</div>
+			</div>
+			<div class="secBox targetAnimElement">
+				<div class="photo targetAnim targetAnim01"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_message_img.png" alt=""></div>
+				<div class="txtBox">
+					<div class="ttl targetAnim targetAnim02">
+						<p>元No.1ホステスがあなたの中に眠った魅力を<br>外見・内面から引き出します。</p>
+					</div>
+					<div class="txt targetAnim targetAnim03">
+						<p>誰もが持っている、自分だけの魅力。<br>それを十分に発揮できてない人を、これまでに沢山見てきました。<br>「もっとこう見せれば魅力的なのに」<br>「外見はばっちりだけど、立ち振る舞いをもう少し変えたら美しくなるのに」<br>自分の事は自分が一番分かっているとは言いますが、<br>一番客観的に見られるのは、他人だったりします。<br>No.1ホステスまで登り詰めた経験や、セカンドキャリアの様々な経験を活かし、<br>あなたの外見・内面の魅力を引き出すお手伝いをします。</p>
+					</div>
+					<div class="linkItem fadeUp">
+						<div class="ul">
+							<div class="li">
+								<div class="btnMore"><a href="concept">
+										<div>
+											<p>re美onのこだわり</p>
+										</div>
+									</a></div>
+							</div>
+							<div class="li">
+								<div class="btnMore"><a href="staff">
+										<div>
+											<p>スタッフ紹介</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="secBox targetAnimElement">
+					<div class="txtBox">
+						<div class="pageSecTtl targetAnim targetAnim01">
+							<p>Total Produce</p>
+							<h2>エステ×コンサルのトータルプロデュース</h2>
+						</div>
+						<div class="txt targetAnim targetAnim02">
+							<p>人は、外見だけでは変われません。<br>本当に変わりたいと思うなら、外見と内面の両方を変えていくことが必要です。<br>re美onでは、カウンセリングや施術を通して、その人の内面の輝きを引き出します。</p>
+							<p>□ 人見知りを直したい<br>□ 今の性格を変えてもっとモテたい<br>□ お店のナンバーワンになりたい<br>□ 上品な立ち振る舞いを身に着けたい</p>
+							<p>そういったお悩みをお持ちの方は、当店の元No.1ホステスにお任せください。</p>
+						</div>
+					</div>
+					<div class="chart targetAnim targetAnim03"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_sec01_chart.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtl fadeUp">
+					<p>Menu</p>
+					<h2>メニュー</h2>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox fadeUp">
+						<div class="photoBox">
+							<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_sec02_img_01.png" alt=""></div>
+						</div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<p>Counseling</p>
+								<h3>無料カウンセリング</h3>
+							</div>
+							<div class="txt">
+								<p>re美onでは「カウンセリング」の時間を一番大切にしています。<br>お客様が何に悩んでいるのか、どんな魅力を持っているのか。<br>元No.1ホステスが一緒にゴールを設定し、それを達成するためのメニューをオーダーメイドで提案します。<br>まずは、無料カウンセリングをご予約ください。</p>
+							</div>
+							<div class="linkItem">
+								<div class="ul">
+									<div class="li">
+										<div class="btnMore"><a href="beginners">
+												<div>
+													<p>はじめての方へ</p>
+												</div>
+											</a></div>
+									</div>
+									<div class="li">
+										<div class="btnMore"><a href="contact">
+												<div>
+													<p>ご予約はこちら</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photoBox">
+							<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_sec02_img_02.png" alt=""></div>
+						</div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<p>Course</p>
+								<h3>モテ男・輝き女子育成コース</h3>
+							</div>
+							<div class="txt">
+								<p>「半年でモテ男になる」「3カ月でNo.1になる」など、お客様と設定したゴールを達成するためにオーダーメイドでコースメニューを組み立てます。<br>お客様用に無駄なくメニューを組むことができ、期間を決めて集中的に通えるので、<br>一番効果を実感しやすいメニューです。<br>初めての方はこちらがおすすめです。</p>
+							</div>
+							<div class="linkItem">
+								<div class="btnMore"><a href="menu?section01">
+										<div>
+											<p>コースメニュー</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photoBox">
+							<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_sec02_img_03.png" alt=""></div>
+						</div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<p>Point Menu</p>
+								<h3>美顔・痩身メニュー</h3>
+							</div>
+							<div class="txt">
+								<p>カウンセリングを元に、お客様に必要なメニューをご提案します。<br>美顔、痩身メニューのほか、ハーブテントやホワイトニングなど、<br>お気軽にお試しいただけるメニューも揃えています。<br>写真撮影や結婚式など、特別な日に向けてのご利用がおすすめです。</p>
+							</div>
+							<div class="linkItem">
+								<div class="btnMore"><a href="menu?section02">
+										<div>
+											<p>美顔・痩身メニュー</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photoBox">
+							<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_sec02_img_04.png" alt=""></div>
+						</div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<p>Home Care Lecture</p>
+								<h3>ホームケア講座</h3>
+							</div>
+							<div class="txt">
+								<p>外見・内面を磨く上で大切なのが、日々のスキンケアです。<br>いくら良いコスメを使っていても、ケア方法が間違っていると効果が薄れてしまいます。<br>施術の効果を最大限に引き出すために、正しいホームケアの方法を学べる講座を用意しました。<br>サロンで扱っている、厳選したスキンケアアイテムをセットでお付けするので、<br>ぜひご自宅でのケアにお役立てください。</p>
+							</div>
+							<div class="linkItem">
+								<div class="btnMore"><a href="menu?section03">
+										<div>
+											<p>ホームケア講座</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec03">
+			<div class="secWrap">
+				<div class="topBox">
+					<div class="pageSecTtl fadeUp">
+						<p>Blog</p>
+						<h2>ブログ</h2>
+					</div>
+					<div class="txt fadeUp">
+						<p>実際に施術を受けていただいたお客様のビフォーアフター写真や、お客様のお声など更新します。<br>他にもお知らせや商品紹介、美容コラムなどお役立ち情報を更新しますので、ぜひご覧ください。</p>
+					</div>
+				</div>
+				<div class="topBlogPanel fadeUp">
+					<section class="webgene-blog">
+						<div class="webgene-header">
+							<h3>ブログ一覧</h3>
+						</div>
+						<div class="webgene-item"><a href="blog">
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_sec03_img_01.png" alt=""></div>
+								<div class="cate">
+									<p>ビフォー・アフター</p>
+								</div>
+								<div class="info">
+									<div class="title">
+										<p>ビフォー・アフター</p>
+									</div>
+									<div class="time">
+										<p>2023.09.01</p>
+									</div>
+								</div>
+							</a></div>
+					</section>
+				</div>
+				<div class="btnMore fadeUp"><a href="bloglist">
+						<div>
+							<p>一覧を見る</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="sec04">
+			<div class="secContainer">
+				<div class="titlePanel">
+					<div class="secWrap">
+						<div class="pageSecTtl fadeUp">
+							<p>Salon</p>
+							<h2>サロン</h2>
+						</div>
+					</div>
+				</div>
+				<div class="secPanel">
+					<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/top_sec04_img_01.png" alt=""></div>
+					<div class="txtBox fadeUp">
+						<div class="inner">
+							<div class="ttl">
+								<p>rebion</p>
+							</div>
+							<div class="infoBox">
+								<div class="dl">
+									<div class="dt">
+										<p>Address</p>
+									</div>
+									<div class="dd">
+										<p>東京都葛飾区新小岩1-23-7中村ビ2F</p>
+									</div>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>Tel</p>
+									</div>
+									<div class="dd"><a href="tel:03-5607-6558">
+											<div>
+												<p>03-5607-6558</p>
+											</div>
+										</a></div>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>Open</p>
+									</div>
+									<div class="dd">
+										<p>13:00~21:00</p>
+									</div>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>Access</p>
+									</div>
+									<div class="dd">
+										<p>新小岩駅から徒歩3分</p>
+									</div>
+								</div>
+							</div>
+							<div class="btnMore"><a href="salon">
+									<div>
+										<p>サロン情報</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="pagetop linkBtn" data-target="main"><img src=" https://creaxia230724.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+		<div class="logo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+		<div class="copy">
+			<p>©2023.rebion</p>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

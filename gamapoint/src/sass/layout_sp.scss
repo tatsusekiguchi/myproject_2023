@@ -1,0 +1,465 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain {
+  .topKvContainer {
+    background: url("../image/top/top_kv_bg_sp.png") center no-repeat;
+    background-size: cover;
+    .topKvPanel {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 700px;
+      padding: 30px 5px 50px;
+    }
+    .topKvBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: 100%;
+    }
+    .kvTitle {
+      order: 1;
+      position: static;
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .appBnrBox {
+      order: 3;
+      position: static;
+      max-width: 340px;
+      margin: auto 0 0;
+      padding: 0;
+      background: none;
+      > p {
+        display: none;
+      }
+      .bnrList {
+        max-width: 340px;
+        min-width: 0;
+        margin: 0 auto;
+        .bnr {
+          width: 49%;
+        }
+      }
+    }
+    .kvInfoPanel {
+      order: 2;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      dl {
+        dt {
+          margin: 0 0 10px;
+          font-size: 14px;
+        }
+        dd {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .section {
+    padding: 40px 0;
+    .secTitleBox {
+      h2 {
+        padding: 30px 0 0;
+        font-size: 27px;
+        background: url("../image/top/top_sec_ttl_icon.png") center top
+          no-repeat;
+        background-size: 30px auto;
+      }
+      p {
+        font-size: 70px;
+      }
+    }
+    &__about {
+      .introBox {
+        margin: -5px 0 50px;
+        padding: 20px;
+        .logo {
+          display: none;
+        }
+      }
+      .limitedContainer {
+        padding: 5px;
+        .limitedPanel {
+          padding: 30px 20px;
+        }
+        .ttlBox {
+          dl {
+            dt {
+              min-width: 120px;
+              margin: 0 0 20px;
+              padding: 0 10px;
+              font-size: 18px;
+            }
+            dd {
+              font-size: 18px;
+              p {
+                display: inline;
+              }
+            }
+          }
+        }
+        .appleWatch {
+          max-width: 300px;
+        }
+        .presentTtl {
+          margin: 0 0 20px;
+          font-size: 20px;
+          em {
+            font-size: 30px;
+          }
+        }
+        .presentTxt {
+          margin: 0 auto 30px;
+          font-size: 14px;
+        }
+        .term {
+          padding: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+    &__merit {
+      .meritListBox {
+        ol {
+          max-width: 380px;
+          margin: 0 auto;
+          li {
+            position: relative;
+            padding: 50px 20px 20px;
+            border-radius: 10px;
+            background: #ffffff;
+            + li {
+              margin: 60px 0 0;
+            }
+          }
+          .numBox {
+            position: absolute;
+            top: -34px;
+            left: 10px;
+            right: auto;
+            width: 68px;
+            height: 68px;
+            .ttl {
+              padding: 15px 0 0;
+              font-size: 11px;
+            }
+            .num {
+              bottom: -8px;
+              font-size: 50px;
+            }
+          }
+          dl {
+            dt {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    &__flow {
+      .secWrap01 {
+        padding: 0 10px;
+      }
+      .pagerList {
+        padding: 15px 0 60px;
+        ol {
+          max-width: 400px;
+          margin: 0 auto;
+          flex-wrap: wrap;
+          li {
+            width: calc((100% / 2) - 2px);
+            margin: 5px 0 0;
+          }
+        }
+      }
+      .stepSection {
+        + .stepSection {
+          margin: 80px 0 0;
+        }
+        .secTtlBox {
+          margin: 0 0 30px;
+          .secTtl {
+            margin: 0 0 0 15px;
+            font-size: 24px;
+          }
+        }
+      }
+      .tabList {
+        max-width: 400px;
+        ul {
+          li {
+            padding: 15px 10px;
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .stepContainer {
+        .stepPanel {
+          padding: 30px 10px;
+        }
+      }
+      #step01 {
+        .topBox {
+          margin: 0 auto 30px;
+          .ttl {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+          .topList {
+            max-width: 300px;
+            ol {
+              font-size: 20px;
+              + ol {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+        .detailContainer {
+          .detailBtn {
+            padding: 10px;
+            font-size: 20px;
+            background: url("../image/top/accord_arrow_down.png") right 15px
+              center no-repeat;
+            background-size: 12px auto;
+            &.active {
+              background: url("../image/top/accord_arrow_up.png") right 15px
+                center no-repeat;
+              background-size: 12px auto;
+            }
+          }
+          .detailPanel {
+            padding: 20px;
+            .mobileTitle {
+              max-width: 240px;
+              font-size: 20px;
+            }
+            .appBnr {
+              max-width: 200px;
+              margin: 0 auto 30px;
+            }
+            .introTxt {
+              margin: 0 0 30px;
+              p + p {
+                margin: 30px 0 0;
+              }
+            }
+            .dlTxt {
+              margin: 0 auto 30px;
+              padding: 15px;
+              dl {
+                dt {
+                  font-size: 16px;
+                }
+                dd {
+                  font-size: 14px;
+                }
+              }
+            }
+            .dlComplete {
+              margin: 0 0 40px;
+              p {
+                font-size: 20px;
+              }
+              .arrow {
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+      .stepFlow {
+        ol {
+          max-width: 500px;
+          margin: 0 auto;
+          li {
+            + li {
+              margin: 40px 0 0;
+            }
+          }
+          .num {
+            position: absolute;
+            top: -25px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            p {
+              top: -1px;
+            }
+          }
+          .txt {
+            padding: 10px 0;
+          }
+        }
+      }
+      #step03 {
+        .topTxt {
+          margin: 0 0 30px;
+        }
+        .pointTitle {
+          max-width: 240px;
+          font-size: 20px;
+        }
+        .pointTableHead {
+          display: none;
+        }
+        .pointTablePanel {
+          background: #e9ebee;
+          ul {
+            display: flex;
+            flex-direction: column;
+            li {
+              padding: 15px 0;
+              font-size: 12px;
+              + li {
+                border-top: 1px solid #ffffff;
+              }
+            }
+            dl {
+              display: flex;
+              dt {
+                width: 100px;
+                padding: 0 0 0 20px;
+              }
+              dd {
+                width: calc(100% - 100px);
+                padding: 0 10px 0 0;
+                aside {
+                  margin: 10px 0 0;
+                  font-size: 11px;
+                  font-weight: normal;
+                }
+                .box + .box {
+                  display: none;
+                }
+              }
+            }
+            .count {
+              order: 2;
+            }
+            .action {
+              order: 1;
+              color: #ffffff;
+              background: #1771ba;
+            }
+            .point {
+              order: 3;
+            }
+            .description {
+              order: 4;
+            }
+            .point02 {
+              order: 5;
+            }
+            .description02 {
+              order: 6;
+            }
+          }
+        }
+      }
+      #step04 {
+        .topTxt {
+          margin: 0 0 50px;
+          padding: 0 10px;
+        }
+        .tradeTitle {
+          top: -20px;
+          max-width: 340px;
+          font-size: 18px;
+        }
+        .tradePanel {
+          padding: 10px 20px 40px;
+        }
+        .tradeList {
+          max-width: 340px;
+          ul {
+            li {
+              + li {
+                margin: 30px 0 0;
+              }
+            }
+            + ul {
+              margin: 30px 0 0;
+            }
+            p {
+              padding: 0 0 0 18px;
+            }
+            span {
+              top: 5px;
+              font-size: 14px;
+            }
+            em {
+              font-size: 18px;
+            }
+            .item {
+              text-align: center;
+              img {
+                display: inline-block;
+              }
+            }
+            .item01 {
+              width: 100px;
+              img {
+                width: 90px;
+              }
+            }
+            .item02 {
+              width: 110px;
+            }
+            .item03 {
+              width: 100px;
+              img {
+                width: 100px;
+              }
+            }
+            .item04 {
+              width: 110px;
+              img {
+                width: 90px;
+              }
+            }
+            .item05 {
+              width: 100px;
+            }
+            .item06 {
+              width: 110px;
+              img {
+                width: 90px;
+              }
+            }
+            .item07 {
+              width: 110px;
+              img {
+                width: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__faq {
+      .btnFaq {
+        max-width: 340px;
+      }
+    }
+  }
+}

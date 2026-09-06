@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.2);
+    .logoBox {
+      max-width: 180px;
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .logo01 {
+        width: 80px;
+        margin: 0 10px 0 0;
+      }
+    }
+    .hamburger {
+      top: 15px;
+      right: 20px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    display: none;
+  }
+  .subNavigation {
+    width: 100%;
+    .subNavigationList {
+      padding: 60px 0;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+  }
+  .pageKvPanel {
+    height: 350px;
+    .pageKvTtl {
+      font-size: 18px;
+    }
+  }
+  .secTtlVertical {
+    margin: 0 0 40px;
+    .secTtl {
+      min-height: 120px;
+      padding: 10px;
+      font-size: 18px;
+      &::before {
+        height: 80px;
+      }
+      &::after {
+        height: 80px;
+      }
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 50px 0;
+      .secBox {
+        text-align: center;
+        .leftBox {
+          margin: 0 0 20px;
+          .txt {
+            font-size: 18px;
+          }
+        }
+        .rightBox {
+          .telBox {
+            a {
+              .span {
+                font-size: 16px;
+              }
+              .em {
+                font-size: 26px;
+              }
+            }
+            > p {
+              font-size: 12px;
+            }
+          }
+          .contactBox {
+            max-width: 280px;
+            margin: 0 auto;
+            a {
+              max-width: 260px;
+              font-size: 14px;
+              &:after {
+                top: 13px;
+                right: -20px;
+                width: 45px;
+                height: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0;
+      text-align: center;
+      .footBox {
+        .leftBox {
+          margin: 0 0 60px;
+          .logo {
+            margin: 0 auto 30px;
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

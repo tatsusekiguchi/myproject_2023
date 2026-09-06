@@ -1,0 +1,2246 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKv {
+    position: relative;
+    .kvBox {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 90px);
+      > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .kv01 {
+        background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_kv_01.png)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv02 {
+        background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_kv_02.png)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv03 {
+        background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_kv_03.png)
+          center no-repeat;
+        background-size: cover;
+      }
+    }
+    @media (min-width: 1025px) {
+      .kvTtlBox {
+        position: absolute;
+        top: 38%;
+        right: 80px;
+        width: 750px;
+        padding: 50px 60px;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.8);
+        h1 {
+          font-size: 50px;
+          em {
+            color: #c39547;
+          }
+        }
+      }
+    }
+  }
+  .section01 {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      padding: 60px 10px 0;
+      text-align: center;
+      z-index: 2;
+      background: #ffffff;
+      animation-name: fadeout;
+      animation-duration: 1s;
+      .ttlBox {
+        margin: 0 0 30px;
+        font-size: 0;
+        .ttl {
+          p {
+            font-size: 40px;
+            display: inline;
+          }
+          .em {
+            color: #c39547;
+          }
+        }
+      }
+      .txt {
+        margin: 0 0 20px;
+      }
+      .btnMore {
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .section02,
+  .section03 {
+    .secWrap {
+      position: relative;
+      max-width: 1600px;
+      padding: 60px 10px 0;
+    }
+    .secTtl {
+      position: absolute;
+      top: -80px;
+      left: -40px;
+      font-size: 150px;
+      color: #dfdfdf;
+      line-height: 1;
+    }
+    .mvContainer {
+      position: relative;
+    }
+    .mvPanel {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 60px;
+      .secBox {
+        position: relative;
+        width: 100%;
+        max-width: 550px;
+        padding: 30px;
+        text-align: right;
+        background: rgba(255, 255, 255, 0.8);
+        .ttlBox {
+          position: relative;
+          right: -70px;
+          margin: 0 0 20px;
+          padding: 5px 10px;
+          text-align: center;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #222020;
+            transform: skew(-30deg);
+          }
+          .ttl {
+            position: relative;
+            font-size: 30px;
+            p {
+              display: inline-block;
+              color: #c39547;
+            }
+            h3 {
+              display: inline-block;
+              margin: 0 0 0 5px;
+              padding: 0 0 0 30px;
+              color: #ffffff;
+              background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_ttl_slash_01.png)
+                left center no-repeat;
+              background-size: 18px auto;
+            }
+          }
+        }
+        .txt {
+          text-align: right;
+        }
+        .btnMore {
+          display: inline-block;
+          width: 260px;
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .mvPanel02 {
+      align-items: flex-end;
+    }
+  }
+  .section02 {
+    background: #f8f8f8;
+    .mvPanel01 {
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_sec02_mv_01.png)
+        no-repeat;
+      background-size: cover;
+    }
+    .mvPanel02 {
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_sec02_mv_02.png)
+        no-repeat;
+      background-size: cover;
+    }
+  }
+  .section03 {
+    background: #eeeeef;
+    .mvPanel01 {
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_sec03_mv_01.png)
+        no-repeat;
+      background-size: cover;
+    }
+    .mvPanel02 {
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_sec03_mv_02.png)
+        no-repeat;
+      background-size: cover;
+    }
+  }
+  .section04 {
+    background: #f8f8f8;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        display: flex;
+        + .webgene-item {
+          margin: 30px 0 0;
+        }
+        .time {
+          width: 160px;
+          color: #a0752d;
+        }
+        .title {
+          a {
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftBox {
+          width: 300px;
+        }
+        .rightBox {
+          width: 650px;
+        }
+      }
+    }
+  }
+  .section05 {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_sec05_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      .btnMore {
+        margin: 0 auto;
+      }
+    }
+  }
+  .active .fadeItem {
+    animation-name: fadeup;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/strength_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 200px 0;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      padding: 60px 10px;
+      text-align: center;
+      z-index: 2;
+      background: #ffffff;
+      .ttlBox {
+        margin: 0 0 30px;
+        font-size: 0;
+        .ttl {
+          p {
+            font-size: 40px;
+            display: inline;
+          }
+          .em {
+            color: #c39547;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 200px 0;
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        + .secBox {
+          margin-top: 100px;
+        }
+      }
+      .photo {
+        width: 43%;
+      }
+      .txtBox {
+        position: relative;
+        width: 52%;
+      }
+      .num {
+        width: 150px;
+      }
+      .box {
+        h3 {
+          margin: 0 0 30px;
+          font-size: 40px;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .secBox:nth-child(odd) {
+        .photo {
+          order: 2;
+        }
+        .txtBox {
+          order: 1;
+        }
+        .num {
+          position: absolute;
+          top: -30px;
+          left: 0;
+        }
+        .box {
+          padding: 0 0 0 180px;
+        }
+      }
+      .secBox:nth-child(even) {
+        .num {
+          position: absolute;
+          top: -30px;
+          right: 40px;
+        }
+        .box {
+          padding: 0 140px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+.transportMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/transport_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 200px 0;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/transport_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      padding: 60px 10px;
+      text-align: center;
+      z-index: 2;
+      background: #ffffff;
+      .ttlBox {
+        margin: 0 0 30px;
+        font-size: 0;
+        .ttl {
+          p {
+            font-size: 40px;
+            display: inline;
+          }
+          .em {
+            color: #c39547;
+          }
+        }
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 200px 0;
+    .secBox {
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 20px;
+          padding: 0 0 10px;
+          font-size: 40px;
+          border-bottom: 1px solid #222020;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 52%;
+        }
+        .txtBox {
+          width: 42%;
+        }
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 200px 0;
+    color: #ffffff;
+    background: #c39547;
+    .secPanel {
+      position: relative;
+    }
+    .secBox {
+      .ttl {
+        margin: 0 0 30px;
+        font-size: 40px;
+      }
+      .txt {
+        margin: 0 0 30px;
+      }
+      .btnMail {
+        max-width: 440px;
+        a {
+          position: relative;
+          display: block;
+          color: #ffffff;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #222020;
+            transform: skew(-30deg);
+          }
+          > div {
+            position: relative;
+            text-align: center;
+            padding: 10px;
+            font-size: 0;
+            p {
+              display: inline-block;
+              font-size: 24px;
+            }
+            .em {
+              padding: 0 0 0 30px;
+              color: #c39547;
+              background: url(https://haraunyu.co.jp/system_panel/uploads/images/footer_mail.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+    }
+    .map {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+  .sec04 {
+    padding: 200px 0;
+    .listBox {
+      margin: 0 0 80px;
+      .ul {
+        .dl {
+          padding: 20px 0 0;
+          text-align: center;
+          .dt {
+            margin: 0 0 20px;
+            font-size: 34px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -50px;
+          .li {
+            width: calc((100% / 2) - 50px);
+            margin: 60px 0 0 50px;
+          }
+          .photo {
+            position: relative;
+            height: 420px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .message {
+      margin: 0 0 80px;
+      padding: 10px;
+      font-size: 34px;
+      color: #ffffff;
+      text-align: center;
+      background: #cfa969;
+    }
+    .secBox {
+      padding: 0 10px 40px;
+      text-align: center;
+      background: #f3efe9;
+      .ttlBox {
+        position: relative;
+        top: -30px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+        padding: 5px 10px;
+        text-align: center;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #222020;
+          transform: skew(-30deg);
+        }
+        .ttl {
+          position: relative;
+          font-size: 30px;
+          h3 {
+            display: inline-block;
+            color: #ffffff;
+          }
+          p {
+            display: inline-block;
+            margin: 0 0 0 5px;
+            padding: 0 0 0 30px;
+            color: #c39547;
+            background: url(https://haraunyu.co.jp/system_panel/uploads/images/top_ttl_slash_01.png)
+              left center no-repeat;
+            background-size: 18px auto;
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    position: relative;
+    padding: 120px 0;
+    background: #eeeeef;
+    .secTtl {
+      position: absolute;
+      top: 120px;
+      left: 40px;
+      font-size: 150px;
+      color: #dfdfdf;
+      line-height: 1;
+    }
+    .flowPanel {
+      position: relative;
+      text-align: center;
+      + .flowPanel {
+        margin: 60px 0 0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -45px;
+          left: 0;
+          right: 0;
+          width: 46px;
+          height: 30px;
+          margin: 0 auto;
+          background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_list_arrow.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      .flowTtl {
+        padding: 10px;
+        font-size: 24px;
+        color: #ffffff;
+        background: #222020;
+      }
+      .flowBox {
+        padding: 30px 10px 40px;
+        background: #ffffff;
+      }
+      .btnList {
+        margin: 40px 0 0;
+        .btn {
+          display: inline-block;
+          width: 400px;
+          a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 55px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+        }
+        .btnTel {
+          a {
+            font-size: 20px;
+            p {
+              display: inline-block;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+        .btnMail {
+          margin: 0 0 0 30px;
+          a {
+            font-size: 24px;
+            p {
+              display: inline-block;
+              padding: 0 0 0 30px;
+              background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_mail.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	warehouse
+///////////////////////////////////////////////////////////*/
+.warehouseMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/warehouse_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 200px 0;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/warehouse_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      padding: 60px 10px 0;
+      text-align: center;
+      z-index: 2;
+      background: #ffffff;
+      .ttlBox {
+        margin: 0 0 30px;
+        font-size: 0;
+        .ttl {
+          p {
+            font-size: 40px;
+            display: inline;
+          }
+          .em {
+            color: #c39547;
+          }
+        }
+      }
+      .txt {
+        margin: 0 0 30px;
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+      .stopTxt {
+        position: relative;
+        top: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: #222020;
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0;
+    .photoPanel {
+      margin: 0 0 80px;
+      .mainPhoto {
+        position: relative;
+        height: 800px;
+        margin: 0 0 10px;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .photoList {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          width: calc((100% / 3) - 5px);
+          height: 260px;
+          cursor: pointer;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      > p {
+        margin: 10px 0 0;
+        text-align: right;
+      }
+    }
+    .secPanel {
+      .ttl {
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: #cfa969;
+      }
+      .secBox {
+        padding: 30px 60px;
+        background: #f3efe9;
+        .txtBox01 {
+          margin: 0 0 20px;
+          padding: 20px 40px;
+          background: #ffffff;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    position: relative;
+    padding: 120px 0;
+    background: #eeeeef;
+    .secTtl {
+      position: absolute;
+      top: 120px;
+      left: 40px;
+      font-size: 150px;
+      color: #dfdfdf;
+      line-height: 1;
+    }
+    .flowPanel {
+      position: relative;
+      text-align: center;
+      + .flowPanel {
+        margin: 60px 0 0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -45px;
+          left: 0;
+          right: 0;
+          width: 46px;
+          height: 30px;
+          margin: 0 auto;
+          background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_list_arrow.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      .flowTtl {
+        padding: 10px;
+        font-size: 24px;
+        color: #ffffff;
+        background: #222020;
+        > * {
+          display: inline-block;
+        }
+        p {
+          font-size: 16px;
+          color: #d9d9d9;
+        }
+      }
+      .flowBox {
+        padding: 30px 10px 40px;
+        background: #ffffff;
+      }
+      .btnList {
+        margin: 40px 0 0;
+        .btn {
+          display: inline-block;
+          width: 400px;
+          a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 55px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+        }
+        .btnTel {
+          a {
+            font-size: 20px;
+            p {
+              display: inline-block;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+        .btnMail {
+          margin: 0 0 0 30px;
+          a {
+            font-size: 24px;
+            p {
+              display: inline-block;
+              padding: 0 0 0 30px;
+              background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_mail.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+    }
+    .flowPanelMulti {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 0;
+      .flowPanel {
+        width: calc((100% / 2) - 25px);
+        margin: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -45px;
+          left: 0;
+          right: 0;
+          width: 46px;
+          height: 30px;
+          margin: 0 auto;
+          background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_list_arrow.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      + .flowPanel {
+        &::before {
+          content: "";
+          position: absolute;
+          top: -45px;
+          left: 0;
+          right: 0;
+          width: 46px;
+          height: 30px;
+          margin: 0 auto;
+          background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_list_arrow.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+.staffMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/staff_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 200px 0;
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        + .secBox {
+          margin-top: 100px;
+        }
+      }
+      .photo {
+        width: 43%;
+      }
+      .txtBox {
+        position: relative;
+        width: 52%;
+      }
+      .num {
+        width: 150px;
+      }
+      .box {
+        h3 {
+          margin: 0 0 30px;
+          font-size: 34px;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .secBox:nth-child(odd) {
+        .num {
+          position: absolute;
+          top: -30px;
+          right: 40px;
+        }
+        .box {
+          padding: 0 140px 0 0;
+        }
+      }
+      .secBox:nth-child(even) {
+        .photo {
+          order: 2;
+        }
+        .txtBox {
+          order: 1;
+        }
+        .num {
+          position: absolute;
+          top: -30px;
+          left: 0;
+        }
+        .box {
+          padding: 0 0 0 180px;
+        }
+      }
+    }
+  }
+  .sec02 {
+    position: relative;
+    padding: 120px 0;
+    background: #eeeeef;
+    .secTtl {
+      position: absolute;
+      top: 120px;
+      left: 40px;
+      font-size: 150px;
+      color: #dfdfdf;
+      line-height: 1;
+    }
+    .secPanel {
+      position: relative;
+      padding: 40px;
+      background: #ffffff;
+      + .secPanel {
+        margin: 40px 0 0;
+      }
+      .num {
+        position: absolute;
+        top: 30px;
+        right: -5px;
+        width: 130px;
+      }
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 34px;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 100px 0;
+    .ttl {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 34px;
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/staff_sec02_slash_01.png)
+          left center no-repeat,
+        url(https://haraunyu.co.jp/system_panel/uploads/images/staff_sec02_slash_02.png)
+          right center no-repeat;
+      background-size: 18px auto, 18px auto;
+    }
+    .btnMore {
+      margin: 0 auto;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 200px 0;
+    background: #3e3a39;
+    .secBox {
+      position: relative;
+      padding: 60px 10px;
+      text-align: center;
+      z-index: 2;
+      background: #ffffff;
+      .ttlBox {
+        margin: 0 0 30px;
+        font-size: 0;
+        .ttl {
+          p {
+            font-size: 40px;
+            display: inline;
+          }
+          .em {
+            color: #c39547;
+          }
+        }
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 200px 0;
+    .listBox {
+      .ul {
+        .li {
+          border: 1px solid #3e3a39;
+        }
+        .dl {
+          .dt {
+            padding: 40px 10px;
+            font-size: 36px;
+            color: #ffffff;
+            text-align: center;
+            background: #c39547;
+            p {
+              position: relative;
+              padding: 0 0 10px;
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 80px;
+                height: 1px;
+                margin: 0 auto;
+                background: #ffffff;
+              }
+            }
+          }
+          .dd {
+            padding: 30px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 15px);
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    color: #ffffff;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec03_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .ttl {
+      max-width: 650px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 34px;
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec03_slash_01.png)
+          left bottom 10px no-repeat,
+        url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec03_slash_02.png)
+          right 20px bottom 10px no-repeat;
+      background-size: 18px auto, 18px auto;
+    }
+    .btnMore {
+      margin: 0 auto;
+    }
+  }
+  .sec04 {
+    padding: 120px 0;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .list {
+      max-width: 770px;
+      margin: 0 auto;
+      .ul {
+        .li {
+          position: relative;
+          padding: 20px;
+          color: #ffffff;
+          text-align: center;
+          background: #c39547;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc((100% / 4) - 45px);
+            height: 350px;
+            font-size: 36px;
+            writing-mode: vertical-lr;
+            + .li {
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -45px;
+                bottom: 0;
+                width: 35px;
+                height: 35px;
+                margin: auto 0;
+                background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_arrow_01.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 200px 0;
+    .infoPanel {
+      .dl {
+        display: flex;
+        padding: 20px 60px;
+        border-bottom: 1px solid #3c3a3a;
+        .dt {
+          width: 160px;
+          color: #a0752d;
+          line-height: 2;
+        }
+        .dd {
+          width: calc(100% - 160px);
+        }
+        .txtBox {
+          display: inline-block;
+          vertical-align: top;
+          + .txtBox {
+            margin: 0 0 0 60px;
+          }
+        }
+        .aside {
+          display: inline-block;
+          width: 240px;
+          margin: 0 0 0 60px;
+          padding: 10px;
+          text-align: center;
+          vertical-align: bottom;
+          background: #f1f3f4;
+        }
+      }
+    }
+  }
+  .sec06 {
+    position: relative;
+    padding: 120px 0;
+    background: #eeeeef;
+    .secTtl {
+      position: absolute;
+      top: 120px;
+      left: 40px;
+      font-size: 150px;
+      color: #dfdfdf;
+      line-height: 1;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/company_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    padding: 120px 0;
+    .secBox {
+      .txtBox {
+        padding: 10px 0 0;
+        .txt {
+          p + p {
+            margin: 40px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 35%;
+        }
+        .txtBox {
+          width: 58%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    .infoPanel {
+      .dl {
+        display: flex;
+        padding: 20px 60px;
+        border-bottom: 1px solid #3c3a3a;
+        .dt {
+          width: 160px;
+          color: #a0752d;
+          line-height: 2;
+        }
+        .dd {
+          width: calc(100% - 160px);
+        }
+        .txtBox {
+          display: inline-block;
+          vertical-align: top;
+          + .txtBox {
+            margin: 0 0 0 60px;
+          }
+        }
+        .aside {
+          display: inline-block;
+          width: 240px;
+          margin: 0 0 0 60px;
+          padding: 10px;
+          text-align: center;
+          vertical-align: bottom;
+          background: #f1f3f4;
+        }
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/contact_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    padding: 60px 0;
+    .topTxt {
+      margin: 0 0 60px;
+    }
+    .secBox {
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      .ttl {
+        position: relative;
+        max-width: 600px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #222020;
+          transform: skew(-30deg);
+        }
+        p {
+          position: relative;
+          font-size: 30px;
+          text-align: center;
+          padding: 10px;
+          color: #ffffff;
+        }
+      }
+      .telBox {
+        margin: 30px 0 0;
+        .tel {
+          display: inline-block;
+          margin: 0 60px 0 0;
+          vertical-align: middle;
+          a {
+            font-size: 24px;
+            p {
+              display: inline-block;
+            }
+            .em {
+              font-size: 34px;
+            }
+          }
+          + p {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .formContainer {
+    position: relative;
+    padding: 120px 0;
+    background: #eeeeef;
+    .secTtl {
+      position: absolute;
+      top: 120px;
+      left: 40px;
+      font-size: 150px;
+      color: #dfdfdf;
+      line-height: 1;
+    }
+  }
+  .formSection {
+    + .formSection {
+      margin: 100px 0 0;
+      .pageSecTtlBox {
+        margin: 0 0 30px;
+        + p {
+          margin: 0 0 60px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 260px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #3e3a39;
+    background: #c39547;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #ffffff;
+        background: #f6f6f6;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #c39547;
+        border-right: 3px solid #c39547;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+      + .radioList01 {
+        margin: 20px 0 0;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background: #f6f6f6;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #c39547;
+      }
+    }
+
+    .postalBox {
+      // margin: 0 0 20px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    // .selectBox {
+    //   display: inline-block;
+    //   width: 200px;
+    //   select {
+    //     display: block;
+    //     width: 100%;
+    //     padding: 11px 20px;
+    //     font-size: 16px;
+    //     color: #000000;
+    //     line-height: 1.5em;
+    //     border-radius: 0;
+    //     border: 1px solid #707070;
+    //     background: url(https://aoyamanouen230407.smooooth.jp/system_panel/uploads/images/contact_select_arrow.png)
+    //       right 10px center no-repeat #ffffff;
+    //     background-size: 10px auto;
+    //     -webkit-appearance: none;
+    //     -moz-appearance: none;
+    //     appearance: none;
+    //   }
+    //   + .span {
+    //     display: inline-block;
+    //     margin: 0 5px;
+    //   }
+    // }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: 1px solid #3c3a3a;
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            padding: 20px 20px 0;
+          }
+        }
+
+        > .dt {
+          width: 310px;
+          padding: 15px 20px 10px;
+
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #c39547;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 330px);
+          padding: 5px 0;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          text-align: left;
+          background: #dddddd;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #b4d2be;
+          text-align: center;
+          border: 1px solid #41ab6d;
+          background: #ffffff;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain {
+  .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/news_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .blogSection {
+    padding: 120px 0;
+  }
+  @media (min-width: 1025px) {
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+      .catePanel {
+        width: 250px;
+      }
+      .blogPanel {
+        width: calc(100% - 320px);
+      }
+    }
+  }
+  .catePanel {
+    .categoryBox {
+      background: #ffffff;
+    }
+    .webgene-header {
+      position: relative;
+      margin: 0 0 20px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #222020;
+        transform: skew(-30deg);
+      }
+      h2 {
+        position: relative;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+        color: #ffffff;
+      }
+    }
+    .webgene-item {
+      padding: 10px 25px;
+      a {
+        position: relative;
+        display: inline-block;
+        padding: 0 0 0 20px;
+        text-decoration: underline;
+        &::before {
+          content: "-";
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          a {
+            display: block;
+            font-size: 15px;
+          }
+          .photo {
+            margin: 0 0 10px;
+          }
+          .infoBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 15px;
+            .time {
+              color: #a0752d;
+            }
+            .cate {
+              min-width: 100px;
+            }
+          }
+          .title {
+            text-decoration: underline;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -40px;
+          .webgene-item {
+            width: calc((100% / 3) - 40px);
+            margin: 60px 0 0 40px;
+            .photo {
+              position: relative;
+              height: 200px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              color: #ffffff;
+              line-height: 45px;
+              text-align: center;
+              background: #cdcdcd;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              background: #c39547;
+            }
+          }
+          @media (min-width: 1025px) {
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          .cate {
+            display: inline-block;
+          }
+          .time {
+            display: inline-block;
+            margin: 0 40px 0 0;
+            color: #a0752d;
+            vertical-align: middle;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          font-size: 30px;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 auto 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 40px;
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+          .pdfArea {
+            margin: 40px 0 0;
+            a {
+              color: #2151a3;
+            }
+          }
+        }
+      }
+      .btnBack {
+        max-width: 260px;
+        margin: 60px auto;
+        a {
+          display: block;
+          padding: 12px 15px;
+          color: #ffffff;
+          text-align: center;
+          border: 1px solid #3e3a39;
+          background: #c39547;
+        }
+        @media (min-width: 1025px) {
+          a {
+            &:hover {
+              color: #222020;
+              border: 1px solid #c39547;
+              background: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

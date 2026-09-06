@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header .headWrap {
+    height: auto;
+    padding: 10px 20px;
+  }
+  .header .logoBox .logo {
+    width: 200px;
+  }
+  .header .logoBox .ttl {
+    display: none;
+  }
+  .header .headItem {
+    display: none;
+  }
+  .header .hamburger {
+    top: 25px;
+    right: 20px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 60px 20px;
+  }
+  .navBox .navPanel01 {
+    flex-direction: column-reverse;
+    margin: 0 0 40px;
+  }
+  .navBox .navPanel01 .leftBox {
+    width: 100%;
+    margin: 30px 0 0;
+    text-align: center;
+  }
+  .navBox .navPanel01 .leftBox .logo {
+    max-width: 160px;
+    margin: 0 auto 30px;
+  }
+  .navBox .navPanel01 .leftBox .info {
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+  }
+  .navBox .navPanel01 .leftBox .info .txt + .txt {
+    margin: 20px 0 0;
+  }
+  .navBox .navPanel01 .rightBox {
+    width: 100%;
+    text-align: center;
+  }
+  .navBox .navPanel01 .rightBox .navList {
+    display: inline-block;
+    min-width: 260px;
+    text-align: left;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul .li a {
+    font-size: 14px;
+  }
+  .navBox .navPanel02 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .navBox .navPanel02 .contactItem {
+    display: block;
+    max-width: 400px;
+  }
+  .navBox .navPanel02 .contactItem > * {
+    width: 100%;
+  }
+  .navBox .navPanel02 .contactItem .dl .dt {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 0 15px;
+    font-size: 18px;
+  }
+  .navBox .navPanel02 .contactItem .telBox {
+    margin: 0 0 40px;
+  }
+  .navBox .navPanel02 .contactItem .telBox a .span {
+    font-size: 20px;
+  }
+  .navBox .navPanel02 .contactItem .telBox a .em {
+    font-size: 30px;
+  }
+  .navBox .navPanel02 .contactItem .telBox .aside p {
+    font-size: 12px;
+  }
+  .navBox .navPanel02 .contactItem .mailBox a {
+    max-width: 250px;
+  }
+  .navBox .navPanel03 {
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  .navBox .navPanel03 .snsList {
+    display: inline-block;
+    text-align: left;
+  }
+  .navBox .navPanel03 .snsBox + .snsBox {
+    margin: 20px 0 0;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 78px 0 0;
+  }
+
+  .pageHeaderPanel .pageHeaderBox {
+    padding: 15px 20px;
+  }
+  .pageHeaderPanel .pageHeaderBox h1 {
+    font-size: 22px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox p {
+    font-size: 12px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 22px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore a {
+    padding: 10px 0 10px 40px;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 40px 0;
+  }
+  .footer .footContact .ttl {
+    font-size: 18px;
+  }
+  .footer .footContact .contactPanel {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .footer .footContact .contactPanel .contactItem {
+    display: block;
+    max-width: 400px;
+  }
+  .footer .footContact .contactPanel .contactItem > * {
+    width: 100%;
+  }
+  .footer .footContact .contactPanel .contactItem .dl .dt {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 0 15px;
+    font-size: 18px;
+  }
+  .footer .footContact .contactPanel .contactItem .telBox {
+    margin: 0 0 40px;
+  }
+  .footer .footContact .contactPanel .contactItem .telBox a .span {
+    font-size: 20px;
+  }
+  .footer .footContact .contactPanel .contactItem .telBox a .em {
+    font-size: 30px;
+  }
+  .footer .footContact .contactPanel .contactItem .telBox .aside p {
+    font-size: 12px;
+  }
+  .footer .footContact .contactPanel .contactItem .mailBox a {
+    max-width: 250px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 15px;
+  }
+  .footer .footPanel .pagetop {
+    top: 0;
+    right: 10px;
+    width: 45px;
+  }
+  .footer .footPanel .leftBox {
+    padding: 60px 0 0;
+    text-align: center;
+  }
+  .footer .footPanel .leftBox .logo {
+    max-width: 160px;
+    margin: 0 auto 30px;
+  }
+  .footer .footPanel .leftBox .info {
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+  }
+  .footer .footPanel .leftBox .info .txt + .txt {
+    margin: 20px 0 0;
+  }
+  .footer .footPanel .snsContainer {
+    text-align: center;
+  }
+  .footer .footPanel .snsContainer .snsList {
+    display: inline-block;
+    text-align: left;
+  }
+  .footer .footPanel .snsContainer .snsBox + .snsBox {
+    margin: 20px 0 0;
+  }
+  .footer .footPanel .copy {
+    margin: 50px 0 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}

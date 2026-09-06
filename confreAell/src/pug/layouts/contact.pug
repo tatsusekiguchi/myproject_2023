@@ -1,0 +1,52 @@
+// ▽メイン▽
+main#contactMain.pageMain
+    .pageKvContainer
+        .kvLogo
+            a(href="")
+                img(src=(root_path || '') + "image/common/top_shop_logo.png", alt="confreAell")
+        .pageKvPanel
+            .kvTitle
+                h1
+                    img(src=(root_path || '') + "image/contact/kv_title.png", alt="お問い合わせ")
+    .sec01
+        .secWrap01.fadein
+            .topTxt
+                .txt
+                    p 採用募集・当店へのお問い合わせは、以下お問い合わせフォームよりお問い合わせください。
+            .formBox
+                form
+                    dl
+                        dt
+                            span お問合わせの分類
+                            em 必須
+                        dd
+                    dl
+                        dt
+                            span お名前
+                            em 必須
+                        dd
+                            .inputBox
+                                <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder="例）山田　太郎"></span>
+                    dl
+                        dt
+                            span ふりがな
+                            em 必須
+                        dd
+                            .inputBox
+                                <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder="例）やまだ　たろう"></span>
+                    dl
+                        dt
+                            span メールアドレス
+                            em 必須
+                        dd
+                            .inputBox
+                                <span class="wpcf7-form-control-wrap" data-name="email"><input type="email" name="email" value="" size="60" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email length-l text" aria-required="true" aria-invalid="false" placeholder="例）info＠example.com"></span>
+                    dl.msg
+                        dt
+                            span お問い合わせ内容
+                        dd
+                            .inputBox
+                                <span class="wpcf7-form-control-wrap" data-name="content"><textarea name="content" cols="60" rows="7" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder=""></textarea></span>
+                    .submitBtn
+                        <input type="submit" value="送信する" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+// △メイン△

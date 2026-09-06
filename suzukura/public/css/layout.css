@@ -1,0 +1,1374 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (min-width: 1025px) {
+  .topMain .topKvPanel {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .topMain .topKvPanel .topKv {
+    position: relative;
+    height: 100%;
+  }
+  .topMain .topKvPanel .topKv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .topContents {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+}
+.topMain .topSection {
+  padding: 100px 0;
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/top_top_bg.png);
+}
+@media (min-width: 1025px) {
+  .topMain .topSection .secPanel {
+    display: flex;
+  }
+  .topMain .topSection .topSecTtlBox {
+    order: 3;
+    position: relative;
+    min-height: 340px;
+    margin: 0 0 0 auto;
+    font-size: 0;
+    writing-mode: vertical-rl;
+  }
+  .topMain .topSection .topSecTtlBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 180px;
+    height: 1px;
+    background: #202020;
+  }
+  .topMain .topSection .topSecTtlBox::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 1px;
+    height: 340px;
+    background: #202020;
+  }
+  .topMain .topSection .topSecTtlBox .topSecTtlBoxInner {
+    position: relative;
+    padding: 30px 20px;
+  }
+  .topMain .topSection .topSecTtlBox .topSecTtlBoxInner::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    width: 180px;
+    height: 1px;
+    background: #d1d1d1;
+  }
+  .topMain .topSection .topSecTtlBox .topSecTtlBoxInner::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    width: 1px;
+    height: 340px;
+    background: #d1d1d1;
+  }
+  .topMain .topSection .topSecTtlBox .topSecTtl01 p {
+    display: inline;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+  }
+  .topMain .topSection .topSecTtlBox .topSecTtl01 .em {
+    font-size: 50px;
+  }
+  .topMain .topSection .topSecTtlBox .topSecTtl02 {
+    font-size: 30px;
+    text-indent: 3em;
+    letter-spacing: 0.2em;
+  }
+  .topMain .topSection .txtBox {
+    order: 2;
+    padding: 60px 0 0;
+    writing-mode: vertical-rl;
+  }
+  .topMain .topSection .txtBox .txt {
+    max-height: 430px;
+  }
+  .topMain .topSection .txtBox .txt p + p {
+    margin: 0 30px 0 0;
+  }
+  .topMain .topSection .btnBox {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto 0 0;
+    writing-mode: vertical-rl;
+  }
+  .topMain .topSection .btnMoreVertical a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 220px;
+    border: 1px solid #898989;
+    background: #f9f9f9;
+  }
+  .topMain .topSection .btnMoreVertical a::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    width: 1px;
+    height: 60px;
+    margin: 0 auto;
+    background: #168044;
+  }
+  .topMain .topSection .btnMoreVertical a:hover {
+    border: 1px solid #168044;
+  }
+}
+@media (min-width: 1025px) {
+  .topMain .fixedPanel.fixedPanel01 {
+    height: 400px;
+    background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/top_fixed_img_01.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .topMain .fixedPanel.fixedPanel02 {
+    height: 400px;
+    background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/top_fixed_img_02.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .topMain .fixedPanel .img {
+    display: none;
+  }
+}
+.topMain .listPanel {
+  padding: 200px 0;
+}
+.topMain .listPanel .ul {
+  text-align: center;
+}
+.topMain .listPanel .ul p {
+  padding: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .listPanel .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .listPanel .ul .li {
+    width: calc(20% - 50px);
+  }
+  .topMain .listPanel .ul .photo {
+    position: relative;
+    height: 190px;
+  }
+  .topMain .listPanel .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec01 {
+  padding: 180px 0;
+}
+.topMain .sec01 .secPanel .listBox {
+  padding: 80px 0 0;
+}
+.topMain .sec01 .secPanel .listBox .ul .dl .dt {
+  padding: 20px 0;
+  font-size: 22px;
+  text-align: center;
+}
+.topMain .sec01 .secPanel .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secPanel .pageSecTtlBox {
+    order: 2;
+  }
+  .topMain .sec01 .secPanel .listBox {
+    order: 1;
+    width: calc(100% - 200px);
+  }
+  .topMain .sec01 .secPanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secPanel .listBox .ul .li {
+    width: 46%;
+  }
+  .topMain .sec01 .secPanel .listBox .ul .photo {
+    position: relative;
+    height: 285px;
+  }
+  .topMain .sec01 .secPanel .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec02 .secPanel .rightBox {
+  background: #f2f2f1;
+}
+.topMain .sec02 .secPanel .rightBox .txtBox h3 {
+  margin: 0 0 30px;
+  font-size: 30px;
+}
+.topMain .sec02 .secPanel .rightBox .txtBox .txt {
+  margin: 0 0 60px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secPanel {
+    display: flex;
+  }
+  .topMain .sec02 .secPanel > * {
+    width: 50%;
+  }
+  .topMain .sec02 .leftBox {
+    position: relative;
+  }
+  .topMain .sec02 .leftBox .pageSecTtlBoxContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: 310px;
+    padding: 30px 40px 0 10px;
+    z-index: 1;
+    background: #ffffff;
+  }
+  .topMain .sec02 .leftBox .photo {
+    position: relative;
+    height: 100%;
+  }
+  .topMain .sec02 .leftBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec02 .rightBox {
+    padding: 60px;
+  }
+}
+.topMain .sec03 {
+  padding: 160px 0;
+}
+.topMain .sec03 .secPanel .newsBox {
+  overflow: auto;
+  height: 380px;
+  padding: 60px 0;
+}
+.topMain .sec03 .secPanel .newsBox .dl + .dl {
+  margin: 60px 0 0;
+}
+.topMain .sec03 .secPanel .newsBox .dl .dt {
+  position: relative;
+  padding: 0 0 0 40px;
+  color: #656767;
+}
+.topMain .sec03 .secPanel .newsBox .dl .dt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 1px;
+  margin: auto 0;
+  background: #bec4c4;
+}
+.topMain .sec03 .secPanel .newsBox .dl .dd {
+  padding: 10px 0 0 60px;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .secPanel .newsBox {
+    width: calc(100% - 250px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	policy
+///////////////////////////////////////////////////////////*/
+.policyMain .pageKvPanel {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/policy_kv.png) center no-repeat;
+  background-size: cover;
+}
+.policyMain .sectionContainer {
+  margin: 100px 0;
+}
+.policyMain .section {
+  padding: 150px 0;
+}
+.policyMain .section .secPanel {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media (min-width: 1025px) {
+  .policyMain .section .secPanel {
+    display: flex;
+  }
+  .policyMain .section .pageSecTtlBox {
+    position: relative;
+    top: -30px;
+  }
+  .policyMain .section .btnMore {
+    margin: 40px 0 0;
+  }
+  .policyMain .section:nth-child(odd) .pageSecTtlBox {
+    margin: 0 80px 0 0;
+  }
+  .policyMain .section:nth-child(odd) .txtBox {
+    max-width: 540px;
+    width: 45%;
+  }
+  .policyMain .section:nth-child(odd) .photo {
+    position: absolute;
+    top: 0;
+    left: 68%;
+    width: 780px;
+    height: 470px;
+  }
+  .policyMain .section:nth-child(odd) .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .policyMain .section:nth-child(even) .secPanel {
+    justify-content: flex-end;
+  }
+  .policyMain .section:nth-child(even) .pageSecTtlBox {
+    order: 3;
+    margin: 0 0 0 80px;
+  }
+  .policyMain .section:nth-child(even) .txtBox {
+    order: 2;
+    max-width: 540px;
+    width: 45%;
+  }
+  .policyMain .section:nth-child(even) .photo {
+    order: 1;
+    position: absolute;
+    top: 0;
+    right: 68%;
+    width: 780px;
+    height: 470px;
+  }
+  .policyMain .section:nth-child(even) .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1025px) {
+  .policyMain .fixedPanel {
+    height: 800px;
+    background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/policy_fixed_img.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .policyMain .fixedPanel .img {
+    display: none;
+  }
+}
+.policyMain .infoPanel {
+  padding: 200px 0;
+}
+.policyMain .infoPanel .secBox .leftBox .infoBox .dl {
+  display: flex;
+}
+.policyMain .infoPanel .secBox .leftBox .infoBox .dl .dt {
+  width: 150px;
+  padding: 15px 15px;
+  color: #656767;
+  border-right: 1px solid #999999;
+}
+.policyMain .infoPanel .secBox .leftBox .infoBox .dl .dd {
+  width: calc(100% - 140px);
+  padding: 15px 25px;
+  border-right: 1px solid #999999;
+}
+.policyMain .infoPanel .secBox .leftBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+.policyMain .infoPanel .secBox .rightBox {
+  padding: 20px 0 0;
+}
+.policyMain .infoPanel .secBox .rightBox > p {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #656767;
+}
+@media (min-width: 1025px) {
+  .policyMain .infoPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .policyMain .infoPanel .secBox .leftBox {
+    width: 47%;
+  }
+  .policyMain .infoPanel .secBox .rightBox {
+    width: 48%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+.businessMain .pageKvPanel {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/business_kv.png) center no-repeat;
+  background-size: cover;
+}
+.businessMain .sectionContainer {
+  padding: 150px 0;
+}
+.businessMain .sectionContainer .titleContainer .txtPanel {
+  padding: 0 60px;
+}
+.businessMain .sectionContainer .titleContainer .txtPanel .txtBox {
+  max-width: 1000px;
+  width: 100%;
+  padding: 50px 60px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.businessMain .sectionContainer .titleContainer .txtPanel .txtBox h3 {
+  font-size: 22px;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .businessMain .sectionContainer .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 600px;
+    padding: 0 80px 0 0;
+  }
+  .businessMain .sectionContainer .titleContainer .pageSecTtlBox {
+    order: 2;
+  }
+  .businessMain .sectionContainer .titleContainer .txtPanel {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: calc(100% - 200px);
+  }
+  .businessMain .sectionContainer .titleContainer .txtPanel .txtBox {
+    position: relative;
+    top: 120px;
+    writing-mode: vertical-rl;
+  }
+  .businessMain .sectionContainer .titleContainer .txtPanel .txtBox .txt {
+    margin: 0 60px 0 0;
+  }
+  .businessMain .sectionContainer .titleContainer .txtPanel .txtBox .txt p + p {
+    margin: 0 60px 0 0;
+  }
+}
+.businessMain .listPanel {
+  padding: 250px 0 150px;
+}
+.businessMain .listPanel .ul {
+  text-align: center;
+}
+.businessMain .listPanel .ul p {
+  padding: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .businessMain .listPanel .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .businessMain .listPanel .ul .photo {
+    position: relative;
+    height: 190px;
+  }
+  .businessMain .listPanel .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .businessMain .listPanel .list01 .li {
+    width: calc(20% - 50px);
+  }
+  .businessMain .listPanel .list02 {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .businessMain .listPanel .list02 .li {
+    width: calc(25% - 50px);
+  }
+}
+.businessMain .beforeAfterPanel {
+  padding: 100px 0 60px;
+  background: #f2f2f2;
+}
+.businessMain .beforeAfterPanel .photoList {
+  margin: 0 0 40px;
+}
+.businessMain .beforeAfterPanel .photoList .ul .li > p {
+  max-width: 220px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+}
+@media (min-width: 1025px) {
+  .businessMain .beforeAfterPanel .photoList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .businessMain .beforeAfterPanel .photoList .ul .li {
+    width: calc(50% - 20px);
+  }
+  .businessMain .beforeAfterPanel .photoList .ul .li + .li {
+    position: relative;
+  }
+  .businessMain .beforeAfterPanel .photoList .ul .li + .li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -28px;
+    width: 18px;
+    height: 29px;
+    background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/business_list_arrow_right.png) no-repeat;
+    background-size: cover;
+  }
+  .businessMain .beforeAfterPanel .photoList .ul .li .photo {
+    position: relative;
+    height: 470px;
+  }
+  .businessMain .beforeAfterPanel .photoList .ul .li .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.businessMain .sec01 {
+  margin: 0 0 200px;
+}
+.businessMain .sec01 .titleContainer .txtPanel {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/business_sec01_top_img.png) center no-repeat;
+  background-size: cover;
+}
+.businessMain .sec02 .titleContainer .txtPanel {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/business_sec02_top_img.png) center no-repeat;
+  background-size: cover;
+}
+.businessMain .sec03 {
+  margin: 0 0 200px;
+}
+.businessMain .sec03 .secBox {
+  padding: 0 0 60px;
+}
+@media (min-width: 1025px) {
+  .businessMain .sec03 .secBox {
+    display: flex;
+    align-items: flex-end;
+  }
+  .businessMain .sec03 .secBox .pageSecTtlBox {
+    margin: 0 120px 0 0;
+  }
+  .businessMain .sec03 .secBox .txt {
+    padding: 0 0 40px;
+  }
+}
+.businessMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.businessMain .slidePanel .slideBox .ul .li {
+  position: relative;
+  width: 25%;
+  margin: 0 1px;
+  padding: 0 0 20%;
+}
+.businessMain .slidePanel .slideBox .ul .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+	craftsman
+///////////////////////////////////////////////////////////*/
+.craftsmanMain .pageKvPanel {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/craftsman_kv.png) center no-repeat;
+  background-size: cover;
+}
+.craftsmanMain .topPanel {
+  padding: 200px 0 150px;
+}
+@media (min-width: 1025px) {
+  .craftsmanMain .topPanel .secBox {
+    display: flex;
+  }
+  .craftsmanMain .topPanel .secBox > * {
+    width: 50%;
+  }
+  .craftsmanMain .topPanel .secBox .txtBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 120px 0 20px;
+  }
+  .craftsmanMain .topPanel .secBox .txtBox .txt {
+    writing-mode: vertical-rl;
+  }
+  .craftsmanMain .topPanel .secBox .txtBox .txt p + p {
+    margin: 0 60px 0 0;
+  }
+  .craftsmanMain .topPanel .secBox .photo {
+    position: relative;
+    height: 460px;
+  }
+  .craftsmanMain .topPanel .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1025px) {
+  .craftsmanMain .fixedPanel {
+    height: 800px;
+    background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/craftsman_fixed_img.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .craftsmanMain .fixedPanel .img {
+    display: none;
+  }
+}
+.craftsmanMain .sectionContainer {
+  padding: 150px 0;
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/craftsman_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.craftsmanMain .sec01 .secPanel .rightBox .txtBox h3 {
+  margin: 0 0 60px;
+  font-size: 30px;
+}
+.craftsmanMain .sec01 .secPanel .rightBox .txtBox .txt p + p {
+  margin: 60px 0 0;
+}
+@media (min-width: 1025px) {
+  .craftsmanMain .sec01 .secPanel {
+    display: flex;
+  }
+  .craftsmanMain .sec01 .secPanel > * {
+    width: 50%;
+  }
+  .craftsmanMain .sec01 .leftBox {
+    position: relative;
+  }
+  .craftsmanMain .sec01 .leftBox .pageSecTtlBoxContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 320px;
+    padding: 50px 20px 0 30px;
+    z-index: 1;
+    background: #ffffff;
+  }
+  .craftsmanMain .sec01 .leftBox .photo {
+    position: relative;
+    height: 100%;
+  }
+  .craftsmanMain .sec01 .leftBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .craftsmanMain .sec01 .rightBox {
+    padding: 60px;
+  }
+}
+.craftsmanMain .sec02 {
+  margin: 150px 0 0;
+}
+.craftsmanMain .sec02 .secBox .historyBox .dl {
+  position: relative;
+  display: flex;
+  padding: 20px 40px;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+}
+.craftsmanMain .sec02 .secBox .historyBox .dl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: 0;
+  width: 20px;
+  height: 1px;
+  margin: auto 0;
+  background: #bec4c4;
+}
+.craftsmanMain .sec02 .secBox .historyBox .dl + .dl {
+  margin: 15px 0 0;
+}
+.craftsmanMain .sec02 .secBox .historyBox .dl .dt {
+  width: 140px;
+  color: #656767;
+}
+@media (min-width: 1025px) {
+  .craftsmanMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .craftsmanMain .sec02 .secBox .pageSecTtlBox {
+    order: 2;
+  }
+  .craftsmanMain .sec02 .secBox .historyBox {
+    order: 1;
+    width: 720px;
+  }
+}
+.craftsmanMain .photoContainer {
+  margin: 200px 0;
+}
+.craftsmanMain .photoContainer .photoPanel {
+  padding: 0 60px;
+}
+.craftsmanMain .photoContainer .photoPanel .txtBox {
+  max-width: 1000px;
+  width: 100%;
+  padding: 50px 60px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.craftsmanMain .photoContainer .photoPanel .txtBox h3 {
+  font-size: 22px;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .craftsmanMain .photoContainer .photoPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(100% - 200px);
+  }
+  .craftsmanMain .photoContainer .photoPanel .txtBox {
+    position: relative;
+    top: 160px;
+    writing-mode: vertical-rl;
+  }
+  .craftsmanMain .photoContainer .photoPanel .txtBox .txt {
+    margin: 0 60px 0 0;
+  }
+  .craftsmanMain .photoContainer .photoPanel .txtBox .txt p + p {
+    margin: 0 60px 0 0;
+  }
+  .craftsmanMain .photoContainer .photoPanel01 {
+    align-items: flex-end;
+  }
+  .craftsmanMain .photoContainer .photoPanel02 {
+    margin: 250px 0 0 200px;
+  }
+}
+.craftsmanMain .photoContainer .photoPanel01 {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/craftsman_intro_img_01.png) center no-repeat;
+  background-size: cover;
+}
+.craftsmanMain .photoContainer .photoPanel02 {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/craftsman_intro_img_02.png) center no-repeat;
+  background-size: cover;
+}
+.craftsmanMain .sec03 {
+  margin: 0 0 150px;
+}
+.craftsmanMain .sec03 .secPanel {
+  position: relative;
+}
+.craftsmanMain .sec03 .staffBoxList {
+  padding: 100px 0 0;
+}
+.craftsmanMain .sec03 .staffBox + .staffBox {
+  margin: 50px 0 0;
+}
+.craftsmanMain .sec03 .staffBox .txtBox .dl .dt {
+  margin: 0 0 60px;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .craftsmanMain .sec03 .pageSecTtlBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .craftsmanMain .sec03 .staffBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .craftsmanMain .sec03 .staffBox .photo {
+    position: relative;
+    width: 40%;
+    height: 370px;
+  }
+  .craftsmanMain .sec03 .staffBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .craftsmanMain .sec03 .staffBox .txtBox {
+    width: 55%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvPanel {
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/contact_kv.png) center no-repeat;
+  background-size: cover;
+}
+.contactMain .topPanel {
+  padding: 150px 0;
+}
+.contactMain .topPanel .logoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+.contactMain .topPanel .logoBox .logo {
+  width: 200px;
+}
+.contactMain .topPanel .logoBox .txt {
+  line-height: 2;
+}
+.contactMain .topPanel .telBox {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+}
+.contactMain .topPanel .telBox .dl {
+  text-align: center;
+}
+.contactMain .topPanel .telBox .dl .dt {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.contactMain .topPanel .telBox .dl .dd {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 15px 0 0;
+  border-top: 1px solid #898989;
+}
+.contactMain .topPanel .telBox .dl .dd a {
+  display: inline-block;
+}
+.contactMain .topPanel .telBox .dl .dd a p {
+  display: inline-block;
+  font-size: 24px;
+}
+.contactMain .topPanel .telBox .dl .dd a .em {
+  font-size: 34px;
+}
+.contactMain .formContainer {
+  padding: 100px 0 150px;
+  background: url(https://suzukura230125.smooooth.jp/system_panel/uploads/images/contact_form_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .formContainer h2 {
+  margin: 0 0 30px;
+  font-size: 30px;
+  text-align: center;
+}
+.contactMain .formContainer .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+   --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 55px;
+  margin: 40px auto 0;
+  font-size: 15px;
+  color: #f9f9f9;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid #898989;
+  background: #252525;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit] span {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+.formMain .contactForm button[type=submit] span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #168044;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin-top: 10px;
+}
+@media (max-width: 1024px) {
+  .formMain .contactForm .form .checkList .ul {
+    margin-top: 0;
+  }
+  .formMain .contactForm .form .checkList .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .form .checkList .ul .li + .li {
+    margin: 10px 0 0;
+  }
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem .label,
+.formMain .contactForm .form .checkItem label {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem input + span {
+  padding-left: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+.formMain .contactForm .form .checkItem input + span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #202020;
+  border-right: 3px solid #202020;
+}
+.formMain .contactForm .form .radioBox {
+  margin: 0 0 15px;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox .label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox .label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 2px solid #dcdfe3;
+  background: #e8eaed;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + .label:before {
+  border: 8px solid #5ce1e6;
+}
+.formMain .contactForm .form .postal input {
+  width: 150px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal + .dl .dt {
+  visibility: hidden;
+}
+.formMain .contactForm .form .selectBox {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+}
+.formMain .contactForm .form .selectBox:after {
+  content: "▼";
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 10px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 16px;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #d9dce1;
+  background: #e8eaed;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .inputAge {
+  width: 180px;
+}
+.formMain .contactForm .form .inputAge + p {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: table;
+  width: 100%;
+  padding: 10px 0 10px 40px;
+}
+.formMain .contactForm .formBox > .dl.line {
+  padding: 10px 40px 40px;
+}
+.formMain .contactForm .formBox > .dl.line + .dl {
+  padding: 40px 40px 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  display: table-cell;
+  width: 300px;
+  padding: 10px 10px 0 0;
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #f2f2f1;
+  vertical-align: middle;
+  background: #252525;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  display: table-cell;
+}
+.formMain .contactForm .formBox > .dl + p {
+  margin: 60px 0 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+}
+.formMain .contactForm .formBox > .dl .txtTel {
+  margin: 30px 0 0;
+  font-weight: bold;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  margin: 10px 0 0;
+  font-size: 0;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telBox a {
+  color: #0e00cb;
+  text-decoration: underline;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #898989;
+  background: #f9f9f9;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .txt {
+  padding: 0 15px;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .listBox .ttl {
+  position: relative;
+  padding: 0 0 0 1.5em;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .listBox .ttl p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .listBox .ttl .em {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .list {
+  padding: 0 0 0 1.5em;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .list p {
+  position: relative;
+  padding: 0 0 0 1em;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .list p:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .info {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	  complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 2;
+}
+.complete .btnMore a {
+  margin: 0 auto;
+}

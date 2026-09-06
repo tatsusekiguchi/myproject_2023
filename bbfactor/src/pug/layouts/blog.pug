@@ -1,0 +1,43 @@
+// ▽メイン▽
+main#blog
+    .pageKvPanel
+        .pageKvTitle
+            h1 ブログ
+    .sectionContainer
+        .secWrap01
+            .categoryList
+                dl
+                    dt カテゴリ
+                    dd
+                        ul
+                            li
+                                a(href="") お知らせ
+                            li
+                                a(href="") スタッフブログ
+                            li
+                                a(href="") その他
+            .detail__blog
+                .titleHeader
+                    .infoBox
+                        .time
+                            p 2022.12.01
+                        .cate
+                            p お知らせ
+                    .title
+                        h3 タイトルが入ります。
+                .thumbnailBox
+                    img(src=(root_path || '') + "image/blog/blog_sample.png", alt="")
+                .postContents
+                    p 平素より株式会社アンド・アイをご愛顧いただき、誠にありがとうございます。
+                    p 誠に勝手ながら、以下の期間を年末年始休業とさせていただきます。
+                    p ーーーーーーーーーーーーーーーーーーーーーーーー
+                    p 休業期間：2022年12月30日(金)～2023年1月3日(火)
+                    p ーーーーーーーーーーーーーーーーーーーーーーーー
+                    p ご不便をお掛けいたしますが、何卒ご理解いただきますようお願い致します。
+                    p 期間中の電話でのお問い合わせについてはお休みさせていただきます。
+                    p なお、メールでいただきましたお問い合わせにつきましては、2023年1月4日(水)以降に順次対応させていただきます。
+                    p 来年も引き続き、変わらぬご愛顧を賜りますようお願い申し上げます。
+            .btnBack
+                a(href="")
+                    span 一覧に戻る
+// △メイン△

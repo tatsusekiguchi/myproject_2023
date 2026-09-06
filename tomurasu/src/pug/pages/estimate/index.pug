@@ -1,0 +1,15 @@
+- title = ''
+- description = ''
+- keywords = ''
+- root_path = '../'
+- page_name = 'estimate'
+doctype html
+//- サイトの設定の読み込み
+include /site.pug
+html(lang='ja')
+  head
+    include /common/head.pug
+  body#estimate.page
+    include /common/header.pug
+    include ../../layouts/estimate.pug
+    include /common/footer.pug

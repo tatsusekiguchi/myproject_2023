@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script charset="UTF-8" data-mil-loader="https://branch.branch-fines.com/929DPE/js/mil_loader.js"></script>
+	<script>
+		(function() {
+			var mv = window;
+			mv = mv.mil = mv.mil || {};
+			mv = mv.versions = mv.versions || {};
+			var ss = document.getElementsByTagName('script');
+			for (var i = 0; i < ss.length; i++) {
+				var s = ss[i],
+					ml;
+				if (!s.src) {
+					if (s.dataset.milLoader) {
+						ml = s.dataset.milLoader;
+					} else {
+						continue;
+					}
+				} else if (s.src.match(/mil_embed.js/)) {
+					ml = s.src.replace(/mil_embed.js.*$/, 'mil_loader.js');
+				} else if (s.src.match(/mil_autoplay.js/)) {
+					ml = s.src.replace(/mil_autoplay.js.*$/, 'mil_loader.js');
+				} else {
+					continue;
+				}
+				var p = s.parentNode;
+				p.removeChild(s);
+				var mlp = ml.match(new RegExp('^(https?://[^/]+(/(?:[^/]+/)+))(js/.+)$')) || [];
+				if (!mlp) {
+					console.error('script data-mil-loader invalid: ', ml);
+					continue;
+				}
+				var pi = {},
+					mtcs = mlp[1].match(new RegExp('^(https?://)([^/]+)(/(?:[^/]+/)+)$'));
+				if (mtcs) {
+					var fqdns = mtcs[2].split('.'),
+						d = fqdns.length == 3 ? fqdns[1] + '.' + fqdns[2] : '';
+					if (!d) {
+						console.error('invalid fqdn: ', fqdns);
+						continue;
+					}
+					if (fqdns[0] == 'media') {
+						pi.m_url = mlp[1];
+						pi.p_url = mtcs[1] + mtcs[3].match(new RegExp('^/([^/]+)'))[1] + '.' + d + mtcs[3].replace(new RegExp('^/[^/]+'), '');
+					} else {
+						if (d != 'mil.movie') {
+							if (d.replace(/:[0-9]+$/, '') != 'mil-test.net') {
+								d = 'mil.movie';
+							}
+						}
+						pi.p_url = mlp[1];
+						pi.m_url = mtcs[1] + 'media.' + d + '/' + fqdns[0] + mtcs[3];
+					}
+				}
+				pi.pvid = mlp[2].replace(new RegExp('/(preview/)?(ad[0-9]/)?$'), '').match(new RegExp('/([^/]+)$'))[1];
+				pi.loader = mlp[3];
+				var vi = mv[pi.pvid];
+				if (vi === 0) {
+					continue;
+				}
+				if (vi) {
+					_set(vi, pi);
+				} else {
+					(function(pi) {
+						mv[pi.pvid] = 0;
+						var x = new XMLHttpRequest();
+						x.open('GET', pi.p_url + 'js/version?serial=' + Date.now());
+						x.onloadend = function() {
+							var vi = '0.0.0';
+							if (x.status >= 200) {
+								if (x.status < 300) {
+									vi = (x.responseText || '0.0.1').trim();
+								}
+							}
+							mv[pi.pvid] = vi;
+							_set(vi, pi);
+						};
+						x.send();
+					})(pi);
+				}
+
+				function _set(vi, pi) {
+					var vs = vi.split(','),
+						ver = vs[0],
+						c_url, s;
+					try {
+						c_url = JSON.parse(vs[2]).CDN_base_url;
+					} catch (e) {}
+					s = document.createElement('script');
+					s.charset = 'UTF-8';
+					document.body.appendChild(s);
+					if (ver) {
+						s.src = (c_url ? c_url : pi.m_url) + pi.loader + '?ver=' + ver;
+					} else {
+						s.src = pi.m_url + pi.loader + '?serial=' + Date.now();
+					}
+				}
+			}
+		})();
+	</script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="reason">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="headTitle">
+				<p>広島県全域の警備は有限会社太陽警備にお任せください</p>
+			</div>
+			<div class="headBox">
+				<div class="logo"><a href="/"><img src="https://taiyoukeibi.jp/system_panel/uploads/images/header_logo.png" alt=""></a></div>
+				<div class="navBox">
+					<div class="navList">
+						<div class="ul">
+							<div class="li spBreak"><a href="/">
+									<div>
+										<p>HOME</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="reason">
+									<div>
+										<p>選ばれる理由</p>
+									</div>
+								</a></div>
+							<div class="li pulldown">
+								<div class="accordBtn">
+									<p class="linkTxt">事業紹介</p>
+								</div>
+								<div class="subList accordBody">
+									<div class="list">
+										<div class="li"><a href="highway">
+												<div>
+													<p>高速道路規制業務・国道規制業務</p>
+												</div>
+											</a></div>
+										<div class="li"><a href="traffic">
+												<div>
+													<p>交通誘導警備・雑踏警備・その他の警備</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="li"><a href="greeting">
+									<div>
+										<p>ご挨拶</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="company">
+									<div>
+										<p>会社概要</p>
+									</div>
+								</a></div>
+							<div class="li spBreak"><a href="voice">
+									<div>
+										<p>働く環境・先輩の声</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="newslist">
+									<div>
+										<p>新着情報</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="recruit">
+									<div>
+										<p>採用情報</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+					<div class="contact"><a href="contact">
+							<div>
+								<p>お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="reasonMain main">
+		<div class="pageKvPanel">
+			<div class="pageKvTtl">
+				<h1>選ばれる理由</h1>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox fadeUp">
+					<div class="pageSecTtl">
+						<h2>日本の国土を守る警備会社？</h2>
+					</div>
+					<p>選ばれる理由</p>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox fadeUp">
+						<div class="photo"><img src="https://taiyoukeibi.jp/system_panel/uploads/images/reason_sec01_img_01.png" alt=""></div>
+						<div class="txtBox gothic">
+							<div class="num">
+								<p>01</p>
+							</div>
+							<div class="ttl">
+								<h3>広島で交通誘導警備業務の実績と経験</h3>
+							</div>
+							<div class="txt">
+								<p>太陽警備は2023年に創業30周年を迎えました。<br>電気・通信工事をはじめ、高速道路・国道維持工事・舗装工事・上下水道・建設・建築などの交通誘導警備に従事してまいりました。<br>国の根幹であるライフラインの工事の安全を担うことで、いままでも、これかからも社会に貢献していきたいと願っています。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photo"><img src="https://taiyoukeibi.jp/system_panel/uploads/images/reason_sec01_img_02.png" alt=""></div>
+						<div class="txtBox gothic">
+							<div class="num">
+								<p>02</p>
+							</div>
+							<div class="ttl">
+								<h3>警備士のコミュニケーション力</h3>
+							</div>
+							<div class="txt">
+								<p>赤旗で停止の合図を出す・・・　「とまれ」ではなく「停止のご協力をお願いします」<br>警察の交通整理とは異なり、交通誘導警備業務は一般の通行人や車両と任意協力を得て行います。<br>誘導、合図もコミュニケーションであり礼節を重んじております。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photo"><img src="https://taiyoukeibi.jp/system_panel/uploads/images/reason_sec01_img_03.png" alt=""></div>
+						<div class="txtBox gothic">
+							<div class="num">
+								<p>03</p>
+							</div>
+							<div class="ttl">
+								<h3>豊富な経験と技術力</h3>
+							</div>
+							<div class="txt">
+								<p>高速道路規制業務・国道規制業務などの経験を重ねてまいりました。<br>高速道路では遵守すべきコンプライアンスが多様であり、国道規制では<br>日々・時間・天候によって異なるあらゆる事象に臨機応変な対応が求められます<br>お客様との打ち合わせ、計画、規制・誘導業務を行い無事故の完遂を目指しています</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="listPanel gothic fadeUp">
+					<div class="ttlBox">
+						<h3>警備スタッフ保有資格一覧</h3>
+					</div>
+					<div class="secBox">
+						<div class="leftBox">
+							<div class="txt">
+								<p>有限会社太陽警備では専門家による各種警備を最適に行い、また警備士の丁寧な業務と顧客の安心・信頼をより高いレベルで獲得するために、警備業法で定められています国家資格をはじめとする各種資格の取得に積極的に取り組んでいます。</p>
+							</div>
+						</div>
+						<div class="rightBox">
+							<div class="txt">
+								<p>保全管理責任者</p>
+								<p>警備員指導教育責任者1号・2号・3号・4号</p>
+								<p>施設警備業務1級・2級</p>
+								<p>交通誘導警備業務1級・2級</p>
+								<p>雑踏警備業務1級・2級</p>
+								<p>貴重品運搬警備業務1級・2級</p>
+							</div>
+							<div class="txt">
+								<p>火気監視員</p>
+								<p>自衛消防業務</p>
+								<p>機械警備業務管理者</p>
+								<p>駐車監視員</p>
+								<p>危険物取扱者（乙四）</p>
+								<p>防火管理者</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap02">
+				<h2>Contact</h2>
+				<div class="secBox">
+					<div class="leftBox">
+						<p class="gothic">交通警備やイベント警備について<br>相談・提案をご希望の方</p>
+					</div>
+					<div class="rightBox">
+						<div class="btnContact gothic"><a href="contact">
+								<div>
+									<p>お問い合わせはこちら</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel gothic">
+			<div class="secWrap01">
+				<div class="topBox">
+					<div class="leftBox">
+						<div class="logo"><img src="https://taiyoukeibi.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						<div class="dl">
+							<div class="dt">
+								<p>有限会社太陽警備</p>
+							</div>
+							<div class="dd">
+								<p>〒720-0843　福山市赤坂町赤坂1194-2</p><a class="tel" href="tel:0849521302">
+									<div>
+										<p>ＴＥＬ084-952-1302</p>
+									</div>
+								</a><a class="fax" href="javascript:void(0)">
+									<div>
+										<p>ＦＡＸ084-952-1391</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="footNav">
+							<div class="listBox">
+								<div class="ul">
+									<div class="li"><a href="/">
+											<div>
+												<p>HOME</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="reason">
+											<div>
+												<p>選ばれる理由　</p>
+											</div>
+										</a></div>
+									<div class="li">
+										<p>事業紹介</p>
+										<div class="sub">
+											<div class="link"><a href="highway?sec01">
+													<div>
+														<p>高速道路規制業務</p>
+													</div>
+												</a></div>
+											<div class="link"><a href="traffic?sec01">
+													<div>
+														<p>交通誘導警備</p>
+													</div>
+												</a></div>
+											<div class="link"><a href="highway?sec02">
+													<div>
+														<p>国道規制業務</p>
+													</div>
+												</a></div>
+											<div class="link"><a href="traffic?sec02">
+													<div>
+														<p>イベント警備業務</p>
+													</div>
+												</a></div>
+											<div class="link"><a href="traffic?sec03">
+													<div>
+														<p>駐車場警備業務</p>
+													</div>
+												</a></div>
+											<div class="link"><a href="traffic?sec04">
+													<div>
+														<p>規制車・保安資器材</p>
+													</div>
+												</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li"><a href="greeting">
+											<div>
+												<p>ご挨拶</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="company">
+											<div>
+												<p>会社概要</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="recruit">
+											<div>
+												<p>採用情報</p>
+											</div>
+										</a>
+										<div class="sub">
+											<div class="link"><a href="voice">
+													<div>
+														<p>働く環境・先輩の声</p>
+													</div>
+												</a></div>
+										</div>
+									</div>
+									<div class="li"><a href="newslist">
+											<div>
+												<p>新着情報</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="contact">
+											<div>
+												<p>お問い合わせ</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="companyList">
+					<div class="ul">
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<p>本社：</p>
+								</div>
+								<div class="dd">
+									<p>〒720-0843　福山市赤坂町赤坂1194-2</p>
+									<div class="telFax"><a class="tel" href="tel:0849521302">
+											<div>
+												<p>ＴＥＬ084-952-1302</p>
+											</div>
+										</a><a class="fax" href="javascript:void(0)">
+											<div>
+												<p>ＦＡＸ084-952-1391</p>
+											</div>
+										</a></div>
+									<div class="mail"><a href="mailto:taiyoukeibi-akasaka@way.ocn.ne.jp">
+											<div>
+												<p>e-mail : taiyoukeibi-akasaka@way.ocn.ne.jp</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<p>福山北営業所：</p>
+								</div>
+								<div class="dd">
+									<p>〒720-1131　福山市駅家町万能倉1297-13</p>
+									<div class="telFax"><a class="tel" href="tel:0849593345">
+											<div>
+												<p>ＴＥＬ084-959-3345</p>
+											</div>
+										</a><a class="fax" href="javascript:void(0)">
+											<div>
+												<p>ＦＡＸ084-959-3346</p>
+											</div>
+										</a></div>
+									<div class="mail"><a href="mailto:taiyoukeibi_ekiya@road.ocn.ne.jp">
+											<div>
+												<p>e-mail : taiyoukeibi_ekiya@road.ocn.ne.jp</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<p>三原営業所：</p>
+								</div>
+								<div class="dd">
+									<p>〒723-0044　三原市宗郷2 丁目3-38-101</p>
+									<div class="telFax"><a class="tel" href="tel:0848365740">
+											<div>
+												<p>ＴＥＬ0848-36-5740</p>
+											</div>
+										</a><a class="fax" href="javascript:void(0)">
+											<div>
+												<p>ＦＡＸ0848-36-5741</p>
+											</div>
+										</a></div>
+									<div class="mail"><a href="mailto:taiyoukeibi-mihara@dune.ocn.ne.jp">
+											<div>
+												<p>e-mail : taiyoukeibi-mihara@dune.ocn.ne.jp</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<p>東広島営業所：</p>
+								</div>
+								<div class="dd">
+									<p>〒739-0022　広島県東広島市西条町上三永1547-4</p>
+									<div class="telFax"><a class="tel" href="tel:0824262777">
+											<div>
+												<p>ＴＥＬ082-426-2777</p>
+											</div>
+										</a><a class="fax" href="javascript:void(0)">
+											<div>
+												<p>ＦＡＸ082-426-2778</p>
+											</div>
+										</a></div>
+									<div class="mail"><a href="mailto:taiyoukeibi-higashi@gaea.ocn.ne.jp">
+											<div>
+												<p>e-mail : taiyoukeibi-higashi@gaea.ocn.ne.jp</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<p>岡山営業所：</p>
+								</div>
+								<div class="dd">
+									<p>〒700-0973　岡山県岡山市北区下中野351-101KSビル</p>
+									<div class="telFax"><a class="tel" href="tel:0862593977">
+											<div>
+												<p>ＴＥＬ086-259-3977</p>
+											</div>
+										</a><a class="fax" href="javascript:void(0)">
+											<div>
+												<p>ＦＡＸ086-259-3978</p>
+											</div>
+										</a></div>
+									<div class="mail"><a href="mailto:taiyoukeibi-okayama@ace.ocn.ne.jp">
+											<div>
+												<p>e-mail : taiyoukeibi-okayama@ace.ocn.ne.jp</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<p>江田島出張所：</p>
+								</div>
+								<div class="dd">
+									<p>〒737-2212 広島県江田島市大柿町大君882-2</p>
+									<div class="telFax"><a class="tel" href="tel:0823273372">
+											<div>
+												<p>ＴＥＬ0823-27-3372　(FAX共用)</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<p>株式会社太陽警備：</p>
+								</div>
+								<div class="dd">
+									<p>〒697-0022　島根県浜田市浅井町102-2</p>
+									<div class="telFax"><a class="tel" href="tel:0823273372">
+											<div>
+												<p>ＴＥＬ0823-27-3372</p>
+											</div>
+										</a><a class="fax" href="javascript:void(0)">
+											<div>
+												<p>ＦＡＸ0855-25-6356</p>
+											</div>
+										</a></div>
+									<div class="mail"><a href="mailto:taiyoukeibi-hamada@star.ocn.ne.jp">
+											<div>
+												<p>e-mail : taiyoukeibi-hamada@star.ocn.ne.jp</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy;2023 有限会社太陽警備.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

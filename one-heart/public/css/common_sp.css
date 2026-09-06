@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    min-height: 0;
+    padding: 20px;
+  }
+  .header .logo {
+    max-width: 150px;
+  }
+  .header .hamburgerBox {
+    top: 15px;
+    right: 20px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 100px 20px 60px;
+  }
+  .navBox .navContainer {
+    display: block;
+  }
+  .navBox .navContainer .leftBox {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+  .navBox .navContainer .leftBox > p {
+    font-size: 12px;
+  }
+  .navBox .navContainer .leftBox .logo {
+    max-width: 180px;
+    margin: 10px auto 0;
+  }
+  .navBox .navContainer .rightBox {
+    width: 100%;
+  }
+  .navBox .navContainer .rightBox .navList {
+    display: block;
+    margin: 0 0 30px;
+  }
+  .navBox .navContainer .rightBox .navList .ul {
+    width: 100%;
+  }
+  .navBox .navContainer .rightBox .navList .ul + .ul {
+    margin: 10px 0 0;
+  }
+  .navBox .navContainer .rightBox .navList .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .navBox .navContainer .rightBox .lineLink {
+    width: 180px;
+    margin: 0 0 20px;
+  }
+  .navBox .navContainer .rightBox .lineLink a .em {
+    font-size: 20px;
+  }
+  .navBox .navContainer .rightBox .telLink > .dl {
+    display: block;
+  }
+  .navBox .navContainer .rightBox .telLink > .dl > .dt {
+    margin: 0 0 5px;
+    padding: 0;
+  }
+  .navBox .navContainer .rightBox .telLink > .dl > .dd {
+    display: block;
+  }
+  .navBox .navContainer .rightBox .telLink > .dl > .dd a {
+    margin: 0 0 10px;
+    padding: 0 0 0 25px;
+    font-size: 30px;
+    background: url(https://one-heart230426.smooooth.jp/system_panel/uploads/images/header_nav_tel.png) left top 10px no-repeat;
+    background-size: 18px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 87px 0 0;
+  }
+
+  .pageKvPanel {
+    margin: 0 0 40px;
+    padding: 0 10px;
+  }
+  .pageKvPanel .pageKv {
+    height: 200px;
+    font-size: 30px;
+  }
+
+  .sectionTitleBox {
+    margin: 0 0 40px;
+  }
+  .sectionTitleBox .sectionTitle {
+    padding: 0 0 20px;
+    font-size: 20px;
+    text-align: center;
+    background: url(https://one-heart230426.smooooth.jp/system_panel/uploads/images/section_title_bg.png) center bottom no-repeat;
+    background-size: 180px auto;
+  }
+  .sectionTitleBox .sectionTitle h2 {
+    line-height: 1.6;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+
+  .benefitsContainer {
+    padding: 40px 0;
+  }
+  .benefitsContainer .benefitsBox {
+    max-width: 350px;
+  }
+  .benefitsContainer .benefitsBox .dl .dt {
+    font-size: 20px;
+  }
+  .benefitsContainer .benefitsBox .dl .dd {
+    padding: 15px 10px;
+  }
+  .benefitsContainer .benefitsBox .dl .dd .txt .em {
+    font-size: 24px;
+  }
+  .benefitsContainer .benefitsBox .dl .dd .list {
+    max-width: 280px;
+  }
+  .benefitsContainer .benefitsBox .dl .dd .tel a {
+    padding: 0 0 0 30px;
+    font-size: 28px;
+    background: url(https://one-heart230426.smooooth.jp/system_panel/uploads/images/benefits_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .benefitsContainer .benefitsBox .dl .dd .line {
+    width: 40px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 50px 0;
+  }
+  .footer .footContact .contactList {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .footer .footContact .contactList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .contactList .ul .li a {
+    padding: 10px;
+  }
+  .footer .footContact .contactList .ul .line .dl .dd {
+    display: block;
+  }
+  .footer .footContact .contactList .ul .line .dl .dd .qr {
+    width: 80px;
+    margin: 0 auto 10px;
+  }
+  .footer .footContact .contactList .ul .line .dl .dd p {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+  }
+  .footer .footContact .contactList .ul .tel .dl .dd .em {
+    margin: 0 0 10px;
+    font-size: 30px;
+  }
+  .footer .footContact .contactList .ul .tel .dl .dd .dl {
+    font-size: 13px;
+  }
+  .footer .footContact .contactList .ul .mail a {
+    padding: 30px 10px;
+  }
+  .footer .footContact .contactList .ul .mail a .em {
+    font-size: 28px;
+  }
+  .footer .footContact .contactList .ul a > .dl > .dt {
+    margin: 0 0 5px;
+  }
+  .footer .footContact .contactList .ul a > .dl > .dt .em {
+    font-size: 20px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 15px;
+    text-align: center;
+  }
+  .footer .footPanel .footBox {
+    margin: 0 0 50px;
+  }
+  .footer .footPanel .footBox .leftBox .logo {
+    max-width: 200px;
+    margin: 0 auto 15px;
+  }
+  .footer .footPanel .footBox .leftBox .txt a {
+    display: inline-block;
+  }
+  .footer .footPanel .footBox .leftBox .dl {
+    display: flex;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .footer .footPanel .footBox .rightBox {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    text-align: center;
+  }
+}

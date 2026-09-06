@@ -1,0 +1,505 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #28252c;
+  font-size: 15px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #28252c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 0 0 15%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .hamburger {
+    display: none;
+  }
+
+  .topHeader .logo {
+    position: absolute;
+    left: 40px;
+    bottom: -80px;
+    width: 15%;
+    max-width: 200px;
+    padding: 30px;
+    border-radius: 0 0 20px 0;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .topHeader .logo a {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    transition: 0.6s;
+  }
+  .topHeader.fixed .logo {
+    padding: 10px;
+    left: 10px;
+    bottom: 0;
+    width: 100px;
+    max-width: 100px;
+  }
+  .topHeader.fixed .logo a {
+    max-width: 100px;
+  }
+
+  .pageHeader .logo {
+    position: absolute;
+    padding: 10px;
+    left: 10px;
+    bottom: 0;
+    width: 100px;
+  }
+  .pageHeader .logo a {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px 0 0;
+  }
+  .navBox .navList {
+    width: calc(100% - 200px);
+  }
+  .navBox .navList > .ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .navBox .navList > .ul > .li {
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    padding: 48px 0 30px;
+  }
+  .navBox .navList > .ul > .li + .li {
+    margin: 0 0 0 5%;
+  }
+  .navBox .navList > .ul > .li .linkTxt {
+    position: relative;
+  }
+  .navBox .navList > .ul > .li .linkTxt > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li .current > p {
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/header_nav_wave.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .navBox .navList > .ul > .li > a {
+    display: inline-block;
+  }
+  .navBox .navList > .ul > .li > a > div > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList > .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList > .ul .pulldown:hover .subList {
+    top: 100px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 70px;
+    left: -60px;
+    width: 200px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + .li {
+    margin: 1px 0 0;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 14px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #91c3e0;
+  }
+  .navBox .navItem {
+    width: 160px;
+    padding: 15px 0 0;
+  }
+  .navBox .navItem .reserve a {
+    display: block;
+    padding: 4px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #3697dc;
+  }
+  .navBox .navItem .reserve a p {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    font-size: 13px;
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+.pageKvContainer {
+  padding: 0 80px;
+}
+.pageKvContainer .pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 350px;
+  border-radius: 20px;
+}
+.pageKvContainer .pageKvTitle {
+  width: 300px;
+  padding: 30px 40px 20px;
+  border-radius: 0 20px 0 0;
+  background: #ffffff;
+}
+.pageKvContainer .pageKvTitle h1 {
+  font-size: 27px;
+}
+
+.pageSecTitle {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.pageSecTitle p {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 0 40px;
+  font-size: 20px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_headline_icon.png) left center no-repeat, url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_headline_icon.png) right center no-repeat;
+  background-size: 15px auto, 15px auto;
+}
+.pageSecTitle .secTitle {
+  font-size: 34px;
+}
+.pageSecTitle.white {
+  color: #ffffff;
+}
+
+.mainContainer {
+  padding: 0 80px;
+}
+
+.secWrap {
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.secWrap01 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secWrap02 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  display: inline-block;
+  width: 200px;
+}
+.btnMore a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #7eafcc;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #91c3e0;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) right 20px center no-repeat #f4f7f8;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover {
+    opacity: 1;
+    color: #ffffff;
+    border: 1px solid #91c3e0;
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 20px center no-repeat #91c3e0;
+  }
+}
+
+.btnMail {
+  display: inline-block;
+  width: 280px;
+}
+.btnMail a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #7eafcc;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #91c3e0;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) right 20px center no-repeat #f4f7f8;
+}
+.btnMail a p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+}
+@media (min-width: 1025px) {
+  .btnMail a:hover {
+    opacity: 1;
+    color: #ffffff;
+    border: 1px solid #91c3e0;
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 20px center no-repeat #91c3e0;
+  }
+  .btnMail a:hover p {
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/footer_mail_white.png) left center no-repeat;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footWrap {
+  padding: 0 80px;
+}
+.footer .footContact {
+  position: relative;
+  padding: 30px 20px 0;
+  text-align: center;
+}
+.footer .footContact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 20px);
+  z-index: -1;
+  border-radius: 20px;
+  background: #91c3e0;
+}
+.footer .footContact .secTtl {
+  margin: 0 0 40px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .footContact .secTtl p {
+  margin: 0 0 5px;
+}
+.footer .footContact .secTtl h2 {
+  font-size: 26px;
+}
+.footer .footContact .contactList .contactBox {
+  padding: 30px 20px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.footer .footContact .contactList .contactBox .ttl {
+  margin: 0 0 25px;
+}
+.footer .footContact .contactList .contactBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 36px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .contactList .contactBox {
+    width: 48%;
+  }
+}
+.footer .footPanel {
+  position: relative;
+  margin: 100px 0 0;
+  padding: 100px 20px 20px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/footer_bg_wave.png) no-repeat;
+  background-size: cover;
+}
+.footer .footPanel .pagetop {
+  position: absolute;
+  top: -20px;
+  right: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+.footer .footPanel .footBox .txt a {
+  display: inline-block;
+}
+.footer .footPanel .footBox .copy {
+  margin: 40px 0 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

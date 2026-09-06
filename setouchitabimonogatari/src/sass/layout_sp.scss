@@ -1,0 +1,416 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png)
+      left 150px no-repeat;
+    background-size: 100% auto;
+    .topKvContainer {
+      .sliderPanel {
+        .sliderBox {
+          position: relative;
+          margin: 0;
+        }
+      }
+      .slideTitlePanel {
+        padding: 0 20px;
+        .slideTitleBox {
+          &.slideTitleBox01 {
+            left: 0;
+          }
+          &.slideTitleBox02 {
+            left: 0;
+          }
+        }
+        .slideTitle {
+          padding: 5px 15px;
+          text-align: left;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .secTitleBox {
+      margin: 0 0 40px;
+      .secTitle01 {
+        margin: 0 0 5px;
+        font-size: 20px;
+      }
+    }
+    .sec01 {
+      padding: 100px 0;
+      .secTitleBox {
+        max-width: 520px;
+        margin: 0 auto 40px;
+        padding: 80px 0 0;
+        background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec01_title_icon_01.png)
+            left top no-repeat,
+          url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec01_title_icon_02.png)
+            right top no-repeat;
+        background-size: 90px auto, 100px auto;
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 0 0 100px;
+      .secTitleBox {
+        max-width: 360px;
+        margin: 0 auto 40px;
+        padding: 90px 0 0;
+        background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec02_title_icon_01.png)
+            left top no-repeat,
+          url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec02_title_icon_02.png)
+            right 20px center no-repeat;
+        background-size: 100px auto, 60px auto;
+      }
+      .secBox {
+        margin: 0 0 40px;
+        .dl {
+          margin: 40px 0 0;
+        }
+      }
+      .listBox {
+        max-width: 360px;
+        margin: 0 auto 50px;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+            .btn {
+              max-width: 300px;
+              font-size: 16px;
+              .icon {
+                width: 35px;
+                height: 35px;
+              }
+              p {
+                min-height: 50px;
+              }
+            }
+          }
+        }
+      }
+      .imgBox {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        margin: 30px 0 0;
+        text-align: right;
+        .img {
+          display: inline-block;
+          width: 85%;
+        }
+      }
+    }
+    .sec03 {
+      min-height: 0;
+      margin: 0 0 50px;
+      padding: 50px 0;
+      background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png)
+        right top no-repeat;
+      background-size: cover;
+      .secTitleBox {
+        max-width: 340px;
+        margin: 0 auto 40px;
+        padding: 100px 0 0;
+        background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec03_title_icon_01.png)
+            left center no-repeat,
+          url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec03_title_icon_02.png)
+            right top no-repeat;
+        background-size: 60px auto, 120px auto;
+      }
+      .secBox {
+        margin: 0 0 30px;
+        .txtBox {
+          padding: 20px 0 0;
+          .txt {
+            margin: 0 0 50px;
+          }
+        }
+      }
+      .iconList {
+        .icon01 {
+          width: 90px;
+        }
+        .icon02 {
+          width: 60px;
+        }
+      }
+    }
+    .sec04 {
+      padding: 0;
+      .secTitleBox {
+        max-width: 300px;
+        margin: 0 auto 40px;
+        padding: 20px 0 0;
+        background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec04_title_icon_01.png)
+          right bottom no-repeat;
+        background-size: 120px auto;
+      }
+    }
+    .sec05 {
+      padding: 100px 0 80px;
+      .secTitleBox {
+        max-width: 300px;
+        margin: 0 auto 40px;
+        padding: 20px 0 0;
+        background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/top_sec05_title_icon_01.png)
+          left bottom no-repeat;
+        background-size: 140px auto;
+      }
+    }
+    .blogSection {
+      max-width: 300px;
+      margin: 0 auto;
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 40px 0 0;
+          }
+          a {
+            min-height: 0;
+            padding: 10px 10px 40px;
+          }
+        }
+      }
+      .btnMore {
+        margin: 40px auto 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	enjoy
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .enjoyMain {
+    .enjoySection {
+      padding: 0 0 50px;
+    }
+    .section {
+      padding: 70px 0;
+      .secPanel {
+        margin: 0 0 60px;
+        .photoBox {
+          .imageTitle01 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+            width: 90%;
+            max-width: 440px;
+          }
+          .imageTitle02 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+            width: 90%;
+            max-width: 600px;
+          }
+          .imageTitle03 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+            width: 90%;
+            max-width: 440px;
+          }
+          .imageTitle04 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+            width: 90%;
+            max-width: 600px;
+          }
+          .dl {
+            padding: 15px 0 0;
+            .dt {
+              margin: 0 0 5px;
+            }
+          }
+        }
+        .txtBox {
+          padding: 30px 0 0;
+          .balloon {
+            left: 10px;
+            width: 150px;
+          }
+          .secTtl {
+            margin: 0 0 30px;
+            font-size: 24px;
+          }
+          .txt {
+            p + p {
+              margin: 30px 0 0;
+            }
+            .span {
+              font-size: 12px;
+            }
+            .dl {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+      .listPanel {
+        .ul {
+          max-width: 360px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+          .dl {
+            padding: 10px 0 0;
+            .dt {
+              margin: 0 0 5px;
+            }
+          }
+        }
+      }
+      &.sec01 {
+        padding: 0 0 70px;
+        .secPanel {
+          .txtBox {
+            padding: 30px 0 0;
+          }
+        }
+      }
+      &.sec02 {
+        .secPanel {
+          .photoBox {
+            padding: 0;
+          }
+        }
+      }
+      &.sec03 {
+        .secPanel {
+          .txtBox {
+            padding: 30px 0 0;
+          }
+        }
+      }
+      &.sec04 {
+        .secPanel {
+          .txtBox {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain {
+    .newsSection {
+      padding: 0 0 80px;
+      .secTitleBox {
+        margin: 0 0 40px;
+        .secTitle01 {
+          font-size: 20px;
+        }
+      }
+    }
+    .catePanel {
+      margin: 0 0 60px;
+      .cateTtl {
+        margin: 0 0 20px;
+        font-size: 18px;
+      }
+      .webgene-blog {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        .webgene-item {
+          width: 100%;
+          margin: 0;
+          + .webgene-item {
+            margin: 10px 0 0;
+          }
+          a {
+            padding: 4px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .postListPanel {
+      .webgene-blog {
+        max-width: 350px;
+        margin: 0 auto;
+        .webgene-item {
+          + .webgene-item {
+            margin: 20px 0 0;
+          }
+          a {
+            min-height: 0;
+          }
+          .photo {
+            height: 220px;
+          }
+        }
+      }
+      .webgene-pagination {
+        margin: 60px auto 0;
+      }
+    }
+    .postDetailPanel {
+      .webgene-blog {
+        padding: 20px 20px 40px;
+        .ttlBox {
+          font-size: 20px;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                padding: 0 0 70%;
+              }
+            }
+          }
+        }
+      }
+      .btnBack {
+        max-width: 280px;
+        a {
+          .inner {
+            font-size: 14px;
+            background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+              left 15px center no-repeat #ffffff;
+            background-size: 6px auto;
+          }
+          .icon {
+            left: 70px;
+            width: 30px;
+            height: 30px;
+          }
+          p {
+            min-height: 50px;
+            padding: 10px 10px 10px 30px;
+          }
+        }
+      }
+    }
+  }
+}

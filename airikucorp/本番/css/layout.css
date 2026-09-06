@@ -1,0 +1,1612 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*===================================================
+    画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+    COMMON
+///////////////////////////////////////////////////////////*/
+
+.secTtlBox .secTtl {
+  position: relative;
+  z-index: 1;
+}
+.secTtl h2 {
+  color: #2a376e;
+  text-align: left;
+  font-size: 107px;
+  font-family: "a-otf-ud-shin-go-pr6n";
+  letter-spacing: -3px;
+  font-weight: bold;
+}
+.secTtl .sub {
+  color: #fff;
+  font-size: 28px;
+  font-family: a-otf-ud-shin-go-pr6n;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: inline-block;
+  position: absolute;
+  line-height: 1.3;
+  width: 160px;
+  height: auto;
+  top: -25px;
+  margin-left: -20px;
+  font-family: "Noto Sans JP", sans-serif;
+  right: 52px;
+  top: 50px;
+  right: -160px;
+}
+.secTtl .sub::after {
+  content: "";
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  left: -58px;
+  top: -300%;
+  background: url(/images/h2_bg.png) center no-repeat;
+  display: inline-block;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+.secTtl .subm::after {
+  transform: scale(0.8) rotate(45deg);
+}
+.secTtlBox h3 {
+  font-size: 38px;
+}
+.flBox {
+  display: flex;
+  justify-content: space-between;
+}
+.faxis {
+  font-family: "AXIS Std";
+}
+.fari {
+  font-family: Arial;
+}
+.fkai {
+  font-family: "HG正楷書体-PRO";
+}
+h3,
+h4 {
+  font-weight: bold;
+}
+.fg {
+  font-family: a-otf-ud-shin-go-pr6n;
+}
+.fmin {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.em {
+  font-weight: bold;
+}
+.bgCheck {
+  background: url(/system_panel/uploads/images/bg_check.png) center repeat;
+}
+.more {
+  display: block;
+  max-width: 360px;
+  color: #fff;
+  text-align: center;
+  background: url(/images/more_arrow.png) right 15px center no-repeat #2a376e;
+  height: 67px;
+  line-height: 67px;
+  box-sizing: border-box;
+  font-weight: bold;
+  /* margin: 0 auto; */
+  font-size: 18px;
+  outline-offset: -5px;
+}
+.more:hover {
+  color: #fff;
+}
+@media (min-width: 1025px) {
+  .more {
+    transition: 0.6s;
+  }
+}
+.contactBox {
+  padding-top: 80px;
+  background: #e3e5f1;
+  padding-bottom: 50px;
+}
+a {
+  display: block;
+}
+.contactBox .secTtlBox.flBox {
+  align-items: center;
+  margin-bottom: 20px;
+  background: none;
+}
+.contactBox .secTtlBox .secTtl h2 {
+  color: #2a376e;
+  text-align: left;
+  font-size: 107px;
+  font-family: "a-otf-ud-shin-go-pr6n";
+  letter-spacing: -3px;
+  font-weight: bold;
+}
+.contactBox .secTtl .sub {
+  color: #fff;
+  font-size: 28px;
+  font-family: a-otf-ud-shin-go-pr6n;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: inline-block;
+  position: absolute;
+  line-height: 1.3;
+  width: 160px;
+  height: auto;
+  top: -25px;
+  margin-left: -20px;
+  font-family: "Noto Sans JP", sans-serif;
+  right: 52px;
+  top: -57px;
+  right: -160px;
+}
+.contactBox .secTtl .sub::after {
+  content: "";
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  left: -58px;
+  top: -310%;
+  background: url(/images/h2_bg.png) center no-repeat;
+  display: inline-block;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.contactBox .secTtlBox h3 {
+  font-size: 42px;
+}
+.contactBox .btnBox {
+  margin: 0 auto;
+}
+.contactBox .btnBox .li > div {
+  width: 580px;
+  height: 150px;
+  color: #fff;
+  text-align: center;
+}
+.contactBox .btnBox .li a {
+  display: block;
+  height: 100%;
+}
+.contactBox .btnBox .li p {
+  color: #fff;
+}
+.contactBox .btnBox .li:nth-child(1) {
+  background: #2a376e;
+}
+.contactBox .btnBox .li:nth-child(1) .tel {
+  font-size: 33px;
+  padding-top: 22px;
+  line-height: 1.5;
+}
+.contactBox .btnBox .li:nth-child(1) .tel span {
+  font-size: 51px;
+}
+.contactBox .btnBox .li:nth-child(1) .txt {
+  font-size: 22px;
+  line-height: 1.4;
+}
+.contactBox .btnBox .li:nth-child(2) {
+  background: url(/images/entry_btn_bg.png) left 165px center no-repeat #e5001f;
+}
+.contactBox .btnBox .li:nth-child(2) p {
+  font-size: 46px;
+  line-height: 150px;
+}
+
+/*////////////////////////////////////////////////////////////
+    TOP
+///////////////////////////////////////////////////////////*/
+
+.topMain .topKv {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  margin: 0;
+  padding: 0;
+}
+.topMain .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.topMain .topKv .kvBox .kv01 {
+  background: url(/images/top_kv_01.png) center top no-repeat;
+  background-size: cover;
+}
+.topKv .kvTtl {
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  /* width: 650px; */
+  margin: 0 auto;
+  left: 50%;
+  /* margin-left: -800px; */
+  top: 500px;
+}
+.topMain .topKv .kvTtl h1 {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+  /* text-indent: -0.4em; */
+  margin-bottom: 20px;
+  /* text-shadow: 1px 2px 3px #808080; */
+}
+.topKv .kvTtl p {
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 32px;
+  text-indent: 0.5em;
+}
+.topKv .kvTtl .bottom .box {
+  display: inline-block;
+  /* padding: 20px 25px; */
+  width: 580px;
+}
+.topKv .kvTtl .bottom p {
+  text-indent: 0;
+  margin-bottom: 0;
+  padding: 2px 0;
+  border-bottom: 1px solid;
+  padding: 2px 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.topKv .kvTtl .bottom .box:nth-child(1) {
+  margin-bottom: 15px;
+}
+.topKv .kvTtl .bottom .box:nth-child(2) {
+  background: #a8977e;
+}
+
+/***** sec01 *****/
+
+.topMain .sec01 {
+  padding: 0;
+  background: #2a376e;
+  background-size: cover;
+  height: 700px;
+  text-align: left;
+}
+.topMain .sec01 .secWrap01 {
+  height: 100%;
+  background: url(/images/top_sec01_bg.png) right bottom no-repeat;
+}
+.topMain .sec01 h2 {
+  font-size: 120px;
+  color: #e5001f;
+  padding: 60px 0 30px;
+  line-height: 0.9;
+}
+.topMain .sec01 .flBox {
+  align-items: center;
+  padding-top: 100px;
+}
+.topMain .sec01 .txt {
+  position: relative;
+  color: #fff;
+  width: 500px;
+}
+.topMain .sec01 .txt .tate {
+  writing-mode: vertical-rl;
+  text-align: left;
+  position: absolute;
+  left: -100px;
+  font-size: 32px;
+  left: -370px;
+  line-height: 1.6;
+  height: 425px;
+  top: -37px;
+}
+
+/***** sec02 *****/
+
+.topMain .sec02 {
+  padding: 100px 0;
+  background: #e3e5f1;
+}
+.topMain .sec02 .secTtlBox.flBox {
+  display: block;
+  width: 665px;
+  margin: 0 auto;
+}
+.topMain .sec02 .secTtlBox .secTtl {
+  margin-top: 100px;
+}
+.topMain .sec02 .secTtlBox .secTtl .sub {
+  right: 165px;
+}
+.topMain .sec02 .secTtlBox .txtBox {
+  margin-top: 120px;
+}
+.topMain .sec02 .secTtlBox h3 {
+  text-align: center;
+}
+.topMain .sec02 .ul {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.topMain .sec02 .ul .li {
+  margin-bottom: 80px;
+}
+.topMain .sec02 .ul .li .box01 {
+  width: 465px;
+  min-height: 215px;
+  background: #fff;
+  padding: 20px 50px;
+  position: relative;
+  padding-right: 0;
+}
+.topMain .sec02 .ul .li .box01::before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #000;
+  right: -60px;
+  height: 100%;
+  top: 0;
+}
+.topMain .sec02 .ul .li .box01 .dl {
+  margin-top: -90px;
+}
+.topMain .sec02 .ul .li .box01 .dt .num {
+  color: #e5001f;
+  font-size: 65px;
+  text-decoration: underline;
+  font-family: "Arial", "メイリオ";
+  display: inline-block;
+}
+.topMain .sec02 .ul .li .box01 .dd {
+  font-size: 30px;
+  margin-top: -10px;
+  line-height: 1.5;
+}
+.topMain .sec02 .ul .li .box02 {
+  width: 620px;
+}
+.topMain .sec02 .ul .li .box02 .pointTtl {
+  background: #2a376e;
+  color: #fff;
+  text-align: center;
+  height: 44px;
+  width: 300px;
+  position: relative;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.topMain .sec02 .ul .li .box02 .pointTtl::before {
+  content: "";
+  border-top: 2px solid #fff;
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 30px;
+}
+.topMain .sec02 .ul .li .box02 h4 {
+  font-size: 32px;
+  color: #2a376e;
+  margin-bottom: 10px;
+}
+.topMain .sec02 .ul .li .box02 h4 span {
+  color: #e5001f;
+}
+.topMain .sec02 .btnBox .inBox {
+  position: relative;
+  text-align: center;
+}
+.topMain .sec02 .btnBox .inBox .main {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-size: 80px;
+}
+.topMain .sec02 .btnBox .inBox .sub {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-size: 32px;
+}
+.topMain .sec02 .btnBox .box:nth-child(2) .inBox:first-child {
+  margin-bottom: 20px;
+}
+.topMain .sec02 .btnBox .box:nth-child(2) .inBox .main {
+  bottom: 60px;
+  font-size: 60px;
+  text-align: right;
+  right: 44px;
+}
+.topMain .sec02 .btnBox .box:nth-child(2) .inBox .sub {
+  text-align: right;
+  right: 44px;
+  bottom: 30px;
+}
+
+/***** sec03 *****/
+
+.topMain .sec03 {
+  padding: 150px 0;
+}
+.topMain .sec03 .txtBox {
+  width: 660px;
+  margin-right: 40px;
+}
+.topMain .sec03 .txtBox .secTtlBox {
+  text-align: center;
+  width: 600px;
+}
+.topMain .sec03 .txtBox .secTtlBox .secTtl h2 {
+  text-align: right;
+  padding-right: 10px;
+}
+.topMain .sec03 .txtBox .secTtlBox .secTtl .sub {
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 39px;
+}
+.topMain .sec03 .txtBox .secTtlBox .secTtl .sub:after {
+  transform: rotate(45deg);
+}
+.topMain .sec03 .txtBox .bottomBox {
+  margin-top: 310px;
+}
+.topMain .sec03 .txtBox .bottomBox .txt {
+  padding-left: 20px;
+}
+.topMain .sec03 .txtBox .bottomBox .btn {
+  width: 360px;
+  margin: 40px auto 0;
+}
+.topMain .sec03 .photoBox {
+  min-width: 1300px;
+  flex: 1;
+}
+@media (min-width: 1025px) and (max-width: 1350px) {
+  /*
+    .topKv .kvTtl {
+        left: 65%;
+    }
+    */
+  .topMain .topKv .kvTtl h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .topMain .sec02 .ul .li .box01 {
+    width: 41vw;
+  }
+  .topMain .sec02 .ul .li .box01 .dd {
+    font-size: 28px;
+  }
+  .topMain .sec02 .ul .li .box02 {
+    width: 47vw;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+    work
+///////////////////////////////////////////////////////////*/
+
+.workMain .kv {
+  background: url(/images/main_kv.png) center no-repeat;
+  background-size: cover;
+  margin-bottom: 230px;
+}
+.workMain .topBox {
+  margin-bottom: 20px;
+}
+.workMain .topBox .ttl {
+  text-align: center;
+  font-size: 38px;
+}
+.workMain .secTtlBox {
+  background: #2a376e;
+  padding: 10px 0;
+  text-align: center;
+}
+.workMain .secTtlBox h2 {
+  font-size: 80px;
+  color: #e5001f;
+}
+.workMain .secTtlBox h2 .num {
+  color: #4e5a93;
+  padding-right: 0.3em;
+}
+.workMain .secTtlBox h2 .sub {
+  font-size: 28px;
+  padding-left: 0.3em;
+}
+
+/***** sec01 *****/
+
+.workMain .sec01 .topBox {
+  margin: 70px 0;
+}
+.workMain .sec01 .topBox .box {
+  width: 50%;
+}
+.workMain .sec01 .topBox .photoBox {
+  flex: 1;
+}
+.workMain .sec01 .topBox .txtBox {
+  width: 530px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.workMain .sec01 .topBox .txtBox .mainTxt {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.workMain .sec01 .flowBox {
+  margin-bottom: 100px;
+}
+.workMain .sec01 h3 {
+  border-left: 8px solid #2a376e;
+  text-indent: 0.5em;
+  font-size: 38px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+.workMain .sec01 .flowBox .dt p {
+  font-size: 24px;
+}
+.workMain .sec01 .flowBox .dt p .num {
+  color: #e5001f;
+}
+.workMain .sec01 .flowBox .li {
+  position: relative;
+}
+.workMain .sec01 .flowBox .li::before {
+  content: "";
+  background: url(/images/work_sec01_arrow.png) center no-repeat;
+  display: inline-block;
+  height: 69px;
+  margin-left: 65px;
+  vertical-align: middle;
+  width: 69px;
+  left: 284px;
+  top: 170px;
+  position: absolute;
+}
+.workMain .sec01 .flowBox .li:last-child {
+  position: static;
+}
+.workMain .sec01 .flowBox .li:last-child::before {
+  content: none;
+}
+.workMain .sec01 .pointBox .ul {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.workMain .sec01 .pointBox .ul .li {
+  margin-bottom: 80px;
+}
+.workMain .sec01 .pointBox .ul .li .box01 {
+  width: 415px;
+  height: 215px;
+  background: #fff;
+  padding: 20px 50px;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*
+.workMain .sec01 .pointBox  .ul .li .box01::before {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #000;
+    right: -60px;
+    height: 100%;
+    top: 0;
+}
+*/
+
+.workMain .sec01 .pointBox .ul .li .box02::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #000;
+  left: -7%;
+  height: 100%;
+  top: 0;
+}
+.workMain .sec01 .pointBox .ul .li .box01 .dl {
+  margin-top: -60px;
+}
+.workMain .sec01 .pointBox .ul .li .box01 .dt .num {
+  color: #e5001f;
+  font-size: 65px;
+  text-decoration: underline;
+  font-family: "Arial", "メイリオ";
+  display: inline-block;
+}
+.workMain .sec01 .pointBox .ul .li .box01 .dd {
+  font-size: 30px;
+  margin-top: -10px;
+  line-height: 1.5;
+}
+.workMain .sec01 .pointBox .ul .li .box02 {
+  width: 660px;
+  position: relative;
+}
+.workMain .sec01 .pointBox .ul .li .box02 .pointTtl {
+  background: #2a376e;
+  color: #fff;
+  text-align: center;
+  height: 44px;
+  width: 300px;
+  position: relative;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.workMain .sec01 .pointBox .ul .li .box02 .pointTtl::before {
+  content: "";
+  border-top: 2px solid #fff;
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 30px;
+}
+.workMain .sec01 .pointBox .ul .li .box02 h4 {
+  font-size: 32px;
+  color: #2a376e;
+  margin-bottom: 10px;
+}
+.workMain .sec01 .pointBox .ul .li .box02 h4 span {
+  color: #e5001f;
+}
+.workMain .sec01 .btnBox {
+  margin-bottom: 250px;
+}
+.workMain .sec01 .btnBox .ul {
+  flex-wrap: wrap;
+}
+.workMain .sec01 .btnBox .ul:after {
+  content: "";
+  width: 370px;
+  max-width: 370px;
+}
+.workMain .sec01 .btnBox .li {
+  width: 370px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.workMain .sec01 .btnBox .li .box {
+  width: 370px;
+  height: 100px;
+}
+.workMain .sec01 .btnBox .li a {
+  display: block;
+  height: 100%;
+  background: #e5001f;
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 100px;
+}
+.workMain .sec01 .btnBox .li a.more.bold {
+  background: url(/images/more_arrow_b.png) right 15px center no-repeat #e5001f;
+}
+
+/***** sec03 *****/
+
+.workMain .sec03 .secTtlBox {
+  margin-top: 200px;
+}
+.workMain .sec03 .topBox {
+  margin: 70px 0;
+}
+.workMain .sec03 .topBox .box {
+  width: 50%;
+}
+.workMain .sec03 .topBox .photoBox {
+  flex: 1;
+}
+.workMain .sec03 .topBox .txtBox {
+  width: 570px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.workMain .sec03 .topBox .txtBox .mainTxt {
+  font-size: 38px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.workMain .sec03 .flowBox {
+  margin-bottom: 100px;
+}
+.workMain .sec03 h3 {
+  border-left: 8px solid #2a376e;
+  text-indent: 0.5em;
+  font-size: 38px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+.workMain .sec03 .flowBox .dt p {
+  font-size: 24px;
+}
+.workMain .sec03 .flowBox .dt p .num {
+  color: #e5001f;
+}
+.workMain .sec03 .flowBox .li {
+  position: relative;
+  width: calc((100% / 3) - 30px);
+}
+.workMain .sec03 .flowBox .li::before {
+  content: "";
+  background: url(/images/work_sec03_arrow.png) center no-repeat;
+  display: inline-block;
+  height: 69px;
+  margin-left: 65px;
+  vertical-align: middle;
+  width: 69px;
+  left: 284px;
+  top: 170px;
+  position: absolute;
+}
+.workMain .sec03 .flowBox .li:last-child {
+  position: static;
+}
+.workMain .sec03 .flowBox .li:last-child::before {
+  content: none;
+}
+.workMain .sec03 .flowBox .li .dl .dd p.fg {
+  font-size: 26px;
+  color: #2a376e;
+  text-align: center;
+  margin: 15px 0 10px;
+}
+.workMain .sec03 .btnBox {
+  margin-bottom: 250px;
+}
+.workMain .sec03 .btnBox .ul {
+  flex-wrap: wrap;
+}
+.workMain .sec03 .btnBox .ul:after {
+  content: "";
+  width: 370px;
+  max-width: 370px;
+}
+.workMain .sec03 .btnBox .li .box {
+  width: 370px;
+  height: 100px;
+}
+.workMain .sec03 .btnBox .li a {
+  display: block;
+  height: 100%;
+  background: #e5001f;
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 100px;
+}
+.workMain .sec03 .btnBox .li a.more.bold {
+  background: url(/images/more_arrow_b.png) right 15px center no-repeat #e5001f;
+}
+
+/*////////////////////////////////////////////////////////////
+    support
+///////////////////////////////////////////////////////////*/
+
+.supportMain .kv {
+  background: url(/images/main_kv.png) center no-repeat;
+  background-size: cover;
+  margin-bottom: 280px;
+}
+
+/***** sec01 *****/
+
+.supportMain .sec01 {
+  margin-bottom: 100px;
+}
+.supportMain .sec01 .flBox {
+  position: relative;
+}
+.supportMain .sec01 .txtBox {
+  z-index: 1;
+  height: 640px;
+}
+.supportMain .sec01 .txtBox .ttl {
+  font-size: 48px;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+.supportMain .sec01 .photoBox {
+  position: absolute;
+  right: 0;
+  top: -60px;
+}
+
+/***** sec02 *****/
+
+.supportMain .sec02 .bgBox {
+  background: #e3e5f1;
+  padding-bottom: 50px;
+}
+.supportMain .sec02 .secTtlBox {
+  position: relative;
+  top: -70px;
+  margin-left: -75px;
+}
+.supportMain .sec02 .secTtlBox .secTtl {
+  display: inline-block;
+}
+.supportMain .sec02 .secTtlBox .secTtl .subm {
+  width: 100%;
+  right: 0;
+  top: 190px;
+}
+.supportMain .sec02 .secTtlBox .secTtl .subm::after {
+  transform: scale(0.8) rotate(45deg);
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+}
+.supportMain .sec02 .listBox {
+  margin-top: 40px;
+}
+.supportMain .sec02 .listBox .li {
+  margin-bottom: 50px;
+}
+.supportMain .sec02 .listBox .txtBox {
+  margin-top: 20px;
+  width: 60%;
+}
+.supportMain .sec02 .listBox .txtBox h3 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #2a376e;
+  border-bottom: 4px solid #e5001f;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.supportMain .sec02 .listBox .txtBox h3 span {
+  color: #e5001f;
+}
+.supportMain .sec02 .listBox .txtBox h3 .num {
+  font-size: 52px;
+  vertical-align: sub;
+  padding-right: 5px;
+}
+
+/***** sec03 *****/
+
+.supportMain .sec03 {
+  margin: 100px 0 0;
+}
+.supportMain .sec03 .secTtlBox {
+  margin-bottom: 30px;
+}
+.supportMain .sec03 .secTtlBox h2 {
+  text-align: center;
+  font-size: 60px;
+}
+.supportMain .sec03 .txtBox {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.supportMain .sec03 .txtBox h3 {
+  font-size: 32px;
+  color: #2a376e;
+  margin-bottom: 20px;
+}
+.supportMain .sec03 .txtBox h3 span {
+  color: #e5001f;
+}
+.supportMain .sec03 .btnBox h3 {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.supportMain .sec03 .btnBox .li {
+  width: 370px;
+  height: 100px;
+  background: #e5001f;
+}
+.supportMain .sec03 .btnBox .li p {
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+/*////////////////////////////////////////////////////////////
+    company
+///////////////////////////////////////////////////////////*/
+
+.companyMain .kv {
+  background: url(/images/main_kv.png) center no-repeat;
+  background-size: cover;
+  margin-bottom: 280px;
+}
+
+/***** sec01 *****/
+
+.companyMain .sec01 {
+  margin-bottom: 200px;
+}
+.companyMain .sec01 .infoList .dl {
+  display: table;
+  width: 100%;
+}
+.companyMain .sec01 .infoList .dl .dt,
+.companyMain .sec01 .infoList .dl .dd {
+  border-bottom: 1px solid #000;
+  font-family: a-otf-ud-shin-go-pr6n;
+}
+.companyMain .sec01 .infoList .dl .dt {
+  display: table-cell;
+  font-weight: bold;
+  width: 260px;
+  padding: 20px 0;
+  padding-left: 80px;
+}
+.companyMain .sec01 .infoList .dl .dd {
+  display: table-cell;
+  padding: 30px 0 30px 80px;
+  line-height: 2;
+}
+.companyMain .sec01 .infoList .dl .dd .sub {
+  font-size: 15px;
+}
+
+/***** sec02 *****/
+
+.companyMain .sec02 .bgBox {
+  background: #e3e5f1;
+  padding-bottom: 50px;
+}
+.companyMain .sec02 .secTtlBox {
+  position: relative;
+  top: -70px;
+  margin-left: -105px;
+}
+.companyMain .sec02 .secTtlBox .secTtl {
+  display: inline-block;
+}
+.companyMain .sec02 .secTtlBox .secTtl .subm {
+  width: 100%;
+  right: 0;
+  top: 190px;
+}
+.companyMain .sec02 .secTtlBox .secTtl .subm::after {
+  transform: scale(0.8) rotate(45deg);
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+}
+.companyMain .sec02 .txtBox {
+  margin-top: 170px;
+}
+.companyMain .sec02 .txtBox p.em {
+  text-align: right;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.companyMain .sec02 .txtBox p.em span {
+  font-size: 30px;
+}
+
+/***** sec04 *****/
+
+.companyMain .sec04 {
+  margin: 100px 0 50px;
+}
+.companyMain .sec04 .box {
+  text-align: center;
+  width: 47%;
+}
+.companyMain .sec04 .box .ttl {
+  font-size: 32px;
+  color: #2a376e;
+  border-bottom: 1px solid #2a376e;
+  margin-bottom: 20px;
+}
+.companyMain .sec04 .box a {
+  text-decoration: underline;
+  color: #2a376e;
+}
+
+/*////////////////////////////////////////////////////////////
+    entry
+///////////////////////////////////////////////////////////*/
+
+.entryMain {
+  background: #e3e5f1;
+}
+.entryMain .kv {
+  background: url(/images/main_kv.png) center no-repeat;
+  background-size: cover;
+  margin-bottom: 280px;
+}
+.entryMain .kv .kvTtl p {
+  width: 100%;
+  margin-top: 115px;
+  bottom: unset;
+}
+.entryMain .kv .secTtl .sub::after {
+  transform: rotate(45deg);
+  left: 0;
+  top: -95px;
+  right: 0;
+  margin: 0 auto;
+}
+.entryMain .secTtlBox .ttl {
+  font-size: 38px;
+  border-left: 6px solid #2a376e;
+  line-height: 1.1;
+  text-indent: 20px;
+  margin-bottom: 40px;
+}
+
+/***** sec01 *****/
+
+.entryMain .sec01 {
+  margin-bottom: 200px;
+}
+.entryMain .sec01 .dt p {
+  background: #2a376e;
+  color: #fff;
+  text-align: center;
+  height: 44px;
+  width: 300px;
+  position: relative;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.entryMain .sec01 .dt p::before {
+  content: "";
+  border-top: 2px solid #fff;
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 30px;
+}
+.entryMain .sec01 .dd {
+  width: 70%;
+}
+.entryMain .sec01 .dd p {
+  padding-top: 5px;
+}
+.entryMain .sec01 .arrow {
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.entryMain .sec01 .arrow img {
+  width: 31px;
+}
+
+/***** sec02 *****/
+
+.entryMain .sec02 {
+  background: #fff;
+  padding: 100px 0;
+}
+.entryMain .sec02 .tabBox .ttl {
+  font-size: 32px;
+  color: #2a376e;
+}
+.entryMain .sec02 .tabBox .ttl span {
+  color: #e5001f;
+}
+.entryMain .sec02 .btnBox .ul {
+  flex-wrap: wrap;
+}
+.entryMain .sec02 .btnBox .ul:after {
+  content: "";
+  width: 370px;
+  max-width: 370px;
+}
+.entryMain .sec02 .btnBox .li {
+  /*width: calc(100% / 3);*/
+  width: 370px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.entryMain .sec02 .btnBox .li a {
+  display: block;
+  height: 100%;
+  background: #e5001f;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100px;
+  max-width: 370px;
+}
+.entryMain .sec02 .btnBox .li a.more.bold {
+  background: url(/images/more_arrow_b.png) right 15px center no-repeat #e5001f;
+}
+.entryMain .sec02 .reqBox {
+  margin-top: 60px;
+  margin-bottom: 200px;
+}
+.entryMain .sec02 .reqBox .box {
+  margin-bottom: 100px;
+}
+.entryMain .sec02 .reqBox h3 {
+  font-size: 28px;
+  color: #fff;
+  background: #2a376e;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+.entryMain .sec02 .infoList .dl {
+  display: table;
+  width: 100%;
+}
+.entryMain .sec02 .infoList .dl .dt {
+  display: table-cell;
+  width: 300px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: #2a376e;
+  border-bottom: 1px solid #fff;
+  padding: 30px 0;
+  vertical-align: middle;
+}
+.entryMain .sec02 .infoList .dl .dd {
+  display: table-cell;
+  padding: 20px;
+  line-height: 2;
+  background: #e3e5f1;
+  border-bottom: 1px solid #fff;
+  vertical-align: middle;
+}
+.entryMain .sec02 .secTtlBoxMain {
+  position: relative;
+  top: -70px;
+  margin-left: -105px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.entryMain .sec02 .secTtlBoxMain .secTtl {
+  display: inline-block;
+}
+.entryMain .sec02 .secTtlBoxMain .secTtl .subm {
+  width: 100%;
+  right: 0;
+  top: 190px;
+}
+.entryMain .sec02 .secTtlBoxMain .secTtl .subm::after {
+  transform: scale(0.8) rotate(45deg);
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+}
+.entryMain .sec02 .bnrBox {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.entryMain .sec02 .bnrBox .li:nth-child(1) {
+  background: #2a376e;
+}
+.entryMain .sec02 .bnrBox .li:nth-child(2) {
+  background: #30a833;
+}
+.entryMain .sec02 .bnrBox .li > div {
+  width: 580px;
+  height: 240px;
+  color: #fff;
+  text-align: center;
+}
+.entryMain .sec02 .bnrBox .li a {
+  display: block;
+  height: 100%;
+  color: #fff;
+}
+.entryMain .sec02 .bnrBox .li:nth-child(1) .tel {
+  font-size: 33px;
+  line-height: 1.5;
+}
+.entryMain .sec02 .bnrBox .li:nth-child(1) .tel span {
+  font-size: 51px;
+}
+.entryMain .sec02 .bnrBox .li:nth-child(1) .txt {
+  font-size: 22px;
+  line-height: 1.4;
+}
+.entryMain .sec02 .bnrBox .li p.ttl {
+  font-size: 40px;
+  padding-top: 10px;
+}
+.entryMain .sec02 .bnrBox .li .lineBox .flBox {
+  padding: 0px 40px 10px;
+}
+.entryMain .sec02 .bnrBox .li .lineBox .flBox .rBox {
+  width: 70%;
+  text-align: left;
+}
+.entryMain .sec02 .bnrBox .li .lineBox .flBox .rBox > p {
+  font-size: 22px;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+.entryMain .sec02 .bnrBox .li .lineBox .flBox .rBox .em {
+  font-size: 40px;
+}
+
+/***** sec03 *****/
+
+.entryMain .sec03 .secTtlBoxMain {
+  position: relative;
+  top: -70px;
+  margin-left: -105px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  top: 30px;
+}
+.entryMain .sec03 .secTtlBoxMain .secTtl {
+  display: inline-block;
+}
+.entryMain .sec03 .secTtlBoxMain .secTtl .subm {
+  width: 100%;
+  right: 0;
+  top: 190px;
+}
+.entryMain .sec03 .secTtlBoxMain .secTtl .subm::after {
+  transform: scale(0.8) rotate(45deg);
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  top: -105px;
+}
+.entryMain .sec03 .formBox {
+  margin-top: 200px;
+  margin-top: 300px;
+}
+.entryMain .sec03 .formBox > p {
+  text-align: center;
+}
+.entryMain .sec03 .form .dl {
+  margin-bottom: 30px;
+}
+.entryMain .sec03 .formBox .form .dt {
+  font-weight: bold;
+}
+.entryMain .sec03 .form .dl input {
+  padding: 30px 20px;
+  width: 100%;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+.entryMain .sec03 .form .dl input.m {
+  width: 50%;
+}
+.entryMain .sec03 .form .dl input.s {
+  width: 25%;
+}
+.entryMain .sec03 .form textarea {
+  width: 100%;
+  min-height: 200px;
+}
+.entryMain .sec03 .privacy .agreeBox {
+  /* overflow: scroll; */
+  height: auto;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid #000;
+  background: #f7f7f8;
+}
+.entryMain .sec03 .form .privacy a {
+  display: inline-block;
+}
+.agreeCheck {
+  text-align: center;
+  margin-top: 60px;
+}
+.agreeCheck .checkBox + .checkBox {
+  margin-top: 10px;
+}
+.agreeCheck .checkBox input {
+  display: none;
+}
+.agreeCheck .checkBox span {
+  padding-left: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+.agreeCheck .checkBox input:checked + span {
+  color: #000;
+  font-weight: bold;
+}
+.agreeCheck .checkBox input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #35417d;
+  border-right: 3px solid #35417d;
+}
+.agreeCheck .checkBox input {
+  display: none;
+}
+.agreeCheck .checkBox span {
+  padding-left: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+.agreeCheck .checkBox span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -18px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #94a0ad;
+  background: #fff;
+}
+.agreeCheck .checkBox input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -4px;
+  width: 7px;
+  height: 22px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
+.submitBtn {
+  width: 350px;
+  margin: 60px auto;
+}
+.wpcf7 input[type="submit"] {
+  width: 350px;
+  height: 70px;
+  line-height: 70px;
+  border: none;
+  transition: 0.3s;
+  background: url(/images/more_arrow_b.png) right 15px center no-repeat #2a376e;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.wpcf7-submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.wpcf7 .wpcf7-submit:disabled {
+  opacity: 0.5;
+}
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output,
+.wpcf7 form.sent .wpcf7-response-output {
+  background: #fff;
+}
+::placeholder {
+  color: #bebebe;
+  font-size: 18px;
+}
+
+/* 旧Edge対応 */
+
+::-ms-input-placeholder {
+  color: #bebebe;
+}
+
+/* IE対応 */
+
+:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+/*////////////////////////////////////////////////////////////
+   bnr
+///////////////////////////////////////////////////////////*/
+.topMain .topKv .kvBnr {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  width: 350px;
+  z-index: 99;
+}
+
+.topMain .topKv .kvBnr a {
+  display: block;
+}
+
+/*////////////////////////////////////////////////////////////
+      insurance
+  ///////////////////////////////////////////////////////////*/
+.entryMain.insuranceMain .kv .secTtl .sub::after {
+  top: -45px;
+}
+
+.entryMain .agreeBox .box + .box {
+  margin: 1em 0 0;
+}
+
+.insuranceMain .aboutContainer01 {
+  position: relative;
+  padding: 0 0 120px;
+}
+
+.insuranceMain .aboutContainer01:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background: #ffffff;
+}
+
+.insuranceMain .aboutContainer01 h2 {
+  margin: 0 0 30px;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.insuranceMain .aboutContainer01 .txt {
+  margin: 0 0 30px;
+}
+
+.insuranceMain .aboutContainer01 .caution {
+  position: relative;
+  padding: 40px 20px;
+  z-index: 1;
+  background: #ffffff;
+}
+
+.insuranceMain .aboutContainer01 .caution dl {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.insuranceMain .aboutContainer01 .caution dl dt {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.insuranceMain .aboutContainer02 {
+  padding: 80px 0;
+}
+
+.insuranceMain .aboutContainer02 h2 {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0 15px;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 3px solid #e60019;
+}
+
+.insuranceMain .aboutContainer02 h2 em {
+  color: #e60019;
+}
+
+.insuranceMain .aboutContainer02 ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insuranceMain .aboutContainer02 ul li {
+  width: calc((100% / 3) - 20px);
+  background: #ffffff;
+}
+
+.insuranceMain .aboutContainer02 ul li a {
+  display: block;
+  height: 100%;
+  padding: 30px 20px;
+}
+
+.insuranceMain .aboutContainer02 ul li img {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto 20px;
+}
+
+.insuranceMain .aboutContainer03 {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.insuranceMain .aboutContainer03 dl + dl {
+  margin: 60px 0 0;
+}
+
+.insuranceMain .aboutContainer03 dl dt {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.insuranceMain .aboutContainer03 dl dt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #000000;
+}
+
+.insuranceMain .aboutContainer03 dl dt span {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  background: #ffffff;
+}
+
+.insuranceMain .aboutContainer03 dl dd {
+  padding: 0 20px;
+}
+
+.insuranceMain .aboutContainer03 dl dd .ttl {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #26346e;
+}
+
+.insuranceMain .aboutContainer03 dl dd .list {
+  line-height: 2.2;
+}
+
+.insuranceMain .aboutContainer03 dl dd .name {
+  margin: 60px 0 0;
+  text-align: center;
+}
+
+.insuranceMain .sec03 .privacy .agreeBox {
+  overflow: auto;
+  height: 400px;
+}

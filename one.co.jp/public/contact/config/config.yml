@@ -1,0 +1,10 @@
+config:
+    to_email: tatsu.sekiguchi@gmail.com
+    to_subject: ［株式会社ONE］お問い合わせ
+    auto_reply_subject: ［株式会社ONE］お問い合わせありがとうございます
+    auto_reply_name: 株式会社ONE
+    file: true
+	 file_allow_extension: gif,jpg,jpeg,png,txt,pdf
+	 file_max_size: 512000
+	 file_retention_period: 1800
+

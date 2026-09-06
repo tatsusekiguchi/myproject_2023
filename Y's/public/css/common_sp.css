@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    z-index: 999;
+    background: #ecf7f6;
+  }
+  .header .logo {
+    width: 90px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .headItem {
+    display: none;
+  }
+
+  .hamburgerBox {
+    top: 10px;
+    right: 10px;
+  }
+  .hamburgerBox .hamburgerTxt {
+    margin: 3px 0 0;
+    font-size: 10px;
+  }
+
+  .sideNav {
+    right: 10px;
+    width: 30px;
+    z-index: 99;
+  }
+  .sideNav .ul .li + .li {
+    margin: 15px 0 0;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    width: 65%;
+    padding: 80px 20px 60px;
+  }
+  .navBox .navList {
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  .navBox .navList .ul {
+    display: block;
+  }
+  .navBox .navList .ul .li {
+    width: 100%;
+  }
+  .navBox .navItem .ul .li {
+    width: 30px;
+  }
+  .navBox .navItem .ul .li + .li {
+    margin: 0 0 0 15px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    padding: 60px 0 0;
+  }
+
+  .pageKvPanel {
+    overflow: hidden;
+    margin: 0 0 60px;
+    padding: 0 20px 20px 100px;
+  }
+  .pageKvPanel .pageKv {
+    position: relative;
+    height: 340px;
+  }
+  .pageKvPanel .pageKv::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: calc(100% - 30px);
+    height: 400px;
+  }
+  .pageKvPanel .kvTtl {
+    top: 150px;
+    left: 20px;
+  }
+  .pageKvPanel .kvTtl h1 {
+    font-size: 30px;
+  }
+
+  .pageSecTtl {
+    margin: 0 0 30px;
+  }
+  .pageSecTtl p {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore,
+.btnBack {
+    min-width: 230px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    margin: 0 auto 100px;
+    padding: 40px 0;
+  }
+  .footer .footContact .secContainer .ttlBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .secContainer .listBox {
+    padding: 30px 10px;
+  }
+  .footer .footContact .secContainer .listBox .dl + .dl {
+    margin: 40px 0 0;
+  }
+  .footer .footContact .secContainer .listBox .dl .dt {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  .footer .footContact .secContainer .listBox .dl .dd .btnLink {
+    max-width: 240px;
+  }
+  .footer .footContact .secContainer .listBox .dl .dd .btnLink + .btnLink {
+    margin: 10px auto 0;
+  }
+  .footer .footContact .secContainer .listBox .dl .dd > p {
+    font-size: 12px;
+  }
+  .footer .footPanel {
+    padding: 0 0 20px;
+  }
+  .footer .footPanel .pageTop {
+    right: 10px;
+    width: 50px;
+  }
+  .footer .footPanel .logo {
+    width: 90px;
+    margin: 0 0 40px;
+  }
+  .footer .footPanel .copy {
+    margin: 40px 0 0;
+  }
+}

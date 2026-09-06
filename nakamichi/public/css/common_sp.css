@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/header_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logo {
+    width: 180px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .rightBox {
+    display: none;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span {
+    background: #ffffff;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 60px;
+    z-index: 999;
+    background: #000000;
+    transition: 0.6s;
+  }
+  .navBox .navList {
+    border-top: 1px solid #34363d;
+  }
+  .navBox .navList .ul .li {
+    padding: 10px 20px;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 1px solid #34363d;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    color: #ffffff;
+  }
+  .navBox .navList .ul .li a .span {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #5d5d5d;
+  }
+  .navBox .navItem .telBox {
+    background: #ffffff;
+  }
+  .navBox .navItem .telBox a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  .navBox .navItem .telBox .em {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navItem .telBox .span {
+    font-size: 12px;
+  }
+  .navBox .navItem .mailBox a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/header_contact_btn_bg.png);
+  }
+  .navBox .navItem .mailBox p {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    height: 160px;
+  }
+  .pageKvPanel .pageKvTitle {
+    padding: 0 0 30px;
+    font-size: 24px;
+  }
+
+  .pageSecTtl {
+    margin: 0 0 40px;
+  }
+  .pageSecTtl p {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore {
+    width: 140px;
+  }
+  .btnMore a {
+    padding: 10px 0 10px 50px;
+    background: url(https://msnakamichi230707.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) left center no-repeat;
+    background-size: 40px auto;
+  }
+  .btnMore.white a {
+    color: #ffffff;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .pagetop {
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+  }
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .topBox {
+    margin: 0 0 40px;
+  }
+  .footer .footContact .topBox .topTxt p {
+    font-size: 18px;
+  }
+  .footer .footContact .contactItem {
+    margin: 0 0 40px;
+    padding: 20px 10px;
+  }
+  .footer .footContact .contactItem .itemBox {
+    display: block;
+    max-width: 460px;
+  }
+  .footer .footContact .contactItem .telBox {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .footer .footContact .contactItem .telBox .em {
+    font-size: 30px;
+  }
+  .footer .footContact .contactItem .telBox .span {
+    font-size: 13px;
+  }
+  .footer .footContact .contactItem .mailBox {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .footer .footContact .contactItem .mailBox a {
+    min-height: 70px;
+    font-size: 16px;
+  }
+  .footer .footContact .contactItem .mailBox a > div {
+    padding: 0 20px 0 30px;
+  }
+  .footer .footContact .listBox .ul {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .footer .footContact .listBox .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .listBox .ul .li .photo {
+    height: 280px;
+  }
+  .footer .footContact .listBox .ul .li .ttl {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .footer .footPanel {
+    padding: 60px 0 30px;
+  }
+  .footer .footPanel .footBox .leftBox .logo {
+    width: 250px;
+  }
+  .footer .footPanel .footBox .rightBox {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    margin: 40px 0 0;
+  }
+}

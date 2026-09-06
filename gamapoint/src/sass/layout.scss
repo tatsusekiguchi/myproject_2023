@@ -1,0 +1,752 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain {
+  background: #f2efff;
+  .topKvContainer {
+    background: url("../image/top/top_kv_bg_pc.png") center no-repeat;
+    background-size: cover;
+    .topKvPanel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 900px;
+      padding: 0 20px;
+    }
+    .topKvBox {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1340px;
+      margin: 0 auto;
+    }
+    .kvTitle {
+      position: relative;
+      right: -5px;
+      max-width: 700px;
+      width: 45%;
+      z-index: 1;
+    }
+    .appBnrBox {
+      position: relative;
+      top: 80px;
+      max-width: 600px;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      background: #ffffff;
+      > p {
+        margin: 0 0 20px;
+        font-size: 34px;
+        font-weight: 700;
+        color: #1771ba;
+      }
+      .bnrList {
+        display: flex;
+        justify-content: space-between;
+        max-width: 480px;
+        min-width: 460px;
+        margin: 0 auto;
+        .bnr {
+          width: 48%;
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+    .kvInfoPanel {
+      width: 100%;
+      max-width: 700px;
+      margin: 30px auto 0;
+      padding: 30px 40px;
+      border-radius: 20px;
+      border: 2px solid #1771ba;
+      background: #ffffff;
+      dl {
+        color: #ff0000;
+        text-align: center;
+        dt {
+          position: relative;
+          display: inline-block;
+          margin: 0 0 20px;
+          padding: 0 0 0 1em;
+          font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+            "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+            "メイリオ", "Meiryo", "verdana", sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: left;
+          line-height: 1.7;
+          &::before {
+            content: "※";
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        dd {
+          text-align: left;
+          .txt {
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+  }
+  .section {
+    padding: 80px 0;
+    .secTitleBox {
+      text-align: center;
+      h2 {
+        padding: 50px 0 0;
+        font-size: 55px;
+        color: #1771ba;
+        background: url("../image/top/top_sec_ttl_icon.png") center top
+          no-repeat;
+        background-size: 50px auto;
+      }
+      p {
+        font-size: 130px;
+        color: #feffff;
+        line-height: 1;
+      }
+    }
+    &__about {
+      .introBox {
+        margin: -10px 0 100px;
+        padding: 40px 20px;
+        border-radius: 10px;
+        background: #ffffff;
+        .txt {
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        .logo {
+          max-width: 500px;
+          margin: 30px auto 0;
+        }
+      }
+      .limitedContainer {
+        padding: 10px;
+        border-radius: 10px;
+        background: #3db5f1;
+        .limitedPanel {
+          padding: 50px 20px;
+          border-radius: 10px;
+          background: #ffffff;
+        }
+        .ttlBox {
+          margin: 0 0 10px;
+          text-align: center;
+          dl {
+            dt {
+              display: inline-block;
+              min-width: 170px;
+              margin: 0 0 30px;
+              padding: 0 10px;
+              font-size: 34px;
+              color: #ffe400;
+              border-radius: 30px;
+              background: #000000;
+            }
+            dd {
+              font-size: 32px;
+              color: #1771ba;
+              p {
+                display: inline-block;
+                background: linear-gradient(transparent 70%, #fff17d 70%);
+              }
+            }
+          }
+        }
+        .appleWatch {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+        .presentTtl {
+          margin: 0 0 40px;
+          font-size: 30px;
+          color: #1771ba;
+          text-align: center;
+          em {
+            font-size: 50px;
+            font-weight: 700;
+          }
+        }
+        .presentTxt {
+          max-width: 1000px;
+          margin: 0 auto 40px;
+          em {
+            font-weight: bold;
+          }
+        }
+        .term {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px 40px;
+          background: #f3f3f3;
+        }
+      }
+    }
+    &__merit {
+      .meritListBox {
+        padding: 60px 0 0;
+        ol {
+          li {
+            position: relative;
+            padding: 50px 30px 20px;
+            border-radius: 10px;
+            background: #ffffff;
+          }
+          .numBox {
+            position: absolute;
+            top: -35px;
+            left: 0;
+            right: 0;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1;
+            border-radius: 50%;
+            background: #1771ba;
+            .ttl {
+              padding: 15px 0 0;
+              font-size: 12px;
+            }
+            .num {
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -10px;
+              margin: 0 auto;
+              font-size: 58px;
+            }
+          }
+          dl {
+            dt {
+              font-size: 34px;
+            }
+            dd {
+              .imgBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 180px;
+              }
+              .img {
+                margin: 0 auto;
+              }
+              .img01 {
+                width: 200px;
+              }
+              .img02 {
+                width: 160px;
+              }
+              .img03 {
+                width: 100px;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          ol {
+            display: flex;
+            justify-content: space-between;
+            li {
+              width: calc((100% / 3) - 15px);
+            }
+          }
+        }
+      }
+    }
+    &__flow {
+      .pagerList {
+        padding: 40px 0 100px;
+        ol {
+          display: flex;
+          justify-content: space-between;
+          li {
+            width: calc((100% / 4) - 2px);
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+      .stepSection {
+        + .stepSection {
+          margin: 120px 0 0;
+        }
+        .secTtlBox {
+          display: flex;
+          align-items: center;
+          margin: 0 0 40px;
+          .numBox {
+            position: relative;
+            width: 70px;
+            height: 70px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1;
+            border-radius: 50%;
+            background: #1771ba;
+            .ttl {
+              padding: 15px 0 0;
+              font-size: 12px;
+            }
+            .num {
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -10px;
+              margin: 0 auto;
+              font-size: 58px;
+            }
+          }
+          .secTtl {
+            margin: 0 0 0 20px;
+            font-size: 40px;
+          }
+        }
+      }
+      .tabList {
+        max-width: 700px;
+        margin: 0 auto;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc((100% / 2) - 5px);
+            padding: 20px 10px;
+            cursor: pointer;
+            border-radius: 20px 20px 0 0;
+            background: #b5cee3;
+            &.active {
+              background: #1771ba;
+            }
+            p {
+              font-size: 26px;
+              color: #ffffff;
+              text-align: center;
+              line-height: 1.3;
+            }
+          }
+        }
+      }
+      .stepContainer {
+        padding: 10px;
+        background: #1771ba;
+        .stepPanel {
+          padding: 50px 20px;
+          border-radius: 10px;
+          background: #ffffff;
+        }
+      }
+      #step01 {
+        .topBox {
+          max-width: 1000px;
+          margin: 0 auto 60px;
+          .ttl {
+            margin: 0 0 40px;
+            font-size: 40px;
+            text-align: center;
+          }
+          .topList {
+            max-width: 900px;
+            margin: 0 auto;
+            ol {
+              font-size: 34px;
+              li {
+                + li {
+                  margin: 10px 0 0;
+                }
+                span {
+                  display: inline-block;
+                  margin: 0 10px 0 0;
+                }
+                em {
+                  background: linear-gradient(transparent 70%, #fff17d 70%);
+                }
+              }
+            }
+          }
+          @media (min-width: 1025px) {
+            .topList {
+              display: flex;
+              ol {
+                width: 50%;
+              }
+            }
+          }
+        }
+        .detailContainer {
+          max-width: 1060px;
+          margin: 0 auto;
+          padding: 10px;
+          background: #e9ebee;
+          .detailBtn {
+            padding: 15px;
+            font-size: 30px;
+            text-align: center;
+            cursor: pointer;
+            background: url("../image/top/accord_arrow_down.png") right 15px
+              center no-repeat;
+            &.active {
+              background: url("../image/top/accord_arrow_up.png") right 15px
+                center no-repeat;
+            }
+          }
+          .detailPanel {
+            display: none;
+            padding: 40px;
+            background: #ffffff;
+            .mobileTitle {
+              max-width: 420px;
+              margin: 0 auto 30px;
+              padding: 10px;
+              font-size: 30px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 40px;
+              background: #1771ba;
+            }
+            .appBnr {
+              max-width: 300px;
+              margin: 0 auto 60px;
+              a {
+                display: block;
+              }
+            }
+            .introTxt {
+              margin: 0 0 40px;
+              p + p {
+                margin: 40px 0 0;
+              }
+            }
+            .dlTxt {
+              max-width: 540px;
+              margin: 0 auto 40px;
+              padding: 20px;
+              text-align: center;
+              border-radius: 10px;
+              background: #e9ebee;
+              dl {
+                dt {
+                  margin: 0 0 10px;
+                  font-size: 26px;
+                }
+              }
+            }
+            .dlComplete {
+              margin: 0 0 50px;
+              text-align: center;
+              p {
+                font-size: 36px;
+              }
+              .arrow {
+                width: 70px;
+                margin: 20px auto 0;
+              }
+            }
+          }
+        }
+      }
+      .stepFlow {
+        ol {
+          li {
+            position: relative;
+          }
+          .num {
+            position: absolute;
+            top: -30px;
+            left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            font-size: 36px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 50%;
+            background: #1771ba;
+            p {
+              position: relative;
+              top: -2px;
+            }
+          }
+          .txt {
+            padding: 10px 0;
+          }
+        }
+        @media (min-width: 1025px) {
+          ol {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -60px 0 0 -40px;
+            li {
+              width: calc((100% / 2) - 40px);
+              margin: 60px 0 0 40px;
+            }
+          }
+        }
+      }
+      #step02 {
+        .stepFlow {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 40px 0;
+        }
+      }
+      #step03 {
+        .topTxt {
+          margin: 0 0 40px;
+          text-align: center;
+        }
+        .pointTitle {
+          max-width: 420px;
+          margin: 0 auto 30px;
+          padding: 10px;
+          font-size: 30px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 40px;
+          background: #1771ba;
+        }
+        .pointTableHead {
+          font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+            "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+            "メイリオ", "Meiryo", "verdana", sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 2;
+        }
+        .pointTableContainer {
+          font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+            "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+            "メイリオ", "Meiryo", "verdana", sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 2;
+        }
+        @media (min-width: 1025px) {
+          .pointTableHead {
+            color: #ffffff;
+            background: #1771ba;
+            ul {
+              display: flex;
+              li {
+                padding: 20px 30px;
+              }
+              .point {
+                padding: 20px 10px;
+              }
+            }
+          }
+          .pointTablePanel {
+            background: #e9ebee;
+            ul {
+              display: flex;
+              + ul {
+                border-top: 1px solid #ffffff;
+              }
+              li {
+                padding: 20px 30px;
+              }
+              dl {
+                dt {
+                  display: none;
+                }
+                dd {
+                  aside {
+                    margin: 10px 0 0;
+                    font-size: 13px;
+                    font-weight: normal;
+                  }
+                  .box01 {
+                    min-height: 186px;
+                  }
+                  .box02 {
+                    border-top: 1px solid #ffffff;
+                  }
+                }
+              }
+              .point.multi {
+                padding: 0;
+                .box {
+                  padding: 20px 10px;
+                }
+              }
+              .description.multi {
+                padding: 0;
+                .box {
+                  padding: 20px 30px;
+                }
+              }
+            }
+          }
+          .count {
+            order: 2;
+            width: 25%;
+            border-left: 1px solid #ffffff;
+          }
+          .action {
+            order: 1;
+            width: 25%;
+          }
+          .point {
+            order: 3;
+            width: 10%;
+            text-align: center;
+            border-left: 1px solid #ffffff;
+          }
+          .description {
+            order: 4;
+            width: 40%;
+            border-left: 1px solid #ffffff;
+          }
+          .point02 {
+            display: none;
+          }
+          .description02 {
+            display: none;
+          }
+        }
+      }
+      #step04 {
+        .topTxt {
+          margin: 0 0 60px;
+        }
+        .tradeContainer {
+          border-radius: 10px;
+          background: #ffffff;
+        }
+        .tradeTitle {
+          position: relative;
+          top: -35px;
+          max-width: 500px;
+          margin: 0 auto;
+          padding: 10px;
+          font-size: 30px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 40px;
+          background: #1771ba;
+        }
+        .tradePanel {
+          padding: 20px 20px 40px;
+        }
+        .tradeList {
+          max-width: 1000px;
+          margin: 0 auto;
+          ul {
+            li {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+            p {
+              position: relative;
+              padding: 0 0 0 25px;
+            }
+            span {
+              position: absolute;
+              top: 8px;
+              left: 0;
+              font-size: 18px;
+            }
+            em {
+              display: inline-block;
+              font-size: 26px;
+            }
+            .item {
+              text-align: center;
+              img {
+                display: inline-block;
+              }
+            }
+            .item01 {
+              width: 200px;
+              img {
+                width: 120px;
+              }
+            }
+            .item02 {
+              width: 200px;
+            }
+            .item03 {
+              width: 200px;
+              img {
+                width: 140px;
+              }
+            }
+            .item04 {
+              width: 200px;
+              img {
+                width: 120px;
+              }
+            }
+            .item05 {
+              width: 130px;
+            }
+            .item06 {
+              width: 130px;
+            }
+            .item07 {
+              width: 130px;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .tradeList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            ul {
+              width: 48%;
+              margin: -10px 0 0;
+              li {
+                min-height: 160px;
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__faq {
+      .topTxt {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+      .btnFaq {
+        max-width: 400px;
+        margin: 0 auto;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1815 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+  画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+  TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 800px;
+}
+.topMain .topKvPanel .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvPanel .kvBox .kv01 {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv02 {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv03 {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvTtl {
+  position: absolute;
+  left: 5%;
+  bottom: 80px;
+  color: #ffffff;
+  z-index: 1;
+}
+.topMain .topKvPanel .kvTtl h1 {
+  margin: 0 0 20px;
+  font-size: 70px;
+  text-indent: -0.5em;
+}
+.topMain .topKvPanel .kvTtl h1 + p {
+  font-size: 24px;
+  line-height: 1.7;
+}
+.topMain .topKvPanel .kvTtl .kvLink {
+  margin: 100px 0 0;
+}
+.topMain .topKvPanel .kvTtl .kvLink a {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px 15px 20px;
+  font-size: 24px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/btn_link_arrow_white.png) right 15px top 15px no-repeat;
+  background-size: 26px auto;
+}
+.topMain .topKvPanel .kvTtl .kvLink a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 80px;
+  height: 1px;
+  background: #32a44a;
+}
+.topMain .topKvPanel .kvCopy {
+  position: absolute;
+  top: 40%;
+  right: 25px;
+  width: 12px;
+  z-index: 1;
+}
+.topMain .sec01 .secPanel .secBox01 .txtBox {
+  color: #ffffff;
+}
+.topMain .sec01 .secPanel .secBox01 .txtBox h2 {
+  margin: 0 0 20px;
+  font-size: 48px;
+}
+.topMain .sec01 .secPanel .secBox01 .txtBox .kvLink {
+  margin: 70px 0 0;
+}
+.topMain .sec01 .secPanel .secBox01 .txtBox .kvLink a {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px 15px 20px;
+  font-size: 24px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/btn_link_arrow_white.png) right 15px top 15px no-repeat;
+  background-size: 26px auto;
+}
+.topMain .sec01 .secPanel .secBox01 .txtBox .kvLink a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 80px;
+  height: 1px;
+  background: #32a44a;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secPanel {
+    display: flex;
+  }
+  .topMain .sec01 .secPanel > * {
+    width: 50%;
+    padding: 120px 60px 80px;
+  }
+  .topMain .sec01 .secPanel .secBox01 {
+    order: 2;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec01_img_02.png) center no-repeat;
+    background-size: cover;
+  }
+  .topMain .sec01 .secPanel .secBox02 {
+    order: 1;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec01_img_01.png) center no-repeat;
+    background-size: cover;
+  }
+  .topMain .sec01 .secPanel .secBox02 .photo {
+    display: none;
+  }
+}
+.topMain .sec02 {
+  padding: 150px 0;
+}
+.topMain .sec02 .topTxt {
+  margin: 0 0 40px;
+  font-size: 26px;
+  text-align: center;
+}
+.topMain .sec02 .linkContainer .linkPanel {
+  position: relative;
+}
+.topMain .sec02 .linkContainer .linkPanel + .linkPanel {
+  margin: 60px 0 0;
+}
+.topMain .sec02 .linkContainer .linkPanel .linkBox {
+  overflow: hidden;
+}
+.topMain .sec02 .linkContainer .linkPanel .linkBox a {
+  display: block;
+  height: 100%;
+  padding: 60px 50px;
+}
+.topMain .sec02 .linkContainer .linkPanel .linkBox .dl {
+  color: #ffffff;
+}
+.topMain .sec02 .linkContainer .linkPanel .linkBox .dl .dt {
+  min-height: 90px;
+  font-size: 30px;
+}
+.topMain .sec02 .linkContainer .linkPanel .linkBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .linkContainer .linkPanel {
+    display: flex;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox {
+    width: 33.3333333333%;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox + .linkBox {
+    border-left: 1px solid #ffffff;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox .dl {
+    min-height: 270px;
+    transform: translateY(90%);
+    transition: 0.6s;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox .dl .dd {
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox a:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox a:hover::before {
+    opacity: 1 !important;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox a:hover .dl {
+    transform: translateY(0);
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox a:hover .dl .dd {
+    opacity: 1;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox01 a:before {
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_01.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox02 a:before {
+    opacity: 0;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_02.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox03 a:before {
+    opacity: 0;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_03.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox04 a:before {
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_04.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox05 a:before {
+    opacity: 0;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_05.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox06 a:before {
+    opacity: 0;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_06.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox07 a:before {
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_07.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox08 a:before {
+    opacity: 0;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_08.jpg);
+    background-size: cover;
+  }
+  .topMain .sec02 .linkContainer .linkPanel .linkBox09 a:before {
+    opacity: 0;
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec02_bg_09.jpg);
+    background-size: cover;
+  }
+}
+.topMain .sec03 {
+  padding: 0 0 150px;
+}
+.topMain .sec03 .worksListPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec03 .worksListPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec03 .worksListPanel .webgene-blog .webgene-item .photo {
+  margin: 0 0 15px;
+}
+.topMain .sec03 .worksListPanel .webgene-blog .webgene-item .cate {
+  padding: 0 0 0 20px;
+  font-size: 22px;
+  line-height: 1.2;
+  border-left: 4px solid #1a3219;
+}
+.topMain .sec03 .worksListPanel .webgene-blog .webgene-item .ttl {
+  padding: 10px 0 0 20px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .worksListPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -60px;
+  }
+  .topMain .sec03 .worksListPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 60px);
+    margin: 60px 0 0 60px;
+  }
+  .topMain .sec03 .worksListPanel .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+    position: relative;
+    height: 270px;
+  }
+  .topMain .sec03 .worksListPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec04 {
+  padding: 0 0 150px;
+}
+.topMain .sec04 .secPanel .secBox a {
+  display: block;
+}
+.topMain .sec04 .secPanel .secBox .secTtl {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 26px;
+  color: #ffffff;
+  border-left: 1px solid #ffffff;
+  writing-mode: vertical-lr;
+}
+.topMain .sec04 .secPanel .secBox .dl {
+  margin: 60px 0 0;
+  color: #ffffff;
+}
+.topMain .sec04 .secPanel .secBox .dl .dt {
+  margin: 0 0 10px;
+  font-size: 44px;
+}
+.topMain .sec04 .secPanel .secBox .dl .dd {
+  line-height: 2.5;
+}
+.topMain .sec04 .secPanel .secBox01 {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec04_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .secPanel .secBox02 {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/top_sec04_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secPanel {
+    display: flex;
+  }
+  .topMain .sec04 .secPanel > * {
+    width: 50%;
+  }
+  .topMain .sec04 .secPanel > * a {
+    min-height: 500px;
+    padding: 70px 100px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  reason
+///////////////////////////////////////////////////////////*/
+.reasonMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/reason_kv.png) center no-repeat;
+  background-size: cover;
+}
+.reasonMain .sec01 {
+  padding: 80px 0 0;
+  text-align: center;
+}
+.reasonMain .sec01 h2 {
+  margin: 0 0 40px;
+  font-size: 36px;
+}
+.reasonMain .sec01 .txt {
+  margin: 0 0 80px;
+}
+.reasonMain .sec01 .txt p + p {
+  margin: 20px 0 0;
+}
+.reasonMain .sec01 .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.reasonMain .sec01 .slidePanel .slideBox .ul .li {
+  width: 20%;
+  margin: 0 1px;
+}
+.reasonMain .sec02 {
+  padding: 120px 0;
+}
+.reasonMain .sec02 .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.reasonMain .sec02 .secPanel .num {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  font-size: 60px;
+  line-height: 1;
+  z-index: 1;
+  border-radius: 50%;
+  border: 1px solid #c3c3c3;
+}
+.reasonMain .sec02 .secPanel .num::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+  width: 45px;
+  height: 45px;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/reason_sec02_num_line.png) no-repeat;
+  background-size: 100% auto;
+}
+.reasonMain .sec02 .secPanel .secBox {
+  position: relative;
+  margin: -20px 0 0;
+}
+.reasonMain .sec02 .secPanel .secBox .txtBox {
+  position: relative;
+  max-width: 880px;
+  width: 80%;
+  padding: 40px 60px;
+  background: #e4e4e4;
+}
+.reasonMain .sec02 .secPanel .secBox .txtBox .dl {
+  max-width: 600px;
+}
+.reasonMain .sec02 .secPanel .secBox .txtBox .dl .dt {
+  margin: 0 0 30px;
+  font-size: 30px;
+}
+.reasonMain .sec02 .secPanel .secBox .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .reasonMain .sec02 .secPanel01 .secBox .photo,
+.reasonMain .sec02 .secPanel03 .secBox .photo {
+    position: absolute;
+    right: -60px;
+    bottom: 0;
+    width: 48%;
+    z-index: 1;
+  }
+  .reasonMain .sec02 .secPanel01 .secBox .txtBox,
+.reasonMain .sec02 .secPanel03 .secBox .txtBox {
+    padding-left: 0;
+    padding-right: 240px;
+  }
+  .reasonMain .sec02 .secPanel01 .secBox .txtBox::before,
+.reasonMain .sec02 .secPanel03 .secBox .txtBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 60px;
+    height: 100%;
+    background: #e4e4e4;
+  }
+  .reasonMain .sec02 .secPanel02 .numBox,
+.reasonMain .sec02 .secPanel04 .numBox {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .reasonMain .sec02 .secPanel02 .secBox .photo,
+.reasonMain .sec02 .secPanel04 .secBox .photo {
+    position: absolute;
+    left: -60px;
+    bottom: 0;
+    width: 48%;
+    z-index: 1;
+  }
+  .reasonMain .sec02 .secPanel02 .secBox .txtBox,
+.reasonMain .sec02 .secPanel04 .secBox .txtBox {
+    float: right;
+    padding-left: 240px;
+    padding-right: 0;
+  }
+  .reasonMain .sec02 .secPanel02 .secBox .txtBox::before,
+.reasonMain .sec02 .secPanel04 .secBox .txtBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    background: #e4e4e4;
+  }
+  .reasonMain .sec02 .secPanel02 .secBox .txtBox .dl .dt,
+.reasonMain .sec02 .secPanel04 .secBox .txtBox .dl .dt {
+    text-align: right;
+  }
+  .reasonMain .sec02 .secPanel03 .secBox {
+    padding: 0 0 80px;
+  }
+  .reasonMain .sec02 .secPanel03 .secBox .txtBox {
+    min-height: 280px;
+  }
+}
+.reasonMain .sec03 {
+  padding: 120px 0;
+}
+.reasonMain .sec03 .secBox .photoBox p {
+  margin: 10px 0 0;
+  text-align: right;
+}
+@media (min-width: 1025px) {
+  .reasonMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reasonMain .sec03 .secBox .photoBox {
+    order: 2;
+    width: 45%;
+  }
+  .reasonMain .sec03 .secBox .photoBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 355px;
+  }
+  .reasonMain .sec03 .secBox .photoBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .reasonMain .sec03 .secBox .txtBox {
+    order: 1;
+    width: 50%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  business
+///////////////////////////////////////////////////////////*/
+.businessMain .topSection {
+  padding: 80px 0 100px;
+  text-align: center;
+}
+.businessMain .topSection h2 {
+  margin: 0 0 40px;
+  font-size: 36px;
+}
+.businessMain .topSection .linkList {
+  margin: 60px 0 0;
+}
+.businessMain .topSection .linkList .ul {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.businessMain .topSection .linkList .ul .li {
+  padding: 15px 10px;
+  cursor: pointer;
+  border: 1px solid #181817;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/btn_link_arrow_down.png) right 20px center no-repeat;
+  background-size: 8px auto;
+}
+@media (min-width: 1025px) {
+  .businessMain .topSection .linkList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .businessMain .topSection .linkList .ul .li {
+    width: 45%;
+  }
+}
+.businessMain .secPanelList .secPanel {
+  padding: 80px 0 120px;
+  background: #e4e4e4;
+}
+.businessMain .secPanelList .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+.businessMain .secPanelList .topBox .txtBox .dl .dt {
+  margin: 0 0 15px;
+  font-size: 26px;
+}
+.businessMain .secPanelList .topBox + .subSection {
+  margin: 80px 0 0;
+}
+@media (min-width: 1025px) {
+  .businessMain .secPanelList .topBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .businessMain .secPanelList .topBox .photo {
+    width: 52%;
+  }
+  .businessMain .secPanelList .topBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 490px;
+  }
+  .businessMain .secPanelList .topBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .businessMain .secPanelList .topBox .txtBox {
+    width: 43%;
+  }
+  .businessMain .secPanelList .topBox .txtBox .btnMore {
+    margin: 80px 0 0;
+  }
+}
+.businessMain .secPanelList .subSection + .subSection {
+  margin: 100px 0 0;
+}
+.businessMain .secPanelList .subSection > .secTtl {
+  position: relative;
+  margin: 0 0 60px;
+  font-size: 22px;
+  text-align: center;
+}
+.businessMain .secPanelList .subSection > .secTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #181817;
+}
+.businessMain .secPanelList .subSection > .secTtl h3 {
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+  background: #e4e4e4;
+}
+.businessMain .secPanelList .subSection .introBox .photo {
+  margin: 0 0 30px;
+}
+.businessMain .secPanelList .subSection .introBox .dl .dt {
+  padding: 0 0 0 15px;
+  font-size: 22px;
+  line-height: 1.1;
+  border-left: 3px solid #1a3219;
+}
+.businessMain .secPanelList .subSection .introBox .dl .dd {
+  padding: 20px 0 0 18px;
+  line-height: 2;
+}
+.businessMain .secPanelList .subSection .introBox .dl + .dl {
+  margin: 50px 0 0;
+}
+.businessMain .secPanelList .subSection .imgList {
+  margin: 40px 0 0;
+}
+@media (min-width: 1025px) {
+  .businessMain .secPanelList .subSection .imgList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .businessMain .secPanelList .subSection .imgList .ul .li {
+    width: calc(33.3333333333% - 15px);
+  }
+  .businessMain .secPanelList .subSection .imgList .ul .photo {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+  }
+  .businessMain .secPanelList .subSection .imgList .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.businessMain .secPanelList .subSection .captionBoxList .captionBox .caption {
+  padding: 10px;
+  font-size: 22px;
+  text-align: center;
+  background: #ffffff;
+}
+.businessMain .secPanelList .subSection .captionBoxList .captionBox .captionTxt {
+  padding: 20px;
+  background: #ffffff;
+}
+.businessMain .secPanelList .subSection .captionBoxList .captionBox .captionTxt .dl .dt {
+  margin: 0 0 15px;
+  font-size: 22px;
+  text-align: center;
+}
+.businessMain .secPanelList .subSection .captionBoxList .captionBox .captionTxt .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .businessMain .secPanelList .subSection .introBoxList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -20px;
+  }
+  .businessMain .secPanelList .subSection .introBoxList .introBox {
+    width: calc(33.3333333333% - 20px);
+    margin: 60px 0 0 20px;
+  }
+  .businessMain .secPanelList .subSection .introBoxList .introBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+  }
+  .businessMain .secPanelList .subSection .introBoxList .introBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .businessMain .secPanelList .subSection .introBoxList.introBoxListCol2 .introBox {
+    width: calc(50% - 20px);
+  }
+  .businessMain .secPanelList .subSection .captionBoxList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -30px;
+  }
+  .businessMain .secPanelList .subSection .captionBoxList .captionBox {
+    width: calc(33.3333333333% - 30px);
+    margin: 40px 0 0 30px;
+  }
+  .businessMain .secPanelList .subSection .captionBoxList .captionBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+  }
+  .businessMain .secPanelList .subSection .captionBoxList .captionBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.businessMain .secCase {
+  padding: 150px 0;
+}
+.businessMain .secCase .ttlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.businessMain .secCase .ttlBox h2 {
+  margin: 0 0 30px;
+  font-size: 36px;
+}
+.businessMain .secCase .worksListPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.businessMain .secCase .worksListPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.businessMain .secCase .worksListPanel .webgene-blog .webgene-item .photo {
+  margin: 0 0 15px;
+}
+.businessMain .secCase .worksListPanel .webgene-blog .webgene-item .cate {
+  padding: 0 0 0 20px;
+  font-size: 22px;
+  line-height: 1.2;
+  border-left: 4px solid #1a3219;
+}
+.businessMain .secCase .worksListPanel .webgene-blog .webgene-item .ttl {
+  padding: 10px 0 0 20px;
+}
+@media (min-width: 1025px) {
+  .businessMain .secCase .worksListPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -60px;
+  }
+  .businessMain .secCase .worksListPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 60px);
+    margin: 60px 0 0 60px;
+  }
+  .businessMain .secCase .worksListPanel .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+    position: relative;
+    height: 270px;
+  }
+  .businessMain .secCase .worksListPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.businessMain .secCase .btnMore {
+  margin: 60px auto 150px;
+}
+.businessMain .linkListPanel .ul .li a {
+  display: block;
+  text-align: center;
+}
+.businessMain .linkListPanel .ul .li a div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+}
+.businessMain .linkListPanel .ul .li a div p {
+  position: relative;
+  font-size: 26px;
+  color: #ffffff;
+  z-index: 1;
+}
+.businessMain .linkListPanel .ul .li a div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .businessMain .linkListPanel .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0 0 -10px;
+  }
+  .businessMain .linkListPanel .ul .li {
+    width: calc(25% - 10px);
+    margin: 10px 0 0 10px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  building
+///////////////////////////////////////////////////////////*/
+.buildingMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/building_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  demolition
+///////////////////////////////////////////////////////////*/
+.demolitionMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/demolition_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  interior
+///////////////////////////////////////////////////////////*/
+.interiorMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/interior_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  painting
+///////////////////////////////////////////////////////////*/
+.paintingMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/painting_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  plasterer
+///////////////////////////////////////////////////////////*/
+.plastererMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/plasterer_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  glass
+///////////////////////////////////////////////////////////*/
+.glassMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/glass_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  roof
+///////////////////////////////////////////////////////////*/
+.roofMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/roof_kv.png) center no-repeat;
+  background-size: cover;
+}
+.roofMain .topSection .linkList .ul {
+  max-width: 700px;
+}
+@media (min-width: 1025px) {
+  .roofMain .topSection .linkList .ul .li {
+    width: 42%;
+  }
+  .roofMain .topSection .linkList .ul .li + .li {
+    width: 52%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  fittings
+///////////////////////////////////////////////////////////*/
+.fittingsMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/fittings_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  plate
+///////////////////////////////////////////////////////////*/
+.plateMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/plate_kv.png) center no-repeat;
+  background-size: cover;
+}
+
+/*////////////////////////////////////////////////////////////
+  recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/recruit_kv.png) center no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec01 {
+  padding: 60px 0 200px;
+}
+.recruitMain .sec01 .secBox {
+  margin: 0 0 60px;
+}
+.recruitMain .sec01 .secBox .txtBox {
+  padding: 60px 0;
+}
+.recruitMain .sec01 .secBox .txtBox p {
+  font-size: 30px;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .recruitMain .sec01 .secBox .photo {
+    order: 2;
+    width: 30%;
+  }
+  .recruitMain .sec01 .secBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 385px;
+  }
+  .recruitMain .sec01 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .recruitMain .sec01 .secBox .txtBox {
+    order: 1;
+    width: 50%;
+  }
+}
+.recruitMain .sec01 .messageBox .txt {
+  margin: 0 0 40px;
+}
+.recruitMain .sec01 .messageBox .txt p + p {
+  margin: 20px 0 0;
+}
+.recruitMain .sec01 .messageBox .name {
+  text-align: right;
+}
+.recruitMain .sec02 {
+  padding: 80px 0 100px;
+  background: #e4e4e4;
+}
+.recruitMain .sec02 .secPanel .secBox .txtBox .txt {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .recruitMain .sec02 .secPanel .secBox .photo {
+    width: 43%;
+  }
+  .recruitMain .sec02 .secPanel .secBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 380px;
+  }
+  .recruitMain .sec02 .secPanel .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .recruitMain .sec02 .secPanel .secBox .txtBox {
+    width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .secPanel01 .secBox .photo {
+    order: 2;
+  }
+  .recruitMain .sec02 .secPanel01 .secBox .txtBox {
+    order: 1;
+  }
+}
+.recruitMain .sec02 .txtPanel {
+  margin: 60px 0;
+}
+.recruitMain .sec03 {
+  padding: 80px 0 100px;
+}
+.recruitMain .sec03 .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.recruitMain .sec03 .secPanel .secBox .txtBox .dl .dt {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+.recruitMain .sec03 .secPanel .secBox .txtBox .dl .dd .txt {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .recruitMain .sec03 .secPanel .secBox .photo {
+    width: 43%;
+  }
+  .recruitMain .sec03 .secPanel .secBox .photo {
+    overflow: hidden;
+    position: relative;
+    height: 385px;
+  }
+  .recruitMain .sec03 .secPanel .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .recruitMain .sec03 .secPanel .secBox .txtBox {
+    width: 52%;
+  }
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .secPanel:nth-child(even) .secBox .photo {
+    order: 2;
+  }
+  .recruitMain .sec03 .secPanel:nth-child(even) .secBox .txtBox {
+    order: 1;
+  }
+}
+.recruitMain .sec04 {
+  padding: 80px 0 100px;
+}
+.recruitMain .sec04 .infoBox .dl {
+  display: flex;
+}
+.recruitMain .sec04 .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.recruitMain .sec04 .infoBox .dl .dt {
+  width: 250px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #32a44a;
+}
+.recruitMain .sec04 .infoBox .dl .dd {
+  width: calc(100% - 250px);
+  padding: 15px 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.recruitMain .sec05 {
+  padding: 80px 0 100px;
+}
+.recruitMain .sec05 .topTxt {
+  margin: 0 0 40px;
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+  company
+///////////////////////////////////////////////////////////*/
+.companyMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/company_kv.png) center no-repeat;
+  background-size: cover;
+}
+.companyMain .sec01 {
+  padding: 120px 0 150px;
+}
+.companyMain .sec01 .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.companyMain .sec01 .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.companyMain .sec01 .infoBox .dl .dt {
+  width: 250px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #32a44a;
+}
+.companyMain .sec01 .infoBox .dl .dd {
+  width: calc(100% - 250px);
+  padding: 15px 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.companyMain .sec01 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.companyMain .sec01 .mapPanel {
+  margin: 120px 0;
+}
+.companyMain .sec01 .accessPanel .secTtl {
+  position: relative;
+  margin: 0 0 60px;
+  font-size: 22px;
+  text-align: center;
+}
+.companyMain .sec01 .accessPanel .secTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #181817;
+}
+.companyMain .sec01 .accessPanel .secTtl h3 {
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+  background: #ffffff;
+}
+.companyMain .sec01 .accessPanel .accessBox + .accessBox {
+  margin: 30px 0 0;
+}
+.companyMain .sec01 .accessPanel .accessBox .txtBox {
+  padding: 50px 0 0;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .accessPanel .accessBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .companyMain .sec01 .accessPanel .accessBox .photo {
+    width: 50%;
+  }
+  .companyMain .sec01 .accessPanel .accessBox .txtBox {
+    width: 45%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+  contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/contact_kv.png) center no-repeat;
+  background-size: cover;
+}
+.contactMain .sec01 {
+  padding: 80px 0 100px;
+}
+.contactMain .sec01 .topTxt {
+  margin: 0 0 40px;
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 12px 10px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 16px;
+  color: #6b6b6b;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #181817;
+  background: #ffffff;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit]:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -30px;
+  width: 65px;
+  height: 8px;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/btn_link_arrow_black.png) no-repeat;
+  background-size: 100% auto;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm button:hover {
+    opacity: 0.6;
+  }
+}
+.formMain .contactForm .form .checkList .ul .li {
+  display: inline-block;
+  margin: 20px 20px 0 0;
+}
+.formMain .contactForm .form .checkList02 {
+  margin: 20px 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0 20px;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #32a44a;
+  border-right: 3px solid #32a44a;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList {
+  padding: 5px 0;
+}
+.formMain .contactForm .form .radioList .list + .list {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .radioList + input {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .form .radioList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formMain .contactForm .form .radioList .list + .list {
+    margin: 0 0 0 30px;
+  }
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
+  background: #fcfcfc;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #32a44a;
+}
+.formMain .contactForm .form .postal input {
+  width: 90px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .ageInput input {
+  width: 100px;
+}
+.formMain .contactForm .form .ageInput .ageTxt {
+  display: inline-block;
+  margin: 5px 0 0;
+  line-height: 2;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  letter-spacing: 0.1em;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 340px;
+  padding: 15px 10px 10px;
+  border-bottom: 1px solid #32a44a;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #32a44a;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 360px);
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+  width: 60px;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid #c4dcc9;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .aside {
+  padding: 10px 0;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox + .fileBox {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 40%;
+  font-size: 16px;
+  color: #404142;
+  text-align: center;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 40px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p {
+  width: 58%;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 120px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	works
+///////////////////////////////////////////////////////////*/
+.worksMain .pageKvPanel {
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/works_kv.png) center no-repeat;
+  background-size: cover;
+}
+.worksMain .postMain {
+  padding: 40px 0 120px;
+}
+.worksMain .postMain .catePanel {
+  margin: 0 0 80px;
+  padding: 60px 0;
+  background: #e4e4e4;
+}
+.worksMain .postMain .catePanel .webgene-blog {
+  max-width: 600px;
+  margin: -20px 0 0;
+}
+.worksMain .postMain .catePanel .webgene-blog .webgene-header h2 {
+  display: none;
+}
+.worksMain .postMain .catePanel .webgene-blog .webgene-item {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0 0;
+}
+.worksMain .postMain .catePanel .webgene-blog .webgene-item a {
+  display: inline-block;
+  text-decoration: underline;
+}
+.worksMain .postMain .catePanel .webgene-blog .webgene-item:nth-child(3)::before, .worksMain .postMain .catePanel .webgene-blog .webgene-item:nth-child(4)::before, .worksMain .postMain .catePanel .webgene-blog .webgene-item:nth-child(6)::before, .worksMain .postMain .catePanel .webgene-blog .webgene-item:nth-child(7)::before, .worksMain .postMain .catePanel .webgene-blog .webgene-item:nth-child(9)::before, .worksMain .postMain .catePanel .webgene-blog .webgene-item:nth-child(10)::before {
+  content: "/";
+  display: inline-block;
+  margin: 0 5px;
+}
+.worksMain .postMain .listPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.worksMain .postMain .listPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.worksMain .postMain .listPanel .webgene-blog .webgene-item .photo {
+  margin: 0 0 15px;
+}
+.worksMain .postMain .listPanel .webgene-blog .webgene-item .cate {
+  padding: 0 0 0 20px;
+  font-size: 22px;
+  line-height: 1.2;
+  border-left: 4px solid #1a3219;
+}
+.worksMain .postMain .listPanel .webgene-blog .webgene-item .ttl {
+  padding: 10px 0 0 20px;
+}
+@media (min-width: 1025px) {
+  .worksMain .postMain .listPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -60px;
+  }
+  .worksMain .postMain .listPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 60px);
+    margin: 60px 0 0 60px;
+  }
+  .worksMain .postMain .listPanel .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+    position: relative;
+    height: 270px;
+  }
+  .worksMain .postMain .listPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.worksMain .postMain .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.worksMain .postMain .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.worksMain .postMain .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.worksMain .postMain .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  background: #cdcdcd;
+}
+.worksMain .postMain .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.worksMain .postMain .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.worksMain .postMain .webgene-pagination ul .selected a {
+  background: #00974a;
+}
+@media (min-width: 1025px) {
+  .worksMain .postMain .webgene-pagination ul li {
+    margin: 0 2px;
+  }
+  .worksMain .postMain .webgene-pagination ul .prev {
+    float: left;
+  }
+  .worksMain .postMain .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.worksMain .postDetail .webgene-header {
+  display: none;
+}
+.worksMain .postDetail .webgene-item-info {
+  margin: 0 0 30px;
+  padding: 0 0 5px;
+}
+.worksMain .postDetail .infoBox {
+  margin: 0 0 10px;
+}
+.worksMain .postDetail .infoBox .cate {
+  padding: 0 0 0 20px;
+  font-size: 22px;
+  line-height: 1.2;
+  border-left: 4px solid #1a3219;
+}
+.worksMain .postDetail .title {
+  padding: 0 0 0 20px;
+}
+.worksMain .postDetail .slickSlide {
+  position: relative;
+  margin: 0 0 60px;
+}
+.worksMain .postDetail .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 70%;
+}
+.worksMain .postDetail .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.worksMain .postDetail .slick-list {
+  margin: 0 0 10px;
+}
+.worksMain .postDetail .thumb-item {
+  margin: 0 0 20px;
+}
+.worksMain .postDetail .slick-slide {
+  margin: 0 5px;
+}
+.worksMain .postDetail .postBox .photo {
+  margin-bottom: 20px;
+}
+.worksMain .postDetail .postBox .postTxt {
+  line-height: 2;
+}
+.worksMain .postDetail .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.worksMain .postDetail .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+@media (min-width: 1025px) {
+  .worksMain .postDetail .thumb-item {
+    max-width: 800px;
+  }
+  .worksMain .postDetail .slideNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+  }
+  .worksMain .postDetail .slideNav .li {
+    margin: 2px 0;
+  }
+}
+.worksMain .btnBack {
+  width: 280px;
+  margin: 120px auto 0;
+}
+.worksMain .btnBack a {
+  position: relative;
+  display: block;
+  padding: 13px 10px;
+  max-width: 280px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #181817;
+  background: #ffffff;
+}
+.worksMain .btnBack a:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -30px;
+  width: 66px;
+  height: 9px;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/btn_link_arrow_back.png) no-repeat;
+  background-size: 100% auto;
+}
+.worksMain .pdfArea {
+  margin: 40px 0 0;
+}
+.worksMain .pdfArea a {
+  font-weight: bold;
+  color: #2151a3;
+}

@@ -1,0 +1,68 @@
+// ▽メイン▽
+main#contact
+    .pageKvPanel
+        .pageKvTitle
+            h1 お問い合わせ
+    .sectionContainer
+        .secWrap01
+            .topTxt
+                p ビーブリッジファクターに関するお問い合わせは、電話・LINE・メールにて承っております。<br>まずはお気軽にお問い合わせください。
+            .section
+                h2
+                    em お電話
+                    span でのお問い合わせ
+                .telBox
+                    a(href="tel:0527461234")
+                        span Tel.
+                        em 052-746-1234
+                    p 営業時間 9：00 ～ 19：00　年中無休
+            .section
+                h2
+                    em LINE
+                    span でのお問い合わせ
+                .lineBox
+                    a(href="https://lin.ee/jEFpQMq", target="_blank", rel="noopener")
+                        .qr
+                            img(src=(root_path || '') + "image/common/line_qr.png", alt="")
+                        dl
+                            dt ビデオ通話もOK♪<br>お手軽LINEでお問合せ！
+                            dd ビーブリッジファクター<br>公式LINE
+            .section
+                h2
+                    em メール
+                    span でのお問い合わせ
+                .formBox
+                    form
+                        dl.msg
+                            dt
+                                | お問い合わせ内容
+                                em ※
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name="content"><textarea name="content" cols="60" rows="7" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder="お問い合わせ内容※"></textarea></span>
+                        dl
+                            dt
+                                | 会社名/ 個人の方は氏名
+                                em ※
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name=""><input type="text" name=" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required length-l text" aria-required="true" aria-invalid="false" placeholder="会社名/ 個人の方は氏名※"></span>
+                        dl
+                            dt
+                                | メールアドレス
+                                em ※
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name="email"><input type="email" name="email" value="" size="60" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email length-l text" aria-required="true" aria-invalid="false" placeholder="メールアドレス※"></span>
+                        dl
+                            dt
+                                | 電話番号
+                            dd
+                                .inputBox
+                                    <span class="wpcf7-form-control-wrap" data-name="tel"><input type="text" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text length-m text" aria-invalid="false" placeholder="電話番号"></span>
+                        .checkItem.agreeCheck
+                            label
+                                input(type="checkbox")
+                                span 個人情報の取り扱いについて同意する
+                        <input type="submit" value="送信する" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+// △メイン△

@@ -1,0 +1,1722 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKv {
+        height: 580px;
+      }
+      .kvContents {
+        padding: 0 0 40px;
+      }
+      .kvTitle {
+        max-width: 380px;
+        width: 90%;
+        padding: 20px 20px 20px 20px;
+        p {
+          font-size: 26px;
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+    .topSection {
+      margin: -0;
+      padding: 30px 0 60px;
+      .beauterTop {
+        .title {
+          max-width: 440px;
+          margin: 0 auto 30px;
+        }
+        .listBox {
+          max-width: 280px;
+          margin: 0 auto 30px;
+          .ul {
+            .li {
+              font-size: 12px;
+              + .li {
+                margin: 20px 0 0;
+              }
+            }
+            .dl {
+              height: 280px;
+              .dt {
+                .span {
+                  font-size: 20px;
+                }
+                .em {
+                  font-size: 30px;
+                }
+              }
+              .dd {
+                padding: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .troubleSection {
+      margin: 0 0 80px;
+      .troublePanel {
+        padding: 60px 20px 0;
+        .title {
+          font-size: 24px;
+        }
+        .secBox {
+          display: block;
+          max-width: 600px;
+          .txtBox {
+            width: 100%;
+            font-size: 16px;
+            .ul {
+              .li {
+                padding: 0 0 0 25px;
+                background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/top_trouble_check.png)
+                  left center no-repeat;
+                background-size: 20px auto;
+              }
+            }
+          }
+          .photo {
+            width: 70%;
+            max-width: 300px;
+            margin: 30px auto 0;
+          }
+        }
+      }
+    }
+    .section {
+      padding: 0 0 100px;
+    }
+    .secSystem {
+      .titleBalloon {
+        max-width: 600px;
+        margin: -50px auto 30px;
+      }
+      .chart {
+        max-width: 800px;
+        margin: 0 auto 30px;
+      }
+    }
+    .secProducts {
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .itemPanel {
+        .ul {
+          .li + .li {
+            margin: 20px 0 0;
+          }
+          a {
+            padding: 10px;
+          }
+          .dl {
+            margin: 15px 0 0;
+            .dt {
+              margin: 0 0 15px;
+              > * {
+                padding: 0 0 0 20px;
+                font-size: 16px;
+                background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/top_icon_arrow_pink.png)
+                  left center no-repeat;
+                background-size: 15px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .secPurchase {
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .listBox {
+        .ul {
+          .li + .li {
+            margin: 20px 0 0;
+          }
+          .photoBox {
+            .linkTxt {
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .secAbout {
+      .listBox {
+        .ul {
+          .li + .li {
+            margin: 20px 0 0;
+          }
+          .photoBox {
+            .linkTxt {
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .secNews {
+      .webgene-blog {
+        padding: 20px 0 40px;
+        .webgene-item {
+          + .webgene-item {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .secMission {
+      .secContainer {
+        padding: 180px 0 240px;
+        background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/top_mission_img_01.png)
+            right top no-repeat,
+          url(https://saidai230919.smooooth.jp/system_panel/uploads/images/top_mission_img_02.png)
+            left bottom no-repeat;
+        background-size: 200px auto, 200px auto;
+      }
+      .txt {
+        margin: 0 0 30px;
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain {
+    .topSection {
+      .secPanel {
+        padding: 60px 0 100px;
+      }
+      .secTtl {
+        max-width: 300px;
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+      .txt {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    .section {
+      padding: 0 0 80px;
+      .secTtl {
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+    }
+    .secSystem {
+      .chart {
+        margin: -50px auto 0;
+      }
+    }
+    .secMovie {
+      .secTtl {
+        max-width: 300px;
+      }
+      .videoBox {
+        max-width: 600px;
+      }
+    }
+    .secMerit {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .secPanel {
+        padding: 10px;
+        + .secPanel {
+          margin: 20px 0 0;
+        }
+        .photo {
+          max-width: 540px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          .ttlBox {
+            margin: 0 0 15px;
+            .ttl01 {
+              margin: 0 0 10px;
+            }
+            .ttl02 {
+              display: block;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .productMain {
+    .topSection {
+      .secPanel {
+        padding: 60px 0 80px;
+      }
+      .secTtl {
+        margin: 0 auto 30px;
+        font-size: 18px;
+      }
+      .topTxt {
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            font-size: 18px;
+          }
+          .txt {
+            p + p {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .contactContainer {
+      margin: 0 0 80px;
+      padding: 40px 0;
+      .contactItem {
+        max-width: 400px;
+        margin: 0 auto;
+        .telBox {
+          a {
+            min-height: 0;
+            padding: 10px;
+            .em {
+              display: inline-block;
+              padding: 0 0 0 35px;
+              font-size: 30px;
+              font-weight: bold;
+              background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+                left center no-repeat;
+              background-size: 30px auto;
+            }
+            .span {
+              font-size: 12px;
+            }
+          }
+        }
+        .mailBox {
+          margin: 20px 0 0;
+          a {
+            min-height: 0;
+            padding: 10px;
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .section {
+      padding: 0 0 80px;
+      .secTtl {
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+    }
+    .secAbility {
+      .secTtl {
+        max-width: 400px;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+        }
+      }
+      .secPanel {
+        padding: 10px;
+        .txtBox {
+          padding: 20px 0 0;
+          .ttl {
+            font-size: 18px;
+          }
+          .ul {
+            .li {
+              p {
+                font-size: 18px;
+              }
+              .span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .detailPanel {
+        padding: 40px 0;
+        .ttl {
+          margin: 0 0 20px;
+        }
+        .ul {
+          .li + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .chartTtl {
+        margin: 0 0 15px;
+        font-size: 18px;
+      }
+      .chart {
+        margin: 0 0 40px;
+        + .btnMore {
+          max-width: 320px;
+        }
+      }
+    }
+    .secMaintenance {
+      .secTtl {
+        max-width: 350px;
+      }
+      .introPanel {
+        padding: 40px 0;
+        .secBox {
+          .txtBox {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 0 20px;
+            .icon {
+              max-width: 150px;
+              margin: 0 0 20px;
+            }
+            .cntBox {
+              .ttl01 {
+                max-width: 250px;
+                font-size: 18px;
+              }
+              .ttl02 {
+                font-size: 20px;
+              }
+            }
+          }
+          .photo {
+            max-width: 350px;
+            margin: 0 auto;
+          }
+        }
+      }
+      .flowPanel {
+        padding: 60px 0 40px;
+        .ttl {
+          margin: 0 0 30px;
+          font-size: 18px;
+        }
+        .flowList {
+          max-width: 350px;
+          margin: 0 auto;
+          .ul {
+            .li {
+              position: relative;
+              + .li {
+                margin: 40px 0 0;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: -30px;
+                  left: 0;
+                  right: 0;
+                  width: 20px;
+                  height: 18px;
+                  margin: 0 auto;
+                  background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/product_maintenance_flow_arrow_02.png)
+                    no-repeat;
+                  background-size: 100% auto;
+                }
+              }
+            }
+          }
+        }
+        .btnMore {
+          margin: 40px auto 0;
+        }
+      }
+    }
+    .secSpecification {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+        }
+      }
+      .productTable {
+        + .productTable {
+          margin: 30px 0 0;
+        }
+        .dl {
+          .dt {
+            padding: 10px;
+            text-align: center;
+            background: #eef8ff;
+          }
+          .dd {
+            .col {
+              padding: 10px;
+              text-align: center;
+            }
+            .beauterItem01 {
+              width: 100px;
+            }
+            .beauterItem02 {
+              width: 60px;
+            }
+            .multi {
+              .ul {
+                display: flex;
+                .li {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  width: 50%;
+                  padding: 10px;
+                  text-align: center;
+                  + .li {
+                    border-left: 1px solid #e1e1e1;
+                  }
+                }
+              }
+            }
+            .single {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	beauter
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .beauterMain {
+    .topSection {
+      .secTtl {
+        max-width: 400px;
+      }
+      .beauterTop {
+        .bnr {
+          max-width: 500px;
+          margin: 30px auto 60px;
+        }
+        .title {
+          max-width: 440px;
+          margin: 0 auto 30px;
+        }
+      }
+    }
+    .secPrice {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .itemPanel {
+        padding: 10px;
+        + .itemPanel {
+          margin: 25px 0 0;
+        }
+        .photoBox {
+          max-width: 250px;
+          margin: 0 auto 20px;
+          > p {
+            margin: 10px 0 0;
+          }
+        }
+        .txtBox {
+          .panelTtl {
+            font-size: 16px;
+          }
+          .price01 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            p {
+              padding: 0 10px;
+            }
+          }
+          .price02 {
+            text-align: center;
+            .dl {
+              display: block;
+
+              .dt {
+                margin: 0 0 10px;
+              }
+              .dd {
+                p {
+                  font-size: 18px;
+                }
+                .em {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .txt {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+    .secVoice {
+      .secTtl {
+        max-width: 300px;
+      }
+      .secPanel {
+        max-width: 400px;
+        .ttl {
+          margin: 0 0 30px;
+          font-size: 18px;
+        }
+        .img01 {
+          margin: 0 auto 30px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	filter
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .filterMain {
+    .topSection {
+      .secTtl {
+        max-width: 400px;
+      }
+    }
+    .secPrice {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .itemPanel {
+        padding: 10px;
+        + .itemPanel {
+          margin: 25px 0 0;
+        }
+        .photoBox {
+          max-width: 250px;
+          margin: 0 auto 20px;
+          > p {
+            margin: 10px 0 0;
+          }
+        }
+        .txtBox {
+          .price01 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            p {
+              padding: 0 10px;
+            }
+          }
+          .price02 {
+            text-align: center;
+            .dl {
+              display: block;
+
+              .dt {
+                margin: 0 0 10px;
+              }
+              .dd {
+                p {
+                  font-size: 18px;
+                }
+                .em {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .txt {
+            margin: 0 0 20px;
+          }
+        }
+      }
+      .itemTitleBox {
+        margin: 0 0 20px;
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .dd {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	v1
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .v1Main {
+    .topSection {
+      .secTtl {
+        max-width: 300px;
+      }
+    }
+    .secPrice {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .itemPanel {
+        padding: 10px;
+        + .itemPanel {
+          margin: 25px 0 0;
+        }
+        .photoBox {
+          max-width: 250px;
+          margin: 0 auto 20px;
+          > p {
+            margin: 10px 0 0;
+          }
+        }
+        .txtBox {
+          .panelTtl {
+            font-size: 16px;
+          }
+          .price01 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            p {
+              padding: 0 10px;
+            }
+          }
+          .price02 {
+            text-align: center;
+            .dl {
+              display: block;
+
+              .dt {
+                margin: 0 0 10px;
+              }
+              .dd {
+                p {
+                  font-size: 18px;
+                }
+                .em {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .txt {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+    .secRemove {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        .dl {
+          text-align: center;
+          .dt {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+          .dd {
+            display: block;
+            .txt {
+              width: 100%;
+            }
+            .chart {
+              width: 280px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    .secReport {
+      .secTtl {
+        max-width: 350px;
+      }
+      .topTxt {
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+          .dd {
+            .txt {
+              p + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .detailPanel {
+        padding: 40px 0;
+        .ttl {
+          margin: 0 0 20px;
+        }
+        .ul {
+          .li + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .secMerit {
+      .secTtl {
+        max-width: 350px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .meritList {
+        max-width: 400px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            padding: 10px;
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	nanobubble
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .nanobubbleMain {
+    .topSection {
+      .secTtl {
+        max-width: 300px;
+      }
+    }
+    .secPrice {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .itemPanel {
+        padding: 10px;
+        + .itemPanel {
+          margin: 25px 0 0;
+        }
+        .photoBox {
+          max-width: 250px;
+          margin: 0 auto 20px;
+          > p {
+            margin: 10px 0 0;
+          }
+        }
+        .txtBox {
+          .panelTtl {
+            font-size: 16px;
+          }
+          .price01 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            p {
+              padding: 0 10px;
+            }
+          }
+          .price02 {
+            text-align: center;
+            .dl {
+              display: block;
+
+              .dt {
+                margin: 0 0 10px;
+              }
+              .dd {
+                p {
+                  font-size: 18px;
+                }
+                .em {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .txt {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+    .secAbout {
+      .secTtl {
+        max-width: 300px;
+      }
+      .topTxt {
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+          .dd {
+            .txt {
+              p + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+        .btnMore {
+          margin: 30px auto 0;
+        }
+      }
+    }
+    .secMerit {
+      .secTtl {
+        max-width: 350px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .secPanel {
+        padding: 10px;
+        + .secPanel {
+          margin: 20px 0 0;
+        }
+        .photo {
+          max-width: 540px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          .ttlBox {
+            margin: 0 0 15px;
+            .ttl01 {
+              margin: 0 0 10px;
+            }
+            .ttl02 {
+              display: block;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	combination
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .combinationMain {
+    .topSection {
+      .secTtl {
+        max-width: 300px;
+      }
+      .photo {
+        max-width: 600px;
+        margin: 40px auto 0;
+      }
+    }
+    .secPrice {
+      .secTtl {
+        max-width: 300px;
+      }
+      .linkListPanel {
+        max-width: 260px;
+        margin: 0 auto 60px;
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+            a {
+              padding: 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .priceSection {
+        + .priceSection {
+          margin: 60px 0 0;
+        }
+        .sectionTitle {
+          max-width: 400px;
+          margin: 0 auto 40px;
+          padding: 2px 10px;
+          font-size: 18px;
+        }
+        .topTxt {
+          margin: 0 0 40px;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .itemPanel {
+        padding: 10px;
+        + .itemPanel {
+          margin: 25px 0 0;
+        }
+        .photoBox {
+          max-width: 250px;
+          margin: 0 auto 20px;
+          > p {
+            margin: 10px 0 0;
+          }
+        }
+        .txtBox {
+          .panelTtl {
+            font-size: 16px;
+          }
+          .price01 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            p {
+              padding: 0 10px;
+            }
+          }
+          .price02 {
+            text-align: center;
+            .dl {
+              display: block;
+
+              .dt {
+                margin: 0 0 10px;
+              }
+              .dd {
+                p {
+                  font-size: 18px;
+                }
+                .em {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .txt {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+    .secMerit {
+      .secTtl {
+        max-width: 350px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .secPanel {
+        padding: 10px;
+        + .secPanel {
+          margin: 20px 0 0;
+        }
+        .photo {
+          max-width: 540px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          .ttlBox {
+            margin: 0 0 15px;
+            .ttl01 {
+              margin: 0 0 10px;
+            }
+            .ttl02 {
+              display: block;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	purchase
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .purchaseMain {
+    .secFlow {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 300px;
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+      .secPanel {
+        padding: 10px;
+        + .secPanel {
+          margin: 20px 0 0;
+        }
+        .photo {
+          max-width: 540px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          .ttlBox {
+            margin: 0 0 15px;
+            .ttl01 {
+              margin: 0 0 10px;
+            }
+            .ttl02 {
+              display: block;
+              font-size: 18px;
+            }
+          }
+          .btnMore {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	warranty
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .warrantyMain {
+    .secWarranty {
+      .secWrap {
+        padding: 60px 10px;
+      }
+      .secTtl {
+        max-width: 300px;
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+        .txt {
+          + .txt {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .secPanel {
+        padding: 10px;
+        + .secPanel {
+          margin: 20px 0 0;
+        }
+        .photo {
+          max-width: 540px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          .ttlBox {
+            margin: 0 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	faq
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .faqMain {
+    .secFaq {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 300px;
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .linkListPanel {
+        max-width: 280px;
+        margin: 0 auto 40px;
+        .ul {
+          .li {
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+      .sectionContainer {
+        .section {
+          + .section {
+            margin: 80px 0 0;
+          }
+          .sectionTitle {
+            margin: 0 0 40px;
+            font-size: 18px;
+          }
+        }
+        .accordPanel {
+          + .accordPanel {
+            margin: 50px 0 0;
+          }
+          .ttlAbout {
+            min-width: 140px;
+            margin: 0 0 20px;
+            padding: 5px 20px;
+          }
+        }
+        .accordBox {
+          + .accordBox {
+            margin: 30px 0 0;
+          }
+          .accordHead {
+            padding: 10px;
+            background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/faq_accord_down.png)
+              right 10px center no-repeat #eaf7fb;
+            background-size: 10px auto;
+            &.active {
+              background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/faq_accord_up.png)
+                right 10px center no-repeat #eaf7fb;
+              background-size: 10px auto;
+            }
+            .icon {
+              width: 30px;
+            }
+            .ttl {
+              width: calc(100% - 40px);
+              padding: 0 15px 0 0;
+              font-size: 16px;
+            }
+          }
+          .accordBody {
+            padding: 10px;
+            .icon {
+              width: 30px;
+            }
+            .txt {
+              width: calc(100% - 40px);
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	safety
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .safetyMain {
+    .section {
+      padding: 0 0 50px;
+      .secTtl {
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+      .txtBox {
+        + .txtBox {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .topSection {
+      .secPanel {
+        padding: 60px 0 30px;
+      }
+      .secTtl {
+        max-width: 300px;
+      }
+    }
+    .sec01 {
+      .secTtl {
+        max-width: 300px;
+      }
+    }
+    .sec02 {
+      .secTtl {
+        max-width: 330px;
+      }
+    }
+    .sec03 {
+      .secTtl {
+        max-width: 300px;
+      }
+    }
+    .sec04 {
+      .secTtl {
+        max-width: 330px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	water
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .waterMain {
+    .section {
+      padding: 0 0 50px;
+      .secTtl {
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+      .txtBox {
+        + .txtBox {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .topSection {
+      .secPanel {
+        padding: 60px 0 30px;
+      }
+      .secTtl {
+        max-width: 300px;
+      }
+    }
+    .sec01 {
+      .secTtl {
+        max-width: 300px;
+      }
+      .listBox {
+        max-width: 400px;
+        margin: 0 auto 40px;
+        .ul {
+          .li {
+            padding: 10px;
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 15px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .ttlBox {
+          margin: 0 0 15px;
+          font-size: 18px;
+        }
+      }
+    }
+    .sec02 {
+      .secTtl {
+        max-width: 330px;
+      }
+      .photoList {
+        padding: 40px 0 20px;
+        .ul {
+          max-width: 400px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .topSection {
+      margin: 0 0 50px;
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .txt {
+            line-height: 2.5;
+          }
+          .name {
+            margin: 15px 0 0;
+            font-size: 16px;
+            .em {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .section {
+      padding: 0 0 50px;
+      .secTtl {
+        margin: 0 auto 30px;
+        font-size: 20px;
+      }
+    }
+    .sec01 {
+      .secTtl {
+        max-width: 250px;
+      }
+      .infoBox {
+        .dl {
+          display: block;
+          + .dl {
+            margin: 30px 0 0;
+          }
+          > * {
+            display: block;
+          }
+          .dt {
+            width: 100%;
+            padding: 15px 10px 0;
+          }
+          .dd {
+            padding: 15px 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .sec02 {
+      .secTtl {
+        max-width: 350px;
+      }
+      .infoBox {
+        .dl {
+          display: block;
+          + .dl {
+            margin: 30px 0 0;
+          }
+          > * {
+            display: block;
+          }
+          .dt {
+            width: 100%;
+            padding: 15px 10px 5px;
+          }
+          .dd {
+            padding: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .secTtl {
+      margin: 0 auto 30px;
+      font-size: 20px;
+    }
+    .topSection {
+      padding: 60px 0 30px;
+      .secTtl {
+        max-width: 250px;
+      }
+    }
+    .contactContainer {
+      margin: 0 0 80px;
+      padding: 40px 0;
+      .title {
+        font-size: 18px;
+      }
+      .contactItem {
+        max-width: 400px;
+        margin: 0 auto;
+        .telBox {
+          a {
+            min-height: 0;
+            padding: 10px;
+            .em {
+              display: inline-block;
+              padding: 0 0 0 35px;
+              font-size: 30px;
+              font-weight: bold;
+              background: url(https://saidai230919.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+                left center no-repeat;
+              background-size: 30px auto;
+            }
+            .span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .formSection {
+      padding: 0 0 80px;
+      .secTtl {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            padding: 10px 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+
+            + .dl {
+              padding: 20px 10px 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            margin: 0 0 5px;
+            padding: 0 0 5px;
+
+            .em {
+              font-size: 12px;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+        .checkList {
+          .ul {
+            .li {
+              width: 100%;
+            }
+          }
+        }
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 70px;
+        }
+
+        .ageInput {
+          display: block;
+          input {
+            width: 70px;
+          }
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+
+      .fileUploadBox {
+        display: block;
+        .fileArea {
+          display: block;
+
+          .inputFile {
+            width: 260px;
+          }
+
+          > p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .complete {
+    padding: 80px 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain {
+    .blogSection {
+      padding: 80px 0;
+    }
+    .catePanel {
+      max-width: 300px;
+      margin: 0 auto 40px;
+      .webgene-blog {
+        .webgene-header {
+          font-size: 16px;
+          margin: 0 auto 10px;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .info {
+            display: block;
+            margin: 0 0 10px;
+            .cate {
+              margin: 0 0 5px;
+            }
+            .time {
+              text-align: right;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBackBox {
+      margin: 50px 0 0;
+      text-align: center;
+    }
+  }
+}

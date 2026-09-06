@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 20px;
+    background: #ffffff;
+    .logo {
+      width: 80px;
+    }
+    .hamburger {
+      top: 20px;
+      right: 10px;
+    }
+    .sideBnrLine {
+      position: fixed;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    display: none;
+  }
+  .subNavigationContainer {
+    &__wrap {
+      overflow: auto;
+    }
+    &__panel {
+      padding: 100px 0 60px;
+    }
+    .subNavigation {
+      padding: 0 20px 50px;
+      .ul {
+        display: block;
+        max-width: 300px;
+        .li {
+          width: 100%;
+          + .li {
+            margin: 10px 0 0;
+          }
+          a {
+            writing-mode: initial;
+          }
+          .span {
+            font-size: 10px;
+          }
+          .em {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    &__bottom {
+      display: block;
+      font-size: 13px;
+      text-align: center;
+      .infoBox {
+        width: 100%;
+        margin: 0 0 20px;
+        .dl {
+          .dt {
+            margin: 0 0 5px;
+            .em {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .itemBox {
+        display: block;
+        width: 100%;
+        .bnr {
+          width: 250px;
+          margin: 0 auto 20px;
+        }
+        .ul {
+          // display: block;
+          width: 100%;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 0 0 0 5px;
+            }
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: 76px 0 0;
+  }
+  .pageKvContainer {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 90%;
+      height: 68%;
+      z-index: -1;
+      background: #eeeddf;
+    }
+    .pageKvPanel {
+      > * {
+        height: 400px;
+      }
+      .pageKvTitleBox {
+        width: 100px;
+        padding: 60px 0 0;
+        .pageKvTitle {
+          h1 {
+            font-size: 24px;
+          }
+        }
+      }
+      .pageKvBox {
+        width: calc(100% - 100px);
+      }
+    }
+    .subTitleArea {
+      padding: 20px 20px 30px;
+      .subTitle {
+        h2 {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+      .subTxt {
+        display: block;
+        width: 85%;
+        margin: 20px 0 0;
+        font-size: 13px;
+      }
+    }
+  }
+  .secTtlBox {
+    margin: 0 0 30px;
+    &:before {
+      bottom: 15px;
+    }
+    h2,
+    h3 {
+      font-size: 20px;
+      padding: 0 20px 0 0;
+    }
+  }
+  .ttlLine {
+    font-size: 20px;
+    > * {
+      padding: 0 20px 0 0;
+      background: #ffffff;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	slider
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .caseSliderPanel,
+  .lineUpSliderPanel {
+    .caseSlider,
+    .lineUpSlider {
+      .slick-slide {
+        // margin: 0 10px;
+        padding: 10px;
+        img {
+          height: 60vw;
+        }
+        .dl {
+          bottom: -80px;
+          width: 90%;
+          padding: 20px 10px;
+          .dt {
+            margin: 0 0 5px;
+            font-size: 20px;
+          }
+        }
+      }
+      .slick-current {
+        transform: translateY(0);
+        img {
+          border: 0;
+        }
+      }
+      .is-active-next {
+        transform: translateY(0);
+        img {
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 60px 0 100px;
+    .logo {
+      width: 80px;
+      margin: 0 0 15px;
+    }
+    .footPanel {
+      margin: 0 0 20px;
+      .leftBox {
+        margin: 0 0 20px;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+        .info01 {
+          margin: 0 0 15px;
+        }
+      }
+      .rightBox {
+        .sns {
+          .ul {
+            .li {
+              width: 100px;
+            }
+          }
+        }
+        .bnr {
+          max-width: 350px;
+          margin: 40px 0 0;
+        }
+      }
+    }
+    .pagetop {
+      right: 20px;
+      bottom: 65px;
+      width: 40px;
+    }
+  }
+}

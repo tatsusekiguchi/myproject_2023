@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #3e3a39;
+  font-size: 16px;
+  background: #ffffff;
+  opacity: 0;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #3e3a39;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.fadein,
+.fadeUp {
+  opacity: 0;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .header .logo {
+    width: 130px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    width: calc(100% - 180px);
+    text-align: right;
+  }
+  .navBox nav ul li {
+    display: inline-block;
+  }
+  .navBox nav ul li + li {
+    margin: 0 0 0 5%;
+  }
+  .navBox nav ul a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 105px 0 0;
+}
+
+.pageKvPanel {
+  padding: 100px 20px 50px;
+}
+.pageKvPanel .pageKvTitle {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.pageKvPanel .pageKvTitle h1 {
+  font-size: 50px;
+}
+.pageKvPanel .pageKvTitle p {
+  font-size: 30px;
+}
+.pageKvPanel .pageKvTitle span {
+  background: linear-gradient(90deg, #29beff, #0589e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionTitle {
+  margin: 0 0 40px;
+}
+.sectionTitle h2 {
+  font-size: 45px;
+}
+.sectionTitle p {
+  position: relative;
+  padding: 0 0 0 70px;
+  font-size: 20px;
+  color: #b2bec5;
+}
+.sectionTitle p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 1px;
+  margin: auto 0;
+  background: #b2bec5;
+}
+.sectionTitle .titleBox {
+  display: inline-block;
+  min-width: 200px;
+}
+.sectionTitle.center {
+  text-align: center;
+}
+.sectionTitle.center p {
+  text-align: left;
+}
+.sectionTitle.white h2 {
+  color: #ffffff;
+}
+.sectionTitle.white p {
+  color: #aacde5;
+}
+
+.secWrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 280px;
+}
+.btnMore a {
+  display: block;
+  padding: 18px 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #098fe9;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footerRecruit {
+  padding: 140px 0;
+  background: url("../image/common/footer_recruit_bg.png") center no-repeat;
+  background-size: cover;
+}
+.footer .footerRecruit .secTtl {
+  margin: 0 0 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .footerRecruit .secTtl h2 {
+  font-size: 45px;
+}
+.footer .footerRecruit ul {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.footer .footerRecruit ul li a {
+  position: relative;
+  display: block;
+  padding: 15px 10px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .footerRecruit ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transform: skew(-30deg);
+}
+.footer .footerRecruit ul li a span {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0 4px 50px;
+}
+.footer .footerRecruit ul li:nth-child(1) a::before {
+  background: #29c0ff;
+}
+.footer .footerRecruit ul li:nth-child(1) a span {
+  background: url("../image/common/footer_recruit_icon_01.png") left center no-repeat;
+  background-size: 40px auto;
+}
+.footer .footerRecruit ul li:nth-child(2) a::before {
+  background: #098fe9;
+}
+.footer .footerRecruit ul li:nth-child(2) a span {
+  background: url("../image/common/footer_recruit_icon_02.png") left center no-repeat;
+  background-size: 40px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footerRecruit ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footerRecruit ul li {
+    width: 44%;
+  }
+}
+.footer .footPanel {
+  padding: 80px 0 20px;
+  text-align: center;
+}
+.footer .footPanel .footNav {
+  margin: 0 0 100px;
+}
+.footer .footPanel .footNav ul li {
+  display: inline-block;
+}
+.footer .footPanel .footNav ul li + li {
+  margin: 0 0 0 5%;
+}
+.footer .footPanel .footNav ul a {
+  display: block;
+}
+.footer .footPanel .logo {
+  max-width: 110px;
+  margin: 0 auto 20px;
+}
+.footer .footPanel .copy {
+  margin: 60px 0 0;
+  line-height: 2.5;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,0 +1,15 @@
+- title = ''
+- description = ''
+- keywords = ''
+- root_path = '../'
+- page_name = 'bar'
+doctype html
+//- サイトの設定の読み込み
+include /site.pug
+html(lang='ja')
+  head
+    include /common/head.pug
+  body#bar.page
+    include /common/header.pug
+    include ../../layouts/bar.pug
+    include /common/footer.pug

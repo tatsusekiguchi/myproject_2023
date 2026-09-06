@@ -1,0 +1,898 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKv .kvBox {
+    top: 55px;
+    height: calc(100% - 55px);
+  }
+  .topMain .topKv .kvTtlBox {
+    position: absolute;
+    top: 38%;
+    left: 20px;
+    width: calc(100% - 50px);
+    max-width: 550px;
+    padding: 30px 10px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .topMain .topKv .kvTtlBox h1 {
+    font-size: 24px;
+  }
+  .topMain .topKv .kvTtlBox h1 em {
+    color: #c39547;
+  }
+  .topMain .secWrap01 {
+    padding: 0 30px;
+  }
+  .topMain .section01 .secBox {
+    padding: 40px 10px;
+  }
+  .topMain .section01 .secBox .ttlBox {
+    margin: 0 0 20px;
+  }
+  .topMain .section01 .secBox .ttlBox .ttl p {
+    font-size: 24px;
+  }
+  .topMain .section01 .secBox .txt {
+    margin: 0 0 15px;
+  }
+  .topMain .section01 .secBox .btnMore {
+    position: static;
+    margin: 20px auto 0;
+  }
+  .topMain .section02 .secWrap,
+.topMain .section03 .secWrap {
+    padding: 0 25px;
+  }
+  .topMain .section02 .secTtl,
+.topMain .section03 .secTtl {
+    top: -80px;
+    left: 10px;
+    font-size: 80px;
+  }
+  .topMain .section02 .mvPanel,
+.topMain .section03 .mvPanel {
+    padding: 30px 10px;
+  }
+  .topMain .section02 .mvPanel .secBox,
+.topMain .section03 .mvPanel .secBox {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .topMain .section02 .mvPanel .secBox .ttlBox,
+.topMain .section03 .mvPanel .secBox .ttlBox {
+    position: relative;
+    right: -20px;
+    max-width: 400px;
+    margin: 0 0 15px;
+    padding: 5px 10px;
+  }
+  .topMain .section02 .mvPanel .secBox .ttlBox .ttl,
+.topMain .section03 .mvPanel .secBox .ttlBox .ttl {
+    font-size: 18px;
+  }
+  .topMain .section02 .mvPanel .secBox .ttlBox .ttl h3,
+.topMain .section03 .mvPanel .secBox .ttlBox .ttl h3 {
+    margin: 0 0 0 5px;
+    padding: 0 0 0 16px;
+  }
+  .topMain .section02 .mvPanel .secBox .txt,
+.topMain .section03 .mvPanel .secBox .txt {
+    text-align: center;
+  }
+  .topMain .section02 .mvPanel .secBox .btnMore,
+.topMain .section03 .mvPanel .secBox .btnMore {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  .topMain .section04 .leftBox {
+    margin: 0 0 30px;
+  }
+  .topMain .section04 .webgene-blog .webgene-item {
+    display: block;
+  }
+  .topMain .section04 .webgene-blog .webgene-item + .webgene-item {
+    margin: 20px 0 0;
+  }
+  .topMain .section04 .webgene-blog .webgene-item .time {
+    width: 100%;
+  }
+  .topMain .section05 .secBox {
+    max-width: 400px;
+    padding: 40px 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .strengthMain .sec01 {
+    padding: 100px 0;
+  }
+  .strengthMain .sec01 .secBox {
+    padding: 40px 10px;
+  }
+  .strengthMain .sec01 .secBox .ttlBox {
+    margin: 0 0 20px;
+  }
+  .strengthMain .sec01 .secBox .ttlBox .ttl p {
+    font-size: 24px;
+  }
+  .strengthMain .sec02 {
+    padding: 100px 0;
+  }
+  .strengthMain .sec02 .secBox + .secBox {
+    margin-top: 80px;
+  }
+  .strengthMain .sec02 .secBox .photo {
+    margin: 0 auto 30px;
+  }
+  .strengthMain .sec02 .secBox .num {
+    width: 90px;
+    margin: 0 auto 20px;
+  }
+  .strengthMain .sec02 .secBox .box h3 {
+    margin: 0 0 20px;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .strengthMain .sec02 .secBox .box h3 br {
+    display: none;
+  }
+  .strengthMain .sec02 .secBox .box .txt p + p {
+    margin: 20px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .transportMain .sec01 {
+    padding: 100px 0;
+  }
+  .transportMain .sec01 .secBox {
+    padding: 40px 10px;
+  }
+  .transportMain .sec01 .secBox .ttlBox {
+    margin: 0 0 20px;
+  }
+  .transportMain .sec01 .secBox .ttlBox .ttl p {
+    font-size: 24px;
+  }
+  .transportMain .sec02 {
+    padding: 100px 0;
+  }
+  .transportMain .sec02 .secBox + .secBox {
+    margin: 60px 0 0;
+  }
+  .transportMain .sec02 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .transportMain .sec02 .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+    padding: 0 0 5px;
+    font-size: 20px;
+  }
+  .transportMain .sec03 {
+    padding: 100px 0;
+  }
+  .transportMain .sec03 .secBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .transportMain .sec03 .secBox .ttl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .transportMain .sec03 .secBox .txt {
+    margin: 0 0 20px;
+  }
+  .transportMain .sec03 .secBox .btnMail {
+    max-width: 300px;
+  }
+  .transportMain .sec03 .secBox .btnMail a > div p {
+    font-size: 18px;
+  }
+  .transportMain .sec03 .secBox .btnMail a > div .em {
+    padding: 0 0 0 20px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .transportMain .sec04 {
+    padding: 100px 0;
+  }
+  .transportMain .sec04 .listBox {
+    margin: 0 0 50px;
+  }
+  .transportMain .sec04 .listBox .ul .li + .li {
+    margin: 50px 0 0;
+  }
+  .transportMain .sec04 .listBox .ul .dl {
+    padding: 15px 0 0;
+  }
+  .transportMain .sec04 .listBox .ul .dl .dt {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .transportMain .sec04 .message {
+    margin: 0 0 50px;
+    font-size: 20px;
+  }
+  .transportMain .sec04 .secBox {
+    padding: 20px 10px 30px;
+  }
+  .transportMain .sec04 .secBox .ttlBox {
+    position: relative;
+    top: 0;
+    max-width: 400px;
+    margin: 0 auto 15px;
+  }
+  .transportMain .sec04 .secBox .ttlBox .ttl {
+    font-size: 20px;
+  }
+  .transportMain .sec04 .secBox .ttlBox .ttl p {
+    padding: 0 0 0 20px;
+  }
+  .transportMain .sec05 {
+    padding: 90px 0;
+  }
+  .transportMain .sec05 .secTtl {
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+  }
+  .transportMain .sec05 .flowPanel + .flowPanel {
+    margin: 50px 0 0;
+  }
+  .transportMain .sec05 .flowPanel + .flowPanel::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    width: 36px;
+    height: 25px;
+  }
+  .transportMain .sec05 .flowPanel .flowTtl {
+    font-size: 18px;
+  }
+  .transportMain .sec05 .flowPanel .flowBox {
+    padding: 30px 10px 40px;
+    background: #ffffff;
+  }
+  .transportMain .sec05 .flowPanel .btnList {
+    margin: 30px 0 0;
+  }
+  .transportMain .sec05 .flowPanel .btnList .btn {
+    display: block;
+    width: 260px;
+    margin: 0 auto;
+  }
+  .transportMain .sec05 .flowPanel .btnList .btn a {
+    height: 40px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .transportMain .sec05 .flowPanel .btnList .btnTel a {
+    font-size: 16px;
+  }
+  .transportMain .sec05 .flowPanel .btnList .btnTel a .em {
+    font-size: 20px;
+  }
+  .transportMain .sec05 .flowPanel .btnList .btnMail {
+    margin: 15px auto 0;
+  }
+  .transportMain .sec05 .flowPanel .btnList .btnMail a {
+    font-size: 16px;
+  }
+  .transportMain .sec05 .flowPanel .btnList .btnMail a p {
+    padding: 0 0 0 20px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_mail.png) left center no-repeat;
+    background-size: 16px auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	warehouse
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .warehouseMain .sec01 {
+    padding: 100px 0;
+  }
+  .warehouseMain .sec01 .secBox {
+    padding: 40px 10px;
+  }
+  .warehouseMain .sec01 .secBox .ttlBox {
+    margin: 0 0 20px;
+  }
+  .warehouseMain .sec01 .secBox .ttlBox .ttl p {
+    font-size: 24px;
+  }
+  .warehouseMain .sec01 .secBox .stopTxt {
+    position: static;
+    max-width: 400px;
+    font-size: 16px;
+  }
+  .warehouseMain .sec02 {
+    padding: 80px 0;
+  }
+  .warehouseMain .sec02 .photoPanel {
+    margin: 0 0 50px;
+  }
+  .warehouseMain .sec02 .photoPanel .mainPhoto {
+    height: 400px;
+  }
+  .warehouseMain .sec02 .photoPanel .photoList .photo {
+    height: 130px;
+  }
+  .warehouseMain .sec02 .secPanel .ttl {
+    font-size: 20px;
+  }
+  .warehouseMain .sec02 .secPanel .secBox {
+    padding: 20px 10px;
+  }
+  .warehouseMain .sec02 .secPanel .secBox .txtBox01 {
+    padding: 20px 10px;
+  }
+  .warehouseMain .sec03 {
+    padding: 90px 0;
+  }
+  .warehouseMain .sec03 .secTtl {
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+  }
+  .warehouseMain .sec03 .flowPanel + .flowPanel {
+    margin: 50px 0 0;
+  }
+  .warehouseMain .sec03 .flowPanel + .flowPanel::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    width: 36px;
+    height: 25px;
+  }
+  .warehouseMain .sec03 .flowPanel .flowTtl {
+    font-size: 18px;
+  }
+  .warehouseMain .sec03 .flowPanel .flowTtl p {
+    font-size: 12px;
+  }
+  .warehouseMain .sec03 .flowPanel .flowBox {
+    padding: 30px 10px 40px;
+    background: #ffffff;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList {
+    margin: 30px 0 0;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList .btn {
+    display: block;
+    width: 260px;
+    margin: 0 auto;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList .btn a {
+    height: 40px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList .btnTel a {
+    font-size: 16px;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList .btnTel a .em {
+    font-size: 20px;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList .btnMail {
+    margin: 15px auto 0;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList .btnMail a {
+    font-size: 16px;
+  }
+  .warehouseMain .sec03 .flowPanel .btnList .btnMail a p {
+    padding: 0 0 0 20px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_mail.png) left center no-repeat;
+    background-size: 16px auto;
+  }
+  .warehouseMain .sec03 .flowPanelMulti {
+    display: block;
+    margin: 50px 0;
+  }
+  .warehouseMain .sec03 .flowPanelMulti .flowPanel {
+    width: 100%;
+    margin: 0;
+  }
+  .warehouseMain .sec03 .flowPanelMulti .flowPanel::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    width: 36px;
+    height: 25px;
+  }
+  .warehouseMain .sec03 .flowPanelMulti .flowPanel + .flowPanel::before {
+    display: none;
+  }
+  .warehouseMain .sec03 .flowPanelMulti + .flowPanel::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    width: 36px;
+    height: 25px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .staffMain .pageKvPanel {
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/staff_kv.png) center no-repeat;
+    background-size: cover;
+  }
+  .staffMain .sec01 {
+    padding: 100px 0;
+  }
+  .staffMain .sec01 .secBox + .secBox {
+    margin-top: 80px;
+  }
+  .staffMain .sec01 .secBox .photo {
+    margin: 0 auto 30px;
+  }
+  .staffMain .sec01 .secBox .num {
+    width: 90px;
+    margin: 0 auto 20px;
+  }
+  .staffMain .sec01 .secBox .box h3 {
+    margin: 0 0 20px;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .staffMain .sec01 .secBox .box h3 br {
+    display: none;
+  }
+  .staffMain .sec01 .secBox .box .txt p + p {
+    margin: 20px 0 0;
+  }
+  .staffMain .sec02 {
+    padding: 90px 0;
+  }
+  .staffMain .sec02 .secTtl {
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+  }
+  .staffMain .sec02 .secPanel {
+    padding: 20px;
+  }
+  .staffMain .sec02 .secPanel + .secPanel {
+    margin: 30px 0 0;
+  }
+  .staffMain .sec02 .secPanel .num {
+    position: static;
+    width: 90px;
+    margin: 20px auto;
+  }
+  .staffMain .sec02 .secPanel .ttl {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .staffMain .sec02 .secPanel .ttl br {
+    display: none;
+  }
+  .staffMain .sec03 {
+    padding: 60px 0;
+  }
+  .staffMain .sec03 .ttl {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    font-size: 18px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/staff_sec02_slash_01.png) left center no-repeat, url(https://haraunyu.co.jp/system_panel/uploads/images/staff_sec02_slash_02.png) right center no-repeat;
+    background-size: 18px auto, 18px auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain .sec01 {
+    padding: 100px 0;
+  }
+  .recruitMain .sec01 .secBox {
+    padding: 40px 10px;
+  }
+  .recruitMain .sec01 .secBox .ttlBox {
+    margin: 0 0 20px;
+  }
+  .recruitMain .sec01 .secBox .ttlBox .ttl p {
+    font-size: 24px;
+  }
+  .recruitMain .sec02 {
+    padding: 100px 0;
+  }
+  .recruitMain .sec02 .listBox {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .recruitMain .sec02 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .recruitMain .sec02 .listBox .ul .dl .dt {
+    padding: 20px 10px;
+    font-size: 24px;
+  }
+  .recruitMain .sec02 .listBox .ul .dl .dt p {
+    padding: 0 0 5px;
+  }
+  .recruitMain .sec02 .listBox .ul .dl .dt p::before {
+    width: 50px;
+  }
+  .recruitMain .sec02 .listBox .ul .dl .dd {
+    padding: 20px;
+  }
+  .recruitMain .sec03 {
+    padding: 60px 0;
+  }
+  .recruitMain .sec03 .ttl {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    font-size: 16px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec03_slash_01.png) left bottom 5px no-repeat, url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec03_slash_02.png) right bottom 5px no-repeat;
+    background-size: 15px auto, 15px auto;
+  }
+  .recruitMain .sec04 {
+    padding: 120px 0;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_bg.png) center no-repeat;
+    background-size: cover;
+  }
+  .recruitMain .sec04 .list {
+    max-width: 400px;
+  }
+  .recruitMain .sec04 .list .ul .li {
+    font-size: 20px;
+  }
+  .recruitMain .sec04 .list .ul .li + .li {
+    margin: 50px 0 0;
+  }
+  .recruitMain .sec04 .list .ul .li + .li::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_arrow_02.png) no-repeat;
+    background-size: 100% auto;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .recruitMain .sec04 .list .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec04 .list .ul .li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(25% - 45px);
+    height: 350px;
+    font-size: 36px;
+    writing-mode: vertical-lr;
+  }
+  .recruitMain .sec04 .list .ul .li + .li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -45px;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_arrow_01.png) no-repeat;
+    background-size: 100% auto;
+  }
+}
+@media (max-width: 1024px) {
+  .recruitMain .sec05 {
+    padding: 100px 0;
+  }
+  .recruitMain .sec05 .infoPanel .dl {
+    display: block;
+    padding: 20px 10px;
+  }
+  .recruitMain .sec05 .infoPanel .dl .dt {
+    width: 100%;
+    margin: 0 0 5px;
+  }
+  .recruitMain .sec05 .infoPanel .dl .dd {
+    width: 100%;
+  }
+  .recruitMain .sec05 .infoPanel .dl .txtBox {
+    display: block;
+  }
+  .recruitMain .sec05 .infoPanel .dl .txtBox + .txtBox {
+    margin: 20px 0 0;
+  }
+  .recruitMain .sec05 .infoPanel .dl .aside {
+    display: block;
+    width: 220px;
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 1024px) {
+  .recruitMain .sec06 {
+    padding: 90px 0;
+  }
+  .recruitMain .sec06 .secTtl {
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .topSection {
+    padding: 60px 0;
+  }
+  .companyMain .topSection .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .companyMain .topSection .secBox .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .companyMain .sec01 {
+    padding: 60px 0;
+  }
+  .companyMain .sec01 .infoPanel .dl {
+    display: block;
+    padding: 20px 10px;
+  }
+  .companyMain .sec01 .infoPanel .dl .dt {
+    width: 100%;
+    margin: 0 0 5px;
+  }
+  .companyMain .sec01 .infoPanel .dl .dd {
+    width: 100%;
+  }
+  .companyMain .sec01 .infoPanel .dl .txtBox {
+    display: block;
+  }
+  .companyMain .sec01 .infoPanel .dl .txtBox + .txtBox {
+    margin: 20px 0 0;
+  }
+  .companyMain .sec01 .infoPanel .dl .aside {
+    display: block;
+    width: 220px;
+    margin: 20px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .topSection {
+    padding: 50px 10px;
+  }
+  .contactMain .topSection .topTxt {
+    margin: 0 0 50px;
+  }
+  .contactMain .topSection .secBox + .secBox {
+    margin: 60px 0 0;
+  }
+  .contactMain .topSection .secBox .ttl {
+    max-width: 300px;
+  }
+  .contactMain .topSection .secBox .ttl p {
+    font-size: 20px;
+  }
+  .contactMain .topSection .secBox .telBox {
+    margin: 20px 0 0;
+  }
+  .contactMain .topSection .secBox .telBox .tel {
+    display: block;
+    margin: 0 0 10px;
+  }
+  .contactMain .topSection .secBox .telBox .tel a {
+    font-size: 20px;
+  }
+  .contactMain .topSection .secBox .telBox .tel a .em {
+    font-size: 30px;
+  }
+  .contactMain .topSection .secBox .telBox .tel + p {
+    display: block;
+  }
+  .contactMain .formContainer {
+    padding: 90px 0;
+  }
+  .contactMain .formContainer .secTtl {
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+  }
+  .contactMain .formSection + .formSection {
+    margin: 60px 0 0;
+  }
+  .contactMain .formSection + .formSection .pageSecTtlBox {
+    margin: 0 0 20px;
+  }
+  .contactMain .formSection + .formSection .pageSecTtlBox + p {
+    margin: 0 0 40px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .blogSection {
+    padding: 80px 0;
+  }
+  .newsMain .catePanel {
+    max-width: 400px;
+    margin: 0 auto 40px;
+  }
+  .newsMain .catePanel .webgene-header {
+    margin: 0 0 15px;
+  }
+  .newsMain .catePanel .webgene-header h2 {
+    font-size: 18px;
+  }
+  .newsMain .catePanel .webgene-item {
+    padding: 10px 20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 60px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .ttlBox {
+    font-size: 20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+}

@@ -1,0 +1,55 @@
+// ▽header▽
+header.header
+	.headBox
+		.logo
+			a(href="#")
+				img(src=(root_path || '') + "image/common/header_logo.png", alt="")
+		nav.navBox
+			.navWrap
+				.navList
+					ul
+						li
+							a(href="#section__recruitment") 募集要項
+						li
+							a(href="#section__job") 仕事について
+						li
+							a(href="#section__interview") スタッフインタビュー
+						li
+							a(href="#section__voice") 奨学生の声
+						li
+							a(href="#section__data__title") 数字で見る服部
+						li
+							a(href="#section__about") 財団概要
+						li
+							a(href="#section__office") 働く環境
+						li
+							a(href="#section__entry") お問い合わせ
+				.btnEntry
+					a(href="#section__entry")
+						.photo
+							img(src=(root_path || '') + "image/common/header_entry_photo.png", alt="")
+						.txtBox
+							dl
+								dt ENTRY
+								dd 説明会予約・お問い合わせ
+				.navBnr
+					a(href="#section__entry")
+						img(src=(root_path || '') + "image/top/top_kv_bnr_pc.png", alt="")
+	.headSns
+		ul
+			li
+				a(href="https://www.instagram.com/hattori_scholarship/", target="_blank", rel="noopener")
+					img(src=(root_path || '') + "image/common/icon_sns_insta.png", alt="")
+			li
+				a(href="https://twitter.com/hattori_zaidan", target="_blank", rel="noopener")
+					img(src=(root_path || '') + "image/common/icon_sns_x.png", alt="")
+			li
+				a(href="https://www.facebook.com/hattorizaidan", target="_blank", rel="noopener")
+					img(src=(root_path || '') + "image/common/icon_sns_fb.png", alt="")
+			li
+				a(href="https://note.com/hisf/", target="_blank", rel="noopener")
+					img(src=(root_path || '') + "image/common/icon_sns_note.png", alt="")
+	.btnMenu.hamburger
+		img(src=(root_path || '') + "image/common/header_menu.png", alt="").menu-open
+		img(src=(root_path || '') + "image/common/header_menu_close.png", alt="").menu-close
+// △header△

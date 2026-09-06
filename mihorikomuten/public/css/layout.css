@@ -1,0 +1,2197 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  padding: 250px 0 200px;
+  background: #f5af24;
+}
+.topMain .topKvPanel .topKvBox {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.topMain .topKvPanel .topKvBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+}
+.topMain .topKvPanel .topKvBox .topKvTitle {
+  width: 70%;
+  max-width: 1000px;
+  padding: 40px 140px 40px 40px;
+  background: #ffffff;
+}
+.topMain .topKvPanel .topKvBox .topKvTitle h1 {
+  margin: 0 0 20px;
+  font-family: "Zen Maru Gothic";
+  font-size: 60px;
+  line-height: 1.1;
+}
+.topMain .topKvPanel .topKvBox .topKvTitle h1 + p {
+  margin: 0 0 30px;
+  font-family: "Zen Maru Gothic";
+}
+.topMain .topKvPanel .topKvBox .topKvTitle .txt {
+  font-weight: bold;
+  line-height: 2;
+}
+.topMain .topKvPanel .topKvBox .topKvImg {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  width: 600px;
+}
+.topMain .topKvPanel .topKvBox .topKvImg.active {
+  animation: fadeInKvImage 5s ease 1s 1 normal backwards;
+}
+.topMain .topPanel {
+  min-height: 500px;
+  padding: 60px 10px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_top_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topPanel .dl {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(55, 134, 116, 0.85), rgba(58, 117, 167, 0.85));
+}
+.topMain .topPanel .dl .dt {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding: 15px 0;
+  font-family: "Zen Maru Gothic";
+  font-size: 40px;
+  line-height: 1.3;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_top_title_line.png) center top no-repeat, url(https://mihori.co.jp/system_panel/uploads/images/top_top_title_line.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.topMain .topPanel .dl .dd {
+  line-height: 2;
+}
+.topMain .sec01 {
+  padding: 150px 0;
+}
+.topMain .sec01 .topBox {
+  position: relative;
+  margin: 0 0 100px;
+  padding: 0 0 20px;
+  background: #f5af24;
+}
+.topMain .sec01 .topBox:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  bottom: -70px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_tri.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec01 .topBox .inner {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.topMain .sec01 .topBox .dl .dt {
+  position: relative;
+  top: -20px;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Zen Maru Gothic";
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #1d7e5a;
+}
+.topMain .sec01 .topBox .dl .dt:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 30px;
+  height: 20px;
+  margin: 0 auto;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec01 .topBox .dl .dd {
+  padding: 20px 0 0;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_top_img.png) right center no-repeat;
+  background-size: 240px auto;
+}
+.topMain .sec01 .topBox .dl .dd .txt {
+  font-weight: bold;
+  line-height: 2;
+}
+.topMain .sec01 .topBox .btnMore {
+  position: absolute;
+  right: 30px;
+  bottom: -70px;
+  z-index: 1;
+}
+.topMain .sec01 .introPanel {
+  margin: 0 0 150px;
+}
+.topMain .sec01 .introPanel .txtBox {
+  font-weight: bold;
+  line-height: 2;
+}
+.topMain .sec01 .introPanel .photo {
+  max-width: 400px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .introPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .introPanel .txtBox {
+    width: 52%;
+  }
+  .topMain .sec01 .introPanel .photo {
+    width: 38%;
+  }
+}
+.topMain .sec01 .listPanel .txtBox {
+  font-weight: bold;
+}
+.topMain .sec01 .listPanel .listBox .ul .li a {
+  display: block;
+  height: 100%;
+  color: #ffffff;
+  border-radius: 6px;
+}
+.topMain .sec01 .listPanel .listBox .ul .li .dl {
+  padding: 20px;
+  color: #ffffff;
+}
+.topMain .sec01 .listPanel .listBox .ul .li .dl .dt {
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.topMain .sec01 .listPanel .listBox .ul .li .dl .dd {
+  font-family: "Zen Maru Gothic";
+}
+.topMain .sec01 .listPanel .listBox .ul .li .dl .dd .em {
+  display: inline-block;
+  font-size: 30px;
+}
+.topMain .sec01 .listPanel .listBox .ul .li .dl .dd .span {
+  display: inline-block;
+  font-size: 20px;
+}
+.topMain .sec01 .listPanel .listBox .ul .li .photo img {
+  border-radius: 0 0 6px 6px;
+}
+.topMain .sec01 .listPanel .listBox .ul .li:nth-child(1) a {
+  background: #1d7e5a;
+}
+.topMain .sec01 .listPanel .listBox .ul .li:nth-child(2) a {
+  background: #f5af24;
+}
+.topMain .sec01 .listPanel .listBox .ul .li:nth-child(3) a {
+  background: #1961a5;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .listPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .listPanel .txtBox {
+    position: relative;
+    left: -30px;
+    width: 200px;
+    line-height: 2;
+    writing-mode: vertical-rl;
+  }
+  .topMain .sec01 .listPanel .listBox {
+    width: calc(100% - 240px);
+  }
+  .topMain .sec01 .listPanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .listPanel .listBox .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+  .topMain .sec01 .listPanel .listBox .ul .li .dl {
+    min-height: 160px;
+  }
+  .topMain .sec01 .listPanel .listBox .ul .li:nth-child(1) .dl, .topMain .sec01 .listPanel .listBox .ul .li:nth-child(2) .dl {
+    padding: 30px 20px 20px;
+  }
+  .topMain .sec01 .listPanel .listBox .ul .li:nth-child(1) {
+    position: relative;
+    top: 80px;
+  }
+  .topMain .sec01 .listPanel .listBox .ul .li:nth-child(3) {
+    position: relative;
+    top: -80px;
+  }
+  .topMain .sec01 .listPanel .listBox .ul .photo {
+    position: relative;
+    height: 200px;
+  }
+  .topMain .sec01 .listPanel .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec02 {
+  padding: 150px 0;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec02_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .pageSecTtlBox .btnMore {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  vertical-align: bottom;
+}
+.topMain .sec02 .swiperContainer {
+  width: calc(600px + 50vw);
+  position: relative;
+  z-index: 6;
+  overflow: visible;
+}
+.topMain .sec02 .swiperContainer .swiperProgressbarContainer .swiperProgressbar {
+  position: absolute;
+  top: -70px;
+  right: 5%;
+  width: 20%;
+  height: 2px;
+  background: #fff;
+}
+.topMain .sec02 .swiperContainer .swiper-slide {
+  position: relative;
+  height: 580px;
+}
+.topMain .sec02 .swiperContainer .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.topMain .sec02 .swiperContainer .swiper-slide .dl {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.topMain .sec02 .swiperContainer .swiper-slide .dl .dt {
+  font-size: 26px;
+}
+.topMain .sec02 .swiperContainer .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec03 {
+  padding: 150px 0;
+}
+.topMain .sec03 .pageSecTtlBox .secTtl {
+  display: inline;
+}
+.topMain .sec03 .pageSecTtlBox .secTtl p {
+  display: inline;
+}
+.topMain .sec03 .infoPanel .categoryBox {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+.topMain .sec03 .infoPanel .categoryBox .ul {
+  position: relative;
+}
+.topMain .sec03 .infoPanel .categoryBox .ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 15px;
+  margin: auto 0;
+  background: #958f89;
+}
+.topMain .sec03 .infoPanel .categoryBox .ul .li {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.topMain .sec03 .infoPanel .categoryBox .ul .li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 15px;
+  margin: auto 0;
+  background: #958f89;
+}
+.topMain .sec03 .infoPanel .categoryBox .ul .li a {
+  display: inline-block;
+}
+.topMain .sec03 .infoPanel .categoryBox .webgene-blog {
+  position: relative;
+}
+.topMain .sec03 .infoPanel .categoryBox .webgene-blog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 15px;
+  margin: auto 0;
+  background: #958f89;
+}
+.topMain .sec03 .infoPanel .categoryBox .webgene-blog .webgene-header h3 {
+  display: none;
+}
+.topMain .sec03 .infoPanel .categoryBox .webgene-blog .webgene-header a {
+  display: inline-block;
+}
+.topMain .sec03 .infoPanel .categoryBox .webgene-blog > * {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.topMain .sec03 .infoPanel .categoryBox .webgene-blog > *:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 15px;
+  margin: auto 0;
+  background: #958f89;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-item {
+  padding: 20px 100px;
+  font-weight: bold;
+  border-bottom: 1px solid #e8e8e8;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-item .info {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-item .info .time {
+  display: inline-block;
+  color: #f5af24;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-item .info .cate {
+  position: relative;
+  display: inline-block;
+  min-width: 230px;
+  margin: 0 0 0 40px;
+  padding: 0 0 0 40px;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-item .info .cate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 15px;
+  margin: auto 0;
+  background: #cac7c4;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-item .ttl {
+  display: inline-block;
+}
+.topMain .sec03 .infoPanel .categoryBox + .webgene-blog .webgene-item .ttl a {
+  display: inline-block;
+  color: #03386a;
+  text-decoration: underline;
+}
+.topMain .sec04 {
+  padding: 80px 0;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec04_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .secBox .txtBox .ttl {
+  position: relative;
+  padding: 10px;
+  font-family: "Zen Maru Gothic";
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #1d7e5a;
+}
+.topMain .sec04 .secBox .txtBox .ttl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 30px;
+  height: 20px;
+  margin: 0 auto;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec04 .secBox .txtBox .infoBox {
+  margin: 30px 0 40px;
+  padding: 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.topMain .sec04 .secBox .txtBox .infoBox .dl {
+  display: flex;
+  font-weight: bold;
+}
+.topMain .sec04 .secBox .txtBox .infoBox .dl + .dl {
+  margin: 15px 0 0;
+}
+.topMain .sec04 .secBox .txtBox .infoBox .dl .dt {
+  width: 100px;
+}
+.topMain .sec04 .secBox .txtBox .infoBox .dl a {
+  display: inline-block;
+}
+.topMain .sec04 .secBox .txtBox .linkItem {
+  text-align: center;
+}
+.topMain .sec04 .secBox .txtBox .linkItem .btnMore {
+  display: inline-block;
+}
+.topMain .sec04 .secBox .txtBox .linkItem .btnMore + .btnMore {
+  margin: 0 0 0 20px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec04 .secBox .txtBox {
+    width: 43%;
+  }
+  .topMain .sec04 .secBox .mapBox {
+    width: 55%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+.featureMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/feature_kv.png) center no-repeat;
+  background-size: cover;
+}
+.featureMain .topPanel .ttl {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto 60px;
+  padding: 10px;
+  font-family: "Zen Maru Gothic";
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #1d7e5a;
+}
+.featureMain .topPanel .ttl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 30px;
+  height: 20px;
+  margin: 0 auto;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.featureMain .topPanel .mvContainer {
+  position: relative;
+  height: 630px;
+  margin: 0 0 200px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/feature_top_mv.png) center no-repeat;
+  background-size: cover;
+}
+.featureMain .topPanel .mvContainer .chart {
+  position: relative;
+  top: -20px;
+  width: 700px;
+  margin: 0 auto;
+}
+.featureMain .sec01 {
+  margin: 0 0 200px;
+}
+.featureMain .sec01 .secBoxList {
+  padding: 40px 0 0;
+}
+.featureMain .sec01 .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.featureMain .sec01 .secBox .photo img {
+  border-radius: 15px;
+}
+.featureMain .sec01 .secBox .txtBox .ttlBox {
+  margin: 0 0 30px;
+  font-family: "Zen Maru Gothic";
+}
+.featureMain .sec01 .secBox .txtBox .ttlBox .num {
+  display: inline-block;
+  margin: 0 40px 0 0;
+  font-size: 60px;
+  color: #1d7e5a;
+  vertical-align: middle;
+}
+.featureMain .sec01 .secBox .txtBox .ttlBox .ttl {
+  display: inline-block;
+  font-size: 34px;
+  vertical-align: middle;
+}
+.featureMain .sec01 .secBox .txtBox .txt {
+  font-weight: bold;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .featureMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .featureMain .sec01 .secBox .photo {
+    position: relative;
+    width: 45%;
+    height: 440px;
+  }
+  .featureMain .sec01 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .featureMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+  .featureMain .sec01 .secBox:nth-child(odd) .photo {
+    order: 2;
+  }
+  .featureMain .sec01 .secBox:nth-child(odd) .txtBox {
+    order: 1;
+  }
+}
+.featureMain .sec02 {
+  padding: 0 0 200px;
+}
+.featureMain .sec02 .topTxt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  line-height: 2;
+}
+.featureMain .sec02 .listBox .ul .li a {
+  display: block;
+  height: 100%;
+  color: #ffffff;
+  border-radius: 6px;
+}
+.featureMain .sec02 .listBox .ul .li .photo img {
+  border-radius: 6px 6px 0 0;
+}
+.featureMain .sec02 .listBox .ul .li:nth-child(1) a {
+  background: #f5af24;
+}
+.featureMain .sec02 .listBox .ul .li:nth-child(2) a {
+  background: #1d7e5a;
+}
+.featureMain .sec02 .listBox .ul .li:nth-child(3) a {
+  background: #1961a5;
+}
+.featureMain .sec02 .listBox .ul .li .txt {
+  padding: 20px 10px;
+  font-family: "Zen Maru Gothic";
+  font-size: 30px;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+}
+@media (min-width: 1025px) {
+  .featureMain .sec02 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .featureMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+  }
+  .featureMain .sec02 .listBox .ul .photo {
+    position: relative;
+    height: 370px;
+  }
+  .featureMain .sec02 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .topSection {
+  padding: 100px 0;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/service_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .topSection .introBox .photo img {
+  border-radius: 15px;
+}
+.serviceMain .topSection .introBox .txtBox {
+  font-weight: bold;
+  line-height: 2;
+}
+.serviceMain .topSection .chartList {
+  margin: 60px 0 80px;
+}
+.serviceMain .topSection .logoBox p {
+  margin: 0 0 40px;
+  font-family: "Zen Maru Gothic";
+  font-size: 28px;
+  text-align: center;
+}
+.serviceMain .topSection .logoBox .logo {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.serviceMain .topSection .logoBox.animated {
+  animation-name: open-keyanime1;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+@media (min-width: 1025px) {
+  .serviceMain .topSection .introBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .topSection .introBox .photo {
+    order: 2;
+    width: 43%;
+  }
+  .serviceMain .topSection .introBox .txtBox {
+    order: 1;
+    width: 50%;
+  }
+  .serviceMain .topSection .chartList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .topSection .chartList .ul .li {
+    width: 49.5%;
+  }
+}
+.serviceMain .caseSection {
+  padding: 100px 0;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/service_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .caseSection .secPanel {
+  padding: 60px 10px;
+  border-radius: 15px;
+  background: #ffffff;
+}
+.serviceMain .caseSection .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+.serviceMain .caseSection .secPanel .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.serviceMain .caseSection .secPanel .secBox + .secBox {
+  margin: 60px 0 0;
+}
+.serviceMain .caseSection .secPanel .secBox .photo img {
+  border-radius: 15px;
+}
+.serviceMain .caseSection .secPanel .secBox .txtBox .ttl {
+  position: relative;
+  max-width: 340px;
+  margin: 0 0 40px;
+  padding: 10px;
+  font-family: "Zen Maru Gothic";
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #1d7e5a;
+}
+.serviceMain .caseSection .secPanel .secBox .txtBox .ttl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  width: 23px;
+  height: 14px;
+  margin: 0 auto;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/service_case_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.serviceMain .caseSection .secPanel .secBox .txtBox .dl {
+  font-weight: bold;
+}
+.serviceMain .caseSection .secPanel .secBox .txtBox .dl .dt {
+  margin: 0 0 10px;
+  font-size: 30px;
+  color: #f5af24;
+}
+.serviceMain .caseSection .secPanel .secBox .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .serviceMain .caseSection .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .caseSection .secPanel .secBox .photo {
+    width: 48%;
+  }
+  .serviceMain .caseSection .secPanel .secBox .txtBox {
+    width: 49%;
+  }
+  .serviceMain .caseSection .secPanel .secBox:nth-child(even) .photo {
+    order: 2;
+  }
+  .serviceMain .caseSection .secPanel .secBox:nth-child(even) .txtBox {
+    order: 1;
+  }
+}
+@media (min-width: 1025px) {
+  .serviceMain .fixedPhotoPanel {
+    height: 400px;
+  }
+  .serviceMain .fixedPhotoPanel .photo {
+    display: none;
+  }
+}
+.serviceMain .worksSection {
+  padding: 200px 0;
+}
+.serviceMain .worksSection .titleHeader {
+  margin: 0 0 60px;
+}
+.serviceMain .worksSection .titleHeader .pageSecTtlBox {
+  margin: 0;
+}
+.serviceMain .worksSection .webgene-blog .webgene-header {
+  display: none;
+}
+.serviceMain .worksSection .webgene-blog .webgene-item a {
+  display: block;
+  font-weight: bold;
+}
+.serviceMain .worksSection .webgene-blog .webgene-item .photo {
+  margin: 0 0 20px;
+}
+.serviceMain .worksSection .webgene-blog .webgene-item .photo img {
+  border-radius: 15px;
+}
+.serviceMain .worksSection .webgene-blog .webgene-item .info {
+  margin: 0 0 10px;
+}
+.serviceMain .worksSection .webgene-blog .webgene-item .info .cate {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0 15px;
+  color: #ffffff;
+  border-radius: 6px;
+}
+.serviceMain .worksSection .webgene-blog .webgene-item .info .time {
+  display: inline-block;
+  color: #f5af24;
+}
+.serviceMain .worksSection .webgene-blog .webgene-item .ttl {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .serviceMain .worksSection .titleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .serviceMain .worksSection .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -30px;
+  }
+  .serviceMain .worksSection .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 30px);
+    margin: 0 0 0 30px;
+  }
+  .serviceMain .worksSection .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 300px;
+  }
+  .serviceMain .worksSection .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	wbHouse
+///////////////////////////////////////////////////////////*/
+.wbHouseMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/wbhouse_kv.png) center no-repeat;
+  background-size: cover;
+}
+.wbHouseMain .comparisonSection {
+  padding: 150px 0;
+}
+.wbHouseMain .comparisonSection .introBox {
+  margin: 0 0 60px;
+}
+.wbHouseMain .comparisonSection .introBox .txtBox {
+  font-weight: bold;
+  line-height: 2;
+}
+.wbHouseMain .comparisonSection .introBox .txtBox p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .wbHouseMain .comparisonSection .introBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wbHouseMain .comparisonSection .introBox .photo {
+    width: 40%;
+  }
+  .wbHouseMain .comparisonSection .introBox .txtBox {
+    width: 55%;
+  }
+}
+@media (min-width: 1025px) {
+  .wbHouseMain .comparisonSection .tableType01 {
+    border-radius: 15px;
+    border: 1px solid #1961a5;
+    border-bottom: none;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .tr {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #1961a5;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .tr > * {
+    display: table-cell;
+    width: 20%;
+    padding: 20px 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .tr > * + * {
+    width: 30%;
+    border-left: 1px solid #1961a5;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .tr + .tr .th {
+    background: #ffffff;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .tr:last-child {
+    border-radius: 0 0 15px 15px;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .tr:last-child .th {
+    border-radius: 0 0 0 15px;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .tr:last-child .td + .td {
+    border-radius: 0 15px 0 0;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .thead .th {
+    font-size: 24px;
+    color: #ffffff;
+    background: #1961a5;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .thead .th + .th {
+    border-left: 1px solid #ffffff;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .thead .th:nth-child(1) {
+    border-radius: 15px 0 0 0;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .thead .th:nth-child(3) {
+    border-radius: 0 15px 0 0;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .td .ttl {
+    display: none;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .td p {
+    display: inline-block;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .td .txt {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .td .circle {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    width: 40px;
+  }
+  .wbHouseMain .comparisonSection .tableType01 .td .cross {
+    display: inline-block;
+    margin: 0 15px 0 5px;
+    width: 30px;
+  }
+}
+@media (min-width: 1025px) {
+  .wbHouseMain .fixedPhotoPanel {
+    background: url(https://mihori.co.jp/system_panel/uploads/images/wbhouse_fixed_photo.png) center no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+}
+.wbHouseMain .worksSection .webgene-blog .webgene-item .info .cate {
+  background: #f5af24;
+}
+
+/*////////////////////////////////////////////////////////////
+	renovation
+///////////////////////////////////////////////////////////*/
+.renovationMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/renovation_kv.png) center no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1025px) {
+  .renovationMain .fixedPhotoPanel {
+    background: url(https://mihori.co.jp/system_panel/uploads/images/renovation_fixed_photo.png) center no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+}
+.renovationMain .worksSection .webgene-blog .webgene-item .info .cate {
+  background: #1d7e5a;
+}
+
+/*////////////////////////////////////////////////////////////
+	other
+///////////////////////////////////////////////////////////*/
+.otherMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/other_kv.png) center no-repeat;
+  background-size: cover;
+}
+.otherMain .topPanel {
+  margin: 0 0 180px;
+}
+.otherMain .topPanel .topBox {
+  position: relative;
+  padding: 30px 60px 20px;
+  font-weight: bold;
+  line-height: 2;
+  background: #f5af24;
+}
+.otherMain .topPanel .topBox:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  bottom: -70px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_tri.png) no-repeat;
+  background-size: 100% auto;
+}
+.otherMain .sectionList .section {
+  padding: 80px 0;
+}
+.otherMain .sectionList .section:nth-child(even) {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/service_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.otherMain .sectionList .section .secBox .photo img {
+  border-radius: 15px;
+}
+.otherMain .sectionList .section .secBox .txtBox .txt {
+  font-weight: bold;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .otherMain .sectionList .section .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .otherMain .sectionList .section .secBox .photo {
+    position: relative;
+    width: 45%;
+    height: 470px;
+  }
+  .otherMain .sectionList .section .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .otherMain .sectionList .section .secBox .txtBox {
+    width: 50%;
+  }
+  .otherMain .sectionList .section:nth-child(even) .secBox .photo {
+    order: 2;
+  }
+  .otherMain .sectionList .section:nth-child(even) .secBox .txtBox {
+    order: 1;
+  }
+}
+@media (min-width: 1025px) {
+  .otherMain .fixedPhotoPanel {
+    background: url(https://mihori.co.jp/system_panel/uploads/images/other_fixed_photo.png) center no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+}
+.otherMain .worksSection .webgene-blog .webgene-item .info .cate {
+  background: #1961a5;
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/flow_kv.png) center no-repeat;
+  background-size: cover;
+}
+.flowMain .sectionContainer {
+  padding: 0 0 150px;
+}
+.flowMain .sectionContainer .topTtl {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto 60px;
+  padding: 10px;
+  font-family: "Zen Maru Gothic";
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #1d7e5a;
+}
+.flowMain .sectionContainer .topTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 30px;
+  height: 20px;
+  margin: 0 auto;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.flowMain .secFlowPanel + .secFlowPanel {
+  margin: 40px 0 0;
+}
+.flowMain .secFlowPanel .ttlHead {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Zen Maru Gothic";
+  font-size: 30px;
+  border-radius: 6px;
+  border: 1px solid #1961a5;
+}
+.flowMain .secFlowPanel .ttlHead .step {
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #1961a5;
+}
+.flowMain .secFlowPanel .ttlHead .step:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #1961a5;
+  border-top: 33px solid transparent;
+  border-bottom: 33px solid transparent;
+}
+.flowMain .secFlowPanel .ttlHead .ttl {
+  padding: 10px;
+  width: calc(100% - 230px);
+}
+.flowMain .secFlowPanel .txtBody {
+  padding: 30px;
+}
+.flowMain .secFlowPanel .txtBody .txt {
+  font-weight: bold;
+  line-height: 2;
+}
+.flowMain .secFlowPanel .navItem {
+  margin: 20px 0 0;
+}
+.flowMain .secFlowPanel .navItem .ul .li {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+}
+.flowMain .secFlowPanel .navItem .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.flowMain .secFlowPanel .navItem .ul .li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
+  border-radius: 25px;
+}
+.flowMain .secFlowPanel .navItem .ul .li a > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.flowMain .secFlowPanel .navItem .ul .mail a {
+  background: #1961a5;
+}
+.flowMain .secFlowPanel .navItem .ul .mail a p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/header_mail.png) left top 2px no-repeat;
+  background-size: 18px auto;
+}
+.flowMain .secFlowPanel .navItem .ul .tel a {
+  background: #1d7e5a;
+}
+.flowMain .secFlowPanel .navItem .ul .tel a > div {
+  padding: 0 0 0 20px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/header_tel.png) left 15px top 12px no-repeat;
+  background-size: 22px auto;
+}
+.flowMain .secFlowPanel .navItem .ul .tel .span {
+  font-size: 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/company_kv.png) center no-repeat;
+  background-size: cover;
+}
+.companyMain .topPanel {
+  padding: 150px 0;
+  text-align: center;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/company_top_bg.png) center no-repeat;
+  background-size: cover;
+}
+.companyMain .topPanel .txt {
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 2.5;
+}
+.companyMain .sec01 {
+  padding: 120px 0;
+}
+.companyMain .sec01 .secPanel {
+  position: relative;
+}
+.companyMain .sec01 .secPanel .pageSecTtlBox {
+  text-align: center;
+}
+.companyMain .sec01 .secPanel .infoBox .dl {
+  position: relative;
+  padding: 20px 10px;
+  z-index: 1;
+  border-bottom: 1px solid #cccccc;
+}
+.companyMain .sec01 .secPanel .infoBox .dl + .dl {
+  margin: 20px 0 0;
+}
+.companyMain .sec01 .secPanel .infoBox .dl .inner {
+  display: flex;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.companyMain .sec01 .secPanel .infoBox .dl .dt {
+  width: 180px;
+  padding: 5px 0 0;
+}
+.companyMain .sec01 .secPanel .infoBox .dl .dt p {
+  display: inline-block;
+  min-width: 120px;
+  padding: 0 20px;
+  font-family: "Zen Maru Gothic";
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  background: #1961a5;
+}
+.companyMain .sec01 .secPanel .infoBox .dl .dd {
+  font-weight: bold;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .secPanel {
+    padding: 0 0 0 100px;
+  }
+  .companyMain .sec01 .secPanel .infoBox .dl .inner {
+    position: relative;
+    left: 80px;
+  }
+  .companyMain .sec01 .photo {
+    position: absolute;
+    top: 100px;
+    left: -300px;
+    width: 600px;
+    height: 450px;
+  }
+  .companyMain .sec01 .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.companyMain .mapPanel {
+  padding: 80px 0 140px;
+  background: #1961a5;
+}
+.companyMain .mapPanel .mapInfo {
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+.companyMain .mapPanel .mapInfo .dl {
+  display: flex;
+  padding: 20px 40px;
+  border-bottom: 1px solid #cccccc;
+}
+.companyMain .mapPanel .mapInfo .dl .dt {
+  width: 180px;
+}
+.companyMain .mapPanel .mapInfo .dl .dt p {
+  display: inline-block;
+  min-width: 120px;
+  padding: 0 20px;
+  font-family: "Zen Maru Gothic";
+  color: #1961a5;
+  text-align: center;
+  border-radius: 5px;
+  background: #ffffff;
+}
+.companyMain .mapPanel .mapInfo .dl .dd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 180px);
+  font-weight: bold;
+  color: #ffffff;
+}
+.companyMain .mapPanel .mapInfo .dl .dd .pin {
+  width: 25px;
+}
+.companyMain .mapPanel .mapInfo .dl .dd .pin a {
+  display: block;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/contact_kv.png) center no-repeat;
+  background-size: cover;
+}
+.contactMain .sectionContainer .topTxt {
+  padding: 0 0 40px;
+  font-weight: bold;
+  line-height: 2;
+}
+.contactMain .contactPanel {
+  padding: 40px 0 140px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/contact_form_bg.png) center no-repeat;
+  background-size: cover;
+}
+.contactMain .telContainer {
+  max-width: 550px;
+  margin: 100px auto 0;
+}
+.contactMain .telContainer a {
+  display: block;
+  padding: 20px 60px;
+  color: #ffffff;
+  border-radius: 6px;
+  background: #29814e;
+}
+.contactMain .telContainer .telBox {
+  text-align: center;
+}
+.contactMain .telContainer .telBox > p {
+  font-size: 15px;
+}
+.contactMain .telContainer .telBox .tel {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0 0 0 35px;
+  font-family: "Zen Maru Gothic";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/header_tel.png) left top 10px no-repeat;
+  background-size: 30px auto;
+}
+.contactMain .telContainer .telBox .span {
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background: #ffffff;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px 10px;
+  font-size: 18px;
+  color: #2b1f13;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid #25251d;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/btn_more_arrow_black.png) right 15px center no-repeat #ffffff;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm button[type=submit]:hover {
+    opacity: 0.6;
+  }
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .subList {
+  margin: 10px 0;
+  padding: 0 0 0 40px;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label,
+.formMain .contactForm .form .checkItem > .label {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span,
+.formMain .contactForm .form .checkItem .span {
+  padding-left: 30px;
+  position: relative;
+  margin-right: 20px;
+}
+.formMain .contactForm .form .checkItem span::before,
+.formMain .contactForm .form .checkItem .span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #656766;
+  background: #ffffff;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after,
+.formMain .contactForm .form .checkItem input:checked + .span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #1d7e5a;
+  border-right: 3px solid #1d7e5a;
+}
+.formMain .contactForm .form .radioList {
+  padding: 5px 0;
+}
+.formMain .contactForm .form .radioList .list + .list {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #dcdddd;
+  background: #f6f7f7;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #0071b2;
+}
+.formMain .contactForm .form .postal input {
+  width: 90px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.formMain .contactForm .formBox > .dl.line {
+  padding: 10px 40px 40px;
+}
+.formMain .contactForm .formBox > .dl.line + .dl {
+  padding: 40px 40px 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 310px;
+  padding: 10px 0;
+}
+.formMain .contactForm .formBox > .dl > .dt.top {
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt .labelBox {
+  position: relative;
+  max-width: 280px;
+  padding: 10px;
+  font-family: "Zen Maru Gothic";
+  text-align: center;
+  border-radius: 6px;
+  background: #1d7e5a;
+}
+.formMain .contactForm .formBox > .dl > .dt .labelBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -8px;
+  bottom: 0;
+  width: 10px;
+  height: 15px;
+  margin: auto 0;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/contact_form_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  border-radius: 6px;
+  background: #50c599;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 300px);
+  padding: 10px 0;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  font-weight: bold;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox {
+  font-weight: 400;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox {
+  margin: 0 0 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 35%;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  background: #a4a4a4;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 15px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p {
+  width: 62%;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	example
+///////////////////////////////////////////////////////////*/
+.exampleMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/example_kv.png) center no-repeat;
+  background-size: cover;
+}
+.exampleMain .catePanel {
+  padding: 50px 0;
+  background: #e8e8e8;
+}
+.exampleMain .catePanel .webgene-blog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px 0 0 -50px;
+}
+.exampleMain .catePanel .webgene-blog > * {
+  width: calc(20% - 50px);
+  margin: 20px 0 0 50px;
+}
+.exampleMain .catePanel .webgene-blog .webgene-header h2 {
+  display: none;
+}
+.exampleMain .catePanel .webgene-blog a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #25251d;
+  background: #ffffff;
+}
+.exampleMain .listPanel {
+  padding: 100px 0 150px;
+}
+.exampleMain .listPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.exampleMain .listPanel .webgene-blog .webgene-item a {
+  display: block;
+}
+.exampleMain .listPanel .webgene-blog .webgene-item .photo img {
+  border-radius: 15px;
+}
+.exampleMain .listPanel .webgene-blog .webgene-item .txtBox {
+  margin: 20px 0 0;
+  font-weight: bold;
+}
+.exampleMain .listPanel .webgene-blog .webgene-item .info {
+  margin: 0 0 10px;
+}
+.exampleMain .listPanel .webgene-blog .webgene-item .info > * {
+  display: inline-block;
+}
+.exampleMain .listPanel .webgene-blog .webgene-item .info .cate {
+  padding: 0 15px;
+  color: #ffffff;
+  border-radius: 6px;
+  background: #1961a5;
+}
+.exampleMain .listPanel .webgene-blog .webgene-item .ttl {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .exampleMain .listPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -30px;
+  }
+  .exampleMain .listPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 30px);
+    margin: 50px 0 0 30px;
+  }
+  .exampleMain .listPanel .webgene-blog .webgene-item .photo {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 80%;
+  }
+  .exampleMain .listPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.exampleMain .detailPanel {
+  padding: 100px 0 150px;
+}
+.exampleMain .postDetail .webgene-header {
+  display: none;
+}
+.exampleMain .postDetail .webgene-item-info {
+  margin: 0 0 30px;
+  padding: 0 0 5px;
+  font-weight: bold;
+}
+.exampleMain .postDetail .infoBox {
+  margin: 0 0 30px;
+}
+.exampleMain .postDetail .infoBox > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.exampleMain .postDetail .infoBox .cate {
+  margin: 0 5px 0 0;
+  padding: 0 15px;
+  color: #ffffff;
+  border-radius: 6px;
+  background: #1961a5;
+}
+.exampleMain .postDetail .infoBox .time {
+  color: #f5af24;
+}
+.exampleMain .postDetail .title {
+  font-size: 34px;
+  line-height: 1.3;
+}
+.exampleMain .postDetail .slickSlide {
+  margin: 0 0 60px;
+}
+.exampleMain .postDetail .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 70%;
+}
+.exampleMain .postDetail .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.exampleMain .postDetail .slick-list {
+  margin: 0 0 10px;
+}
+.exampleMain .postDetail .thumb-item {
+  margin: 0 auto 10px;
+}
+.exampleMain .postDetail .slick-slide {
+  margin: 0 5px;
+}
+.exampleMain .postDetail .postBox .photo {
+  margin-bottom: 20px;
+}
+.exampleMain .postDetail .postBox .postTxt {
+  font-weight: bold;
+  line-height: 2;
+}
+.exampleMain .postDetail .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.exampleMain .postDetail .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+@media (min-width: 1025px) {
+  .exampleMain .postDetail .slick-prev {
+    left: -60px;
+  }
+  .exampleMain .postDetail .slick-next {
+    right: -60px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	information
+///////////////////////////////////////////////////////////*/
+.informationMain .pageKvPanel {
+  background: url(https://mihori.co.jp/system_panel/uploads/images/information_kv.png) center no-repeat;
+  background-size: cover;
+}
+.informationMain .postMain {
+  padding: 60px 0 120px;
+}
+.informationMain .postContainer {
+  position: relative;
+}
+.informationMain .postContainer .catePanel .ttl {
+  margin: 0 0 30px;
+  padding: 0 0 0 30px;
+  font-family: "Zen Maru Gothic";
+  font-size: 44px;
+}
+.informationMain .postContainer .catePanel .webgene-blog .webgene-header {
+  padding: 20px 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.informationMain .postContainer .catePanel .webgene-blog .webgene-header h2 {
+  display: none;
+}
+.informationMain .postContainer .catePanel .webgene-blog .webgene-item {
+  padding: 20px 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.informationMain .postContainer .catePanel .webgene-blog a {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+.informationMain .postContainer .catePanel .webgene-blog a::before {
+  content: ">";
+  display: inline-block;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+}
+.informationMain .postContainer .listPanel {
+  padding: 20px 0 0;
+}
+.informationMain .postContainer .listPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.informationMain .postContainer .listPanel .webgene-blog .webgene-item {
+  padding: 20px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #e8e8e8;
+}
+.informationMain .postContainer .listPanel .webgene-blog .webgene-item .info {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.informationMain .postContainer .listPanel .webgene-blog .webgene-item .info .time {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  color: #f5af24;
+}
+.informationMain .postContainer .listPanel .webgene-blog .webgene-item .info .cate {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  min-width: 200px;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: #1961a5;
+}
+.informationMain .postContainer .listPanel .webgene-blog .webgene-item .ttl {
+  display: inline-block;
+}
+.informationMain .postContainer .listPanel .webgene-blog .webgene-item .ttl a {
+  display: inline-block;
+  color: #03386a;
+  text-decoration: underline;
+}
+.informationMain .postContainer .detailPanel {
+  padding: 50px 0 0;
+}
+.informationMain .postContainer .postDetail .webgene-header {
+  display: none;
+}
+.informationMain .postContainer .postDetail .webgene-item-info {
+  margin: 0 0 30px;
+  padding: 0 0 5px;
+  font-weight: bold;
+}
+.informationMain .postContainer .postDetail .infoBox {
+  margin: 0 0 30px;
+}
+.informationMain .postContainer .postDetail .infoBox > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.informationMain .postContainer .postDetail .infoBox .cate {
+  min-width: 180px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #1961a5;
+}
+.informationMain .postContainer .postDetail .infoBox .time {
+  margin: 0 20px 0 0;
+  color: #f5af24;
+}
+.informationMain .postContainer .postDetail .title {
+  font-size: 34px;
+  color: #03386a;
+  line-height: 1.3;
+}
+.informationMain .postContainer .postDetail .postBox .photo {
+  margin-bottom: 40px;
+}
+.informationMain .postContainer .postDetail .postBox .photo img {
+  border-radius: 15px;
+}
+.informationMain .postContainer .postDetail .postBox .postTxt {
+  font-weight: bold;
+  line-height: 2;
+}
+.informationMain .postContainer .postDetail .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.informationMain .postContainer .postDetail .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+@media (min-width: 1025px) {
+  .informationMain .postContainer .postDetail .slick-prev {
+    left: -60px;
+  }
+  .informationMain .postContainer .postDetail .slick-next {
+    right: -60px;
+  }
+}
+@media (min-width: 1025px) {
+  .informationMain .postContainer {
+    min-height: 500px;
+  }
+  .informationMain .postContainer .catePanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+  }
+  .informationMain .postContainer .listPanel,
+.informationMain .postContainer .detailPanel {
+    width: calc(100% - 350px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	post
+///////////////////////////////////////////////////////////*/
+.postMain .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.postMain .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.postMain .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.postMain .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  background: #e6e6e6;
+}
+.postMain .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.postMain .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.postMain .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #1961a5;
+}
+@media (min-width: 1025px) {
+  .postMain .webgene-pagination ul li {
+    margin: 0 10px;
+  }
+  .postMain .webgene-pagination ul .prev {
+    float: left;
+  }
+  .postMain .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.postMain .btnBack {
+  width: 200px;
+  margin: 120px auto 0;
+}
+.postMain .btnBack a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  background: url(https://mihori.co.jp/system_panel/uploads/images/btn_back_arrow_white.png) left 15px center no-repeat #1961a5;
+  background-size: 12px auto;
+}
+@media (min-width: 1025px) {
+  .postMain .btnBack a:hover {
+    opacity: 1;
+    border-color: transparent;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+.postMain .pdfArea {
+  margin: 40px 0 0;
+}
+.postMain .pdfArea a {
+  font-weight: bold;
+  color: #2151a3;
+}

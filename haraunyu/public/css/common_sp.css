@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+
+  #fp-nav {
+    right: 0;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: 55px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 300px;
+  }
+  .pageKvPanel .pageKvTitleBox .pageKvTitle {
+    font-size: 20px;
+  }
+  .pageKvPanel .pageKvTitleBox .pageKvTitle h1 {
+    padding: 0 0 0 30px;
+  }
+
+  .topSecTtlBox {
+    margin: 0 0 25px;
+  }
+  .topSecTtlBox .topSecTtl {
+    font-size: 20px;
+  }
+  .topSecTtlBox .topSecTtl h2 {
+    padding: 0 0 0 20px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 20px;
+  }
+  .pageSecTtlBox .pageSecTtl p {
+    padding: 0 0 0 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore {
+    max-width: 240px;
+  }
+  .btnMore a {
+    padding: 10px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .btmSection {
+    background: #3e3a39;
+  }
+  .btmSection .footer .footContact {
+    padding: 180px 0;
+  }
+
+  .footer .footContact {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .footer .footContact .contactBox {
+    max-width: 600px;
+    padding: 30px 20px;
+  }
+  .footer .footContact .contactBox .telBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .contactBox .telBox > p {
+    text-indent: 0;
+  }
+  .footer .footContact .contactBox .telBox a p {
+    font-size: 20px;
+  }
+  .footer .footContact .contactBox .telBox a .em {
+    font-size: 30px;
+  }
+  .footer .footContact .contactBox .mailBox .btnMail {
+    max-width: 300px;
+  }
+  .footer .footContact .contactBox .mailBox .btnMail a > div p {
+    display: inline-block;
+    font-size: 18px;
+  }
+  .footer .footContact .contactBox .mailBox .btnMail a > div .span {
+    padding: 0 0 0 25px;
+    background: url(https://haraunyu.co.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .footer .footPanel {
+    padding: 40px 0 20px;
+  }
+  .footer .footPanel .footBox {
+    margin: 0 0 30px;
+  }
+  .footer .footPanel .footBox .logoBox {
+    margin: 0 0 30px;
+  }
+  .footer .footPanel .footBox .logoBox .logo {
+    width: 180px;
+  }
+  .footer .footPanel .footBox .infoBox .txt {
+    display: block;
+    margin: 0 0 10px;
+  }
+  .footer .footPanel .footBox .infoBox .snsList .sns {
+    display: inline-block;
+    width: 30px;
+  }
+  .footer .footPanel .footBox .infoBox .snsList .sns + .sns {
+    margin: 0 0 0 10px;
+  }
+  .footer .footPanel .footBox .pagetop {
+    width: 40px;
+  }
+}

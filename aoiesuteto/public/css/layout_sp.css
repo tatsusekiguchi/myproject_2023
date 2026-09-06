@@ -1,0 +1,1020 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvContainer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 80px 100vw 0 0;
+    border-color: transparent #242d39 transparent transparent;
+  }
+  .topMain .topKvContainer .topKvPanel .topKv {
+    width: calc(100% - 60px);
+    height: calc(70vh - 58px);
+  }
+  .topMain .topKvContainer .topKvPanel .kvTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    padding: 40px 15px;
+  }
+  .topMain .topKvContainer .topKvPanel .kvTitle:before {
+    height: 220px;
+  }
+  .topMain .topKvContainer .topKvPanel .kvTitle h1 {
+    font-size: 22px;
+    writing-mode: vertical-lr;
+  }
+  .topMain .topKvContainer .topKvPanel .kvTitle h1 br {
+    display: none;
+  }
+  .topMain .topKvContainer .topKvPanel .kvScroll {
+    position: absolute;
+    right: 22px;
+    bottom: 0;
+    width: 10px;
+  }
+  .topMain .topKvContainer .kvContent {
+    padding: 30px 0 100px;
+  }
+  .topMain .topKvContainer .kvContent .ttl {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+  .topMain .topKvContainer .kvContent .checkPanel {
+    padding: 30px 20px;
+  }
+  .topMain .topKvContainer .kvContent .checkPanel .inner {
+    display: block;
+    max-width: 500px;
+  }
+  .topMain .topKvContainer .kvContent .checkPanel .inner .ul {
+    width: 100%;
+    font-size: 16px;
+  }
+  .topMain .topKvContainer .kvContent .checkPanel .inner .ul + .ul {
+    margin: 20px 0 0;
+  }
+  .topMain .topKvContainer .kvContent .checkPanel .inner .ul .li {
+    padding: 0 0 0 20px;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/top_icon_check.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .topMain .solutionContainer {
+    padding: 40px 0 80px;
+  }
+  .topMain .solutionContainer .title {
+    max-width: 320px;
+    margin: 0 auto 40px;
+  }
+  .topMain .solutionContainer .txt {
+    margin: 0 0 30px;
+  }
+  .topMain .solutionContainer .txt p + p {
+    margin: 20px 0 0;
+  }
+  .topMain .solutionContainer .btnMore {
+    margin: 0 auto;
+  }
+  .topMain .sec01 {
+    padding: 100px 0;
+  }
+  .topMain .sec01 .secBoxList .secBox {
+    width: calc(50% - 5px);
+  }
+  .topMain .sec01 .secBoxList .secBox .dl {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .topMain .sec01 .secBoxList .secBox .dl .dt {
+    margin: 0 0 20px;
+  }
+  .topMain .sec01 .secBoxList .secBox .dl .dt .span {
+    font-size: 12px;
+  }
+  .topMain .sec01 .secBoxList .secBox .dl .dt .em {
+    font-size: 18px;
+  }
+  .topMain .sec01 .secBoxList .secBox .dl .dd .readMore p {
+    padding: 10px 0 10px 40px;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+  .topMain .sec01 .secBoxList01 {
+    margin: 0 0 10px;
+  }
+  .topMain .sec01 .secBoxList01 .secBox .photo {
+    height: 300px;
+  }
+  .topMain .sec01 .secBoxList02 .secBox .photo {
+    height: 220px;
+  }
+  .topMain .sec02 {
+    padding: 100px 0;
+  }
+  .topMain .sec02 .aboutContainer {
+    margin: 0 0 100px;
+  }
+  .topMain .sec02 .aboutContainer h3 {
+    margin: 0 0 30px;
+    font-size: 17px;
+  }
+  .topMain .sec02 .aboutContainer .txt p + p {
+    margin: 20px 0 0;
+  }
+  .topMain .sec02 .exampleContainer .ttlPanel {
+    margin: 0 0 40px;
+  }
+  .topMain .sec02 .exampleContainer .ttlPanel .ttlBox {
+    margin: 0 auto 30px;
+  }
+  .topMain .sec02 .exampleContainer .ttlPanel .ttlBox .balloon {
+    width: 60px;
+  }
+  .topMain .sec02 .exampleContainer .ttlPanel .ttlBox h3 {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+  .topMain .sec02 .caseSliderPanel {
+    margin: 0 0 60px;
+  }
+  .topMain .sec02 .caseSliderPanel .counterBox {
+    position: static;
+    margin: 0 0 20px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .topMain .sec02 .caseSliderPanel .counterBox .slick-counter p {
+    font-size: 30px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide img {
+    height: 60vw;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide .dl {
+    bottom: -80px;
+    width: 90%;
+    padding: 20px 10px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide .dl .dt {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide .dl .readMore {
+    text-align: left;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-slide .dl .readMore p {
+    padding: 10px 0 10px 40px;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_brown.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .slick-current {
+    transform: translateY(0);
+  }
+  .topMain .sec02 .caseSliderPanel .caseSlider .is-active-next {
+    transform: translateY(0);
+  }
+  .topMain .sec03 {
+    padding: 100px 0;
+  }
+  .topMain .sec03 .secPanel .leftBox {
+    margin: 0 0 30px;
+  }
+  .topMain .sec03 .secPanel .leftBox .pageSecTtlBox {
+    margin: 0 0 30px;
+  }
+  .topMain .sec03 .secPanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain .sec01 {
+    padding: 100px 0 60px;
+  }
+  .aboutMain .sec01 .secBox .txtBox {
+    margin: 0 0 30px;
+  }
+  .aboutMain .sec01 .secBox .txtBox h3 {
+    margin: 0 0 20px;
+    font-size: 17px;
+  }
+  .aboutMain .sec01 .secBox .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .aboutMain .sec01 .secBox .photo {
+    max-width: 600px;
+  }
+  .aboutMain .mv {
+    position: relative;
+    margin: -140px 0 0;
+    height: 250px;
+  }
+  .aboutMain .mv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .aboutMain .sec02 {
+    padding: 100px 0;
+  }
+  .aboutMain .sec02 .secTtl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .aboutMain .sec02 .secPanel {
+    padding: 20px;
+    border: 5px solid #4f72b1;
+  }
+  .aboutMain .sec02 .secPanel + .secPanel {
+    margin: 30px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .secBox .leftBox {
+    margin: 0 0 30px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .leftBox .num {
+    max-width: 100px;
+    margin: 0 0 20px;
+    font-size: 40px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .leftBox .ttl {
+    font-size: 20px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .rightBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .imgList {
+    max-width: 400px;
+    margin: 40px auto 0;
+  }
+  .aboutMain .sec02 .secPanel .imgList .imgBox {
+    width: 45%;
+  }
+  .aboutMain .sec02 .secPanel .bg {
+    position: relative;
+    height: 200px;
+    margin: 20px -20px -20px;
+  }
+  .aboutMain .sec02 .secPanel .bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .aboutMain .sec02 .secPanel .photoBox {
+    margin: 30px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .photoBox .photo {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .aboutMain .sec02 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutMain .sec02 .secPanel .secBox .leftBox {
+    width: 40%;
+  }
+  .aboutMain .sec02 .secPanel .secBox .rightBox {
+    width: 50%;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	purchase
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .purchaseMain .sec01 {
+    padding: 100px 0;
+  }
+  .purchaseMain .sec01 .checkContainer {
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  .purchaseMain .sec01 .checkContainer .ttl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .purchaseMain .sec01 .checkContainer .checkPanel {
+    padding: 30px 20px;
+  }
+  .purchaseMain .sec01 .checkContainer .checkPanel .inner {
+    display: block;
+    max-width: 500px;
+  }
+  .purchaseMain .sec01 .checkContainer .checkPanel .inner .ul {
+    width: 100%;
+    font-size: 16px;
+  }
+  .purchaseMain .sec01 .checkContainer .checkPanel .inner .ul + .ul {
+    margin: 20px 0 0;
+  }
+  .purchaseMain .sec01 .checkContainer .checkPanel .inner .ul .li {
+    padding: 0 0 0 20px;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/top_icon_check.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .purchaseMain .sec01 .secBox .photo {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .purchaseMain .sec01 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .purchaseMain .sec01 .secBox .txtBox p + p {
+    margin: 20px 0 0;
+  }
+  .purchaseMain .sec02 {
+    padding: 50px 0 100px;
+  }
+  .purchaseMain .sec02 .listBox {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .purchaseMain .sec02 .listBox .list + .list {
+    margin: 40px 0 0;
+  }
+  .purchaseMain .sec03 {
+    padding: 60px 0 100px;
+  }
+  .purchaseMain .sec03 .secWrap01::before {
+    display: none;
+  }
+  .purchaseMain .sec03 .secPanel {
+    padding: 30px 20px;
+  }
+  .purchaseMain .sec03 .secPanel::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100vw;
+    height: 100%;
+    background: #242d39;
+  }
+  .purchaseMain .sec03 .secPanel h3 {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+  .purchaseMain .sec03 .secPanel .txtBox .dl + .dl {
+    margin: 20px 0 0;
+  }
+  .purchaseMain .sec04 {
+    padding: 100px 0;
+  }
+  .purchaseMain .sec04 .pageSecTtlBox + p {
+    margin: 0 0 40px;
+  }
+  .purchaseMain .sec04 .flowList .dl + .dl {
+    margin: 60px 0 0;
+  }
+  .purchaseMain .sec04 .flowList .dl + .dl::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/purchase_flow_arrow_02.png) no-repeat;
+    background-size: 100% auto;
+    transform: translateY(-25px);
+  }
+  .purchaseMain .sec04 .flowList .dl .dt {
+    padding: 15px;
+    font-size: 18px;
+  }
+  .purchaseMain .sec04 .flowList .dl .dd {
+    padding: 15px;
+  }
+  .purchaseMain .sec05 {
+    padding: 60px 0;
+  }
+  .purchaseMain .sec05 .secBox + .secBox {
+    margin: 20px 0 0;
+  }
+  .purchaseMain .sec05 .secBox .ttlHead {
+    padding: 10px 15px;
+    color: #ffffff;
+    cursor: pointer;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/purchase_accord_plus.png) right 15px center no-repeat #4f72b1;
+    background-size: 20px auto;
+  }
+  .purchaseMain .sec05 .secBox .ttlHead.active {
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/purchase_accord_minus.png) right 15px center no-repeat #4f72b1;
+    background-size: 20px auto;
+  }
+  .purchaseMain .sec05 .secBox .ttlHead .icon {
+    margin: 0 15px 0 0;
+    font-size: 24px;
+  }
+  .purchaseMain .sec05 .secBox .ttlHead .ttl {
+    padding: 0 30px 0 0;
+  }
+  .purchaseMain .sec05 .secBox .cntBody {
+    padding: 15px 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	reform
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .reformMain .sec01 {
+    padding: 100px 0 80px;
+  }
+  .reformMain .sec01 .ttlBox {
+    padding: 30px 0;
+    font-size: 20px;
+  }
+  .reformMain .sec01 .secBox + .secBox {
+    margin: 50px 0 0;
+  }
+  .reformMain .sec01 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .reformMain .sec01 .secBox .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .reformMain .sec02 {
+    padding: 100px 0;
+  }
+  .reformMain .sec02 .secTtl {
+    margin: 0 0 30px;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-left: 4px solid #242d39;
+  }
+  .reformMain .sec02 .listBox {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .reformMain .sec02 .listBox .list + .list {
+    margin: 40px 0 0;
+  }
+  .reformMain .sec02 .listBox .photo {
+    margin: 0 0 20px;
+  }
+  .reformMain .sec02 .listBox .dl .dt {
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+  .reformMain .sec02 .listBox .dl .dd {
+    line-height: 2;
+  }
+  .reformMain .sec03 .secBox .txtBox {
+    padding: 60px 0 30px;
+  }
+  .reformMain .sec03 .secBox .txtBox .pageSecTtlBox {
+    margin: 0 0 20px;
+  }
+  .reformMain .sec03 .secBox .txtBox .btnLink {
+    width: 160px;
+  }
+  .reformMain .sec03 .secBox .txtBox .btnLink a {
+    padding: 10px 0 10px 40px;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_brown.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	dogrun
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .dogrunMain .sec01 {
+    padding: 100px 0 80px;
+  }
+  .dogrunMain .sec01 .section01 {
+    margin: 0 0 60px;
+  }
+  .dogrunMain .sec01 .section01 .secBox {
+    margin: 0 0 30px;
+  }
+  .dogrunMain .sec01 .section01 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .dogrunMain .sec01 .section01 .secBox .txtBox .ttl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .dogrunMain .sec01 .section02 h3 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .dogrunMain .sec02 {
+    padding: 100px 0;
+  }
+  .dogrunMain .sec02 .listBox {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .dogrunMain .sec02 .listBox .list + .list {
+    margin: 40px 0 0;
+  }
+  .dogrunMain .sec02 .listBox .photo {
+    margin: 0 0 20px;
+  }
+  .dogrunMain .sec02 .listBox .dl .dt {
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+  .dogrunMain .sec02 .listBox .dl .dd {
+    line-height: 2;
+  }
+  .dogrunMain .caseSliderPanel {
+    margin: 60px 0 0;
+  }
+  .dogrunMain .caseSliderPanel .caseSlider .slick-slide {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  .dogrunMain .caseSliderPanel .caseSlider .slick-slide img {
+    height: 60vw;
+  }
+  .dogrunMain .caseSliderPanel .caseSlider .slick-current {
+    transform: translateY(0);
+  }
+  .dogrunMain .caseSliderPanel .caseSlider .is-active-next {
+    transform: translateY(0);
+  }
+  .dogrunMain .sec03 {
+    padding: 0 0 100px;
+  }
+  .dogrunMain .sec03 .secBox {
+    padding: 0 20px;
+  }
+  .dogrunMain .sec03 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .dogrunMain .sec03 .secBox .txtBox h3 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	bar
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .barMain .pageHeaderPanel .pageHeaderBox {
+    min-width: 150px;
+  }
+  .barMain .kvPanel {
+    height: 350px;
+  }
+  .barMain .kvPanel .bnr {
+    bottom: 0;
+    width: 40px;
+  }
+  .barMain .kvPanel .bnr a {
+    padding: 15px 5px;
+  }
+  .barMain .kvPanel .bnr .dl .dt {
+    margin: 0 0 5px;
+    font-size: 10px;
+  }
+  .barMain .kvPanel .bnr .dl .dd {
+    font-size: 14px;
+  }
+  .barMain .topContainer {
+    padding: 60px 0 0;
+  }
+  .barMain .topContainer h2 {
+    margin: 0 0 40px;
+    font-size: 24px;
+  }
+  .barMain .topContainer .secBox .txtBox {
+    padding: 30px 0;
+  }
+  .barMain .topContainer .secBox .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .barMain .sec01 {
+    padding: 80px 0;
+  }
+  .barMain .sec01 .listBox {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .barMain .sec01 .listBox .list + .list {
+    margin: 40px 0 0;
+  }
+  .barMain .sec01 .listBox .photo {
+    margin: 0 0 20px;
+  }
+  .barMain .sec01 .listBox .dl .dt {
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+  .barMain .sec01 .listBox .dl .dd {
+    line-height: 2;
+  }
+  .barMain .sec02 {
+    padding: 80px 0;
+  }
+  .barMain .sec02 .secBox {
+    margin: 0 0 80px;
+  }
+  .barMain .sec02 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .barMain .sec02 .secBox .txtBox h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+  .barMain .sec02 .menuPanel .ul .li {
+    padding: 10px;
+  }
+  .barMain .sec03 {
+    padding: 100px 0;
+  }
+  .barMain .sec03 .topTxt {
+    padding: 0 0 40px;
+  }
+  .barMain .sec03 .slidePanel {
+    margin: 0 0 50px;
+  }
+  .barMain .sec03 .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .barMain .sec03 .infoPanel {
+    margin: 0 0 60px;
+  }
+  .barMain .sec03 .infoPanel .infoBox .dl {
+    padding: 10px;
+  }
+  .barMain .sec03 .infoPanel .infoBox .dl + .dl {
+    margin: 15px 0 0;
+  }
+  .barMain .sec03 .infoPanel .infoBox .dl .dt {
+    width: 70px;
+  }
+  .barMain .sec03 .infoPanel .infoBox .dl .dd {
+    width: calc(100% - 70px);
+  }
+}
+/*////////////////////////////////////////////////////////////
+	coffee
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .coffeeMain .kvPanel {
+    height: 350px;
+  }
+  .coffeeMain .sec01 .titleContainer {
+    padding: 60px 0;
+  }
+  .coffeeMain .sec01 .listContainer {
+    padding: 60px 0;
+  }
+  .coffeeMain .sec01 .listContainer .listBox {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .coffeeMain .sec01 .listContainer .listBox .list + .list {
+    margin: 40px 0 0;
+  }
+  .coffeeMain .sec01 .listContainer .listBox .photo {
+    margin: 0 0 20px;
+  }
+  .coffeeMain .sec01 .listContainer .listBox .dl .dt {
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+  .coffeeMain .sec01 .listContainer .listBox .dl .dd {
+    line-height: 2;
+  }
+  .coffeeMain .sec02 {
+    padding: 100px 0 0;
+  }
+  .coffeeMain .sec02 .titleContainer {
+    padding: 0 0 40px;
+  }
+  .coffeeMain .sec02 .titleContainer .pageSecTtlBox .pageSecTtl {
+    font-size: 20px;
+  }
+  .coffeeMain .sec02 .secPanel .txtBox {
+    padding: 30px 20px;
+  }
+  .coffeeMain .sec02 .secPanel .txtBox h3 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .coffeeMain .sec03 {
+    padding: 100px 0;
+  }
+  .coffeeMain .sec03 .secPanel .leftBox {
+    margin: 0 0 30px;
+  }
+  .coffeeMain .sec03 .secPanel .leftBox .pageSecTtlBox {
+    margin: 0 0 30px;
+  }
+  .coffeeMain .sec03 .secPanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .coffeeMain .sec04 {
+    padding: 100px 0;
+  }
+  .coffeeMain .sec04 .infoPanel {
+    margin: 0 0 60px;
+  }
+  .coffeeMain .sec04 .infoPanel .infoBox .dl {
+    padding: 10px;
+  }
+  .coffeeMain .sec04 .infoPanel .infoBox .dl + .dl {
+    margin: 15px 0 0;
+  }
+  .coffeeMain .sec04 .infoPanel .infoBox .dl .dt {
+    width: 70px;
+  }
+  .coffeeMain .sec04 .infoPanel .infoBox .dl .dd {
+    width: calc(100% - 70px);
+  }
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .sec01 {
+    padding: 100px 0 80px;
+  }
+  .companyMain .sec01 .secBox .profilePanel {
+    margin: 0 0 20px;
+  }
+  .companyMain .sec01 .secBox .profilePanel .photo {
+    margin: 0 0 15px;
+  }
+  .companyMain .sec01 .secBox .profilePanel .profileBox {
+    padding: 20px;
+  }
+  .companyMain .sec01 .secBox .profilePanel .profileBox .ttl {
+    margin: 0 0 20px;
+  }
+  .companyMain .sec01 .secBox .profilePanel .profileBox .ttl .em {
+    margin: 0 10px 0 0;
+    font-size: 18px;
+  }
+  .companyMain .sec01 .secBox .profilePanel .profileBox .ttl .span {
+    font-size: 12px;
+  }
+  .companyMain .sec01 .secBox .profilePanel .profileBox .dl .dt {
+    width: 70px;
+  }
+  .companyMain .sec01 .secBox .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .companyMain .sec01 .secBox .txtBox .name {
+    margin: 30px 0 0;
+  }
+  .companyMain .sec01 .secBox .txtBox .name .span {
+    margin: 0 10px 0 0;
+    font-size: 16px;
+  }
+  .companyMain .sec01 .secBox .txtBox .name .em {
+    font-size: 24px;
+  }
+  .companyMain .sec02 {
+    padding: 100px 0;
+  }
+  .companyMain .sec02 .infoPanel {
+    margin: 0 0 60px;
+  }
+  .companyMain .sec02 .infoPanel .infoBox .dl {
+    padding: 10px;
+  }
+  .companyMain .sec02 .infoPanel .infoBox .dl + .dl {
+    margin: 15px 0 0;
+  }
+  .companyMain .sec02 .infoPanel .infoBox .dl .dt {
+    width: 70px;
+  }
+  .companyMain .sec02 .infoPanel .infoBox .dl .dd {
+    width: calc(100% - 70px);
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .contactContainer {
+    padding: 100px 0 80px;
+  }
+  .contactMain .section + .section {
+    margin: 60px 0 0;
+  }
+  .contactMain .section .secTtl {
+    margin: 0 0 30px;
+    padding: 5px 15px;
+    border-left: 4px solid #242d39;
+  }
+  .contactMain .section .secTtl h3 {
+    font-size: 20px;
+  }
+  .contactMain .section .secTtl p {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 12px;
+  }
+  .contactMain .section01 .topTxt {
+    margin: 0 0 60px;
+    padding: 0 20px;
+  }
+  .contactMain .section02 .tel {
+    padding: 0 20px;
+  }
+  .contactMain .section02 .tel a .span {
+    font-size: 20px;
+  }
+  .contactMain .section02 .tel a .em {
+    font-size: 34px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .mainContainer {
+    padding: 100px 0;
+  }
+  .newsMain .catePanel {
+    max-width: 400px;
+    margin: 0 auto 40px;
+  }
+  .newsMain .catePanel .webgene-header {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .newsMain .catePanel .webgene-header > * {
+    font-size: 18px;
+  }
+  .newsMain .catePanel .webgene-item {
+    text-align: center;
+  }
+  .newsMain .catePanel .webgene-item + .webgene-item {
+    margin: 10px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 60px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .ttlBox {
+    font-size: 20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .newsMain .btnBack {
+    width: 110px;
+    margin: 60px auto 0;
+  }
+  .newsMain .btnBack a {
+    padding: 10px 0 10px 40px;
+    background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+}

@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*===================================================
+    各画面作成用CSS
+===================================================*/
+
+/*//////////////////////////////////////////////////
+    トップページ
+///////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+#topKv {
+	height: 350px;
+}
+#topKv .kvBox .kv01 {
+	background: url("../image/top/kv_01_sp.png") center no-repeat;
+	background-size: cover;
+}
+/* --------------------------------------------------
+	sec01
+-------------------------------------------------- */
+#top #sec01 {
+	padding: 20px 0;
+}
+#top #sec01:after {
+	right: -150px;
+	width: 40%;
+}
+#top #sec01 .box {
+	width: 100%;
+}
+#top #sec01 h2 {
+	padding: 0 0 15px 20px;
+}
+	#top #sec01 h2 img {
+		max-width: 250px;
+	}
+#top #sec01 p {
+	padding: 0 20px;
+}
+#top #sec01 h2 + p {
+	font-size: 18px;
+}
+#top #sec01 p + p {
+	margin-bottom: 20px;
+}
+#top #sec01 a {
+	max-width: 170px;
+	margin: 0 auto;
+	line-height: 50px;
+	background-position: right 5px center;
+	background-size: 20px auto;
+}
+/* --------------------------------------------------
+	sec02
+-------------------------------------------------- */
+#top #sec02 {
+	padding: 20px 0;
+}
+#top #sec02 #secBox01 h2 {
+	font-size: 14px;
+}
+#top #sec02 #secBox01 h2:after {
+	bottom: -10px;
+}
+#top #sec02 #secBox01 .imgBox div {
+	float: left;
+	width: 50%;
+}
+#top #sec02 #secBox01 .imgBox div:nth-child(-n+4) {
+	display: none;
+}
+#top #sec02 #secBox02 {
+	padding: 20px 0 0;
+}
+#top #sec02 #secBox02 h2 {
+	padding: 0 0 15px 20px;
+}
+	#top #sec02 #secBox02 h2 img {
+		max-width: 280px;
+	}
+#top #sec02 #secBox02 h2 + p {
+	margin-bottom: 50px;
+	padding-left: 20px;
+	font-size: 14px;
+}
+	#top #sec02 #secBox02 ul li dl {
+		min-height: 90px;
+		padding-top: 40px;
+	}
+	#top #sec02 #secBox02 ul li dt {
+		top: -35px;
+		width: 85px;
+	}
+/* --------------------------------------------------
+	sec03
+-------------------------------------------------- */
+#top #sec03 {
+	padding: 20px 0;
+}
+#top #sec03 h2 {
+	padding: 0 0 15px 20px;
+}
+	#top #sec03 h2 img {
+		max-width: 70px;
+	}
+#top #sec03 p {
+	padding: 0 20px;
+}
+#top #sec03 h2 + p {
+	font-size: 14px;
+}
+#top #sec03 ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: -30px;
+	padding: 0 20px;
+}
+	#top #sec03 ul li {
+		width: 48%;
+		max-width: 48%;
+		text-align: center;
+		margin-top: 30px;
+	}
+		#top #sec03 ul li img {
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+
+/* --------------------------------------------------
+	sec04
+-------------------------------------------------- */
+#top #sec04 {
+	padding: 20px 0;
+}
+#top #sec04 h2 {
+	padding: 0 0 15px 20px;
+}
+	#top #sec04 h2 img {
+		max-width: 110px;
+	}
+#top #sec04 h2 + p {
+	padding: 0 20px;
+	font-size: 14px;
+}
+#top #sec04 section {
+	overflow: hidden;
+	padding: 0 20px;
+}
+#top #sec04 section h3 {
+	float: left;
+	width: 39px;
+}
+#top #sec04 section ol {
+	float: left;
+	width: calc(100% - 39px);
+	padding-left: 5px;
+}
+	#top #sec04 ol li {
+		padding: 10px 20px;
+		background: #eeeeee;
+	}
+	#top #sec04 ol li + li {
+		margin-top: 5px;
+	}
+	#top #sec04 ol li dl dt {
+		margin-bottom: 5px;
+		font-size: 15px;
+		color: #154590;
+	}
+	#top #sec04 ol .first dd > p {
+		margin-bottom: 10px;
+	}
+	#top #sec04 ol .first dd div span {
+		font-size: 10px;
+	}
+	#top #sec04 ol .first dd div em {
+		font-size: 15px;
+	}
+
+/*//////////////////////////////////////////////////
+    下層ページ
+///////////////////////////////////////////////////*/
+#kv {
+	height: 200px;
+	text-align: center;
+	background: url("../image/common/kv_bg_sp.png") no-repeat;
+	background-size: cover;
+}
+	#kv h2 {
+		display: inline-block;
+		line-height: 200px;
+	}
+/*//////////////////////////////////////////////////
+    会社概要
+///////////////////////////////////////////////////*/
+#company #kv h2 {
+	width: 270px;
+}
+/* --------------------------------------------------
+    メインコンテンツ
+-------------------------------------------------- */
+#company #sec01 {
+	padding: 20px 0;
+}
+#company #sec01 .box {
+	margin-bottom: 40px;
+	padding: 0 10px;
+}
+#company #sec01 h3 {
+	width: 70px;
+	margin: 0 0 20px;
+}
+#company #sec01 table {
+	border: none;
+}
+#company #sec01 table tr,
+#company #sec01 table th,
+#company #sec01 table td {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+#company #sec01 table th {
+	padding: 10px;
+}
+#company #sec01 table td {
+	padding: 20px;
+}
+#company #sec01 .mapBox {
+	padding-bottom: 60%;
+}
+
+/*//////////////////////////////////////////////////
+    お問い合わせ
+///////////////////////////////////////////////////*/
+#contact #kv h2 {
+	width: 130px;
+}
+/* --------------------------------------------------
+    メインコンテンツ
+-------------------------------------------------- */
+#contact #sec01 {
+	padding: 40px 10px;
+}
+#contact #sec01 .contactTop {
+	padding: 20px 10px;
+}
+	#contact #sec01 .contactTop dt {
+		font-size: 18px;
+	}
+	#contact #sec01 .contactTop ul {
+		max-width: 500px;
+	}
+		#contact #sec01 .contactTop .num span {
+			padding: 0 3px;
+			font-size: 10px;
+		}
+		#contact #sec01 .contactTop .num em {
+			font-size: 16px;
+		}
+		#contact #sec01 .contactTop .num + p {
+			font-size: 10px;
+			text-align: center;
+		}
+#contact #sec01 .list {
+	margin: 30px 0;
+}
+#contact #sec01 table {
+	margin-bottom: 20px;
+	border: none;
+}
+#contact #sec01 table tr,
+#contact #sec01 table th,
+#contact #sec01 table td {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+#contact #sec01 table th,
+#contact #sec01 table .last th {
+	padding: 10px;
+}
+	#contact #sec01 table th em {
+		font-size: 12px;
+	}
+#contact #sec01 table td {
+	padding: 20px 10px;
+}
+#contact #sec01 table + p {
+	margin-bottom: 20px;
+}
+/*個人情報保護方針*/
+#contact #sec01 .privacy {
+	margin-bottom: 20px;
+	height: 170px;
+	padding: 20px 10px;
+	font-size: 13px;
+}
+	#contact #sec01 .privacy dl {
+		margin-top: 20px;
+	}
+#contact #sec01 .checkPrivasy {
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="interview">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="logo"><a href="/">
+				<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+			</a></div>
+		<div class="navBox">
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="about">
+							<div>
+								<p>アークについて</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>事業紹介</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="hair">
+										<div>
+											<p>ヘアサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="product">
+										<div>
+											<p>商品紹介</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="aesthetic">
+										<div>
+											<p>エステサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="childcare">
+										<div>
+											<p>保育事業</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="hair">
+							<div>
+								<p>ヘアサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="product">
+							<div>
+								<p>商品紹介</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="aesthetic">
+							<div>
+								<p>エステサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="childcare">
+							<div>
+								<p>保育事業</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>採用情報</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="message">
+										<div>
+											<p>メッセージ</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="system">
+										<div>
+											<p>アークの制度</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="interview">
+										<div>
+											<p>先輩の声</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="requirement">
+										<div>
+											<p>募集要項</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="message">
+							<div>
+								<p>メッセージ</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="system">
+							<div>
+								<p>アークの制度</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="interview">
+							<div>
+								<p>先輩の声</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="requirement">
+							<div>
+								<p>募集要項</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="company">
+							<div>
+								<p>会社概要</p>
+							</div>
+						</a></div>
+					<div class="li contact"><a href="contact">
+							<div>
+								<p>ご予約・お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="interviewMain main">
+		<div class="pageKvContainer">
+			<div class="topKvPanel">
+				<div class="topKvTitle mincho">
+					<div class="ttl">
+						<h1>社員インタビュー</h1>
+					</div>
+					<p>INTERVIEW</p>
+				</div>
+				<div class="topKv"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/interview_kv.png" alt=""></div>
+			</div>
+		</div>
+		<div class="pageMainContainer">
+			<div class="interviewSection">
+				<div class="secWrap01">
+					<div class="pageSecTtl mincho grad fadeUp">
+						<div class="ttl">
+							<h2>社員インタビュー</h2>
+						</div>
+						<div class="sub">
+							<p>INTERVIEW</p>
+						</div>
+					</div>
+					<div class="topTxt fadeUp">
+						<div class="txt">
+							<p>アークで働く3人のスタッフにインタビューしてみました。<br>共通して出てきたワードは「人柄の良さ」で、働きやすさに大きく関係していることがよく分かりました。<br>実際に雰囲気を知りたい、という方はぜひサロン見学に来てみてください。</p>
+						</div>
+					</div>
+					<div class="pagerList fadeUp">
+						<div class="ul mincho">
+							<div class="li"><a href="#staff01">
+									<div>
+										<p class="span">アシスタント/入社1年目</p>
+										<p class="em">入社の決め手は"人"でした</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#staff02">
+									<div>
+										<p class="span">スタイリスト/入社17年目</p>
+										<p class="em">子育てしながら楽しく働く</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#staff03">
+									<div>
+										<p class="span">スタイリスト/入社3年目</p>
+										<p class="em">メリハリのある働き方</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+					<div class="staffContainer">
+						<div class="staffPanel fadeUp" id="staff01">
+							<div class="panelTitle mincho">
+								<h3>入社の決め手は"人"でした</h3>
+							</div>
+							<div class="photoBox">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/interview_staff_01.png" alt=""></div>
+								<div class="name mincho">
+									<div class="dl">
+										<div class="dt">
+											<p>アシスタント</p>
+										</div>
+										<div class="dd">
+											<p class="em">佐藤朱里</p>
+											<p class="span">｜入社1年目</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="secBoxList">
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>入社したきっかけは何ですか？</p>
+									</div>
+									<div class="txt">
+										<p>最初はお客さんとしてアークに通っていましたが、美容学生になってからはアルバイトとして働かせてもらうことになりました。<br>仕事をしているとお客様でいたときよりもスタッフ同士の仲の良さや人の好さを間近でみることができ、「アークで働けたら楽しいだろうな」と思ったのがきっかけです。</p>
+									</div>
+								</div>
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>実際働いてみてどうですか？</p>
+									</div>
+									<div class="txt">
+										<p>アルバイトとして働く中で人間関係や人の好さは分かっていたので、ギャップはなく働けています。<br>新人なので気にかけてもらうことも多く、分からないことは分かるまで教えてもらえたりとありがたい環境です。<br>話していて楽しいスタッフも多く、明るい雰囲気で仕事ができています。</p>
+									</div>
+								</div>
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>今後頑張りたいことはありますか？</p>
+									</div>
+									<div class="txt">
+										<p>入社してからはスタイリストデビューを目指して日々いろいろな練習をしています。<br>実際にお客様を相手にしたときに、シャンプーやヘッドスパがすごい気持ち良かった！と喜んでいただけたり、「ありがとうございました」と笑顔で帰る姿を見るとやりがいを感じ、もっと頑張ろうと思います。<br>デビューに向けての練習はもちろんですが、アシスタントとしてスタイリストを一番支えられる存在になれるよう、日々頑張っていきたいです。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="staffPanel fadeUp" id="staff02">
+							<div class="panelTitle mincho">
+								<h3>子育てしながら楽しく働く</h3>
+							</div>
+							<div class="photoBox">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/interview_staff_02.png" alt=""></div>
+								<div class="name mincho">
+									<div class="dl">
+										<div class="dt">
+											<p>スタイリスト</p>
+										</div>
+										<div class="dd">
+											<p class="em">丸山奈津子</p>
+											<p class="span">｜入社17年目</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="secBoxList">
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>入社したきっかけは何ですか？</p>
+									</div>
+									<div class="txt">
+										<p>当時、スタイリッシュな外観に惹かれて客として行った際、アークで働く全員が優しく、お店やスタッフの和気藹々として雰囲気に一瞬でこのお店が好きになりました。<br>また、美容学生だった私が課題の相談をすると営業後も練習をみてくれ、丁寧に教えてくれました。<br>その時の対応やスタッフの人柄が温かく入社を考えるきっかけになりました。</p>
+									</div>
+								</div>
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>やりがいを感じるときはどんな時ですか？</p>
+									</div>
+									<div class="txt">
+										<p>お客様にヘアスタイルをご満足いただいた時、ご紹介した商品や施術でお悩みが解消された等、喜んで頂けて自分が学んできた技術や知識が誰かの為になっていると感じた時にやりがいを感じます。<br>また、ご家族で長く通って下さるお客様が多く、七五三、卒業、成人、結婚など大切な人生の節目にも携わらせていただくことが出来るのも、とてもやりがいを感じます。</p>
+									</div>
+								</div>
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>長年働いている理由は？</p>
+									</div>
+									<div class="txt">
+										<p>入社して今年で17年目になりますが、私が長くアークで働けている理由の1つが、ライフステージの変化に合わせて働き方を変えられる点です。<br>結婚、出産とライフステージが変化するごとに希望を聞きいてもらい、話し合い、自分の納得がいく働き方ができる様サポートしてもらえます。<br>この安心感があるからこそ、これからも長く働き続けようと思うことができます。<br>また、自社の保育園が開設したことで社会復帰もスムーズに不安なくでき、会社と保育園がすぐ近くにあるため、急病の際はすぐに駆け付けられます。<br>そして"子育てしながら働く"ということへの他のスタッフの理解があるため、肩身の狭い思いをせず、楽しく働けていることに感謝しています。<br>これからも自分の得意な分野をもっと掘り下げ、学びながら長く続けていきたいです。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="staffPanel fadeUp" id="staff03">
+							<div class="panelTitle mincho">
+								<h3>メリハリのある働き方</h3>
+							</div>
+							<div class="photoBox">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/interview_staff_03.png" alt=""></div>
+								<div class="name mincho">
+									<div class="dl">
+										<div class="dt">
+											<p>スタイリスト</p>
+										</div>
+										<div class="dd">
+											<p class="em">小池裕季</p>
+											<p class="span">｜入社3年目</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="secBoxList">
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>入社したきっかけは何ですか？</p>
+									</div>
+									<div class="txt">
+										<p>私は最初名古屋のお店で働いていました。<br>そこで学んだことを地元に戻って発信したいと思い、地元の友人に美容院をいくつか教えてもらった中にアークがありました。<br>サロン見学や面接で感じたスタッフの人柄の良さや店内の雰囲気を見て、"ここで働きたい"と思い入社しました。</p>
+									</div>
+								</div>
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>働きやすさはどうですか？</p>
+									</div>
+									<div class="txt">
+										<p>アーク保育園があり、スタッフの子供を見てくれる場所があるので女性や子供がいる方にも働きやすい環境だと思います。<br>有給休暇はしっかりとれるので、普段の休みに有給を繋げて旅行に行くこともでき、メリハリのある働き方ができます。<br>月に1回のミーティングでは改善したほうがいいことを言い合えるので、働きやすい場所を自分たちで作っている実感があります。</p>
+									</div>
+								</div>
+								<div class="secBox">
+									<div class="ttl mincho">
+										<p>やりがいを感じるときはいつですか？</p>
+									</div>
+									<div class="txt">
+										<p>アシスタントの時もスタイリストになってからも変わらず、笑顔で喜んでもらえた時です。<br>私たちのお仕事は人と人との繋がりだったり、信頼関係が大事だと思っています。<br>ちょっとした気遣いだったりがお客様にとってはすごく嬉しいことだったりするので、喜んでもらえるよう精進していきたいです。<br>また、東京の美容院など他の美容院に沢山お客様として訪れ、接客や自社にない技術を見て、取り入れてより成長することで、お客様の笑顔をもっと見られるようにしたいです。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottomLinkContainer">
+				<div class="secWrap01">
+					<div class="bottomLinkList">
+						<div class="listBox">
+							<div class="ul">
+								<div class="li"><a href="message">
+										<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/page_bottom_img_message.png" alt=""></div>
+										<div class="dl mincho">
+											<div class="dt">
+												<p>MESSAGE</p>
+											</div>
+											<div class="dd">
+												<p>代表メッセージ</p>
+											</div>
+										</div>
+									</a></div>
+								<div class="li"><a href="system">
+										<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/page_bottom_img_system.png" alt=""></div>
+										<div class="dl mincho">
+											<div class="dt">
+												<p>SYSTEM</p>
+											</div>
+											<div class="dd">
+												<p>アークの制度</p>
+											</div>
+										</div>
+									</a></div>
+								<div class="li"><a href="requirement">
+										<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/page_bottom_img_requirements.png" alt=""></div>
+										<div class="dl mincho">
+											<div class="dt">
+												<p>REQUIREMENTS</p>
+											</div>
+											<div class="dd">
+												<p>募集要項</p>
+											</div>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtl mincho white fadeUp">
+					<div class="ttl">
+						<h2>ご予約・お問い合わせ</h2>
+					</div>
+					<div class="sub">
+						<p>CONTACT</p>
+					</div>
+				</div>
+				<div class="contactItem fadeUp">
+					<div class="itemBox">
+						<div class="tel"><a href="tel:0265772227">
+								<div>
+									<p class="em mincho">0265-77-2227</p>
+									<p class="span">平日 10:00～19:00<br>日曜日・祝日 09:00～18:00</p>
+								</div>
+							</a></div>
+						<div class="mail"><a href="contact?sec02">
+								<div>
+									<p class="mincho">メールフォームはこちら</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="itemBox">
+						<div class="reserve"><a href="contact">
+								<div>
+									<p class="mincho">ご予約はこちらから</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="logo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txtBox">
+						<div class="ttl">
+							<p>株式会社アーク</p>
+							<div class="insta"><a href="https://www.instagram.com/haircraftark/" target="_blank" rel="noopener">
+									<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+								</a></div>
+						</div>
+						<div class="txt">
+							<p>〒396-0012長野県伊那市上新田2401-1</p><a href="tel:0265772227">
+								<div>
+									<p>TEL: 0265-77-2227</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy;2023　株式会社アーク.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

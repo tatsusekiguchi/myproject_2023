@@ -1,0 +1,699 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain {
+  background: #f2efff;
+}
+#topMain .topKvContainer {
+  background: url("../image/top/top_kv_bg_pc.png") center no-repeat;
+  background-size: cover;
+}
+#topMain .topKvContainer .topKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  padding: 0 20px;
+}
+#topMain .topKvContainer .topKvBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+#topMain .topKvContainer .kvTitle {
+  position: relative;
+  right: -5px;
+  max-width: 700px;
+  width: 45%;
+  z-index: 1;
+}
+#topMain .topKvContainer .appBnrBox {
+  position: relative;
+  top: 80px;
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  background: #ffffff;
+}
+#topMain .topKvContainer .appBnrBox > p {
+  margin: 0 0 20px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #1771ba;
+}
+#topMain .topKvContainer .appBnrBox .bnrList {
+  display: flex;
+  justify-content: space-between;
+  max-width: 480px;
+  min-width: 460px;
+  margin: 0 auto;
+}
+#topMain .topKvContainer .appBnrBox .bnrList .bnr {
+  width: 48%;
+}
+#topMain .topKvContainer .appBnrBox .bnrList .bnr a {
+  display: block;
+}
+#topMain .topKvContainer .kvInfoPanel {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 2px solid #1771ba;
+  background: #ffffff;
+}
+#topMain .topKvContainer .kvInfoPanel dl {
+  color: #ff0000;
+  text-align: center;
+}
+#topMain .topKvContainer .kvInfoPanel dl dt {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 0 0 0 1em;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.7;
+}
+#topMain .topKvContainer .kvInfoPanel dl dt::before {
+  content: "※";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#topMain .topKvContainer .kvInfoPanel dl dd {
+  text-align: left;
+}
+#topMain .topKvContainer .kvInfoPanel dl dd .txt {
+  line-height: 1.7;
+}
+#topMain .section {
+  padding: 80px 0;
+}
+#topMain .section .secTitleBox {
+  text-align: center;
+}
+#topMain .section .secTitleBox h2 {
+  padding: 50px 0 0;
+  font-size: 55px;
+  color: #1771ba;
+  background: url("../image/top/top_sec_ttl_icon.png") center top no-repeat;
+  background-size: 50px auto;
+}
+#topMain .section .secTitleBox p {
+  font-size: 130px;
+  color: #feffff;
+  line-height: 1;
+}
+#topMain .section__about .introBox {
+  margin: -10px 0 100px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+#topMain .section__about .introBox .txt {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#topMain .section__about .introBox .logo {
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+#topMain .section__about .limitedContainer {
+  padding: 10px;
+  border-radius: 10px;
+  background: #3db5f1;
+}
+#topMain .section__about .limitedContainer .limitedPanel {
+  padding: 50px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+#topMain .section__about .limitedContainer .ttlBox {
+  margin: 0 0 10px;
+  text-align: center;
+}
+#topMain .section__about .limitedContainer .ttlBox dl dt {
+  display: inline-block;
+  min-width: 170px;
+  margin: 0 0 30px;
+  padding: 0 10px;
+  font-size: 34px;
+  color: #ffe400;
+  border-radius: 30px;
+  background: #000000;
+}
+#topMain .section__about .limitedContainer .ttlBox dl dd {
+  font-size: 32px;
+  color: #1771ba;
+}
+#topMain .section__about .limitedContainer .ttlBox dl dd p {
+  display: inline-block;
+  background: linear-gradient(transparent 70%, #fff17d 70%);
+}
+#topMain .section__about .limitedContainer .appleWatch {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#topMain .section__about .limitedContainer .presentTtl {
+  margin: 0 0 40px;
+  font-size: 30px;
+  color: #1771ba;
+  text-align: center;
+}
+#topMain .section__about .limitedContainer .presentTtl em {
+  font-size: 50px;
+  font-weight: 700;
+}
+#topMain .section__about .limitedContainer .presentTxt {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+#topMain .section__about .limitedContainer .presentTxt em {
+  font-weight: bold;
+}
+#topMain .section__about .limitedContainer .term {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: #f3f3f3;
+}
+#topMain .section__merit .meritListBox {
+  padding: 60px 0 0;
+}
+#topMain .section__merit .meritListBox ol li {
+  position: relative;
+  padding: 50px 30px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+#topMain .section__merit .meritListBox ol .numBox {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  background: #1771ba;
+}
+#topMain .section__merit .meritListBox ol .numBox .ttl {
+  padding: 15px 0 0;
+  font-size: 12px;
+}
+#topMain .section__merit .meritListBox ol .numBox .num {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: 0 auto;
+  font-size: 58px;
+}
+#topMain .section__merit .meritListBox ol dl dt {
+  font-size: 34px;
+}
+#topMain .section__merit .meritListBox ol dl dd .imgBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+#topMain .section__merit .meritListBox ol dl dd .img {
+  margin: 0 auto;
+}
+#topMain .section__merit .meritListBox ol dl dd .img01 {
+  width: 200px;
+}
+#topMain .section__merit .meritListBox ol dl dd .img02 {
+  width: 160px;
+}
+#topMain .section__merit .meritListBox ol dl dd .img03 {
+  width: 100px;
+}
+@media (min-width: 1025px) {
+  #topMain .section__merit .meritListBox ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  #topMain .section__merit .meritListBox ol li {
+    width: calc(33.3333333333% - 15px);
+  }
+}
+#topMain .section__flow .pagerList {
+  padding: 40px 0 100px;
+}
+#topMain .section__flow .pagerList ol {
+  display: flex;
+  justify-content: space-between;
+}
+#topMain .section__flow .pagerList ol li {
+  width: calc(25% - 2px);
+}
+#topMain .section__flow .pagerList ol li a {
+  display: block;
+}
+#topMain .section__flow .stepSection + .stepSection {
+  margin: 120px 0 0;
+}
+#topMain .section__flow .stepSection .secTtlBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px;
+}
+#topMain .section__flow .stepSection .secTtlBox .numBox {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  background: #1771ba;
+}
+#topMain .section__flow .stepSection .secTtlBox .numBox .ttl {
+  padding: 15px 0 0;
+  font-size: 12px;
+}
+#topMain .section__flow .stepSection .secTtlBox .numBox .num {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: 0 auto;
+  font-size: 58px;
+}
+#topMain .section__flow .stepSection .secTtlBox .secTtl {
+  margin: 0 0 0 20px;
+  font-size: 40px;
+}
+#topMain .section__flow .tabList {
+  max-width: 700px;
+  margin: 0 auto;
+}
+#topMain .section__flow .tabList ul {
+  display: flex;
+  justify-content: space-between;
+}
+#topMain .section__flow .tabList ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 5px);
+  padding: 20px 10px;
+  cursor: pointer;
+  border-radius: 20px 20px 0 0;
+  background: #b5cee3;
+}
+#topMain .section__flow .tabList ul li.active {
+  background: #1771ba;
+}
+#topMain .section__flow .tabList ul li p {
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.3;
+}
+#topMain .section__flow .stepContainer {
+  padding: 10px;
+  background: #1771ba;
+}
+#topMain .section__flow .stepContainer .stepPanel {
+  padding: 50px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+#topMain .section__flow #step01 .topBox {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+#topMain .section__flow #step01 .topBox .ttl {
+  margin: 0 0 40px;
+  font-size: 40px;
+  text-align: center;
+}
+#topMain .section__flow #step01 .topBox .topList {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#topMain .section__flow #step01 .topBox .topList ol {
+  font-size: 34px;
+}
+#topMain .section__flow #step01 .topBox .topList ol li + li {
+  margin: 10px 0 0;
+}
+#topMain .section__flow #step01 .topBox .topList ol li span {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+#topMain .section__flow #step01 .topBox .topList ol li em {
+  background: linear-gradient(transparent 70%, #fff17d 70%);
+}
+@media (min-width: 1025px) {
+  #topMain .section__flow #step01 .topBox .topList {
+    display: flex;
+  }
+  #topMain .section__flow #step01 .topBox .topList ol {
+    width: 50%;
+  }
+}
+#topMain .section__flow #step01 .detailContainer {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #e9ebee;
+}
+#topMain .section__flow #step01 .detailContainer .detailBtn {
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  background: url("../image/top/accord_arrow_down.png") right 15px center no-repeat;
+}
+#topMain .section__flow #step01 .detailContainer .detailBtn.active {
+  background: url("../image/top/accord_arrow_up.png") right 15px center no-repeat;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel {
+  display: none;
+  padding: 40px;
+  background: #ffffff;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .mobileTitle {
+  max-width: 420px;
+  margin: 0 auto 30px;
+  padding: 10px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 40px;
+  background: #1771ba;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .appBnr {
+  max-width: 300px;
+  margin: 0 auto 60px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .appBnr a {
+  display: block;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .introTxt {
+  margin: 0 0 40px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .introTxt p + p {
+  margin: 40px 0 0;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlTxt {
+  max-width: 540px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #e9ebee;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlTxt dl dt {
+  margin: 0 0 10px;
+  font-size: 26px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlComplete {
+  margin: 0 0 50px;
+  text-align: center;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlComplete p {
+  font-size: 36px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlComplete .arrow {
+  width: 70px;
+  margin: 20px auto 0;
+}
+#topMain .section__flow .stepFlow ol li {
+  position: relative;
+}
+#topMain .section__flow .stepFlow ol .num {
+  position: absolute;
+  top: -30px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  background: #1771ba;
+}
+#topMain .section__flow .stepFlow ol .num p {
+  position: relative;
+  top: -2px;
+}
+#topMain .section__flow .stepFlow ol .txt {
+  padding: 10px 0;
+}
+@media (min-width: 1025px) {
+  #topMain .section__flow .stepFlow ol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -40px;
+  }
+  #topMain .section__flow .stepFlow ol li {
+    width: calc(50% - 40px);
+    margin: 60px 0 0 40px;
+  }
+}
+#topMain .section__flow #step02 .stepFlow {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+#topMain .section__flow #step03 .topTxt {
+  margin: 0 0 40px;
+  text-align: center;
+}
+#topMain .section__flow #step03 .pointTitle {
+  max-width: 420px;
+  margin: 0 auto 30px;
+  padding: 10px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 40px;
+  background: #1771ba;
+}
+#topMain .section__flow #step03 .pointTableHead {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}
+#topMain .section__flow #step03 .pointTableContainer {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  #topMain .section__flow #step03 .pointTableHead {
+    color: #ffffff;
+    background: #1771ba;
+  }
+  #topMain .section__flow #step03 .pointTableHead ul {
+    display: flex;
+  }
+  #topMain .section__flow #step03 .pointTableHead ul li {
+    padding: 20px 30px;
+  }
+  #topMain .section__flow #step03 .pointTableHead ul .point {
+    padding: 20px 10px;
+  }
+  #topMain .section__flow #step03 .pointTablePanel {
+    background: #e9ebee;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul {
+    display: flex;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul + ul {
+    border-top: 1px solid #ffffff;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul li {
+    padding: 20px 30px;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul dl dt {
+    display: none;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul dl dd aside {
+    margin: 10px 0 0;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul dl dd .box01 {
+    min-height: 186px;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul dl dd .box02 {
+    border-top: 1px solid #ffffff;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul .point.multi {
+    padding: 0;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul .point.multi .box {
+    padding: 20px 10px;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul .description.multi {
+    padding: 0;
+  }
+  #topMain .section__flow #step03 .pointTablePanel ul .description.multi .box {
+    padding: 20px 30px;
+  }
+  #topMain .section__flow #step03 .count {
+    order: 2;
+    width: 25%;
+    border-left: 1px solid #ffffff;
+  }
+  #topMain .section__flow #step03 .action {
+    order: 1;
+    width: 25%;
+  }
+  #topMain .section__flow #step03 .point {
+    order: 3;
+    width: 10%;
+    text-align: center;
+    border-left: 1px solid #ffffff;
+  }
+  #topMain .section__flow #step03 .description {
+    order: 4;
+    width: 40%;
+    border-left: 1px solid #ffffff;
+  }
+  #topMain .section__flow #step03 .point02 {
+    display: none;
+  }
+  #topMain .section__flow #step03 .description02 {
+    display: none;
+  }
+}
+#topMain .section__flow #step04 .topTxt {
+  margin: 0 0 60px;
+}
+#topMain .section__flow #step04 .tradeContainer {
+  border-radius: 10px;
+  background: #ffffff;
+}
+#topMain .section__flow #step04 .tradeTitle {
+  position: relative;
+  top: -35px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 40px;
+  background: #1771ba;
+}
+#topMain .section__flow #step04 .tradePanel {
+  padding: 20px 20px 40px;
+}
+#topMain .section__flow #step04 .tradeList {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#topMain .section__flow #step04 .tradeList ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topMain .section__flow #step04 .tradeList ul p {
+  position: relative;
+  padding: 0 0 0 25px;
+}
+#topMain .section__flow #step04 .tradeList ul span {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-size: 18px;
+}
+#topMain .section__flow #step04 .tradeList ul em {
+  display: inline-block;
+  font-size: 26px;
+}
+#topMain .section__flow #step04 .tradeList ul .item {
+  text-align: center;
+}
+#topMain .section__flow #step04 .tradeList ul .item img {
+  display: inline-block;
+}
+#topMain .section__flow #step04 .tradeList ul .item01 {
+  width: 200px;
+}
+#topMain .section__flow #step04 .tradeList ul .item01 img {
+  width: 120px;
+}
+#topMain .section__flow #step04 .tradeList ul .item02 {
+  width: 200px;
+}
+#topMain .section__flow #step04 .tradeList ul .item03 {
+  width: 200px;
+}
+#topMain .section__flow #step04 .tradeList ul .item03 img {
+  width: 140px;
+}
+#topMain .section__flow #step04 .tradeList ul .item04 {
+  width: 200px;
+}
+#topMain .section__flow #step04 .tradeList ul .item04 img {
+  width: 120px;
+}
+#topMain .section__flow #step04 .tradeList ul .item05 {
+  width: 130px;
+}
+#topMain .section__flow #step04 .tradeList ul .item06 {
+  width: 130px;
+}
+#topMain .section__flow #step04 .tradeList ul .item07 {
+  width: 130px;
+}
+@media (min-width: 1025px) {
+  #topMain .section__flow #step04 .tradeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #topMain .section__flow #step04 .tradeList ul {
+    width: 48%;
+    margin: -10px 0 0;
+  }
+  #topMain .section__flow #step04 .tradeList ul li {
+    min-height: 160px;
+    margin: 10px 0 0;
+  }
+}
+#topMain .section__faq .topTxt {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+#topMain .section__faq .btnFaq {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#topMain .section__faq .btnFaq a {
+  display: block;
+}

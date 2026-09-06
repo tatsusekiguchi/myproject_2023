@@ -1,0 +1,16 @@
+body {
+  opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  .header .navBox {
+    top: -100%;
+    opacity: 0;
+  }
+
+  .header .navBox.active {
+    top: 0;
+    opacity: 1;
+    z-index: 999;
+  }
+}

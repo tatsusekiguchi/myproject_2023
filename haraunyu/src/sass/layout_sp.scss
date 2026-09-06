@@ -1,0 +1,1068 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKv {
+      .kvBox {
+        top: 55px;
+        height: calc(100% - 55px);
+      }
+      .kvTtlBox {
+        position: absolute;
+        top: 38%;
+        left: 20px;
+        width: calc(100% - 50px);
+        max-width: 550px;
+        padding: 30px 10px;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.8);
+        h1 {
+          font-size: 24px;
+          em {
+            color: #c39547;
+          }
+        }
+      }
+    }
+    .secWrap01 {
+      padding: 0 30px;
+    }
+    .section01 {
+      .secBox {
+        padding: 40px 10px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+        .txt {
+          margin: 0 0 15px;
+        }
+        .btnMore {
+          position: static;
+          margin: 20px auto 0;
+        }
+      }
+    }
+    .section02,
+    .section03 {
+      .secWrap {
+        padding: 0 25px;
+      }
+      .secTtl {
+        top: -80px;
+        left: 10px;
+        font-size: 80px;
+      }
+      .mvPanel {
+        padding: 30px 10px;
+        .secBox {
+          position: relative;
+          width: 100%;
+          max-width: 550px;
+          padding: 20px;
+          text-align: right;
+          background: rgba(255, 255, 255, 0.8);
+          .ttlBox {
+            position: relative;
+            right: -20px;
+            max-width: 400px;
+            margin: 0 0 15px;
+            padding: 5px 10px;
+            .ttl {
+              font-size: 18px;
+              h3 {
+                margin: 0 0 0 5px;
+                padding: 0 0 0 16px;
+              }
+            }
+          }
+          .txt {
+            text-align: center;
+          }
+          .btnMore {
+            display: block;
+            width: 100%;
+            margin: 20px auto 0;
+          }
+        }
+      }
+    }
+    .section04 {
+      .leftBox {
+        margin: 0 0 30px;
+      }
+      .webgene-blog {
+        .webgene-item {
+          display: block;
+          + .webgene-item {
+            margin: 20px 0 0;
+          }
+          .time {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .section05 {
+      .secBox {
+        max-width: 400px;
+        padding: 40px 20px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .strengthMain {
+    .sec01 {
+      padding: 100px 0;
+      .secBox {
+        padding: 40px 10px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 100px 0;
+      .secBox {
+        + .secBox {
+          margin-top: 80px;
+        }
+        .photo {
+          margin: 0 auto 30px;
+        }
+        .num {
+          width: 90px;
+          margin: 0 auto 20px;
+        }
+        .box {
+          h3 {
+            margin: 0 0 20px;
+            font-size: 25px;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            br {
+              display: none;
+            }
+          }
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	transport
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .transportMain {
+    .sec01 {
+      padding: 100px 0;
+      .secBox {
+        padding: 40px 10px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 100px 0;
+      .secBox {
+        + .secBox {
+          margin: 60px 0 0;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          .ttl {
+            margin: 0 0 15px;
+            padding: 0 0 5px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 100px 0;
+      .secBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+        .txt {
+          margin: 0 0 20px;
+        }
+        .btnMail {
+          max-width: 300px;
+          a {
+            > div {
+              p {
+                font-size: 18px;
+              }
+              .em {
+                padding: 0 0 0 20px;
+                background: url(https://haraunyu.co.jp/system_panel/uploads/images/footer_mail.png)
+                  left center no-repeat;
+                background-size: 15px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 100px 0;
+      .listBox {
+        margin: 0 0 50px;
+        .ul {
+          .li {
+            + .li {
+              margin: 50px 0 0;
+            }
+          }
+          .dl {
+            padding: 15px 0 0;
+            .dt {
+              margin: 0 0 15px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .message {
+        margin: 0 0 50px;
+        font-size: 20px;
+      }
+      .secBox {
+        padding: 20px 10px 30px;
+        .ttlBox {
+          position: relative;
+          top: 0;
+          max-width: 400px;
+          margin: 0 auto 15px;
+          .ttl {
+            font-size: 20px;
+            p {
+              padding: 0 0 0 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 90px 0;
+      .secTtl {
+        top: 20px;
+        left: 20px;
+        font-size: 70px;
+      }
+      .flowPanel {
+        + .flowPanel {
+          margin: 50px 0 0;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -35px;
+            left: 0;
+            right: 0;
+            width: 36px;
+            height: 25px;
+          }
+        }
+        .flowTtl {
+          font-size: 18px;
+        }
+        .flowBox {
+          padding: 30px 10px 40px;
+          background: #ffffff;
+        }
+        .btnList {
+          margin: 30px 0 0;
+          .btn {
+            display: block;
+            width: 260px;
+            margin: 0 auto;
+            a {
+              height: 40px;
+              background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_bg.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+          }
+          .btnTel {
+            a {
+              font-size: 16px;
+              .em {
+                font-size: 20px;
+              }
+            }
+          }
+          .btnMail {
+            margin: 15px auto 0;
+            a {
+              font-size: 16px;
+              p {
+                padding: 0 0 0 20px;
+                background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_mail.png)
+                  left center no-repeat;
+                background-size: 16px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	warehouse
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .warehouseMain {
+    .sec01 {
+      padding: 100px 0;
+      .secBox {
+        padding: 40px 10px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+        .stopTxt {
+          position: static;
+          max-width: 400px;
+          font-size: 16px;
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .photoPanel {
+        margin: 0 0 50px;
+        .mainPhoto {
+          height: 400px;
+        }
+        .photoList {
+          .photo {
+            height: 130px;
+          }
+        }
+      }
+      .secPanel {
+        .ttl {
+          font-size: 20px;
+        }
+        .secBox {
+          padding: 20px 10px;
+          .txtBox01 {
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 90px 0;
+      .secTtl {
+        top: 20px;
+        left: 20px;
+        font-size: 70px;
+      }
+      .flowPanel {
+        + .flowPanel {
+          margin: 50px 0 0;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -35px;
+            left: 0;
+            right: 0;
+            width: 36px;
+            height: 25px;
+          }
+        }
+        .flowTtl {
+          font-size: 18px;
+          p {
+            font-size: 12px;
+          }
+        }
+        .flowBox {
+          padding: 30px 10px 40px;
+          background: #ffffff;
+        }
+        .btnList {
+          margin: 30px 0 0;
+          .btn {
+            display: block;
+            width: 260px;
+            margin: 0 auto;
+            a {
+              height: 40px;
+              background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_bg.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+          }
+          .btnTel {
+            a {
+              font-size: 16px;
+              .em {
+                font-size: 20px;
+              }
+            }
+          }
+          .btnMail {
+            margin: 15px auto 0;
+            a {
+              font-size: 16px;
+              p {
+                padding: 0 0 0 20px;
+                background: url(https://haraunyu.co.jp/system_panel/uploads/images/sec_flow_link_mail.png)
+                  left center no-repeat;
+                background-size: 16px auto;
+              }
+            }
+          }
+        }
+      }
+      .flowPanelMulti {
+        display: block;
+        margin: 50px 0;
+        .flowPanel {
+          width: 100%;
+          margin: 0;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -35px;
+            left: 0;
+            right: 0;
+            width: 36px;
+            height: 25px;
+          }
+          + .flowPanel {
+            &::before {
+              display: none;
+            }
+          }
+        }
+        + .flowPanel {
+          &::before {
+            content: "";
+            position: absolute;
+            top: -35px;
+            left: 0;
+            right: 0;
+            width: 36px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .staffMain {
+    .pageKvPanel {
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/staff_kv.png)
+        center no-repeat;
+      background-size: cover;
+    }
+    .sec01 {
+      padding: 100px 0;
+      .secBox {
+        + .secBox {
+          margin-top: 80px;
+        }
+        .photo {
+          margin: 0 auto 30px;
+        }
+        .num {
+          width: 90px;
+          margin: 0 auto 20px;
+        }
+        .box {
+          h3 {
+            margin: 0 0 20px;
+            font-size: 25px;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            br {
+              display: none;
+            }
+          }
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 90px 0;
+      .secTtl {
+        top: 20px;
+        left: 20px;
+        font-size: 70px;
+      }
+      .secPanel {
+        padding: 20px;
+        + .secPanel {
+          margin: 30px 0 0;
+        }
+        .num {
+          position: static;
+          width: 90px;
+          margin: 20px auto;
+        }
+        .ttl {
+          margin: 0 0 15px;
+          font-size: 20px;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .ttl {
+        max-width: 300px;
+        margin: 0 auto 30px;
+        padding: 0 20px;
+        font-size: 18px;
+        background: url(https://haraunyu.co.jp/system_panel/uploads/images/staff_sec02_slash_01.png)
+            left center no-repeat,
+          url(https://haraunyu.co.jp/system_panel/uploads/images/staff_sec02_slash_02.png)
+            right center no-repeat;
+        background-size: 18px auto, 18px auto;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .sec01 {
+      padding: 100px 0;
+      .secBox {
+        padding: 40px 10px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 100px 0;
+      .listBox {
+        max-width: 350px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              padding: 20px 10px;
+              font-size: 24px;
+              p {
+                padding: 0 0 5px;
+                &::before {
+                  width: 50px;
+                }
+              }
+            }
+            .dd {
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .ttl {
+        max-width: 300px;
+        margin: 0 auto 30px;
+        padding: 0 20px;
+        font-size: 16px;
+        background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec03_slash_01.png)
+            left bottom 5px no-repeat,
+          url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec03_slash_02.png)
+            right bottom 5px no-repeat;
+        background-size: 15px auto, 15px auto;
+      }
+    }
+    .sec04 {
+      padding: 120px 0;
+      background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_bg.png)
+        center no-repeat;
+      background-size: cover;
+      .list {
+        max-width: 400px;
+        .ul {
+          .li {
+            font-size: 20px;
+            + .li {
+              margin: 50px 0 0;
+              &::before {
+                content: "";
+                position: absolute;
+                top: -40px;
+                left: 0;
+                right: 0;
+                width: 30px;
+                height: 30px;
+                margin: 0 auto;
+                background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_arrow_02.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: calc((100% / 4) - 45px);
+              height: 350px;
+              font-size: 36px;
+              writing-mode: vertical-lr;
+              + .li {
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: -45px;
+                  bottom: 0;
+                  width: 35px;
+                  height: 35px;
+                  margin: auto 0;
+                  background: url(https://haraunyu.co.jp/system_panel/uploads/images/recruit_sec04_arrow_01.png)
+                    no-repeat;
+                  background-size: 100% auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 100px 0;
+      .infoPanel {
+        .dl {
+          display: block;
+          padding: 20px 10px;
+          .dt {
+            width: 100%;
+            margin: 0 0 5px;
+          }
+          .dd {
+            width: 100%;
+          }
+          .txtBox {
+            display: block;
+            + .txtBox {
+              margin: 20px 0 0;
+            }
+          }
+          .aside {
+            display: block;
+            width: 220px;
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sec06 {
+      padding: 90px 0;
+      .secTtl {
+        top: 20px;
+        left: 20px;
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .topSection {
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .infoPanel {
+        .dl {
+          display: block;
+          padding: 20px 10px;
+          .dt {
+            width: 100%;
+            margin: 0 0 5px;
+          }
+          .dd {
+            width: 100%;
+          }
+          .txtBox {
+            display: block;
+            + .txtBox {
+              margin: 20px 0 0;
+            }
+          }
+          .aside {
+            display: block;
+            width: 220px;
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topSection {
+      padding: 50px 10px;
+      .topTxt {
+        margin: 0 0 50px;
+      }
+      .secBox {
+        + .secBox {
+          margin: 60px 0 0;
+        }
+        .ttl {
+          max-width: 300px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .telBox {
+          margin: 20px 0 0;
+          .tel {
+            display: block;
+            margin: 0 0 10px;
+            a {
+              font-size: 20px;
+              .em {
+                font-size: 30px;
+              }
+            }
+            + p {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .formContainer {
+      padding: 90px 0;
+      .secTtl {
+        top: 20px;
+        left: 20px;
+        font-size: 70px;
+      }
+    }
+    .formSection {
+      + .formSection {
+        margin: 60px 0 0;
+        .pageSecTtlBox {
+          margin: 0 0 20px;
+          + p {
+            margin: 0 0 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain {
+    .blogSection {
+      padding: 80px 0;
+    }
+    .catePanel {
+      max-width: 400px;
+      margin: 0 auto 40px;
+      .webgene-header {
+        margin: 0 0 15px;
+        h2 {
+          font-size: 18px;
+        }
+      }
+      .webgene-item {
+        padding: 10px 20px;
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 60px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+  #fp-nav {
+    right: 0;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: 55px 0 0;
+  }
+  .pageKvPanel {
+    height: 300px;
+    .pageKvTitleBox {
+      .pageKvTitle {
+        font-size: 20px;
+        h1 {
+          padding: 0 0 0 30px;
+        }
+      }
+    }
+  }
+  .topSecTtlBox {
+    margin: 0 0 25px;
+    .topSecTtl {
+      font-size: 20px;
+      h2 {
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    .pageSecTtl {
+      font-size: 20px;
+      p {
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .btnMore {
+    max-width: 240px;
+    a {
+      padding: 10px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .btmSection {
+    background: #3e3a39;
+    .footer {
+      .footContact {
+        padding: 180px 0;
+      }
+    }
+  }
+  .footer {
+    .footContact {
+      padding: 50px 0;
+      text-align: center;
+      .contactBox {
+        max-width: 600px;
+        padding: 30px 20px;
+        .telBox {
+          margin: 0 0 20px;
+          > p {
+            text-indent: 0;
+          }
+          a {
+            p {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+        .mailBox {
+          .btnMail {
+            max-width: 300px;
+            a {
+              > div {
+                p {
+                  display: inline-block;
+                  font-size: 18px;
+                }
+                .span {
+                  padding: 0 0 0 25px;
+                  background: url(https://haraunyu.co.jp/system_panel/uploads/images/footer_mail.png)
+                    left center no-repeat;
+                  background-size: 15px auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 20px;
+      .footBox {
+        margin: 0 0 30px;
+        .logoBox {
+          margin: 0 0 30px;
+          .logo {
+            width: 180px;
+          }
+        }
+        .infoBox {
+          .txt {
+            display: block;
+            margin: 0 0 10px;
+          }
+          .snsList {
+            .sns {
+              display: inline-block;
+              width: 30px;
+              + .sns {
+                margin: 0 0 0 10px;
+              }
+            }
+          }
+        }
+        .pagetop {
+          width: 40px;
+        }
+      }
+    }
+  }
+}

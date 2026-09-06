@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    .headWrap {
+      height: auto;
+      padding: 10px 20px;
+    }
+    .logoBox {
+      .logo {
+        width: 200px;
+      }
+      .ttl {
+        display: none;
+      }
+    }
+    .headItem {
+      display: none;
+    }
+    .hamburger {
+      top: 25px;
+      right: 20px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 60px 20px;
+    .navPanel01 {
+      flex-direction: column-reverse;
+      margin: 0 0 40px;
+      .leftBox {
+        width: 100%;
+        margin: 30px 0 0;
+        text-align: center;
+        .logo {
+          max-width: 160px;
+          margin: 0 auto 30px;
+        }
+        .info {
+          display: inline-block;
+          font-size: 12px;
+          text-align: left;
+          .txt {
+            + .txt {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+      .rightBox {
+        width: 100%;
+        text-align: center;
+        .navList {
+          display: inline-block;
+          min-width: 260px;
+          text-align: left;
+          .ul {
+            + .ul {
+              margin: 15px 0 0;
+            }
+            .li {
+              + .li {
+                margin: 15px 0 0;
+              }
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .navPanel02 {
+      max-width: 600px;
+      margin: 0 auto;
+      .contactItem {
+        display: block;
+        max-width: 400px;
+        > * {
+          width: 100%;
+        }
+        .dl {
+          .dt {
+            position: relative;
+            margin: 0 0 20px;
+            padding: 0 0 15px;
+            font-size: 18px;
+          }
+        }
+        .telBox {
+          margin: 0 0 40px;
+          a {
+            .span {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+          .aside {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        .mailBox {
+          a {
+            max-width: 250px;
+          }
+        }
+      }
+    }
+    .navPanel03 {
+      margin: 20px 0 0;
+      text-align: center;
+      .snsList {
+        display: inline-block;
+        text-align: left;
+      }
+      .snsBox {
+        + .snsBox {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 78px 0 0;
+  }
+  .pageHeaderPanel {
+    .pageHeaderBox {
+      padding: 15px 20px;
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    p {
+      font-size: 12px;
+    }
+    .pageSecTtl {
+      font-size: 22px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+  .btnMore {
+    a {
+      padding: 10px 0 10px 40px;
+      background: url(https://aoiesuteto230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png)
+        left center no-repeat;
+      background-size: 30px auto;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 40px 0;
+      .ttl {
+        font-size: 18px;
+      }
+      .contactPanel {
+        max-width: 600px;
+        margin: 0 auto;
+        .contactItem {
+          display: block;
+          max-width: 400px;
+          > * {
+            width: 100%;
+          }
+          .dl {
+            .dt {
+              position: relative;
+              margin: 0 0 20px;
+              padding: 0 0 15px;
+              font-size: 18px;
+            }
+          }
+          .telBox {
+            margin: 0 0 40px;
+            a {
+              .span {
+                font-size: 20px;
+              }
+              .em {
+                font-size: 30px;
+              }
+            }
+            .aside {
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+          .mailBox {
+            a {
+              max-width: 250px;
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 15px;
+      .pagetop {
+        top: 0;
+        right: 10px;
+        width: 45px;
+      }
+      .leftBox {
+        padding: 60px 0 0;
+        text-align: center;
+        .logo {
+          max-width: 160px;
+          margin: 0 auto 30px;
+        }
+        .info {
+          display: inline-block;
+          font-size: 12px;
+          text-align: left;
+          .txt {
+            + .txt {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+      .snsContainer {
+        text-align: center;
+        .snsList {
+          display: inline-block;
+          text-align: left;
+        }
+        .snsBox {
+          + .snsBox {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .copy {
+        margin: 50px 0 0;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,848 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      padding: 60px 0;
+      .topKvBox {
+        &::before {
+          display: none;
+        }
+        .topKvTitle {
+          width: 100%;
+          padding: 40px 20px;
+          h1 {
+            margin: 0 0 15px;
+            font-size: 28px;
+            + p {
+              margin: 0 0 20px;
+            }
+          }
+        }
+        .topKvImg {
+          position: static;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto 30px;
+          padding: 0 20px;
+        }
+      }
+    }
+    .topPanel {
+      min-height: 0;
+      padding: 40px 10px;
+      .dl {
+        padding: 30px 10px;
+        .dt {
+          margin: 0 auto 20px;
+          padding: 10px 0;
+          font-size: 20px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 80px 0;
+      .topBox {
+        margin: 0 0 60px;
+        padding: 0 0 30px;
+        .dl {
+          .dt {
+            top: -40px;
+            font-size: 18px;
+          }
+          .dd {
+            padding: 20px 20px 200px;
+            background: url(https://mihori.co.jp/system_panel/uploads/images/top_sec01_top_img.png)
+              center bottom 20px no-repeat;
+            background-size: 140px auto;
+          }
+        }
+        .btnMore {
+          right: 20px;
+          bottom: -50px;
+        }
+      }
+      .introPanel {
+        margin: 0 0 60px;
+        .txtBox {
+          margin: 0 0 20px;
+        }
+        .photo {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+      .listPanel {
+        .txtBox {
+          margin: 0 0 30px;
+          text-align: center;
+          line-height: 2;
+        }
+        .listBox {
+          .ul {
+            max-width: 400px;
+            margin: 0 auto;
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+              .dl {
+                .dt {
+                  font-size: 12px;
+                }
+                .dd {
+                  .em {
+                    font-size: 22px;
+                  }
+                  .span {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .pageSecTtlBox {
+        margin: 0 0 80px;
+        .btnMore {
+          display: block;
+          margin: 20px 0 0;
+        }
+      }
+      .swiperContainer {
+        width: 100vw;
+        .swiperProgressbarContainer {
+          .swiperProgressbar {
+            position: absolute;
+            top: -30px;
+            right: auto;
+            left: 20px;
+            width: 70%;
+          }
+        }
+        .swiper-slide {
+          height: 400px;
+          .dl {
+            left: 15px;
+            bottom: 15px;
+            .dt {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .infoPanel {
+        .categoryBox {
+          margin: 0 auto 40px;
+          .ul {
+            .li {
+              padding: 0 5px;
+            }
+          }
+          .webgene-blog {
+            > * {
+              padding: 0 5px;
+            }
+          }
+        }
+        .categoryBox + .webgene-blog {
+          .webgene-item {
+            padding: 20px 10px;
+            .info {
+              display: block;
+              margin: 0 0 10px;
+              .cate {
+                min-width: 100px;
+                margin: 0 0 0 10px;
+                padding: 0 0 0 20px;
+              }
+            }
+            .ttl {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          .ttl {
+            font-size: 18px;
+          }
+          .infoBox {
+            margin: 30px 0;
+            padding: 20px;
+            .dl {
+              .dt {
+                width: 80px;
+              }
+            }
+          }
+          .linkItem {
+            padding: 0 0 30px;
+            .btnMore {
+              display: block;
+              margin: 0 auto;
+              + .btnMore {
+                margin: 10px auto 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .featureMain {
+    .topPanel {
+      padding: 50px 0 0;
+      .ttl {
+        margin: 0 auto 60px;
+        font-size: 18px;
+      }
+      .mvContainer {
+        height: 280px;
+        margin: 0 0 100px;
+        padding: 0 10px;
+        .chart {
+          max-width: 340px;
+          width: 100%;
+        }
+      }
+    }
+    .sec01 {
+      margin: 0 0 100px;
+      .secBoxList {
+        padding: 0;
+      }
+      .secBox {
+        + .secBox {
+          margin: 50px 0 0;
+        }
+        .photo {
+          max-width: 600px;
+          margin: 0 0 20px;
+        }
+        .txtBox {
+          .ttlBox {
+            margin: 0 0 20px;
+            .num {
+              display: block;
+              margin: 0;
+              font-size: 30px;
+            }
+            .ttl {
+              font-size: 20px;
+            }
+          }
+          .txt {
+            font-weight: bold;
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 0 0 100px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .listBox {
+        .ul {
+          max-width: 400px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+            .txt {
+              padding: 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .topSection {
+      padding: 60px 0;
+      .introBox {
+        .txtBox {
+          margin: 20px 0 0;
+        }
+      }
+      .chartList {
+        margin: 30px 0 40px;
+        .ul {
+          max-width: 400px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+      .logoBox {
+        p {
+          margin: 0 0 30px;
+          font-size: 18px;
+        }
+        .logo {
+          max-width: 200px;
+        }
+      }
+    }
+    .caseSection {
+      padding: 60px 0;
+      .secPanel {
+        padding: 30px 10px;
+        + .secPanel {
+          margin: 30px 0 0;
+        }
+        .secBox {
+          + .secBox {
+            margin: 40px 0 0;
+          }
+          .txtBox {
+            margin: 20px 0 0;
+            .ttl {
+              font-size: 16px;
+            }
+            .dl {
+              .dt {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .worksSection {
+      padding: 100px 0;
+      .titleHeader {
+        margin: 0 0 40px;
+        .pageSecTtlBox {
+          margin: 0 0 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	wbHouse
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .wbHouseMain {
+    .comparisonSection {
+      padding: 60px 0;
+      .introBox {
+        margin: 0 0 40px;
+        .photo {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .tableType01 {
+        .tr {
+          font-size: 13px;
+          font-weight: bold;
+          border: 1px solid #c7ccd3;
+          + .tr {
+            margin: 10px 0 0;
+          }
+          &.thead {
+            display: none;
+          }
+          .th {
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+            background: #1961a5;
+          }
+          .td {
+            display: table;
+            width: 100%;
+            border-top: 1px solid #c7ccd3;
+            > * {
+              display: table-cell;
+              padding: 10px;
+              text-align: center;
+            }
+            .ttl {
+              width: 40%;
+              color: #ffffff;
+              vertical-align: middle;
+              background: #1961a5;
+            }
+            .txt {
+              border-left: 1px solid #c7ccd3;
+            }
+            .circle {
+              display: inline-block;
+              margin: 0 0 5px;
+              width: 30px;
+            }
+            .cross {
+              display: inline-block;
+              margin: 0 0 5px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	other
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .otherMain {
+    .topPanel {
+      padding: 50px 0 0;
+      margin: 0 0 80px;
+      .topBox {
+        padding: 20px;
+      }
+    }
+    .sectionList {
+      .section {
+        padding: 40px 0;
+        .secBox {
+          .txtBox {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain {
+    .sectionContainer {
+      padding: 0 0 80px;
+      .topTtl {
+        font-size: 18px;
+      }
+    }
+    .secFlowPanel {
+      + .secFlowPanel {
+        margin: 30px 0 0;
+      }
+      .ttlHead {
+        display: block;
+        font-size: 20px;
+        .step {
+          width: 100%;
+          &:after {
+            display: none;
+          }
+        }
+        .ttl {
+          width: 100%;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+      .txtBody {
+        padding: 20px;
+      }
+      .navItem {
+        .ul {
+          max-width: 200px;
+          margin: 0 auto;
+          .li {
+            display: block;
+            + .li {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .topPanel {
+      padding: 80px 0;
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secPanel {
+        .infoBox {
+          padding: 0 0 30px;
+          .dl {
+            padding: 15px 0;
+            .dt {
+              width: 100px;
+              padding: 5px 0 0;
+              p {
+                min-width: 80px;
+                padding: 0 10px;
+              }
+            }
+            .dd {
+              font-weight: bold;
+              line-height: 2;
+            }
+          }
+        }
+      }
+      .photo {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+    .mapPanel {
+      padding: 50px 0 80px;
+      .mapInfo {
+        margin: 30px auto 0;
+        .dl {
+          padding: 15px 0;
+          .dt {
+            width: 100px;
+            p {
+              min-width: 80px;
+              padding: 0 10px;
+            }
+          }
+          .dd {
+            width: calc(100% - 100px);
+            .pin {
+              width: 20px;
+              margin: 0 0 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .telContainer {
+      max-width: 350px;
+      margin: 60px auto 0;
+      a {
+        padding: 20px 10px;
+      }
+      .telBox {
+        > p {
+          font-size: 14px;
+        }
+        .tel {
+          padding: 0 0 0 30px;
+          font-size: 30px;
+          background: url(https://mihori.co.jp/system_panel/uploads/images/header_tel.png)
+            left top 10px no-repeat;
+          background-size: 25px auto;
+        }
+        .span {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            padding: 10px 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+
+            + .dl {
+              padding: 20px 10px 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 90px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+
+      .fileUploadBox {
+        display: block;
+
+        .fileBox {
+          width: 100%;
+          margin: 0 0 20px;
+        }
+
+        .fileArea {
+          display: block;
+
+          .inputFile {
+            width: 200px;
+          }
+
+          > p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	example
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .exampleMain {
+    .catePanel {
+      padding: 40px 0;
+      .webgene-blog {
+        display: flex;
+
+        margin: -10px 0 0 -10px;
+        > * {
+          width: calc((100% / 2) - 10px);
+          margin: 10px 0 0 10px;
+        }
+        a {
+          display: block;
+          padding: 10px;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 25px;
+          border: 1px solid #25251d;
+          background: #ffffff;
+        }
+      }
+    }
+    .listPanel {
+      padding: 60px 0 80px;
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 40px 0 0;
+          }
+        }
+      }
+    }
+    .detailPanel {
+      padding: 60px 0 80px;
+    }
+    .postDetail {
+      .title {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	information
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .informationMain {
+    .postMain {
+      padding: 50px 0 80px;
+    }
+    .postContainer {
+      .catePanel {
+        .ttl {
+          margin: 0 0 20px;
+          padding: 0;
+          font-size: 24px;
+        }
+        .webgene-blog {
+          .webgene-header {
+            padding: 15px 10px;
+          }
+          .webgene-item {
+            padding: 15px 10px;
+          }
+        }
+      }
+      .listPanel {
+        .webgene-blog {
+          .webgene-item {
+            padding: 20px 10px;
+            .info {
+              display: block;
+              margin: 0 0 5px;
+              .cate {
+                min-width: 110px;
+                margin: 0;
+              }
+            }
+            .ttl {
+              padding: 0;
+            }
+          }
+        }
+      }
+      .postDetail {
+        .title {
+          font-size: 20px;
+        }
+        .infoBox {
+          .cate {
+            min-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	post
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .postMain {
+    .webgene-pagination {
+      margin: 60px auto 0;
+    }
+    .btnBack {
+      margin: 80px auto 0;
+    }
+  }
+}

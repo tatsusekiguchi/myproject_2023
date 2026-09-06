@@ -1,0 +1,679 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  // font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  background: $bgBaseColor;
+  transition: 2s;
+  opacity: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1140px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.fax {
+  a {
+    pointer-events: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1140px) {
+  .header {
+    .headBox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      min-height: 125px;
+      padding: 0 0 0 60px;
+      z-index: 999;
+      transition: 0.6s;
+      .logo {
+        position: relative;
+        top: 13px;
+        max-width: 212px;
+        width: 12%;
+        a {
+          display: block;
+        }
+      }
+      .navBox {
+        width: 88%;
+        .navWrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .navList {
+          width: calc(100% - 400px);
+        }
+        .btnEntry {
+          width: 380px;
+        }
+      }
+    }
+    .headSns {
+      position: fixed;
+      top: 35%;
+      left: 60px;
+      width: 50px;
+      z-index: 99;
+      ul {
+        li {
+          + li {
+            margin: 15px 0 0;
+          }
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+    .btnMenu {
+      display: none;
+    }
+    &.fixed {
+      .headBox {
+        background: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+@media (min-width: 1140px) and (max-width: 1490px) {
+  .header {
+    .headBox {
+      min-height: 95px;
+      .logo {
+        top: 10px;
+        width: 150px;
+      }
+      .navBox {
+        width: calc(100% - 170px);
+        .navList {
+          width: calc(100% - 250px);
+        }
+        .btnEntry {
+          width: 240px;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1140px) {
+  .navBox {
+    .navList {
+      ul {
+        text-align: right;
+        li {
+          display: inline-block;
+          + li {
+            margin: 0 0 0 20px;
+          }
+          a {
+            position: relative;
+            display: inline-block;
+            font-size: clamp(0.625rem, -0.3125rem + 1.2vw, 1.25rem);
+            font-weight: bold;
+            color: #4dc1ff;
+            &::after {
+              position: absolute;
+              content: "";
+              display: block;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 1px;
+              background: #4dc1ff;
+              -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease;
+            }
+            &:hover {
+              opacity: 1;
+              &:after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnEntry {
+      a {
+        display: flex;
+      }
+      .photo {
+        width: 120px;
+      }
+      .txtBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(100% - 120px);
+        min-height: 125px;
+        padding: 0 25px;
+        color: #ffffff;
+        background: #4dc1ff;
+        dl {
+          dt {
+            font-family: "Lato";
+            font-size: 30px;
+            letter-spacing: 0.12em;
+          }
+        }
+      }
+    }
+    .navBnr {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1491px) {
+  .navBox {
+    .navList {
+      ul {
+        li {
+          a {
+            font-size: 20px;
+            font-size: clamp(0.625rem, -0.3125rem + 1.2vw, 1.25rem);
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1140px) and (max-width: 1490px) {
+  .navBox {
+    .navList {
+      ul {
+        li {
+          + li {
+            margin: 0 0 0 10px;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .btnEntry {
+      a {
+        display: flex;
+      }
+      .photo {
+        width: 90px;
+      }
+      .txtBox {
+        width: calc(100% - 90px);
+        min-height: 95px;
+        padding: 0 15px;
+        dl {
+          dt {
+            font-size: 22px;
+          }
+          dd {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+  font-family: $NotoSans;
+}
+.secTitleBox {
+  display: flex;
+  align-items: flex-end;
+  color: #4dc1ff;
+  line-height: 1;
+  p {
+    margin: 0 20px 0 0;
+    font-family: "Lato";
+    font-size: 70px;
+    letter-spacing: 0.05em;
+  }
+  h2 {
+    padding: 0 0 3px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+}
+.secWrap {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.secWrap01 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* --------------------------------------------------
+	modal
+-------------------------------------------------- */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.itemModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: 1001;
+}
+.modalBox {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1410px;
+  padding: 75px 75px 105px;
+  background: rgba(255, 255, 255, 0.85);
+}
+.modalBoxInner {
+  overflow: auto;
+  overscroll-behavior: none;
+  max-height: 600px;
+  .voicePhoto {
+    position: relative;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 380px;
+    margin: 20px 0 10px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    .photoWrap {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      img {
+        @include cover-image;
+      }
+    }
+  }
+  .txtBox {
+    .pos {
+      margin: 0 0 10px;
+      font-family: "Lato";
+    }
+    .voicePos {
+      margin: 0 0 10px;
+      font-family: "Lato";
+    }
+    .name {
+      margin: 0 0 20px;
+      font-size: 25px;
+      letter-spacing: 0.1em;
+    }
+    dl {
+      dt {
+        margin: 0 0 60px;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+      }
+    }
+    .voiceTitle {
+      position: relative;
+      max-width: 428px;
+      height: 140px;
+      margin: 0 0 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed #707070;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed #707070;
+      }
+      img {
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .posName {
+      margin: 0 0 20px;
+      span {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      em {
+        display: inline-block;
+        font-size: 25px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+@media (min-width: 1140px) {
+  .modalBoxInner {
+    display: flex;
+    justify-content: space-between;
+    .photo {
+      width: 450px;
+    }
+    .txtBox {
+      width: calc(100% - 550px);
+    }
+  }
+  .modalClose {
+    position: absolute;
+    top: 60px;
+    right: 65px;
+    width: 40px;
+    cursor: pointer;
+    p {
+      display: none;
+    }
+  }
+  .modalScroll {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 100px 140px 40px;
+  background: url("../image/common/footer_bg_pc.png") no-repeat;
+  background-size: cover;
+  .footContainer {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .footPanel {
+    .footBox {
+      .logo {
+        max-width: 320px;
+        margin: 0 0 60px;
+      }
+      .footSns {
+        ul {
+          display: flex;
+          justify-content: space-around;
+          width: 260px;
+          li {
+            width: 50px;
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+      .footNav {
+        max-width: 420px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -20px 0 0;
+          li {
+            margin: 20px 0 0;
+            &:nth-child(odd) {
+              width: 60%;
+            }
+            &:nth-child(even) {
+              width: 35%;
+            }
+            a {
+              position: relative;
+              display: inline-block;
+              font-size: 18px;
+              letter-spacing: 0.1em;
+              &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: #000000;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+              }
+              @media (min-width: 1140px) {
+                &:hover {
+                  opacity: 1;
+                  &:after {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footItem {
+      .btnEntry {
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 335px;
+          height: 94px;
+          color: #ffffff;
+          border-radius: 60px;
+          background: #4dc1ff;
+        }
+        .photo {
+          display: none;
+        }
+        .txtBox {
+          dl {
+            padding: 0 40px 0 50px;
+            background: url("../image/common/footer_entry_mail.png") left center
+                no-repeat,
+              url("../image/common/footer_entry_arrow.png") right center
+                no-repeat;
+            background-size: 34px auto, 10px auto;
+            dt {
+              font-family: "Lato";
+              font-size: 22px;
+              letter-spacing: 0.12em;
+            }
+            dd {
+              font-size: 14px;
+              letter-spacing: 0.12em;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1140px) {
+    .footPanel {
+      display: flex;
+      justify-content: space-between;
+      .footBox {
+        .footSns {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+  .copy {
+    margin: 25px 0 0;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    font-size: 12px;
+  }
+  .header .headWrap {
+    padding: 0 0 0 20px;
+  }
+  .header .logoBox > p {
+    display: none;
+  }
+  .header .logoBox .logo {
+    max-width: 100px;
+  }
+  .header .headBox {
+    min-height: 70px;
+  }
+  .header .headItem {
+    display: flex;
+    width: 180px;
+    min-height: 70px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 100px 20px 60px;
+  }
+  .navBox .navClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+  }
+  .navBox .navContainer {
+    display: block;
+  }
+  .navBox .navContainer .leftBox {
+    width: 100%;
+    padding: 0 0 30px;
+    text-align: center;
+  }
+  .navBox .navContainer .leftBox > p {
+    font-size: 12px;
+  }
+  .navBox .navContainer .leftBox .logo {
+    max-width: 180px;
+    margin: 10px auto 20px;
+  }
+  .navBox .navContainer .rightBox {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .navBox .navContainer .rightBox .navList {
+    display: block;
+  }
+  .navBox .navContainer .rightBox .navList .ul {
+    width: 100%;
+  }
+  .navBox .navContainer .rightBox .navList .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .navBox .navContainer .rightBox .navList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 70px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 150px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    margin: 0 0 5px;
+    font-size: 24px;
+  }
+  .pageKvPanel .pageKvTitle p {
+    font-size: 10px;
+  }
+
+  .secTitleBox {
+    margin: 0 0 50px;
+  }
+  .secTitleBox::before {
+    width: 300px;
+    height: 190px;
+  }
+  .secTitleBox .secTitle01 {
+    padding: 0 20px;
+    font-size: 24px;
+  }
+  .secTitleBox .secTitle01::before {
+    left: -140px;
+    width: 140px;
+  }
+  .secTitleBox .secTitle01::after {
+    right: -140px;
+    width: 140px;
+  }
+  .secTitleBox .secTitle02 {
+    font-size: 10px;
+  }
+
+  .secTitleBoxBlack {
+    margin: 0 0 50px;
+  }
+  .secTitleBoxBlack .secTitle01 {
+    padding: 0 20px;
+    font-size: 24px;
+  }
+  .secTitleBoxBlack .secTitle01::before {
+    left: -140px;
+    width: 140px;
+  }
+  .secTitleBoxBlack .secTitle01::after {
+    right: -140px;
+    width: 140px;
+  }
+  .secTitleBoxBlack .secTitle02 {
+    font-size: 10px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+
+  .btnReadMore {
+    width: 150px;
+  }
+
+  .btnMore,
+.btnBack {
+    max-width: 320px;
+  }
+  .btnMore a,
+.btnBack a {
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .pagetop {
+    right: 20px;
+    bottom: 50px;
+    width: 80px;
+  }
+  .footer .footContact {
+    padding: 60px 0 40px;
+  }
+  .footer .footContact .message {
+    margin: 0 0 30px;
+    font-size: 16px;
+  }
+  .footer .footContact .contactBox {
+    max-width: 550px;
+    margin: 0 auto 40px;
+  }
+  .footer .footContact .contactBox .tel {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .contactBox .tel a {
+    font-size: 18px;
+  }
+  .footer .footContact .contactBox .tel a .em {
+    font-size: 32px;
+  }
+  .footer .footContact .contactBox .mail {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .footer .footContact .contactBox .mail a {
+    padding: 20px 10px;
+  }
+  .footer .footContact .listBox {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .footer .footContact .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .footer .footContact .logo {
+    max-width: 180px;
+    margin: 60px auto 0;
+  }
+  .footer .footPanel {
+    padding: 60px 0 100px;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+    text-align: center;
+  }
+  .footer .footPanel .footBox .left .txt .telFax > * {
+    margin: 0 10px 0 0;
+  }
+  .footer .footPanel .footBox .right {
+    display: none;
+    width: 100%;
+  }
+  .footer .footPanel .footBox .right .footNav {
+    display: none;
+  }
+  .footer .copy {
+    text-align: center;
+  }
+}

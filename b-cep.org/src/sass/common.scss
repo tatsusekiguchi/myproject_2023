@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 1000px;
+  -webkit-text-size-adjust: 100%;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    sans-serif;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.pcHidden {
+  display: none;
+}
+/*追従ボタン*/
+#sideBtn {
+  position: absolute;
+  left: 0;
+  float: left;
+  width: 84px;
+  margin-top: 60px;
+  z-index: 1000;
+}
+#sideBtn li + li {
+  margin-top: 10px;
+}
+#btmBnr {
+  display: none;
+}
+#bodyWrap {
+  overflow: hidden;
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+header {
+  border-top: 8px solid #1b893d;
+}
+@media (min-width: 1025px) {
+  header .headTop {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  header .headTop > div {
+    display: table;
+    width: 400px;
+  }
+  header .headTop h1 {
+    display: table-cell;
+    width: 170px;
+    padding-left: 10px;
+    line-height: 1.2;
+  }
+  header .headTop p {
+    display: table-cell;
+    padding: 0 10px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  header .spList {
+    display: none;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  nav {
+    padding: 0 10px;
+    border-bottom: 1px solid #ffffff;
+    background: #1b893d;
+  }
+  nav ul {
+    display: table;
+    width: 100%;
+    height: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #c9c9c9;
+  }
+  nav ul .spDisp {
+    display: none;
+  }
+  nav ul li:first-child {
+    border-left: 1px solid #c9c9c9;
+  }
+  nav ul li a {
+    display: block;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+  nav ul li:last-child a + a {
+    display: none;
+  }
+  nav ul li:first-child img {
+    width: 23px;
+  }
+  #navClose {
+    display: none;
+  }
+  /*サブメニュー*/
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    width: 272px;
+  }
+  nav ul li:hover ul {
+    display: block;
+  }
+  nav ul li ul li {
+    display: block;
+    border-top: 1px solid #c9c9c9;
+  }
+  nav ul li ul li a {
+    background-color: #1b893d;
+    color: #fff;
+    padding: 15px;
+  }
+}
+
+/* --------------------------------------------------
+	メイン
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  article {
+    margin-top: 144px;
+  }
+}
+
+/* --------------------------------------------------
+	バナー
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  #bnrBox {
+    padding: 40px 10px;
+    background: url("../image/common/bnr_bg.png") no-repeat;
+    background-size: cover;
+  }
+  #bnrBox2 {
+    padding: 40px 10px;
+    background-size: cover;
+  }
+  #bnrBox > div,
+  #bnrBox2 > div {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .youtube {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+  #bnrBox ul,
+  #bnrBox2 ul {
+    overflow: hidden;
+  }
+  #bnrBox ul li,
+  #bnrBox2 ul li {
+    float: left;
+    margin: 10px 0 0 1%;
+  }
+}
+
+#bnrBox ul li:last-child,
+#bnrBox2 ul li:last-child {
+  font-size: 0;
+}
+#bnrBox ul li:last-child a + a,
+#bnrBox2 ul li:last-child a + a {
+  margin-left: 2%;
+}
+
+/* --------------------------------------------------
+    ページトップ
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  #pagetopBox {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: right;
+    margin-top: -20px;
+  }
+  #pagetop {
+    display: inline-block;
+    padding: 5px 10px 5px 25px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    background: url("../image/common/pagetop_arrow.png") 10px center no-repeat
+      #1b893d;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+footer {
+  background: #eeedec;
+}
+footer .footBox {
+  display: table;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 10px 0;
+}
+footer .footBox .leftBox {
+  display: table-cell;
+  vertical-align: middle;
+}
+footer .footBox .leftBox .logo {
+  width: 170px;
+  margin-bottom: 10px;
+}
+footer .footBox .rightBox {
+  display: table-cell;
+  overflow: hidden;
+  width: 58%;
+  vertical-align: top;
+}
+footer .footBox ul li {
+  padding-left: 15px;
+  background: url("../image/common/footer_arrow.png") left center no-repeat;
+}
+footer .footBox ul li + li {
+  margin-top: 10px;
+}
+footer .footBox ul li a {
+  text-decoration: underline;
+  display: ruby;
+}
+footer .footBox ul li a.u-line-none {
+  text-decoration: none;
+  padding-left: 1em;
+}
+footer .footBox ul li a span {
+  display: inline-block;
+  text-decoration: underline;
+}
+footer .footBox .rightBox .footlink01 {
+  float: left;
+  width: 40%;
+}
+footer .footBox p.privacy {
+  width: 210px;
+  text-align: center;
+  line-height: 30px;
+  background: url("../image/top/news_arrow.png") right 10px center no-repeat
+    #1b893d;
+}
+footer .footBox p.privacy a {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+footer .footlink01 {
+  padding: 35px 0 25px;
+}
+
+footer .copy {
+  padding: 20px 10px;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background: #1b893d;
+}
+
+.new {
+  color: #f00;
+  border: #f00 solid 1px;
+  padding: 0.5% 1%;
+}
+
+footer .footlink03 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footlink01,
+  footer .footlink02 {
+    display: none;
+  }
+
+  footer .footlink03 {
+    display: block;
+    text-align: left;
+    margin: 2em 0;
+  }
+
+  footer .footBox ul li a span {
+    display: contents;
+  }
+}

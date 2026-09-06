@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*改行*/
+.pcBreak {
+  display: none;
+}
+
+.spBreak {
+  display: block;
+}
+
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+
+.spHidden {
+  display: none;
+}
+
+#sideBtn {
+  display: none;
+}
+
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  padding: 20px 20px 10px;
+  z-index: 999;
+  transition: 0.6s;
+}
+.header .headBox .logo {
+  position: relative;
+  max-width: 105px;
+  z-index: 2;
+}
+.header .headBox .logo a {
+  display: block;
+}
+.header .headSns {
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  z-index: 2;
+}
+.header .headSns ul li {
+  display: inline-block;
+  width: 30px;
+}
+.header .headSns ul li + li {
+  margin: 0 0 0 2px;
+}
+.header .headSns ul li a {
+  display: block;
+}
+.header .btnMenu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  z-index: 2;
+  cursor: pointer;
+}
+.header .btnMenu .menu-close {
+  display: none;
+}
+.header.fixed {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url("../image/common/header_nav_bg.png") no-repeat;
+  background-size: cover;
+}
+.navBox .navWrap {
+  padding: 100px 20px;
+}
+.navBox .navList ul {
+  padding: 0 15px;
+}
+.navBox .navList ul li + li {
+  margin: 25px 0 0;
+}
+.navBox .navList ul li a {
+  display: inline-block;
+  padding: 0 0 0 14px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #4dc1ff;
+  letter-spacing: 0.1em;
+  background: url("../image/common/header_nav_arrow.png") left center no-repeat;
+  background-size: 6px auto;
+}
+.navBox .btnEntry {
+  margin: 50px 0;
+}
+.navBox .btnEntry a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 70px;
+  color: #ffffff;
+  border-radius: 35px;
+  background: #4dc1ff;
+}
+.navBox .btnEntry .photo {
+  display: none;
+}
+.navBox .btnEntry .txtBox dl {
+  padding: 0 15px 0 30px;
+  background: url("../image/common/header_entry_mail.png") left center no-repeat, url("../image/common/header_entry_arrow.png") right center no-repeat;
+  background-size: 20px auto, 6px auto;
+}
+.navBox .btnEntry .txtBox dl dt {
+  font-family: "Lato";
+  font-size: 17px;
+  letter-spacing: 0.12em;
+}
+.navBox .btnEntry .txtBox dl dd {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+.navBox .navBnr {
+  max-width: 335px;
+}
+.navBox .navBnr a {
+  display: block;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.secTitleBox {
+  display: flex;
+  align-items: flex-end;
+  color: #4dc1ff;
+  line-height: 1;
+}
+.secTitleBox p {
+  margin: 0 10px 0 0;
+  font-size: 40px;
+}
+.secTitleBox h2 {
+  padding: 0 0 5px;
+  font-size: 14px;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	modal
+-------------------------------------------------- */
+.modalBox {
+  max-width: 450px;
+  padding: 20px 15px 0;
+}
+
+.modalBoxInner {
+  max-height: calc(100% - 100px);
+}
+.modalBoxInner .photo {
+  position: relative;
+  height: 390px;
+}
+.modalBoxInner .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modalBoxInner .voicePhoto {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 195px;
+  height: 310px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.modalBoxInner .voicePhoto .photoWrap {
+  height: 210px;
+}
+.modalBoxInner .txtBox {
+  padding: 20px 0 0;
+}
+.modalBoxInner .txtBox .pos {
+  margin: 0 0 5px;
+}
+.modalBoxInner .txtBox .voicePos {
+  margin: 0 0 5px;
+}
+.modalBoxInner .txtBox .name {
+  margin: 0 0 15px;
+  font-size: 17px;
+}
+.modalBoxInner .txtBox dl dt {
+  margin: 0 0 30px;
+  font-size: 17px;
+  line-height: 2;
+}
+.modalBoxInner .txtBox .voiceTitle {
+  max-width: 250px;
+  height: 70px;
+  margin: 0 0 20px;
+}
+.modalBoxInner .txtBox .voiceTitle::before {
+  top: 35px;
+}
+.modalBoxInner .txtBox .voiceTitle::after {
+  bottom: -5px;
+}
+.modalBoxInner .txtBox .posName {
+  margin: 0 0 10px;
+}
+.modalBoxInner .txtBox .posName span {
+  margin: 0 10px 0 0;
+  font-size: 12px;
+}
+.modalBoxInner .txtBox .posName em {
+  font-size: 17px;
+}
+
+.modalClose {
+  width: 40px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.modalClose img {
+  display: inline-block;
+  width: 20px;
+}
+.modalClose p {
+  margin: 10px 0 0;
+  font-family: "Lato";
+}
+
+.modalScroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 125px;
+  height: 115px;
+  margin: auto;
+  z-index: 99;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 30px 20px 100px;
+  background: url("../image/common/footer_bg_sp.png") no-repeat;
+  background-size: cover;
+}
+.footer .footPanel .footBox {
+  margin: 0 0 40px;
+}
+.footer .footPanel .footBox .logoSns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.footer .footPanel .footBox .logoSns .logo {
+  max-width: 135px;
+  margin: 0;
+}
+.footer .footPanel .footBox .logoSns .footSns ul {
+  width: 150px;
+}
+.footer .footPanel .footBox .logoSns .footSns ul li {
+  width: 30px;
+}
+.footer .footPanel .footBox .footNav {
+  max-width: 295px;
+}
+.footer .footPanel .footBox .footNav ul {
+  margin: -15px 0 0;
+}
+.footer .footPanel .footBox .footNav ul li {
+  margin: 15px 0 0;
+  padding: 0 0 0 12px;
+  background: url("../image/common/footer_nav_arrow.png") left center no-repeat;
+  background-size: 6px auto;
+}
+.footer .footPanel .footBox .footNav ul li:nth-child(odd) {
+  width: 170px;
+}
+.footer .footPanel .footBox .footNav ul li:nth-child(even) {
+  width: 105px;
+}
+.footer .footPanel .footBox .footNav ul li a {
+  font-size: 12px;
+}
+.footer .footPanel .footBox .footNav ul li a::after {
+  display: none;
+}
+.footer .footPanel .footItem .btnEntry {
+  width: 240px;
+  margin: 0 auto;
+}
+.footer .footPanel .footItem .btnEntry a {
+  width: 240px;
+  height: 70px;
+  border-radius: 35px;
+}
+.footer .footPanel .footItem .btnEntry .photo {
+  display: none;
+}
+.footer .footPanel .footItem .btnEntry .txtBox dl {
+  padding: 0 15px 0 30px;
+  background: url("../image/common/footer_entry_mail.png") left center no-repeat, url("../image/common/footer_entry_arrow.png") right center no-repeat;
+  background-size: 20px auto, 6px auto;
+}
+.footer .footPanel .footItem .btnEntry .txtBox dl dt {
+  font-size: 17px;
+}
+.footer .footPanel .footItem .btnEntry .txtBox dl dd {
+  font-size: 10px;
+}

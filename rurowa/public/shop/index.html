@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- css-->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/validationEngine.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      type="text/css"
+      href="../css/common_sp.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      type="text/css"
+      href="../css/layout_sp.css"
+    />
+    <link rel="stylesheet" href="../css/attach.css" />
+    <!-- js-->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/scrollAnimation.js"></script>
+    <!-- title-->
+    <title></title>
+  </head>
+
+  <body class="page" id="shop">
+    <!-- ▽header▽-->
+    <div class="header gothic">
+      <div class="headWrap">
+        <div class="logoBox">
+          <p>車を守る愛知県岡崎市のプロショップ「ルロワ」</p>
+          <div class="logo">
+            <a href="/">
+              <div>
+                <img
+                  src="https://leroy-carprotect.jp/system_panel/uploads/images/header_logo.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="headBox">
+          <div class="headNav">
+            <div class="ul">
+              <div class="li">
+                <a href="/">
+                  <div>
+                    <p>HOME</p>
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="concept">
+                  <div>
+                    <p>コンセプト</p>
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="bodyCoating">
+                  <div>
+                    <p>ボディコーティング</p>
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="interiorCoating">
+                  <div>
+                    <p>インテリアコーティング</p>
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="security">
+                  <div>
+                    <p>カーセキュリティ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="driveRecorder">
+                  <div>
+                    <p>ドライブレコーダー</p>
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="shop">
+                  <div>
+                    <p>店舗情報</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="headItem">
+            <div class="contact">
+              <a href="contact">
+                <div>
+                  <p>お問い合わせ</p>
+                </div>
+              </a>
+            </div>
+            <div class="hamburgerMenu">
+              <div class="hamburgerBox">
+                <div class="hamburger">
+                  <div class="span"></div>
+                  <div class="span"></div>
+                  <div class="span"></div>
+                </div>
+                <div class="hamburgerTxt">
+                  <p>MENU</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navBox">
+        <div class="navClose">
+          <img
+            src="https://leroy-carprotect.jp/system_panel/uploads/images/header_nav_close.png"
+            alt=""
+          />
+        </div>
+        <div class="navContainer">
+          <div class="leftBox">
+            <p>車を守る愛知県岡崎市のプロショップ「ルロワ」</p>
+            <div class="logo">
+              <img
+                src="https://leroy-carprotect.jp/system_panel/uploads/images/header_logo.png"
+                alt=""
+              />
+            </div>
+            <div class="txt">
+              <p>〒444-3174 愛知県岡崎市真伝町供養坊12-2</p>
+              <div class="telFax">
+                <div class="tel">
+                  <a href="tel:0564739777">
+                    <div>
+                      <p>ＴＥＬ0564-73-9777</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="fax">
+                  <a href="javascript:void(0)">
+                    <div>
+                      <p>ＦＡＸ564-73-9111</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightBox">
+            <div class="navList">
+              <div class="ul">
+                <div class="li">
+                  <a href="/">
+                    <div>
+                      <p>HOME</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="bodyCoating">
+                    <div>
+                      <p>ボディコーティング</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li sub">
+                  <a href="price">
+                    <div>
+                      <p>料金一覧</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="interiorCoating">
+                    <div>
+                      <p>インテリアコーティング</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li sub">
+                  <a href="priceInteriorCoating">
+                    <div>
+                      <p>料金及び施工例</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="security">
+                    <div>
+                      <p>カーセキュリティ</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li sub">
+                  <a href="makerSecurity">
+                    <div>
+                      <p>取り扱いメーカー</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="driveRecorder">
+                    <div>
+                      <p>ドライブレコーダー</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li sub">
+                  <a href="makerDriveRecorder">
+                    <div>
+                      <p>取り扱いメーカー</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="ul">
+                <div class="li">
+                  <a href="concept">
+                    <div>
+                      <p>コンセプト</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="access">
+                    <div>
+                      <p>アクセス</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="shop">
+                    <div>
+                      <p>店舗情報</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="gallerylist">
+                    <div>
+                      <p>施工事例</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="li">
+                  <a href="contact">
+                    <div>
+                      <p>お問い合わせ</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- △header△-->
+    <!-- ▽メイン▽-->
+    <div class="shopMain main">
+      <div class="pageKvPanel">
+        <div class="pageKvTitle">
+          <h1>店舗情報</h1>
+          <p>SHOP</p>
+        </div>
+      </div>
+      <div class="sec01">
+        <div class="secWrap01">
+          <div class="secTitleBox">
+            <div class="secTitle01">
+              <p>OVERVIEW</p>
+            </div>
+            <div class="secTitle02">
+              <h2>店舗概要</h2>
+            </div>
+          </div>
+        </div>
+        <div class="topContainer">
+          <div class="mv">
+            <img
+              src="https://leroy-carprotect.jp/system_panel/uploads/images/shop_sec01_img_01.png"
+              alt=""
+            />
+          </div>
+          <div class="secWrap01">
+            <div class="infoBox gothic">
+              <div class="dl">
+                <div class="dt">
+                  <p>店名</p>
+                </div>
+                <div class="dd">
+                  <p>ルロワ</p>
+                </div>
+              </div>
+              <div class="dl">
+                <div class="dt">
+                  <p>営業時間</p>
+                </div>
+                <div class="dd">
+                  <p>10：00～19：00</p>
+                </div>
+              </div>
+              <div class="dl">
+                <div class="dt">
+                  <p>定休日</p>
+                </div>
+                <div class="dd">
+                  <p>水曜日</p>
+                </div>
+              </div>
+              <div class="dl">
+                <div class="dt">
+                  <p>所在地</p>
+                </div>
+                <div class="dd">
+                  <p>〒444-3174　愛知県岡崎市真伝町供養坊12-2</p>
+                </div>
+              </div>
+              <div class="dl">
+                <div class="dt">
+                  <p>代表者</p>
+                </div>
+                <div class="dd">
+                  <p>小山　貴久</p>
+                </div>
+              </div>
+              <div class="dl">
+                <div class="dt">
+                  <p>電話</p>
+                </div>
+                <div class="dd">
+                  <a href="tel:0564-73-9777">
+                    <div>
+                      <p>0564-73-9777</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dl">
+                <div class="dt">
+                  <p>FAX</p>
+                </div>
+                <div class="dd">
+                  <a href="javascript:void(0)">
+                    <div>
+                      <p>0564-73-9111</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dl">
+                <div class="dt">
+                  <p>E-mail</p>
+                </div>
+                <div class="dd">
+                  <a href="mailto:info＠leroy.jp">
+                    <div>
+                      <p>info＠leroy.jp</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shopContainerList">
+          <div class="shopContainer">
+            <div class="mvPanel01 mvPanel">
+              <div class="mvTitle">
+                <h3>ルロワってどんなお店？</h3>
+              </div>
+            </div>
+            <div class="txtPanel">
+              <div class="secWrap01">
+                <div class="txt">
+                  <p>
+                    LEROY（ルロワ）は愛知県岡崎市にあるオーディオ、ナビゲーション、セキュリティ取付、販売のプロショップです。<br />車両の販売（新車販売、輸入車販売、中古車販売）、車検（継続車検、公認車検）、整備、修理、トータルカスタマイズも同時に行っております。<br />タイヤ＆ホイール、車高調、エアサス、ブレーキ、エアロ、塗装、シート張替え、内装張替えなど、車に関することは何でもお任せください！
+                  </p>
+                  <p>
+                    私たちは専門店として長年に亘って培ってきた経験、技術、知識、センスをご提供させて頂く事によって、お客様と共に楽しみ、感動や喜びと価値観の共有をはかっていければと考えております。<br />簡単な部品交換や取付、お客様だけのオリジナルパーツの制作から加工までお請け致しておりますので、是非一度お気軽にご相談下さい。<br />地域一番店を目指して、質の高いサービス、お客様目線での様々なご提案、丁寧で確かな作業、車のカスタマイズの分野において、選び抜かれた価値ある商品・取付を提供していきます。
+                  </p>
+                  <p>
+                    板金塗装、買取り、アフターサービスまですべて一貫して行っておりますので、充実した内容でお客様に大変満足して頂ける理想的なサービスをご提供できる体制となっております。<br />国産車、輸入車、軽自動車、キャンピングカー、特殊車両などなど、車種問わずお客様のカーライフをサポートいたします！<br />もちろん車両情報以外の事前知識なども一切必要ありません、むしろ偏った知識や情報であれば適切な商品選びや施工内容を決める際の妨げとなってしまう可能性があります。<br />専門店はちょっと入りづらいなぁ、敷居が高い、どうせ高いんでしょ！など様々思う事などあると思いますが、すべてのお客様のご希望に沿った「最適な製品選び」「最適なインストール」「最適なチューニング」を安心して頂けるかたちでご提供する事をお約束致します。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- △メイン△-->
+    <!-- ▽footer▽-->
+    <div class="footer">
+      <div class="pagetop linkBtn" data-target="main">
+        <img
+          src="https://leroy-carprotect.jp/system_panel/uploads/images/pagetop.png"
+          alt=""
+        />
+      </div>
+      <div class="footContact">
+        <div class="secWrap02">
+          <div class="secTitleBoxBlack">
+            <div class="secTitle01">
+              <p>CONTACT</p>
+            </div>
+            <div class="secTitle02">
+              <h2>お問い合わせ</h2>
+            </div>
+          </div>
+          <div class="message">
+            <p>
+              プロの目線で本物の安心を提案いたします。<br />まずはお気軽にご来店ください。
+            </p>
+          </div>
+          <div class="contactBox">
+            <div class="tel">
+              <a href="tel:0564739777">
+                <div>
+                  <p>TEL.</p>
+                  <p class="em">0564-73-9777</p>
+                </div>
+              </a>
+              <p>【営業時間】10:00 ～ 19:00【 定休日】水曜日</p>
+            </div>
+            <div class="mail gothic">
+              <a href="contact">
+                <div>
+                  <p>お問い合わせ・来店予約はこちら</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="listBox gothic">
+            <div class="ul">
+              <div class="li">
+                <a href="shop">
+                  <div>
+                    <img
+                      src="https://leroy-carprotect.jp/system_panel/uploads/images/footer_contact_list_01.png"
+                      alt=""
+                    />
+                    <p>ルロワ店舗情報</p>
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="access">
+                  <div>
+                    <img
+                      src="https://leroy-carprotect.jp/system_panel/uploads/images/footer_contact_list_02.png"
+                      alt=""
+                    />
+                    <p>アクセス</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="logo">
+            <img
+              src="https://leroy-carprotect.jp/system_panel/uploads/images/footer_logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footPanel">
+        <div class="secWrap01">
+          <div class="footBox gothic">
+            <div class="left">
+              <div class="txt">
+                <p>〒444-3174 愛知県岡崎市真伝町供養坊12-2</p>
+                <div class="telFax">
+                  <div class="tel">
+                    <a href="tel:0564739777">
+                      <div>
+                        <p>ＴＥＬ0564-73-9777</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="fax">
+                    <a href="javascript:void(0)">
+                      <div>
+                        <p>ＦＡＸ564-73-9111</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="footNav">
+                <div class="ul">
+                  <div class="li">
+                    <a href="/">
+                      <div>
+                        <p>HOME</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="bodyCoating">
+                      <div>
+                        <p>ボディコーティング</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li sub">
+                    <a href="price">
+                      <div>
+                        <p>料金一覧</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="interiorCoating">
+                      <div>
+                        <p>インテリアコーティング</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li sub">
+                    <a href="priceInteriorCoating">
+                      <div>
+                        <p>料金及び施工例</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="security">
+                      <div>
+                        <p>カーセキュリティ</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li sub">
+                    <a href="makerSecurity">
+                      <div>
+                        <p>取り扱いメーカー</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="driveRecorder">
+                      <div>
+                        <p>ドライブレコーダー</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li sub">
+                    <a href="makerDriveRecorder">
+                      <div>
+                        <p>取り扱いメーカー</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="ul">
+                  <div class="li">
+                    <a href="concept">
+                      <div>
+                        <p>コンセプト</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="access">
+                      <div>
+                        <p>アクセス</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="shop">
+                      <div>
+                        <p>店舗情報</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="gallerylist">
+                      <div>
+                        <p>施工事例</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="contact">
+                      <div>
+                        <p>お問い合わせ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy gothic">
+        <div class="secWrap01">
+          <p>©2023 ルロワ.</p>
+        </div>
+      </div>
+    </div>
+    <!-- △footer△-->
+  </body>
+</html>

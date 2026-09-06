@@ -1,0 +1,486 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  // font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  background: $bgBaseColor;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.fax {
+  a {
+    pointer-events: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    .logo {
+      display: none;
+    }
+    .headInfo {
+      display: none;
+    }
+    .hamburger {
+      display: none;
+    }
+    .sns,
+    .navInfo {
+      display: none;
+    }
+  }
+  #topHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    padding: 10px 20px 0;
+    z-index: 999;
+    border-bottom: 10px solid #ea97c5;
+    background: #ffffff;
+    transition: 0.6s;
+    .headContainer {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90px;
+        height: 120px;
+        z-index: 1;
+        background: url("../image/common/header_cross.png") no-repeat;
+        background-size: 100% auto;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90px;
+        height: 120px;
+        z-index: 1;
+        background: url("../image/common/header_bear.png") no-repeat;
+        background-size: 100% auto;
+      }
+    }
+    .headBox {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    &.fixed {
+      position: fixed;
+      height: 110px;
+    }
+  }
+  #pageHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px 0;
+    z-index: 999;
+    border-bottom: 10px solid #ea97c5;
+    background: #ffffff;
+    transition: 0.6s;
+    .headBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+    }
+    .logoPc {
+      position: relative;
+      top: 10px;
+      left: 40px;
+      display: block;
+      width: 280px;
+      opacity: 0;
+      a {
+        display: block;
+      }
+    }
+    .navBox {
+      width: 80%;
+      padding: 0 20px 0 0;
+      .navList {
+        ul {
+          justify-content: flex-end;
+          li {
+            + li {
+              margin: 0 0 0 5%;
+            }
+          }
+        }
+      }
+    }
+    .headInfo {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 40px;
+      dl {
+        font-size: 12px;
+        dt {
+          display: inline-block;
+        }
+        dd {
+          display: inline-block;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    &.fixed {
+      position: fixed;
+      height: 110px;
+      .logoPc {
+        opacity: 1;
+      }
+    }
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    .navList {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        text-align: center;
+        li {
+          + li {
+            margin: 0 0 0 6%;
+          }
+          a {
+            display: inline-block;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+              sans-serif;
+            font-size: 20px;
+            em {
+              color: #ba5a8b;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+}
+.pageMain {
+  padding: 100px 0 0;
+}
+.pageKvContainer {
+  position: relative;
+  z-index: 1000;
+  padding: 40px 0;
+  background: url("../image/common/kv_bg_top.png") left top repeat-x,
+    url("../image/common/kv_bg_bottom.png") left bottom repeat-x;
+  background-size: 50px auto, 50px auto;
+  .pageKvPanel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: #f6c6e0;
+    border-top: 20px solid #f16fb5;
+    border-bottom: 20px solid #f16fb5;
+  }
+  .kvTitle {
+    margin: 0 auto;
+  }
+  .kvLogo {
+    position: absolute;
+    top: -90px;
+    left: 60px;
+    width: 280px;
+    z-index: 1;
+    a {
+      display: block;
+    }
+  }
+}
+.secWrap {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 30%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.videoBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 0;
+  padding: 0 0 50%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.btnMore {
+  width: 220px;
+  a {
+    position: relative;
+    display: block;
+    padding: 8px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 22px;
+    background: #e23d95;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      bottom: 0;
+      width: 40px;
+      height: 30px;
+      margin: auto 0;
+      background: url("../image/common/btn_more_icon.png") no-repeat;
+      background-size: 100% auto;
+    }
+  }
+  &.purple {
+    a {
+      background: #6e5d93;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+  padding: 50px 0 20px;
+  text-align: center;
+  background: url("../image/common/footer_bg.png") no-repeat;
+  background-size: cover;
+  .pagetop {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 60px;
+    a {
+      display: block;
+    }
+  }
+  .logo {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .footNav {
+    margin: -10px 0 0;
+    border-radius: 40px;
+    background: #eee8fb;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80px;
+      text-align: center;
+      li {
+        + li {
+          margin: 0 0 0 6%;
+        }
+        a {
+          display: inline-block;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-size: 20px;
+          em {
+            color: #6c5c8d;
+          }
+        }
+      }
+    }
+  }
+  .sns {
+    margin: 30px 0 0;
+    ul {
+      li {
+        display: inline-block;
+        width: 50px;
+        + li {
+          margin: 0 0 0 30px;
+        }
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+  .copy {
+    margin: 30px 0 0;
+    color: #ffffff;
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

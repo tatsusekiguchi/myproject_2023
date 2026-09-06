@@ -1,0 +1,1242 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  padding: 0 50px;
+}
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 800px;
+}
+.topMain .topKvPanel .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.topMain .topKvPanel .kvBox .kv01 {
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv02 {
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv03 {
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvTtl {
+  position: absolute;
+  left: 5%;
+  bottom: 260px;
+  color: #ffffff;
+  z-index: 1;
+}
+.topMain .topKvPanel .kvTtl h1 {
+  font-size: 50px;
+  text-shadow: 3px 4px 3px #3d3e3c;
+}
+.topMain .kvScroll {
+  position: relative;
+  padding: 40px 10px 30px;
+  text-align: center;
+}
+.topMain .kvScroll::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: 0 auto;
+  background: #231815;
+}
+.topMain .sec01 {
+  margin: 0 0 80px;
+  padding: 0 50px;
+}
+.topMain .sec01 .bgContainer {
+  padding: 100px 0;
+  background: #fefaf1;
+}
+.topMain .sec01 .ttlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.topMain .sec01 .ttlBox h2 {
+  display: inline-block;
+  padding: 0 80px;
+  font-size: 30px;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_01.png) left center no-repeat, url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_02.png) right center no-repeat;
+  background-size: 50px auto, 50px auto;
+}
+.topMain .sec01 .secBox .txtBox {
+  padding: 40px 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.topMain .sec01 .secBox .txtBox .txt {
+  margin: 0 0 60px;
+}
+.topMain .sec01 .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.topMain .sec01 .secBox .txtBox .message {
+  max-width: 520px;
+  margin: 0 0 10px;
+  font-size: 22px;
+  text-align: center;
+  border: 1px solid #333333;
+}
+.topMain .sec01 .secBox .txtBox .message a {
+  display: block;
+  padding: 10px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secBox .photo {
+    width: 49%;
+    padding: 30px 0 0;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+  .topMain .sec01 .secBox .message a {
+    pointer-events: none;
+  }
+  .topMain .sec01 .secBox .message br {
+    display: none;
+  }
+}
+.topMain .sec02 {
+  margin: 0 0 200px;
+  padding: 0 50px;
+}
+.topMain .sec02 .bgContainer {
+  min-height: 1000px;
+  padding: 120px 0 0;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec02_bg_pc.png) center bottom no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec02 .secBox .ttlBox {
+    width: 140px;
+    padding: 40px 0 0;
+    font-size: 50px;
+    writing-mode: vertical-rl;
+  }
+  .topMain .sec02 .secBox .ttlBox h2 {
+    display: flex;
+    line-height: 2;
+  }
+  .topMain .sec02 .secBox .txtBox {
+    width: 700px;
+  }
+}
+.topMain .sec03 {
+  margin: 0 0 200px;
+}
+.topMain .sec03 .secBox {
+  position: relative;
+}
+.topMain .sec03 .secBox + .secBox {
+  margin: 120px 0 0;
+}
+.topMain .sec03 .secBox .photo img {
+  border-radius: 6px;
+}
+.topMain .sec03 .secBox h3 {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 20px 0 0;
+  font-size: 40px;
+}
+.topMain .sec03 .secBox h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: #ff0000;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secBox {
+    min-height: 400px;
+  }
+  .topMain .sec03 .secBox .photo {
+    width: 50%;
+    height: 400px;
+  }
+  .topMain .sec03 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec03 .secBox .txt {
+    max-width: 590px;
+  }
+  .topMain .sec03 .secBox:nth-child(odd) .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .topMain .sec03 .secBox:nth-child(odd) .txt {
+    width: 45%;
+  }
+  .topMain .sec03 .secBox:nth-child(even) {
+    left: -80px;
+    padding: 0 0 0 55%;
+  }
+  .topMain .sec03 .secBox:nth-child(even) .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.topMain .sec04 {
+  padding: 0 50px;
+}
+.topMain .sec04 .bgContainer {
+  padding: 100px 0;
+  background: #fefaf1;
+}
+.topMain .sec04 .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.topMain .sec04 .secBox .ttlBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+}
+.topMain .sec04 .secBox .ttlBox .num {
+  position: relative;
+  top: -25px;
+  font-size: 70px;
+  color: #ff0000;
+  line-height: 1;
+}
+.topMain .sec04 .secBox .ttlBox .ttl {
+  position: relative;
+  padding: 30px 0 0;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+}
+.topMain .sec04 .secBox .ttlBox .ttl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 1px;
+  margin: 0 auto;
+  background: #ff0000;
+}
+.topMain .sec04 .secBox .photo img {
+  border-radius: 6px;
+}
+.topMain .sec04 .secBox .btnBox .btnMore {
+  max-width: 280px;
+}
+.topMain .sec04 .secBox .btnBox .btnMore a {
+  position: relative;
+  display: block;
+  padding: 0 30px;
+  text-align: center;
+  border-bottom: 1px solid #ff0000;
+}
+.topMain .sec04 .secBox .btnBox .btnMore a p {
+  display: inline-block;
+  padding: 15px 0 15px 60px;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/btn_more_red.png) left center no-repeat;
+  background-size: 40px auto;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secBox {
+    display: flex;
+  }
+  .topMain .sec04 .secBox .ttlBox {
+    width: 200px;
+    border-radius: 6px 0 0 6px;
+  }
+  .topMain .sec04 .secBox .photo {
+    width: 700px;
+  }
+  .topMain .sec04 .secBox .btnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 280px;
+    padding: 0 0 60px;
+  }
+  .topMain .sec04 .secBox:nth-child(odd) .ttlBox {
+    order: 3;
+    border-radius: 0 6px 6px 0;
+  }
+  .topMain .sec04 .secBox:nth-child(odd) .photo {
+    order: 2;
+  }
+  .topMain .sec04 .secBox:nth-child(odd) .btnBox {
+    order: 1;
+  }
+  .topMain .sec04 .secBox:nth-child(odd) .btnBox .btnMore a::before {
+    content: "";
+    position: absolute;
+    right: -80px;
+    bottom: -1px;
+    width: 80px;
+    height: 1px;
+    background: #ff0000;
+  }
+  .topMain .sec04 .secBox:nth-child(even) .btnBox .btnMore a::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    bottom: -1px;
+    width: 80px;
+    height: 1px;
+    background: #ff0000;
+  }
+}
+.topMain .sec05 {
+  padding: 100px 0;
+}
+.topMain .sec05 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #7f7f7e;
+}
+.topMain .sec05 .infoBox .dl + .dl {
+  margin: 30px 0 0;
+}
+.topMain .sec05 .infoBox .dl .dt {
+  width: 260px;
+  text-align: center;
+  border-right: 1px solid #ff0000;
+}
+.topMain .sec05 .infoBox .dl .dd {
+  width: 800px;
+}
+.topMain .mapPanel {
+  padding: 70px 0;
+  background: #fefaf1;
+}
+.topMain .mapPanel .mapTxtBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.topMain .mapPanel .mapTxtBox .mapTxt {
+  display: inline-block;
+}
+.topMain .mapPanel .mapTxtBox .mapTxt a {
+  display: inline-block;
+}
+.topMain .mapPanel .mapTxtBox .mapTxt a p {
+  display: inline;
+}
+.topMain .mapPanel .mapTxtBox .mapTxt a .em {
+  color: #9f6d51;
+  text-decoration: underline;
+}
+.topMain .mapPanel .mapBox iframe {
+  filter: hue-rotate(200deg);
+}
+.topMain + .footer .footContainer {
+  background: #fefaf1;
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .topSection {
+  padding: 120px 0;
+  text-align: center;
+}
+.serviceMain .topSection .topTitle {
+  margin: 0 0 40px;
+  font-size: 40px;
+  line-height: 2;
+}
+.serviceMain .topSection .photoList {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+.serviceMain .topSection .photoList .ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.serviceMain .topSection .photoList .ul .li {
+  position: relative;
+  width: 33.3333333333%;
+  height: 300px;
+}
+.serviceMain .topSection .photoList .ul .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.serviceMain .topSection .photoList + p {
+  margin: 50px 0 0;
+  font-size: 40px;
+}
+.serviceMain .topSection .topImg {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+.serviceMain .featureSection {
+  padding: 120px 0;
+  background: #fefaf1;
+}
+.serviceMain .featureSection .secBox {
+  position: relative;
+}
+.serviceMain .featureSection .secBox + .secBox {
+  margin: 160px 0 0;
+}
+.serviceMain .featureSection .secBox .photo img {
+  border-radius: 6px;
+}
+.serviceMain .featureSection .secBox .ttlBox {
+  margin: 0 0 20px;
+}
+.serviceMain .featureSection .secBox .ttlBox h3 {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 20px 0 0;
+  font-size: 36px;
+}
+.serviceMain .featureSection .secBox .ttlBox h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: #ff0000;
+}
+.serviceMain .featureSection .secBox .ttlBox p {
+  font-size: 26px;
+  color: #ff0000;
+}
+.serviceMain .featureSection .secBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .serviceMain .featureSection .secBox {
+    min-height: 400px;
+  }
+  .serviceMain .featureSection .secBox .ttlBox {
+    width: 50%;
+  }
+  .serviceMain .featureSection .secBox .photo {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 45%;
+  }
+  .serviceMain .featureSection .secBox .txt {
+    width: 50%;
+  }
+}
+.serviceMain .bnrSection {
+  padding: 150px 0 100px;
+}
+.serviceMain .bnrSection .bnrPanel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  background: #3e3d3b;
+}
+.serviceMain .bnrSection .bnrPanel .btnLink {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.serviceMain .bnrSection .bnrPanel .btnLink a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 20px;
+  background: #58524c;
+}
+.serviceMain .bnrSection .bnrPanel .btnLink p {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/icon_target_white.png) right center no-repeat;
+  background-size: 10px auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .bnrSection .bnrPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 6px;
+  }
+  .serviceMain .bnrSection .bnrPanel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_bnr_img.png) center top no-repeat;
+    background-size: cover;
+  }
+  .serviceMain .bnrSection .bnrPanel .inner {
+    width: 48%;
+    padding: 60px 10px 40px;
+  }
+  .serviceMain .bnrSection .bnrPanel .title {
+    margin: 0 0 30px;
+    font-size: 34px;
+    line-height: 2;
+  }
+  .serviceMain .bnrSection .bnrPanel .photo {
+    display: none;
+  }
+  .serviceMain .bnrSection .bnrPanel .circle {
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    width: 100px;
+  }
+}
+.serviceMain .flowSection {
+  padding: 100px 0 150px;
+}
+.serviceMain .flowSection .flowList {
+  margin: 0 0 40px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .serviceMain .flowSection .flowList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .flowSection .flowList .ul .li {
+    width: calc(16.6666666667% - 30px);
+  }
+  .serviceMain .flowSection .flowList .ul .ttl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 72px;
+    margin: 20px 0 0;
+    font-size: 24px;
+  }
+}
+.serviceMain .campaignSection .bgContainer {
+  padding: 100px 0;
+  background: #fefaf1;
+}
+.serviceMain .campaignSection .ttlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.serviceMain .campaignSection .ttlBox h2 {
+  display: inline-block;
+  padding: 0 80px;
+  font-size: 30px;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_01.png) left center no-repeat, url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_02.png) right center no-repeat;
+  background-size: 50px auto, 50px auto;
+}
+.serviceMain .campaignSection .secBox .txtBox {
+  padding: 40px 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.serviceMain .campaignSection .secBox .txtBox .txt {
+  margin: 0 0 60px;
+}
+.serviceMain .campaignSection .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.serviceMain .campaignSection .secBox .txtBox .message {
+  max-width: 520px;
+  margin: 0 0 10px;
+  font-size: 22px;
+  text-align: center;
+  border: 1px solid #333333;
+}
+.serviceMain .campaignSection .secBox .txtBox .message a {
+  display: block;
+  padding: 10px;
+}
+@media (min-width: 1025px) {
+  .serviceMain .campaignSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .campaignSection .secBox .photo {
+    width: 49%;
+    padding: 30px 0 0;
+  }
+  .serviceMain .campaignSection .secBox .txtBox {
+    width: 50%;
+  }
+  .serviceMain .campaignSection .secBox .message a {
+    pointer-events: none;
+  }
+  .serviceMain .campaignSection .secBox .message br {
+    display: none;
+  }
+}
+.serviceMain .planSection {
+  padding: 150px 0 100px;
+}
+.serviceMain .planSection .linkList {
+  margin: 0 0 150px;
+}
+.serviceMain .planSection .linkList .ul .li {
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.serviceMain .planSection .linkList .ul .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.serviceMain .planSection .linkList .ul .ttl {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 260px;
+  font-size: 30px;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_plan_link_arrow.png) center bottom 20px no-repeat;
+  background-size: 30px auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .planSection .linkList .ul {
+    display: flex;
+  }
+  .serviceMain .planSection .linkList .ul .li {
+    width: 33.3333333333%;
+  }
+  .serviceMain .planSection .linkList .ul .li + .li {
+    border-left: 1px solid #ffffff;
+  }
+}
+.serviceMain .planSection .secBoxList {
+  margin: 0 0 60px;
+}
+.serviceMain .planSection .secBox {
+  position: relative;
+}
+.serviceMain .planSection .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.serviceMain .planSection .secBox .ttlBox {
+  margin: 0 0 60px;
+}
+.serviceMain .planSection .secBox .ttlBox h3 {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 20px 0 0;
+  font-size: 40px;
+}
+.serviceMain .planSection .secBox .ttlBox h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: #ff0000;
+}
+.serviceMain .planSection .secBox .priceList .priceCnt + .priceCnt {
+  margin: 60px 0 0;
+}
+.serviceMain .planSection .secBox .priceList .priceBox {
+  display: flex;
+  justify-content: space-between;
+}
+.serviceMain .planSection .secBox .priceList .priceBox + .priceBox {
+  margin: 20px 0 0;
+}
+.serviceMain .planSection .secBox .priceList .priceBox + p {
+  margin: 20px 0 0;
+}
+.serviceMain .planSection .secBox .photoBox {
+  font-size: 14px;
+}
+.serviceMain .planSection .secBox .photoBox .photoMain + .photoMain {
+  margin: 20px 0 0;
+}
+.serviceMain .planSection .secBox .photoBox .photoMain img {
+  border-radius: 6px;
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol2 {
+  margin: 20px 0 0;
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol2 .ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol2 .ul .li {
+  width: calc(50% - 10px);
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol2 .ul p {
+  margin: 10px 0 0;
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol4 {
+  margin: 20px 0 0;
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol4 .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol4 .ul .li {
+  width: calc(25% - 10px);
+}
+.serviceMain .planSection .secBox .photoBox .photoSubListCol4 .ul p {
+  margin: 10px 0 0;
+}
+.serviceMain .planSection .secBox .photoSubListCol3 {
+  margin: 20px 0 0;
+}
+.serviceMain .planSection .secBox .photoSubListCol3 .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.serviceMain .planSection .secBox .photoSubListCol3 .ul .li {
+  width: calc(33.3333333333% - 10px);
+}
+.serviceMain .planSection .secBox .photoSubListCol3 .ul p {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .serviceMain .planSection .secBox {
+    min-height: 550px;
+  }
+  .serviceMain .planSection .secBox.multiCnt {
+    min-height: 850px;
+    margin: 100px 0;
+  }
+  .serviceMain .planSection .secBox .priceList .priceBox .priceTtl br {
+    display: none;
+  }
+  .serviceMain .planSection .secBox .photoBox {
+    position: absolute;
+    top: 0;
+    width: 45%;
+  }
+  .serviceMain .planSection .secBox:nth-child(odd) .ttlBox {
+    width: 50%;
+  }
+  .serviceMain .planSection .secBox:nth-child(odd) .priceList {
+    width: 50%;
+  }
+  .serviceMain .planSection .secBox:nth-child(odd) .photoBox {
+    right: 0;
+  }
+  .serviceMain .planSection .secBox:nth-child(even) {
+    padding: 0 0 0 50%;
+  }
+  .serviceMain .planSection .secBox:nth-child(even) .photoBox {
+    left: 0;
+  }
+  .serviceMain .planSection .secBox .photoSubListCol3 {
+    width: 800px;
+  }
+}
+.serviceMain .optionPanel {
+  padding: 40px;
+  background: #f7f6f5;
+}
+.serviceMain .optionPanel + .optionPanel {
+  margin: 40px 0 0;
+}
+.serviceMain .optionPanel h3,
+.serviceMain .optionPanel h4,
+.serviceMain .optionPanel .optionTtl {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 0 0 0 60px;
+  font-size: 30px;
+}
+.serviceMain .optionPanel h3::before,
+.serviceMain .optionPanel h4::before,
+.serviceMain .optionPanel .optionTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  margin: auto 0;
+  background: #ff0000;
+}
+.serviceMain .optionPanel .optionTtl p {
+  display: inline;
+}
+.serviceMain .optionPanel .omiyaOptionList .box {
+  margin: 0 0 20px;
+}
+.serviceMain .optionPanel .omiyaOptionList .ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+.serviceMain .optionPanel .omiyaOptionList > .ul + .ul {
+  margin: 20px 0 0;
+}
+.serviceMain .optionPanel .optionList .ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+@media (min-width: 1025px) {
+  .serviceMain .optionPanel .omiyaOptionList .box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .optionPanel .omiyaOptionList .ul {
+    width: 50%;
+  }
+  .serviceMain .optionPanel .optionList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -20px 0 0;
+  }
+  .serviceMain .optionPanel .optionList .ul {
+    width: 50%;
+    margin: 20px 0 0;
+  }
+}
+.serviceMain .optionPanel .aside {
+  margin: 40px 0 0;
+  padding: 0 30px;
+}
+.serviceMain .rentalSection {
+  margin: 150px 0 0;
+}
+@media (min-width: 1025px) {
+  .serviceMain .exampleContainer .exampleList .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .serviceMain .exampleContainer .exampleList .ul .li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(50% - 15px);
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+  .serviceMain .exampleContainer .exampleList .ul .li .em {
+    width: calc(100% - 110px);
+    padding: 15px 20px;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+  .serviceMain .exampleContainer .exampleList .ul .li .span {
+    width: 100px;
+    text-align: right;
+    background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_price_arrow.png) left center no-repeat;
+    background-size: 12px auto;
+  }
+  .serviceMain .exampleContainer .exampleList .ul .li br {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .serviceMain .exampleContainer .exampleListSeijinshiki .ul {
+    align-items: flex-start;
+  }
+  .serviceMain .exampleContainer .exampleListSeijinshiki .ul .setPrice {
+    align-items: flex-start;
+  }
+  .serviceMain .exampleContainer .exampleListSeijinshiki .ul .setPrice .span {
+    position: relative;
+    top: 20px;
+  }
+}
+.serviceMain .totalContainer {
+  margin: 20px 0 0;
+  padding: 30px 0 0;
+  text-align: center;
+  border-top: 1px solid #7f7f7e;
+}
+.serviceMain .totalContainer p {
+  display: inline;
+  font-size: 30px;
+}
+.serviceMain .totalContainer .em {
+  font-size: 50px;
+}
+.serviceMain .totalContainer .box {
+  display: inline-block;
+}
+.serviceMain .totalContainer .box p {
+  font-size: 26px;
+}
+.serviceMain .totalContainer .box .em {
+  font-size: 36px;
+}
+.serviceMain .caseSection {
+  padding: 100px 0 200px;
+}
+.serviceMain .swiperContainer {
+  height: 40vw;
+  max-height: 540px;
+  min-height: 320px;
+}
+.serviceMain .swiperContainer .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.serviceMain .swiperContainer .swiper-slide img {
+  align-self: center;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	omiya
+///////////////////////////////////////////////////////////*/
+.omiyaMain .pageKvPanel {
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/omiya_kv_pc.png) center no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1025px) {
+  .omiyaMain .featureSection .secBox:nth-child(2) .photo {
+    top: -100px;
+    right: 5%;
+    max-width: 420px;
+  }
+  .omiyaMain .featureSection .secBox:nth-child(3) .photo {
+    right: 5%;
+  }
+}
+.omiyaMain .rentalOmiya h3 {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 20px 0 0;
+  font-size: 40px;
+}
+.omiyaMain .rentalOmiya h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: #ff0000;
+}
+.omiyaMain .rentalOmiya h3 + p {
+  margin: 0 0 40px;
+}
+.omiyaMain .rentalOmiya .secBox {
+  margin: 0 0 60px;
+}
+.omiyaMain .rentalOmiya .secBox .photo img {
+  border-radius: 6px;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .priceBox {
+  margin: 0 0 10px;
+  padding: 25px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #3e3d3b;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .priceBox p {
+  display: inline;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .priceBox .em {
+  font-size: 26px;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .priceBox br {
+  display: none;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .setBox {
+  margin: 0 0 20px;
+  padding: 20px 30px;
+  background: #4f4c49;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .setBox .dl {
+  font-size: 24px;
+  color: #d7d0ca;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .setBox .dl .dt {
+  margin: 0 0 20px;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .setBox .dl .ul {
+  padding: 0 10px;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .setBox .dl .ul + .ul {
+  margin: 20px 0 0;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .setBox .dl .ul .li {
+  display: inline-block;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .setBox .dl .ul .li + .li {
+  margin: 0 0 0 30px;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .listBox {
+  padding: 0 20px;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.omiyaMain .rentalOmiya .secBox .txtBox .listBox .ul + .ul {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .omiyaMain .rentalOmiya .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .omiyaMain .rentalOmiya .secBox .photo {
+    width: 45%;
+  }
+  .omiyaMain .rentalOmiya .secBox .txtBox {
+    width: 50%;
+  }
+}
+.omiyaMain .rentalOmiya .omiyaOptionList {
+  margin: 0 0 40px;
+}
+
+/*////////////////////////////////////////////////////////////
+	shichigosan
+///////////////////////////////////////////////////////////*/
+.shichigosanMain .pageKvPanel {
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/shichigosan_kv_pc.png) center no-repeat;
+  background-size: cover;
+}
+.shichigosanMain .rentalShichigosan {
+  padding: 0 0 100px;
+}
+.shichigosanMain .rentalShichigosan .rentalList .ul .photo img {
+  border-radius: 6px;
+}
+.shichigosanMain .rentalShichigosan .rentalList .ul .txtBox {
+  padding: 20px 0 0;
+}
+.shichigosanMain .rentalShichigosan .rentalList .ul .txtBox .ttl {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.shichigosanMain .rentalShichigosan .rentalList .ul .txtBox .dl {
+  display: flex;
+  margin: 0 0 10px;
+  line-height: 2.5;
+}
+@media (min-width: 1025px) {
+  .shichigosanMain .rentalShichigosan .rentalList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shichigosanMain .rentalShichigosan .rentalList .ul .li {
+    width: calc(33.3333333333% - 10px);
+  }
+}
+.shichigosanMain .rentalShichigosan .message {
+  margin: 60px 0 80px;
+  font-size: 26px;
+  text-align: center;
+}
+.shichigosanMain .rentalShichigosan .linkList {
+  margin: 0 0 60px;
+}
+.shichigosanMain .rentalShichigosan .linkList .ul {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.shichigosanMain .rentalShichigosan .linkList .ul .li {
+  padding: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+  background: #58524c;
+}
+@media (min-width: 1025px) {
+  .shichigosanMain .rentalShichigosan .linkList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shichigosanMain .rentalShichigosan .linkList .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	seijinshiki
+///////////////////////////////////////////////////////////*/
+.seijinshikiMain .pageKvPanel {
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/seijinshiki_kv_pc.png) center no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1025px) {
+  .seijinshikiMain .bnrSection .bnrPanel::before {
+    background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_bnr_img2.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	anniversary
+///////////////////////////////////////////////////////////*/
+.anniversaryMain .pageKvPanel {
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/anniversary_kv_pc.png) center no-repeat;
+  background-size: cover;
+}
+.anniversaryMain .featureSection {
+  margin: 80px 0 0;
+}
+@media (min-width: 1025px) {
+  .anniversaryMain .featureSection .secBox {
+    min-height: 650px;
+  }
+  .anniversaryMain .featureSection .secBox .ttlBox {
+    width: 55%;
+  }
+  .anniversaryMain .featureSection .secBox .ttlBox h3 br {
+    display: none;
+  }
+  .anniversaryMain .featureSection .secBox .photo {
+    top: 0;
+    right: 20px;
+    max-width: 420px;
+  }
+}
+.anniversaryMain .planSection .basicBox {
+  padding: 40px 60px;
+  background: #f7f6f5;
+}
+.anniversaryMain .planSection .basicBox .ttlBox {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 20px 0 0;
+}
+.anniversaryMain .planSection .basicBox .ttlBox:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: #ff0000;
+}
+.anniversaryMain .planSection .basicBox .ttlBox p {
+  display: inline-block;
+}
+.anniversaryMain .planSection .basicBox .ttlBox .em {
+  font-size: 36px;
+}
+.anniversaryMain .planSection .basicBox .ttlBox .span {
+  font-size: 20px;
+}
+.anniversaryMain .planSection .basicBox .txtBox {
+  padding: 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.anniversaryMain .planSection .basicBox .txtBox .aside p + p {
+  padding: 0 0 0 1em;
+}
+.anniversaryMain .rentalAnniversary .secBox {
+  position: relative;
+  padding: 50px 0 0;
+}
+.anniversaryMain .rentalAnniversary .secBox h3 {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 20px 0 0;
+  font-size: 36px;
+}
+.anniversaryMain .rentalAnniversary .secBox h3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: #ff0000;
+}
+.anniversaryMain .rentalAnniversary .secBox .photo img {
+  border-radius: 6px;
+}
+.anniversaryMain .rentalAnniversary .secBox .listBox {
+  padding: 0 20px;
+}
+.anniversaryMain .rentalAnniversary .secBox .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.anniversaryMain .rentalAnniversary .secBox .listBox .ul + .ul {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .anniversaryMain .rentalAnniversary .secBox {
+    min-height: 680px;
+    padding: 0 0 0 50%;
+  }
+  .anniversaryMain .rentalAnniversary .secBox .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 43%;
+  }
+}

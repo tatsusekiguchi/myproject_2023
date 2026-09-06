@@ -1,0 +1,15 @@
+- title = ''
+- description = ''
+- keywords = ''
+- root_path = '../'
+- page_name = 'company'
+doctype html
+//- サイトの設定の読み込み
+include /site.pug
+html(lang='ja')
+  head
+    include /common/head.pug
+  body#company.page
+    include /common/header.pug
+    include ../../layouts/company.pug
+    include /common/footer.pug

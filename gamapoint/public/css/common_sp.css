@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 16px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .topLogo {
+  max-width: 400px;
+}
+.footer .topLogo .logo {
+  max-width: 250px;
+}
+.footer .appTitle {
+  margin: 0 0 50px;
+  font-size: 30px;
+}
+.footer .contactPanel {
+  max-width: 600px;
+}
+.footer .contactPanel .gamapointTitle {
+  max-width: 400px;
+}
+.footer .contactPanel .contactTitle {
+  font-size: 16px;
+}
+.footer .contactPanel > dl dt {
+  margin: 0 0 10px;
+}
+.footer .contactPanel > dl dd a {
+  font-size: 20px;
+}
+.footer .contactPanel > dl dd a em {
+  font-size: 40px;
+}
+.footer .contactPanel > dl dd .txt {
+  font-size: 14px;
+}
+.footer .contactPanel .infoPanel {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px 15px;
+}
+.footer .contactPanel .infoPanel dl dt {
+  margin: 0 0 10px;
+  font-size: 12px;
+}
+.footer .contactPanel .infoPanel dl dd {
+  font-size: 11px;
+}
+.footer .btnOhp {
+  max-width: 340px;
+}

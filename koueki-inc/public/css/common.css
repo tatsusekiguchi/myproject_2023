@@ -1,0 +1,583 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #181817;
+  font-size: 18px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #181817;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+.gothic {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px 20px 10px;
+    z-index: 999;
+    transition: 0.6s;
+  }
+  .header.fixed {
+    background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/header_fixed_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .header .headWrap {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .header .headBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .logoBox {
+    width: 20%;
+    max-width: 300px;
+  }
+  .header .logoBox a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .header .logoBox .logo01 {
+    margin: 0 15px 0 0;
+  }
+}
+.hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+  border: 1px solid #ffffff;
+}
+.hamburger .span {
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.hamburger .span:nth-of-type(1) {
+  top: 15px;
+}
+.hamburger .span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hamburger .span:nth-of-type(3) {
+  bottom: 15px;
+}
+.hamburger.is-open.hamburger .span:nth-of-type(1) {
+  transform: translate(-50%, 8px) rotate(-45deg);
+}
+.hamburger.is-open.hamburger .span:nth-of-type(2) {
+  opacity: 0;
+}
+.hamburger.is-open.hamburger .span:nth-of-type(3) {
+  transform: translate(-50%, -8px) rotate(45deg);
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+  .navBox .navList {
+    width: 100%;
+    max-width: 900px;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  }
+  .navBox .navList .ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 60px;
+    border-right: none;
+  }
+  .navBox .navList .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 85px;
+    text-align: center;
+  }
+  .navBox .navList .ul > .li + .li {
+    margin: 0 0 0 80px;
+  }
+  .navBox .navList .ul > .li a,
+.navBox .navList .ul > .li .noLink {
+    display: block;
+    padding: 20px 0;
+    color: #ffffff;
+  }
+  .navBox .navList .ul > .li a.spBreak,
+.navBox .navList .ul > .li .noLink.spBreak {
+    display: none;
+  }
+  .navBox .navList .ul > .li .accordBtn {
+    color: #ffffff;
+    pointer-events: none;
+  }
+  .navBox .navList .ul > .li .linkTxt {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .navBox .navList .ul > .li .subTxt {
+    font-size: 12px;
+  }
+  .navBox .navList .ul .spBreak {
+    display: none;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 60px;
+    left: -400px;
+    width: 900px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    border: 1px solid #dbdbdb;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .list {
+    display: flex;
+  }
+  .navBox .navList .subList .list .li {
+    width: 33.3333333333%;
+  }
+  .navBox .navList .subList .list + .list {
+    border-top: 1px solid #dbdbdb;
+  }
+  .navBox .navList .subList .li + .li {
+    border-left: 1px solid #dbdbdb;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #32a44a;
+  }
+  .navBox .navList .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList .pulldown:hover .subList {
+    top: 85px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+}
+.subNavigation {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.6s;
+}
+.subNavigation.active {
+  right: 0;
+}
+.subNavigation .subNavigationList {
+  padding: 120px 0;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.subNavigation .subNavigationList .ul.topList {
+  border-top: 1px solid #ffffff;
+}
+.subNavigation .subNavigationList .ul .li {
+  border-bottom: 1px solid #ffffff;
+}
+.subNavigation .subNavigationList .ul .li a {
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+}
+.subNavigation .subNavigationList .serviceList .list {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ffffff;
+}
+.subNavigation .subNavigationList .serviceList .list .li {
+  width: 50%;
+}
+.subNavigation .subNavigationList .serviceList .list .li:nth-child(1), .subNavigation .subNavigationList .serviceList .list .li:nth-child(2) {
+  border-bottom: 1px solid #ffffff;
+}
+.subNavigation .subNavigationList .serviceList .list .li:nth-child(1), .subNavigation .subNavigationList .serviceList .list .li:nth-child(3) {
+  border-right: 1px solid #ffffff;
+}
+.subNavigation .subNavigationList .serviceList .list .li a {
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+}
+.subNavigation .subNavigationWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageKvPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 450px;
+  margin: 0 0 45px;
+  padding: 0 20px;
+}
+.pageKvPanel .pageKvTtl {
+  padding: 0 0 60px;
+  font-size: 26px;
+  color: #ffffff;
+  text-align: right;
+  writing-mode: vertical-rl;
+}
+.pageKvPanel .pageKvTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -45px;
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  z-index: 1;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/page_kv_line.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.secTtlVertical {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.secTtlVertical .secTtl {
+  position: relative;
+  display: inline-block;
+  min-height: 200px;
+  padding: 20px;
+  font-size: 26px;
+  writing-mode: vertical-rl;
+}
+.secTtlVertical .secTtl::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 130px;
+  background: #2c4951;
+}
+.secTtlVertical .secTtl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 130px;
+  background: #2c4951;
+}
+
+.secWrap {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 40%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 300px;
+}
+.btnMore a {
+  position: relative;
+  display: block;
+  padding: 13px 10px;
+  max-width: 280px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #181817;
+  background: #ffffff;
+}
+.btnMore a:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -30px;
+  width: 65px;
+  height: 8px;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/btn_link_arrow_black.png) no-repeat;
+  background-size: 100% auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 80px 0;
+  background: #e4e4e4;
+}
+.footer .footContact .secBox .leftBox .txt {
+  font-size: 22px;
+}
+.footer .footContact .secBox .rightBox .telBox {
+  margin: 0 0 20px;
+}
+.footer .footContact .secBox .rightBox .telBox a {
+  display: inline-block;
+}
+.footer .footContact .secBox .rightBox .telBox a .span {
+  display: inline-block;
+  font-size: 26px;
+}
+.footer .footContact .secBox .rightBox .telBox a .em {
+  display: inline-block;
+  font-size: 36px;
+}
+.footer .footContact .secBox .rightBox .telBox > p {
+  font-size: 16px;
+}
+.footer .footContact .secBox .rightBox .contactBox {
+  max-width: 320px;
+}
+.footer .footContact .secBox .rightBox .contactBox a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  max-width: 300px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #181817;
+  background: #ffffff;
+}
+.footer .footContact .secBox .rightBox .contactBox a:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  width: 65px;
+  height: 8px;
+  background: url(https://koeki221206.smooooth.jp/system_panel/uploads/images/btn_link_arrow_black.png) no-repeat;
+  background-size: 100% auto;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footContact .secBox .leftBox {
+    width: calc(100% - 340px);
+  }
+  .footer .footContact .secBox .rightBox {
+    width: 320px;
+  }
+}
+.footer .footPanel {
+  padding: 60px 0;
+  color: #ffffff;
+  background: #181817;
+}
+.footer .footPanel .footBox .leftBox .logo {
+  margin: 0 0 40px;
+  max-width: 300px;
+}
+.footer .footPanel .footBox .leftBox .txt a {
+  display: inline-block;
+  color: #ffffff;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .footBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

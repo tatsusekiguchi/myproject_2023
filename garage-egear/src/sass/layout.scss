@@ -1,0 +1,1837 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    padding: 0 0 10px;
+    .topKvPanel {
+      padding: 0 10px;
+      background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+        right center no-repeat;
+      background-size: cover;
+      .kvWrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 1440px;
+        height: 700px;
+        margin: 0 auto;
+        padding: 0 0 60px;
+      }
+      .kvTtl {
+        margin: 0 0 40px;
+        h1 {
+          // font-size: 60px;
+          font-size: 4vw;
+          color: #ffffff;
+          text-shadow: 0 0 15px #ffffff;
+        }
+      }
+      .kvList {
+        max-width: 1000px;
+        width: 70%;
+      }
+      .person {
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+        width: 35%;
+        max-width: 550px;
+        z-index: 1;
+      }
+    }
+  }
+  .topContainer {
+    padding: 100px 0;
+    .messageBox {
+      text-align: center;
+      .message {
+        + .message {
+          margin: 15px 0 0;
+        }
+        p {
+          display: inline-block;
+          font-size: 40px;
+          line-height: 1.2;
+        }
+        .em {
+          padding: 3px 10px;
+          color: #ffffff;
+          border-radius: 4px;
+        }
+        .blue {
+          background: #00a0e9;
+        }
+        .green {
+          background: #0fc61c;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        a {
+          display: block;
+        }
+        .img {
+          margin: 0 0 10px;
+          img {
+            border-radius: 4px;
+          }
+        }
+        .infoBox {
+          display: flex;
+          align-items: center;
+          margin: 0 0 10px;
+          .time {
+            margin: 0 5px 0 0;
+          }
+          .cate {
+            p {
+              display: inline-block;
+              min-width: 100px;
+              padding: 2px 20px;
+              font-size: 14px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 4px;
+              background: #0fc61c;
+            }
+          }
+        }
+        .title {
+          text-decoration: underline;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        margin: 0 0 0 -40px;
+        .webgene-item {
+          width: calc((100% / 4) - 40px);
+          margin: 0 0 0 40px;
+          .img {
+            position: relative;
+            height: 270px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .btnMore {
+      margin: 80px auto 0;
+    }
+  }
+  .sec02 {
+    .secContainer {
+      padding: 60px 10px 120px;
+      border-radius: 4px;
+      background: #fcfaea;
+    }
+    .listBox {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 0 0;
+      .ol {
+        .li {
+          border-radius: 4px;
+          background: #ffffff;
+        }
+        .ttlBox {
+          position: relative;
+          padding: 12px 15px;
+          text-align: center;
+          border-radius: 4px 4px 0 0;
+          background: #0fc61c;
+          .step {
+            position: absolute;
+            top: -35px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            line-height: 1.2;
+            border-radius: 50%;
+            background: #0fc61c;
+            .span {
+              font-size: 13px;
+              color: #7ced84;
+            }
+            .em {
+              font-size: 24px;
+              color: #a5f0aa;
+            }
+          }
+          .ttl {
+            position: relative;
+            font-size: 24px;
+            color: #ffffff;
+          }
+        }
+        .txt {
+          padding: 15px 20px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ol {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 30px);
+          }
+          .photo {
+            position: relative;
+            height: 280px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0 300px;
+    .secContainer {
+      position: relative;
+      padding: 60px 10px 0 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65%;
+        height: 500px;
+        background: #f0f8fb;
+      }
+      .secWrap {
+        position: relative;
+      }
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        padding: 30px 0 0;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 34px;
+          color: #00a0e9;
+        }
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .photo {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 45%;
+        }
+        .txtBox {
+          max-width: 1200px;
+          margin: 0 auto;
+          .inner {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 160px;
+    .secContainer {
+      padding: 60px 10px 120px;
+      border-radius: 4px;
+      background: #f0f8fb;
+    }
+    .secBoxList {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .secBox {
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 30px;
+          font-size: 34px;
+          color: #00a0e9;
+        }
+        .txt {
+          margin: 0 0 40px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          position: relative;
+          width: 53%;
+          height: 420px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 44%;
+        }
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+  .sec05 {
+    margin: 0 0 160px;
+    .secContainer {
+      display: flex;
+      flex-direction: column;
+      min-height: 600px;
+      padding: 60px 10px 80px;
+      border-radius: 4px;
+      background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/top_sec05_bg.png)
+        center no-repeat;
+      background-size: cover;
+      .btnMore {
+        width: 100%;
+        margin: auto auto 0;
+      }
+    }
+  }
+  .sec06 {
+    margin: 0 0 160px;
+    .secContainer {
+      padding: 60px 0 120px;
+      border-radius: 4px;
+      background: #fcfaea;
+    }
+    .listItem {
+      a {
+        position: relative;
+        display: block;
+      }
+      .btnBox {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 5px 30px;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 4px;
+        background: #0fc61c;
+        p {
+          background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/top_sec06_arrow.png)
+            right center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .listItem {
+        display: flex;
+        justify-content: space-between;
+        .itemBox {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .sec07 {
+    padding: 0 0 200px;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        a {
+          display: block;
+        }
+        .img {
+          margin: 0 0 10px;
+          img {
+            border-radius: 4px;
+          }
+        }
+        .infoBox {
+          display: flex;
+          align-items: center;
+          margin: 0 0 10px;
+          .time {
+            margin: 0 5px 0 0;
+          }
+          .cate {
+            p {
+              display: inline-block;
+              min-width: 100px;
+              padding: 2px 20px;
+              font-size: 14px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 4px;
+              background: #00a0e9;
+            }
+          }
+        }
+        .title {
+          text-decoration: underline;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        margin: 0 0 0 -40px;
+        .webgene-item {
+          width: calc((100% / 4) - 40px);
+          margin: 0 0 0 40px;
+          .img {
+            position: relative;
+            height: 270px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .btnMore {
+      margin: 80px auto 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain {
+  .purchaseSection {
+    margin: 80px 0 160px;
+  }
+  .section {
+    + .section {
+      margin: 120px 0 0;
+    }
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #f0f8fb;
+    }
+    .secBox {
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        padding: 50px 0 0;
+        .ttl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 30px;
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin: 0 20px 0 0;
+            font-size: 26px;
+            color: #ffffff;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/strength_sec_num_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          h3 {
+            width: calc(100% - 80px);
+            font-size: 34px;
+            color: #00a0e9;
+          }
+        }
+        .txt {
+          + .txt {
+            margin: 30px 0 0;
+          }
+          .em {
+            color: #006d9f;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 420px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 47%;
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+    @media (min-width: 1440px) {
+      .secBox {
+        .txtBox {
+          .ttl {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 200px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain {
+  .sec01 {
+    padding: 80px 0 160px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #f0f8fb;
+    }
+    .secBox {
+      + .arrow {
+        width: 60px;
+        margin: 80px auto;
+      }
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        padding: 15px 0 0;
+        .ttl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 30px;
+          .num {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            margin: 0 20px 0 0;
+            color: #ffffff;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/strength_sec_num_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+            .span {
+              font-size: 12px;
+              line-height: 1;
+            }
+            .em {
+              font-size: 26px;
+              line-height: 1;
+            }
+          }
+          h3 {
+            width: calc(100% - 80px);
+            font-size: 34px;
+            color: #00a0e9;
+          }
+        }
+        .txt {
+          + .txt {
+            margin: 30px 0 0;
+          }
+          .em {
+            color: #006d9f;
+          }
+        }
+      }
+      .btnList {
+        margin: 60px 0 0;
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          max-width: 460px;
+          .li {
+            width: 48%;
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+      .infoBox {
+        margin: 30px 0 0;
+        padding: 20px 30px;
+        border: 5px solid #3db7ef;
+        background: #ffffff;
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            padding: 0 0 10px;
+            text-align: center;
+            border-bottom: 1px dashed #dcdbd3;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 350px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 200px;
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+    .listBox {
+      .ul {
+        .li {
+          .photo {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            img {
+              @include cover-image;
+            }
+          }
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 26px;
+              color: #00a0e9;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -80px 0 0;
+          .li {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: 80px 0 0;
+            .dl {
+              width: calc(100% - 150px);
+            }
+            .supplement {
+              max-width: 340px;
+              margin: 10px 0 0;
+              padding: 10px 20px;
+              color: #64808d;
+              border-radius: 4px;
+              background: #f0f8fb;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 200px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #fcfaea;
+    }
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+    .secBox {
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        padding: 20px 0 0;
+        .ttl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 30px;
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin: 0 20px 0 0;
+            font-size: 26px;
+            color: #ffffff;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/flow_sec03_num_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          h3 {
+            width: calc(100% - 80px);
+            font-size: 34px;
+            color: #0fc61c;
+          }
+        }
+        .txt {
+          + .txt {
+            margin: 30px 0 0;
+          }
+          .em {
+            color: #006d9f;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 350px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 55%;
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+.priceMain {
+  .sec01 {
+    padding: 80px 0 100px;
+    .txt {
+      text-align: center;
+      p + p {
+        margin: 40px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 200px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #fcfaea;
+    }
+    .listBox {
+      .ul {
+        .li {
+          border-radius: 4px;
+          background: #ffffff;
+        }
+        .ttl {
+          padding: 5px 10px;
+          font-size: 26px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 4px 4px 0 0;
+          border: 4px solid #43d64e;
+          background: #0fc61c;
+        }
+        .itemBox {
+          padding: 20px 30px;
+          .photo {
+            img {
+              border-radius: 4px;
+            }
+          }
+          .info {
+            .dl {
+              display: flex;
+              justify-content: space-between;
+              line-height: 2;
+              + .dl {
+                margin: 10px 0 0;
+              }
+              .dt {
+                color: #0fc61c;
+              }
+              .dd {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -40px 0 0;
+          .li {
+            width: 48%;
+            margin: 40px 0 0;
+          }
+        }
+        .itemBox {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          align-items: center;
+          .photo {
+            position: relative;
+            width: 50%;
+            height: 200px;
+            img {
+              @include cover-image;
+            }
+          }
+          .info {
+            width: 43%;
+          }
+        }
+      }
+    }
+    .btnMore {
+      margin: 60px auto 0;
+    }
+  }
+  .sec03 {
+    margin: 0 0 200px;
+    .secBox {
+      padding: 40px 60px;
+      border-radius: 4px;
+      background: #f0f8fb;
+      + .secBox {
+        margin: 40px 0 0;
+      }
+      .photoBox {
+        .photo {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          img {
+            @include cover-image;
+            border-radius: 50%;
+          }
+        }
+        p {
+          margin: 20px 0 0;
+          text-align: center;
+        }
+      }
+      .txtBox {
+        h3 {
+          margin: 0 0 30px;
+          font-size: 26px;
+          color: #00a0e9;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photoBox {
+          width: 200px;
+        }
+        .txtBox {
+          width: calc(100% - 250px);
+        }
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 200px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #f0f8fb;
+    }
+    .secPanel {
+      padding: 40px 10px;
+      border-radius: 4px;
+      background: #ffffff;
+      + .secPanel {
+        margin: 40px 0 0;
+      }
+    }
+    .secBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .ttl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 30px;
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin: 0 20px 0 0;
+            font-size: 26px;
+            color: #ffffff;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/strength_sec_num_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          h3 {
+            width: calc(100% - 80px);
+            font-size: 34px;
+            color: #00a0e9;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 260px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+.supportMain {
+  .section {
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+  }
+  .sec01 {
+    margin: 80px 0 100px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #f0f8fb;
+    }
+    .secPanel {
+      padding: 40px 10px;
+      border-radius: 4px;
+      background: #ffffff;
+      + .secPanel {
+        margin: 40px 0 0;
+      }
+    }
+    .secBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .ttl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 30px;
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin: 0 20px 0 0;
+            font-size: 26px;
+            color: #ffffff;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/support_sec01_num_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          h3 {
+            width: calc(100% - 80px);
+            font-size: 34px;
+            color: #00a0e9;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 260px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 57%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 100px 0 200px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #fcfaea;
+    }
+    .secPanel {
+      padding: 40px 10px;
+      border-radius: 4px;
+      background: #ffffff;
+      + .secPanel {
+        margin: 40px 0 0;
+      }
+    }
+    .secBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      .photo {
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .ttl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 30px;
+          p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin: 0 20px 0 0;
+            font-size: 26px;
+            color: #ffffff;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/support_sec02_num_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          h3 {
+            width: calc(100% - 80px);
+            font-size: 30px;
+            color: #0fc61c;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 260px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 57%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	faq
+///////////////////////////////////////////////////////////*/
+.faqMain {
+  .faqSection {
+    margin: 80px 0 200px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #f0f8fb;
+    }
+    .faqPanel {
+      padding: 0 40px;
+      border-radius: 4px;
+      background: #ffffff;
+      + .faqPanel {
+        margin: 30px 0 0;
+      }
+      .accordHead {
+        display: flex;
+        padding: 20px 0;
+        cursor: pointer;
+        background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/accord_arrow_down.png)
+          right 10px center no-repeat;
+        background-size: 15px auto;
+        &.active {
+          background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/accord_arrow_up.png)
+            right 10px center no-repeat;
+          background-size: 15px auto;
+        }
+        .icon {
+          width: 40px;
+          margin: 0 10px 0 0;
+        }
+        .ttl {
+          width: calc(100% - 50px);
+          padding: 8px 0 0;
+          font-size: 18px;
+          color: #00a0e9;
+          line-height: 1.2;
+        }
+      }
+      .accordBody {
+        display: flex;
+        padding: 20px 0;
+        border-top: 1px dashed #dcdbd3;
+        .icon {
+          width: 40px;
+          margin: 0 10px 0 0;
+        }
+        .txtBox {
+          width: calc(100% - 50px);
+          padding: 5px 0 0;
+          line-height: 2;
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .topSection {
+    padding: 80px 0 160px;
+    .secContainer {
+      padding: 80px 0;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 4px;
+      background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/company_top_bg.png)
+        center no-repeat;
+      background-size: cover;
+      h2 {
+        margin: 0 0 40px;
+        font-size: 40px;
+      }
+      .txt {
+        margin: 0 0 60px;
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+      .name {
+        font-size: 20px;
+        line-height: 2;
+      }
+    }
+  }
+  .sec01 {
+    padding: 0 0 200px;
+    .infoBox {
+      margin: 0 0 60px;
+      .dl {
+        display: flex;
+        justify-content: space-between;
+        + .dl {
+          margin: 10px 0 0;
+        }
+        .dt {
+          width: 200px;
+          padding: 20px 0;
+          color: #00a0e9;
+          text-align: center;
+          border-bottom: 1px solid #00a0e9;
+        }
+        .dd {
+          width: calc(100% - 220px);
+          padding: 20px 30px;
+          border-bottom: 1px solid #000000;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .list {
+      margin: 0 0 100px;
+      .ul {
+        .li {
+          img {
+            border-radius: 4px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            position: relative;
+            width: calc((100% / 3) - 15px);
+            height: 340px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+    .mapBox {
+      border-radius: 4px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .sec01 {
+    padding: 80px 0 100px;
+    .txt {
+      text-align: center;
+    }
+    .cntBox {
+      margin: 60px 0 0;
+      padding: 40px 10px;
+      text-align: center;
+      border-radius: 4px;
+      border: 1px solid #00a0e9;
+      background: #f3fbff;
+      h3 {
+        margin: 0 0 40px;
+        font-size: 30px;
+        color: #00a0e9;
+      }
+      .dl {
+        .dt {
+          margin: 0 0 30px;
+          font-size: 18px;
+        }
+        .dd {
+          line-height: 2;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 140px 0 200px;
+    .secContainer {
+      padding: 100px 0;
+      border-radius: 4px;
+      background: #fcfaea;
+    }
+    .stepPanel {
+      + .stepPanel {
+        margin: 120px 0 0;
+      }
+      .ttl {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px 10px 100px;
+        border-radius: 4px 4px 0 0;
+        background: #0fc61c;
+        .num {
+          position: absolute;
+          top: -20px;
+          left: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 70px;
+          color: #ffffff;
+          border-radius: 50%;
+          background: #0fc61c;
+          .span {
+            font-size: 12px;
+            color: #7ced84;
+            line-height: 1;
+          }
+          .em {
+            font-size: 26px;
+            color: #a5f0aa;
+            line-height: 1;
+          }
+        }
+        h3 {
+          width: calc(100% - 80px);
+          font-size: 24px;
+          color: #ffffff;
+        }
+      }
+      .cntBody {
+        padding: 40px 10px;
+        border-radius: 0 0 4px 4px;
+        background: #ffffff;
+      }
+      .qrBox {
+        max-width: 900px;
+        margin: 0 auto;
+        .qr {
+          a {
+            display: block;
+          }
+        }
+        .txtBox {
+          .account {
+            margin: 30px 0 0;
+            border-radius: 4px;
+            border: 1px solid #6fc375;
+            .dl {
+              display: table;
+              width: 100%;
+              font-size: 14px;
+              + .dl {
+                border-top: 1px solid #6fc375;
+                .dt {
+                  border-radius: 0 0 0 4px;
+                }
+              }
+              > * {
+                display: table-cell;
+              }
+              .dt {
+                width: 200px;
+                padding: 10px;
+                text-align: center;
+                border-radius: 4px 0 0 0;
+                background: #fcfaea;
+              }
+              .dd {
+                padding: 10px 20px;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .qrBox {
+          display: flex;
+          justify-content: space-between;
+          .qr {
+            width: 190px;
+          }
+          .txtBox {
+            width: calc(100% - 220px);
+          }
+        }
+      }
+      .listBox {
+        max-width: 1000px;
+        margin: 0 auto;
+        .ul {
+          .photo {
+            img {
+              border-radius: 4px;
+            }
+          }
+          p {
+            margin: 10px 0 0;
+            text-align: center;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -40px 0 0 -30px;
+            .li {
+              width: calc((100% / 3) - 30px);
+              margin: 40px 0 0 30px;
+            }
+            .photo {
+              position: relative;
+              height: 265px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+      .docBox01 {
+        max-width: 1000px;
+        margin: 0 auto 60px;
+        .photoBox {
+          .photo {
+            width: 200px;
+          }
+        }
+        .txtBox {
+          .dl {
+            border-radius: 4px;
+            border: 1px solid #6fc375;
+            .dt {
+              padding: 10px;
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+              background: #0fc61c;
+            }
+            .dd {
+              padding: 20px 40px;
+            }
+            .ul {
+              .li {
+                + .li {
+                  margin: 15px 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .docBox01 {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          .photoBox {
+            width: 40%;
+          }
+          .txtBox {
+            width: 55%;
+            .dl {
+              .dd {
+                display: flex;
+                justify-content: space-between;
+              }
+              .ul {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+      .docBox02 {
+        max-width: 1000px;
+        margin: 0 auto;
+        .dl {
+          border-radius: 4px;
+          border: 1px solid #6fc375;
+          .dt {
+            padding: 10px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            background: #0fc61c;
+          }
+          .dd {
+            padding: 20px 40px;
+          }
+          .txt {
+            max-width: 880px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain {
+  .blogSection {
+    padding: 80px 0 200px;
+  }
+  @media (min-width: 1025px) {
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+      .catePanel {
+        width: 160px;
+      }
+      .blogPanel {
+        width: calc(100% - 220px);
+        padding: 60px 0 0;
+      }
+    }
+  }
+  .catePanel {
+    .webgene-blog {
+      .webgene-header {
+        margin: 0 0 20px;
+        padding: 70px 0 0;
+        text-align: center;
+        background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+          center top no-repeat;
+        background-size: 140px auto;
+        h2 {
+          font-size: 26px;
+        }
+        em {
+          color: #f04046;
+        }
+      }
+      .webgene-item {
+        a {
+          display: block;
+          max-width: 100px;
+          margin: 0 auto;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          a {
+            display: block;
+            min-height: 300px;
+          }
+          .img {
+            margin: 0 0 10px;
+            img {
+              border-radius: 4px;
+            }
+          }
+          .infoBox {
+            display: flex;
+            align-items: center;
+            margin: 0 0 15px;
+            font-size: 14px;
+            .time {
+              margin: 0 10px 0 0;
+            }
+            .cate {
+              min-width: 100px;
+              padding: 0 10px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 4px;
+              background: #00a0e9;
+            }
+          }
+          .title {
+            text-decoration: underline;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -40px 0 0 -20px;
+          .webgene-item {
+            width: calc((100% / 3) - 20px);
+            margin: 40px 0 0 20px;
+            .img {
+              position: relative;
+              height: 200px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              line-height: 45px;
+              text-align: center;
+              background: #dbf0fa;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              color: #ffffff;
+              background: #00a0e9;
+            }
+          }
+          @media (min-width: 1025px) {
+            li {
+              margin: 0 5px;
+            }
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          padding: 0 15px;
+          font-size: 14px;
+          .time {
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            padding: 0 10px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 4px;
+            background: #00a0e9;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          padding: 0 15px;
+          font-size: 26px;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          max-width: 900px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 20px;
+            img {
+              width: auto;
+              max-width: 100%;
+              border-radius: 6px;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+      .pdfArea {
+        margin: 40px 0 0;
+        a {
+          color: #2151a3;
+        }
+      }
+    }
+    .btnBack {
+      width: 220px;
+      margin: 100px auto 0;
+      a {
+        display: block;
+        padding: 10px 20px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 30px;
+        background: #00a0e9;
+        p {
+          background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+            left 10px center no-repeat;
+          transition: 0.6s;
+        }
+      }
+      @media (min-width: 1025px) {
+        a {
+          &:hover {
+            p {
+              background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+                left center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

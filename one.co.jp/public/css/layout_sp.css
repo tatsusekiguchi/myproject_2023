@@ -1,0 +1,404 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain .topKvPanel {
+  height: 400px;
+  margin: 0 0 60px;
+}
+#topMain .topKvPanel .topKvTitle {
+  width: 95%;
+  max-width: 320px;
+  padding: 20px 10px;
+  text-align: right;
+  background: url("../image/top/top_kv_ttl_bg.png") center no-repeat;
+  background-size: cover;
+}
+#topMain .topKvPanel .topKvTitle h1 {
+  font-size: 24px;
+}
+#topMain .topKvPanel .topKvTitle h1 span + span {
+  padding: 0;
+}
+#topMain .sec01 {
+  padding: 60px 0;
+}
+#topMain .sec01 .message {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 1000px;
+}
+#topMain .sec01 .message img {
+  animation: moveRightToLeft 14s linear infinite;
+}
+#topMain .sec01 .secBox .txtBox {
+  padding: 30px 0 0;
+}
+#topMain .sec01 .secBox .txtBox .txt {
+  margin: 0 0 30px;
+}
+#topMain .sec02 {
+  padding: 60px 0 100px;
+}
+#topMain .sec02 .secBox .photo .logo {
+  max-width: 200px;
+}
+#topMain .sec02 .secBox .txtBox {
+  padding: 30px 0 0;
+}
+#topMain .sec02 .secBox .txtBox .txt {
+  margin: 0 0 30px;
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+#serviceMain .sec01 {
+  padding: 60px 0 80px;
+}
+#serviceMain .sec01 .topTxt {
+  margin: 0 0 30px;
+}
+#serviceMain .sec01 .secPanel {
+  padding: 20px;
+}
+#serviceMain .sec01 .secPanel .secTtl {
+  margin: 0 0 20px;
+}
+#serviceMain .sec01 .secPanel .secTtl h3 {
+  padding: 0 0 0 30px;
+  font-size: 20px;
+  background: url("../image/service/sec_ttl_icon.png") left center no-repeat;
+  background-size: 20px auto;
+}
+#serviceMain .sec01 .secPanelList {
+  margin: 20px 0 40px;
+}
+#serviceMain .sec01 .secPanelList .secPanel + .secPanel {
+  margin: 20px 0 0;
+}
+#serviceMain .sec01 .secPanelList .secPanel .txt {
+  padding: 10px 0 0;
+}
+#serviceMain .sec01 .secPanelList .secPanel .box {
+  min-height: 200px;
+  padding: 5px 0 15px;
+}
+#serviceMain .sec01 .secPanelList .secPanel .box01 {
+  background: url("../image/service/sec01_icon_01.png") center no-repeat;
+  background-size: 180px auto;
+}
+#serviceMain .sec01 .secPanelList .secPanel .box02 {
+  background: url("../image/service/sec01_icon_02.png") center no-repeat;
+  background-size: 180px auto;
+}
+#serviceMain .sec02 {
+  padding: 80px 0;
+}
+#serviceMain .sec02 .secTtl {
+  margin: 0 0 20px;
+}
+#serviceMain .sec02 .secTtl h2 {
+  padding: 0 0 0 30px;
+  font-size: 20px;
+  background: url("../image/service/sec_ttl_icon.png") left center no-repeat;
+  background-size: 20px auto;
+}
+#serviceMain .sec02 .topTxt {
+  margin: 0 0 30px;
+}
+#serviceMain .sec02 .recruitPanel {
+  margin: 0 0 40px;
+  padding: 20px;
+}
+#serviceMain .sec02 .recruitPanel .secBox .txtBox {
+  padding: 20px 0;
+}
+#serviceMain .sec02 .recruitPanel .secBox .txtBox h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#companyMain .sec01 {
+  padding: 60px 0;
+}
+#companyMain .sec01 .messageTitle {
+  max-width: 280px;
+  margin: 0 0 30px;
+}
+#companyMain .sec01 .messageTitle p {
+  font-size: 20px;
+}
+#companyMain .sec01 .messageTitle span {
+  padding: 10px 20px;
+}
+#companyMain .sec01 .txt {
+  margin: 0 0 20px;
+}
+#companyMain .sec01 .name {
+  padding: 0 10px;
+}
+#companyMain .sec01 .name span {
+  margin: 0 15px 0 0;
+}
+#companyMain .sec01 .name em {
+  font-size: 24px;
+}
+#companyMain .sec02 {
+  padding: 60px 0;
+}
+#companyMain .sec02 .infoPanel {
+  padding: 30px 20px;
+}
+#companyMain .sec02 .infoPanel .infoBox dl {
+  display: block;
+  padding: 15px 0;
+}
+#companyMain .sec02 .infoPanel .infoBox dl dt {
+  width: 100%;
+}
+#companyMain .sec03 {
+  padding: 70px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+#recruitMain .sec01 {
+  padding: 60px 0 80px;
+}
+#recruitMain .sec01 .topTxt {
+  margin: 0 0 30px;
+}
+#recruitMain .sec01 .aboutPanel {
+  padding: 20px 20px 60px;
+}
+#recruitMain .sec01 .aboutPanel .secBox .txtBox h3 {
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+#recruitMain .sec01 .featureList {
+  margin: 30px 0 60px;
+}
+#recruitMain .sec01 .featureList ol {
+  max-width: 600px;
+}
+#recruitMain .sec01 .featureList ol li {
+  padding: 60px 20px 30px;
+}
+#recruitMain .sec01 .featureList ol li + li {
+  margin: 80px 0 0;
+}
+#recruitMain .sec01 .featureList ol .num {
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+}
+#recruitMain .sec01 .featureList ol .num em {
+  font-size: 30px;
+}
+#recruitMain .sec01 .featureList ol dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#recruitMain .sec01 .featureList ol dl dt em {
+  font-size: 20px;
+}
+#recruitMain .sec01 .slidePanel .slideBox ul li {
+  width: 50%;
+  height: 250px;
+  margin: 0 5px;
+}
+#recruitMain .sec02 {
+  padding: 80px 0;
+}
+#recruitMain .sec02 .sectionTitle p {
+  max-width: 280px;
+}
+#recruitMain .sec02 .secBoxList {
+  padding: 10px 0 0;
+}
+#recruitMain .sec02 .secBox + .secBox {
+  margin: 60px 0 0;
+}
+#recruitMain .sec02 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+#recruitMain .sec02 .secBox .txtBox h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#recruitMain .sec03 {
+  padding: 80px 0;
+}
+#recruitMain .sec03 .tabContainer {
+  padding: 20px 0 0;
+}
+#recruitMain .sec03 .tabList {
+  max-width: 800px;
+}
+#recruitMain .sec03 .tabList ul {
+  max-width: 400px;
+}
+#recruitMain .sec03 .tabList ul li {
+  position: relative;
+  width: 50%;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+#recruitMain .sec03 .tabList ul li + li {
+  left: -5px;
+}
+#recruitMain .sec03 .tabPanel {
+  padding: 40px 20px;
+}
+#recruitMain .sec03 .tabItem dl {
+  display: block;
+  padding: 15px 0;
+}
+#recruitMain .sec03 .tabItem dl dt {
+  width: 100%;
+}
+#recruitMain .sec03 .btnMore {
+  max-width: 280px;
+  margin: 40px auto 0;
+}
+#recruitMain .sec04 {
+  padding: 80px 0;
+}
+#recruitMain .sec04 .sectionTitle p {
+  max-width: 280px;
+}
+#recruitMain .sec04 .secPanel {
+  padding: 30px 20px;
+}
+#recruitMain .sec04 .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+#recruitMain .sec04 .secPanel .secBox .txtBox dl dt {
+  margin: 0 0 10px;
+}
+#recruitMain .sec04 .secPanel .secBox .txtBox dl dt span {
+  width: 90px;
+  margin: 0 0 5px;
+}
+#recruitMain .sec04 .secPanel .secBox .txtBox dl dt em {
+  display: block;
+  font-size: 20px;
+}
+#recruitMain .sec05 {
+  padding: 80px 0;
+}
+#recruitMain .sec05 .topTxt {
+  margin: 0 0 30px;
+}
+#recruitMain .sec06 {
+  padding: 60px 0 80px;
+}
+#recruitMain .sec06 .topTxt {
+  margin: 0 0 30px;
+}
+
+.contactTelLinePanel {
+  max-width: 600px;
+  padding: 30px 0;
+  background: none;
+}
+.contactTelLinePanel .contactBox {
+  padding: 30px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.contactTelLinePanel .contactBox + .contactBox {
+  margin: 30px 0 0;
+}
+.contactTelLinePanel .contactBox dl dt {
+  max-width: 300px;
+  margin: 0 auto 15px;
+  font-size: 16px;
+}
+.contactTelLinePanel .contactBox.tel dl dd a span {
+  font-size: 16px;
+}
+.contactTelLinePanel .contactBox.tel dl dd a em {
+  font-size: 24px;
+}
+.contactTelLinePanel .contactBox.line dl .qrBox {
+  display: block;
+  max-width: 330px;
+}
+.contactTelLinePanel .contactBox.line dl .qrBox a {
+  width: 80px;
+  margin: 0 auto 20px;
+}
+.contactTelLinePanel .contactBox.line dl .qrBox p {
+  width: 100%;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain .contactMainContainer {
+  padding: 60px 0 80px;
+}
+#contactMain .sec01 .sectionTitle p,
+#contactMain .sec02 .sectionTitle p {
+  max-width: 180px;
+}
+#contactMain .sec01 .topTxt,
+#contactMain .sec02 .topTxt {
+  margin: 0 0 30px;
+}
+#contactMain .sec01 {
+  margin: 0 0 80px;
+}
+
+/*////////////////////////////////////////////////////////////
+	formLayout
+///////////////////////////////////////////////////////////*/
+.formMain .contactForm dl {
+  display: block;
+  padding: 10px 0;
+}
+.formMain .contactForm dl dt {
+  width: 100%;
+}
+.formMain .contactForm dl dd {
+  width: 100%;
+}
+.formMain .contactForm dl.line {
+  align-items: flex-start;
+}
+.formMain .privacy .agreeBox {
+  height: 250px;
+  padding: 20px 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain .fileUploadBox {
+  display: block;
+}
+.formMain .fileUploadBox .fileBox {
+  width: 100%;
+  margin: 0 0 20px;
+}
+.formMain .fileUploadBox .fileArea {
+  display: block;
+}
+.formMain .fileUploadBox .fileArea .inputFile {
+  width: 200px;
+}
+.formMain .fileUploadBox .fileArea > p {
+  width: 100%;
+}

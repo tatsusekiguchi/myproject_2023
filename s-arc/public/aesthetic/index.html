@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="aesthetic">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="logo"><a href="/">
+				<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+			</a></div>
+		<div class="navBox">
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="about">
+							<div>
+								<p>アークについて</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>事業紹介</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="hair">
+										<div>
+											<p>ヘアサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="product">
+										<div>
+											<p>商品紹介</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="aesthetic">
+										<div>
+											<p>エステサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="childcare">
+										<div>
+											<p>保育事業</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="hair">
+							<div>
+								<p>ヘアサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="product">
+							<div>
+								<p>商品紹介</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="aesthetic">
+							<div>
+								<p>エステサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="childcare">
+							<div>
+								<p>保育事業</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>採用情報</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="message">
+										<div>
+											<p>メッセージ</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="system">
+										<div>
+											<p>アークの制度</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="interview">
+										<div>
+											<p>先輩の声</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="requirement">
+										<div>
+											<p>募集要項</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="message">
+							<div>
+								<p>メッセージ</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="system">
+							<div>
+								<p>アークの制度</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="interview">
+							<div>
+								<p>先輩の声</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="requirement">
+							<div>
+								<p>募集要項</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="company">
+							<div>
+								<p>会社概要</p>
+							</div>
+						</a></div>
+					<div class="li contact"><a href="contact">
+							<div>
+								<p>ご予約・お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="aestheticMain main serviceMain">
+		<div class="pageKvContainer">
+			<div class="topKvPanel">
+				<div class="topKvTitle mincho">
+					<div class="ttl">
+						<h1>エステサロン</h1>
+					</div>
+					<p>AESTHETIC SALON</p>
+				</div>
+				<div class="topKv"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/aesthetic_kv.png" alt=""></div>
+			</div>
+		</div>
+		<div class="pageMainContainer">
+			<div class="topSection">
+				<div class="secWrap">
+					<div class="secPanel fadeUp">
+						<div class="secBox">
+							<h2 class="mincho">ココロとカラダに「美」と「癒し」<br>そして「健康」を</h2>
+							<div class="photoTxt">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/aesthetic_top_img.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>アークの運営する「AQUA de VIDA(アクアヴィーダ)」では、オイルマッサージやフェイシャルマッサージ、痩身、脱毛など、あなたを癒しより美しくするメニューを多数ご用意しています。</p>
+										<p>お仕事や家庭のことなど、普段は人のためにがんばっているみなさんに、ここにいる間だけでも自分を大切にし癒されてもらいたい。<br>そんな想いでひとりひとりに合わた施術を丁寧にしています。<br>「美」と「癒し」を入れることで、ココロもカラダも「健康」で過ごせることを願っています。</p>
+									</div>
+									<div class="btnTarget mincho"><a href="https://hc-ark.com/este/" target="_blank" rel="noopener">
+											<div>
+												<p>サロンHPはこちら</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pointSection">
+				<div class="topContainer">
+					<div class="secWrap01">
+						<div class="pageSecTtl mincho grad fadeUp">
+							<div class="ttl">
+								<h2>エステサロンの特徴</h2>
+							</div>
+							<div class="sub">
+								<p>POINT</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="introContainer">
+					<div class="secPanelList">
+						<div class="secPanel fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/aesthetic_point_img_01.png" alt=""></div>
+							<div class="txtBox">
+								<div class="inner">
+									<div class="ttlBox mincho">
+										<div class="num">
+											<p>01</p>
+										</div>
+										<h3>オイルマッサージが得意です</h3>
+									</div>
+									<div class="txt">
+										<p>マッサージ歴20年のベテランスタッフが、あなたの体調に合わせて丁寧にマッサージ。<br>忙しい日常で溜まったストレスや疲れを和らげます。<br>デスクワークや運動不足で凝り固まった筋肉を優しくほぐすことで、こりが軽減されたり、<br>血流が良くなることで疲労回復にも役立ちます。<br>この時間だけは、頭を空っぽにし、ゆっくりくつろいでください。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/aesthetic_point_img_02.png" alt=""></div>
+							<div class="txtBox">
+								<div class="inner">
+									<div class="ttlBox mincho">
+										<div class="num">
+											<p>02</p>
+										</div>
+										<h3>ヘアサロンからのエステサロンで贅沢時間を</h3>
+									</div>
+									<div class="txt">
+										<p>アークのエステサロンはヘアサロンと同じ建物内にあります。<br>「髪を綺麗にしてもらって、仕上げに全身のマッサージ」という贅沢コースをお楽しみいただくお客さまが多くいらっしゃいます。<br>数カ月に1回の美容時間だからこそ、思いっきり自分を甘やかし、癒されませんか？<br>この贅沢時間が、明日からがんばる自分へのエールとなりますよう、心を込めて施術させていただきます。</p>
+									</div>
+									<div class="btnMore"><a href="hair">
+											<div>
+												<p>ヘアサロンについて</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/aesthetic_point_img_03.png" alt=""></div>
+							<div class="txtBox">
+								<div class="inner">
+									<div class="ttlBox mincho">
+										<div class="num">
+											<p>03</p>
+										</div>
+										<h3>ついで〇〇で通いやすい</h3>
+									</div>
+									<div class="txt">
+										<p>ついで脱毛、ついでまつ毛エク、ついでネイル。<br>ヘアサロンのついでに行けば通うのがぐんと楽に！<br>新しく脱毛サロンやまつエクサロン、ネイルサロンなど探すのが面倒、<br>という方もヘアサロンの帰りにお気軽にご来店ください。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/aesthetic_point_img_04.png" alt=""></div>
+							<div class="txtBox">
+								<div class="inner">
+									<div class="ttlBox mincho">
+										<div class="num">
+											<p>04</p>
+										</div>
+										<h3>小さいお子さま預かります</h3>
+									</div>
+									<div class="txt">
+										<p>子どもは大切だし可愛いけれど、自分の時間も欲しい。<br>そんなお母さん、お父さんのためにアーク保育園を開園しました。<br>すぐ傍にあるので、送迎いらずで安心です。<br>お子さまは私たちにお預けいただき、パーマやカラー、ヘッドスパなど時間のかかるメニューも心置きなくお任せください。</p>
+									</div>
+									<div class="btnMore"><a href="childcare">
+											<div>
+												<p>アーク保育園について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menuContainer">
+					<div class="secWrap01">
+						<div class="menuPanel">
+							<div class="menuPanelInner">
+								<div class="ttl mincho">
+									<p>MENU</p>
+								</div>
+								<div class="txt">
+									<p>お気軽にお試しいただけるよう、体験メニューや30分からのコースをご用意しています。<br>詳しくはこちらからご覧ください。</p>
+								</div>
+								<div class="list">
+									<div class="ul">
+										<div class="li">
+											<p>●リフレクソロジー</p>
+										</div>
+										<div class="li">
+											<p>●オイルマッサージ</p>
+										</div>
+										<div class="li">
+											<p>●整体マッサージ</p>
+										</div>
+									</div>
+									<div class="ul">
+										<div class="li">
+											<p>●フェイシャルマッサージ</p>
+										</div>
+										<div class="li">
+											<p>●オーラルケア</p>
+										</div>
+									</div>
+									<div class="ul">
+										<div class="li">
+											<p>●キャビテーション</p>
+										</div>
+										<div class="li">
+											<p>●スパーパルス（吸引＋吸出）</p>
+										</div>
+										<div class="li">
+											<p>●リンパマッサージ</p>
+										</div>
+										<div class="li">
+											<p>●ハーブスリム</p>
+										</div>
+										<div class="li">
+											<p>●EMS</p>
+										</div>
+									</div>
+									<div class="ul">
+										<div class="li">
+											<p>●女性脱毛</p>
+										</div>
+										<div class="li">
+											<p>●男性脱毛</p>
+										</div>
+										<div class="li">
+											<p>●ウェディング</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="infoSection">
+				<div class="titlePanel">
+					<div class="secWrap01">
+						<div class="pageSecTtl mincho grad fadeUp">
+							<div class="ttl">
+								<h2>サロン情報</h2>
+							</div>
+							<div class="sub">
+								<p>SALON</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="infoPanel fadeUp">
+					<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/aesthetic_info_img.png" alt=""></div>
+					<div class="txtBox">
+						<div class="inner">
+							<div class="ttl mincho">
+								<h3>AQUA de VIDA</h3>
+							</div>
+							<div class="infoList">
+								<div class="ul">
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>ADDRESS</p>
+											</div>
+											<div class="dd">
+												<p>長野県伊那市上新田2151-1</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>TEL</p>
+											</div>
+											<div class="dd"><a href="tel:0265988807">
+													<div>
+														<p>0265-98-8807</p>
+													</div>
+												</a></div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>OPEN</p>
+											</div>
+											<div class="dd">
+												<p>平日/ 10:00～19:00<br>日祝/ 09:00～18:00</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>CLOSE</p>
+											</div>
+											<div class="dd">
+												<p>毎週月曜日</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt mincho">
+												<p>PARKING</p>
+											</div>
+											<div class="dd">
+												<p>有</p>
+											</div>
+										</div>
+									</div>
+									<div class="li btnBox">
+										<div class="btnTarget mincho"><a href="https://hc-ark.com/este/" target="_blank" rel="noopener">
+												<div>
+													<p>HPはこちら</p>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="bnrList">
+								<div class="bnr01 bnr"><a href="https://beauty.hotpepper.jp/kr/slnH000560242/" target="_blank" rel="noopener">
+										<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/salon_bnr_hp.png" alt=""></div>
+									</a></div>
+								<div class="bnr02 bnr"><a href="https://h-c-ark.pos-s.net/reserve/" target="_blank" rel="noopener">
+										<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/salon_bnr_mycolle.png" alt=""></div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mapPanel">
+					<div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.17504781531267!2d137.96675538340403!3d35.82936367341832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601cf1bb60f8b24b%3A0x524bbedf5939bd8c!2z44Ki44Kv44Ki44O044Kj44O844OA!5e0!3m2!1sja!2sjp!4v1702369164121!5m2!1sja!2sjp" allow="fullscreen"></iframe></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtl mincho white fadeUp">
+					<div class="ttl">
+						<h2>ご予約・お問い合わせ</h2>
+					</div>
+					<div class="sub">
+						<p>CONTACT</p>
+					</div>
+				</div>
+				<div class="contactItem fadeUp">
+					<div class="itemBox">
+						<div class="tel"><a href="tel:0265772227">
+								<div>
+									<p class="em mincho">0265-77-2227</p>
+									<p class="span">平日 10:00～19:00<br>日曜日・祝日 09:00～18:00</p>
+								</div>
+							</a></div>
+						<div class="mail"><a href="contact?sec02">
+								<div>
+									<p class="mincho">メールフォームはこちら</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="itemBox">
+						<div class="reserve"><a href="contact">
+								<div>
+									<p class="mincho">ご予約はこちらから</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="logo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txtBox">
+						<div class="ttl">
+							<p>株式会社アーク</p>
+							<div class="insta"><a href="https://www.instagram.com/haircraftark/" target="_blank" rel="noopener">
+									<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+								</a></div>
+						</div>
+						<div class="txt">
+							<p>〒396-0012長野県伊那市上新田2401-1</p><a href="tel:0265772227">
+								<div>
+									<p>TEL: 0265-77-2227</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy;2023　株式会社アーク.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

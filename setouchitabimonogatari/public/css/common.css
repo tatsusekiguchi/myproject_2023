@@ -1,0 +1,432 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500&family=Zen+Kaku+Gothic+New:wght@700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  padding: 20px;
+  z-index: 999;
+  background: #ffffff;
+}
+.header .headWrap {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.header .headTitle {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.header .logoBox {
+  max-width: 380px;
+  width: 25%;
+  margin: 0 auto;
+}
+.header .logoBox .logo a {
+  display: block;
+}
+.header .headItem {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 200px;
+  text-align: center;
+}
+.header .headItem .headMenu {
+  width: 180px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.header .headItem .sns {
+  padding: 20px 0 0;
+}
+.header .headItem .sns .ul .li {
+  display: inline-block;
+  width: 30px;
+}
+.header .headItem .sns .ul .li + .li {
+  margin: 0 0 0 5px;
+}
+.header .headItem .sns .ul .li a {
+  display: block;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  z-index: 1000;
+  background: rgba(241, 155, 56, 0.9);
+}
+.navBox .navWrap {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+.navBox .closeMenu {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 180px;
+  cursor: pointer;
+}
+.navBox .navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navBox .navContainer .leftBox {
+  text-align: center;
+}
+.navBox .navContainer .leftBox .logo {
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.navBox .navContainer .leftBox p {
+  font-size: 15px;
+}
+.navBox .navContainer .rightBox {
+  font-family: "Kaisei Opti";
+}
+.navBox .navContainer .rightBox .title {
+  margin: 0 0 60px;
+  font-size: 36px;
+}
+.navBox .navContainer .rightBox .navList {
+  font-size: 26px;
+}
+.navBox .navContainer .rightBox .navList .ul .li + .li {
+  margin: 30px 0 0;
+}
+.navBox .navContainer .rightBox .navList .ul .li a {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+@media (min-width: 1025px) {
+  .navBox .navContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navBox .navContainer .leftBox {
+    width: 40%;
+    padding: 60px 0 0;
+  }
+  .navBox .navContainer .rightBox {
+    width: 40%;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 130px 0 0;
+}
+
+.pageKvContainer {
+  position: relative;
+  margin: 0 0 120px;
+  padding: 0 20px;
+}
+.pageKvContainer h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  z-index: -1;
+}
+.pageKvContainer .pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 1600px;
+  height: 350px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.pageKvContainer .kvTitleBox {
+  position: relative;
+  left: -20px;
+  padding: 0 0 40px;
+}
+.pageKvContainer .kvTitle {
+  display: inline-block;
+  padding: 5px 30px;
+  font-size: 0;
+  text-align: center;
+  border-radius: 10px;
+  background: #0f0f0f;
+}
+.pageKvContainer .kvTitle p {
+  display: inline;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 30px;
+  color: #ffffff;
+}
+.pageKvContainer .kvTitle .em {
+  color: #db7c37;
+}
+
+.secWrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 440px;
+}
+.btnMore a {
+  display: block;
+}
+.btnMore a .inner {
+  position: relative;
+  font-family: "Kaisei Opti";
+  font-size: 20px;
+  text-align: center;
+  border-radius: 35px;
+  border: 1px solid #525252;
+  background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat #ffffff;
+}
+.btnMore a .icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+}
+.btnMore a p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  padding: 10px 50px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/footer_bg.png) left top no-repeat;
+  background-size: cover;
+}
+.footer .footPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 650px;
+  padding: 0 0 60px;
+}
+.footer .footBox .logo {
+  max-width: 360px;
+  margin: 0 0 40px;
+}
+.footer .footBox .txt {
+  display: inline-block;
+}
+.footer .footBox .txt a {
+  display: inline-block;
+}
+.footer .footBox .txt .telMail > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .footBox .txt .telMail .mail {
+  margin: 0 0 0 20px;
+}
+.footer .footBox .txt .telMail .mail .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+}
+.footer .footBox .txt .telMail .mail p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .footBox .sns {
+  display: inline-block;
+}
+.footer .footBox .sns .ul .li {
+  display: inline-block;
+  width: 30px;
+}
+.footer .footBox .sns .ul .li + .li {
+  margin: 0 0 0 5px;
+}
+.footer .footBox .sns .ul .li a {
+  display: block;
+}
+.footer .copy {
+  margin: 30px 0 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

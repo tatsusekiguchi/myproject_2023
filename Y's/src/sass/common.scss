@@ -1,0 +1,569 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+  font-family: $serif, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  //font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  background: $bgBaseColor;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", "verdana", sans-serif;
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.gothic {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", "verdana", sans-serif;
+}
+
+@keyframes fixed-slide {
+  from {
+    transform: translate3d(0, -90px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 50px;
+    z-index: 999;
+    transition: 0.6s;
+    .logo {
+      position: absolute;
+      top: 180px;
+      left: 5%;
+      width: 180px;
+      a {
+        display: block;
+      }
+    }
+    .headBox {
+      position: absolute;
+      top: 0;
+      right: 50px;
+      width: 600px;
+      padding: 20px 0 20px 30px;
+      background: #ecf7f6;
+      transition: 0.6s;
+    }
+    .headItem {
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        width: 440px;
+        .li {
+          width: 48%;
+          a {
+            display: block;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 30px;
+          }
+        }
+        .search {
+          a {
+            background: #006f62;
+          }
+        }
+        .recruit {
+          a {
+            background: #dcbc60;
+          }
+        }
+      }
+    }
+  }
+  .header.fixed {
+    position: fixed;
+    height: 90px;
+    background: #ecf7f6;
+    animation: fixed-slide 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+    .logo {
+      top: 20px;
+      transition: 0.6s;
+    }
+  }
+}
+.hamburgerBox {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 20px;
+  }
+  .hamburger .span {
+    background: #006f62;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .hamburger .span:nth-of-type(1) {
+    top: 5px;
+  }
+  .hamburger .span:nth-of-type(2) {
+    bottom: 5px;
+  }
+  .is-open.hamburger .span:nth-of-type(1) {
+    background: #ffffff;
+    transform: translate(-50%, 4px) rotate(-45deg);
+  }
+  .is-open.hamburger .span:nth-of-type(2) {
+    background: #ffffff;
+    transform: translate(-50%, -4px) rotate(45deg);
+  }
+  .hamburgerTxt {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #006f62;
+  }
+  .is-open.hamburger + .hamburgerTxt {
+    color: #ffffff;
+  }
+}
+.sideNav {
+  position: fixed;
+  top: 40%;
+  right: 30px;
+  width: 40px;
+  z-index: 99;
+  .ul {
+    .li {
+      + .li {
+        margin: 20px 0 0;
+      }
+      a {
+        display: block;
+      }
+    }
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  padding: 120px 20px 60px;
+  z-index: 999;
+  background: #006f62;
+  opacity: 0;
+  transition: 0.6s;
+  &.active {
+    top: 0;
+    opacity: 1;
+    z-index: 999;
+  }
+  .navList {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    .ul {
+      display: flex;
+      flex-wrap: wrap;
+      .li {
+        width: 50%;
+        a {
+          display: inline-block;
+          padding: 10px 0;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .navItem {
+    text-align: center;
+    .ul {
+      .li {
+        display: inline-block;
+        + .li {
+          margin: 0 0 0 20px;
+        }
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  padding: 50px 0 0;
+}
+.mainContainer {
+  overflow: hidden;
+}
+.pageKvPanel {
+  position: relative;
+  margin: 0 0 120px;
+  padding: 0 50px 50px 360px;
+  .pageKv {
+    position: relative;
+    height: 440px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: calc(100% - 50px);
+      height: 540px;
+      z-index: -1;
+      background: #ecf7f6;
+    }
+  }
+  .kvTtl {
+    position: absolute;
+    top: 250px;
+    left: 5%;
+    z-index: 1;
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
+.pageSecTtl {
+  margin: 0 0 40px;
+  p {
+    margin: 0 0 5px;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  &.center {
+    text-align: center;
+  }
+}
+.secWrap {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.btnMore {
+  min-width: 250px;
+  a {
+    position: relative;
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+    border: 1px solid #8ec6bf;
+    background: #ffffff;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: -20px;
+      width: 50px;
+      height: 7px;
+      background: url(https://ys-labo.jp/system_panel/uploads/images/btn_arrow_right.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+
+.btnBack {
+  max-width: 250px;
+  margin: 0 auto;
+  a {
+    position: relative;
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+    border: 1px solid #8ec6bf;
+    background: #ffffff;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -20px;
+      width: 50px;
+      height: 7px;
+      background: url(https://ys-labo.jp/system_panel/uploads/images/btn_back_arrow.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContact {
+    max-width: 1400px;
+    margin: 0 auto 200px;
+    padding: 80px 0;
+    background: #ecf7f6;
+    .secContainer {
+      .ttlBox {
+      }
+      .listBox {
+        padding: 40px 50px;
+        background: #ffffff;
+        .dl {
+          text-align: center;
+          .dt {
+            margin: 0 0 15px;
+          }
+          .dd {
+            .btnLink {
+              max-width: 270px;
+              margin: 0 auto;
+              + .btnLink {
+                margin: 15px auto 0;
+              }
+              a {
+                display: block;
+                padding: 15px 10px;
+                color: #eaf7f6;
+                background: #dcbc60;
+              }
+              &.green {
+                a {
+                  background: #006f62;
+                }
+              }
+            }
+            > p {
+              margin: 10px 0 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ttlBox {
+          width: 35%;
+        }
+        .listBox {
+          display: flex;
+          justify-content: space-between;
+          width: 65%;
+          .dl {
+            position: relative;
+            width: 50%;
+            + .dl {
+              border-left: 1px solid #dce9e8;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footPanel {
+    padding: 0 0 30px;
+    .secWrap01 {
+      position: relative;
+    }
+    .pageTop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 70px;
+      cursor: pointer;
+    }
+    .logo {
+      width: 180px;
+      margin: 0 0 60px;
+    }
+    .txt {
+      .telFax {
+        a {
+          display: inline-block;
+          + a {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+    }
+    .copy {
+      margin: 60px 0 0;
+      text-align: right;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.menuListTxt {
+  ul {
+    li {
+      position: relative;
+      padding: 0 0 0 1em;
+      &::before {
+        content: "・";
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

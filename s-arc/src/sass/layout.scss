@@ -1,0 +1,3000 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    position: relative;
+    padding: 0 0 0 5%;
+    .topKvPanel {
+      position: relative;
+      padding: 0 0 0 10%;
+      .topKvTitle {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        z-index: 1;
+        h1 {
+          display: inline-block;
+          font-size: 100px;
+          line-height: 1.2;
+          letter-spacing: 0.15em;
+          background: linear-gradient(140deg, #86c795, #91b0b7 30%, #97a1be);
+          background: -webkit-linear-gradient(
+            0deg,
+            #86c795,
+            #91b0b7 30%,
+            #97a1be
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .topKv {
+        position: relative;
+        height: 900px;
+        img {
+          @include cover-image;
+        }
+      }
+    }
+    .kvScroll {
+      position: absolute;
+      left: 3%;
+      bottom: 0;
+      width: 10px;
+      z-index: 1;
+    }
+  }
+  .topSection {
+    padding: 250px 0 300px;
+    .secPanel {
+      .photoList {
+        position: relative;
+        .photoBox {
+          position: relative;
+          .kvBox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            > div {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .photoKv01 {
+          width: 40%;
+          height: 400px;
+          .kvBox {
+            .kv01 {
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/top_intro_small_01.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .kv02 {
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/top_intro_small_02.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .kv03 {
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/top_intro_small_03.png)
+                center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .photoKv02 {
+          position: absolute;
+          top: 60px;
+          left: 20%;
+          width: 60%;
+          height: 550px;
+          z-index: 1;
+          .kvBox {
+            .kv01 {
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/top_intro_large_01.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .kv02 {
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/top_intro_large_02.png)
+                center no-repeat;
+              background-size: cover;
+            }
+            .kv03 {
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/top_intro_large_03.png)
+                center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+      .txtBox {
+        padding: 60px 0 0;
+        h2 {
+          margin: 0 0 30px;
+          font-size: 40px;
+        }
+        .txt {
+          margin: 0 0 60px;
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        .photoList {
+          width: 45%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 300px;
+    .ttlPanel {
+      margin: 0 0 60px;
+    }
+    .listBox {
+      .ul {
+        .li {
+          overflow: hidden;
+          position: relative;
+        }
+        a {
+          display: block;
+          color: #ffffff;
+        }
+        .photo {
+          img {
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+          }
+        }
+        .dl {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          letter-spacing: 0.05em;
+          .dt {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .ttlPanel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftBox {
+          width: 35%;
+        }
+        .rightBox {
+          width: 60%;
+        }
+      }
+      .listBox {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -40px 0 0;
+          .li {
+            width: 48%;
+            margin: 40px 0 0;
+          }
+          .photo {
+            position: relative;
+            height: 445px;
+            img {
+              @include cover-image;
+            }
+          }
+          a {
+            &:hover {
+              opacity: 1;
+              .photo {
+                img {
+                  transform: scale(1.2);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 300px;
+    padding: 150px 0;
+    color: #ffffff;
+    background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .txtBox {
+      padding: 60px 0 0;
+    }
+    h3 {
+      margin: 0 0 30px;
+      font-size: 40px;
+    }
+    .txt {
+      margin: 0 0 40px;
+    }
+  }
+  .sec03 {
+    .pageSecTtl {
+      margin: 0 0 50px;
+    }
+    .listBox {
+      .ul {
+        .li {
+          overflow: hidden;
+          position: relative;
+        }
+        a {
+          display: block;
+          color: #ffffff;
+        }
+        .photo {
+          img {
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+          }
+        }
+        .dl {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          letter-spacing: 0.05em;
+          opacity: 0.6;
+          .dt {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .listBox {
+        .ul {
+          display: flex;
+          .li {
+            width: 50%;
+          }
+          .photo {
+            position: relative;
+            height: 370px;
+            img {
+              @include cover-image;
+            }
+          }
+          a {
+            &:hover {
+              opacity: 1;
+              .photo {
+                img {
+                  transform: scale(1.2);
+                }
+              }
+            }
+          }
+          .dl {
+            flex-direction: row;
+            .dt {
+              display: inline-block;
+              margin: 0 30px 0 0;
+            }
+            .dd {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain {
+  .aboutMainContainer {
+    padding: 150px 0 300px;
+    background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/about_main_bg.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    margin: 0 0 300px;
+    .secWrap {
+      max-width: 1600px;
+    }
+    .secPanel {
+      position: relative;
+      max-width: 1200px;
+      padding: 140px 10px;
+      background: #f3f4f6;
+      &::before {
+        content: "PHILOSOPHY";
+        position: absolute;
+        top: -20px;
+        left: 50px;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+          "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-size: 100px;
+        color: #ffffff;
+        line-height: 1;
+      }
+    }
+    .secBox {
+      max-width: 900px;
+      margin: 0 auto;
+      h2 {
+        margin: 0 0 30px;
+        font-size: 40px;
+      }
+    }
+  }
+  .sec01 {
+    .topContainer {
+      margin: 0 0 200px;
+      .pageSecTtl {
+        margin: 0 0 30px;
+      }
+      .listBox {
+        position: relative;
+        max-width: 700px;
+        min-height: 350px;
+        margin: 0 auto 80px;
+        .list {
+          width: 200px;
+        }
+        .list01 {
+          position: absolute;
+          top: 80px;
+          right: 150px;
+        }
+        .list02 {
+          position: absolute;
+          top: 0;
+          left: 170px;
+        }
+        .list03 {
+          position: absolute;
+          bottom: 0;
+          left: 170px;
+        }
+        .list04 {
+          position: absolute;
+          top: 80px;
+          left: 0;
+        }
+        .list05 {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+    .introContainer {
+      .secPanel {
+        + .secPanel {
+          margin: 150px 0 0;
+        }
+        .txtBox {
+          padding: 40px 0 0;
+          h3 {
+            margin: 0 0 40px;
+            padding: 0 0 0 20px;
+            font-size: 30px;
+            line-height: 1.2;
+            border-left: 3px solid #a1dfe2;
+          }
+          .btnMore {
+            margin: 60px 0 0;
+            font-size: 14px;
+            p {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            position: relative;
+            width: 40%;
+            height: 500px;
+            img {
+              @include cover-image;
+            }
+          }
+          .txtBox {
+            width: 55%;
+          }
+          &:nth-child(even) {
+            flex-direction: row-reverse;
+            .txtBox {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              .inner {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  .topSection {
+    margin: 0 0 300px;
+    .secWrap {
+      max-width: 1600px;
+    }
+    .secPanel {
+      position: relative;
+      max-width: 1400px;
+      padding: 140px 10px;
+      background: #f3f4f6;
+      &::before {
+        content: "CONCEPT";
+        position: absolute;
+        top: -20px;
+        left: 50px;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+          "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-size: 100px;
+        color: #ffffff;
+        line-height: 1;
+      }
+    }
+    .secBox {
+      h2 {
+        max-width: 900px;
+        margin: 0 auto 60px;
+        font-size: 40px;
+      }
+    }
+    .photoTxt {
+      .txt {
+        max-width: 830px;
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+      .btnTarget {
+        margin: 40px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .photoTxt {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          left: -60px;
+          width: 40%;
+        }
+        .txtBox {
+          width: 65%;
+        }
+      }
+    }
+  }
+  .pointSection {
+    margin: 0 0 300px;
+    .topContainer {
+      margin: 0 0 80px;
+    }
+    .introContainer {
+      .secPanel {
+        + .secPanel {
+          margin: 150px 0 0;
+        }
+        .txtBox {
+          padding: 60px 0 0;
+          .ttlBox {
+            margin: 0 0 40px;
+            > * {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          .num {
+            margin: 0 10px 0 0;
+            font-size: 40px;
+            letter-spacing: 0.15em;
+            background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+            background: -webkit-linear-gradient(
+              0deg,
+              #97a1be,
+              #91b0b7 30%,
+              #86c795
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          h3 {
+            padding: 0 0 0 20px;
+            font-size: 30px;
+            line-height: 1.2;
+            border-left: 3px solid #a1dfe2;
+          }
+          .btnMore {
+            margin: 60px 0 0;
+            font-size: 14px;
+            p {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            position: relative;
+            width: 40%;
+            height: 550px;
+            img {
+              @include cover-image;
+            }
+          }
+          .txtBox {
+            width: 55%;
+          }
+          &:nth-child(even) {
+            flex-direction: row-reverse;
+            .txtBox {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              .inner {
+                max-width: 740px;
+              }
+            }
+          }
+          &.top {
+            .txtBox {
+              padding: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .recommendBox {
+      max-width: 700px;
+      margin: 30px 0 0;
+      padding: 5px;
+      border: 1px solid #dee0e6;
+      .recommendInner {
+        position: relative;
+        padding: 40px;
+        border: 1px solid #dee0e6;
+      }
+      .ttl {
+        position: absolute;
+        top: -20px;
+        left: 50px;
+        width: 100%;
+        padding: 5px;
+        max-width: 300px;
+        font-size: 20px;
+        text-align: center;
+        background: #ffffff;
+      }
+      .list {
+        display: flex;
+        .ul {
+          width: 40%;
+          + .ul {
+            width: 60%;
+          }
+          .li + .li {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .menuContainer {
+      margin: 150px 0 0;
+      .menuPanel {
+        padding: 5px;
+        border: 1px solid #dee0e6;
+        .menuPanelInner {
+          position: relative;
+          padding: 60px 20px;
+          border: 1px solid #dee0e6;
+        }
+        .ttl {
+          position: absolute;
+          top: -30px;
+          left: 0;
+          right: 0;
+          width: 100%;
+          padding: 5px;
+          max-width: 300px;
+          margin: 0 auto;
+          font-size: 28px;
+          text-align: center;
+          background: #ffffff;
+          p {
+            background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+            background: -webkit-linear-gradient(
+              0deg,
+              #97a1be,
+              #91b0b7 30%,
+              #86c795
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .txt {
+          margin: 0 0 40px;
+          text-align: center;
+        }
+        .list {
+          display: flex;
+          justify-content: space-between;
+          .ul {
+            width: 25%;
+            .li + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+        .iconList {
+          max-width: 900px;
+          margin: 0 auto;
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .li {
+              width: 150px;
+              text-align: center;
+            }
+            .dl {
+              margin: 15px 0 0;
+              .dd {
+                margin: 10px 0 0;
+                p {
+                  display: inline-block;
+                  padding: 2px 10px;
+                  color: #ffffff;
+                  background: #3acfd5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .infoSection {
+    .titlePanel {
+      margin: 0 0 60px;
+    }
+    .infoPanel {
+      .txtBox {
+        .inner {
+          max-width: 640px;
+        }
+        .ttl {
+          margin: 0 0 60px;
+          font-size: 30px;
+          text-align: center;
+          h3 {
+            display: inline-block;
+            background: linear-gradient(
+              45deg,
+              #82cfee 0 35%,
+              #a8a1ca 45% 55%,
+              #86c795 60% 100%
+            );
+            background: -webkit-linear-gradient(
+              45deg,
+              #82cfee 0 35%,
+              #a8a1ca 45% 55%,
+              #86c795 60% 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .infoList {
+          .ul {
+            .dl {
+              .dt {
+                padding: 0 20px 5px;
+                border-bottom: 1px solid #dee0e6;
+                p {
+                  display: inline-block;
+                  background: linear-gradient(
+                    45deg,
+                    #82cfee 0 35%,
+                    #a8a1ca 45% 55%,
+                    #86c795 60% 100%
+                  );
+                  background: -webkit-linear-gradient(
+                    45deg,
+                    #82cfee 0 35%,
+                    #a8a1ca 45% 55%,
+                    #86c795 60% 100%
+                  );
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+              }
+              .dd {
+                padding: 15px 20px;
+                line-height: 2;
+                a {
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+        .bnrList {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 320px;
+          margin: 40px auto 0;
+          .bnr {
+            a {
+              display: block;
+            }
+          }
+          .bnr01 {
+            width: 120px;
+          }
+          .bnr02 {
+            width: 140px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .infoPanel {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 550px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 55%;
+          .infoList {
+            .ul {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin: -40px 0 0;
+              .li {
+                width: 47%;
+                margin: 40px 0 0;
+              }
+              .btnBox {
+                padding: 30px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .mapPanel {
+      margin: 100px 0 0;
+    }
+    .visitContainer {
+      margin: 200px 0 0;
+      .visitPanel {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 10px;
+        background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/hair_visit_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .visitBox {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .ttl {
+        margin: 0 0 60px;
+        font-size: 40px;
+        text-align: center;
+        h2,
+        h3 {
+          display: inline-block;
+          background: linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          background: -webkit-linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .secBpx {
+        .txtBox {
+          .telBox {
+            margin: 40px 0 0;
+            display: flex;
+            align-items: center;
+            .tel {
+              a {
+                display: inline-block;
+                padding: 0 0 0 30px;
+                font-size: 34px;
+                color: #9a9dd0;
+                background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/hair_visit_tel.png)
+                  left center no-repeat;
+                background-size: 25px auto;
+              }
+            }
+            > p {
+              margin: 0 0 0 40px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBpx {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 40%;
+          }
+          .txtBox {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	hair
+///////////////////////////////////////////////////////////*/
+.hairMain {
+}
+
+/*////////////////////////////////////////////////////////////
+	aesthetic
+///////////////////////////////////////////////////////////*/
+.aestheticMain {
+}
+
+/*////////////////////////////////////////////////////////////
+	childcare
+///////////////////////////////////////////////////////////*/
+.childcareMain {
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+.productMain {
+  .topSection {
+    margin: 0 0 300px;
+    text-align: center;
+    h2 {
+      margin: 0 0 60px;
+      font-size: 40px;
+    }
+    .txt {
+      margin: 0 0 60px;
+    }
+    .pagerList {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 3) - 25px);
+          a {
+            display: block;
+            padding: 30px 10px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/product_pager_bg.png)
+              no-repeat;
+            background-size: cover;
+            .em {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .linUpSection {
+    margin: 0 0 300px;
+    .titlePanel {
+      margin: 0 0 60px;
+    }
+    .introContainer {
+      .secPanel {
+        + .secPanel {
+          margin: 150px 0 0;
+        }
+        .txtBox {
+          .ttlBox {
+            margin: 0 0 40px;
+            > * {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          .num {
+            margin: 0 10px 0 0;
+            font-size: 40px;
+            letter-spacing: 0.15em;
+            background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+            background: -webkit-linear-gradient(
+              0deg,
+              #97a1be,
+              #91b0b7 30%,
+              #86c795
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          h3 {
+            padding: 0 0 0 20px;
+            font-size: 30px;
+            line-height: 1.2;
+            border-left: 3px solid #a1dfe2;
+          }
+          .btnMore {
+            margin: 60px 0 0;
+            font-size: 14px;
+            p {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            position: relative;
+            width: 40%;
+            height: 400px;
+            img {
+              @include cover-image;
+            }
+          }
+          .txtBox {
+            width: 55%;
+          }
+        }
+      }
+    }
+    .suggestionContainer {
+      margin: 200px 0 0;
+      .suggestionPanel {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 10px;
+        background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/product_suggestion_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .suggestionBox {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .ttl {
+        margin: 0 0 60px;
+        font-size: 40px;
+        text-align: center;
+        h2,
+        h3 {
+          display: inline-block;
+          background: linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          background: -webkit-linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .secBpx {
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBpx {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 40%;
+          }
+          .txtBox {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .purchaseSection {
+    .pageSecTtl {
+      margin: 0 0 60px;
+    }
+    .secPanel {
+      + .secPanel {
+        margin: 100px 0 0;
+      }
+      .secBox {
+        .leftBox {
+          .ttlBox {
+            > * {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          .num {
+            margin: 0 10px 0 0;
+            font-size: 36px;
+            letter-spacing: 0.15em;
+            background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+            background: -webkit-linear-gradient(
+              0deg,
+              #97a1be,
+              #91b0b7 30%,
+              #86c795
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          h3 {
+            padding: 0 0 0 20px;
+            font-size: 26px;
+            line-height: 1.2;
+            border-left: 3px solid #a1dfe2;
+          }
+        }
+        .rightBox {
+          .telBox {
+            margin: 20px 0 0;
+            .tel {
+              a {
+                display: inline-block;
+                padding: 0 0 0 30px;
+                font-size: 34px;
+                color: #9a9dd0;
+                background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/product_purchase_tel.png)
+                  left center no-repeat;
+                background-size: 20px auto;
+              }
+            }
+            > p {
+              margin: 10px 0 0;
+              color: #9b9acd;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .leftBox {
+            width: 270px;
+          }
+          .rightBox {
+            width: calc(100% - 300px);
+          }
+        }
+      }
+      .img {
+        max-width: 1000px;
+        margin: 60px auto 0;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	message
+///////////////////////////////////////////////////////////*/
+.messageMain {
+  .topSection {
+    margin: 0 0 300px;
+    .secWrap {
+      max-width: 1600px;
+    }
+    .secPanel {
+      position: relative;
+      max-width: 1440px;
+      padding: 80px 10px 120px;
+      background: #f3f4f6;
+    }
+    .secBox {
+      h2 {
+        max-width: 1200px;
+        margin: 0 auto 60px;
+        font-size: 60px;
+        color: #ffffff;
+      }
+    }
+    .photoTxt {
+      .photoBox {
+        .name {
+          max-width: 230px;
+          margin: 20px auto 0;
+          .span {
+            display: inline-block;
+          }
+          .em {
+            display: inline-block;
+            font-size: 20px;
+          }
+        }
+      }
+      .ttl {
+        margin: 0 0 30px;
+        font-size: 40px;
+        h3 {
+          display: inline-block;
+          background: linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          background: -webkit-linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .txt {
+        max-width: 830px;
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .photoTxt {
+        display: flex;
+        justify-content: space-between;
+        .photoBox {
+          position: relative;
+          top: 40px;
+          left: -60px;
+          width: 40%;
+        }
+        .txtBox {
+          width: 65%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 300px;
+    .titlePanel {
+      margin: 0 0 60px;
+    }
+    .introContainer {
+      .secPanel {
+        + .secPanel {
+          margin: 150px 0 0;
+        }
+        .triangleBox {
+          .triangle {
+            width: 100%;
+            max-width: 340px;
+          }
+        }
+        .txtBox {
+          padding: 60px 0 0;
+          .ttlBox {
+            margin: 0 0 40px;
+            > * {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          .num {
+            margin: 0 10px 0 0;
+            font-size: 40px;
+            letter-spacing: 0.15em;
+            background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+            background: -webkit-linear-gradient(
+              0deg,
+              #97a1be,
+              #91b0b7 30%,
+              #86c795
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          h3 {
+            padding: 0 0 0 20px;
+            font-size: 30px;
+            line-height: 1.2;
+            border-left: 3px solid #a1dfe2;
+          }
+          .btnMore {
+            margin: 60px 0 0;
+            font-size: 14px;
+            p {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            position: relative;
+            width: 40%;
+            height: 550px;
+            img {
+              @include cover-image;
+            }
+          }
+          .triangleBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 40%;
+          }
+          .txtBox {
+            width: 55%;
+          }
+          &:nth-child(even) {
+            flex-direction: row-reverse;
+            .txtBox {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              .inner {
+                max-width: 740px;
+              }
+            }
+          }
+          &.top {
+            .txtBox {
+              padding: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 200px;
+    .pageSecTtl {
+      margin: 0 0 30px;
+    }
+    .topTxt {
+      margin: 0 0 60px;
+    }
+    .listBox {
+      .ul {
+        .li {
+          text-align: center;
+          .dl {
+            padding: 20px;
+            .dt {
+              margin: 0 0 20px;
+              font-size: 20px;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+          &:nth-child(1) {
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/message_sec02_list_bg_01.png)
+              no-repeat;
+            background-size: cover;
+          }
+          &:nth-child(2) {
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/message_sec02_list_bg_02.png)
+              no-repeat;
+            background-size: cover;
+          }
+          &:nth-child(3) {
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/message_sec02_list_bg_03.png)
+              no-repeat;
+            background-size: cover;
+          }
+          &:nth-child(4) {
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/message_sec02_list_bg_04.png)
+              no-repeat;
+            background-size: cover;
+          }
+          &:nth-child(5) {
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/message_sec02_list_bg_05.png)
+              no-repeat;
+            background-size: cover;
+          }
+          &:nth-child(6) {
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/message_sec02_list_bg_06.png)
+              no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -40px 0 0 -40px;
+          .li {
+            width: calc((100% / 3) - 40px);
+            margin: 40px 0 0 40px;
+            .dl {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              min-height: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bottomLinkContainer {
+  .bottomLinkList {
+    .listBox {
+      .ul {
+        .li {
+          overflow: hidden;
+          position: relative;
+        }
+        a {
+          display: block;
+          color: #ffffff;
+        }
+        .photo {
+          img {
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+          }
+        }
+        .dl {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          letter-spacing: 0.05em;
+          .dt {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .listBox {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 15px);
+          }
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+          a {
+            &:hover {
+              opacity: 1;
+              .photo {
+                img {
+                  transform: scale(1.2);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	system
+///////////////////////////////////////////////////////////*/
+.systemMain {
+  .topSection {
+    margin: 0 0 300px;
+    text-align: center;
+    .pagerList {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 3) - 25px);
+          a {
+            display: block;
+            padding: 30px 10px 20px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/product_pager_bg.png)
+              no-repeat;
+            background-size: cover;
+            .em {
+              padding: 0 0 20px;
+              font-size: 24px;
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_pager_arrow.png)
+                center bottom no-repeat;
+              background-size: 16px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section {
+    margin: 0 0 300px;
+    .pageSecTtl {
+      margin: 0 0 30px;
+    }
+    .topTxt {
+      margin: 0 0 60px;
+    }
+  }
+  .sec01 {
+    .secContainer {
+      + .secContainer {
+        margin: 200px 0 0;
+      }
+    }
+    .ttlNumBox {
+      margin: 0 0 40px;
+      > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .num {
+        margin: 0 10px 0 0;
+        font-size: 36px;
+        letter-spacing: 0.15em;
+        background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+        background: -webkit-linear-gradient(
+          0deg,
+          #97a1be,
+          #91b0b7 30%,
+          #86c795
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h3 {
+        padding: 0 0 0 20px;
+        font-size: 26px;
+        line-height: 1.2;
+        border-left: 3px solid #a1dfe2;
+      }
+    }
+    .careerPathPanel {
+      padding: 60px 10px;
+      background: #f9f9f9;
+      + .careerPathPanel {
+        margin: 60px 0 0;
+      }
+      .careerPathBox {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .boxTtl {
+        margin: 0 0 40px;
+        font-size: 30px;
+        p {
+          display: inline-block;
+          background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+          background: -webkit-linear-gradient(
+            0deg,
+            #97a1be,
+            #91b0b7 30%,
+            #86c795
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .pathBox {
+        max-width: 680px;
+        .dl {
+          display: flex;
+          align-items: center;
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            width: 120px;
+            font-weight: bold;
+          }
+          .dd {
+            width: calc(100% - 120px);
+          }
+        }
+        .ul {
+          display: table;
+          width: 100%;
+          .li {
+            display: table-cell;
+            width: 33%;
+            height: 25px;
+            &.blue {
+              background: #aec2e9;
+            }
+            &.green {
+              background: #d3f8e2;
+            }
+          }
+        }
+      }
+      .txt {
+        margin: 30px 0 0;
+      }
+    }
+    .secBox {
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 37%;
+          height: 300px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 52%;
+        }
+      }
+    }
+    .curriculum {
+      margin: 30px 0 0;
+      padding: 30px 40px;
+      line-height: 2;
+      background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec01_curriculum_bg.png)
+        no-repeat;
+      background-size: cover;
+    }
+  }
+  .sec02 {
+    .secPanel {
+      padding: 60px 10px;
+      + .secPanel {
+        margin: 60px 0 0;
+      }
+      .secBox {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .ttlBox {
+        margin: 0 0 30px;
+        font-size: 30px;
+        h3 {
+          display: inline-block;
+          background: linear-gradient(140deg, #97a1be, #91b0b7 30%, #86c795);
+          background: -webkit-linear-gradient(
+            0deg,
+            #97a1be,
+            #91b0b7 30%,
+            #86c795
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    .secPanel01 {
+      background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec02_bg_01.png)
+        no-repeat;
+      background-size: cover;
+      .secBox {
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 40%;
+          }
+          .txtBox {
+            width: 55%;
+          }
+        }
+      }
+    }
+    .secPanel02 {
+      background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec02_bg_02.png)
+        no-repeat;
+      background-size: cover;
+      .chartBox {
+        margin: 30px 0;
+        .chart {
+          max-width: 900px;
+        }
+      }
+    }
+  }
+  .sec03 {
+    .listPanel {
+      margin: 0 0 100px;
+      .listBox {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: 180px;
+          }
+        }
+      }
+      .listBox01 {
+        max-width: 800px;
+        margin: 0 auto 30px;
+      }
+      .listBox02 {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    }
+    .secBoxList {
+      .secBox {
+        + .secBox {
+          margin: 80px 0 0;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          h3 {
+            margin: 0 0 20px;
+            font-size: 26px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 35%;
+          }
+          .txtBox {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	interview
+///////////////////////////////////////////////////////////*/
+.interviewMain {
+  .interviewSection {
+    .pageSecTtl {
+      margin: 0 0 30px;
+    }
+    .topTxt {
+      margin: 0 0 60px;
+    }
+    .pagerList {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 3) - 25px);
+          a {
+            display: block;
+            padding: 15px 10px 10px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/interview_pager_bg.png)
+              no-repeat;
+            background-size: cover;
+            > div {
+              padding: 0 0 20px;
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/interview_pager_arrow.png)
+                center bottom no-repeat;
+              background-size: 16px auto;
+            }
+            .em {
+              font-size: 24px;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+    .staffContainer {
+      padding: 200px 0;
+      .staffPanel {
+        + .staffPanel {
+          margin: 200px 0 0;
+        }
+        .panelTitle {
+          margin: 0 0 60px;
+          padding: 0 0 0 20px;
+          font-size: 30px;
+          line-height: 1.2;
+          border-left: 3px solid #a1dfe2;
+          h3 {
+            display: inline-block;
+            line-height: 1.2;
+            background: linear-gradient(140deg, #86c795, #91b0b7 30%, #97a1be);
+            background: -webkit-linear-gradient(
+              0deg,
+              #86c795,
+              #91b0b7 30%,
+              #97a1be
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .photoBox {
+          position: relative;
+          max-width: 1100px;
+          margin: 0 0 80px;
+          .photo {
+            max-width: 900px;
+          }
+          .name {
+            position: absolute;
+            right: 0;
+            bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            padding: 20px;
+            color: #ffffff;
+            background: #85d6d9;
+            .dl {
+              .dt {
+                margin: 0 0 5px;
+              }
+              .dd {
+                p {
+                  display: inline-block;
+                }
+                .em {
+                  margin: 0 20px 0 0;
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+        .secBoxList {
+          .secBox {
+            + .secBox {
+              margin: 60px 0 0;
+            }
+            .ttl {
+              position: relative;
+              margin: 0 0 30px;
+              padding: 0 0 0 60px;
+              font-size: 24px;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 40px;
+                height: 1px;
+                margin: auto 0;
+                background: #aec2e9;
+              }
+            }
+            .txt {
+              padding: 30px 50px;
+              background: #f9f9f9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	requirement
+///////////////////////////////////////////////////////////*/
+.requirementMain {
+  .section {
+    margin: 0 0 300px;
+    .pageSecTtl {
+      margin: 0 0 60px;
+    }
+  }
+  .sec01 {
+    .flowPanel {
+      max-width: 860px;
+      margin: 0 auto;
+      .flowList {
+        color: #ffffff;
+        .ul {
+          position: relative;
+          .li {
+            padding: 20px;
+            text-align: center;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 1px;
+              margin: auto 0;
+              background: #aec2e9;
+            }
+            .li {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 80px;
+              height: 280px;
+              writing-mode: vertical-lr;
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/requirement_flow_bg_01.png)
+                no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+      .btnEntry {
+        max-width: 380px;
+        margin: 100px auto 0;
+        a {
+          display: block;
+          padding: 15px 10px;
+          font-size: 20px;
+          color: #ffffff;
+          text-align: center;
+          background: #85d6d9;
+        }
+      }
+    }
+  }
+  .sec02 {
+    .requirePanel {
+      + .requirePanel {
+        margin: 200px 0 0;
+      }
+      .panelTitle {
+        margin: 0 0 60px;
+        padding: 0 0 0 20px;
+        font-size: 30px;
+        line-height: 1.2;
+        border-left: 3px solid #a1dfe2;
+        h3 {
+          display: inline-block;
+          line-height: 1.2;
+          background: linear-gradient(140deg, #86c795, #91b0b7 30%, #97a1be);
+          background: -webkit-linear-gradient(
+            0deg,
+            #86c795,
+            #91b0b7 30%,
+            #97a1be
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .infoBox {
+        .dl {
+          display: flex;
+          line-height: 2;
+          .dt {
+            width: 160px;
+            margin: 0 5px 0 0;
+            padding: 15px 10px;
+            color: #538e91;
+            border-bottom: 1px solid #aec2e9;
+          }
+          .dd {
+            width: calc(100% - 165px);
+            padding: 15px 20px;
+            border-bottom: 1px solid #efefef;
+          }
+        }
+      }
+    }
+  }
+  .entryContainer {
+    margin: 200px 0 0;
+    padding: 150px 0;
+    color: #ffffff;
+    text-align: center;
+    background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/requirement_entry_bg.png)
+      no-repeat;
+    background-size: cover;
+    h2 {
+      margin: 0 0 60px;
+      font-size: 40px;
+    }
+    .entryItem {
+      .itemBox {
+        padding: 20px;
+        background: #a1dfe2;
+        + .itemBox {
+          background: #85d6d9;
+        }
+        a {
+          color: #ffffff;
+        }
+      }
+      .telBox {
+        padding: 15px 0 0;
+        a {
+          display: inline-block;
+          padding: 0 0 0 30px;
+          font-size: 34px;
+          font-weight: bold;
+          background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/requirement_entry_tel.png)
+            left center no-repeat;
+          background-size: 24px auto;
+        }
+        > p {
+          font-size: 14px;
+        }
+      }
+      .lineBox {
+        .qr {
+          display: inline-block;
+          width: 100px;
+          margin: 0 30px 0 0;
+          vertical-align: middle;
+          a {
+            display: block;
+          }
+        }
+        .txt {
+          display: inline-block;
+          font-size: 14px;
+          line-height: 2;
+          text-align: left;
+          vertical-align: middle;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .entryItem {
+        display: flex;
+        justify-content: space-between;
+        .itemBox {
+          width: 49%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .sec01 {
+    margin: 0 0 300px;
+    .secWrap {
+      max-width: 100%;
+    }
+    .secPanel {
+      position: relative;
+      max-width: 1520px;
+    }
+    .secBox {
+      .pageSecTtl {
+        max-width: 1200px;
+        margin: 0 auto 80px;
+      }
+    }
+    .photoTxt {
+      .photoBox {
+        .name {
+          max-width: 230px;
+          margin: 20px auto 0;
+          .span {
+            display: inline-block;
+          }
+          .em {
+            display: inline-block;
+            font-size: 20px;
+          }
+        }
+      }
+      .txtBox {
+        padding: 20px 0 0;
+      }
+      .ttl {
+        margin: 0 0 30px;
+        font-size: 40px;
+        h3 {
+          display: inline-block;
+          background: linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          background: -webkit-linear-gradient(
+            45deg,
+            #82cfee 0 35%,
+            #a8a1ca 45% 55%,
+            #86c795 60% 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .txt {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .photoTxt {
+        display: flex;
+        justify-content: space-between;
+        .photoBox {
+          position: relative;
+          top: 0;
+          left: -60px;
+          width: 40%;
+        }
+        .txtBox {
+          width: 58%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 300px;
+    .pageSecTtl {
+      margin: 0 0 60px;
+    }
+    .infoBox {
+      .dl {
+        display: flex;
+        line-height: 2;
+        .dt {
+          width: 160px;
+          margin: 0 5px 0 0;
+          padding: 15px 10px;
+          color: #538e91;
+          border-bottom: 1px solid #aec2e9;
+        }
+        .dd {
+          width: calc(100% - 165px);
+          padding: 15px 20px;
+          border-bottom: 1px solid #efefef;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    .pageSecTtl {
+      margin: 0 0 60px;
+    }
+    .infoPanel {
+      + .infoPanel {
+        margin: 100px 0 0;
+      }
+      .txtBox {
+        .inner {
+          max-width: 640px;
+        }
+        .ttl {
+          margin: 0 0 60px;
+          font-size: 30px;
+          text-align: center;
+          h3 {
+            display: inline-block;
+            background: linear-gradient(
+              45deg,
+              #82cfee 0 35%,
+              #a8a1ca 45% 55%,
+              #86c795 60% 100%
+            );
+            background: -webkit-linear-gradient(
+              45deg,
+              #82cfee 0 35%,
+              #a8a1ca 45% 55%,
+              #86c795 60% 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .infoList {
+          .ul {
+            .dl {
+              .dt {
+                padding: 0 20px 5px;
+                border-bottom: 1px solid #dee0e6;
+                p {
+                  display: inline-block;
+                  background: linear-gradient(
+                    45deg,
+                    #82cfee 0 35%,
+                    #a8a1ca 45% 55%,
+                    #86c795 60% 100%
+                  );
+                  background: -webkit-linear-gradient(
+                    45deg,
+                    #82cfee 0 35%,
+                    #a8a1ca 45% 55%,
+                    #86c795 60% 100%
+                  );
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+              }
+              .dd {
+                padding: 15px 20px;
+                line-height: 2;
+                a {
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+        .bnrList {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 320px;
+          margin: 40px auto 0;
+          .bnr {
+            a {
+              display: block;
+            }
+          }
+          .bnr01 {
+            width: 120px;
+          }
+          .bnr02 {
+            width: 140px;
+          }
+        }
+        .btnMap {
+          max-width: 270px;
+          margin: 60px auto 0;
+          a {
+            display: block;
+            padding: 20px 10px;
+            color: #ffffff;
+            text-align: center;
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/company_btn_map_bg.png)
+              no-repeat;
+            background-size: cover;
+            p {
+              display: inline-block;
+              padding: 0 0 0 30px;
+              background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/company_btn_map_icon.png)
+                left center no-repeat;
+              background-size: 14px auto;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .infoPanel {
+        display: flex;
+        justify-content: space-between;
+        + .infoPanel {
+          margin: 200px 0 0;
+        }
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 550px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 55%;
+          .infoList {
+            .ul {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin: -40px 0 0;
+              .li {
+                width: 47%;
+                margin: 40px 0 0;
+              }
+              .btnBox {
+                padding: 30px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .sec01 {
+    margin: 0 0 300px;
+    .pageSecTtl {
+      margin: 0 0 60px;
+    }
+    .reservePanel {
+      + .reservePanel {
+        margin: 120px 0 0;
+      }
+      .panelTitle {
+        margin: 0 0 40px;
+        h3,
+        p {
+          display: inline-block;
+          background: linear-gradient(140deg, #86c795, #91b0b7 30%, #97a1be);
+          background: -webkit-linear-gradient(
+            0deg,
+            #86c795,
+            #91b0b7 30%,
+            #97a1be
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        h3 {
+          padding: 0 0 0 25px;
+          font-size: 13px;
+        }
+        p {
+          padding: 0 0 0 20px;
+          font-size: 30px;
+          line-height: 1.2;
+          border-left: 3px solid #a1dfe2;
+        }
+      }
+      .secBoxList {
+        max-width: 900px;
+      }
+      .secBox {
+        padding: 2px;
+        text-align: center;
+        background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/contact_sec01_panel_bg.png)
+          no-repeat;
+        background-size: cover;
+        + .secBox {
+          margin: 30px 0 0;
+        }
+        .leftBox {
+          padding: 20px;
+          .ttl {
+            font-size: 24px;
+            color: #ffffff;
+          }
+        }
+        .rightBox {
+          padding: 20px;
+          background: #ffffff;
+        }
+        .telBox {
+          a {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            font-size: 34px;
+            font-weight: bold;
+            background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/contact_sec01_tel.png)
+              left center no-repeat;
+            background-size: 24px auto;
+            p {
+              display: inline-block;
+              background: linear-gradient(
+                140deg,
+                #86c795,
+                #91b0b7 30%,
+                #97a1be
+              );
+              background: -webkit-linear-gradient(
+                0deg,
+                #86c795,
+                #91b0b7 30%,
+                #97a1be
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+          > p {
+            font-size: 14px;
+          }
+        }
+        .bnrList {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 320px;
+          margin: 0 auto;
+          .bnr {
+            a {
+              display: block;
+            }
+          }
+          .bnr01 {
+            width: 120px;
+          }
+          .bnr02 {
+            width: 140px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: table;
+          width: 100%;
+          > * {
+            display: table-cell;
+            height: 160px;
+            vertical-align: middle;
+          }
+          .leftBox {
+            width: 40%;
+          }
+          .rightBox {
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    .pageSecTtl {
+      margin: 0 0 60px;
+    }
+    .topTxt {
+      margin: 0 0 60px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 55px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #f5f8f9;
+    background: #f5f8f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #f5f8f9;
+    background: #f5f8f9;
+    resize: none;
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+
+  .contactForm button[type="submit"] {
+    position: relative;
+    display: block;
+    width: 200px;
+    margin: 60px auto 0;
+    padding: 0 15px 13px 0;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/btn_more_circle.png)
+      right bottom no-repeat;
+    background-size: 30px auto;
+    transition: 0.6s;
+    span {
+      display: block;
+      padding: 0 0 5px;
+      line-height: 1;
+      background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/contact_submit_arrow.png)
+        right bottom no-repeat;
+      background-size: 180px auto;
+      transition: 0.6s;
+    }
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  @media (min-width: 1025px) {
+    .contactForm button[type="submit"] {
+      span {
+        background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/contact_submit_arrow.png)
+          right 5px bottom no-repeat;
+        background-size: 180px auto;
+      }
+      &:hover {
+        span {
+          background: url(https://s-arc231031.smooooth.jp/system_panel/uploads/images/contact_submit_arrow.png)
+            right bottom no-repeat;
+          background-size: 180px auto;
+        }
+      }
+    }
+  }
+  .contactForm .form {
+    .checkList {
+      max-width: 540px;
+      .ul {
+        margin: -10px -20px 0 0;
+        .li {
+          display: inline-block;
+          width: 45%;
+          margin: 10px 20px 0 0;
+        }
+      }
+    }
+    .checkList02 {
+      margin: 20px 0;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0 20px;
+          }
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 35px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+        border: 1px solid #dbdfe3;
+        background: #f4f4f4;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #3acfd5;
+        border-right: 3px solid #3acfd5;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+    .radioList {
+      padding: 5px 0;
+      .list {
+        + .list {
+          margin: 20px 0 0;
+        }
+      }
+      + input {
+        margin: 10px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .radioList {
+        display: flex;
+        flex-wrap: wrap;
+        .list {
+          + .list {
+            margin: 0 0 0 30px;
+          }
+        }
+      }
+    }
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #dbdfe3;
+        background: #f7f7f7;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #ebaecc;
+      }
+    }
+    .postal {
+      margin: 0 0 5px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .selectBox {
+      display: inline-block;
+      width: 120px;
+      select {
+        display: block;
+        width: 100%;
+        padding: 11px 15px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5em;
+        border-radius: 6px;
+        border: 1px solid #cbc0b6;
+        background: #ffffff;
+        background-size: 10px auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .ageInput {
+      display: inline-block;
+      input {
+        width: 100px;
+      }
+      .ageTxt {
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 2;
+      }
+    }
+    .addressTxt {
+      padding: 3px 0 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .contactForm {
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &.line {
+          align-items: initial;
+        }
+        &.checkForm {
+          align-items: initial;
+        }
+        > .dt {
+          width: 300px;
+          padding: 20px 10px;
+          border-bottom: 1px solid #aec2e9;
+          .span {
+            display: inline-block;
+            margin-right: 5px;
+            color: #538e91;
+            vertical-align: middle;
+          }
+          .em {
+            display: inline-block;
+            padding: 2px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #3acfd5;
+          }
+          .small {
+            font-size: 14px;
+            font-weight: normal;
+          }
+        }
+
+        > .dd {
+          position: relative;
+          padding: 10px;
+          width: calc(100% - 305px);
+          border-bottom: 1px solid #efefef;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+          width: 60px;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-size: 14px;
+          text-align: left;
+          border: 1px solid #f4f4f4;
+          background: #f4f4f4;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .aside {
+        padding: 10px 0;
+      }
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+        + .fileBox {
+          margin: 20px 0 0;
+        }
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+        .inputFile {
+          position: relative;
+          width: 40%;
+          font-size: 16px;
+          color: #404142;
+          text-align: center;
+          border: 1px solid #c4dcc9;
+          background: #f0f9f2;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 40px 10px;
+          }
+        }
+
+        > p {
+          width: 58%;
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  .txt {
+    margin: 0 0 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .btnMore {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,298 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+      "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+      "メイリオ", "Meiryo", "verdana", sans-serif;
+    background: #ffffff;
+    .headTitle {
+      display: none;
+    }
+    .logo {
+      width: 70px;
+      a {
+        display: block;
+      }
+    }
+    .hamburger {
+      cursor: pointer;
+      display: block;
+      position: fixed;
+      top: 15px;
+      right: 0;
+      width: 50px;
+      height: 40px;
+      z-index: 10000;
+      .span {
+        background: #000000;
+        position: absolute;
+        left: 50%;
+        width: 25px;
+        height: 2px;
+        transform: translateX(-50%);
+        transition: 0.4s;
+      }
+      .span:nth-of-type(1) {
+        top: 10px;
+      }
+      .span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .span:nth-of-type(3) {
+        bottom: 10px;
+      }
+      &.is-open .span:nth-of-type(1) {
+        transform: translate(-50%, 9px) rotate(-45deg);
+      }
+      &.is-open .span:nth-of-type(2) {
+        opacity: 0;
+      }
+      &.is-open .span:nth-of-type(3) {
+        transform: translate(-50%, -9px) rotate(45deg);
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: 63px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 90px;
+    z-index: 999;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0;
+    transition: 0.6s;
+    &.active {
+      right: 0;
+      z-index: 1000;
+      opacity: 1;
+    }
+    .navList {
+      border-top: 1px solid #cccccc;
+      .ul {
+        font-size: 15px;
+        > .li {
+          text-align: left;
+          border-bottom: 1px solid #cccccc;
+        }
+        .pulldown .accordBtn {
+          display: none;
+        }
+        a {
+          display: block;
+        }
+        a {
+          padding: 10px 20px;
+        }
+        .subList {
+          .li {
+            + .li {
+              border-top: 1px solid #cccccc;
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        background: #cf2b2c;
+        p {
+          display: inline-block;
+          padding: 0 0 0 22px;
+          background: url(https://taiyoukeibi.jp/system_panel/uploads/images/header_mail.png)
+            left center no-repeat;
+          background-size: 18px auto;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 68px 0 0;
+  }
+  .pageKvPanel {
+    height: 200px;
+    .pageKvTtl {
+      padding: 0 20;
+      font-size: 30px;
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    .pageSecTtl {
+      font-size: 30px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .btnMore {
+    a {
+      padding: 10px 0 10px 50px;
+      font-size: 16px;
+    }
+    &.white {
+      a {
+        background: url(https://taiyoukeibi.jp/system_panel/uploads/images/btn_more_white.png)
+          left center no-repeat;
+        background-size: 35px auto;
+      }
+    }
+    &.red {
+      a {
+        background: url(https://taiyoukeibi.jp/system_panel/uploads/images/btn_more_red.png)
+          left center no-repeat;
+        background-size: 35px auto;
+      }
+    }
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 80px 0;
+      text-align: center;
+      h2 {
+        margin: 0 0 20px;
+      }
+      .secBox {
+        .leftBox {
+          margin: 0 0 30px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .rightBox {
+          .btnContact {
+            max-width: 280px;
+            margin: 0 auto;
+            a {
+              padding: 15px 10px;
+
+              background: url(https://taiyoukeibi.jp/system_panel/uploads/images/btn_more_white.png)
+                right 10px center no-repeat #cf2b2c;
+              background-size: 30px auto;
+              p {
+                padding: 0 0 0 25px;
+                background: url(https://taiyoukeibi.jp/system_panel/uploads/images/header_mail.png)
+                  left center no-repeat;
+                background-size: 15px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      .topBox {
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        .leftBox {
+          width: 100%;
+          .logo {
+            max-width: 80px;
+            margin: 0 auto 15px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 15px;
+              font-size: 20px;
+            }
+          }
+        }
+        .rightBox {
+          display: none;
+        }
+      }
+      .companyList {
+        padding: 30px 0;
+        text-align: center;
+        .ul {
+          .li {
+            padding: 0 0 20px;
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+      .copy {
+        font-size: 13px;
+      }
+    }
+  }
+}

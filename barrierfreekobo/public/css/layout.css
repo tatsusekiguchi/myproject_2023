@@ -1,0 +1,1526 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+    画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+    TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  overflow: hidden;
+  height: 800px;
+}
+.topMain .topKvContainer .topKvPanel {
+  position: relative;
+  padding: 0 0 0 500px;
+}
+.topMain .topKvContainer .topKvPanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 740px;
+  height: 100%;
+  z-index: 1;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_kv_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .topKvContainer .topKvPanel .topKv {
+  position: relative;
+  height: 800px;
+}
+.topMain .topKvContainer .topKvPanel .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvContainer .topKvPanel .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .kv01 {
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .kv02 {
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .kv03 {
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvPanel .kvTitle {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  bottom: 0;
+  width: 100%;
+  max-width: 700px;
+  height: 160px;
+  margin: auto 0;
+  font-size: 26px;
+  z-index: 1;
+}
+.topMain .topKvContainer .topKvPanel .kvTitle .title01 {
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+.topMain .topKvContainer .topKvPanel .kvTitle .title01 p {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffffff;
+}
+.topMain .topKvContainer .topKvPanel .kvTitle .title02 h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+.topMain .topKvContainer .topKvPanel .kvTitle .title02 h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 100%;
+  background: #e0d45f;
+}
+.topMain .sec01 {
+  padding: 120px 0 180px;
+  text-align: center;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secTtl {
+  margin: 0 0 60px;
+  padding: 75px 0 0;
+  font-size: 30px;
+  text-align: center;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center top no-repeat;
+  background-size: 60px auto;
+}
+.topMain .sec01 .txt {
+  line-height: 2.5;
+}
+.topMain .sec01 .txt p + p {
+  margin: 30px 0 0;
+}
+.topMain .sec02 {
+  padding: 80px 0 100px;
+  background: #e0d45f;
+}
+.topMain .sec02 .listBox .ul .li {
+  padding: 25px;
+  background: #ffffff;
+}
+.topMain .sec02 .listBox .ul .photo {
+  border: 4px solid #e0d45f;
+}
+.topMain .sec02 .listBox .ul .dl {
+  margin: 20px 0 0;
+}
+.topMain .sec02 .listBox .ul .dl .dt {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #b6aa33;
+  text-align: center;
+}
+.topMain .sec02 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .topMain .sec02 .listBox .ul .li {
+    position: relative;
+    width: calc(33.3333333333% - 20px);
+    min-height: 550px;
+  }
+  .topMain .sec02 .listBox .ul .li:nth-child(1) {
+    top: -50px;
+  }
+  .topMain .sec02 .listBox .ul .li:nth-child(3) {
+    top: -100px;
+  }
+  .topMain .sec02 .listBox .ul .photo {
+    position: relative;
+    height: 250px;
+  }
+  .topMain .sec02 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec03 {
+  padding: 150px 0;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec03 .listBox .ul .li {
+  background: #f5f5f5;
+}
+.topMain .sec03 .listBox .ul a {
+  display: block;
+}
+.topMain .sec03 .listBox .ul .photoBox {
+  position: relative;
+}
+.topMain .sec03 .listBox .ul .photoBox .photo {
+  overflow: hidden;
+}
+.topMain .sec03 .listBox .ul .photoBox img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.topMain .sec03 .listBox .ul .photoBox .more {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
+  background: #e0d45f;
+}
+.topMain .sec03 .listBox .ul .photoBox .more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000000;
+  transition: 0.6s;
+}
+.topMain .sec03 .listBox .ul .photoBox .more p {
+  position: relative;
+  z-index: 1;
+}
+.topMain .sec03 .listBox .ul .dl {
+  margin: 30px 20px 20px;
+}
+.topMain .sec03 .listBox .ul .dl .dt {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #b6aa33;
+  text-align: center;
+}
+.topMain .sec03 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .listBox .ul .li {
+    position: relative;
+    width: calc(33.3333333333% - 20px);
+  }
+  .topMain .sec03 .listBox .ul .photo {
+    position: relative;
+    height: 280px;
+  }
+  .topMain .sec03 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec03 .listBox .ul a:hover {
+    opacity: 1;
+  }
+  .topMain .sec03 .listBox .ul a:hover .photoBox img {
+    transform: scale(1.2);
+  }
+  .topMain .sec03 .listBox .ul a:hover .photoBox .more {
+    color: #b6aa33;
+  }
+  .topMain .sec03 .listBox .ul a:hover .photoBox .more::before {
+    width: 100%;
+  }
+}
+.topMain .sec03 .arrow {
+  width: 80px;
+  margin: 50px auto;
+}
+.topMain .sec03 .messagePanel {
+  text-align: center;
+}
+.topMain .sec03 .messagePanel .messageBox {
+  display: inline-block;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #000000;
+}
+.topMain .sec03 .messagePanel .messageBox .message {
+  padding: 0 0 5px;
+  font-size: 0;
+  border-bottom: 1px solid #000000;
+}
+.topMain .sec03 .messagePanel .messageBox .message > * {
+  display: inline-block;
+}
+.topMain .sec03 .messagePanel .messageBox .message p {
+  font-size: 30px;
+}
+.topMain .sec03 .messagePanel .messageBox .message a {
+  padding: 0 5px;
+  background: #e0d45f;
+}
+.topMain .sec04 {
+  padding: 100px 0;
+}
+.topMain .sec04 .swiperContainer {
+  width: calc(600px + 50vw);
+  position: relative;
+  z-index: 6;
+  overflow: visible;
+  margin: 0 0 80px;
+}
+.topMain .sec04 .swiperContainer::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  bottom: 0;
+  width: 100vw;
+  height: 80%;
+  background: #e0d45f;
+}
+.topMain .sec04 .swiperContainer .sliderPager {
+  position: absolute;
+  top: -80px;
+  right: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  z-index: 1;
+}
+.topMain .sec04 .swiperContainer .sliderPager > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.topMain .sec04 .swiperContainer .swiper-wrapper {
+  position: relative;
+}
+.topMain .sec04 .swiperContainer .swiper-slide {
+  position: relative;
+  padding: 0 0 60px;
+}
+.topMain .sec04 .swiperContainer .swiper-slide a {
+  display: block;
+}
+.topMain .sec04 .swiperContainer .swiper-slide .photoBox {
+  position: relative;
+}
+.topMain .sec04 .swiperContainer .swiper-slide .photoBox .photo {
+  position: relative;
+  height: 300px;
+}
+.topMain .sec04 .swiperContainer .swiper-slide .photoBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.topMain .sec04 .swiperContainer .swiper-slide .photoBox .cate {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+.topMain .sec04 .swiperContainer .swiper-slide .photoBox .cate p {
+  display: inline-block;
+  min-width: 140px;
+  padding: 2px 10px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  background: #000000;
+}
+.topMain .sec04 .swiperContainer .swiper-slide .title {
+  margin: 10px 0 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+.topMain .sec04 .swiperContainer .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec04 .btnMore {
+  margin: 0 auto;
+}
+.topMain .sec05 {
+  padding: 100px 0 150px;
+}
+.topMain .sec05 .secContainer .secPanel .infoBox {
+  max-width: 560px;
+}
+.topMain .sec05 .secContainer .secPanel .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.topMain .sec05 .secContainer .secPanel .infoBox .dl .dt {
+  width: 120px;
+  margin: 0 5px 0 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e0d45f;
+}
+.topMain .sec05 .secContainer .secPanel .infoBox .dl .dd {
+  width: calc(100% - 125px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+}
+.topMain .sec05 .secContainer .secPanel .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .secContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .topMain .sec05 .secContainer .mapPanel {
+    width: 48%;
+  }
+  .topMain .sec05 .secContainer .secPanel {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+    service
+///////////////////////////////////////////////////////////*/
+.serviceMain .sec01 {
+  padding: 120px 0 180px;
+  text-align: center;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .sec01 .secTtl {
+  margin: 0 0 60px;
+  padding: 75px 0 0;
+  font-size: 30px;
+  text-align: center;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center top no-repeat;
+  background-size: 60px auto;
+}
+.serviceMain .sec01 .txt {
+  line-height: 2.5;
+}
+.serviceMain .sec01 .txt p + p {
+  margin: 30px 0 0;
+}
+.serviceMain .sec01 .btnList {
+  max-width: 600px;
+  margin: 80px auto 0;
+}
+.serviceMain .sec01 .btnList .btnMore {
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec01 .btnList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .sec01 .btnList .btnMore {
+    width: 260px;
+  }
+}
+.serviceMain .sec02 {
+  padding: 150px 0;
+}
+.serviceMain .sec02 h3 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: #b6aa33;
+}
+.serviceMain .sec02 .topContainer {
+  margin: 0 0 150px;
+}
+.serviceMain .sec02 .topContainer .secBox {
+  margin: 0 0 30px;
+}
+.serviceMain .sec02 .topContainer .secBox .txtBox {
+  padding: 15px 0 0;
+}
+.serviceMain .sec02 .topContainer .secBox .txtBox .ol {
+  margin: 15px 0;
+}
+.serviceMain .sec02 .topContainer .secBox .txtBox .ol .li + .li {
+  margin: 10px 0 0;
+}
+.serviceMain .sec02 .topContainer .secBox .txtBox .ol .li p {
+  display: inline-block;
+  padding: 5px 20px;
+  background: #e0d45f;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec02 .topContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .sec02 .topContainer .secBox .photoBox {
+    width: 44%;
+  }
+  .serviceMain .sec02 .topContainer .secBox .txtBox {
+    width: 49%;
+  }
+}
+.serviceMain .sec02 .secBoxList .secBox + .secBox {
+  margin: 120px 0 0;
+}
+.serviceMain .sec02 .secBoxList .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.serviceMain .sec02 .secBoxList .secBox.secBox01 .chart {
+  max-width: 380px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec02 .secBoxList .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .sec02 .secBoxList .secBox .photoBox {
+    width: 44%;
+  }
+  .serviceMain .sec02 .secBoxList .secBox .txtBox {
+    width: 49%;
+  }
+  .serviceMain .sec02 .secBoxList .secBox:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .serviceMain .sec02 .secBoxList .secBox:nth-child(even) .photoBox {
+    width: 38%;
+  }
+  .serviceMain .sec02 .secBoxList .secBox:nth-child(even) .txtBox {
+    width: 55%;
+  }
+  .serviceMain .sec02 .secBoxList .secBox.secBox01 {
+    align-items: center;
+  }
+}
+.serviceMain .sec03 .topContainer {
+  padding: 60px 0 80px;
+  text-align: center;
+  background: #f5f5f5;
+}
+.serviceMain .sec03 .topContainer .topTxt {
+  margin: 0 0 40px;
+}
+.serviceMain .sec03 .topContainer .contactItem {
+  max-width: 440px;
+  margin: 0 auto;
+}
+.serviceMain .sec03 .topContainer .contactItem .itemBox {
+  padding: 20px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+.serviceMain .sec03 .topContainer .contactItem .itemBox .dl .dt {
+  margin: 0 0 5px;
+  font-size: 24px;
+  color: #e0d45f;
+}
+.serviceMain .sec03 .topContainer .contactItem .itemBox .dl .telBox a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 28px;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.serviceMain .sec03 .topContainer .contactItem .itemBox .dl .telBox > p {
+  font-size: 11px;
+  letter-spacing: 0;
+}
+.serviceMain .sec03 .formContainer {
+  padding: 120px 0;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/service_form_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .sec03 .formContainer h3 {
+  margin: 0 0 60px;
+  font-size: 26px;
+  color: #b6aa33;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  background: #f5f5f5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  background: #f5f5f5;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  width: 250px;
+  margin: 60px auto 0;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background: #e0d45f;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm button[type=submit]:hover {
+    opacity: 0.6;
+  }
+}
+.formMain .contactForm .form .checkList {
+  max-width: 540px;
+}
+.formMain .contactForm .form .checkList .ul {
+  margin: -10px -20px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li {
+  display: inline-block;
+  width: 45%;
+  margin: 10px 20px 0 0;
+}
+.formMain .contactForm .form .checkList02 {
+  margin: 20px 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0 20px;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  border: 1px solid #dbdfe3;
+  background: #f4f4f4;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #e0d45f;
+  border-right: 3px solid #e0d45f;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList {
+  padding: 5px 0;
+}
+.formMain .contactForm .form .radioList .list + .list {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .radioList + input {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .form .radioList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formMain .contactForm .form .radioList .list + .list {
+    margin: 0 0 0 30px;
+  }
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #dbdfe3;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #e0d45f;
+}
+.formMain .contactForm .form .postal {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postal input {
+  width: 90px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 120px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 6px;
+  border: 1px solid #cbc0b6;
+  background: #ffffff;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .ageInput {
+  display: inline-block;
+}
+.formMain .contactForm .form .ageInput input {
+  width: 100px;
+}
+.formMain .contactForm .form .ageInput .ageTxt {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 2;
+}
+.formMain .contactForm .form .addressTxt {
+  padding: 3px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl.checkForm {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 240px;
+  padding: 20px 10px;
+  border-bottom: 1px solid #e0d45f;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 2px 5px;
+  font-size: 14px;
+  vertical-align: middle;
+  background: #e0d45f;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  padding: 10px;
+  width: calc(100% - 245px);
+  border-bottom: 1px solid #000000;
+}
+.formMain .contactForm .formBox > .dl > .dd input + input {
+  margin: 5px 0 0;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+  width: 60px;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+  border: 1px solid #dbdbdb;
+  background: #f5f5f5;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .aside {
+  padding: 10px 0;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox + .fileBox {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 40%;
+  font-size: 16px;
+  color: #404142;
+  text-align: center;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 40px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p {
+  width: 58%;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	barrierfree
+///////////////////////////////////////////////////////////*/
+.barrierfreeMain .pageKvContainer .pageKvPanel .kvTitle h1 {
+  max-width: 380px;
+}
+.barrierfreeMain .sec01 {
+  padding: 80px 0 120px;
+  text-align: center;
+}
+.barrierfreeMain .sec01 .secTtl {
+  margin: 0 0 60px;
+  padding: 75px 0 0;
+  font-size: 30px;
+  text-align: center;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center top no-repeat;
+  background-size: 60px auto;
+}
+.barrierfreeMain .sec01 .listBox .ul .li {
+  background: #f5f5f5;
+}
+.barrierfreeMain .sec01 .listBox .ul a {
+  display: block;
+}
+.barrierfreeMain .sec01 .listBox .ul .photoBox {
+  position: relative;
+}
+.barrierfreeMain .sec01 .listBox .ul .photoBox .photo {
+  overflow: hidden;
+}
+.barrierfreeMain .sec01 .listBox .ul .dl {
+  padding: 20px;
+}
+.barrierfreeMain .sec01 .listBox .ul .dl .dt {
+  font-size: 20px;
+  color: #b6aa33;
+  text-align: center;
+}
+.barrierfreeMain .sec01 .listBox .ul .dl .dt p {
+  display: inline-block;
+  padding: 0 0 0 40px;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/barrierfree_sec01_check.png) left center no-repeat;
+  background-size: 25px auto;
+}
+@media (min-width: 1025px) {
+  .barrierfreeMain .sec01 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .barrierfreeMain .sec01 .listBox .ul .li {
+    position: relative;
+    width: calc(33.3333333333% - 25px);
+  }
+  .barrierfreeMain .sec01 .listBox .ul .photo {
+    position: relative;
+    height: 280px;
+  }
+  .barrierfreeMain .sec01 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.barrierfreeMain .sec01 .arrow {
+  width: 80px;
+  margin: 50px auto;
+}
+.barrierfreeMain .sec01 .messagePanel {
+  text-align: center;
+}
+.barrierfreeMain .sec01 .messagePanel .messageBox {
+  display: inline-block;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #000000;
+}
+.barrierfreeMain .sec01 .messagePanel .messageBox .messageInner {
+  padding: 0 15px 5px;
+  border-bottom: 1px solid #000000;
+}
+.barrierfreeMain .sec01 .messagePanel .messageBox .message {
+  font-size: 0;
+}
+.barrierfreeMain .sec01 .messagePanel .messageBox .message + .message {
+  margin: 5px 0 0;
+}
+.barrierfreeMain .sec01 .messagePanel .messageBox .message > * {
+  display: inline-block;
+}
+.barrierfreeMain .sec01 .messagePanel .messageBox .message p {
+  font-size: 30px;
+}
+.barrierfreeMain .sec01 .messagePanel .messageBox .message .em {
+  padding: 0 5px;
+  background: #e0d45f;
+}
+.barrierfreeMain .sec02 {
+  padding: 80px 0 100px;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/barrierfree_sec02_bg.png);
+}
+.barrierfreeMain .sec02 .secContainer + .secContainer {
+  margin: 150px 0 0;
+}
+.barrierfreeMain .sec02 .secContainer .photoPanel .infoBox {
+  padding: 15px 10px 0;
+}
+.barrierfreeMain .sec02 .secContainer .photoPanel .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+}
+.barrierfreeMain .sec02 .secContainer .photoPanel .infoBox .dl .dt {
+  width: 80px;
+  padding: 10px 5px;
+  text-align: center;
+  border-top: 1px solid #e0d45f;
+  border-bottom: 1px solid #e0d45f;
+}
+.barrierfreeMain .sec02 .secContainer .photoPanel .infoBox .dl .dd {
+  width: calc(100% - 85px);
+  padding: 10px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .panelTtl {
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: #b6aa33;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .introBox {
+  margin: 30px 0 0;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .introBox .dl + .dl {
+  margin: 30px 0 0;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .introBox .dl .dt {
+  margin: 0 0 10px;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .introBox .dl .dt p {
+  display: inline-block;
+  padding: 5px 20px;
+  background: #e0d45f;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .introBox .dl .dd {
+  line-height: 2;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .aside {
+  margin: 20px 0 0;
+  line-height: 2;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .aside p {
+  position: relative;
+  padding: 0 0 0 1em;
+  color: #e16f00;
+}
+.barrierfreeMain .sec02 .secContainer .txtPanel .aside p::before {
+  content: "※";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 1025px) {
+  .barrierfreeMain .sec02 .secContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .barrierfreeMain .sec02 .secContainer .photoPanel {
+    width: 45%;
+  }
+  .barrierfreeMain .sec02 .secContainer .photoPanel .infoBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .barrierfreeMain .sec02 .secContainer .photoPanel .infoBox .dl {
+    width: 48%;
+  }
+  .barrierfreeMain .sec02 .secContainer .txtPanel {
+    width: 50%;
+  }
+  .barrierfreeMain .sec02 .secContainer:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.barrierfreeMain .sec02 .btnList {
+  max-width: 600px;
+  margin: 80px auto 0;
+}
+.barrierfreeMain .sec02 .btnList .btnMore {
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .barrierfreeMain .sec02 .btnList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .barrierfreeMain .sec02 .btnList .btnMore {
+    width: 260px;
+  }
+}
+.barrierfreeMain .sec03 {
+  padding: 120px 0 200px;
+}
+.barrierfreeMain .sec03 .flowList .ol .li {
+  padding: 10px 20px;
+  border-radius: 40px;
+  background: #f2f2f2;
+}
+.barrierfreeMain .sec03 .flowList .ol .li + .li {
+  margin: 20px 0 0;
+}
+.barrierfreeMain .sec03 .flowList .ol .dl .dt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.barrierfreeMain .sec03 .flowList .ol .dl .dt .em {
+  margin: 0 20px 0 0;
+  color: #e30000;
+}
+.barrierfreeMain .sec03 .flowList .ol .dl .dd .txt {
+  line-height: 1.5;
+}
+.barrierfreeMain .sec03 .flowList .ol .dl .dd .span {
+  display: inline-block;
+}
+.barrierfreeMain .sec03 .flowList .ol .dl .dd .em {
+  display: inline-block;
+  font-size: 14px;
+  color: #e30000;
+}
+@media (min-width: 1025px) {
+  .barrierfreeMain .sec03 .flowList .ol .dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+  }
+  .barrierfreeMain .sec03 .flowList .ol .dl .dt {
+    width: 260px;
+  }
+  .barrierfreeMain .sec03 .flowList .ol .dl .dt:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 30px;
+    margin: auto 0;
+    background: #000000;
+  }
+  .barrierfreeMain .sec03 .flowList .ol .dl .dd {
+    width: calc(100% - 280px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	case
+///////////////////////////////////////////////////////////*/
+.caseMain .blogSection {
+  padding: 150px 0;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/case_sec_bg.png);
+}
+@media (min-width: 1025px) {
+  .caseMain .postContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .caseMain .postContainer .catePanel {
+    width: 250px;
+  }
+  .caseMain .postContainer .blogPanel {
+    width: calc(100% - 300px);
+  }
+}
+.caseMain .catePanel .webgene-blog .webgene-header {
+  margin: 0 0 20px;
+  padding: 40px 0 0;
+  text-align: center;
+  background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center top no-repeat;
+  background-size: 40px auto;
+}
+.caseMain .catePanel .webgene-blog .webgene-header p {
+  font-size: 20px;
+}
+.caseMain .catePanel .webgene-blog .webgene-header h2 {
+  font-size: 12px;
+}
+.caseMain .catePanel .webgene-blog .webgene-item:nth-child(2) a {
+  border-top: 1px solid #000000;
+}
+.caseMain .catePanel .webgene-blog .webgene-item a {
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+.caseMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.caseMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  min-height: 300px;
+}
+.caseMain .blogPanel--list .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.caseMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.caseMain .blogPanel--list .webgene-blog .webgene-item .infoBox .time {
+  margin: 0 10px 0 0;
+  color: #b6aa33;
+}
+.caseMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  background: #e0d45f;
+}
+@media (min-width: 1025px) {
+  .caseMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -20px;
+  }
+  .caseMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 20px);
+    margin: 40px 0 0 20px;
+  }
+  .caseMain .blogPanel--list .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 200px;
+  }
+  .caseMain .blogPanel--list .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.caseMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.caseMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.caseMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.caseMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  text-align: center;
+  background: #cdcdcd;
+}
+.caseMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.caseMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.caseMain .blogPanel--list .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #e0d45f;
+}
+@media (min-width: 1025px) {
+  .caseMain .blogPanel--list .webgene-pagination ul li {
+    margin: 0 5px;
+  }
+  .caseMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .caseMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.caseMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.caseMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.caseMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: #b6aa33;
+}
+.caseMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  background: #e0d45f;
+}
+.caseMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  padding: 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.caseMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.caseMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.caseMain .blogPanel--detail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.caseMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.caseMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 0 10px;
+}
+.caseMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.caseMain .blogPanel--detail .webgene-blog .slideNav {
+  max-width: 900px;
+}
+.caseMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.caseMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 20px;
+}
+.caseMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+  border-radius: 6px;
+}
+.caseMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  padding: 40px 0;
+  line-height: 2;
+}
+.caseMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.caseMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+}
+.caseMain .blogPanel--detail .pdfArea {
+  margin: 40px 0 0;
+}
+.caseMain .blogPanel--detail .pdfArea a {
+  color: #2151a3;
+}
+.caseMain .btnBackBox {
+  margin: 80px 0 0;
+  text-align: center;
+}
+.caseMain .btnBack {
+  display: inline-block;
+  width: 220px;
+  margin: 0 20px;
+}
+.caseMain .btnBack a {
+  padding: 7px 20px;
+}
+.caseMain .webgene-item-aroundPageLink {
+  display: inline-block;
+}
+.caseMain .webgene-item-aroundPageLink a {
+  display: block;
+  width: 40px;
+  line-height: 44px;
+  background: #e0d45f;
+}

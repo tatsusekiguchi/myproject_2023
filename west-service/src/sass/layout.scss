@@ -1,0 +1,1800 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvPanel {
+    .topKv {
+      position: relative;
+      height: 900px;
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .kv01 {
+          background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .kvContents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      > * {
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .kvTitlePanel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      font-size: 20px;
+      .kvTitle {
+        text-align: left;
+        .em {
+          font-size: 58px;
+          text-indent: -0.2em;
+        }
+      }
+    }
+    .kvPanel {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 55%;
+      .countBox {
+        width: 100%;
+        max-width: 740px;
+        min-height: 400px;
+        padding: 40px 20px;
+        color: #ffffff;
+        background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_panel_bg.png)
+          no-repeat;
+        background-size: cover;
+        .inner {
+          max-width: 580px;
+          margin: 0 auto;
+        }
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+          border-bottom: 1px solid #ff7777;
+          .dt {
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+          }
+          .dd {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: calc(100% - 200px);
+            padding: 0 20px 0 0;
+            text-align: right;
+            .count {
+              width: calc(100% - 90px);
+              p {
+                display: inline-block;
+              }
+              .em {
+                font-size: 50px;
+                text-align: right;
+              }
+              .span {
+                min-width: 50px;
+                font-size: 22px;
+              }
+            }
+            .icon {
+              display: inline-block;
+              width: 70px;
+              margin: 0 0 0 20px;
+              text-align: center;
+              > * {
+                display: inline-block;
+              }
+            }
+            .icon01 {
+            }
+            .icon02 {
+            }
+            .icon03 {
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 150px 0;
+    .secBox {
+      .rightBox {
+        .webgene-blog {
+          .webgene-header {
+            display: none;
+          }
+          .webgene-item {
+            padding: 25px 20px 25px 0;
+            border-bottom: 1px solid #e72119;
+            background: url(https://westservice.co.jp/system_panel/uploads/images/top_news_arrow.png)
+              right 5px center no-repeat;
+            .dl {
+              .dt {
+                color: #fe0000;
+                .time {
+                  display: inline-block;
+                  margin: 0 10px 0 0;
+                }
+                .cate {
+                  display: inline-block;
+                  min-width: 80px;
+                  padding: 2px 5px;
+                  font-size: 14px;
+                  text-align: center;
+                  border: 1px solid #e72119;
+                  background: #f1f1f1;
+                }
+              }
+              .dd {
+                a {
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        .leftBox {
+          padding: 15px 0 0;
+        }
+        .rightBox {
+          .webgene-blog {
+            min-width: 600px;
+            .webgene-item {
+              .dl {
+                display: flex;
+              }
+              .dt {
+                margin: 0 20px 0 0;
+              }
+              .dd {
+                max-width: 400px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0;
+    background: url(https://westservice.co.jp/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      .pageSecTtl,
+      .sub {
+        color: #ffb7b7;
+      }
+    }
+    .titlePanel {
+      margin: 0 0 60px;
+      .secWrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 1620px;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 56%;
+        padding: 0 4% 0 0;
+        font-size: 40px;
+        color: #ffe4e4;
+        h3 {
+          line-height: 1.7;
+        }
+      }
+      .txt {
+        width: 44%;
+        color: #ffffff;
+      }
+    }
+    .listPanel {
+      margin: 0 0 60px;
+      .ul {
+        a {
+          display: block;
+        }
+        .txt {
+          padding: 15px 30px;
+          font-size: 18px;
+          line-height: 1.7;
+          border-radius: 0 0 6px 6px;
+          background: #ffffff;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 35px);
+          }
+          .photo {
+            position: relative;
+            height: 275px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+    .btnMoreBox {
+      text-align: center;
+    }
+  }
+  .sec03 {
+    padding: 150px 0;
+    background: #f1f1f1;
+    .secBox {
+      margin: 0 0 60px;
+      .txtBox {
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 38px;
+        }
+        .txt {
+          margin: 0 0 40px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          width: 45%;
+          height: 435px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .listBox {
+      .ul {
+        a {
+          display: block;
+        }
+        .txt {
+          padding: 15px 10px;
+          text-align: center;
+          line-height: 1.7;
+          border-radius: 0 0 6px 6px;
+          background: #ffffff;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 20px);
+          }
+          .photo {
+            position: relative;
+            height: 200px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 150px 0;
+    .secPanel {
+      .leftBox {
+        .txt {
+          margin: 0 0 60px;
+        }
+        .item {
+          .ul {
+            .li {
+              border-bottom: 1px solid #e72119;
+              background: url(https://westservice.co.jp/system_panel/uploads/images/top_news_arrow.png)
+                right 15px center no-repeat;
+              a {
+                display: block;
+                padding: 20px 10px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        .leftBox {
+          width: 40%;
+        }
+        .rightBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+.reasonMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/reason_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 120px 0 200px;
+    .topBox {
+      margin: 0 0 80px;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 40px;
+      }
+    }
+    .section {
+      + .section {
+        margin: 100px 0 0;
+      }
+      .ttlNumTxt {
+        display: flex;
+        align-items: center;
+        margin: 0 0 40px;
+        .ttlNumBox {
+          width: 100px;
+          text-align: center;
+          .ttlNum {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            color: #ffb7b7;
+            background: #cb0600;
+            .span {
+              font-size: 13px;
+            }
+            .em {
+              font-size: 32px;
+              line-height: 1;
+            }
+          }
+        }
+        .ttlTxtBox {
+          width: calc(100% - 100px);
+          font-size: 26px;
+        }
+      }
+      .secBox {
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+          .btnMoreBox {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 33%;
+          }
+          .txtBox {
+            width: 62%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/service_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .topContainer {
+    padding: 100px 0 160px;
+    text-align: center;
+    .topBox {
+      margin: 0 0 80px;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 40px;
+      }
+    }
+    .chart {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+  .sec01 {
+    padding: 0 0 200px;
+    .section {
+      + .section {
+        margin: 100px 0 0;
+      }
+      .ttlNumTxt {
+        display: flex;
+        align-items: center;
+        margin: 0 0 40px;
+        .ttlNumBox {
+          width: 100px;
+          text-align: center;
+          .ttlNum {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            color: #ffb7b7;
+            background: #cb0600;
+            .span {
+              font-size: 13px;
+            }
+            .em {
+              font-size: 32px;
+              line-height: 1;
+            }
+          }
+        }
+        .ttlTxtBox {
+          width: calc(100% - 100px);
+          font-size: 26px;
+        }
+      }
+      .secBox {
+        .txt {
+          margin: 0 0 20px;
+        }
+        @media (min-width: 1025px) {
+          .photoList {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            .photo {
+              position: relative;
+              width: calc((100% / 2) - 15px);
+              height: 318px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.pageFlowSection {
+  .flowSection {
+    + .flowSection {
+      margin: 150px 0 0;
+    }
+    .topTitleBox {
+      margin: 0 0 80px;
+      .ttl {
+        max-width: 800px;
+        margin: 0 0 5px;
+        padding: 20px 0 0;
+        font-size: 40px;
+        border-top: 1px solid #000000;
+        + p {
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 1085px) {
+        .ttl {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+.pageFlowContainer {
+  .flowPanel {
+    position: relative;
+    &:last-child .flowBox .detailBox .txtBox::before {
+      display: none;
+    }
+  }
+  .flowBox {
+    .ttlNumTxt {
+      display: flex;
+      align-items: center;
+      .ttlNumBox {
+        width: 100px;
+        padding: 0 0 10px;
+        text-align: center;
+        .ttlNum {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 70px;
+          color: #ffb7b7;
+          background: #cb0600;
+          .span {
+            font-size: 13px;
+          }
+          .em {
+            font-size: 32px;
+            line-height: 1;
+          }
+        }
+      }
+      .ttlTxtBox {
+        width: calc(100% - 100px);
+        font-size: 26px;
+      }
+    }
+    .detailBox {
+      .txtBox {
+        position: relative;
+        padding: 20px 0 50px 100px;
+        border-top: 1px solid #cb0600;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 35px;
+          width: 1px;
+          height: 100%;
+          background: #cb0600;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .telBox {
+          max-width: 500px;
+          margin: 20px 0 0;
+          padding: 20px 30px;
+          background: #f1f1f1;
+          > p {
+            margin: 0 0 10px;
+            font-size: 18px;
+          }
+          a {
+            display: block;
+          }
+          .em {
+            display: inline-block;
+            margin: 0 0 10px;
+            padding: 0 0 0 30px;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.2;
+            background: url(https://westservice.co.jp/system_panel/uploads/images/header_tel.png)
+              left center no-repeat;
+            background-size: 24px auto;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .flowPanel {
+      .flowBox {
+        width: calc(100% - 400px);
+        .detailBox {
+          .txtBox {
+            min-height: 300px;
+          }
+        }
+        .photo {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 380px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contract
+///////////////////////////////////////////////////////////*/
+.contractMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/contract_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .topContainer {
+    padding: 100px 0 160px;
+    text-align: center;
+    .topBox {
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 40px;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 0 0 200px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+.businessMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/business_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 100px 0 200px;
+  }
+  .topContainer {
+    padding: 0 0 150px;
+    text-align: center;
+    .topBox {
+      margin: 0 0 80px;
+      .ttl {
+        font-size: 40px;
+      }
+    }
+    .chart {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	land
+///////////////////////////////////////////////////////////*/
+.landMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/land_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .landContainer {
+    &__top {
+      padding: 100px 0;
+      .checkPanel {
+        padding: 40px 20px;
+        border-radius: 20px;
+        border: 1px solid #fe0000;
+        background: #fff9f9;
+        .inner {
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        .ul {
+          font-size: 18px;
+          .li {
+            padding: 0 0 0 40px;
+            background: url(https://westservice.co.jp/system_panel/uploads/images/land_top_check.png)
+              left center no-repeat;
+            background-size: 30px auto;
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .inner {
+            display: flex;
+            justify-content: space-between;
+            .ul {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .arrow {
+        width: 80px;
+        margin: 0 auto;
+      }
+      .message {
+        max-width: 750px;
+        margin: 30px auto 0;
+      }
+    }
+    &__merit {
+      padding: 120px 0;
+      background: #f1f1f1;
+      .topTitleBox {
+        margin: 0 0 80px;
+        .ttl {
+          max-width: 800px;
+          padding: 20px 0 0;
+          font-size: 40px;
+          border-top: 1px solid #000000;
+          + p {
+            font-size: 20px;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ttl {
+            white-space: nowrap;
+          }
+        }
+      }
+      .listBox {
+        .ul {
+          .photo + .txt {
+            margin: 0 0 15px;
+            padding: 15px 10px;
+            text-align: center;
+            line-height: 1.7;
+            border-radius: 0 0 6px 6px;
+            background: #ffffff;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 3) - 20px);
+            }
+            .photo {
+              position: relative;
+              height: 250px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__flow {
+      padding: 120px 0 200px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/company_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 120px 0;
+    .secBox {
+      .photoBox {
+        .name {
+          margin: 20px 0 0;
+          font-size: 20px;
+          text-align: center;
+          p {
+            display: inline-block;
+          }
+          .em {
+            margin: 0 0 0 10px;
+            font-size: 30px;
+          }
+        }
+      }
+      .txtBox {
+        padding: 20px 0 0;
+        border-top: 1px solid #000000;
+        .ttl {
+          margin: 0 0 40px;
+          font-size: 30px;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photoBox {
+          width: 400px;
+        }
+        .txtBox {
+          width: calc(100% - 480px);
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0 0;
+    background: #f1f1f1;
+    .infoBox {
+      padding: 0 0 60px;
+      .dl {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        line-height: 2;
+        border-bottom: 1px solid #e72119;
+        .dt {
+          width: 200px;
+          text-align: center;
+        }
+        .dd {
+          width: calc(100% - 260px);
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/contact_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .topTitleBox {
+    margin: 0 0 30px;
+    .ttl {
+      max-width: 800px;
+      padding: 20px 0 0;
+      font-size: 40px;
+      border-top: 1px solid #000000;
+      + p {
+        margin: 20px 0 0;
+        line-height: 2;
+      }
+    }
+    @media (min-width: 1025px) {
+      .ttl {
+        white-space: nowrap;
+      }
+    }
+  }
+  .sec01 {
+    padding: 120px 0 150px;
+    .telPanel {
+      padding: 20px 60px;
+      background: #f1f1f1;
+      .telBox {
+        max-width: 800px;
+        margin: 0 0 20px;
+        .ttlBox {
+          display: inline-block;
+          margin: 0 30px 0 0;
+          font-size: 0;
+          .ttl {
+            p {
+              display: inline;
+              font-size: 30px;
+            }
+            .em {
+              color: #cb0600;
+            }
+          }
+        }
+        a {
+          display: inline-block;
+          .em {
+            display: inline-block;
+            margin: 0 0 5px;
+            padding: 0 0 0 30px;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1.2;
+            background: url(https://westservice.co.jp/system_panel/uploads/images/header_tel.png)
+              left center no-repeat;
+            background-size: 24px auto;
+          }
+          .span {
+            padding: 0 0 0 20px;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 200px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 55px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #e72119;
+    background: #f1f1f1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e72119;
+    background: #f1f1f1;
+    resize: none;
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+
+  .contactForm button[type="submit"] {
+    position: relative;
+    display: block;
+    max-width: 140px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px 0 15px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    background: url(https://westservice.co.jp/system_panel/uploads/images/btn_more_arrow.png)
+      left center no-repeat;
+    background-size: 45px auto;
+    transition: 0.6s;
+    span {
+      display: inline-block;
+      padding: 0 0 5px;
+      color: #fe0000;
+      border-bottom: 1px solid #fe0000;
+    }
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        margin: -10px -20px 0 0;
+        .li {
+          display: inline-block;
+          margin: 10px 20px 0 0;
+        }
+      }
+    }
+    .checkList02 {
+      margin: 20px 0;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0 20px;
+          }
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 35px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+        border: 1px solid #e72119;
+        background: #f1f1f1;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #e72119;
+        border-right: 3px solid #e72119;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+    .radioList {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px 0;
+      .list {
+        + .list {
+          margin: 0 0 0 15px;
+        }
+      }
+      + input {
+        margin: 10px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .radioList {
+        .list {
+          + .list {
+            margin: 0 0 0 30px;
+          }
+        }
+      }
+    }
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #e72119;
+        background: #f1f1f1;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #e72119;
+      }
+    }
+    .postal {
+      margin: 0 0 5px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .selectBox {
+      display: inline-block;
+      width: 120px;
+      select {
+        display: block;
+        width: 100%;
+        padding: 11px 15px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5em;
+        border-radius: 0;
+        border: 1px solid #e72119;
+        background: #f1f1f1;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .inputVisit {
+      margin: 20px 0 0;
+      > p {
+        margin: 0 0 5px;
+      }
+    }
+    .datePanel {
+      + .datePanel {
+        margin: 15px 0 0;
+      }
+    }
+    .ageInput {
+      display: inline-block;
+      + .ageInput {
+        margin: 0 0 0 40px;
+      }
+      input {
+        width: 100px;
+      }
+      .ageTxt {
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 2;
+      }
+    }
+    .addressTxt {
+      padding: 3px 0 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .contactForm {
+    font-weight: bold;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+      .dl {
+        + .dl {
+          margin: 20px 0 0;
+        }
+        .dt {
+          padding: 0 0 5px;
+          .span {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+          }
+          .em {
+            display: inline-block;
+            padding: 2px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #c41823;
+          }
+          .small {
+            font-size: 14px;
+            font-weight: normal;
+          }
+        }
+      }
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+        &.line {
+          align-items: initial;
+        }
+        > .dt {
+          width: 220px;
+        }
+
+        > .dd {
+          position: relative;
+          width: calc(100% - 260px);
+        }
+      }
+      .baseBox {
+        .company {
+          max-width: 580px;
+        }
+        + * {
+          margin: 20px 0 0;
+        }
+      }
+      .multi {
+        margin: 20px 0;
+      }
+      @media (min-width: 1025px) {
+        .multi {
+          display: flex;
+          justify-content: space-between;
+          > * {
+            width: 50%;
+            max-width: 580px;
+          }
+          .dl + .dl {
+            margin: 0;
+          }
+        }
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+          width: 60px;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border: 1px solid #e72119;
+          background: #ffffff;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .aside {
+        padding: 10px 0;
+      }
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+        + .fileBox {
+          margin: 20px 0 0;
+        }
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+        .inputFile {
+          position: relative;
+          width: 40%;
+          font-size: 16px;
+          color: #404142;
+          text-align: center;
+          border: 1px solid #c4dcc9;
+          background: #f0f9f2;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 40px 10px;
+          }
+        }
+
+        > p {
+          width: 58%;
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .btnMoreBox {
+    text-align: center;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain {
+  .pageKvPanel {
+    background: url(https://westservice.co.jp/system_panel/uploads/images/blog_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .blogSection {
+    padding: 120px 0;
+  }
+  .catePanel {
+    margin: 0 0 60px;
+    .categoryBox {
+      padding: 15px 0;
+      border-top: 1px solid #e72119;
+      border-bottom: 1px solid #e72119;
+    }
+    .webgene-header {
+      > * {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+    .webgene-item {
+      a {
+        display: block;
+        padding: 10px;
+        color: #fe0000;
+        text-align: center;
+        border: 1px solid #e72119;
+        background: #f1f1f1;
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        align-items: center;
+        > * {
+          width: calc((100% / 5) - 10px);
+        }
+        .webgene-header {
+          margin: 0;
+        }
+        .webgene-item {
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          padding: 0 0 20px;
+          border-bottom: 1px solid #e72119;
+          a {
+            display: block;
+            font-size: 15px;
+          }
+          .photo {
+            margin: 0 0 10px;
+          }
+          .infoBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 15px;
+            .time {
+              color: #fe0000;
+            }
+            .cate {
+              min-width: 100px;
+              padding: 0 10px;
+              color: #fe0000;
+              text-align: center;
+              border: 1px solid #fe0000;
+              background: #f1f1f1;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -40px;
+          .webgene-item {
+            width: calc((100% / 3) - 40px);
+            margin: 60px 0 0 40px;
+            .photo {
+              position: relative;
+              height: 280px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              color: #ffffff;
+              line-height: 45px;
+              text-align: center;
+              background: #cdcdcd;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              background: #fe0000;
+            }
+          }
+          @media (min-width: 1025px) {
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            padding: 0 10px;
+            color: #fe0000;
+            text-align: center;
+            border: 1px solid #fe0000;
+            background: #f1f1f1;
+          }
+          .time {
+            display: inline-block;
+            margin: 0 40px 0 0;
+            color: #fe0000;
+            vertical-align: middle;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          font-size: 30px;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          max-width: 800px;
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          max-width: 900px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 40px;
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+          .pdfArea {
+            margin: 40px 0 0;
+            a {
+              color: #2151a3;
+            }
+          }
+        }
+      }
+      .btnBack {
+        max-width: 180px;
+        margin: 60px auto;
+        a {
+          display: block;
+          padding: 15px 0 15px 60px;
+          font-size: 18px;
+          color: #fe0000;
+          text-align: left;
+          background: url(https://westservice.co.jp/system_panel/uploads/images/btn_back_arrow.png)
+            left center no-repeat;
+          background-size: 45px auto;
+          p {
+            display: inline-block;
+            border-bottom: 1px solid #fe0000;
+          }
+        }
+      }
+    }
+  }
+}

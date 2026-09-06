@@ -1,0 +1,616 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain {
+  padding: 50px 0 0;
+  .topKvContainer {
+    padding: 20px 0;
+    background: url("../image/common/kv_bg_top.png") left top repeat-x,
+      url("../image/common/kv_bg_bottom.png") left bottom repeat-x;
+    background-size: 30px auto, 30px auto;
+    .topKvPanel {
+      height: 130px;
+      border-top: 10px solid #f16fb5;
+      border-bottom: 10px solid #f16fb5;
+    }
+    .kvLogo {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+    .kvTxt {
+      display: none;
+    }
+  }
+  .topSection {
+    margin: -20px 0 0;
+    padding: 60px 0 0;
+    .secBox {
+      .txtBox {
+        .title {
+          margin: 0 0 15px;
+          font-size: 23px;
+          text-shadow: -2px -2px 0 #d56fa7, /* 左上 */ 2px -2px 0 #d56fa7,
+            /* 右上 */ -2px 2px 0 #d56fa7, /* 左下 */ 2px 2px 0 #d56fa7; /* 右下 */
+        }
+        .btnMoreBox {
+          display: none;
+        }
+      }
+      .photo {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  .section {
+    padding: 60px 0;
+    .listPanel {
+      margin: 0 0 40px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px 0 0 -20px;
+        li {
+          width: calc((100% / 2) - 20px);
+          margin: 30px 0 0 20px;
+        }
+        .photo {
+          height: 200px;
+        }
+        .nameBox {
+          bottom: -10px;
+          p {
+            max-width: 140px;
+            min-width: 120px;
+            padding: 5px 10px;
+            font-size: 10px;
+          }
+        }
+      }
+      &.pink {
+        ul {
+          .photo {
+            border: 3px solid #ea97c5;
+          }
+        }
+      }
+      &.purple {
+        ul {
+          .photo {
+            border: 3px solid #8a79ae;
+          }
+        }
+      }
+    }
+  }
+  #section {
+    &__cast {
+      position: relative;
+      margin: -60px 0 0;
+      padding: 100px 0 60px;
+      .secTtl {
+        max-width: 120px;
+        margin: 0 auto 30px;
+      }
+      .listPanel {
+        .nameBox {
+          p {
+            &:after {
+              content: "";
+              position: absolute;
+              top: -18px;
+              right: 4px;
+              width: 30px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+    &__goods {
+      .secTtl {
+        max-width: 200px;
+        margin: 0 auto 20px;
+      }
+      .txt {
+        margin: 0 auto 20px;
+      }
+    }
+    &__news {
+      .secTtl {
+        max-width: 280px;
+        margin: 0 auto 30px;
+      }
+    }
+    &__info {
+      .secTtl {
+        max-width: 280px;
+        margin: 0 auto 30px;
+      }
+      .infoBox {
+        dl {
+          dt {
+            width: 100px;
+            padding: 15px 0 15px 20px;
+          }
+          dd {
+            width: calc(100% - 100px);
+            padding: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+  .slidePanel {
+    .slideBox {
+      ul {
+        li {
+          width: calc(100% / 2);
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+#conceptMain {
+  .pageKvContainer {
+    .kvTitle {
+      max-width: 200px;
+    }
+  }
+  .sec01 {
+    margin: -60px 0 0;
+    padding: 100px 0 60px;
+    .title {
+      margin: 0 0 20px;
+      font-size: 23px;
+      text-shadow: -2px -2px 0 #d56fa7, /* 左上 */ 2px -2px 0 #d56fa7,
+        /* 右上 */ -2px 2px 0 #d56fa7, /* 左下 */ 2px 2px 0 #d56fa7; /* 右下 */
+    }
+    .txt {
+      margin: 0 0 40px;
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+    .photoList {
+      max-width: 350px;
+      margin: 0 auto;
+      ul {
+        li + li {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	system
+///////////////////////////////////////////////////////////*/
+#systemMain {
+  .pageKvContainer {
+    .kvTitle {
+      max-width: 180px;
+    }
+  }
+  .sec01 {
+    margin: -60px 0 0;
+    padding: 100px 0 60px;
+    .topTxt {
+      margin: 0 0 40px;
+    }
+    .infoBox {
+      dl {
+        display: block;
+        border: none;
+        + dl {
+          margin: 20px 0 0;
+        }
+        dt {
+          width: 100%;
+          padding: 5px 20px;
+          border-bottom: 1px solid #ff008d;
+        }
+        dd {
+          width: 100%;
+          padding: 10px 20px;
+        }
+      }
+      aside {
+        padding: 15px 20px 40px;
+      }
+    }
+    .payment {
+      margin: 60px 0 0;
+      .title {
+        max-width: 90px;
+        margin: 0 auto 30px;
+      }
+      .txt {
+        margin: 0 0 40px;
+      }
+      .creditCard {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	cast
+///////////////////////////////////////////////////////////*/
+#castMain {
+  .pageKvContainer {
+    .kvTitle {
+      max-width: 90px;
+    }
+    .castRecommend {
+      font-size: 28px;
+    }
+  }
+  .sec01 {
+    margin: -60px 0 0;
+    padding: 100px 0 60px;
+  }
+  .listPanel {
+    margin: 0 0 40px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -30px 0 0 -20px;
+      li {
+        width: calc((100% / 2) - 20px);
+        margin: 30px 0 0 20px;
+      }
+      .photo {
+        height: 200px;
+      }
+      .nameBox {
+        bottom: -10px;
+        p {
+          max-width: 140px;
+          min-width: 120px;
+          padding: 5px 10px;
+          font-size: 10px;
+        }
+      }
+      .nameBox {
+        p {
+          &:after {
+            content: "";
+            position: absolute;
+            top: -18px;
+            right: 4px;
+            width: 30px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    &.pink {
+      ul {
+        .photo {
+          border: 3px solid #ea97c5;
+        }
+      }
+    }
+    &.purple {
+      ul {
+        .photo {
+          border: 3px solid #8a79ae;
+        }
+      }
+    }
+  }
+  .btnMore {
+    &.back {
+      margin: 40px auto;
+    }
+  }
+  .detailSection {
+    padding: 80px 0 60px;
+  }
+  .detailContainer {
+    padding: 40px 10px;
+    .messagePanel {
+      margin: 0 0 30px;
+      .title {
+        margin: 0 0 30px;
+        font-size: 24px;
+      }
+    }
+    .infoPanel {
+      margin: 0 0 20px;
+      padding: 20px;
+      .infoList {
+        .infoBox {
+          dl {
+            font-size: 11px;
+            &::before {
+              width: 90px;
+            }
+            &::after {
+              width: calc(100% - 90px);
+            }
+            dt {
+              width: 90px;
+              padding: 10px 0;
+              color: #ff008d;
+            }
+            dd {
+              width: calc(100% - 90px);
+              padding: 20px 10px;
+            }
+            .icon {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+    .snsPanel {
+      max-width: 140px;
+      margin: 0 auto 40px;
+      padding: 20px 20px;
+      .title {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        width: 45px;
+        margin: 0 auto;
+      }
+      .sns {
+        ul {
+          li {
+            width: 40px;
+          }
+        }
+      }
+    }
+    .innerSection {
+      .title {
+        margin: 0 0 25px;
+        padding: 10px 20px;
+        font-size: 18px;
+        &:after {
+          content: "";
+          position: absolute;
+          top: -15px;
+          right: 10px;
+          width: 40px;
+          height: 28px;
+        }
+      }
+    }
+  }
+  #section__goods {
+    padding: 60px 0;
+    .secTtl {
+      max-width: 200px;
+      margin: 0 auto 20px;
+    }
+    .txt {
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	info
+///////////////////////////////////////////////////////////*/
+#infoMain {
+  .pageKvContainer {
+    .kvTitle {
+      max-width: 320px;
+    }
+  }
+  .sec01 {
+    margin: -60px 0 0;
+    padding: 100px 0 60px;
+    .infoBox {
+      dl {
+        dt {
+          width: 100px;
+          padding: 15px 0 15px 20px;
+        }
+        dd {
+          width: calc(100% - 100px);
+          padding: 15px 10px;
+        }
+      }
+    }
+  }
+  .slidePanel {
+    .slideBox {
+      ul {
+        li {
+          width: calc(100% / 2);
+          height: 220px;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 60px 0;
+    .secTtl {
+      max-width: 200px;
+      margin: 0 auto 20px;
+    }
+    .txt {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+#newsMain {
+  .pageKvContainer {
+    .kvTitle {
+      max-width: 320px;
+    }
+  }
+  .sec01 {
+    margin: -60px 0 0;
+    padding: 100px 0;
+    .blogContainer {
+      .rightPanel {
+        margin: 0 0 40px;
+        dl {
+          dt {
+            max-width: 160px;
+            margin: 0 auto 20px;
+          }
+        }
+      }
+      .leftPanel {
+        .newsList {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -30px 0 0 -20px;
+            li {
+              width: calc((100% / 2) - 20px);
+              margin: 30px 0 0 20px;
+            }
+            .photo {
+              height: 250px;
+            }
+            .nameBox {
+              bottom: -10px;
+              p {
+                max-width: 140px;
+                min-width: 120px;
+                padding: 5px 10px;
+                font-size: 10px;
+              }
+            }
+            .timeBox {
+              p {
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: -18px;
+                  right: 4px;
+                  width: 30px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .newsDetail {
+      .titleHeader {
+        padding: 15px 20px;
+        .title {
+          padding: 0;
+          font-size: 18px;
+        }
+        .time {
+          bottom: -45px;
+          width: 120px;
+          font-size: 12px;
+        }
+      }
+      .cntBody {
+        padding: 60px 20px 30px;
+      }
+      .thumbnailBox {
+        margin: 0 auto 30px;
+      }
+      .pagingBox {
+        margin: 60px auto 0;
+      }
+    }
+  }
+}
+.list__pagination {
+  .pagination {
+    li {
+      margin: 0 5px;
+      a {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain {
+  .pageKvContainer {
+    .kvTitle {
+      max-width: 260px;
+    }
+  }
+  .sec01 {
+    margin: -60px 0 0;
+    padding: 100px 0;
+    .topTxt {
+      margin: 0 0 50px;
+    }
+  }
+  .formBox {
+    form > dl {
+      display: block;
+      + dl {
+        margin: 20px 0 0;
+      }
+      dt {
+        width: 100%;
+        padding: 0 10px;
+        border-bottom: none;
+        em {
+          margin: 0 0 0 5px;
+          font-size: 12px;
+        }
+      }
+      dd {
+        width: 100%;
+      }
+    }
+    .msg {
+      dt {
+        padding: 0 10px;
+      }
+    }
+    .privacy {
+      margin: 30px 0 50px;
+      .agreeBox {
+        height: 300px;
+        padding: 20px;
+        font-size: 14px;
+      }
+      .box {
+        + .box {
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+}

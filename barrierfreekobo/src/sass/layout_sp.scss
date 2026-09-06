@@ -1,0 +1,614 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      height: 450px;
+      .topKvPanel {
+        padding: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 200px;
+          height: 100%;
+          z-index: 1;
+          background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/top_kv_bg.png)
+            right no-repeat;
+          background-size: cover;
+        }
+        .topKv {
+          height: 450px;
+        }
+        .kvTitle {
+          position: absolute;
+          top: 0;
+          left: 20px;
+          bottom: 0;
+          width: 100%;
+          max-width: 700px;
+          height: 160px;
+          margin: auto 0;
+          font-size: 18px;
+          .title01 {
+            margin: 0 0 15px;
+            font-size: 20px;
+            p {
+              padding: 5px 10px;
+            }
+          }
+          .title02 {
+            h1 {
+              font-size: 13px;
+              padding: 5px 7px;
+              &:after {
+                right: 3px;
+                width: 110px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0 100px;
+      .secTtl {
+        margin: 0 0 40px;
+        padding: 50px 0 0;
+        font-size: 20px;
+        text-align: center;
+        background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+          center top no-repeat;
+        background-size: 50px auto;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .listBox {
+        .ul {
+          .li {
+            padding: 15px;
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+          .photo {
+            border: 3px solid #e0d45f;
+          }
+          .dl {
+            margin: 15px 0 0;
+            .dt {
+              margin: 0 0 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+          .photoBox {
+            .more {
+              bottom: -25px;
+              width: 50px;
+              height: 50px;
+              font-size: 11px;
+            }
+          }
+          .dl {
+            margin: 25px 15px 20px;
+            .dt {
+              margin: 0 0 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .arrow {
+        width: 50px;
+        margin: 40px auto;
+      }
+      .messagePanel {
+        .messageBox {
+          .message {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .swiperContainer {
+        width: 100vw;
+        margin: 0 0 50px;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -10px;
+          bottom: 0;
+          width: 100vw;
+          height: 80%;
+          background: #e0d45f;
+        }
+        .sliderPager {
+          top: -50px;
+          right: 20px;
+        }
+        .swiper-wrapper {
+          position: relative;
+        }
+        .swiper-slide {
+          padding: 0 0 40px;
+          .photoBox {
+            .photo {
+              height: 280px;
+            }
+          }
+          .title {
+            margin: 15px 0 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 60px 0 80px;
+      .secContainer {
+        .secPanel {
+          margin: 0 0 30px;
+          .infoBox {
+            .dl {
+              .dt {
+                width: 100px;
+              }
+              .dd {
+                width: calc(100% - 105px);
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+    service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .sec01 {
+      padding: 60px 0 100px;
+      .secTtl {
+        margin: 0 0 40px;
+        padding: 50px 0 0;
+        font-size: 20px;
+        text-align: center;
+        background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+          center top no-repeat;
+        background-size: 50px auto;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+      .btnList {
+        margin: 40px auto 0;
+        .btnBox + .btnBox {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      h3 {
+        margin: 0 0 15px;
+        font-size: 18px;
+      }
+      .topContainer {
+        margin: 0 0 80px;
+        .secBox {
+          margin: 0 0 20px;
+          .txtBox {
+            padding: 20px 0 0;
+          }
+        }
+      }
+      .secBoxList {
+        .secBox {
+          + .secBox {
+            margin: 60px 0 0;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .txt {
+              p + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+          &.secBox01 {
+            .chart {
+              max-width: 300px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      .topContainer {
+        padding: 60px 0 80px;
+        text-align: center;
+        background: #f5f5f5;
+        .topTxt {
+          margin: 0 0 40px;
+        }
+        .contactItem {
+          max-width: 300px;
+          .itemBox {
+            .dl {
+              .dt {
+                font-size: 20px;
+              }
+              .telBox {
+                a {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .formContainer {
+        padding: 60px 0;
+        h3 {
+          margin: 0 0 40px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            padding: 10px 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+
+            + .dl {
+              padding: 20px 10px 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            margin: 0 0 5px;
+            padding: 0 0 5px;
+
+            .em {
+              font-size: 12px;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+        .checkList {
+          .ul {
+            .li {
+              width: 100%;
+            }
+          }
+        }
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 70px;
+        }
+
+        .ageInput {
+          display: block;
+          input {
+            width: 70px;
+          }
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+
+      .fileUploadBox {
+        display: block;
+        .fileArea {
+          display: block;
+
+          .inputFile {
+            width: 260px;
+          }
+
+          > p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	barrierfree
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .barrierfreeMain {
+    .pageKvContainer .pageKvPanel .kvTitle h1 {
+      max-width: 260px;
+    }
+    .sec01 {
+      padding: 60px 0 100px;
+      .secTtl {
+        margin: 0 0 40px;
+        padding: 50px 0 0;
+        font-size: 20px;
+        text-align: center;
+        background: url(https://barrierfreekobo231120.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+          center top no-repeat;
+        background-size: 50px auto;
+      }
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+          .dl {
+            padding: 15px;
+            .dt {
+              margin: 0 0 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .arrow {
+        width: 50px;
+        margin: 40px auto;
+      }
+      .messagePanel {
+        .messageBox {
+          max-width: 360px;
+          margin: 0 auto;
+          .message {
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0 80px;
+      .secContainer {
+        + .secContainer {
+          margin: 80px 0 0;
+        }
+        .photoPanel {
+          margin: 0 0 20px;
+          .infoBox {
+            padding: 15px 10px 0;
+            .dl {
+              + .dl {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+        .txtPanel {
+          .panelTtl {
+            font-size: 18px;
+          }
+          .introBox {
+            margin: 20px 0 0;
+            .dl {
+              + .dl {
+                margin: 20px 0 0;
+              }
+            }
+          }
+          .aside {
+            margin: 15px 0 0;
+          }
+        }
+      }
+      .btnList {
+        margin: 40px auto 0;
+        .btnBox + .btnBox {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0 100px;
+      .flowList {
+        .ol {
+          .li {
+            padding: 10px 25px;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 5px;
+              font-size: 16px;
+              .em {
+                margin: 0 15px 0 0;
+              }
+              .span {
+                br {
+                  display: none;
+                }
+              }
+            }
+            .dd {
+              .em {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	case
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .caseMain {
+    .blogSection {
+      padding: 80px 0;
+    }
+    .catePanel {
+      max-width: 300px;
+      margin: 0 auto 40px;
+      .webgene-blog {
+        .webgene-header {
+          margin: 0 auto 10px;
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .info {
+            display: block;
+            margin: 0 0 10px;
+            .cate {
+              margin: 0 0 5px;
+            }
+            .time {
+              text-align: right;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBackBox {
+      margin: 50px 0 0;
+      text-align: center;
+    }
+  }
+}

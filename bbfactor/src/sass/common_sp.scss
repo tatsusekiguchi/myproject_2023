@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  z-index: 999;
+  background: #ffffff;
+  .logo {
+    width: 180px;
+    a {
+      display: block;
+    }
+  }
+}
+.hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+  span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  span:nth-of-type(1) {
+    top: 15px;
+  }
+  span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  span:nth-of-type(3) {
+    bottom: 15px;
+  }
+  &.is-open.hamburger span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  &.is-open.hamburger span:nth-of-type(2) {
+    opacity: 0;
+  }
+  &.is-open.hamburger span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  transition: 0.6s;
+  &.active {
+    right: 0;
+  }
+  .navList {
+    padding: 60px 0 0;
+    ul {
+      li {
+        border-bottom: 1px solid #cccccc;
+      }
+      a {
+        display: block;
+        padding: 10px;
+      }
+    }
+  }
+  .contact {
+    a {
+      display: block;
+      padding: 10px;
+      color: #ffffff;
+      background: #32a44a;
+      span {
+        display: inline-block;
+        padding: 0 0 0 20px;
+        background: url("../image/common/header_mail.png") left center no-repeat;
+        background-size: 14px auto;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 58px 0 0;
+}
+.pageKvPanel {
+  height: 250px;
+  padding: 0 20px;
+  .pageKvTitle {
+    h1 {
+      font-size: 30px;
+      text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
+        1px -1px 0 #fff, 0px 1px 0 #fff, 0-1px 0 #fff, -1px 0 0 #fff,
+        1px 0 0 #fff;
+    }
+  }
+}
+.pageSecTitle {
+  margin: 0 0 40px;
+  .icon {
+    max-width: 140px;
+  }
+  .secTitle {
+    padding: 15px 10px;
+    min-height: 0;
+    font-size: 20px;
+    background-size: 100% auto;
+    > * {
+      padding: 0 5px;
+      line-height: 1.1;
+    }
+  }
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footTop {
+    padding: 40px 0;
+    dl {
+      dt {
+        margin: 0 0 15px;
+        font-size: 16px;
+      }
+      dd {
+        .logo {
+          max-width: 120px;
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
+  .footPanel {
+    margin: 0 0 40px;
+    .ttl {
+      margin: 0 auto 20px;
+      font-size: 16px;
+    }
+    .itemList {
+      ul {
+        li + li {
+          margin: 30px 0 0;
+        }
+        .tel {
+          a {
+            font-size: 16px;
+            em {
+              font-size: 26px;
+            }
+          }
+        }
+        .reserve {
+          a {
+            max-width: 280px;
+            font-size: 16px;
+          }
+        }
+        .line {
+          a {
+            max-width: 60px;
+            margin: 0 auto 10px;
+          }
+        }
+      }
+    }
+  }
+  .copy {
+    font-size: 12px;
+    padding: 0 10px 10px;
+  }
+}

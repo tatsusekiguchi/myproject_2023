@@ -1,0 +1,472 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #3d3e3c;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #3d3e3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+.mincho {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.gothic {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    padding: 0 50px;
+  }
+  .header .headBox {
+    position: relative;
+  }
+  .header .logoBox {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 35%;
+    padding: 20px;
+    border-radius: 0 0 10px 0;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .header .logoBox .logo {
+    width: 35%;
+    max-width: 175px;
+    transition: 0.6s;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .logoBox .headTitle {
+    width: 60%;
+    font-size: 14px;
+  }
+  .header.fixed .logoBox {
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .header.fixed .logoBox .logo {
+    width: 20%;
+    max-width: 100px;
+  }
+  .header.fixed .headTitle {
+    width: 100%;
+    padding: 0 0 10px 20px;
+  }
+  .header.fixed .headTitle br {
+    display: none;
+  }
+
+  .btnContact,
+.hamburgerBox {
+    display: none;
+  }
+
+  .fixedBottomMenu {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 0 10px;
+  }
+  .navBox .navList > .ul {
+    display: flex;
+    justify-content: center;
+    min-width: 650px;
+  }
+  .navBox .navList > .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 50px;
+    padding: 0 0 20px;
+    vertical-align: bottom;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList > .ul > .li + .li {
+    margin: 0 0 0 8%;
+  }
+  .navBox .navList > .ul > .li > a {
+    display: inline-block;
+  }
+  .navBox .contact {
+    position: relative;
+    top: -10px;
+    width: 200px;
+  }
+  .navBox .contact a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 30px;
+    background: #ff0000;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  margin: 0 50px;
+  border-radius: 6px;
+}
+.pageKvPanel .pageKvTtl {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.pageSecTtlBox h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 60px;
+  font-size: 30px;
+}
+.pageSecTtlBox h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  margin: auto 0;
+  background: #ff0000;
+}
+.pageSecTtlBox p {
+  padding: 5px 0 0;
+  color: #ff0000;
+  text-indent: 2em;
+}
+
+.secWrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 40%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContainer {
+  position: relative;
+  padding: 0 30px;
+}
+.footer .footContainer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 440px;
+  background: #4f4c49;
+}
+.footer .footPanel {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 60px 30px 30px;
+  color: #f5efec;
+  text-align: center;
+  background: #3e3d3b;
+}
+.footer .footPanel .secBox {
+  margin: 0 0 40px;
+}
+.footer .footPanel .secBox .dl .dt {
+  margin: 0 0 20px;
+  font-size: 34px;
+  color: #ffffff;
+}
+.footer .footPanel .secBox .btnReserve {
+  max-width: 200px;
+  margin: 30px auto 0;
+}
+.footer .footPanel .secBox .btnReserve a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 20px;
+  background: #58524c;
+}
+.footer .footPanel .secBox .btnReserve p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+  background-size: 15px auto;
+}
+.footer .footPanel .secBox .btnTel {
+  max-width: 300px;
+  margin: 20px auto 15px;
+}
+.footer .footPanel .secBox .btnTel a {
+  display: block;
+  padding: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  border-radius: 6px;
+  background: #58524c;
+}
+.footer .footPanel .secBox .btnTel p {
+  display: inline-block;
+  padding: 0 0 0 35px;
+  background: url(https://studio-kyuzen.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footPanel .secBox .btnInsta {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.footer .footPanel .secBox .btnInsta a {
+  display: block;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.footer .footPanel .secBox .btnInsta a .em {
+  font-size: 22px;
+  line-height: 1.1;
+}
+.footer .footPanel .secBox .btnInsta a .span {
+  font-size: 12px;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .secBox {
+    display: flex;
+  }
+  .footer .footPanel .secBox > * {
+    width: 50%;
+  }
+  .footer .footPanel .secBox .leftBox {
+    border-right: 1px solid #5a5855;
+  }
+}
+.footer .footPanel .footNav .ul .li {
+  display: inline-block;
+}
+.footer .footPanel .footNav .ul .li + .li {
+  margin: 0 0 0 80px;
+}
+.footer .footPanel .footNav .ul .li a {
+  display: inline-block;
+  color: #e8dfda;
+  text-decoration: underline;
+}
+.footer .footBottom {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 40px;
+  color: #f5efec;
+}
+.footer .footBottom .leftBox .logo {
+  max-width: 180px;
+}
+@media (min-width: 1025px) {
+  .footer .footBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer .footBottom .leftBox {
+    display: flex;
+    align-items: flex-end;
+  }
+  .footer .footBottom .leftBox .logo {
+    margin: 0 60px 0 0;
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

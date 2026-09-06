@@ -1,0 +1,1579 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKv {
+        height: 400px;
+      }
+      .kvTitleBox {
+        .kvTitle {
+          margin: 0 0 20px;
+          font-size: 30px;
+        }
+        .sub {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 100px 0;
+      .listBox {
+        max-width: 300px;
+        margin: 0 auto;
+        .ul {
+          .li + .li {
+            margin: 40px 0 0;
+          }
+          .dl {
+            margin: 15px 0 0;
+            .dt {
+              margin: 0 0 5px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 100px 0;
+      .listBox {
+        max-width: 300px;
+        margin: 0 auto;
+        .ul {
+          .li + .li {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .btnReadMore {
+        margin: 60px auto 0;
+      }
+    }
+    .sec03 {
+      padding: 100px 0;
+      .secBox {
+        h3 {
+          margin: 0 0 40px;
+          font-size: 20px;
+        }
+      }
+      .listBox {
+        max-width: 500px;
+        margin: 40px auto 0;
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+      .btnReadMore {
+        margin: 60px auto 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .conceptMain {
+    .sec01 {
+      padding: 80px 0;
+      .secBox {
+        position: relative;
+        &::before {
+          width: 90%;
+          max-width: 600px;
+          height: 150px;
+        }
+        .title {
+          max-width: 800px;
+          min-height: 150px;
+          margin: 0 0 30px;
+          font-size: 20px;
+          h3 {
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .reasonContainer {
+        .mvPanel {
+          height: 250px;
+          .mvTitle {
+            padding: 0 40px;
+            h3 {
+              max-width: 350px;
+              padding: 15px 10px 10px;
+              font-size: 16px;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -20px;
+                width: 40px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #212020;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -20px;
+                width: 40px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #212020;
+              }
+            }
+          }
+        }
+        .txtPanel {
+          padding: 30px 0 60px;
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	bodyCoating
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .bodyCoatingMain {
+    .sec01 {
+      padding: 80px 0;
+      .secBox {
+        position: relative;
+        &::before {
+          width: 90%;
+          max-width: 600px;
+          height: 150px;
+        }
+        .title {
+          max-width: 600px;
+          min-height: 150px;
+          margin: 0 0 30px;
+          font-size: 20px;
+          h3 {
+            line-height: 2;
+          }
+        }
+      }
+      .section {
+        margin: 100px 0 0;
+        .title {
+          margin: 0 0 40px;
+          font-size: 20px;
+          &::before {
+            width: 300px;
+            height: 190px;
+          }
+        }
+        .listBox {
+          .ul {
+            .li {
+              + .li {
+                margin: 40px 0 0;
+              }
+              .box {
+                height: 300px;
+                .ttl {
+                  width: 100%;
+                  max-width: 650px;
+                  p {
+                    padding: 15px;
+                    font-size: 16px;
+                  }
+                }
+              }
+              .txtBox {
+                padding: 20px 10px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .secBoxList {
+        margin: 0 0 80px;
+      }
+      .secBox {
+        + .secBox {
+          margin: 80px 0 0;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          h3 {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .listBox {
+        margin: 0 0 40px;
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+            a {
+              .ttl {
+                margin: 10px 0 0;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .priceMain {
+    .sec01 {
+      padding: 80px 0;
+    }
+    .pricePanelList {
+      padding: 0 0 100px;
+    }
+    .pricePanel {
+      + .pricePanel {
+        margin: 50px 0 0;
+      }
+      h3 {
+        margin: 0 0 15px;
+        font-size: 18px;
+      }
+      .priceTable {
+        overflow: auto;
+        .table {
+          min-width: 900px;
+          font-size: 12px;
+          .tr {
+            > * {
+              padding: 10px;
+              width: 30%;
+              &:nth-child(1) {
+                width: 40%;
+              }
+              &:nth-child(3) {
+                width: 30%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .cautionContainer {
+      .mvPanel {
+        height: 250px;
+        .mvTitle {
+          padding: 0 40px;
+          h3 {
+            max-width: 300px;
+            padding: 15px 10px 10px;
+            font-size: 16px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -20px;
+              width: 40px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -20px;
+              width: 40px;
+              height: 100%;
+              transform: skew(-30deg);
+              background: #212020;
+            }
+          }
+        }
+      }
+      .txtPanel {
+        padding: 30px 0 60px;
+        h4 {
+          margin: 0 0 15px;
+          font-size: 18px;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .em {
+          margin: 40px 0 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	security
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .securityMain {
+    .sec01 {
+      padding: 80px 0;
+      .secBox {
+        position: relative;
+        &::before {
+          width: 90%;
+          max-width: 600px;
+          height: 150px;
+        }
+        .title {
+          max-width: 600px;
+          min-height: 150px;
+          margin: 0 0 30px;
+          font-size: 20px;
+          h2 {
+            line-height: 2;
+          }
+        }
+      }
+      .bnrBox {
+        margin: 60px 0 0;
+        a {
+          height: 250px;
+          .dl {
+            width: 100%;
+            padding: 20px 10px;
+            .dt {
+              font-size: 20px;
+              p {
+                padding: 0 50px;
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/btn_reabmore_arrow.png)
+                  right center no-repeat;
+                background-size: 30px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .secBox {
+        + .secBox {
+          margin: 80px 0 0;
+        }
+        &::before {
+          width: 90%;
+          max-width: 600px;
+          height: 150px;
+        }
+        .title {
+          max-width: 600px;
+          min-height: 150px;
+          margin: 0 0 30px;
+          font-size: 20px;
+          h3 {
+            line-height: 2;
+          }
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .secBoxList {
+        margin: 0 0 80px;
+      }
+      .secBox {
+        + .secBox {
+          margin: 80px 0 0;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          h3 {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 80px 0;
+      .listBox {
+        margin: 0 0 40px;
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+            a {
+              .ttl {
+                margin: 10px 0 0;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	makerSecurity
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .makerSecurityMain {
+    .sec01 {
+      padding: 80px 0;
+      .listBox {
+        .ul {
+          max-width: 280px;
+          margin: 0 auto;
+          .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 270px;
+            padding: 20px 10px;
+            + .li {
+              margin: 30px 0 0;
+            }
+            .dl {
+              .dt {
+                min-height: 50px;
+                margin: 0 0 10px;
+                font-size: 18px;
+              }
+              .dd {
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0 120px;
+      .brandList {
+        margin: 0 0 60px;
+        .ul {
+          max-width: 240px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .productContainer {
+      + .productContainer {
+        margin: 150px 0 0;
+      }
+      .productPanel {
+        + * {
+          margin: 80px 0 0;
+        }
+        h3 {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+        .secBox {
+          .photoBox {
+            margin: 0 0 20px;
+            .dl {
+              max-width: 400px;
+              margin: 10px 0 0;
+              .dt {
+                margin: 0 0 5px;
+              }
+              .dd {
+                font-size: 10px;
+                .ul {
+                  .li {
+                    width: calc((100% / 2) - 4px);
+                  }
+                }
+              }
+            }
+          }
+          .txtBox {
+            h4 {
+              margin: 0 0 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .listPanel {
+        .itemList {
+          .itemBox {
+            + .itemBox {
+              margin: 40px 0 0;
+            }
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+            .txt {
+              .span {
+                margin: 15px 0 0;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .optionPanel {
+        .title {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .optionTable {
+          font-size: 12px;
+          .table {
+            .tr {
+              > * {
+                padding: 10px;
+              }
+            }
+            .thead {
+              .th {
+                vertical-align: middle;
+              }
+            }
+            .tbody {
+              .td {
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	driveRecorder
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .driveRecorderMain {
+    .sec01 {
+      padding: 80px 0;
+      .secBox {
+        position: relative;
+        &::before {
+          width: 90%;
+          max-width: 600px;
+          height: 150px;
+        }
+        .title {
+          max-width: 600px;
+          min-height: 150px;
+          margin: 0 0 30px;
+          font-size: 20px;
+          h2 {
+            line-height: 2;
+          }
+        }
+      }
+      .bnrBox {
+        margin: 60px 0 0;
+        a {
+          height: 250px;
+          .dl {
+            width: 100%;
+            padding: 20px 10px;
+            .dt {
+              font-size: 20px;
+              p {
+                padding: 0 50px;
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/btn_reabmore_arrow.png)
+                  right center no-repeat;
+                background-size: 30px auto;
+              }
+            }
+          }
+        }
+      }
+      .requestBox {
+        margin: 40px 0 0;
+        padding: 20px;
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .section01 {
+        margin: 0 0 50px;
+        h3 {
+          font-size: 20px;
+          text-align: center;
+        }
+        .listBox {
+          .ul {
+            max-width: 300px;
+            margin: 0 auto;
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+            .dl {
+              .dt {
+                padding: 10px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      .section02 {
+        margin: 0 0 60px;
+        h3 {
+          font-size: 20px;
+          text-align: center;
+        }
+        .recordList {
+          .record {
+            padding: 20px;
+            .dl {
+              display: block;
+              .dt {
+                margin: 0 0 10px;
+                width: 100%;
+                font-size: 18px;
+              }
+              .dd {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .section03 {
+        .secBox {
+          position: relative;
+          &::before {
+            width: 90%;
+            max-width: 600px;
+            height: 150px;
+          }
+          .title {
+            max-width: 600px;
+            min-height: 150px;
+            margin: 0 0 30px;
+            font-size: 20px;
+            h2 {
+              line-height: 2;
+            }
+          }
+        }
+        .listBox {
+          margin: 20px 0 40px;
+          .list {
+            margin: 0 0 25px;
+            .ul {
+              display: block;
+              max-width: 600px;
+              margin: 0 auto;
+              .li {
+                width: 100%;
+                + .li {
+                  margin: 20px 0 0;
+                }
+              }
+            }
+          }
+          .txt {
+            max-width: 450px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .listBox {
+        margin: 0 0 40px;
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+            a {
+              .ttl {
+                margin: 10px 0 0;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	makerDriveRecorder
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .makerDriveRecorderMain {
+    .sec01 {
+      padding: 80px 0;
+      .listBox {
+        .ul {
+          max-width: 280px;
+          margin: 0 auto;
+          .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+            + .li {
+              margin: 30px 0 0;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0 120px;
+      .brandList {
+        margin: 0 0 60px;
+        .ul {
+          max-width: 240px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .productContainer {
+      + .productContainer {
+        margin: 150px 0 0;
+      }
+      .productPanel {
+        + * {
+          margin: 80px 0 0;
+        }
+        h3 {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+        .secBox {
+          .photoBox {
+            margin: 0 0 20px;
+            .dl {
+              max-width: 400px;
+              margin: 10px 0 0;
+              .dt {
+                margin: 0 0 5px;
+              }
+              .dd {
+                font-size: 10px;
+                .ul {
+                  .li {
+                    width: calc((100% / 2) - 4px);
+                  }
+                }
+              }
+            }
+          }
+          .txtBox {
+            h4 {
+              margin: 0 0 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .listPanel {
+        .itemList {
+          .itemBox {
+            + .itemBox {
+              margin: 40px 0 0;
+            }
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+            .txt {
+              .span {
+                margin: 15px 0 0;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .optionPanel {
+        .title {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .optionTable {
+          font-size: 12px;
+          .table {
+            .tr {
+              > * {
+                padding: 10px;
+              }
+            }
+            .thead {
+              .th {
+                vertical-align: middle;
+              }
+            }
+            .tbody {
+              .td {
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	interiorCoating
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .interiorCoatingMain {
+    .sec01 {
+      padding: 80px 0;
+      .secBox {
+        position: relative;
+        &::before {
+          width: 90%;
+          max-width: 600px;
+          height: 150px;
+        }
+        .title {
+          max-width: 600px;
+          min-height: 150px;
+          margin: 0 0 30px;
+          font-size: 20px;
+          h2 {
+            line-height: 2;
+          }
+        }
+        h3 {
+          margin: 0 0 15px;
+          font-size: 20px;
+        }
+      }
+      .requestBox {
+        margin: 40px 0 0;
+        padding: 20px 10px;
+        border: 1px solid #45403a;
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .dd {
+            max-width: 400px;
+            .txtList {
+              display: block;
+              .txt {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section {
+      padding: 60px 0;
+      .secTtl {
+        margin: 0 0 40px;
+        font-size: 20px;
+        &::before {
+          width: 300px;
+          height: 190px;
+        }
+      }
+    }
+    .sec02 {
+      .listContainer {
+        margin: 0 0 60px;
+        .listBox {
+          + .listBox {
+            margin: 60px 0 0;
+          }
+          .ul {
+            .li {
+              + .li {
+                margin: 40px 0 0;
+              }
+              .box {
+                height: 300px;
+                .ttl {
+                  width: 100%;
+                  max-width: 650px;
+                  p {
+                    padding: 15px;
+                    font-size: 16px;
+                  }
+                }
+              }
+              .txtBox {
+                padding: 20px 10px 0;
+              }
+            }
+          }
+        }
+        .introBox {
+          margin: 0 10px;
+          padding: 30px 20px;
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .typeContainer {
+        margin: 0 0 60px;
+        .typePanel {
+          padding: 30px 10px;
+          .ttl {
+            margin: 0 0 40px;
+            font-size: 20px;
+          }
+        }
+        .typeList {
+          .dl {
+            padding: 0 0 30px;
+            .dt {
+              padding: 0 10px 5px;
+              font-size: 18px;
+            }
+            .dd {
+              padding: 10px;
+            }
+          }
+        }
+      }
+      .bnrBox {
+        margin: 50px 0 0;
+        a {
+          height: 250px;
+          .dl {
+            width: 100%;
+            padding: 20px 10px;
+            .dt {
+              font-size: 20px;
+              p {
+                padding: 0 50px;
+                background: url(https://leroy-carprotect.jp/system_panel/uploads/images/btn_reabmore_arrow.png)
+                  right center no-repeat;
+                background-size: 30px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      .topTxt {
+        margin: 0 0 40px;
+        font-size: 16px;
+      }
+      .videoList {
+        .ul {
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+          p {
+            margin: 0 0 15px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      .topTxt {
+        margin: 0 0 40px;
+        font-size: 16px;
+      }
+    }
+    .sec05 {
+      .secPanel {
+        .leftBox {
+          margin: 0 0 25px;
+        }
+        .txtBox {
+          padding: 20px;
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec06 {
+      .img {
+        margin: 0 0 30px;
+      }
+      .txtBox {
+        padding: 20px;
+      }
+    }
+    .sec07 {
+      padding: 80px 0;
+      .listBox {
+        margin: 0 0 40px;
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+            a {
+              .ttl {
+                margin: 10px 0 0;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	priceInteriorCoating
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .priceInteriorCoatingMain {
+    .sec01 {
+      .topContainer {
+        padding: 60px 0 30px;
+        .topTxt {
+          margin: 0 0 30px;
+        }
+        .classList {
+          .ul {
+            max-width: 400px;
+            margin: 0 auto;
+            .li {
+              + .li {
+                margin: 20px 0 0;
+              }
+              a {
+                min-height: 80px;
+                padding: 20px 20px 10px;
+              }
+              .dl {
+                .dt {
+                  font-size: 16px;
+                }
+                .dd {
+                  min-height: 20px;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          @media (min-width: 1025px) {
+            .ul {
+              display: flex;
+              justify-content: space-between;
+              .li {
+                width: calc((100% / 4) - 10px);
+              }
+            }
+          }
+        }
+      }
+      .priceContainer {
+        padding: 60px 0;
+        .secTtl {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+      }
+      .pricePanel {
+        + .pricePanel {
+          margin: 60px 0 0;
+        }
+        .pTitle {
+          margin: 0 0 15px;
+          font-size: 18px;
+        }
+      }
+      .priceTable {
+        overflow: auto;
+        .table {
+          min-width: 900px;
+          font-size: 12px;
+          .tr {
+            > * {
+              padding: 10px;
+            }
+          }
+        }
+      }
+      .txtBox {
+        margin: 30px 0 0;
+        padding: 30px 20px;
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .txt {
+        margin: 0 0 30px;
+      }
+      .list {
+        .ul {
+          max-width: 380px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	access
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .accessMain {
+    .sec01 {
+      padding: 80px 0;
+      .secBox {
+        position: relative;
+        &::before {
+          width: 90%;
+          max-width: 600px;
+          height: 150px;
+        }
+        .title {
+          max-width: 800px;
+          min-height: 150px;
+          margin: 0 0 30px;
+          font-size: 20px;
+          h3 {
+            line-height: 2;
+          }
+        }
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          + .dl {
+            margin: 30px 0 0;
+            padding: 30px 0 0;
+          }
+        }
+      }
+      .accessContainerList {
+        padding: 60px 0 0;
+      }
+      .accessContainer {
+        .mvPanel {
+          height: 250px;
+          .mvTitle {
+            padding: 0 40px;
+            h3 {
+              max-width: 350px;
+              padding: 15px 10px 10px;
+              font-size: 16px;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -20px;
+                width: 40px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #212020;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -20px;
+                width: 40px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #212020;
+              }
+            }
+          }
+        }
+        .txtPanel {
+          padding: 30px 0 60px;
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+        .parking {
+          margin: 40px 0 60px;
+          .ul {
+            display: block;
+            max-width: 550px;
+            margin: 0 auto;
+            .li {
+              width: 100%;
+              + .li {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+        .rentalPanel {
+          margin: 60px 0 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+        }
+        .rentalTable {
+          .table {
+            font-size: 12px;
+            .tr {
+              > * {
+                padding: 10px;
+                &:nth-child(1) {
+                  width: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shop
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .shopMain {
+    .sec01 {
+      padding: 80px 0;
+      .topContainer {
+        margin: 0 0 60px;
+        .mv {
+          margin: 0 0 40px;
+        }
+        .infoBox {
+          .dl {
+            padding: 15px 20px;
+            .dt {
+              width: 80px;
+            }
+          }
+        }
+      }
+      .shopContainer {
+        .mvPanel {
+          height: 250px;
+          .mvTitle {
+            padding: 0 40px;
+            h3 {
+              max-width: 350px;
+              padding: 15px 10px 10px;
+              font-size: 16px;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -20px;
+                width: 40px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #212020;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -20px;
+                width: 40px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #212020;
+              }
+            }
+          }
+        }
+        .txtPanel {
+          padding: 30px 0 0;
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      padding: 80px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm button[type="submit"] {
+      max-width: 250px;
+    }
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            padding: 10px 10px 20px;
+            + .dl {
+              padding: 20px 10px 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            margin: 0 0 5px;
+            padding: 0 0 5px;
+            // .span {
+            //   width: auto;
+            //   margin-right: 10px;
+            //   font-size: 16px;
+
+            //   br {
+            //     display: none;
+            //   }
+            // }
+
+            .em {
+              font-size: 12px;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .postalAddress {
+          display: block;
+          .postalTxt {
+            margin: 0 0 5px;
+          }
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+
+      .fileUploadBox {
+        display: block;
+        .fileArea {
+          display: block;
+
+          .inputFile {
+            width: 260px;
+          }
+
+          > p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	gallery
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .galleryMain {
+    .galleryMainContainer {
+      padding: 50px 0 100px;
+    }
+    .catePanel {
+      margin: 0 0 60px;
+      .webgene-blog {
+        display: block;
+        max-width: 320px;
+        margin: 0 auto;
+        .webgene-item {
+          width: 100%;
+        }
+      }
+    }
+    .listPanel {
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 50px 0 0;
+          }
+        }
+      }
+    }
+    .webgene-pagination {
+      margin: 60px auto 0;
+    }
+    .postDetail {
+      margin: 0 0 60px;
+      .title {
+        font-size: 20px;
+      }
+      .slickSlide {
+        margin: 0 0 40px;
+        .slider {
+          .li {
+            > div {
+              padding: 0 0 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

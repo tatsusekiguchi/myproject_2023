@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logo {
+    position: relative;
+    z-index: 9999;
+    width: 80px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 80px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 60px;
+  }
+  .navBox .navList .ul .li {
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navItem {
+    padding: 20px 0 0;
+  }
+  .navBox .navItem .ul .tel {
+    text-align: center;
+  }
+  .navBox .navItem .ul .tel a {
+    display: inline-block;
+  }
+  .navBox .navItem .ul .tel p {
+    display: inline-block;
+    font-family: "EB Garamond";
+    font-size: 20px;
+  }
+  .navBox .navItem .ul .tel .em {
+    font-size: 30px;
+  }
+  .navBox .navItem .ul .reserve {
+    width: 150px;
+    margin: 10px auto 0;
+  }
+  .navBox .navItem .ul .reserve a {
+    display: block;
+    padding: 8px;
+    color: #faf5ee;
+    text-align: center;
+    border-radius: 4px;
+    background: #a36c52;
+  }
+  .navBox .navItem .ul .reserve a p {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    background: url(https://miite230627.smooooth.jp/system_panel/uploads/images/header_reserve.png) left center no-repeat;
+    background-size: 13px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 250px;
+  }
+  .pageKvPanel .pageKvTitle {
+    padding: 0 40px 20px;
+  }
+  .pageKvPanel .pageKvTitle p {
+    font-size: 30px;
+  }
+
+  .secTitleBox {
+    font-size: 24px;
+  }
+
+  .pageSecTitle {
+    margin: 0 0 50px;
+  }
+  .pageSecTitle p {
+    font-size: 24px;
+  }
+
+  .secWrap {
+    padding: 0 40px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore {
+    width: 180px;
+  }
+  .btnMore a {
+    font-size: 18px;
+    background: url(https://miite230627.smooooth.jp/system_panel/uploads/images/btn_more_circle.png) right center no-repeat;
+    background-size: 30px auto;
+  }
+  .btnMore a p {
+    background: url(https://miite230627.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat;
+    background-size: 80px auto;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+  .footer .pagetop {
+    right: 10px;
+    bottom: 40px;
+    width: 20px;
+  }
+  .footer .footBox {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto 50px;
+  }
+  .footer .footBox .logo {
+    width: 80px;
+    margin: 0 auto 20px;
+  }
+  .footer .footBox .txt {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .footer .footBox .txt a {
+    display: inline-block;
+    color: #fbf5ef;
+  }
+  .footer .footBox .sns {
+    width: 30px;
+    margin: 0 auto;
+  }
+  .footer .footBox .sns .insta {
+    position: relative;
+    top: 0;
+  }
+  .footer .copy {
+    text-align: center;
+  }
+}

@@ -1,0 +1,2373 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  position: relative;
+  padding: 0 80px;
+}
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: calc(100vh - 200px);
+}
+.topMain .topKvPanel .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.topMain .topKvPanel .topKv .kvBox .kv01 {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv02 {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv03 {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .scrollBox {
+  position: absolute;
+  left: 30px;
+  bottom: 60px;
+  width: 20px;
+  height: 120px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_scroll_arrow.png) center bottom no-repeat;
+  background-size: 12px auto;
+}
+.topMain .topKvPanel .scrollBox .scroll {
+  display: inline-block;
+}
+.topMain .topTitleBox {
+  margin: 0 0 60px;
+  padding: 35px 20px;
+  text-align: center;
+}
+.topMain .topTitleBox h1 {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 20px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_headline_icon.png) left center no-repeat, url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_headline_icon.png) right center no-repeat;
+  background-size: 15px auto, 15px auto;
+}
+.topMain .secPanel .photo img {
+  border-radius: 20px;
+}
+.topMain .secPanel .secTtl {
+  margin: 0 0 20px;
+}
+.topMain .secPanel .secTtl p {
+  margin: 0 0 5px;
+}
+.topMain .secPanel .secTtl h2 {
+  font-size: 26px;
+}
+.topMain .secPanel .txt {
+  line-height: 2;
+}
+.topMain .secPanel .btnMoreBox {
+  margin: 30px 0 0;
+  text-align: right;
+}
+.topMain .secContainer01 {
+  margin: 0 0 100px;
+}
+.topMain .secContainer01 .titlePanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #91c3e0;
+}
+.topMain .secContainer01 .titlePanel .title01 {
+  margin: 0 0 100px;
+  font-size: 16px;
+}
+.topMain .secContainer01 .titlePanel .title02 {
+  font-size: 26px;
+}
+.topMain .secContainer01 .secPanel {
+  position: relative;
+  border-radius: 20px;
+}
+@media (min-width: 1025px) {
+  .topMain .secContainer01 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .secContainer01 .titlePanel {
+    width: 31%;
+  }
+  .topMain .secContainer01 .secPanel {
+    width: 65%;
+  }
+  .topMain .secContainer01 .secPanel .txtArea {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .topMain .secContainer01 .secPanel .txtArea .txtBox {
+    padding: 40px 30px 30px 40px;
+    border-radius: 20px 0 0 0;
+    background: #ffffff;
+  }
+}
+.topMain .secContainer02 {
+  margin: 0 0 100px;
+}
+.topMain .secContainer02 .secPanel {
+  position: relative;
+  border-radius: 20px;
+}
+@media (min-width: 1025px) {
+  .topMain .secContainer02 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .secContainer02 > * {
+    width: 48%;
+  }
+  .topMain .secContainer02 .secPanel .txtArea .txtBox {
+    padding: 40px 30px 30px 40px;
+    background: #ffffff;
+  }
+  .topMain .secContainer02 .sec02 .txtArea {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .topMain .secContainer02 .sec02 .txtArea .txtBox {
+    border-radius: 0 20px 0 0;
+  }
+  .topMain .secContainer02 .sec03 .txtArea {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .topMain .secContainer02 .sec03 .txtArea .txtBox {
+    border-radius: 20px 0 0 0;
+  }
+}
+.topMain .secContainer03 {
+  margin: 0 0 100px;
+}
+.topMain .secContainer03 .secPanel {
+  position: relative;
+  border-radius: 20px;
+}
+@media (min-width: 1025px) {
+  .topMain .secContainer03 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .secContainer03 > * {
+    width: 48%;
+  }
+  .topMain .secContainer03 .secPanel .txtArea {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .topMain .secContainer03 .secPanel .txtArea .txtBox {
+    padding: 40px 30px 30px 40px;
+    border-radius: 20px 0 0 0;
+    background: #ffffff;
+  }
+  .topMain .secContainer03 .sec06 {
+    margin: 50px 0 0;
+  }
+}
+.topMain .sec07 {
+  padding: 150px 0;
+}
+.topMain .sec07 .secPanel .txtBox .btnMoreBox {
+  text-align: left;
+}
+.topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item {
+  padding: 25px 20px 25px 0;
+  border-bottom: 1px solid #ededed;
+}
+.topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item .dl .dt .time {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item .dl .dt .cate {
+  display: inline-block;
+  min-width: 80px;
+  padding: 2px 5px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+}
+.topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item .dl .dd a {
+  display: block;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_news_arrow.png) right 5px center no-repeat;
+}
+@media (min-width: 1025px) {
+  .topMain .sec07 .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec07 .secPanel .txtBox {
+    width: 30%;
+  }
+  .topMain .sec07 .secPanel .newsBox {
+    width: 70%;
+  }
+  .topMain .sec07 .secPanel .newsBox .webgene-blog {
+    max-width: 800px;
+    width: 100%;
+  }
+  .topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item .dl {
+    display: flex;
+  }
+  .topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item .dt {
+    min-width: 190px;
+    margin: 0 20px 0 0;
+  }
+  .topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item .dd {
+    width: calc(100% - 210px);
+  }
+  .topMain .sec07 .secPanel .newsBox .webgene-blog .webgene-item .dd a:hover {
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_news_arrow.png) right center no-repeat;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain .pageKvPanel {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/about_kv.png) no-repeat;
+  background-size: cover;
+}
+.aboutMain .sec01 {
+  padding: 80px 0;
+  text-align: center;
+}
+.aboutMain .sec02 {
+  margin: 0 0 200px;
+}
+.aboutMain .sec02 .secContainer {
+  padding: 50px 20px 100px;
+  color: #ffffff;
+  border-radius: 20px;
+  background: #91c3e0;
+}
+.aboutMain .sec02 .listBox {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.aboutMain .sec02 .listBox .ol .num {
+  padding: 0 20px;
+  font-size: 90px;
+  line-height: 1;
+}
+.aboutMain .sec02 .listBox .ol .photo {
+  margin: -20px 0 0;
+}
+.aboutMain .sec02 .listBox .ol .photo img {
+  border-radius: 20px;
+}
+.aboutMain .sec02 .listBox .ol .dl {
+  padding: 20px 0 0;
+}
+.aboutMain .sec02 .listBox .ol .dl .dt {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.aboutMain .sec02 .listBox .ol .dl .dt p {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 10px 15px;
+  font-size: 26px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/about_sec02_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.aboutMain .sec02 .listBox .ol .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec02 .listBox .ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutMain .sec02 .listBox .ol .li {
+    width: calc(33.3333333333% - 30px);
+  }
+  .aboutMain .sec02 .listBox .ol .photo {
+    position: relative;
+    height: 320px;
+  }
+  .aboutMain .sec02 .listBox .ol .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.aboutMain .sec03 {
+  margin: 0 0 200px;
+}
+.aboutMain .sec03 .secContainer .txtBox .pageSecTitle {
+  text-align: left;
+}
+.aboutMain .sec03 .secContainer .iconBox .iconList {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.aboutMain .sec03 .secContainer .iconBox .iconList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px 0 0 -40px;
+}
+.aboutMain .sec03 .secContainer .iconBox .iconList .ul .li {
+  width: calc(33.3333333333% - 40px);
+  margin: 40px 0 0 40px;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec03 .secContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .aboutMain .sec03 .secContainer .txtBox {
+    width: 50%;
+  }
+  .aboutMain .sec03 .secContainer .txtBox .txt {
+    max-width: 650px;
+  }
+  .aboutMain .sec03 .secContainer .iconBox {
+    width: 48%;
+  }
+}
+.aboutMain .sec04 {
+  padding: 0 0 200px;
+}
+.aboutMain .sec04 .secContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+.aboutMain .sec04 .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.aboutMain .sec04 .secPanel .photo img {
+  border-radius: 20px;
+}
+.aboutMain .sec04 .secPanel .txtBox .ttl {
+  max-width: 300px;
+  margin: 0 auto 30px;
+  padding: 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/about_sec04_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.aboutMain .sec04 .secPanel .txtBox .btnMoreBox {
+  margin: 30px 0 0;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .aboutMain .sec04 .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aboutMain .sec04 .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 490px;
+  }
+  .aboutMain .sec04 .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .aboutMain .sec04 .secPanel .txtBox {
+    width: 50%;
+  }
+  .aboutMain .sec04 .secPanel .txtBox .inner {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  .aboutMain .sec04 .secPanel:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	nursing
+///////////////////////////////////////////////////////////*/
+.nursingMain .pageKvPanel {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/nursing_kv.png) no-repeat;
+  background-size: cover;
+}
+.nursingMain .sec01 {
+  padding: 80px 0;
+  text-align: center;
+}
+.nursingMain .sec02 {
+  margin: 0 0 200px;
+}
+.nursingMain .sec02 .secContainer {
+  padding: 50px 20px 100px;
+  color: #ffffff;
+  border-radius: 20px;
+  background: #91c3e0;
+}
+.nursingMain .sec02 .listBox {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.nursingMain .sec02 .listBox .ol .num {
+  padding: 0 20px;
+  font-size: 90px;
+  line-height: 1;
+}
+.nursingMain .sec02 .listBox .ol .photo {
+  margin: -20px 0 0;
+}
+.nursingMain .sec02 .listBox .ol .photo img {
+  border-radius: 20px;
+}
+.nursingMain .sec02 .listBox .ol .dl {
+  padding: 20px 0 0;
+}
+.nursingMain .sec02 .listBox .ol .dl .dt {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.nursingMain .sec02 .listBox .ol .dl .dt p {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 10px 15px;
+  font-size: 26px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/nursing_sec02_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .sec02 .listBox .ol .dl .dd {
+  line-height: 2;
+}
+.nursingMain .sec02 .listBox .ol .example {
+  margin: 30px 0 0;
+}
+.nursingMain .sec02 .listBox .ol .example .ttl {
+  display: inline-block;
+  padding: 2px 15px;
+  border-radius: 20px;
+  background: #7eb2d0;
+}
+.nursingMain .sec02 .listBox .ol .example .ul {
+  padding: 10px 0 0;
+}
+.nursingMain .sec02 .listBox .ol .example .ul .li {
+  display: inline-block;
+  min-width: 70px;
+  margin: 8px 3px 0 0;
+  padding: 7px 15px;
+  color: #91c3e0;
+  text-align: center;
+  border-radius: 20px;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .nursingMain .sec02 .listBox .ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .nursingMain .sec02 .listBox .ol > .li {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.3333333333% - 30px);
+  }
+  .nursingMain .sec02 .listBox .ol .photo {
+    position: relative;
+    height: 320px;
+  }
+  .nursingMain .sec02 .listBox .ol .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .nursingMain .sec02 .listBox .ol .dl .dd {
+    min-height: 90px;
+  }
+}
+.nursingMain .sec03 {
+  margin: 0 0 200px;
+}
+.nursingMain .sec03 .secContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.nursingMain .sec03 .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.nursingMain .sec03 .secPanel .photo img {
+  border-radius: 20px;
+}
+.nursingMain .sec03 .secPanel .txtBox .num {
+  margin: 0 0 20px;
+  font-size: 70px;
+  color: #e0ecf3;
+  text-align: center;
+  line-height: 1;
+}
+.nursingMain .sec03 .secPanel .txtBox .ttl {
+  max-width: 360px;
+  margin: 0 auto 30px;
+  padding: 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/nursing_sec03_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+@media (min-width: 1025px) {
+  .nursingMain .sec03 .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nursingMain .sec03 .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 490px;
+  }
+  .nursingMain .sec03 .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .nursingMain .sec03 .secPanel .txtBox {
+    width: 50%;
+  }
+  .nursingMain .sec03 .secPanel .txtBox .inner {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  .nursingMain .sec03 .secPanel:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.nursingMain .mv {
+  max-width: 1560px;
+  margin: 0 auto 200px;
+}
+.nursingMain .sec04 {
+  margin: 0 0 200px;
+}
+.nursingMain .sec04 .section {
+  padding: 50px 20px;
+  border-radius: 20px;
+  background: #ecf1f4;
+}
+.nursingMain .sec04 .section + .section {
+  margin: 30px 0 0;
+}
+.nursingMain .sec04 .section .wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.nursingMain .sec04 .section h3 {
+  margin: 0 0 40px;
+  font-size: 26px;
+}
+.nursingMain .sec04 .section .targetBox .dl {
+  line-height: 2;
+}
+.nursingMain .sec04 .section .targetBox .dl + .dl {
+  margin: 40px 0 0;
+}
+@media (min-width: 1025px) {
+  .nursingMain .sec04 .section .targetBox .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nursingMain .sec04 .section .targetBox .dl .dt {
+    width: 110px;
+  }
+  .nursingMain .sec04 .section .targetBox .dl .dd {
+    width: calc(100% - 200px);
+  }
+}
+.nursingMain .sec04 .section .targetBox .indent1 {
+  padding: 0 0 0 1em;
+}
+.nursingMain .sec04 .section .targetBox .indent2 {
+  padding: 0 0 0 2em;
+}
+.nursingMain .sec04 .section .priceContainer {
+  margin: 60px 0 0;
+}
+.nursingMain .sec04 .section .priceContainer .tblTtl {
+  margin: 0 0 20px;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox {
+  text-align: center;
+  border: 1px solid #b1b1b1;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox .ttlBox {
+  color: #ffffff;
+  background: #5d6c75;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox .ttlBox p + p {
+  margin: 1em 0 0;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox .listBox .ul .li {
+  display: table;
+  width: 100%;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox .listBox .ul .li > * {
+  display: table-cell;
+  width: 50%;
+  padding: 15px 10px;
+  vertical-align: middle;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox .listBox .ul .li .time {
+  color: #ffffff;
+  background: #5d6c75;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox .listBox .ul .li .price {
+  background: #ffffff;
+}
+.nursingMain .sec04 .section .priceContainer .tblBox + .txt {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+@media (min-width: 1025px) {
+  .nursingMain .sec04 .section .priceContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nursingMain .sec04 .section .priceContainer .leftBox {
+    width: 870px;
+  }
+  .nursingMain .sec04 .section .priceContainer .rightBox {
+    width: 300px;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblBox {
+    display: table;
+    width: 100%;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblBox .ttlBox {
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #7e8b93;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblBox .listBox {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblBox01 .ttlBox {
+    width: 120px;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblBox02 .ttlBox {
+    width: 180px;
+    padding: 20px;
+    text-align: left;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblBox02 .listBox .ul .li > * {
+    padding: 10px;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblPanel .tblBox {
+    width: 48%;
+  }
+}
+@media (max-width: 1390px) {
+  .nursingMain .sec04 .section .priceContainer {
+    display: block;
+  }
+  .nursingMain .sec04 .section .priceContainer .rightBox {
+    margin: 40px 0 0;
+  }
+}
+@media (max-width: 1085px) {
+  .nursingMain .sec04 .section .priceContainer .tblPanel {
+    display: block;
+  }
+  .nursingMain .sec04 .section .priceContainer .tblPanel .tblBox + .tblBox {
+    margin: 40px 0 0;
+  }
+}
+.nursingMain .sec05 {
+  padding: 0 0 200px;
+}
+.nursingMain .sec05 .secBox {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+.nursingMain .sec05 .secBox .photo img {
+  border-radius: 20px;
+}
+.nursingMain .sec05 .secBox .txtBox h3 {
+  max-width: 320px;
+  margin: 0 auto 30px;
+  padding: 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/nursing_sec03_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .sec05 .secBox .txtBox .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.nursingMain .sec05 .secBox .txtBox .infoBox .dl + .dl {
+  margin: 30px 0 0;
+}
+.nursingMain .sec05 .secBox .txtBox .infoBox .dl .dt {
+  width: 120px;
+}
+.nursingMain .sec05 .secBox .txtBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .nursingMain .sec05 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nursingMain .sec05 .secBox .photo {
+    width: 50%;
+  }
+  .nursingMain .sec05 .secBox .txtBox {
+    width: 45%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	marine
+///////////////////////////////////////////////////////////*/
+.marineMain .pageKvPanel {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/marine_kv.png) no-repeat;
+  background-size: cover;
+}
+.marineMain .sec01 {
+  padding: 80px 0;
+  text-align: center;
+}
+.marineMain .sec02 {
+  margin: 0 0 200px;
+}
+.marineMain .sec02 .secContainer {
+  padding: 50px 20px 100px;
+  color: #ffffff;
+  border-radius: 20px;
+  background: #91c3e0;
+}
+.marineMain .sec02 .listBox {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.marineMain .sec02 .listBox .ol .num {
+  padding: 0 20px;
+  font-size: 90px;
+  line-height: 1;
+}
+.marineMain .sec02 .listBox .ol .photo {
+  margin: -20px 0 0;
+}
+.marineMain .sec02 .listBox .ol .photo img {
+  border-radius: 20px;
+}
+.marineMain .sec02 .listBox .ol .dl {
+  padding: 20px 0 0;
+}
+.marineMain .sec02 .listBox .ol .dl .dt {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.marineMain .sec02 .listBox .ol .dl .dt p {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 10px 15px;
+  font-size: 26px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/marine_sec02_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.marineMain .sec02 .listBox .ol .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .marineMain .sec02 .listBox .ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .marineMain .sec02 .listBox .ol > .li {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.3333333333% - 30px);
+  }
+  .marineMain .sec02 .listBox .ol .photo {
+    position: relative;
+    height: 320px;
+  }
+  .marineMain .sec02 .listBox .ol .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .marineMain .sec02 .listBox .ol .dl .dd {
+    min-height: 90px;
+  }
+}
+.marineMain .sec03 {
+  margin: 0 0 200px;
+}
+.marineMain .sec03 .pageSecTitle {
+  margin: 0 0 80px;
+}
+.marineMain .sec03 .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.marineMain .sec03 .secContainer + .secContainer {
+  margin: 150px auto 0;
+}
+.marineMain .sec03 .secContainer.multi {
+  max-width: 1000px;
+}
+@media (min-width: 1025px) {
+  .marineMain .sec03 .secContainer.multi {
+    display: flex;
+    justify-content: space-between;
+  }
+  .marineMain .sec03 .secContainer.multi > * {
+    width: 50%;
+  }
+}
+.marineMain .sec03 .secContainer h3 {
+  max-width: 280px;
+  margin: 0 auto 30px;
+  padding: 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/marine_sec03_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.marineMain .sec03 .secContainer h3 + .txt {
+  margin: 0 0 60px;
+}
+.marineMain .sec03 .secContainer img {
+  border-radius: 20px;
+}
+.marineMain .sec03 .secContainer .listBox p {
+  margin: 10px 0 0;
+  font-size: 22px;
+}
+@media (min-width: 1025px) {
+  .marineMain .sec03 .secContainer .listBox01 .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -50px 0 0;
+  }
+  .marineMain .sec03 .secContainer .listBox01 .ul .li {
+    width: calc(33.3333333333% - 30px);
+    margin: 50px 0 0;
+  }
+}
+.marineMain .sec03 .secContainer .photoBox {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.marineMain .sec03 .secContainer .photoBox p {
+  margin: 10px 0 0;
+  font-size: 22px;
+}
+.marineMain .sec04 {
+  padding: 0 0 200px;
+}
+.marineMain .sec04 .secBox {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+.marineMain .sec04 .secBox .photo img {
+  border-radius: 20px;
+}
+.marineMain .sec04 .secBox .txtBox h3 {
+  max-width: 320px;
+  margin: 0 auto 30px;
+  padding: 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/marine_sec03_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.marineMain .sec04 .secBox .txtBox .infoBox {
+  text-align: center;
+}
+.marineMain .sec04 .secBox .txtBox .infoBox .txt {
+  display: inline-block;
+  text-align: left;
+  line-height: 3;
+}
+.marineMain .sec04 .secBox .txtBox .infoBox .txt a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .marineMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .marineMain .sec04 .secBox .photo {
+    width: 50%;
+  }
+  .marineMain .sec04 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.marineMain .mapContainer {
+  padding: 0 0 200px;
+}
+.marineMain .mapContainer .mapBox {
+  border-radius: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .pageKvPanel {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_kv.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .topTitle {
+  padding: 90px 0;
+  text-align: center;
+}
+.recruitMain .topTitle p {
+  display: inline-block;
+  padding: 0 60px;
+  font-size: 34px;
+  color: #3697dc;
+  line-height: 1.2;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_top_slash_01.png) left bottom no-repeat, url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_top_slash_02.png) right bottom no-repeat;
+  background-size: 30px auto, 30px auto;
+}
+.recruitMain .sec01 {
+  margin: 0 0 200px;
+}
+.recruitMain .sec01 .secContainer .photoBox .photo {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.recruitMain .sec01 .secContainer .photoBox .photo img {
+  border-radius: 20px;
+}
+.recruitMain .sec01 .secContainer .txtBox {
+  text-align: left;
+}
+.recruitMain .sec01 .secContainer .txtBox .pageSecTitle {
+  text-align: left;
+}
+.recruitMain .sec01 .secContainer .txtBox .pageSecTitle p {
+  margin: 0 0 30px;
+}
+.recruitMain .sec01 .secContainer .txtBox .txt {
+  margin: 0 0 30px;
+}
+.recruitMain .sec01 .secContainer .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec01 .secContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec01 .secContainer .photoBox {
+    width: 40%;
+  }
+  .recruitMain .sec01 .secContainer .txtBox {
+    width: 57%;
+  }
+}
+.recruitMain .sec02 {
+  margin: 0 0 200px;
+}
+.recruitMain .sec02 .secContainer {
+  padding: 0 20px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #91c3e0;
+}
+.recruitMain .sec02 .secBox {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.recruitMain .sec02 .secBox .txtBox {
+  padding: 60px 0;
+}
+.recruitMain .sec02 .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .recruitMain .sec02 .secBox .photo {
+    position: relative;
+    top: 60px;
+    width: 40%;
+  }
+  .recruitMain .sec02 .secBox .txtBox {
+    width: 55%;
+  }
+}
+.recruitMain .sec03 {
+  margin: 0 0 200px;
+}
+.recruitMain .sec03 .listBox {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.recruitMain .sec03 .listBox .ul .li {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 20px;
+  background: #f0f4f7;
+}
+.recruitMain .sec03 .listBox .ul .dl .dt {
+  max-width: 330px;
+  margin: 0 auto 20px;
+  padding: 0 10px 20px;
+  font-size: 22px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_sec03_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.recruitMain .sec03 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -40px 0 0;
+  }
+  .recruitMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 25px);
+    margin: 40px 0 0;
+  }
+}
+.recruitMain .bnrContainer {
+  margin: 0 0 200px;
+}
+.recruitMain .bnrContainer .bnrPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  padding: 40px 20px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_bnr_bg.png) no-repeat;
+  background-size: cover;
+}
+.recruitMain .bnrContainer .bnrPanel .dl {
+  color: #ffffff;
+  text-align: center;
+}
+.recruitMain .bnrContainer .bnrPanel .dl .dt {
+  margin: 0 0 60px;
+  font-size: 26px;
+}
+.recruitMain .sec04 {
+  margin: 0 0 200px;
+}
+.recruitMain .sec04 .infoBox .dl {
+  display: flex;
+  padding: 20px 30px;
+  line-height: 2;
+  border-bottom: 1px solid #28252c;
+}
+.recruitMain .sec04 .infoBox .dl .dt {
+  width: 150px;
+  color: #3697dc;
+}
+.recruitMain .sec04 .infoBox .dl .dd {
+  width: calc(100% - 150px);
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec04 .infoBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .recruitMain .sec04 .infoBox .dl {
+    width: 49%;
+  }
+  .recruitMain .sec04 .infoBox .dl:nth-child(-n+2) {
+    border-top: 1px solid #28252c;
+  }
+}
+.recruitMain .sec05 {
+  padding: 0 0 200px;
+}
+.recruitMain .sec05 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	working
+///////////////////////////////////////////////////////////*/
+.workingMain .pageKvPanel {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/working_kv.png) no-repeat;
+  background-size: cover;
+}
+.workingMain .sec01 {
+  padding: 100px 0 200px;
+}
+.workingMain .sec01 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.workingMain .sec01 .secContainer {
+  padding: 60px 20px;
+  color: #ffffff;
+  border-radius: 20px;
+  background: #91c3e0;
+}
+.workingMain .sec01 .secContainer .secBox {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.workingMain .sec01 .secContainer .secBox .txtBox .dl + .dl {
+  margin: 40px 0 0;
+}
+.workingMain .sec01 .secContainer .secBox .txtBox .dl .dt {
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0 5px 15px;
+  font-size: 22px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/working_sec01_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.workingMain .sec01 .secContainer .secBox .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .workingMain .sec01 .secContainer .secBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .workingMain .sec01 .secContainer .secBox .photo {
+    width: 45%;
+  }
+  .workingMain .sec01 .secContainer .secBox .txtBox {
+    width: 50%;
+  }
+}
+.workingMain .sec02 {
+  margin: 0 0 200px;
+}
+.workingMain .sec02 .voicePanel {
+  padding: 40px 60px;
+  border-radius: 20px;
+  background: #f0f4f7;
+}
+.workingMain .sec02 .voicePanel + .voicePanel {
+  margin: 40px 0 0;
+}
+.workingMain .sec02 .voicePanel .photo {
+  position: relative;
+}
+.workingMain .sec02 .voicePanel .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.workingMain .sec02 .voicePanel .txtBox .dl .dt {
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0 5px 15px;
+  font-size: 22px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/working_sec02_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.workingMain .sec02 .voicePanel .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .workingMain .sec02 .voicePanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .workingMain .sec02 .voicePanel .photo {
+    width: 220px;
+    height: 220px;
+  }
+  .workingMain .sec02 .voicePanel .txtBox {
+    width: calc(100% - 300px);
+  }
+}
+.workingMain .sec03 {
+  margin: 0 0 200px;
+}
+.workingMain .sec03 .txt {
+  margin: 0 0 100px;
+  text-align: center;
+}
+.workingMain .sec03 .schedulePanel {
+  max-width: 1200px;
+  margin: 0 auto 200px;
+  color: #ffffff;
+  text-align: center;
+}
+.workingMain .sec03 .schedulePanel .ul {
+  border-radius: 10px;
+  border: 1px solid #70a1bd;
+  background: #91c3e0;
+}
+.workingMain .sec03 .schedulePanel .ul .li {
+  position: relative;
+  padding: 20px;
+}
+.workingMain .sec03 .schedulePanel .ul .li::before {
+  position: absolute;
+  top: -25px;
+  left: -15px;
+  color: #28252c;
+}
+.workingMain .sec03 .schedulePanel .ul .li:nth-child(1)::before {
+  content: "7:00";
+}
+.workingMain .sec03 .schedulePanel .ul .li:nth-child(2)::before {
+  content: "10:00";
+}
+.workingMain .sec03 .schedulePanel .ul .li:nth-child(3)::before {
+  content: "12:00";
+}
+.workingMain .sec03 .schedulePanel .ul .li:nth-child(4)::before {
+  content: "15:00";
+}
+.workingMain .sec03 .schedulePanel .ul .li:nth-child(5)::before {
+  content: "18:00";
+}
+.workingMain .sec03 .schedulePanel .ul .li:nth-child(6)::before {
+  content: "20:00";
+}
+.workingMain .sec03 .schedulePanel .ul .li:nth-child(7)::before {
+  content: "21:00";
+}
+@media (min-width: 1025px) {
+  .workingMain .sec03 .schedulePanel .ul {
+    display: table;
+    width: 100%;
+  }
+  .workingMain .sec03 .schedulePanel .ul .li {
+    display: table-cell;
+    height: 80px;
+    vertical-align: middle;
+  }
+  .workingMain .sec03 .schedulePanel .ul .li + .li {
+    border-left: 1px solid #70a1bd;
+  }
+  .workingMain .sec03 .schedulePanel .ul .li:nth-child(1) {
+    width: 30%;
+  }
+  .workingMain .sec03 .schedulePanel .ul .li:nth-child(6) {
+    width: 10%;
+  }
+  .workingMain .sec03 .schedulePanel .ul .li:nth-child(7) {
+    width: 10%;
+  }
+}
+.workingMain .sec03 .workplaceContainer {
+  padding: 100px 20px;
+  border-radius: 20px;
+  background: #f0f4f7;
+}
+.workingMain .sec03 .workplaceContainer .ttl {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.workingMain .sec03 .workplaceContainer .ttl p {
+  display: inline-block;
+  padding: 0 60px;
+  font-size: 34px;
+  color: #3697dc;
+  line-height: 1.2;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_top_slash_01.png) left bottom no-repeat, url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_top_slash_02.png) right bottom no-repeat;
+  background-size: 30px auto, 30px auto;
+}
+.workingMain .sec03 .workplaceContainer .secBox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.workingMain .sec03 .workplaceContainer .secBox .txtBox .dl .dt {
+  margin: 0 0 30px;
+  font-size: 26px;
+}
+.workingMain .sec03 .workplaceContainer .secBox .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .workingMain .sec03 .workplaceContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .workingMain .sec03 .workplaceContainer .secBox .photo {
+    width: 45%;
+  }
+  .workingMain .sec03 .workplaceContainer .secBox .txtBox {
+    width: 50%;
+  }
+}
+.workingMain .sec04 {
+  padding: 0 0 200px;
+}
+.workingMain .sec04 .secBox {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+.workingMain .sec04 .secBox .photo img {
+  border-radius: 20px;
+}
+.workingMain .sec04 .secBox .txtBox h3 {
+  max-width: 320px;
+  margin: 0 auto 30px;
+  padding: 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/working_sec04_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.workingMain .sec04 .secBox .txtBox .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.workingMain .sec04 .secBox .txtBox .infoBox .dl + .dl {
+  margin: 30px 0 0;
+}
+.workingMain .sec04 .secBox .txtBox .infoBox .dl .dt {
+  width: 120px;
+}
+.workingMain .sec04 .secBox .txtBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .workingMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .workingMain .sec04 .secBox .photo {
+    width: 50%;
+  }
+  .workingMain .sec04 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.workingMain .sec04 .listContainer {
+  margin: 200px 0 0;
+}
+.workingMain .sec04 .listContainer .ttl {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.workingMain .sec04 .listContainer .ttl p {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 60px;
+  font-size: 34px;
+  color: #3697dc;
+  line-height: 1.2;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_top_slash_01.png) left bottom no-repeat, url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/recruit_top_slash_02.png) right bottom no-repeat;
+  background-size: 30px auto, 30px auto;
+}
+.workingMain .sec04 .listContainer .btnMoreBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.workingMain .sec04 .listContainer .btnMoreBox .btnMore {
+  width: 210px;
+}
+.workingMain .sec04 .listContainer .listBox {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.workingMain .sec04 .listContainer .listBox .ul img {
+  border-radius: 20px;
+}
+@media (min-width: 1025px) {
+  .workingMain .sec04 .listContainer .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .workingMain .sec04 .listContainer .listBox .ul .li {
+    position: relative;
+    width: calc(33.3333333333% - 25px);
+    height: 395px;
+  }
+  .workingMain .sec04 .listContainer .listBox .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .pageKvPanel {
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/company_kv.png) no-repeat;
+  background-size: cover;
+}
+.companyMain .sec01 {
+  margin: 100px 0 200px;
+}
+.companyMain .sec01 .secContainer .photoBox .photo {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.companyMain .sec01 .secContainer .photoBox .photo img {
+  border-radius: 20px;
+}
+.companyMain .sec01 .secContainer .txtBox {
+  text-align: left;
+}
+.companyMain .sec01 .secContainer .txtBox .pageSecTitle {
+  text-align: left;
+}
+.companyMain .sec01 .secContainer .txtBox .pageSecTitle p {
+  margin: 0 0 30px;
+}
+.companyMain .sec01 .secContainer .txtBox .txt {
+  margin: 0 0 30px;
+}
+.companyMain .sec01 .secContainer .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .secContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .companyMain .sec01 .secContainer .photoBox {
+    width: 40%;
+  }
+  .companyMain .sec01 .secContainer .txtBox {
+    width: 57%;
+  }
+}
+.companyMain .sec02 {
+  margin: 0 0 200px;
+}
+.companyMain .sec02 .infoBox .dl {
+  display: flex;
+  padding: 20px 30px;
+  line-height: 2;
+  border-bottom: 1px solid #28252c;
+}
+.companyMain .sec02 .infoBox .dl .dt {
+  width: 150px;
+  color: #3697dc;
+}
+.companyMain .sec02 .infoBox .dl .dd {
+  width: calc(100% - 150px);
+}
+@media (min-width: 1025px) {
+  .companyMain .sec02 .infoBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .companyMain .sec02 .infoBox .dl {
+    width: 49%;
+  }
+  .companyMain .sec02 .infoBox .dl:nth-child(-n+2) {
+    border-top: 1px solid #28252c;
+  }
+}
+.companyMain .sec03 {
+  padding: 0 0 200px;
+}
+.companyMain .sec03 .secBox {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+.companyMain .sec03 .secBox .mapBox {
+  border-radius: 20px;
+}
+.companyMain .sec03 .secBox .txtBox h3 {
+  max-width: 320px;
+  margin: 0 auto 30px;
+  padding: 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/working_sec04_wave.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.companyMain .sec03 .secBox .txtBox .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.companyMain .sec03 .secBox .txtBox .infoBox .dl + .dl {
+  margin: 30px 0 0;
+}
+.companyMain .sec03 .secBox .txtBox .infoBox .dl .dt {
+  width: 120px;
+}
+.companyMain .sec03 .secBox .txtBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .companyMain .sec03 .secBox .mapBox {
+    width: 50%;
+  }
+  .companyMain .sec03 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.companyMain .sec03 .mv {
+  margin: 150px 0 0;
+}
+.companyMain .sec03 .mv img {
+  border-radius: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvContainer .pageKvPanel {
+  margin: 0 0 40px;
+  height: 200px;
+}
+.contactMain .sec01 {
+  margin: 0 0 150px;
+}
+.contactMain .sec01 .secContainer {
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 20px;
+  background: #f0f4f7;
+}
+.contactMain .sec01 .secContainer > .txt {
+  margin: 0 0 40px;
+}
+.contactMain .sec01 .secContainer .telBox {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.contactMain .sec01 .secContainer .telBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 36px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+}
+.contactMain .sec02 {
+  padding: 0 0 150px;
+}
+.contactMain .sec02 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #f0f4f7;
+  border-radius: 6px;
+  background: #f0f4f7;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #f0f4f7;
+  background: #f0f4f7;
+  resize: none;
+  box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px;
+  font-size: 14px;
+  color: #7eafcc;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #91c3e0;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) right 20px center no-repeat #f4f7f8;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm button[type=submit]:hover {
+    color: #ffffff;
+    border: 1px solid #91c3e0;
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 20px center no-repeat #91c3e0;
+  }
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e0e0e0;
+  background: #f6f6f6;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #3697dc;
+  border-right: 3px solid #3697dc;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: #f6f6f6;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #ea5404;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #707070;
+  background: #ffffff;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  padding: 20px 0 0;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 310px;
+  padding: 15px 0 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  border-radius: 4px;
+  background: #91c3e0;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 330px);
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  max-width: 1000px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 20px;
+  background: #f0f4f7;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMoreBox {
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .pageKvContainer .pageKvPanel {
+  margin: 0 0 40px;
+  height: 200px;
+}
+.newsMain .mainContainer {
+  margin: 0 0 120px;
+}
+.newsMain .blogSection {
+  padding: 60px 20px 120px;
+  border-radius: 20px;
+  background: #f0f4f7;
+}
+.newsMain .secWrap01 {
+  max-width: 1300px;
+}
+.newsMain .catePanel {
+  margin: 0 0 60px;
+}
+.newsMain .catePanel .categoryBox {
+  padding: 15px 50px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.newsMain .catePanel .webgene-header {
+  text-align: center;
+}
+.newsMain .catePanel .webgene-header > * {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 20px;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_headline_icon.png) left center no-repeat, url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/top_headline_icon.png) right center no-repeat;
+  background-size: 15px auto, 15px auto;
+}
+.newsMain .catePanel .webgene-item a {
+  display: inline-block;
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .newsMain .catePanel .webgene-blog {
+    display: flex;
+    align-items: center;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-header {
+    width: 160px;
+    margin: 0 100px 0 0;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 0 0 0 60px;
+  }
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item {
+  padding: 0 0 20px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  font-size: 15px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .photo {
+  margin: 0 0 20px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+  border-radius: 20px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .time {
+  margin: 0 15px 0 0;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  background: #ffffff;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .txtBox {
+  padding: 0 10px;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -50px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 50px);
+    margin: 60px 0 0 50px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 300px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  background: #d5dce1;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #3697dc;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.newsMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  background: #ffffff;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  vertical-align: middle;
+}
+.newsMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .thumb-item {
+  max-width: 800px;
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav {
+  max-width: 900px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.newsMain .btnBack {
+  width: 200px;
+  margin: 60px auto 0;
+}
+.newsMain .btnBack a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #7eafcc;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #91c3e0;
+  background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left 20px center no-repeat #f4f7f8;
+}
+@media (min-width: 1025px) {
+  .newsMain .btnBack a:hover {
+    opacity: 1;
+    color: #ffffff;
+    border: 1px solid #91c3e0;
+    background: url(https://lilulea230823.smooooth.jp/system_panel/uploads/images/btn_back_arrow_white.png) left 20px center no-repeat #91c3e0;
+  }
+}

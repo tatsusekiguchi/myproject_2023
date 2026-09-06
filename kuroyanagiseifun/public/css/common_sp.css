@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel .pageKvBox {
+    height: 250px;
+    padding: 60px 40px 0;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    max-width: 380px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    padding: 80px 0 0;
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center top no-repeat;
+    background-size: 150px auto;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 30px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0 100px;
+  }
+  .footer .footContact .topTxt {
+    margin: 0 0 40px;
+  }
+  .footer .footContact .contactList {
+    max-width: 500px;
+  }
+  .footer .footContact .contactList .contactItem {
+    padding: 20px;
+  }
+  .footer .footContact .contactList .contactItem + .contactItem {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .contactList .contactItem .dl .dt {
+    margin: 0 0 5px;
+    font-size: 22px;
+  }
+  .footer .footContact .contactList .contactItem .dl .tel a {
+    padding: 0 0 0 25px;
+    font-size: 30px;
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left bottom 2px no-repeat;
+    background-size: 20px auto;
+  }
+  .footer .footContact .contactList .contactItem .dl .mail {
+    padding: 0;
+  }
+  .footer .footPanel {
+    padding: 100px 0 30px;
+  }
+  .footer .footPanel .footPanelInner {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+  }
+  .footer .footPanel .footBox .logoBox {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .footBox .logoBox .logo {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .footer .footPanel .footBox .txt {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footPanel .footNav {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    margin: 50px 0 0;
+  }
+}

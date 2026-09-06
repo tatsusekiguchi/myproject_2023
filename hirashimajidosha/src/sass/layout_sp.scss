@@ -1,0 +1,961 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKv {
+        position: relative;
+        height: 80vh;
+        padding: 0 20px;
+        .kvBox {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .kv01 {
+            background: url(https://www.hiraban.jp/system_panel/uploads/images/top_kv_01.png)
+              center no-repeat;
+            background-size: cover;
+          }
+          .kv02 {
+            background: url(https://www.hiraban.jp/system_panel/uploads/images/top_kv_02.png)
+              center no-repeat;
+            background-size: cover;
+          }
+          .kv03 {
+            background: url(https://www.hiraban.jp/system_panel/uploads/images/top_kv_03.png)
+              center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      .kvContents {
+        height: 100%;
+        padding: 80px 0;
+        .kvContentsWrap {
+          width: 100%;
+        }
+        h1 {
+          max-width: 320px;
+          margin: 0 auto 20px;
+          font-size: 18px;
+        }
+        .title {
+          max-width: 400px;
+          margin: 0 auto 30px;
+        }
+        .txtList {
+          text-align: center;
+          .box {
+            + .box {
+              margin: 10px 0 0;
+            }
+            p {
+              max-width: 250px;
+              padding: 15px;
+              font-size: 14px;
+            }
+          }
+          .box02 {
+            left: 30px;
+          }
+        }
+      }
+    }
+    .topSection {
+      padding: 40px 0 60px;
+      .titlePanel {
+        display: block;
+        margin: 0 0 30px;
+        .img {
+          width: 100px;
+          margin: 0 auto 10px;
+        }
+        .titleBox {
+          width: 100%;
+          text-align: center;
+          .title {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .listContainer {
+      padding: 100px 0;
+      .listPanel {
+        + .listPanel {
+          margin: 100px 0 0;
+        }
+        .photo {
+          max-width: 600px;
+        }
+        .secBox {
+          .txtBox {
+            &::before {
+              top: 10px;
+              left: 10px;
+            }
+            .inner {
+              padding: 20px;
+            }
+            .ttlBox {
+              margin: 0 0 15px;
+              .num {
+                margin: 0 5px 0 0;
+                font-size: 30px;
+              }
+              .ttl {
+                font-size: 24px;
+              }
+            }
+            .txt {
+              padding: 0 0 20px;
+            }
+            .btnMore {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 100px 0;
+      .secPanel {
+        padding: 40px 10px;
+        .txt {
+          margin: 0 0 20px;
+        }
+        .listBox {
+          .ul {
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+              .photo {
+                margin: 0 0 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .secRecruit {
+      min-height: 0;
+      padding: 60px 0;
+      .secBox {
+        text-align: center;
+        .leftBox {
+          margin: 0 0 30px;
+          .title {
+            max-width: 250px;
+            margin: 0 auto 30px;
+          }
+          .btnMore {
+            margin: 0 auto;
+          }
+        }
+        .rightBox {
+          .title {
+            margin: 0 0 20px;
+            padding: 0 0 5px;
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .reasonMain {
+    .topSection {
+      padding: 60px 0;
+      .secPanel {
+        .photo {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+        .secBox {
+          padding: 0 10px;
+          .txtBox {
+            max-width: 400px;
+            margin: 0 auto;
+            &::before {
+              top: 10px;
+              left: 10px;
+            }
+            .inner {
+              padding: 30px 20px;
+            }
+            .titleBox {
+              .title {
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .txt {
+        max-width: 600px;
+        margin: 30px auto 0;
+      }
+    }
+    .sec01 {
+      padding: 80px 0 100px;
+      .secPanel {
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .mvBox {
+          .secWrap01 {
+            height: 200px;
+          }
+          .inner {
+            max-width: 270px;
+          }
+          .title {
+            top: 10px;
+            min-height: 55px;
+            padding: 10px;
+            font-size: 14px;
+          }
+        }
+        .txtBox {
+          margin: 30px 0 0;
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .topSection {
+      padding: 60px 0;
+      .titlePanel {
+        display: block;
+        margin: 0 0 30px;
+        .img {
+          width: 100px;
+          margin: 0 auto 10px;
+        }
+        .titleBox {
+          width: 100%;
+          text-align: center;
+          .title {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .serviceContainer {
+      padding: 80px 0;
+    }
+    .serviceSection {
+      + .serviceSection {
+        margin: 60px 0 0;
+      }
+    }
+    .servicePanel {
+      padding: 10px 0;
+      + .servicePanel {
+        margin: 30px 0 0;
+      }
+      .panelInner {
+        padding: 0 10px;
+      }
+      .mvBox {
+        margin: 0 0 30px;
+        .point {
+          position: absolute;
+          right: 10px;
+          bottom: -10px;
+          width: 100px;
+          p {
+            font-size: 13px;
+          }
+          .em {
+            font-size: 18px;
+          }
+        }
+      }
+      .mainBox {
+        h3 {
+          margin: 0 0 20px;
+          padding: 0 0 0 10px;
+          font-size: 18px;
+          border-left: 4px solid #002d72;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .slidePanel {
+      margin: 30px 0 0;
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 3);
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	paint
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .paintMain {
+    .servicePanel {
+      .listBox {
+        margin: 30px 0 0;
+        padding: 0 0 30px;
+        h4 {
+          max-width: 460px;
+          margin: 0 auto 20px;
+          font-size: 16px;
+        }
+        .list {
+          padding: 0 10px;
+          .ul {
+            .li {
+              padding: 10px;
+              + .li {
+                margin: 5px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	maintenance
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .maintenanceMain {
+    .servicePanel {
+      .listBox {
+        margin: 30px 0 0;
+        padding: 0 0 30px;
+        h4 {
+          max-width: 460px;
+          margin: 0 auto 20px;
+          font-size: 16px;
+        }
+        .list {
+          padding: 0 10px;
+          .ul {
+            .li {
+              padding: 10px;
+              + .li {
+                margin: 5px 0 0;
+              }
+            }
+          }
+          .dl {
+            display: block;
+            .dt {
+              width: 100%;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	other
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .otherMain {
+    .servicePanel {
+      .listBox {
+        margin: 30px 0 0;
+        .ul {
+          .dl {
+            .dt {
+              font-size: 18px;
+            }
+            .dd {
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .sec01 {
+      padding: 80px 0 50px;
+      .dl {
+        .dt {
+          margin: 0 0 15px;
+          font-size: 18px;
+        }
+      }
+      .name {
+        margin: 15px 0 0;
+        font-size: 18px;
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .listBox {
+        max-width: 680px;
+        .ul {
+          .li + .li {
+            margin: 30px 0 0;
+          }
+          .ttl {
+            min-height: 65px;
+            margin: 0 0 15px;
+            padding: 5px;
+            font-size: 18px;
+          }
+          .txt {
+            max-width: 400px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0 80px;
+      .secTtl {
+        max-width: 430px;
+        margin: 0 auto 20px;
+        font-size: 18px;
+      }
+      .secPanel {
+        &::before {
+          top: 10px;
+          left: 10px;
+        }
+        + .secPanel {
+          margin: 40px 0 0;
+        }
+        .secBox {
+          padding: 10px;
+          .photo {
+            max-width: 340px;
+            margin: 0 auto;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .dl {
+              .dt {
+                margin: 0 0 15px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 80px 0;
+      .secPanel {
+        padding: 20px 10px;
+      }
+      .infoBox {
+        max-width: 400px;
+        .dl {
+          display: block;
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+          }
+          .dd {
+            width: 100%;
+            padding: 10px;
+            border-bottom: none;
+          }
+          .ul {
+            display: block;
+            + .ul {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 60px 0;
+      .secPanelList {
+        .secPanel {
+          + .secPanel {
+            margin: 40px 0 0;
+          }
+          .txtBox {
+            min-height: 0;
+            margin: 0 0 15px;
+          }
+        }
+        .telPanel {
+          .ttl {
+            max-width: 300px;
+          }
+          .telBox {
+            padding: 20px 10px;
+            a {
+              margin: 0 0 5px;
+              padding: 0 0 0 25px;
+              font-size: 30px;
+              font-weight: bold;
+              color: #ffffff;
+              background: url(https://www.hiraban.jp/system_panel/uploads/images/recruit_sec05_tel.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+            > p {
+              font-size: 12px;
+            }
+          }
+        }
+        .linePanel {
+          .ttl {
+            max-width: 350px;
+          }
+          .lineBox {
+            padding: 20px 10px;
+            a {
+              display: block;
+              width: 90px;
+              margin: 0 auto 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      padding: 80px 0 50px;
+      .pageSecTitleBox {
+        + .txt {
+          padding: 0 0 20px;
+        }
+      }
+      .secPanel {
+        padding: 40px 0 0;
+        .secBox {
+          .photoBox {
+            .name {
+              margin: 10px 0 0;
+              .em {
+                margin: 0 0 0 15px;
+                font-size: 18px;
+              }
+            }
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .txt {
+              line-height: 2;
+              p + p {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .secBox {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            .photoBox {
+              width: 45%;
+            }
+            .txtBox {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .secPanel {
+        padding: 20px 10px;
+      }
+      .infoBox {
+        max-width: 400px;
+        .dl {
+          display: block;
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+          }
+          .dd {
+            width: 100%;
+            padding: 10px;
+            border-bottom: none;
+          }
+          .ul {
+            display: block;
+            + .ul {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topSection {
+      padding: 80px 0 50px;
+      .secPanel {
+        .secBox {
+          position: static;
+          width: 100%;
+          max-width: 700px;
+          padding: 20px;
+          .list {
+            margin: 0 0 20px;
+            .ul {
+              .li {
+                padding: 0 15px 15px;
+                border-bottom: 1px solid #303030;
+                + .li {
+                  margin: 15px 0 0;
+                }
+                p {
+                  padding: 0 0 0 30px;
+                  background: url(https://www.hiraban.jp/system_panel/uploads/images/contact_top_check.png)
+                    left center no-repeat;
+                  background-size: 20px auto;
+                }
+              }
+            }
+          }
+          .ttl {
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .telContainer {
+      padding: 50px 0;
+      .secBox {
+        display: block;
+        .img {
+          width: 200px;
+          margin: 0 auto 10px;
+        }
+        .dl {
+          width: 100%;
+          text-align: center;
+          .dt {
+            margin: 0 0 15px;
+            p {
+              font-size: 20px;
+            }
+          }
+          .dd {
+            a {
+              font-size: 30px;
+            }
+            > p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .formSection {
+      padding: 80px 0 120px;
+      .secPanel {
+        padding: 30px 10px 60px;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            padding: 10px 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+
+            + .dl {
+              padding: 20px 10px 10px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            margin: 0 0 5px;
+            padding: 0 0 5px;
+
+            .em {
+              font-size: 12px;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+        .checkList {
+          .ul {
+            .li {
+              width: 100%;
+            }
+          }
+        }
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 70px;
+        }
+
+        .ageInput {
+          display: block;
+          input {
+            width: 70px;
+          }
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+
+      .fileUploadBox {
+        display: block;
+        .fileArea {
+          display: block;
+
+          .inputFile {
+            width: 260px;
+          }
+
+          > p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .complete {
+    padding: 100px 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain {
+    .blogSection {
+      padding: 80px 0;
+    }
+    .catePanel {
+      max-width: 400px;
+      margin: 0 auto 40px;
+      .webgene-item {
+        + .webgene-item {
+          margin: 10px 0 0;
+        }
+      }
+    }
+    .blogPanel {
+      padding: 30px 10px;
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 60px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+          .thumb-item {
+            &.slider {
+              .li {
+                > div {
+                  overflow: hidden;
+                  position: relative;
+                  padding: 0 0 100%;
+                }
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+        .btnBackBox {
+          margin: 50px 0 0;
+        }
+        .btnBack {
+          width: 180px;
+        }
+      }
+    }
+  }
+}

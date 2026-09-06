@@ -1,0 +1,1264 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvPanel {
+    // height: calc(100vh - 180px);
+    // height: -webkit-fill-available;
+    // height: calc(100dvh - 60px);
+    height: calc(100vh - 50px);
+    height: 100svh;
+    padding: 73px 0 60px;
+    .kvWrap {
+      position: relative;
+      display: block;
+    }
+    .kvSlider {
+      width: calc(100% - 40px);
+      .slider {
+        margin: 0;
+      }
+      .slick-list {
+        overflow: hidden;
+      }
+      .kv {
+        overflow: hidden;
+        // height: calc(100vh - 540px);
+        height: 45vh;
+        border-radius: 0 0 50px 0;
+        img {
+          position: static;
+          height: auto;
+          border-radius: 0 0 50px 0;
+        }
+      }
+      .slide_target {
+        pointer-events: none;
+      }
+    }
+    .slideImages {
+      width: calc(100% - 40px);
+      &__container {
+        height: 45vh;
+        height: 45svh;
+      }
+      &__image {
+        img {
+          border-radius: 0 0 50px 0;
+        }
+        &--pc {
+          display: none;
+        }
+        &--sp {
+          display: block;
+        }
+      }
+    }
+    .pager {
+      right: -22px;
+      bottom: 35px;
+      &__dot {
+        display: block;
+        width: 6px;
+        height: 6px;
+        border: 1px solid #7d7c2c;
+        &.current {
+          background: #7d7c2c;
+        }
+        + * {
+          margin: 10px 0 0;
+        }
+      }
+    }
+    .kvFixed {
+      display: none;
+    }
+    .spKvTitle {
+      position: absolute;
+      left: 30px;
+      bottom: 10px;
+      display: block;
+      font-family: $poppins;
+      font-size: 20px;
+      color: #ffffff;
+      z-index: 3;
+      letter-spacing: 0.1em;
+    }
+    .kvTitleBox {
+      display: none;
+      position: absolute;
+      left: 30px;
+      right: auto;
+      bottom: 30px;
+      z-index: 1;
+      h1 {
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        line-height: 1.7;
+      }
+      p {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+      }
+    }
+    .kvContainer {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      // align-items: flex-end;
+      // height: 265px;
+      height: 28vh;
+      height: 28svh;
+      margin: 35px 0 0;
+      padding: 0 0 0 40px;
+    }
+    .kvScrollBox {
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40px;
+      height: 220px;
+      // height: auto;
+      padding: 10px;
+      z-index: 1;
+      // background: #fdfdfd;
+      p {
+        display: none;
+        padding: 0 0 55px;
+        font-size: 10px;
+        color: #7d7c2c;
+        letter-spacing: 0.1em;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 1px;
+          height: 50px;
+          margin: 0 auto;
+          background: #7d7c2c;
+        }
+      }
+      img {
+        display: inline-block;
+        max-width: 10px;
+      }
+    }
+    .kvSub {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      // width: calc(100% - 40px);
+      width: 100%;
+      height: 100%;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px 0 0 0;
+        object-fit: cover;
+      }
+    }
+    .kvInsta {
+      position: absolute;
+      top: -55px;
+      right: 12px;
+      display: block;
+      width: 17px;
+      z-index: 99;
+      a {
+        display: block;
+      }
+    }
+  }
+  .topNavigation {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+    font-family: $roboto;
+    ol {
+      text-align: left;
+      + ol {
+        margin: 0;
+      }
+      li {
+        display: block;
+        + li {
+          margin: 15px 0 0;
+        }
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  #section {
+    &__concept {
+      margin: 0 0 70px;
+      padding: 0;
+      .secBox {
+        padding: 50px 30px;
+        .logo {
+          width: 126px;
+          margin: 0 auto 40px;
+        }
+        .txtBox {
+          .secTitleBox {
+            margin: 0 0 15px;
+          }
+          .txt {
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+      .photo {
+        &--pc {
+          display: none;
+        }
+      }
+    }
+    &__message {
+      padding: 0 30px 70px;
+      .secBox {
+        .photo {
+          max-width: 600px;
+          margin: 0 auto 40px;
+        }
+        .txtBox {
+          max-width: 600px;
+          margin: 0 auto;
+          color: #7d7c2c;
+          .secTitleBox {
+            margin: 0 0 20px;
+          }
+          .txt {
+            margin: 0 0 30px;
+          }
+          .chart {
+            max-width: 237px;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    &__curriculum {
+      padding: 60px 0 0;
+      &::before {
+        width: 1200px;
+        height: 300px;
+      }
+      @media (max-width: 400px) {
+        &::before {
+          width: 480px;
+          height: 200px;
+        }
+      }
+      &::after {
+        display: none;
+      }
+      .topContainer {
+        width: 180vw;
+        margin: 0 auto;
+        &__inner {
+          padding: 0 40px;
+        }
+        .secTitleBox {
+          margin: 0 0 40px;
+
+          p {
+            margin: 0 0 5px;
+          }
+        }
+        .secBox {
+          .chart {
+            max-width: 270px;
+            margin: 0 auto 40px;
+          }
+          .txtBox {
+            max-width: 300px;
+            margin: 0 auto;
+            h3 {
+              margin: 0 0 15px;
+              padding: 0 10px;
+              font-size: 18px;
+              letter-spacing: 0.08em;
+            }
+            .txt {
+              padding: 0 10px;
+            }
+          }
+          .stepBox {
+            margin: 50px 0 0;
+            dl {
+              padding: 25px 0;
+              border-top: 1px solid #7d7c2c;
+              dt {
+                em {
+                  font-size: 18px;
+                }
+              }
+              dd {
+                font-size: 12px;
+              }
+              &:nth-child(1) {
+                dt {
+                  width: 75px;
+                }
+                dd {
+                  width: 230px;
+                }
+              }
+              &:nth-child(2) {
+                dt {
+                  width: 100px;
+                }
+                dd {
+                  width: 195px;
+                }
+              }
+              &:nth-child(3) {
+                border-bottom: 1px solid #7d7c2c;
+                dt {
+                  width: 100px;
+                }
+                dd {
+                  width: 195px;
+                }
+              }
+            }
+          }
+        }
+        .curriculumPanel {
+          max-width: 460px;
+          margin: 60px auto;
+          .curriculumTable {
+            overflow: scroll;
+            width: 100%;
+            margin: 0 auto;
+            table {
+              width: 460px;
+              thead {
+                th {
+                  height: 50px;
+                  font-size: 13px;
+                  letter-spacing: 0.1em;
+                  border-left: 2px solid #faf8ef;
+                }
+              }
+              tbody {
+                th {
+                  width: 120px;
+                  height: 50px;
+                  padding: 0 5px;
+                  .num {
+                    min-width: 20px;
+                    margin: 0 3px 0 0;
+                    font-size: 20px;
+                  }
+                  .month {
+                    span {
+                      margin: 0 5px 0 0;
+                      font-size: 10px;
+                    }
+                    em {
+                      position: relative;
+                      top: -5px;
+                      font-size: 8px;
+                    }
+                  }
+                }
+                td {
+                  width: 170px;
+                  font-size: 13px;
+                  letter-spacing: 0;
+                  border-left: 2px solid #faf8ef;
+                }
+              }
+            }
+          }
+        }
+        .technicalCheckPanel {
+          padding: 0 0 60px;
+          .secTitleBox {
+            margin: 0 0 30px;
+          }
+          .topTxt {
+            margin: 0 auto 60px;
+            padding: 0 10px;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+          }
+          .stepBoxList {
+            margin: 0 0 70px;
+            .stepBox {
+              position: relative;
+              &:after {
+                content: "";
+                position: absolute;
+                left: 20px;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: #7d7c2c;
+              }
+              &:last-child {
+                &:after {
+                  display: none;
+                }
+              }
+              .ttlBox {
+                position: relative;
+                z-index: 1;
+                .ttl {
+                  width: 125px;
+                  padding: 7px;
+                  font-size: 13px;
+                }
+              }
+              .txtBox {
+                padding: 15px 0 20px 40px;
+                letter-spacing: 0;
+              }
+            }
+          }
+          .ownerPanel {
+            padding: 30px;
+            border-radius: 18px;
+            .photoBox {
+              margin: 0 0 20px;
+              .photo {
+                width: 135px;
+                margin: 0 auto;
+              }
+              .name {
+                span {
+                  margin: 0 10px 0 0;
+                  font-size: 12px;
+                }
+                em {
+                  font-size: 16px;
+                }
+              }
+            }
+            .txtBox {
+              .ttl {
+                display: none;
+              }
+              .txt {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+      .modelCutContainer {
+        background: none;
+        .modelCutPanel {
+          .txtBox {
+            padding: 50px 30px 120px;
+            background: url("../image/top/curriculum_model_cut_bg_sp.png")
+              center bottom no-repeat;
+            background-size: cover;
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 12px;
+            }
+            dl {
+              dt {
+                margin: 0 0 20px;
+                font-size: 18px;
+                letter-spacing: 0.08em;
+              }
+              dd {
+                font-size: 12px;
+                letter-spacing: 0.05em;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__work {
+      margin: -60px 0 0;
+      .mvPanel {
+        .secTitleBox {
+          top: 35%;
+          right: 30px;
+          p {
+            font-size: 11px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+        }
+        .mv {
+          height: 250px;
+        }
+      }
+      .listContainer {
+        .listPanel {
+          .txtArea {
+            padding: 40px 30px;
+            .titleLabel {
+              position: absolute;
+              bottom: -60px;
+              width: 60px;
+              padding: 0 15px 15px;
+              z-index: 1;
+              border-radius: 0 0 0 20px;
+              background: #fdfdfd;
+              .ttl {
+                position: relative;
+                min-height: 0;
+                padding: 0 0 80px;
+                font-size: 10px;
+                letter-spacing: 0.15em;
+                writing-mode: vertical-rl;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  bottom: 10px;
+                  width: 1px;
+                  height: 60px;
+                  margin: 0 auto;
+                  background: #7d7c2c;
+                }
+              }
+              .num {
+                font-size: 30px;
+              }
+            }
+            .inner {
+              padding: 0 25px 0 0;
+            }
+            h3 {
+              margin: 0 0 20px;
+              font-size: 16px;
+            }
+            .txt {
+              position: relative;
+              z-index: 2;
+            }
+          }
+          .photoArea {
+            overflow: hidden;
+            position: relative;
+            height: 230px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          &:nth-child(odd) {
+            .titleLabel {
+              left: auto;
+              right: 0;
+            }
+          }
+          &:nth-child(even) {
+            .titleLabel {
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+    &__number {
+      padding: 30px 30px 50px;
+      .secTitleBox {
+        margin: 0 0 50px;
+        p {
+          margin: 0 0 5px;
+          font-size: 11px;
+          letter-spacing: 0.15em;
+        }
+        h2 {
+          font-size: 16px;
+          letter-spacing: 0.2em;
+        }
+      }
+      .numberList {
+        max-width: 315px;
+        ol {
+          margin: -20px 0 0 -25px;
+          li {
+            width: calc((100% / 2) - 25px);
+            margin: 20px 0 0 25px;
+          }
+        }
+        .listContainer {
+          position: static;
+          cursor: pointer;
+        }
+        .listPanel {
+          height: 185px;
+          padding: 20px 0 15px;
+          border-radius: 180px;
+          dl {
+            margin: 0 0 5px;
+            dt {
+              margin: 0 0 5px;
+              font-size: 13px;
+              letter-spacing: 0;
+            }
+            dd {
+              p {
+                em {
+                  font-size: 42px;
+                  line-height: 42px;
+                  &.day,
+                  &.insurance {
+                    font-size: 33px;
+                  }
+                }
+                span {
+                  font-size: 13px;
+                }
+                .vertical {
+                  margin: 5px 5px 0 0;
+                  font-size: 10px;
+                }
+                + p {
+                  margin: 5px 0 0;
+                }
+              }
+            }
+          }
+          .iconChair {
+            width: 30px;
+            margin: 0 auto;
+          }
+          .iconClock {
+            width: 40px;
+            margin: 0 auto;
+          }
+          .iconCut {
+            width: 22px;
+            margin: 0 auto;
+          }
+          .iconCamp {
+            width: 54px;
+            margin: 0 auto;
+          }
+          .iconHeart {
+            width: 50px;
+            margin: 0 auto;
+          }
+          .iconPlus {
+            width: 15px;
+          }
+        }
+        .activePanel {
+          width: 325px;
+          height: 566px;
+          padding: 60px 35px 50px;
+          dl {
+            dt {
+              margin: 0 0 10px;
+              padding: 0;
+              background: none;
+              span {
+                margin: 0 0 5px;
+                font-size: 11px;
+              }
+              em {
+                font-size: 20px;
+              }
+            }
+          }
+          .iconChair {
+            width: 79px;
+            margin: 0 auto;
+          }
+          .iconClock {
+            width: 99px;
+            margin: 10px auto 0;
+          }
+          .iconCut {
+            width: 60px;
+            margin: 0 auto;
+          }
+          .iconCamp {
+            width: 120px;
+            margin: 20px auto 0;
+          }
+          .iconHeart {
+            width: 110px;
+            margin: 10px auto 0;
+          }
+          .iconMinus {
+            width: 40px;
+          }
+          .spDisplay {
+            min-height: 140px;
+            margin: 0 0 20px;
+            padding: 0 0 30px;
+            background: url("../image/top/number_icon_arrow.png") center bottom
+              no-repeat;
+            background-size: 23px auto;
+            &--time {
+              text-align: center;
+              p {
+                em {
+                  display: inline-block;
+                  font-family: $poppins;
+                  // font-weight: 500;
+                  font-size: 64px;
+                  line-height: 64px;
+                  letter-spacing: 0.1em;
+                }
+                span {
+                  display: inline-block;
+                  font-family: $notoSans;
+                  // font-weight: 500;
+                  font-size: 19px;
+                  letter-spacing: 0.1em;
+                }
+                .vertical {
+                  margin: 5px 5px 0 0;
+                  font-size: 16px;
+                  font-weight: 400;
+                  vertical-align: top;
+                  writing-mode: vertical-rl;
+                }
+                + p {
+                  margin: 5px 0 0;
+                }
+              }
+            }
+          }
+          .backTxt {
+            margin: 5px 0 0;
+            font-family: $roboto;
+            letter-spacing: 0.1em;
+          }
+          &.numberItemModal {
+            opacity: 1;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        }
+      }
+    }
+    &__owner {
+      padding: 60px 30px 70px;
+      .secTitleBox {
+        margin: 0 0 20px;
+        p {
+          margin: 0 0 5px;
+          font-size: 11px;
+          letter-spacing: 0.15em;
+        }
+        h2 {
+          font-size: 16px;
+          letter-spacing: 0.2em;
+        }
+      }
+      .ownerContainer {
+        padding: 30px 20px;
+        .ownerPanel {
+          max-width: 350px;
+          .photo {
+            overflow: hidden;
+            position: relative;
+            height: 320px;
+            border-radius: 10px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: auto;
+              border-radius: 10px;
+            }
+          }
+          .txtBox {
+            .title {
+              margin: 0 0 20px;
+              font-size: 15px;
+              text-align: center;
+              letter-spacing: 0.08em;
+            }
+            .name {
+              position: relative;
+              width: 220px;
+              margin: -30px auto 15px;
+              padding: 10px 0 0;
+              text-align: center;
+              border-radius: 10px;
+              background: #f4efdb;
+              em {
+                display: block;
+                margin: 0;
+                font-size: 16px;
+              }
+              span {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__flow {
+      .flowWrap {
+        padding: 60px 30px;
+      }
+      .flowContainer {
+        .secTitleBox {
+          margin: 0 0 40px;
+          p {
+            margin: 0 0 5px;
+            font-size: 11px;
+            letter-spacing: 0.15em;
+          }
+          h2 {
+            font-size: 16px;
+            letter-spacing: 0.2em;
+          }
+        }
+      }
+      .flowPanel {
+        ol {
+          li {
+            + li {
+              margin: 20px 0 0;
+            }
+            &:nth-child(1) {
+              .ttlHead {
+                .num {
+                  letter-spacing: 0.2em;
+                }
+              }
+            }
+            &:not(:last-child) {
+              &:after {
+                content: "";
+                position: absolute;
+                left: 12px;
+                bottom: 0;
+                width: 1px;
+                height: calc(100% - 20px);
+              }
+            }
+          }
+          .ttlHead {
+            padding: 5px 30px;
+            .num {
+              position: absolute;
+              top: -15px;
+              left: 0;
+              font-size: 20px;
+            }
+            .ttl {
+              font-size: 14px;
+              em {
+                margin: 0 10px 0 0;
+                letter-spacing: 0.05em;
+              }
+              span {
+                font-size: 10px;
+              }
+            }
+          }
+          .cntBody {
+            padding: 15px 30px 0;
+          }
+        }
+      }
+      .btnEntry {
+        max-width: 295px;
+        margin: 30px auto 0;
+        a {
+          padding: 10px;
+          font-size: 14px;
+          text-align: center;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+    &__job {
+      padding: 60px 0 0;
+      .descriptionContainer {
+        width: 180vw;
+        padding: 30px 0 50px;
+        border-radius: 45% 45% 0 0;
+        &__inner {
+          padding: 0 30px;
+        }
+      }
+      .secTitleBox {
+        margin: 0 0 30px;
+        p {
+          margin: 0 0 5px;
+          font-size: 11px;
+          letter-spacing: 0.15em;
+        }
+        h2 {
+          font-size: 16px;
+          letter-spacing: 0.2em;
+        }
+      }
+      .radioPanel {
+        margin: 0 0 20px;
+        .radioList {
+          margin: -10px 0 0;
+          li {
+            margin: 10px 15px 0 0;
+          }
+        }
+      }
+      .jobTitle {
+        margin: 0 0 10px;
+        p {
+          min-width: 130px;
+        }
+      }
+      .infoBox {
+        dl {
+          padding: 15px 0;
+          font-size: 12px;
+          line-height: 1.8;
+          letter-spacing: 0.05em;
+          dt {
+            margin: 0 0 5px;
+          }
+        }
+      }
+    }
+    &__salon {
+      .salonPhoto {
+        width: calc(100% - 90px);
+        &--pc {
+          display: none;
+        }
+      }
+      .salonContainer {
+        position: relative;
+        padding: 0 30px;
+      }
+      .secTitleBox {
+        position: absolute;
+        top: -75px;
+        right: 0;
+        width: 90px;
+        padding: 0 30px 0 0;
+        p {
+          margin: 0;
+          font-size: 11px;
+          letter-spacing: 0.15em;
+        }
+        h2 {
+          font-size: 16px;
+          letter-spacing: 0.2em;
+        }
+      }
+      .salonInfo {
+        max-width: 100%;
+        padding: 35px 0 50px;
+        dl {
+          padding: 15px 0;
+          font-size: 12px;
+          line-height: 1.8;
+          letter-spacing: 0.05em;
+          dt {
+            width: 65px;
+            padding: 0;
+          }
+        }
+      }
+    }
+    &__gallery {
+      padding: 40px 0 80px;
+      &:before,
+      &:after {
+        display: none;
+      }
+      .photoPanel {
+        position: relative;
+      }
+      .photoBox01 {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: calc((100% / 2) - 10px);
+        .title {
+          position: absolute;
+          top: -80px;
+          right: -40px;
+          font-size: 12px;
+          letter-spacing: 0.1em;
+          z-index: 1;
+        }
+        .img {
+          position: relative;
+          height: 183px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .photoBox02 {
+        display: flex;
+        flex-direction: column;
+        .photo02 {
+          order: 2;
+          position: relative;
+          max-width: 233px;
+          margin: 20px auto 0;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: -60px;
+            width: 140px;
+            height: 25px;
+            background: url("../image/top/gallery_logo.png") no-repeat;
+            background-size: 100% auto;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            right: -60px;
+            bottom: -40px;
+            width: 128px;
+            height: 117px;
+            background: url("../image/top/gallery_flowers_sp.png") no-repeat;
+            background-size: 100% auto;
+          }
+        }
+        .photo03 {
+          order: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .img {
+            position: relative;
+            width: calc((100% / 2) - 10px);
+            height: 293px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    &__entry {
+      padding: 30px 20px 70px;
+      .entryContainer {
+        padding: 50px 25px 60px;
+        border-radius: 160px;
+      }
+      .secTitleBox {
+        margin: 0 0 20px;
+        p {
+          margin: 0 0 5px;
+          font-size: 11px;
+          letter-spacing: 0.15em;
+        }
+        h2 {
+          font-size: 16px;
+          letter-spacing: 0.2em;
+        }
+      }
+      .topTxt {
+        margin: 0 0 40px;
+        .txt {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  form > dl {
+    font-size: 12px;
+    + dl {
+      margin: 15px 0 0;
+    }
+    dt {
+      margin: 0 0 5px;
+    }
+  }
+  .radioForm {
+    display: flex;
+    dt {
+      width: 85px;
+    }
+    dd {
+      width: calc(100% - 85px);
+    }
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .birthBox {
+    padding: 0 10px;
+    ul {
+      li {
+        width: 70px;
+        + li {
+          padding: 0 0 0 15px;
+        }
+      }
+    }
+    input {
+      height: 30px;
+      padding: 0 5px;
+    }
+  }
+  .checkItem {
+    margin: 0 0 40px;
+    span {
+      padding-left: 20px;
+    }
+  }
+  form .mwform-radio-field {
+    display: block;
+    + .mwform-radio-field {
+      margin: 10px 0 0;
+    }
+  }
+  .privacy {
+    max-width: 205px;
+    margin: 35px auto 20px;
+    .agreeBox {
+      height: 80px;
+      padding: 10px;
+      font-size: 10px;
+    }
+    .box {
+      + .box {
+        margin: 5px 0 0;
+      }
+    }
+  }
+  .submitButton {
+    &:after {
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+    .submitTxt {
+      font-size: 12px;
+      letter-spacing: 0.05em;
+    }
+  }
+  input[type="submit"] {
+    width: 40px;
+    height: 62px;
+  }
+}
+
+#contactConfirm,
+#contactComplete {
+  #section__entry {
+    padding: 90px 0 0;
+    .entryContainer {
+      padding: 40px 0 60px;
+    }
+    .secWrap01 {
+      padding: 0 30px;
+    }
+    .secTitleBox {
+      margin: 0 0 20px;
+      p {
+        margin: 0 0 5px;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+      }
+      h2 {
+        font-size: 16px;
+        letter-spacing: 0.2em;
+      }
+    }
+    .topTxt {
+      margin: 0 0 40px;
+      .txt {
+        letter-spacing: 0;
+      }
+    }
+  }
+  .formConfirm {
+    dl {
+      display: block;
+      padding: 10px 0;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      > * {
+        padding: 0;
+      }
+      dt {
+        width: 100%;
+        margin: 0 0 5px;
+      }
+      dd {
+        width: 100%;
+      }
+    }
+    .submitButton {
+      padding: 40px 0 0;
+    }
+    input[type="submit"] {
+      width: 40px;
+      height: 62px;
+    }
+    button.btnBack {
+      width: 40px;
+      height: 62px;
+      margin: 20px auto 0;
+    }
+  }
+  .btnToTop {
+    width: 60px;
+  }
+}

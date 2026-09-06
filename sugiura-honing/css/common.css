@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+    土台作成用CSS
+===================================================*/
+/*//////////////////////////////////////////////////
+    Base set
+///////////////////////////////////////////////////*/
+
+* {
+            box-sizing: border-box;
+        -ms-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: break-all;
+    text-align: left;
+    color: #1f1f1f;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+/* --------------------------------------------------
+    リンク
+-------------------------------------------------- */
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------
+    clearfix
+-------------------------------------------------------- */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* --------------------------------------------------
+    画像
+-------------------------------------------------- */
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* --------------------------------------------------
+    改行
+-------------------------------------------------- */
+@media (min-width: 769px) {
+
+    .spBreak {
+        display: none;
+    }
+
+}
+/*//////////////////////////////////////////////////
+    Base layout
+///////////////////////////////////////////////////*/
+/* --------------------------------------------------
+    ヘッダー(header)
+-------------------------------------------------- */
+header {
+    overflow: hidden;
+    padding: 10px
+}
+header > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header h1 {
+    float: left;
+    width: 40%;
+    padding-top: 10px;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    line-height: 1.2;
+}
+    header h1 span {
+        font-size: 14px;
+    }
+    header h1 em {
+        display: block;
+        font-size: calc(150% + 0.5vw);
+    }
+header nav {
+    float: left;
+    width: 35%;
+    text-align: center;
+}
+    header nav ul li {
+        display: inline-block;
+        width: 30%;
+        line-height: 70px;
+    }
+header .tel {
+    float: right;
+    width: 20%;
+    line-height: 1.2;
+}
+    header .tel span {
+        font-size: 14px;
+    }
+    header .tel a {
+        display: block;
+        font-size: calc(150% + 0.5vw);
+    }
+
+
+/* --------------------------------------------------
+    メイン
+-------------------------------------------------- */
+#spNav {
+    display: none;
+}
+.cntWrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pagetopBox {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: right;
+}
+#pagetop {
+    display: inline-block;
+    width: 90px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------
+    フッター(footer)
+-------------------------------------------------- */
+footer {
+    border-top: 1px solid #d5d5d5;
+}
+footer .footWrap {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+footer .footLinkPc {
+    padding: 30px 0;
+    text-align: right;
+}
+    footer .footLinkPc li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+        footer .footLinkPc li a {
+            color: #07295e;
+            text-decoration: underline;
+        }
+footer .footBox {
+    overflow: hidden;
+    padding: 0 0 60px;
+}
+footer .footBox .logo {
+    float: left;
+    margin-right: 4%;
+    padding-top: 10px;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    line-height: 1.2;
+}
+    footer .footBox .logo span {
+        font-size: 14px;
+    }
+    footer .footBox .logo em {
+        display: block;
+        font-size: calc(150% + 0.5vw);
+    }
+footer .footBox .contact {
+    float: left;
+    width: 30%;
+    line-height: 2;
+}
+footer .footBox > a {
+    float: right;
+    width: 25%;
+    font-size: calc(60% + 0.5vw);
+    color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+    background: url("../image/common/link__arrow_right.png") right 10px center no-repeat #1e9a9f;
+    background-size: 25px auto;
+}
+footer .copy {
+    padding: 20px 10px;
+    text-align: center;
+    background: #154590;
+}
+    footer .copy p {
+        color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+

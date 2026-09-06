@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    font-family: "Zen Maru Gothic";
+    font-weight: 500;
+    z-index: 999999999;
+    background: #ffffff;
+  }
+  .header .logo {
+    max-width: 60px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open.hamburger .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 80px 40px 60px;
+    z-index: 999;
+    background: #ffffff;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .navBox .navList {
+    margin: 0 0 20px;
+    border-bottom: 2px dotted #cccccc;
+  }
+  .navBox .navList .ul {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li {
+    text-align: left;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 2px dotted #cccccc;
+  }
+  .navBox .navList .ul .li:nth-child(2) > a {
+    padding: 10px 20px 0;
+  }
+  .navBox .navList .ul a {
+    display: block;
+  }
+  .navBox .navList .ul a,
+.navBox .navList .ul > .li > div {
+    padding: 10px 20px;
+  }
+  .navBox .navItem {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .navBox .navItem .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .navBox .navItem .ul .li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1;
+    border-radius: 25px;
+  }
+  .navBox .navItem .ul .li a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  .navBox .navItem .ul .mail a {
+    background: #1961a5;
+  }
+  .navBox .navItem .ul .mail a p {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    background: url(https://mihori.co.jp/system_panel/uploads/images/header_mail.png) left top 2px no-repeat;
+    background-size: 18px auto;
+  }
+  .navBox .navItem .ul .tel a {
+    background: #1d7e5a;
+  }
+  .navBox .navItem .ul .tel a > div {
+    padding: 0 0 0 20px;
+    background: url(https://mihori.co.jp/system_panel/uploads/images/header_tel.png) left 15px top 12px no-repeat;
+    background-size: 22px auto;
+  }
+  .navBox .navItem .ul .tel .span {
+    font-size: 10px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 76px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 280px;
+    padding: 0 20px 0 0;
+  }
+  .pageKvPanel .kvTitleBox {
+    padding: 20px;
+  }
+  .pageKvPanel .kvTitleBox .kvTitle .title p {
+    font-size: 40px;
+  }
+  .pageKvPanel .kvTitleBox .kvTitle h1 {
+    font-size: 16px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .secTtl {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 34px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 40px 0;
+  }
+  .footer .footContact .circle {
+    position: absolute;
+    top: -80px;
+    bottom: auto;
+    width: 50px;
+    height: 50px;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+  }
+  .footer .footPanel .footBox .leftBox {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .footer .footPanel .footBox .leftBox .logo {
+    max-width: 140px;
+    margin: 0 auto 20px;
+  }
+  .footer .footPanel .footBox .leftBox .txt {
+    text-align: center;
+    line-height: 2;
+  }
+  .footer .footPanel .footBox .rightBox {
+    display: none;
+  }
+  .footer .pagetop {
+    right: 20px;
+    bottom: 40px;
+  }
+}

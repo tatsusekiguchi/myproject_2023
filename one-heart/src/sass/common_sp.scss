@@ -1,0 +1,298 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    min-height: 0;
+    padding: 20px;
+    .logo {
+      max-width: 150px;
+    }
+    .hamburgerBox {
+      top: 15px;
+      right: 20px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 100px 20px 60px;
+    .navContainer {
+      display: block;
+      .leftBox {
+        width: 100%;
+        padding: 0 0 20px;
+        > p {
+          font-size: 12px;
+        }
+        .logo {
+          max-width: 180px;
+          margin: 10px auto 0;
+        }
+      }
+      .rightBox {
+        width: 100%;
+        .navList {
+          display: block;
+          margin: 0 0 30px;
+          .ul {
+            width: 100%;
+            + .ul {
+              margin: 10px 0 0;
+            }
+            .li {
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+        .lineLink {
+          width: 180px;
+          margin: 0 0 20px;
+          a {
+            .em {
+              font-size: 20px;
+            }
+          }
+        }
+        .telLink {
+          > .dl {
+            display: block;
+            > .dt {
+              margin: 0 0 5px;
+              padding: 0;
+            }
+            > .dd {
+              display: block;
+              a {
+                margin: 0 0 10px;
+                padding: 0 0 0 25px;
+                font-size: 30px;
+                background: url(https://one-heart230426.smooooth.jp/system_panel/uploads/images/header_nav_tel.png)
+                  left top 10px no-repeat;
+                background-size: 18px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 87px 0 0;
+  }
+  .pageKvPanel {
+    margin: 0 0 40px;
+    padding: 0 10px;
+    .pageKv {
+      height: 200px;
+      font-size: 30px;
+    }
+  }
+  .sectionTitleBox {
+    margin: 0 0 40px;
+    .sectionTitle {
+      padding: 0 0 20px;
+      font-size: 20px;
+      text-align: center;
+      background: url(https://one-heart230426.smooooth.jp/system_panel/uploads/images/section_title_bg.png)
+        center bottom no-repeat;
+      background-size: 180px auto;
+      h2 {
+        line-height: 1.6;
+      }
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+  .benefitsContainer {
+    padding: 40px 0;
+    .benefitsBox {
+      max-width: 350px;
+      .dl {
+        .dt {
+          font-size: 20px;
+        }
+        .dd {
+          padding: 15px 10px;
+          .txt {
+            .em {
+              font-size: 24px;
+            }
+          }
+          .list {
+            max-width: 280px;
+          }
+          .tel {
+            a {
+              padding: 0 0 0 30px;
+              font-size: 28px;
+              background: url(https://one-heart230426.smooooth.jp/system_panel/uploads/images/benefits_tel.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+          .line {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 50px 0;
+      .contactList {
+        max-width: 400px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+            a {
+              padding: 10px;
+            }
+          }
+          .line {
+            .dl {
+              .dd {
+                display: block;
+                .qr {
+                  width: 80px;
+                  margin: 0 auto 10px;
+                }
+                p {
+                  width: 100%;
+                  font-size: 13px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+          .tel {
+            .dl {
+              .dd {
+                .em {
+                  margin: 0 0 10px;
+                  font-size: 30px;
+                }
+                .dl {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .mail {
+            a {
+              padding: 30px 10px;
+              .em {
+                font-size: 28px;
+              }
+            }
+          }
+          a > .dl {
+            > .dt {
+              margin: 0 0 5px;
+              .em {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 15px;
+      text-align: center;
+      .footBox {
+        margin: 0 0 50px;
+        .leftBox {
+          .logo {
+            max-width: 200px;
+            margin: 0 auto 15px;
+          }
+          .txt {
+            a {
+              display: inline-block;
+            }
+          }
+          .dl {
+            display: flex;
+            max-width: 250px;
+            margin: 0 auto;
+          }
+        }
+        .rightBox {
+          display: none;
+        }
+      }
+      .copy {
+        text-align: center;
+      }
+    }
+  }
+}

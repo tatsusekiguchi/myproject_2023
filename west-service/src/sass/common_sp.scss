@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .sideNav {
+    top: 30%;
+    width: 50px;
+    a {
+      font-size: 10px;
+    }
+    .iconBox {
+      height: 40px;
+      .icon {
+        max-width: 20px;
+      }
+    }
+    .txtBox {
+      padding: 10px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    height: 200px;
+    .pageKvTitle {
+      padding: 80px 20px;
+      font-size: 30px;
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    .pageSecTtl {
+      font-size: 30px;
+    }
+    .sub {
+      font-size: 16px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 40px 0;
+      .pageSecTtlBox {
+        margin: 0 0 20px;
+      }
+      .txt {
+        margin: 0 0 20px;
+      }
+      .contactList {
+        .dl {
+          padding: 15px;
+          .dt {
+            font-size: 16px;
+          }
+        }
+        .telBox {
+          margin: 0 0 20px;
+          .tel {
+            .em {
+              padding: 0 0 5px 30px;
+              font-size: 28px;
+              background: url(https://westservice.co.jp/system_panel/uploads/images/footer_contact_tel.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+            .span {
+              font-size: 11px;
+            }
+          }
+        }
+        .mailBox {
+          a {
+            padding: 0 0 0 30px;
+            font-size: 30px;
+            color: #fffefe;
+            background: url(https://westservice.co.jp/system_panel/uploads/images/footer_contact_mail.png)
+              left center no-repeat;
+            background-size: 25px auto;
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 60px 0 20px;
+      .footBox {
+        .leftBox {
+          .logo {
+            width: 250px;
+            margin: 0 auto 30px;
+          }
+          .txt {
+            text-align: center;
+          }
+        }
+        .rightBox {
+          display: none;
+        }
+      }
+      .copy {
+        margin: 50px 0 0;
+        text-align: center;
+      }
+    }
+  }
+}

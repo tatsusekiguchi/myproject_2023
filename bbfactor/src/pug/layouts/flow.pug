@@ -1,0 +1,310 @@
+// ▽メイン▽
+main#flow
+	.pageKvPanel
+		.pageKvTitle
+			h1 ご利用の流れ・よくある質問
+	.sec01
+		.secWrap01
+			.pageSecTitle
+				.icon
+					img(src=(root_path || '') + "image/common/page_sec_title_icon.png", alt="")
+				.secTitle
+					h2 ご利用の流れ
+			.stepContainer
+				.stepPanel
+					.stepTitleBox
+						.step
+							span STEP.
+							em 01
+						.title
+							p ご予約
+					.topTxt
+						p ご予約は24時間受付可能なWEB予約より承っております。<br>お急ぎの際はお電話・LINEでのご予約も承っております。
+					.itemList
+						ul
+							li.tel
+								a(href="tel:0527461234")
+									span Tel.
+									em 052-746-1234
+								p 営業時間 9：00 ～ 19：00　年中無休
+							li.reserve
+								a(href="#", target="_blank", rel="noopener")
+									span 24時間WEB予約
+							li.line
+								a(href="https://lin.ee/jEFpQMq", target="_blank", rel="noopener")
+									img(src=(root_path || '') + "image/common/footer_line.png", alt="")
+								p ビーブリッジファクター<br>公式LINE
+				.stepPanel
+					.stepTitleBox
+						.step
+							span STEP.
+							em 02
+						.title
+							p 貸渡し契約
+					.topTxt
+						p お車は店舗・もしくはご希望により最寄り駅での受け渡しとなります。<br>その際、下記の書類が必要となります。
+					aside
+						dl
+							dt ■ 運転する方全員の免許証
+							dd ご利用のレンタカーを運転できる、日本国内で有効な運転免許証を運転予定者様全員分ご提示いただいております。
+					.caution
+						dl
+							dt ●最寄り駅での受け渡しについて
+							dd 地下鉄桜通線野並駅・鶴里駅での受け渡しも承っております。<br>ご利用者様が全員駅に集合いただきましたら052-746-1234 までご連絡ください。<br>スタッフが直接お車の引渡しに伺います。
+				.stepPanel
+					.stepTitleBox
+						.step
+							span STEP.
+							em 03
+						.title
+							p 引き渡し
+					.topTxt
+						p 契約書内容の確認後、お客さまからサインを頂戴し、ご予定料金を申し受けます。<br>お支払いは現金・クレジットカード・口座振込にて承ります。<br>※ご請求書をご希望の際はご予約の際にお申し付けください。
+					aside
+						p レンタカーの外装・内装のキズやへこみ等のチェックを行った後、お車の運転方法などをご説明いたします。<br>ご不明点がございましたらお気軽にスタッフにお尋ねください。
+				.stepPanel
+					.stepTitleBox
+						.step
+							span STEP.
+							em 04
+						.title
+							p 返却
+					.topTxt
+						p お約束の日時までに返却をお願いいたします。<br>また弊社は燃料を満タンで貸出しております為、指定する燃料を満タンでご返却ください。<br>※ガソリン代はレンタル料金には含まれておりません。<br>ご返却の際は当社まで返却をお願いいたします。
+					dl
+						dt 返却先住所：
+						dd 〒468-0047　愛知県名古屋市天白区井の森町228<br>株式会社ビーブリッジファクター
+	.sec02
+		.secWrap01
+			.pageSecTitle
+				.icon
+					img(src=(root_path || '') + "image/common/page_sec_title_icon.png", alt="")
+				.secTitle
+					h2 よくある質問
+			.categorySelect
+				dl
+					dt カテゴリから選ぶ
+					dd
+						.pagingList
+							ul
+								li
+									a(href="#cateSection01") 予約する
+								li
+									a(href="#cateSection02") 保険・保障
+								li
+									a(href="#cateSection03") 利用に関して
+								li
+									a(href="#cateSection04") 資格
+								li
+									a(href="#cateSection05") 車両・オプションについて
+			.sectionContainer.gothic
+				#cateSection01.cateSection
+					.sectionTitle
+						h3 ●予約する
+					.faqPanel
+						dl.accord
+							dt
+								em Q
+								span 予約は何日前から可能ですか？
+							dd
+								.box
+									em A
+									.txt
+										p 出発日180日前から予約が可能です。
+						dl.accord
+							dt
+								em Q
+								span 予約キャンセル料は、いくらですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span クルマを借りる時は何が必要ですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 予約の変更・キャンセルはどうすれば良いですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+				#cateSection02.cateSection
+					.sectionTitle
+						h3 ●保険・補償
+					.faqPanel
+						dl.accord
+							dt
+								em Q
+								span 保険・補償が適用されないのはどんな場合ですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 予約キャンセル料は、いくらですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 事故の場合に自己負担はありますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+				#cateSection03.cateSection
+					.sectionTitle
+						h3 ●利用に関して
+					.faqPanel
+						dl.accord
+							dt
+								em Q
+								span 返却時に燃料を満タンにできない場合は、どうすればいいですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 時間を超過した場合の計算方法を教えてください。
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span ペットは同乗できますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 料金の支払方法を教えてください。
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 料金がいくらになるか知りたいのですが？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+				#cateSection04.cateSection
+					.sectionTitle
+						h3 ●資格
+					.faqPanel
+						dl.accord
+							dt
+								em Q
+								span 契約者と運転者が異なる場合は別に手続きが必要ですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 国際運転免許証は利用できますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 初心者や未成年でもレンタカーは借りられますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+				#cateSection05.cateSection
+					.sectionTitle
+						h3 ●車両・オプションについて
+					.faqPanel
+						dl.accord
+							dt
+								em Q
+								span ドライブレコーダーはありますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span チャイルドシート・ジュニアシートはレンタルできますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span ETCカードの貸出はしていますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span 外部オーディオ機器をつないで聴くことはできますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span ETC車載器は装備されていますか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+						dl.accord
+							dt
+								em Q
+								span スタッドレスタイヤ・チェーン・スキーキャリアなどのオプションは予約が必要ですか？
+							dd
+								.box
+									em A
+									.txt
+										p 回答が入ります。
+// △メイン△

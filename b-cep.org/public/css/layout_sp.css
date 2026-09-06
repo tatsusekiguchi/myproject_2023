@@ -1,0 +1,1262 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（SP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+#top #kv {
+  height: 320px;
+  padding: 90px 10px 0;
+  text-align: center;
+  background: url("../image/top/sp/kv_01.png") center bottom no-repeat;
+  background-size: cover;
+}
+
+#top #kv h2 {
+  width: 90%;
+  max-width: 440px;
+  margin: 0 auto 10px;
+}
+
+#top #kv h2 + p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* --------------------------------------------------
+	メイン
+-------------------------------------------------- */
+#top #menuBox {
+  margin: 20px auto 30px;
+  padding: 0 10px;
+}
+
+#top #menuBox ul li {
+  float: none;
+  width: 100%;
+  padding: 20px 10px;
+  border: 3px solid #eeedec;
+  display: block;
+}
+
+#top #menuBox ul li + li {
+  margin: 10px 0 0 0;
+}
+
+#top #menuBox dl dt {
+  min-height: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+#top #menuBox dl dt span {
+  font-size: 12px;
+}
+
+#top #menuBox dl dd {
+  font-size: 12px;
+}
+
+/*news*/
+#top #newsList {
+  padding: 45px 10px 30px;
+}
+
+#top #newsList .ttlBox {
+  margin-bottom: 20px;
+}
+
+#top #newsList .ttlBox h2 {
+  float: left;
+}
+
+#top #newsList .ttlBox h2 em {
+  font-size: 22px;
+}
+
+#top #newsList .ttlBox h2 span {
+  font-size: 14px;
+}
+
+#top #newsList .ttlBox p {
+  width: 130px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 30px;
+  background-size: 5px auto;
+}
+
+#top #newsList .ttlBox p a {
+  font-size: 12px;
+}
+
+/*////////////////////////////////////////////////////////////
+	下層ページ
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+.kv {
+  height: 170px;
+}
+
+.kv h2 {
+  line-height: 170px;
+}
+
+/* --------------------------------------------------
+	メイン
+-------------------------------------------------- */
+.cntnt {
+  padding: 30px 10px 40px;
+}
+
+.cntnt h2 {
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 15px;
+  font-size: 15px;
+}
+
+.cntnt section + section {
+  margin-top: 50px;
+}
+
+.cntWrap {
+  padding: 0 10px;
+}
+
+.targetLinkBtn {
+  font-size: 12px;
+  background-position: right 10px center;
+  background-size: 5px auto;
+}
+
+.linkList li {
+  width: 100%;
+  font-size: 12px;
+}
+
+.linkList_small {
+  overflow: hidden;
+}
+
+.linkList_small li {
+  overflow: hidden;
+  width: 25%;
+  float: left;
+}
+
+.linkList_small li a,
+.linkList_small li span {
+  font-size: 12px;
+  background-position: right 10px center;
+  background-size: 5px auto;
+  text-align: center;
+}
+
+li.linkList_small-left {
+  margin: 0 3% 0 22%;
+}
+
+li.linkList_small-right {
+  margin: 0 22% 0 3%;
+}
+
+.text-15 {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	NEWS
+///////////////////////////////////////////////////////////*/
+#news #newsList {
+  padding: 30px 10px 100px;
+}
+
+#news #newsList h2 {
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 15px;
+  font-size: 15px;
+}
+
+/*////////////////////////////////////////////////////////////
+	B-CeP案内
+///////////////////////////////////////////////////////////*/
+#about .kv h2 {
+  width: 150px;
+}
+
+#about #sec01 .box > p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#about #sec01 .box > p img {
+  width: 140px;
+}
+
+#about #sec02 ul li {
+  padding: 20px 10px;
+  font-size: 13px;
+}
+
+#committee table tr,
+#about table tr {
+  font-size: 13px;
+}
+
+#committee table th,
+#about table th {
+  padding: 10px !important;
+}
+
+#committee table td,
+#about table td {
+  padding: 10px !important;
+}
+
+/*////////////////////////////////////////////////////////////
+	発泡プラスチック断熱材
+///////////////////////////////////////////////////////////*/
+#plastic .kv h2 {
+  width: 280px;
+}
+
+#plastic #sec01 p {
+  margin-bottom: 20px;
+}
+
+#plastic #sec02 {
+  margin-bottom: 30px;
+}
+
+#plastic #sec02 ul {
+  margin: 20px 0;
+}
+
+#plastic #sec02 ul li {
+  font-size: 13px;
+}
+
+/*////////////////////////////////////////////////////////////
+	外張断熱耐震改修工法委員会
+///////////////////////////////////////////////////////////*/
+#committee .kv h2 {
+  width: 280px;
+}
+
+#committee #sec01 p {
+  margin-bottom: 20px;
+}
+
+#committee #sec03 table {
+  margin-bottom: 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	木造住宅の耐震改修
+///////////////////////////////////////////////////////////*/
+#wooden .kv h2 {
+  width: 270px;
+}
+
+#wooden #sec01 p {
+  margin-bottom: 20px;
+}
+
+#wooden #sec02 p {
+  margin-bottom: 40px;
+}
+
+#wooden #sec03 .box > p {
+  float: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#wooden #sec03 .box > div {
+  float: none;
+  width: 100%;
+}
+
+#wooden #sec03 .box > div ol {
+  margin: 20px 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	外張断熱耐震改修工法(SIR工法)とは？
+///////////////////////////////////////////////////////////*/
+#about_sir .kv h2 {
+  width: 290px;
+}
+
+#about_sir #sec01 ul {
+  margin: 20px 0 40px -1%;
+}
+
+#about_sir #sec01 ul li {
+  float: none;
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#about_sir #sec01 ul li a {
+  padding: 10px 10px 10px 30px;
+  background: url("../image/common/link_arrow_right.png") left 10px center no-repeat #1b893d;
+  background-size: 5px auto;
+}
+
+#about_sir #sec02 {
+  margin-bottom: 30px;
+}
+
+#about_sir #sec02 table {
+  margin: 20px 0;
+}
+
+#about_sir #sec02 table tr {
+  font-size: 13px;
+}
+
+#about_sir #sec02 table th {
+  padding: 10px;
+}
+
+#about_sir #sec02 table td {
+  padding: 10px 20px;
+}
+
+#about_sir #sec03 table {
+  margin: 20px 0;
+}
+
+#about_sir #sec03 table tr {
+  font-size: 13px;
+}
+
+#about_sir #sec03 table th {
+  padding: 10px;
+}
+
+#about_sir #sec03 table td {
+  padding: 10px 20px;
+}
+
+#about_sir #sec03 dl {
+  margin: 20px 0;
+}
+
+#about_sir #sec03 dl dt {
+  width: 150px;
+}
+
+#about_sir #sec03 dl dt.tbl {
+  width: 120px;
+}
+
+#about_sir #sec03 dl dt.tbl2 {
+  width: 200px;
+}
+
+#about_sir #sec03 .drawing {
+  margin-bottom: 40px;
+}
+
+#about_sir #sec03 .drawing li + li {
+  margin-top: 20px;
+}
+
+#about_sir #sec03 .linkList li + li {
+  margin-top: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	SR工法で耐震改修を行うためには？
+///////////////////////////////////////////////////////////*/
+#todo_sr .kv h2 {
+  width: 290px;
+}
+
+#todo_sr .linkList li {
+  float: none;
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#todo_sr .linkList li a,
+#todo_sr .linkList li span {
+  padding: 10px 10px 10px 30px;
+  background: url("../image/common/link_arrow_right.png") left 10px center no-repeat #1b893d;
+  background-size: 5px auto;
+}
+
+#todo_sr #sec01 p {
+  margin-bottom: 20px;
+}
+
+#todo_sr #sec02 img {
+  display: none;
+}
+
+#todo_sr #sec02 ol {
+  display: block;
+  margin: 20px 0;
+}
+
+#todo_sr #sec02 ol li + li {
+  margin-top: 20px;
+}
+
+#todo_sr #sec02 ol dl dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #1b893d;
+}
+
+#todo_sr #sec04 .box {
+  margin-bottom: 20px;
+}
+
+#todo_sr #sec05 p {
+  margin-bottom: 20px;
+}
+
+/* --------------------------------------------------
+    モーダルウインドウ
+-------------------------------------------------- */
+.modalContent {
+  height: auto;
+  padding: 0 10px;
+}
+
+.modalContent #pcTbl {
+  display: none;
+}
+
+.modalContent > div {
+  padding: 20px;
+}
+
+.modalContent > div > dl > dt {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.modalContent > div > .modalClose {
+  width: 10px;
+}
+
+.modalContent #spTbl table {
+  width: 100%;
+  font-size: 16px;
+  border-left: 1px solid #7f7f7f;
+}
+
+.modalContent #spTbl table:first-child {
+  border-top: 1px solid #7f7f7f;
+}
+
+.modalContent #spTbl tr {
+  border-bottom: 1px solid #7f7f7f;
+}
+
+.modalContent #spTbl thead th {
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+  background: #f6f6f6;
+}
+
+.modalContent #spTbl tbody th {
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+}
+
+.modalContent #spTbl tbody td {
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+}
+
+.modalContent #spTbl tbody td a {
+  color: #1300c5;
+  text-decoration: underline;
+}
+
+/*////////////////////////////////////////////////////////////
+	断熱改修・外張断熱工法について
+///////////////////////////////////////////////////////////*/
+#insulation .kv h2 {
+  width: 290px;
+}
+
+#insulation h3 {
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 15px;
+  font-size: 15px;
+}
+
+#insulation section section + section {
+  margin-top: 20px;
+}
+
+#insulation #sec03 .drawing {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#insulation #sec03 ul {
+  margin-bottom: 20px;
+}
+
+#insulation #sec03 ul li + li {
+  margin-top: 20px;
+}
+
+#insulation #sec03 ul li em {
+  font-size: 14px;
+}
+
+#insulation #sec04 dl {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#insulation #sec04 dl dt {
+  font-size: 14px;
+}
+
+#insulation #sec05 dl + dl {
+  margin-top: 20px;
+}
+
+#insulation #sec05 dl dt {
+  font-size: 14px;
+}
+
+#insulation #sec05 ul > li span {
+  font-size: 10px;
+}
+
+#insulation #sec05 .drawing {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+#insulation #sec06 dl + dl {
+  margin-top: 40px;
+}
+
+#insulation #sec06 dl dt {
+  font-size: 14px;
+}
+
+#insulation #sec06 .box01 .drawing {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+#insulation #sec06 ul > li + li {
+  margin-top: 20px;
+}
+
+#insulation #sec06 .box02 ul {
+  margin-bottom: 40px;
+}
+
+#insulation #sec06 .box02 ul + p {
+  margin-bottom: 20px;
+}
+
+#insulation #sec06 .box02 ul + p + p {
+  margin-bottom: 20px;
+}
+
+#insulation #sec07 dl {
+  margin-top: 20px;
+}
+
+#insulation #sec07 dl dt {
+  font-size: 14px;
+}
+
+#insulation #sec07 ul {
+  margin-bottom: 20px;
+}
+
+#insulation #sec08 dl dt {
+  font-size: 14px;
+}
+
+#insulation #sec08 div {
+  padding-left: 15px;
+}
+
+#insulation #sec08 div + .drawing {
+  margin: 20px 0 40px;
+}
+
+#insulation #sec08 .drawing03 {
+  margin-bottom: 20px;
+}
+
+#insulation #sec08 .drawing04 {
+  margin-top: 20px;
+}
+
+#insulation #sec09 ul {
+  margin-bottom: 20px;
+}
+
+#insulation #sec09 .drawing {
+  padding: 0 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	講習会受講申込フォーム
+///////////////////////////////////////////////////////////*/
+#form table {
+  border-top: none;
+}
+
+#form table tbody tr {
+  display: block;
+  width: 100%;
+  border-bottom: none;
+}
+
+#form table tbody th {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+#form table tbody td {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+/* 入力項目
+--------------------------------------*/
+/*テキストボックス・メール・電話*/
+#form input[type=text],
+#form input[type=email],
+#form input[type=tel] {
+  width: 75%;
+  height: 40px;
+  font-size: 14px;
+}
+
+/*テキストエリア*/
+#form textarea {
+  height: 150px;
+  font-size: 14px;
+}
+
+#form input[type=submit],
+#form input[type=button] {
+  height: 40px;
+  font-size: 14px;
+  background-size: 5px auto;
+}
+
+#btnSubmit {
+  margin: 20px auto 0;
+}
+
+#formWrap input[type=submit] {
+  width: 140px;
+  height: 40px;
+  font-size: 14px;
+}
+
+#formWrap input[type=button] {
+  width: 140px;
+  height: 40px;
+  font-size: 14px;
+  background-size: 5px auto;
+}
+
+#toTop {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+/* 設計者・施工者登録フォーム
+--------------------------------------*/
+#form #firstCheck {
+  margin-bottom: 30px;
+}
+
+#form #firstCheck li {
+  display: inline-block;
+}
+
+#form #firstCheck li + li {
+  margin-left: 40px;
+}
+
+#designBox h3,
+#constructionBox h3 {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 2px solid #1b893d;
+}
+
+#constructionBox .ttl {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+#form .selectBox label {
+  top: 12px;
+}
+
+#form .registBox table {
+  margin-bottom: 0;
+  border: 1px solid #7f7f7f;
+}
+
+#form .registBox table tr + tr {
+  border-top: 1px solid #7f7f7f;
+}
+
+#form .registBox table th {
+  border-bottom: 1px solid #7f7f7f;
+}
+
+#form .registBox table td {
+  font-size: 13px;
+}
+
+#form .registBox table .postal .code {
+  width: 100%;
+}
+
+#form .registBox table .postal p span:first-child {
+  min-width: 60px;
+}
+
+#designBox .licenseList li > * + * {
+  margin-left: 0;
+}
+
+#designBox .licenseBox {
+  display: block;
+}
+
+#designBox .licenseBox > div {
+  display: block;
+  width: 100%;
+  padding: 18px 0 0;
+}
+
+#designBox .licenseBox > div .wpcf7-list-item {
+  display: inline-block;
+}
+
+#designBox .licenseBox > div .wpcf7-list-item + span {
+  margin: 0 0 0 20px;
+}
+
+#designBox .licenseBox > ul {
+  display: block;
+}
+
+#designBox .licenseBox > ul li {
+  display: block;
+}
+
+#designBox .licenseBox > ul li > span {
+  display: block;
+}
+
+#designBox .licenseBox > ul li .ttl {
+  display: inline-block;
+  min-width: 0;
+  margin: 0 5px 0 0;
+}
+
+#designBox .license td > .taishin > * + * + * {
+  margin-top: 15px;
+}
+
+#designBox .taishin .taishinTxt {
+  top: 70px;
+}
+
+#designBox .taishin .taishinTxt > span {
+  display: block;
+}
+
+#constructionBox form > div + div {
+  margin-top: 40px;
+}
+
+#constructionBox .reform .reformWrap {
+  margin-bottom: 10px;
+}
+
+#constructionBox .reform .reformWrap .left {
+  float: none;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 0;
+}
+
+#constructionBox .reform .reformWrap .left .wpcf7-list-item {
+  display: inline-block;
+}
+
+#constructionBox .reform .reformWrap .left .wpcf7-list-item + span {
+  margin: 0 0 0 30px;
+}
+
+#constructionBox .reform .reformWrap .right {
+  float: none;
+  width: 100%;
+}
+
+#constructionBox .reform .reformWrap .right dl dt {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#constructionBox .reform .reformWrap .right dl dt span {
+  display: inline-block;
+}
+
+#constructionBox .reform .reformWrap .right dl dd {
+  width: 100%;
+}
+
+#constructionBox .reform .reformWrap .right dl dd input {
+  width: 100%;
+}
+
+#constructionBox .reform .reformWrap + p {
+  font-size: 13px;
+}
+
+#form .privacy {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 13px;
+  border: 1px solid #7f7f7f;
+  border-top: none;
+}
+
+#form .privacy dt {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #7f7f7f;
+  background: #f6f6f6;
+}
+
+#form .privacy dd {
+  display: block;
+  padding: 20px 10px;
+}
+
+#form .privacy dd .wpcf7-list-item {
+  margin-bottom: 0;
+}
+
+#form .privacy dd .wpcf7-list-item + span {
+  margin-top: 10px;
+}
+
+#form .privacy + p {
+  text-align: center;
+}
+
+/* 登録設計者・登録施工者名簿
+--------------------------------------*/
+#registList #sec01 {
+  margin-top: 30px;
+}
+
+#registList h3 {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 2px solid #1b893d;
+}
+
+#registList .tblPc {
+  display: none;
+}
+
+#registList .tblSp {
+  display: block;
+}
+
+#registList .tblSp table {
+  width: 100%;
+  font-size: 14px;
+  border-left: 1px solid #7f7f7f;
+  border-top: 1px solid #7f7f7f;
+}
+
+#registList .tblSp table + table {
+  margin-top: 20px;
+}
+
+#registList .tblSp table tr {
+  border-bottom: 1px solid #7f7f7f;
+}
+
+#registList .tblSp table thead th {
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+  background: #f6f6f6;
+}
+
+#registList .tblSp table tbody th {
+  width: 100px;
+  padding: 10px 5px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+}
+
+#registList .tblSp table tbody td {
+  padding: 15px;
+  border-right: 1px solid #7f7f7f;
+}
+
+/* --------------------------------------------------
+	断熱材･断熱工法･技術資料
+-------------------------------------------------- */
+#tecDataTop .listPanel .listBox {
+  min-height: 0;
+}
+#tecDataTop .listPanel .listBox + .listBox {
+  margin: 15px 0 0;
+}
+#tecDataTop .listPanel .listBox a {
+  padding: 5px;
+}
+#tecDataTop .listPanel .listBox dl dt {
+  font-size: 16px;
+}
+#tecDataTop .listPanel .listBox ul li {
+  font-size: 14px;
+}
+
+.tecDataPage {
+  font-size: 14px;
+}
+.tecDataPage .innerSection + .innerSection {
+  margin: 50px 0 0;
+}
+.tecDataPage .innerSectionTitle {
+  padding: 10px;
+  font-size: 15px;
+}
+.tecDataPage .innerSectionContainer {
+  padding: 0;
+}
+.tecDataPage .innerSectionContainer + .innerSectionContainer {
+  margin: 30px 0 0;
+}
+.tecDataPage .imgTblBox {
+  margin: 20px 0 0;
+}
+.tecDataPage .imgTblBox p {
+  margin: 0 0 10px;
+}
+.tecDataPage .caution {
+  margin: 40px 0 30px;
+  font-size: 15px;
+}
+
+/* --------------------------------------------------
+	断熱材とは
+-------------------------------------------------- */
+#aboutInsulation .link-area ul li {
+  max-width: 280px;
+}
+#aboutInsulation .link-area ul li:nth-child(1), #aboutInsulation .link-area ul li:nth-child(3) {
+  max-width: 240px;
+}
+#aboutInsulation .photoList {
+  max-width: 300px;
+  margin: 40px auto 0;
+}
+#aboutInsulation .photoList ul li + li {
+  margin: 40px 0 0;
+}
+#aboutInsulation .photoList ul dl dt {
+  font-size: 16px;
+}
+#aboutInsulation .txtBox01 > div {
+  padding: 0 0 0 1em;
+}
+#aboutInsulation .txtBox02 {
+  margin: 40px 0;
+}
+#aboutInsulation .txtBox02 .box {
+  padding: 20px 10px;
+}
+#aboutInsulation .txtBox02 .box dl {
+  display: block;
+}
+#aboutInsulation .txtBox02 .box dl + dl {
+  margin: 20px 0 0;
+}
+#aboutInsulation .txtBox02 .box dl dt {
+  width: 100%;
+}
+#aboutInsulation .markPanel .leftBox {
+  margin: 0 0 30px;
+}
+#aboutInsulation .markPanel .leftBox .mark01,
+#aboutInsulation .markPanel .leftBox .mark02 {
+  max-width: 120px;
+  margin: 0 auto;
+}
+#aboutInsulation .markPanel .leftBox .mark03 {
+  max-width: 200px;
+  margin: 0 auto 40px;
+}
+#aboutInsulation .markPanel .leftBox .mark04 {
+  max-width: 220px;
+  margin: 0 auto;
+}
+#aboutInsulation .markPanel .rightBox dl dt {
+  margin: 0 0 10px;
+}
+#aboutInsulation .markPanel .rightBox dl dd {
+  padding: 10px;
+}
+#aboutInsulation .rangePanel {
+  padding: 20px 10px;
+}
+#aboutInsulation .introPanel dl {
+  margin: 0 0 20px;
+}
+#aboutInsulation .introPanel dl dt {
+  margin: 0 0 10px;
+}
+#aboutInsulation .introPanel dl dd {
+  padding: 10px;
+}
+#aboutInsulation .borderPanel {
+  margin: 30px 0 60px;
+  padding: 20px 10px;
+}
+#aboutInsulation .bottomLink .targetLinkBtn {
+  max-width: 260px;
+}
+
+/* --------------------------------------------------
+	繊維系断熱材について
+-------------------------------------------------- */
+#fiberInsulation .link-area ul li {
+  max-width: 280px;
+}
+#fiberInsulation .link-area ul li:nth-child(1) {
+  max-width: 240px;
+}
+#fiberInsulation .photoList {
+  max-width: 300px;
+  margin: 40px auto 0;
+}
+#fiberInsulation .photoList ul li + li {
+  margin: 40px 0 0;
+}
+#fiberInsulation .photoList ul p em {
+  font-size: 16px;
+}
+#fiberInsulation .borderPanel {
+  padding: 20px 10px;
+}
+#fiberInsulation .theorySec01 .secBox01 {
+  margin: 0 0 30px;
+}
+#fiberInsulation .theorySec01 .secBox01 .leftBox {
+  margin: 0 0 30px;
+}
+#fiberInsulation .theorySec01 .secBox01 .leftBox .chartBox {
+  max-width: 280px;
+  margin: 0 auto;
+}
+#fiberInsulation .theorySec01 .secBox01 .rightBox .chartBox {
+  max-width: 320px;
+}
+#fiberInsulation .theorySec01 .secBox02 {
+  margin: 30px 0;
+}
+#fiberInsulation .theorySec01 .secBox02 .leftBox {
+  margin: 0 0 30px;
+}
+#fiberInsulation .theorySec01 .secBox02 .leftBox .chartBox {
+  max-width: 200px;
+  margin: 0 auto;
+}
+#fiberInsulation .theorySec01 .secBox02 .rightBox .chartBox {
+  max-width: 220px;
+}
+#fiberInsulation .theorySec01 .secBox03 {
+  margin: 40px 0 0;
+}
+#fiberInsulation .theorySec01 .secBox03 .chartBox {
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+#fiberInsulation .theorySec01 .secBox04 {
+  margin: 40px 0 0;
+}
+#fiberInsulation .theorySec01 .secBox04 ul {
+  max-width: 360px;
+  margin: 0 auto;
+}
+#fiberInsulation .theorySec01 .secBox04 ul li + li {
+  margin: 20px 0 0;
+}
+#fiberInsulation .theorySec01 .secBox04 > p {
+  margin: 15px 0 0;
+}
+#fiberInsulation .theorySec02 .secBox01 dl {
+  margin: 0 0 40px;
+}
+#fiberInsulation .theorySec02 .secBox01 dl dt {
+  margin: 0 0 15px;
+}
+#fiberInsulation .theorySec02 .secBox01 dl .chart01 {
+  max-width: 260px;
+}
+#fiberInsulation .theorySec02 .secBox01 dl .chart02 {
+  max-width: 400px;
+}
+#fiberInsulation .theorySec02 .secBox01 .txt {
+  padding: 20px 10px;
+}
+#fiberInsulation .theorySec02 .secBox02 {
+  margin: 40px 0 0;
+}
+#fiberInsulation .theorySec02 .secBox02 .chartBox {
+  max-width: 340px;
+}
+#fiberInsulation .theorySec03 .chart01 {
+  max-width: 280px;
+}
+#fiberInsulation .theorySec03 .chart02 {
+  max-width: 200px;
+  margin: 40px 0 60px;
+}
+#fiberInsulation .theorySec03 .borderBox {
+  padding: 20px 10px;
+}
+#fiberInsulation .theorySec03 .secBox01 {
+  margin: 40px 0 30px;
+}
+#fiberInsulation .theorySec03 .secBox01 ul {
+  text-align: center;
+}
+#fiberInsulation .theorySec03 .secBox01 ul li + li {
+  margin: 40px 0 0;
+}
+#fiberInsulation .theorySec04 .chartBox {
+  margin: 40px 0 0;
+}
+#fiberInsulation .theorySec04 .chartBox .chart {
+  max-width: 400px;
+  margin: 0 0 10px;
+}
+
+/* --------------------------------------------------
+	発砲プラスチック系断熱材について
+-------------------------------------------------- */
+#aboutPlastic .link-area ul li {
+  max-width: 280px;
+}
+#aboutPlastic .link-area ul li:nth-child(1) {
+  max-width: 240px;
+}
+#aboutPlastic .photoList {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#aboutPlastic .photoList ul li + li {
+  margin: 40px 0 0;
+}
+#aboutPlastic .photoList ul p em {
+  font-size: 16px;
+}
+#aboutPlastic .borderPanel {
+  padding: 20px 10px;
+}
+#aboutPlastic #section01 .chart01 {
+  max-width: 600px;
+  margin: 30px auto 40px;
+}
+#aboutPlastic #section01 .chart02 {
+  max-width: 600px;
+  margin: 30px auto 40px;
+}
+#aboutPlastic #section01 .chart03 {
+  max-width: 600px;
+  margin: 30px auto 40px;
+}
+#aboutPlastic #section01 .chart04 {
+  max-width: 600px;
+  margin: 30px auto;
+}
+#aboutPlastic #section01 .chartPanel {
+  position: relative;
+}
+#aboutPlastic #section01 .chartPanel .chartBox01 {
+  max-width: 400px;
+  margin: 0 0 40px;
+}
+#aboutPlastic #section02 .chart01 {
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+#aboutPlastic #section02 .small {
+  font-size: 12px;
+}
+#aboutPlastic #section02 .chart02 {
+  max-width: 500px;
+  margin: 40px auto 0;
+}
+#aboutPlastic #section02 .chart03 {
+  max-width: 280px;
+}
+#aboutPlastic #section02 .chart04,
+#aboutPlastic #section02 .chart05 {
+  max-width: 340px;
+}
+#aboutPlastic #section02 .secBox + .secBox {
+  margin: 50px 0 0;
+}
+#aboutPlastic #section02 .secBox + .txt {
+  margin: 50px 0 0;
+  padding: 0;
+  font-size: 13px;
+}
+#aboutPlastic #section02 .secBox .leftBox {
+  margin: 0 0 30px;
+}
+#aboutPlastic #section02 .chartTxt {
+  max-width: 240px;
+}
+#aboutPlastic #section02 .chart06 {
+  max-width: 500px;
+}

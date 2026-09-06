@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="Expires" content="86400">
+		<!--title-->
+		<title>お問い合わせ　｜　ホーニング加工、旋盤加工、溶接加工の株式会社杉浦ボーリング工作所</title>
+		<meta name="description" content="愛知県碧南市にある株式会社杉浦ボーリング工作所のお問い合わせのページです。油圧・空圧シリンダー部品のホーニング加工、旋盤加工を創業40年の実績と経験でお応えします。" />
+		<meta name="keywords" content="お問い合わせ,碧南,愛知県,名古屋,鉄工所,工作所,ホーニング,旋盤,溶接,硬質クロムメッキ加工,小ロット" />
+		<!--css-->
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
+		<link rel="stylesheet" type="text/css" href="../css/slick.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<!--css(sp)-->
+		<link rel="stylesheet" type="text/css" href="../css/common_sp.css" media="only screen and (min-width: 0px) and (max-width: 768px)"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout_sp.css" media="only screen and (min-width: 0px) and (max-width: 768px)"/>
+		<!--js-->
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/slick.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../js/html5.min.js" defer></script>
+		<![endif]-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47125520-40"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47125520-40');
+</script>
+
+	</head>
+	<body>
+
+		<!--▽ヘッダー▽-->
+		<header>
+			<div>
+				<h1><a href="../"><span>油圧・空圧シリンダー部品の機械加工及び関連材料</span><em>株式会社杉浦ボーリング工作所</em></a></h1>
+				<nav>
+					<ul>
+						<li><a href="../">ホーム</a></li>
+						<li><a href="../company/">会社概要</a></li>
+						<li><a href="#">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<p class="tel"><span>お気軽にご相談ください。</span><a href="tel:0566481921">0566-48-1921</a><span>受付時間：8:30～17:30</span></p>
+			</div>
+		</header>
+		<!--△ヘッダー△-->
+
+		<!--▽メインコンテンツ▽-->
+		<div id="contact">
+
+			<!--▽キービジュアル▽-->
+			<div id="kv">
+				<h2><img src="../image/contact/kv_ttl.png" alt=""></h2>
+			</div>
+			<!--△キービジュアル△-->
+
+			<!--▽spNav▽-->
+			<ul id="spNav">
+				<li><a href="../"><span>トップページ</span></a></li>
+				<li><a href="../company/"><span>会社概要</span></a></li>
+				<li><a href="#"><span>メールお問い合わせ</span></a></li>
+				<li><a href="#"><span>電話お問い合わせ</span></a></li>
+			</ul>
+			<!--△spNav△-->
+
+			<!--▽コンテンツ1▽-->
+			<section id="sec01">
+
+				<div class="cntWrap">
+					<dl class="contactTop">
+						<dt>お電話・FAXでのお問い合わせはこちら</dt>
+						<dd>
+							<ul>
+								<li>
+									<p class="num"><a href="tel:0566481921"><span>TEL</span><em>0566-48-1921</em></a></p>
+									<p>お電話をおかけの際、<br class="spBreak">番号をお確かめください。<br>
+									（祝日・年始年末ほか、弊社休業日を除く）</p>
+								</li>
+								<li>
+									<p class="num"><span>FAX</span><em>0566-48-5755</em></p>
+									<p>お名前・ご連絡先・お問い合わせ<br class="spBreak">内容などを明記のうえ、<br class="pcBreak">
+									お送りください。<br class="spBreak">内容を確認後、ご連絡させていただきます。</p>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<ul class="list">
+						<li>メールでのお問い合わせをご希望の方は、下記のフォームにご記入いただき、「 確認する」ボタンを押してください。</li>
+						<li>必須印のついている項目は必須です。ご記入漏れのないようにお願いいたします。</li>
+					</ul>
+
+					<form method="post" action="index.php" enctype="multipart/form-data">
+
+						<input type="hidden" name="csrf_token" value="{$csrf_token}">
+						
+						<table>
+							<tbody>
+								<tr>
+									<th>会社名<em>必須</em></th>
+									<td>
+										<input type="text" name="会社名" value="{$会社名}" />
+										<input type="hidden" name="required[]" value="会社名" />
+										{if:$required.会社名}
+									 	<div class="error"><em>{$required.会社名}</em></div>
+									 	{/if:$required.会社名}
+									</td>
+								</tr>
+								<tr>
+									<th>お名前<em>必須</em></th>
+									<td>
+										<input type="text" name="お名前" value="{$お名前}" />
+										<input type="hidden" name="required[]" value="お名前" />
+										{if:$required.お名前}
+									 	<div class="error"><em>{$required.お名前}</em></div>
+									 	{/if:$required.お名前}
+									</td>
+								</tr>
+								<tr>
+									<th>ふりがな<em>必須</em></th>
+									<td>
+										<input type="text" name="ふりがな" value="{$ふりがな}" />
+										<input type="hidden" name="required[]" value="ふりがな" />
+										{if:$required.ふりがな}
+									 	<div class="error"><em>{$required.ふりがな}</em></div>
+									 	{/if:$required.ふりがな}
+									</td>
+								</tr>
+								<tr>
+									<th>電話番号<em>必須</em></th>
+									<td>
+										<input type="text" name="電話番号" value="{$電話番号}" />
+										<input type="hidden" name="required[]" value="電話番号" />
+										{if:$required.電話番号}
+									 	<div class="error"><em>{$required.電話番号}</em></div>
+									 	{/if:$required.電話番号}
+									</td>
+								</tr>
+								<tr>
+									<th>FAX番号<em>必須</em></th>
+									<td>
+										<input type="text" name="FAX番号" value="{$FAX番号}" />
+										<input type="hidden" name="required[]" value="FAX番号" />
+										{if:$required.FAX番号}
+									 	<div class="error"><em>{$required.FAX番号}</em></div>
+									 	{/if:$required.FAX番号}
+									</td>
+								</tr>
+								<tr>
+									<th>図面</th>
+									<td>
+		                                <input type="file" name="図面">
+		                            </td>
+								</tr>
+								<tr class="last">
+									<th>お問い合わせ内容</th>
+									<td>
+										<textarea name="お問い合わせ内容" class="wide">{$お問い合わせ内容}</textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p>下記「ウェブサイトにおける個人情報の取扱いについて」をご確認いただき、<br>
+						宜しければ「個人情報の取扱いについて同意する」にチェックをして、内容を送信して下さい。</p>
+
+						<div class="privacy">
+							<p>ウェブサイトにおける個人情報の取扱いについて<br>
+							株式会社杉浦ボーリング工作所（以下「当社」といいます。）は、当社の個人情報保護方針に基づき、当ウェブサイトにおける個人情報の取扱いを以下のとおりといたします。</p>
+							<dl>
+								<dt>個人情報の利用</dt>
+								<dd>当ウェブサイトのご利用に際して、お客様自身のご登録による個人情報をお預かりし、当該登録目的に対応するために必要な範囲内で個人情報を利用します。<br>
+								当ウェブサイトのサービス改善・向上を行うために、ご意見やご利用履歴などを分析する場合。<br>
+								当ウェブサイトがお客様にとって有益と判断した情報をお知らせする場合。<br>
+								当ウェブサイトが業務を遂行する為に必要な範囲内で、当該個人情報を利用することについて相当な理由がある場合。</dd>
+							</dl>
+							<dl>
+								<dt>クッキー・IPアドレス</dt>
+								<dd>クッキー及びIPアドレス情報については、単独では個人を特定することができないため、個人情報とは考えておりません。<br>
+								ただしこれらの情報と個人情報を一体として使用される場合にはこれらも個人情報とみなします。</dd>
+							</dl>
+							<dl>
+								<dt>個人情報の第三者提供</dt>
+								<dd>当ウェブサイトは、お客様の同意が無い限り個人情報を第三者に提供しません。<br>
+								ただし、行政機関や司法機関などから法的義務を伴う要請を受けた場合を除きます。</dd>
+							</dl>
+							<dl>
+								<dt>個人情報の取扱いの委託</dt>
+								<dd>上記の利用目的のために、お客様の個人情報について、その取扱いを外部に委託する場合がございます。<br>
+								その場合には、個人情報の保護に十分な措置を講じている者を選定し、委託先に対して必要かつ適切な監督を行い、個人情報を保護します。</dd>
+							</dl>
+							<dl>
+								<dt>個人情報の管理</dt>
+								<dd>お客様よりお預かりする個人情報は、不正なアクセス・改ざん・破壊・紛失・漏洩等が生じないよう、最善の注意を払い管理しております。また、院内においても個人情報に係るデータベースへのアクセス権を有する者を限定し、不正な利用がされないよう厳重に管理いたします。</dd>
+							</dl>
+						</div>
+
+						<p class="checkPrivasy"><label><input type="checkbox">個人情報の取扱いについて同意する</label></p>
+
+						<p class="btnConfirm"><input type="submit" value="確認する" disabled></p>
+
+					</form>
+
+				</div>
+
+			</section>
+			<!--△コンテンツ1△-->
+
+		</div>
+		<!--△メインコンテンツ△-->
+
+		<!--▽pagetop▽-->
+		<div class="pagetopBox">
+			<p id="pagetop"><img src="../image/common/pagetop.png" alt=""></p>
+		</div>
+		<!--△pagetop△-->
+
+		<!--▽spNav▽-->
+		<ul id="spNav">
+			<li><a href="../"><span>トップページ</span></a></li>
+			<li><a href="../company/"><span>会社概要</span></a></li>
+			<li><a href="#"><span>メールお問い合わせ</span></a></li>
+			<li><a href="#"><span>電話お問い合わせ</span></a></li>
+		</ul>
+		<!--△spNav△-->
+
+		<!--▽フッター▽-->
+		<footer>
+			<div class="footWrap">
+				<ul class="footLinkPc">
+					<li>> <a href="../">ホーム</a></li>
+					<li>> <a href="../company/">会社概要</a></li>
+				</ul>
+				<div class="footBox">
+					<p class="logo"><span>油圧・空圧シリンダー部品の機械加工及び関連材料</span><em>株式会社杉浦ボーリング工作所</em></p>
+					<div class="contact">
+						<p>TEL：0566-48-1921 （受付時間：8:30～17:30）</p>
+						<p>FAX：0566-48-5755</p>
+						<p>〒447-0088　愛知県碧南市札木町３丁目２１６</p>
+					</div>
+					<a href="">メールでのお問合せはこちら</a>
+				</div>
+			</div>
+			<div class="copy">
+				<p>Copyright &copy; 愛知県碧南市 株式会社杉浦ボーリング工作所.All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!--△フッター△-->
+			
+	</body>
+</html>

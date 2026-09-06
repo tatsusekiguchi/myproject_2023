@@ -1,0 +1,491 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain {
+  .topKvPanel {
+    height: 400px;
+    margin: 0 0 60px;
+    .topKvTitle {
+      width: 95%;
+      max-width: 320px;
+      padding: 20px 10px;
+      text-align: right;
+      background: url("../image/top/top_kv_ttl_bg.png") center no-repeat;
+      background-size: cover;
+      h1 {
+        font-size: 24px;
+        span {
+          + span {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 60px 0;
+    .message {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 1000px;
+      img {
+        animation: moveRightToLeft 14s linear infinite;
+      }
+    }
+    .secBox {
+      .photo {
+      }
+      .txtBox {
+        padding: 30px 0 0;
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 60px 0 100px;
+    .secBox {
+      .photo {
+        .logo {
+          max-width: 200px;
+        }
+      }
+      .txtBox {
+        padding: 30px 0 0;
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+#serviceMain {
+  .sec01 {
+    padding: 60px 0 80px;
+    .topTxt {
+      margin: 0 0 30px;
+    }
+    .secPanel {
+      padding: 20px;
+      .secTtl {
+        margin: 0 0 20px;
+        h3 {
+          padding: 0 0 0 30px;
+          font-size: 20px;
+          background: url("../image/service/sec_ttl_icon.png") left center
+            no-repeat;
+          background-size: 20px auto;
+        }
+      }
+    }
+    .secPanelList {
+      margin: 20px 0 40px;
+      .secPanel {
+        + .secPanel {
+          margin: 20px 0 0;
+        }
+        .txt {
+          padding: 10px 0 0;
+        }
+        .box {
+          min-height: 200px;
+          padding: 5px 0 15px;
+        }
+        .box01 {
+          background: url("../image/service/sec01_icon_01.png") center no-repeat;
+          background-size: 180px auto;
+        }
+        .box02 {
+          background: url("../image/service/sec01_icon_02.png") center no-repeat;
+          background-size: 180px auto;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0;
+    .secTtl {
+      margin: 0 0 20px;
+      h2 {
+        padding: 0 0 0 30px;
+        font-size: 20px;
+        background: url("../image/service/sec_ttl_icon.png") left center
+          no-repeat;
+        background-size: 20px auto;
+      }
+    }
+    .topTxt {
+      margin: 0 0 30px;
+    }
+    .recruitPanel {
+      margin: 0 0 40px;
+      padding: 20px;
+      .secBox {
+        .txtBox {
+          padding: 20px 0;
+          h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#companyMain {
+  .sec01 {
+    padding: 60px 0;
+    .messageTitle {
+      max-width: 280px;
+      margin: 0 0 30px;
+      p {
+        font-size: 20px;
+      }
+      span {
+        padding: 10px 20px;
+      }
+    }
+    .txt {
+      margin: 0 0 20px;
+    }
+    .name {
+      padding: 0 10px;
+
+      span {
+        margin: 0 15px 0 0;
+      }
+      em {
+        font-size: 24px;
+      }
+    }
+  }
+  .sec02 {
+    padding: 60px 0;
+    .infoPanel {
+      padding: 30px 20px;
+      .infoBox {
+        dl {
+          display: block;
+          padding: 15px 0;
+          dt {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 70px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+#recruitMain {
+  .sec01 {
+    padding: 60px 0 80px;
+    .topTxt {
+      margin: 0 0 30px;
+    }
+    .aboutPanel {
+      padding: 20px 20px 60px;
+      .secBox {
+        .txtBox {
+          h3 {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .featureList {
+      margin: 30px 0 60px;
+      ol {
+        max-width: 600px;
+        li {
+          padding: 60px 20px 30px;
+          + li {
+            margin: 80px 0 0;
+          }
+        }
+        .num {
+          top: -50px;
+          width: 100px;
+          height: 100px;
+          font-size: 16px;
+          em {
+            font-size: 30px;
+          }
+        }
+        dl {
+          dt {
+            margin: 0 0 15px;
+            font-size: 16px;
+            em {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .slidePanel {
+      .slideBox {
+        ul {
+          li {
+            width: calc(100% / 2);
+            height: 250px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0;
+    .sectionTitle {
+      p {
+        max-width: 280px;
+      }
+    }
+    .secBoxList {
+      padding: 10px 0 0;
+    }
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .txtBox {
+        padding: 20px 0 0;
+        h3 {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 80px 0;
+    .tabContainer {
+      padding: 20px 0 0;
+    }
+    .tabList {
+      max-width: 800px;
+      ul {
+        max-width: 400px;
+        li {
+          position: relative;
+          width: 50%;
+          padding: 15px 10px;
+          font-size: 18px;
+          + li {
+            left: -5px;
+          }
+        }
+      }
+    }
+    .tabPanel {
+      padding: 40px 20px;
+    }
+    .tabItem {
+      dl {
+        display: block;
+        padding: 15px 0;
+        dt {
+          width: 100%;
+        }
+      }
+    }
+    .btnMore {
+      max-width: 280px;
+      margin: 40px auto 0;
+    }
+  }
+  .sec04 {
+    padding: 80px 0;
+    .sectionTitle {
+      p {
+        max-width: 280px;
+      }
+    }
+    .secPanel {
+      padding: 30px 20px;
+      + .secPanel {
+        margin: 40px 0 0;
+      }
+      .secBox {
+        .txtBox {
+          dl {
+            dt {
+              margin: 0 0 10px;
+              span {
+                width: 90px;
+                margin: 0 0 5px;
+              }
+              em {
+                display: block;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 80px 0;
+    .topTxt {
+      margin: 0 0 30px;
+    }
+  }
+  .sec06 {
+    padding: 60px 0 80px;
+    .topTxt {
+      margin: 0 0 30px;
+    }
+  }
+}
+.contactTelLinePanel {
+  max-width: 600px;
+  padding: 30px 0;
+  background: none;
+  .contactBox {
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    + .contactBox {
+      margin: 30px 0 0;
+    }
+    dl {
+      dt {
+        max-width: 300px;
+        margin: 0 auto 15px;
+        font-size: 16px;
+      }
+    }
+    &.tel {
+      dl {
+        dd {
+          a {
+            span {
+              font-size: 16px;
+            }
+            em {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    &.line {
+      dl {
+        .qrBox {
+          display: block;
+          max-width: 330px;
+          a {
+            width: 80px;
+            margin: 0 auto 20px;
+          }
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contactMain {
+  .contactMainContainer {
+    padding: 60px 0 80px;
+  }
+  .sec01,
+  .sec02 {
+    .sectionTitle {
+      p {
+        max-width: 180px;
+      }
+    }
+    .topTxt {
+      margin: 0 0 30px;
+    }
+  }
+  .sec01 {
+    margin: 0 0 80px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	formLayout
+///////////////////////////////////////////////////////////*/
+.formMain {
+  .contactForm {
+    dl {
+      display: block;
+      padding: 10px 0;
+      dt {
+        width: 100%;
+      }
+      dd {
+        width: 100%;
+      }
+      &.line {
+        align-items: flex-start;
+      }
+    }
+  }
+  .privacy {
+    .agreeBox {
+      height: 250px;
+      padding: 20px 10px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  .fileUploadBox {
+    display: block;
+
+    .fileBox {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+
+    .fileArea {
+      display: block;
+
+      .inputFile {
+        width: 200px;
+      }
+
+      > p {
+        width: 100%;
+      }
+    }
+  }
+}

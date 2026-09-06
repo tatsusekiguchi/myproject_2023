@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+  .txt {
+    line-height: 1.5;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    .headWrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      padding: 5px 20px 20px;
+      z-index: 999;
+      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+        "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+        "メイリオ", "Meiryo", "verdana", sans-serif;
+      background: #ffffff;
+    }
+    .logoBox {
+      .logo {
+        width: 80px;
+        margin: 0 auto;
+        a {
+          display: block;
+        }
+      }
+      .headTitle {
+        display: none;
+      }
+    }
+    .btnContact {
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 80px;
+      width: 160px;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        font-size: 13px;
+        color: #ffffff;
+        z-index: 999;
+        border-radius: 30px 0 0 30px;
+        background: #ff0000;
+      }
+    }
+  }
+  .hamburgerBox {
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    text-align: center;
+    z-index: 999;
+    .hamburger {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      width: 50px;
+      height: 20px;
+    }
+    .hamburger .span {
+      background: #000000;
+      position: absolute;
+      left: 50%;
+      width: 25px;
+      height: 2px;
+      transform: translateX(-50%);
+      transition: 0.4s;
+    }
+    .hamburger .span:nth-of-type(1) {
+      top: 10;
+    }
+    .hamburger .span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hamburger .span:nth-of-type(3) {
+      bottom: 0;
+    }
+    .is-open.hamburger .span:nth-of-type(1) {
+      transform: translate(-50%, 9px) rotate(-45deg);
+    }
+    .is-open.hamburger .span:nth-of-type(2) {
+      opacity: 0;
+    }
+    .is-open.hamburger .span:nth-of-type(3) {
+      transform: translate(-50%, -9px) rotate(45deg);
+    }
+    .hamburgerTxt {
+      margin: 5px 0 0;
+      font-size: 10px;
+      font-weight: bold;
+      color: #000000;
+    }
+  }
+  .topHeader {
+    .btnContact {
+      display: none;
+    }
+  }
+  .fixedBottomMenu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 1s;
+    .leftItem {
+      width: 50%;
+      .btnContact {
+        width: 100%;
+        max-width: 180px;
+        margin: 0 auto;
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 55px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #ffffff;
+          z-index: 999;
+          border-radius: 30px;
+          background: #ff0000;
+        }
+      }
+    }
+    .rightItem {
+      width: 50%;
+      .ul {
+        display: flex;
+        align-items: flex-end;
+        max-width: 150px;
+        margin: 0 auto;
+        .li {
+          width: 50%;
+          font-size: 10px;
+          font-weight: bold;
+          text-align: center;
+          a {
+            display: block;
+          }
+        }
+        .tel {
+          .icon {
+            width: 20px;
+            margin: 0 auto 5px;
+          }
+        }
+        .dm {
+          .icon {
+            width: 25px;
+            margin: 0 auto 5px;
+          }
+        }
+      }
+    }
+  }
+  .header.fixed + .fixedBottomMenu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 120px 0 60px;
+    z-index: -999;
+    background: #ffffff;
+    opacity: 0;
+    transition: 0.6s;
+    &.active {
+      display: block;
+      opacity: 1;
+      z-index: 999;
+    }
+    .navList {
+      .ul {
+        border-top: 1px solid #cccccc;
+        .li {
+          border-bottom: 1px solid #cccccc;
+          a {
+            display: block;
+            padding: 15px 20px;
+          }
+        }
+      }
+    }
+    .contact {
+      display: none;
+      width: 200px;
+      margin: 20px auto 0;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        color: #ffffff;
+        border-radius: 30px;
+        background: #ff0000;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 100px 0 0;
+  }
+  .pageKvPanel {
+    justify-content: flex-end;
+    height: 450px;
+    margin: 0;
+    border-radius: 0;
+    .pageKvTtl {
+      padding: 0 20px 20px;
+      font-size: 30px;
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 30px;
+    h2 {
+      padding: 0;
+      font-size: 16px;
+      &::before {
+        display: none;
+      }
+    }
+    p {
+      padding: 2px 0 0;
+      font-size: 10px;
+      text-indent: 0;
+    }
+  }
+  .mapBox {
+    padding: 0 0 80%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContainer {
+      padding: 0 20px;
+      &::before {
+        height: 220px;
+      }
+    }
+    .footPanel {
+      padding: 30px 20px;
+      .secBox {
+        margin: 0 0 20px;
+        .leftBox {
+          margin: 0 0 30px;
+          padding: 0 0 10px;
+          border-bottom: 1px solid #e5e5e5;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 15px;
+            font-size: 16px;
+          }
+        }
+        .btnReserve {
+          max-width: 140px;
+          margin: 15px auto 0;
+          a {
+            padding: 10px;
+          }
+          p {
+            padding: 0 0 0 18px;
+            background: url(https://studio-kyuzen.jp/system_panel/uploads/images/footer_mail.png)
+              left center no-repeat;
+            background-size: 13px auto;
+          }
+        }
+        .btnTel {
+          max-width: 300px;
+          margin: 15px auto 10px;
+          a {
+            padding: 5px;
+            font-size: 16px;
+          }
+          p {
+            padding: 0 0 0 25px;
+            background: url(https://studio-kyuzen.jp/system_panel/uploads/images/footer_tel.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+        .btnInsta {
+          a {
+            padding: 5px;
+            .em {
+              display: inline-block;
+              font-size: 14px;
+            }
+            .span {
+              display: inline-block;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .footNav {
+        .ul {
+          .li {
+            + .li {
+              margin: 0 0 0 10px;
+            }
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .footBottom {
+      padding: 0 0 20px;
+      font-size: 12px;
+      text-align: center;
+      .leftBox {
+        .logo {
+          max-width: 90px;
+          margin: 0 auto 20px;
+        }
+      }
+    }
+  }
+  .topMain + .footer {
+    .footContainer {
+      padding: 0 20px 100px;
+    }
+  }
+}

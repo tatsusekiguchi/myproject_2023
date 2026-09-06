@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .sideNav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    border-top: 1px solid #ffffff;
+  }
+  .sideNav .ul {
+    display: flex;
+  }
+  .sideNav .ul .li {
+    width: 50%;
+  }
+  .sideNav .ul .li a {
+    display: block;
+    padding: 25px 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    background: #136134;
+  }
+  .sideNav .ul .navRecruit {
+    border-right: 1px solid #ffffff;
+  }
+
+  .pageKvPanel {
+    height: 200px;
+  }
+  .pageKvPanel .pageKvTitle {
+    padding: 0 20px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    margin: 0 15px 0 0;
+    font-size: 30px;
+  }
+
+  .secTitleBox {
+    margin: 0 0 40px;
+  }
+  .secTitleBox .secTitle {
+    font-size: 26px;
+  }
+  .secTitleBox .subBox .sub {
+    font-size: 11px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 0 100px;
+  }
+  .footer .footPanel .leftBox {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  .footer .footPanel .leftBox .logo {
+    max-width: 200px;
+    margin: 0 auto 15px;
+  }
+  .footer .footPanel .leftBox .txt {
+    margin: 0 0 15px;
+  }
+  .footer .footPanel .rightBox .btnRecruit {
+    max-width: 260px;
+    margin: 0 auto 30px;
+  }
+  .footer .footPanel .rightBox .btnRecruit a {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .footer .footPanel .rightBox .copy {
+    text-align: center;
+  }
+}

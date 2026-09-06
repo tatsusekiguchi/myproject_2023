@@ -1,0 +1,380 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: #432a14;
+  font-size: 15px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.8;
+}
+
+/*リンク */
+a {
+  color: #432a14;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 0 0 15%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logo {
+    position: absolute;
+    left: 40px;
+    bottom: -50px;
+    width: 10%;
+    max-width: 130px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 40px 20px 0;
+  }
+  .navBox .navList {
+    width: calc(100% - 400px);
+  }
+  .navBox .navList .ul {
+    text-align: center;
+  }
+  .navBox .navList .ul .li {
+    display: inline-block;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 0 0 0 3%;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+    font-family: "EB Garamond";
+    font-size: 20px;
+  }
+  .navBox .navItem {
+    width: 400px;
+  }
+  .navBox .navItem .ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBox .navItem .ul .tel a {
+    display: inline-block;
+  }
+  .navBox .navItem .ul .tel p {
+    display: inline-block;
+    font-family: "EB Garamond";
+    font-size: 20px;
+  }
+  .navBox .navItem .ul .tel .em {
+    font-size: 30px;
+  }
+  .navBox .navItem .ul .reserve {
+    width: 150px;
+    margin: 0 0 0 20px;
+  }
+  .navBox .navItem .ul .reserve a {
+    display: block;
+    padding: 4px;
+    color: #faf5ee;
+    text-align: center;
+    border-radius: 4px;
+    background: #a36c52;
+  }
+  .navBox .navItem .ul .reserve a p {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    font-size: 13px;
+    background: url(https://miite230627.smooooth.jp/system_panel/uploads/images/header_reserve.png) left center no-repeat;
+    background-size: 13px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+}
+.pageKvPanel .pageKvTitle {
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 60px 40px;
+  color: #ffffff;
+}
+.pageKvPanel .pageKvTitle p {
+  font-family: "EB Garamond";
+  font-size: 60px;
+}
+
+.secTitleBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  writing-mode: vertical-lr;
+  font-family: "EB Garamond";
+  font-size: 36px;
+  color: #dac1b5;
+}
+
+.pageSecTitle {
+  margin: 0 0 80px;
+  text-align: center;
+}
+.pageSecTitle p {
+  font-family: "EB Garamond";
+  font-size: 36px;
+}
+
+.secWrap {
+  position: relative;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.secWrapInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMoreBox {
+  text-align: right;
+}
+
+.btnMore {
+  display: inline-block;
+  width: 225px;
+}
+.btnMore a {
+  display: block;
+  padding: 5px 0;
+  font-family: "EB Garamond";
+  font-size: 20px;
+  text-align: left;
+  background: url(https://miite230627.smooooth.jp/system_panel/uploads/images/btn_more_circle.png) right center no-repeat;
+  background-size: 35px auto;
+}
+.btnMore a p {
+  background: url(https://miite230627.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 22px center no-repeat;
+  background-size: 100px auto;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover p {
+    background: url(https://miite230627.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat;
+    background-size: 100px auto;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+  padding: 200px 0 60px;
+  color: #fbf5ef;
+  background: #432a14;
+}
+.footer .pagetop {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 25px;
+  cursor: pointer;
+  z-index: 99;
+}
+.footer .footBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 440px;
+  margin: 0 0 80px;
+}
+.footer .footBox .logo {
+  width: 120px;
+}
+.footer .footBox .txt a {
+  display: inline-block;
+  color: #fbf5ef;
+}
+.footer .footBox .sns {
+  width: 38px;
+}
+.footer .footBox .sns .insta {
+  position: relative;
+  top: 20px;
+}
+.footer .footBox .sns a {
+  display: block;
+}
+.footer .copy {
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

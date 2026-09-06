@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="contact">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headerTitle gothic">
+			<h1>工場・建物のサーモバリア対策、耐震補強、LSP工法による運用コスト削減なら駒ヶ根の石田建設株式会社へ</h1>
+		</div>
+		<div class="headBox">
+			<div class="logo"><a href="/">
+					<div><img src="https://ishida-kensetsu.net/system_panel/uploads/images/header_logo.png" alt=""></div>
+				</a></div>
+			<div class="navBox gothic">
+				<div class="navList">
+					<div class="ul">
+						<div class="li"><a href="feature">
+								<div>
+									<p>私たちの強み</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="thermobarrier">
+								<div>
+									<p>サーモバリア</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="seismic">
+								<div>
+									<p>耐震補強</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="lsp">
+								<div>
+									<p>LSP工法</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="other">
+								<div>
+									<p>その他の事業</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="caselist">
+								<div>
+									<p>施工事例</p>
+								</div>
+							</a></div>
+						<div class="li spBreak"><a href="recruit">
+								<div>
+									<p>採用情報</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="navItem"><a href="contact">
+						<div>
+							<div class="span">
+								<p>お問い合わせ</p>
+							</div>
+							<div class="em">
+								<p>まずは相談から始めましょう</p>
+							</div>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="contactMain formMain main">
+		<div class="pageTitlePanel">
+			<div class="pageTitle">
+				<h2>お問い合わせ</h2>
+				<p>CONTACT</p>
+			</div>
+		</div>
+		<div class="topTxt">
+			<div class="txt">
+				<p>メールでのご応募は下記のフォームから必要事項を記入の上、送信をお願いします。<br>※ご記入いただいたメールアドレスにメールにてご連絡いたしますので、メールアドレスは正確にご入力ください。</p>
+			</div>
+		</div>
+		<div class="contactMainContainer">
+			<div class="secWrap01">
+				<div class="pageSecTitleBox">
+					<div class="pageSecTitle">
+						<h3>お問い合わせフォーム</h3>
+					</div>
+				</div>
+				<div class="contactForm">
+					<form class="form" data-formtype="2" method="post" action="contactComplete" name="form">
+						<div class="formBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="span">お問い合わせ</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<div class="checkList01 checkList">
+										<div class="ul">
+											<div class="li">
+												<div class="checkItem">
+													<label>
+														<input class="validateMinCheckbox" type="checkbox" name="checkContact[]" value="サーモバリアについて" data-displaynameattr="お問い合わせ項目"><span>サーモバリアについて</span>
+													</label>
+												</div>
+											</div>
+											<div class="li">
+												<div class="checkItem">
+													<label>
+														<input class="validateMinCheckbox" type="checkbox" name="checkContact[]" value="耐震補強" data-displaynameattr="お問い合わせ項目"><span>耐震補強</span>
+													</label>
+												</div>
+											</div>
+											<div class="li">
+												<div class="checkItem">
+													<label>
+														<input class="validateMinCheckbox" type="checkbox" name="checkContact[]" value="LSP工法" data-displaynameattr="お問い合わせ項目"><span>LSP工法</span>
+													</label>
+												</div>
+											</div>
+											<div class="li">
+												<div class="checkItem">
+													<label>
+														<input class="validateMinCheckbox" type="checkbox" name="checkContact[]" value="その他" data-displaynameattr="お問い合わせ項目"><span>その他</span>
+													</label>
+												</div>
+												<input type="text" name="お問い合わせ項目その他" data-displaynameattr="お問い合わせ項目その他">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">法人名</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="validateRequired" type="text" name="法人名" placeholder="例）石田建設設計株式会社" data-displaynameattr="法人名">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">部署</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="validateRequired" type="text" name="部署" placeholder="例）総務部" data-displaynameattr="部署">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">役職</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="validateRequired" type="text" name="役職" placeholder="例）部長" data-displaynameattr="役職">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">ご担当者名</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="validateRequired" type="text" name="ご担当者名" placeholder="例）石田太郎" data-displaynameattr="ご担当者名">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">ご住所</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="address01 validateRequired" type="text" name="address01" placeholder="例）長野県駒ケ根市飯坂2-9-14" data-displaynameattr="ご住所">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">連絡先</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="tel validatePhone1" type="text" name="tel" placeholder="例）0123-45-6789" data-displaynameattr="連絡先">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">メールアドレス</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="mail validateEmail" type="email" name="mail" placeholder="例）mail@example.com" data-displaynameattr="メールアドレス" id="email">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">メールアドレス（確認用）</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="mailConfirm validateConfirmEmail" type="email" name="mailConfirm" placeholder="確認のため再度お願いいたします。" data-displaynameattr="確認用メールアドレス">
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">施工予定住所</p>
+								</div>
+								<div class="dd">
+									<input type="text" name="施工予定住所" placeholder="例）長野県駒ケ根市飯坂〇-〇-〇" data-displaynameattr="施工予定住所">
+								</div>
+							</div>
+							<div class="extraContainer">
+								<div class="extraPanel">
+									<div class="ttl">
+										<p>※耐震補強にチェックされた方は、こちらもご記入ください。</p>
+									</div>
+									<div class="dl">
+										<div class="dt">
+											<p>施工予定の建物の構造</p>
+										</div>
+										<div class="dd">
+											<div class="checkList01 checkList">
+												<div class="ul">
+													<div class="li">
+														<div class="checkItem">
+															<label>
+																<input type="checkbox" name="施工予定の建物の構造[]" value="鉄骨造" data-displaynameattr="耐震補強施工予定の建物の構造"><span>鉄骨造</span>
+															</label>
+														</div>
+													</div>
+													<div class="li">
+														<div class="checkItem">
+															<label>
+																<input type="checkbox" name="施工予定の建物の構造[]" value="鉄筋コンクリート造" data-displaynameattr="耐震補強施工予定の建物の構造"><span>鉄筋コンクリート造</span>
+															</label>
+														</div>
+													</div>
+													<div class="li">
+														<div class="checkItem">
+															<label>
+																<input type="checkbox" name="施工予定の建物の構造[]" value="木造" data-displaynameattr="耐震補強施工予定の建物の構造"><span>木造</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="extraPanel">
+									<div class="ttl">
+										<p>※LSP工法にチェックされた方は、こちらもご記入ください。</p>
+									</div>
+									<div class="dl">
+										<div class="dt">
+											<p>施工予定はありますか？</p>
+										</div>
+										<div class="dd">
+											<div class="radioList01 radioList">
+												<div class="list">
+													<div class="radioBox">
+														<div class="radio">
+															<input type="radio" name="LSP工法施工予定" value="有" data-displaynameattr="LSP工法施工予定はありますか？">
+															<label>有</label>
+														</div>
+													</div>
+												</div>
+												<div class="list">
+													<div class="radioBox">
+														<div class="radio">
+															<input type="radio" name="LSP工法施工予定" value="無" data-displaynameattr="LSP工法施工予定はありますか？">
+															<label>無</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="dl">
+										<div class="dt">
+											<p>施工予定住所</p>
+										</div>
+										<div class="dd">
+											<input type="text" name="LSP工法施工予定住所" placeholder="例）長野県駒ケ根市飯坂〇-〇-〇" data-displaynameattr="LSP工法施工予定住所">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt top">
+									<p class="span">お問い合わせ内容</p>
+								</div>
+								<div class="dd">
+									<textarea class="msg" name="ご質問・お問い合わせ内容" data-displaynameattr="お問い合わせ内容" placeholder="また施工予定地のGooglemapの共有リンクがある場合はこちらに貼り付けください。例）https://goo.gl/maps/rQyCyZzwDQQL5WGo6"></textarea>
+								</div>
+							</div>
+							<div class="privacy">
+								<div class="agreeBox">
+									<div class="box">
+										<p>【石田建設株式会社】（以下「当社」といいます。）は、当社の提供するサービス（以下「本サービス」といいます。）における、ユーザーについての個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。</p>
+									</div>
+									<div class="box">
+										<p>1.収集する利用者情報及び収集方法<br>本ポリシーにおいて、「利用者情報」とは、ユーザーの識別に係る情報、通信サービス上の行動履歴、その他ユーザーまたはユーザーの端末に関連して生成または蓄積された情報であって、本ポリシーに基づき当社が収集するものを意味するものとします。 本サービスにおいて当社が収集する利用者情報は、その収集方法に応じて、以下のようなものとなります。<br>(1) ユーザーからご提供いただく情報 本サービスを利用するために、または本サービスの利用を通じてユーザーからご提供いただく情報は以下のとおりです。<br>・氏名、生年月日、性別、職業等プロフィールに関する情報<br>・メールアドレス、電話番号、住所等連絡先に関する情報<br>・入力フォームその他当社が定める方法を通じてユーザーが入力または送信する情報<br>(2) ユーザーが本サービスの利用において、他のサービスと連携を許可することにより、当該他のサービスからご提供いただく情報<br>ユーザーが、本サービスを利用するにあたり、ソーシャルネットワーキングサービス等の他のサービスとの連携を許可した場合には、その許可の際にご同意いただいた内容に基づき、以下の情報を当該外部サービスから収集します。<br>・当該外部サービスでユーザーが利用するID<br>・その他当該外部サービスのプライバシー設定によりユーザーが連携先に開示を認めた情報<br>(3) ユーザーが本サービスを利用するにあたって、当社が収集する情報<br>当社は、本サービスへのアクセス状況やそのご利用方法に関する情報を収集することがあります。これには以下の情報が含まれます。<br>・リファラ<br>・IPアドレス<br>・サーバーアクセスログに関する情報<br>・Cookie、ADID、IDFAその他の識別子<br>(4) ユーザーが本サービスを利用するにあたって、当社がユーザーの個別同意に基づいて収集する情報<br>当社は、ユーザーが3-1に定める方法により個別に同意した場合、当社は以下の情報を利用中の端末から収集します。・位置情報</p>
+									</div>
+									<div class="box">
+										<p>2.利用目的<br>本サービスのサービス提供にかかわる利用者情報の具体的な利用目的は以下のとおりです。<br>(1) 本サービスに関する登録の受付、本人確認、ユーザー認証、ユーザー設定の記録、利用料金の決済計算等本サービスの提供、維持、保護及び改善のため<br>(2) ユーザーのトラフィック測定及び行動測定のため<br>(3) 広告の配信、表示及び効果測定のため<br>(4) 本サービスに関するご案内、お問い合わせ等への対応のため<br>(5) 本サービスに関する当社の規約、ポリシー等（以下「規約等」といいます。）に違反する行為に対する対応のため<br>(6) 本サービスに関する規約等の変更などを通知するため</p>
+									</div>
+									<div class="box">
+										<p>3.通知・公表または同意取得の方法、利用中止要請の方法<br>3-1 以下の利用者情報については、その収集が行われる前にユーザーの同意を得るものとします。<br>・位置情報<br>3-2 ユーザーは、本サービスの所定の設定を行うことにより、利用者情報の全部または一部についてその収集又は利用の停止を求めることができ、この場合、当社は速やかに、当社の定めるところに従い、その利用を停止します。なお利用者情報の項目によっては、その収集または利用が本サービスの前提となるため、当社所定の方法により本サービスを退会した場合に限り、当社はその収集又は利用を停止します。</p>
+									</div>
+									<div class="box">
+										<p>4.外部送信、第三者提供、情報収集モジュールの有無<br>4-1 本サービスでは、以下の提携先が、ユーザーの端末にCookieを保存し、これを利用して利用者情報を蓄積及び利用している場合があります。</p>
+										<p>(1) 提携先：matomo</p>
+										<p>(2) 上記提携先のプライバシーポリシーのURL：</p>
+										<div class="link"><a href="https://matomo.org/privacy-policy/" target="_blank" rel="noopener">
+												<div>
+													<p>https://matomo.org/privacy-policy/</p>
+												</div>
+											</a></div>
+										<p>(3) 上記提携先のオプトアウト（無効化）URL：</p>
+										<div class="link"><a href="https://matomo.org/privacy-policy/" target="_blank" rel="noopener">
+												<div>
+													<p>https://matomo.org/privacy-policy/</p>
+												</div>
+											</a></div>
+										<p>(4) 利用目的：本サイトの閲覧状況及び当社サイトを含む広告効果等の情報を解析するため</p>
+									</div>
+									<div class="box">
+										<p>5.第三者提供<br>当社は、利用者情報のうち、個人情報については、あらかじめユーザーの同意を得ないで、第三者に提供しません。但し、次に掲げる必要があり第三者に提供する場合はこの限りではありません。<br>(1) 当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合<br>(2) 合併その他の事由による事業の承継に伴って個人情報が提供される場合<br>(3) 第4項の定めに従って、提携先または情報収集モジュール提供者へ個人情報が提供される場合<br>(4) 国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、ユーザーの同意を得ることによって当該事務の遂行に支障を及ぼすおそれがある場合<br>(5) その他、個人情報の保護に関する法律（以下「個人情報保護法」といいます。）その他の法令で認められる場合</p>
+									</div>
+									<div class="box">
+										<p>6.安全管理措置<br>個人情報への不正アクセス、個人情報の漏えい、滅失、又はき損の予防及び是正のため、当社内において規程を整備し安全対策に努めます。以上の目的を達するため、当社は以下の措置を講じています。<br>①　個人情報・個人データの適正な取扱いのため、法令及びガイドライン所定が定める各対応を実施するに当たっての基本方針の策定<br>②　取得・利用・保存・提供・削除・廃棄等の各対応及び責任者と役割を定めた各種規定の策定<br>③　責任者の設置、個人データを取り扱う従業員及び取扱い個人データの範囲の明確化、法及び規程に違反している事実又は兆候を把握した場合の責任者への報告連絡体制の整備、取扱い状況に関する定期点検等の組織的安全管理措置<br>④　個人データについての秘密保持に関する事項を就業規則に記載し、個人データの取扱いに関する留意事項について定期研修を実施する等の人的安全管理措置<br>⑤　従業員の入退出管理、持ち込み機器の制限、個人データを取り扱う機器及び電子媒体・書類の盗難・紛失等を防止するための持ち出し制限・管理等の物理的安全管理措置<br>⑥　個人データを取り扱う情報システムに対する外部からの不正アクセス又は不正ソフトウェアから保護するシステムの導入等の技術的安全管理措置</p>
+									</div>
+									<div class="box">
+										<p>7.個人情報の開示等<br>当社は、ユーザーご本人または代理人から、個人情報保護法の定めに基づき個人情報の利用目的の通知、開示、内容の訂正、追加又は削除、利用の停止、消去及び第三者への提供停止、第三者提供記録の開示（以下、「開示等」）を求められたときは、ユーザーご本人またはその代理人からのご請求であることを確認の上で、ユーザーまたはその代理人に対し、遅滞なく開示を行います（当該個人情報が存在しないときにはその旨を通知いたします。）。但し、個人情報保護法その他の法令により、当社が開示の義務を負わない場合は、この限りではありません。なお、個人情報の開示につきましては、手数料（1件あたり1,000円）を頂戴しておりますので、あらかじめ御了承ください。</p>
+									</div>
+									<div class="box">
+										<p>8.お問い合わせ窓口<br>ご意見、ご質問、苦情のお申出その他利用者情報の取扱いに関するお問い合わせは、下記の窓口までお願いいたします。<br>住所：〒399-4102 長野県駒ヶ根市飯坂二丁目9番14号<br>石田建設株式会社<br>個人情報取扱責任者：石田 耕一</p>
+										<div class="tel">
+											<p>連絡先：</p><a href="tel:0265834151">
+												<div>
+													<p>0265-83-4151</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="box">
+										<p>【2023年4月1日制定】<br>代表者名 石田 耕一</p>
+									</div>
+								</div>
+							</div>
+							<div class="checkItem agreeCheck">
+								<label>
+									<input type="checkbox"><span>個人情報の取り扱いについて同意する</span>
+								</label>
+							</div>
+							<button type="submit">送信する</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="contactPanel">
+					<div class="inner">
+						<div class="txtList">
+							<div class="ul">
+								<div class="li">
+									<p>運用コストカットの実現</p>
+								</div>
+								<div class="li">
+									<p>経験豊富な対応力</p>
+								</div>
+								<div class="li">
+									<p>信頼と実績による安心</p>
+								</div>
+							</div>
+						</div>
+						<div class="contactBox gothic">
+							<div class="telBox">
+								<div class="dl">
+									<div class="dt">
+										<p>お電話でのお問い合わせ</p>
+									</div>
+									<div class="dd"><a href="tel:0265834151">
+											<div>
+												<p>0265-83-4151</p>
+											</div>
+										</a>
+										<p>対応時間8:00 ～ 17:00　定休日：土日曜・祝日</p>
+									</div>
+								</div>
+							</div>
+							<div class="mailBox"><a href="contact">
+									<div>
+										<p>24時間WEB問い合わせ</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel gothic">
+			<div class="secWrap01">
+				<div class="footBox">
+					<div class="leftBox">
+						<div class="logo"><img src="https://ishida-kensetsu.net/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						<p>〒399-4102　長野県駒ヶ根市飯坂二丁目9番14号</p>
+					</div>
+					<div class="rightBox">
+						<div class="btnRecruit"><a href="recruit">
+								<div>
+									<p>一緒に働きませんか？</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="footNav">
+					<div class="ul">
+						<div class="li"><a href="/">
+								<div>
+									<p>HOME</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="feature">
+								<div>
+									<p>私たちの強み</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="thermobarrier">
+								<div>
+									<p>サーモバリア</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="seismic">
+								<div>
+									<p>耐震補強</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="lsp">
+								<div>
+									<p>LSP工法</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="other">
+								<div>
+									<p>その他の事業</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="caselist">
+								<div>
+									<p>施工事例</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="ul">
+						<div class="li"><a href="recruit">
+								<div>
+									<p>採用情報</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="contact">
+								<div>
+									<p>お問い合わせ</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy;2023 石田建設株式会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

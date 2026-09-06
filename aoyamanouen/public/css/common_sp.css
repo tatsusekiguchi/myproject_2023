@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logo {
+    width: 150px;
+  }
+  .header .logo a {
+    display: block;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .hamburger .span {
+    background: #080303;
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px 60px;
+    z-index: 999;
+    background: #ffffff;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 52px;
+    opacity: 1;
+    z-index: 999;
+  }
+  .navBox .navList .ul .li {
+    margin: 20px 0 0;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+  }
+  .navBox .navItem {
+    display: block;
+    margin: 40px 0 0;
+  }
+  .navBox .navItem .tel {
+    margin: 0 0 20px;
+  }
+  .navBox .navItem .tel a {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2a82c5;
+    background: url(https://aoyamanouen230407.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navItem .sns .ul .li {
+    display: inline-block;
+    width: 30px;
+  }
+  .navBox .navItem .sns .ul .li + .li {
+    margin: 0 0 0 5px;
+  }
+  .navBox .navItem .sns .ul .li a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 52px 0 0;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore a {
+    width: 180px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 90px 0 20px;
+    background: url(https://aoyamanouen230407.smooooth.jp/system_panel/uploads/images/footer_line_bg.png) left top repeat-x;
+    background-size: auto 60px;
+  }
+  .footer .logo {
+    max-width: 180px;
+    margin: 0 0 20px;
+  }
+  .footer .info {
+    margin: 0 0 40px;
+  }
+  .footer .pagetop {
+    right: 20px;
+    bottom: 40px;
+    width: 40px;
+  }
+}
+/*   モーダルウインドウ
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .modalContent {
+    max-width: 580px;
+  }
+  .modalContent .mdlBody {
+    padding: 20px;
+  }
+  .modalContent .mdlBody .img {
+    max-width: 250px;
+    margin: 0 auto 30px;
+  }
+  .modalContent .mdlBody .dl .dt {
+    margin: 0 0 30px;
+  }
+  .modalContent .mdlBody .dl .dt .ttl {
+    margin: 0;
+  }
+  .modalContent .mdlBody .dl .dt .span {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+  }
+  .modalContent .mdlBody .dl .dt .kind {
+    display: block;
+    margin: 20px 0 0;
+  }
+  .modalContent .mdlBody .dl .dt .em {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .modalContent .mdlBody .dl .dd {
+    font-size: 14px;
+  }
+  .modalContent .mdlClose .mdlCloseBtn {
+    width: 40px;
+  }
+}

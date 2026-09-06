@@ -1,0 +1,533 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topKvPanel {
+  height: 450px;
+}
+#top .topKvPanel .kvTitleBox h1 {
+  font-size: 28px;
+}
+#top .topKvPanel .kvTitleBox h1 span {
+  line-height: 1.4;
+}
+#top .topKvPanel .kvTitleBox h1 em {
+  padding: 0 20px;
+}
+#top .topKvPanel .kvTitleBox h1 + p {
+  padding: 5px 0 0 20px;
+  font-size: 16px;
+}
+#top .kvMessagePanel {
+  padding: 0 10px 80px;
+}
+#top .kvMessagePanel .kvMessageBox {
+  padding: 0 5px 5px;
+}
+#top .kvMessagePanel .kvMessageBox::before {
+  top: -20px;
+  left: -30px;
+  width: 170px;
+  height: 55px;
+}
+#top .kvMessagePanel .kvMessageBox::after {
+  top: -30px;
+  right: -70px;
+  width: 170px;
+  height: 60px;
+}
+#top .kvMessagePanel .kvMessageBox .inner {
+  padding: 30px 5px 20px;
+}
+#top .kvMessagePanel .kvMessageBox .inner .kvMessage {
+  font-size: 20px;
+}
+#top .kvMessagePanel .kvMessageBox .inner .kvMessage em {
+  font-size: 30px;
+}
+#top .kvMessagePanel .kvMessageBox .inner > p {
+  font-size: 18px;
+}
+#top .sec01 {
+  padding: 40px 0 60px;
+}
+#top .sec01 h2 {
+  margin: 0 0 40px;
+  padding: 40px 0 0;
+  font-size: 20px;
+  background: url("../image/top/top_sec01_title_bg.png") center top no-repeat;
+  background-size: 60px auto;
+}
+#top .sec01 .listBox {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#top .sec01 .listBox ul li + li {
+  margin: 30px 0 0;
+}
+#top .sec01 .listBox ul .ttl {
+  padding: 40px 10px 10px;
+  font-size: 18px;
+}
+#top .sec02 {
+  padding: 60px 0;
+}
+#top .sec02 .listBox {
+  max-width: 400px;
+  margin: 0 auto 50px;
+}
+#top .sec02 .listBox ul li {
+  padding: 10px;
+}
+#top .sec02 .listBox ul li + li {
+  margin: 40px 0 0;
+}
+#top .sec02 .listBox ul dl {
+  padding: 0;
+}
+#top .sec02 .listBox ul dl dt + dd {
+  margin: 0 0 20px;
+}
+#top .sec02 .btnList {
+  max-width: 320px;
+  margin: 0 auto;
+}
+#top .sec02 .btnList ul li + li {
+  margin: 20px 0 0;
+}
+#top .sec02 .btnList ul a {
+  font-size: 16px;
+}
+#top .sec03 {
+  padding: 60px 0;
+}
+#top .sec03 .listBox {
+  max-width: 400px;
+  margin: 0 auto 50px;
+}
+#top .sec03 .listBox ul li + li {
+  margin: 40px 0 0;
+}
+#top .sec03 .listBox ul dl dt {
+  width: 98%;
+  margin: 0 auto 10px;
+  font-size: 18px;
+}
+#top .sec03 .btnReason {
+  max-width: 280px;
+}
+#top .sec03 .btnReason a {
+  font-size: 16px;
+}
+#top .sec04 {
+  padding: 60px 0;
+}
+#top .sec04 .newsListBox ul li {
+  display: block;
+  padding: 0 0 15px;
+}
+#top .sec04 .newsListBox ul li + li {
+  margin: 30px 0 0;
+}
+#top .sec04 .newsListBox ul .info {
+  width: 100%;
+  margin: 0 0 5px;
+}
+#top .sec04 .newsListBox ul .time {
+  margin: 0 20px 0 0;
+}
+#top .linkPanel {
+  padding: 60px 0;
+}
+#top .linkPanel ul {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#top .linkPanel ul li + li {
+  margin: 30px 0 0;
+}
+#top .linkPanel ul a {
+  min-height: 200px;
+}
+#top .linkPanel ul .ttl {
+  max-width: 280px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+#reason .sec01 {
+  padding: 40px 0 60px;
+}
+#reason .sec01 h2 {
+  margin: 0 0 40px;
+  padding: 40px 0 0;
+  font-size: 20px;
+  background: url("../image/top/top_sec01_title_bg.png") center top no-repeat;
+  background-size: 60px auto;
+}
+#reason .sec01 .listBox {
+  max-width: 200px;
+  margin: 0 auto 40px;
+}
+#reason .sec01 .listBox ul li + li {
+  margin: 30px 0 0;
+}
+#reason .sec02 {
+  padding: 60px 0;
+}
+#reason .sec02 .secBox + .secBox {
+  margin: 60px 0 0;
+}
+#reason .sec02 .secBox .txtBox {
+  margin: 30px 0 0;
+}
+#reason .sec02 .secBox .txtBox .ttlBox {
+  margin: 0 0 20px;
+  padding: 5px 10px;
+}
+#reason .sec02 .secBox .txtBox .ttlBox .num {
+  margin: 0 10px 0 0;
+  font-size: 24px;
+}
+#reason .sec02 .secBox .txtBox .ttlBox .ttl {
+  font-size: 20px;
+}
+#reason .sec02 .secBox .txtBox .btnSearch {
+  max-width: 280px;
+  margin: 20px 0 0;
+}
+#reason .sec02 .secBox .txtBox .btnSearch a {
+  font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+#price .sec01 {
+  padding: 40px 0 60px;
+}
+#price .sec01 .subTitle {
+  margin: 0 0 30px;
+}
+#price .sec01 .subTitle h3 {
+  font-size: 18px;
+}
+#price .sec01 .priceBox01 {
+  margin: 0 0 30px;
+}
+#price .sec01 .priceBox01 dl {
+  border: 1px solid #32a44a;
+}
+#price .sec01 .priceBox01 dl dt em {
+  font-size: 20px;
+}
+#price .sec01 .priceBox01 dl dt span {
+  font-size: 14px;
+}
+#price .sec01 .priceBox01 dl dd em {
+  font-size: 20px;
+}
+#price .sec01 .priceBox01 dl dd span {
+  font-size: 16px;
+}
+#price .sec01 .priceBox02 dl > * {
+  width: 50%;
+  padding: 15px 10px;
+}
+#price .sec01 .priceBox02 dl dt {
+  font-size: 18px;
+}
+#price .sec01 .priceBox02 dl dd em {
+  font-size: 18px;
+}
+#price .sec01 .priceBox02 dl dd span {
+  font-size: 14px;
+}
+#price .sec02 {
+  padding: 60px 0;
+}
+#price .sec02 .introPanel + .introPanel {
+  margin: 60px 0 0;
+}
+#price .sec02 .introPanel .secBox .photoList {
+  margin: 0 0 20px;
+}
+#price .sec02 .introPanel .secBox .txtBox h3 {
+  margin: 0 0 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+#price .sec02 .introPanel .infoList {
+  margin: 30px 0 0;
+}
+#price .sec02 .introPanel .infoList dl {
+  font-size: 18px;
+  border: 1px solid #32a44a;
+}
+#price .sec02 .introPanel .btnReserve {
+  max-width: 280px;
+  margin: 40px auto 0;
+}
+#price .sec02 .introPanel .btnReserve a {
+  font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+#flow .sec01 {
+  padding: 40px 0 80px;
+}
+#flow .sec01 .stepPanel + .stepPanel {
+  margin: 60px 0 0;
+}
+#flow .sec01 .stepPanel .stepTitleBox {
+  margin: 0 0 20px;
+  padding: 10px;
+}
+#flow .sec01 .stepPanel .stepTitleBox .step {
+  margin: 0 10px 0 0;
+  line-height: 20px;
+}
+#flow .sec01 .stepPanel .stepTitleBox .step span {
+  font-size: 20px;
+}
+#flow .sec01 .stepPanel .stepTitleBox .step em {
+  font-size: 25px;
+}
+#flow .sec01 .stepPanel .stepTitleBox .title {
+  font-size: 20px;
+}
+#flow .sec01 .stepPanel .topTxt {
+  margin: 0 0 20px;
+}
+#flow .sec01 .stepPanel .topTxt + dl {
+  margin: 20px 0 0;
+}
+#flow .sec01 .stepPanel .itemList ul li + li {
+  margin: 30px 0 0;
+}
+#flow .sec01 .stepPanel .itemList ul .tel a {
+  font-size: 16px;
+}
+#flow .sec01 .stepPanel .itemList ul .tel a em {
+  font-size: 26px;
+}
+#flow .sec01 .stepPanel .itemList ul .reserve a {
+  max-width: 280px;
+  font-size: 16px;
+}
+#flow .sec01 .stepPanel .itemList ul .line a {
+  max-width: 60px;
+  margin: 0 auto 10px;
+}
+#flow .sec01 .stepPanel aside {
+  padding: 20px 0;
+}
+#flow .sec01 .stepPanel .caution {
+  margin: 30px 0 0;
+  padding: 20px 10px;
+}
+#flow .sec01 .stepPanel .caution dl dt {
+  font-size: 18px;
+}
+#flow .sec02 {
+  padding: 40px 0 80px;
+}
+#flow .sec02 .categorySelect dl dt {
+  font-size: 18px;
+}
+#flow .sec02 .categorySelect dl dd .pagingList ul {
+  margin: -10px 0 0 -10px;
+}
+#flow .sec02 .categorySelect dl dd .pagingList ul li {
+  width: calc(50% - 10px);
+  margin: 10px 0 0 10px;
+}
+#flow .sec02 .categorySelect dl dd .pagingList ul li a {
+  font-size: 14px;
+}
+#flow .sec02 .cateSection {
+  padding: 60px 0 0;
+}
+#flow .sec02 .cateSection .sectionTitle {
+  margin: 0 auto 30px;
+  font-size: 16px;
+}
+#flow .sec02 .cateSection .faqPanel dl dt em {
+  width: 40px;
+  margin: 0 10px 0 0;
+  font-size: 26px;
+  line-height: 40px;
+}
+#flow .sec02 .cateSection .faqPanel dl dd .box em {
+  width: 40px;
+  margin: 0 10px 0 0;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/*////////////////////////////////////////////////////////////
+	privacy
+///////////////////////////////////////////////////////////*/
+#privacy .sectionContainer {
+  padding: 40px 0 80px;
+}
+#privacy .sectionContainer .topTxt {
+  margin: 0 0 40px;
+}
+#privacy .sectionContainer .section + .section {
+  margin: 40px 0 0;
+}
+#privacy .sectionContainer .section h2 {
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#privacy .sectionContainer .section .txt + .txt {
+  margin: 20px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#company .sectionContainer {
+  padding: 40px 0 80px;
+}
+#company .sectionContainer .section h2 {
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#company .sectionContainer .section .infoBox {
+  margin: 0 0 40px;
+}
+#company .sectionContainer .section .infoBox dl {
+  display: flex;
+}
+#company .sectionContainer .section .infoBox dl dt {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+}
+#company .sectionContainer .section .infoBox dl dd {
+  width: calc(100% - 100px);
+  padding: 10px;
+  font-size: 14px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact .sectionContainer {
+  padding: 40px 0 80px;
+}
+#contact .sectionContainer .topTxt {
+  margin: 0 0 40px;
+}
+#contact .sectionContainer .section + .section {
+  margin: 40px 0 0;
+}
+#contact .sectionContainer .section h2 {
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#contact .sectionContainer .section .telBox {
+  max-width: 400px;
+  padding: 20px 10px;
+}
+#contact .sectionContainer .section .telBox a {
+  font-size: 18px;
+}
+#contact .sectionContainer .section .telBox a em {
+  font-size: 28px;
+}
+#contact .sectionContainer .section .telBox > p {
+  font-size: 14px;
+}
+#contact .sectionContainer .section .lineBox {
+  max-width: 380px;
+}
+#contact .sectionContainer .section .lineBox a {
+  display: block;
+  padding: 20px;
+}
+#contact .sectionContainer .section .lineBox .qr {
+  width: 100px;
+  margin: 0 auto 20px;
+}
+#contact .sectionContainer .section .lineBox dl {
+  width: 100%;
+  text-align: center;
+}
+#contact .sectionContainer .section .lineBox dl dt {
+  font-size: 18px;
+}
+#contact .sectionContainer .section .lineBox dl dd {
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+#blog .sectionContainer {
+  padding: 40px 0 80px;
+}
+#blog .categoryList {
+  margin: 0 auto 50px;
+}
+#blog .categoryList dl dt {
+  padding: 10px;
+  font-size: 18px;
+}
+#blog .categoryList dl dd {
+  padding: 20px 10px;
+}
+#blog .categoryList dl ul {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#blog .categoryList dl ul li + li {
+  margin: 15px 0 0;
+}
+#blog .categoryList dl ul li a {
+  font-size: 18px;
+}
+#blog .list__blog {
+  margin: 0 0 60px;
+}
+#blog .list__blog__section + * {
+  margin: 50px 0 0;
+}
+#blog .list__pagination .pagination li {
+  margin: 0 5px;
+}
+#blog .list__pagination .pagination li a {
+  width: 35px;
+  height: 35px;
+}
+#blog .detail__blog .titleHeader .title {
+  font-size: 18px;
+}
+#blog .detail__blog .thumbnailBox {
+  max-width: 1000px;
+  margin: 0 0 30px;
+}
+#blog .detail__blog .thumbnailBox img {
+  border-radius: 10px;
+}
+#blog .detail__blog .postContents {
+  font-size: 14px;
+}
+#blog .btnBack {
+  max-width: 280px;
+  margin: 80px auto 0;
+}

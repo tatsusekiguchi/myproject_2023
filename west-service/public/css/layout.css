@@ -1,0 +1,1616 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 900px;
+}
+.topMain .topKvPanel .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvPanel .topKv .kvBox .kv01 {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv02 {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv03 {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvContents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.topMain .topKvPanel .kvContents > * {
+  position: relative;
+  z-index: 1;
+}
+.topMain .topKvPanel .kvTitlePanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  font-size: 20px;
+}
+.topMain .topKvPanel .kvTitlePanel .kvTitle {
+  text-align: left;
+}
+.topMain .topKvPanel .kvTitlePanel .kvTitle .em {
+  font-size: 58px;
+  text-indent: -0.2em;
+}
+.topMain .topKvPanel .kvPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 55%;
+}
+.topMain .topKvPanel .kvPanel .countBox {
+  width: 100%;
+  max-width: 740px;
+  min-height: 400px;
+  padding: 40px 20px;
+  color: #ffffff;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/top_kv_panel_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvPanel .countBox .inner {
+  max-width: 580px;
+  margin: 0 auto;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ff7777;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dt {
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 200px);
+  padding: 0 20px 0 0;
+  text-align: right;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dd .count {
+  width: calc(100% - 90px);
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dd .count p {
+  display: inline-block;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dd .count .em {
+  font-size: 50px;
+  text-align: right;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dd .count .span {
+  min-width: 50px;
+  font-size: 22px;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dd .icon {
+  display: inline-block;
+  width: 70px;
+  margin: 0 0 0 20px;
+  text-align: center;
+}
+.topMain .topKvPanel .kvPanel .countBox .dl .dd .icon > * {
+  display: inline-block;
+}
+.topMain .sec01 {
+  padding: 150px 0;
+}
+.topMain .sec01 .secBox .rightBox .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item {
+  padding: 25px 20px 25px 0;
+  border-bottom: 1px solid #e72119;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/top_news_arrow.png) right 5px center no-repeat;
+}
+.topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item .dl .dt {
+  color: #fe0000;
+}
+.topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item .dl .dt .time {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item .dl .dt .cate {
+  display: inline-block;
+  min-width: 80px;
+  padding: 2px 5px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #e72119;
+  background: #f1f1f1;
+}
+.topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+  }
+  .topMain .sec01 .secBox .leftBox {
+    padding: 15px 0 0;
+  }
+  .topMain .sec01 .secBox .rightBox .webgene-blog {
+    min-width: 600px;
+  }
+  .topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item .dl {
+    display: flex;
+  }
+  .topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item .dt {
+    margin: 0 20px 0 0;
+  }
+  .topMain .sec01 .secBox .rightBox .webgene-blog .webgene-item .dd {
+    max-width: 400px;
+  }
+}
+.topMain .sec02 {
+  padding: 150px 0;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/top_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .pageSecTtlBox .pageSecTtl,
+.topMain .sec02 .pageSecTtlBox .sub {
+  color: #ffb7b7;
+}
+.topMain .sec02 .titlePanel {
+  margin: 0 0 60px;
+}
+.topMain .sec02 .titlePanel .secWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1620px;
+}
+.topMain .sec02 .titlePanel .title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 56%;
+  padding: 0 4% 0 0;
+  font-size: 40px;
+  color: #ffe4e4;
+}
+.topMain .sec02 .titlePanel .title h3 {
+  line-height: 1.7;
+}
+.topMain .sec02 .titlePanel .txt {
+  width: 44%;
+  color: #ffffff;
+}
+.topMain .sec02 .listPanel {
+  margin: 0 0 60px;
+}
+.topMain .sec02 .listPanel .ul a {
+  display: block;
+}
+.topMain .sec02 .listPanel .ul .txt {
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  border-radius: 0 0 6px 6px;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .listPanel .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec02 .listPanel .ul .li {
+    width: calc(33.3333333333% - 35px);
+  }
+  .topMain .sec02 .listPanel .ul .photo {
+    position: relative;
+    height: 275px;
+  }
+  .topMain .sec02 .listPanel .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec02 .btnMoreBox {
+  text-align: center;
+}
+.topMain .sec03 {
+  padding: 150px 0;
+  background: #f1f1f1;
+}
+.topMain .sec03 .secBox {
+  margin: 0 0 60px;
+}
+.topMain .sec03 .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 38px;
+}
+.topMain .sec03 .secBox .txtBox .txt {
+  margin: 0 0 40px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .secBox .photo {
+    position: relative;
+    width: 45%;
+    height: 435px;
+  }
+  .topMain .sec03 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec03 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.topMain .sec03 .listBox .ul a {
+  display: block;
+}
+.topMain .sec03 .listBox .ul .txt {
+  padding: 15px 10px;
+  text-align: center;
+  line-height: 1.7;
+  border-radius: 0 0 6px 6px;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .listBox .ul .li {
+    width: calc(25% - 20px);
+  }
+  .topMain .sec03 .listBox .ul .photo {
+    position: relative;
+    height: 200px;
+  }
+  .topMain .sec03 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec04 {
+  padding: 150px 0;
+}
+.topMain .sec04 .secPanel .leftBox .txt {
+  margin: 0 0 60px;
+}
+.topMain .sec04 .secPanel .leftBox .item .ul .li {
+  border-bottom: 1px solid #e72119;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/top_news_arrow.png) right 15px center no-repeat;
+}
+.topMain .sec04 .secPanel .leftBox .item .ul .li a {
+  display: block;
+  padding: 20px 10px;
+  font-size: 18px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec04 .secPanel .leftBox {
+    width: 40%;
+  }
+  .topMain .sec04 .secPanel .rightBox {
+    width: 50%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+.reasonMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/reason_kv.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .sec01 {
+  padding: 120px 0 200px;
+}
+.reasonMain .sec01 .topBox {
+  margin: 0 0 80px;
+}
+.reasonMain .sec01 .topBox .ttl {
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+.reasonMain .sec01 .section + .section {
+  margin: 100px 0 0;
+}
+.reasonMain .sec01 .section .ttlNumTxt {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.reasonMain .sec01 .section .ttlNumTxt .ttlNumBox {
+  width: 100px;
+  text-align: center;
+}
+.reasonMain .sec01 .section .ttlNumTxt .ttlNumBox .ttlNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: #ffb7b7;
+  background: #cb0600;
+}
+.reasonMain .sec01 .section .ttlNumTxt .ttlNumBox .ttlNum .span {
+  font-size: 13px;
+}
+.reasonMain .sec01 .section .ttlNumTxt .ttlNumBox .ttlNum .em {
+  font-size: 32px;
+  line-height: 1;
+}
+.reasonMain .sec01 .section .ttlNumTxt .ttlTxtBox {
+  width: calc(100% - 100px);
+  font-size: 26px;
+}
+.reasonMain .sec01 .section .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+.reasonMain .sec01 .section .secBox .txtBox .btnMoreBox {
+  margin: 40px 0 0;
+}
+@media (min-width: 1025px) {
+  .reasonMain .sec01 .section .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reasonMain .sec01 .section .secBox .photo {
+    width: 33%;
+  }
+  .reasonMain .sec01 .section .secBox .txtBox {
+    width: 62%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/service_kv.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .topContainer {
+  padding: 100px 0 160px;
+  text-align: center;
+}
+.serviceMain .topContainer .topBox {
+  margin: 0 0 80px;
+}
+.serviceMain .topContainer .topBox .ttl {
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+.serviceMain .topContainer .chart {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.serviceMain .sec01 {
+  padding: 0 0 200px;
+}
+.serviceMain .sec01 .section + .section {
+  margin: 100px 0 0;
+}
+.serviceMain .sec01 .section .ttlNumTxt {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.serviceMain .sec01 .section .ttlNumTxt .ttlNumBox {
+  width: 100px;
+  text-align: center;
+}
+.serviceMain .sec01 .section .ttlNumTxt .ttlNumBox .ttlNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: #ffb7b7;
+  background: #cb0600;
+}
+.serviceMain .sec01 .section .ttlNumTxt .ttlNumBox .ttlNum .span {
+  font-size: 13px;
+}
+.serviceMain .sec01 .section .ttlNumTxt .ttlNumBox .ttlNum .em {
+  font-size: 32px;
+  line-height: 1;
+}
+.serviceMain .sec01 .section .ttlNumTxt .ttlTxtBox {
+  width: calc(100% - 100px);
+  font-size: 26px;
+}
+.serviceMain .sec01 .section .secBox .txt {
+  margin: 0 0 20px;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec01 .section .secBox .photoList {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+  .serviceMain .sec01 .section .secBox .photoList .photo {
+    position: relative;
+    width: calc(50% - 15px);
+    height: 318px;
+  }
+  .serviceMain .sec01 .section .secBox .photoList .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.pageFlowSection .flowSection + .flowSection {
+  margin: 150px 0 0;
+}
+.pageFlowSection .flowSection .topTitleBox {
+  margin: 0 0 80px;
+}
+.pageFlowSection .flowSection .topTitleBox .ttl {
+  max-width: 800px;
+  margin: 0 0 5px;
+  padding: 20px 0 0;
+  font-size: 40px;
+  border-top: 1px solid #000000;
+}
+.pageFlowSection .flowSection .topTitleBox .ttl + p {
+  font-size: 20px;
+}
+@media (min-width: 1085px) {
+  .pageFlowSection .flowSection .topTitleBox .ttl {
+    white-space: nowrap;
+  }
+}
+
+.pageFlowContainer .flowPanel {
+  position: relative;
+}
+.pageFlowContainer .flowPanel:last-child .flowBox .detailBox .txtBox::before {
+  display: none;
+}
+.pageFlowContainer .flowBox .ttlNumTxt {
+  display: flex;
+  align-items: center;
+}
+.pageFlowContainer .flowBox .ttlNumTxt .ttlNumBox {
+  width: 100px;
+  padding: 0 0 10px;
+  text-align: center;
+}
+.pageFlowContainer .flowBox .ttlNumTxt .ttlNumBox .ttlNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: #ffb7b7;
+  background: #cb0600;
+}
+.pageFlowContainer .flowBox .ttlNumTxt .ttlNumBox .ttlNum .span {
+  font-size: 13px;
+}
+.pageFlowContainer .flowBox .ttlNumTxt .ttlNumBox .ttlNum .em {
+  font-size: 32px;
+  line-height: 1;
+}
+.pageFlowContainer .flowBox .ttlNumTxt .ttlTxtBox {
+  width: calc(100% - 100px);
+  font-size: 26px;
+}
+.pageFlowContainer .flowBox .detailBox .txtBox {
+  position: relative;
+  padding: 20px 0 50px 100px;
+  border-top: 1px solid #cb0600;
+}
+.pageFlowContainer .flowBox .detailBox .txtBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 1px;
+  height: 100%;
+  background: #cb0600;
+}
+.pageFlowContainer .flowBox .detailBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+.pageFlowContainer .flowBox .detailBox .txtBox .telBox {
+  max-width: 500px;
+  margin: 20px 0 0;
+  padding: 20px 30px;
+  background: #f1f1f1;
+}
+.pageFlowContainer .flowBox .detailBox .txtBox .telBox > p {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.pageFlowContainer .flowBox .detailBox .txtBox .telBox a {
+  display: block;
+}
+.pageFlowContainer .flowBox .detailBox .txtBox .telBox .em {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 0 0 0 30px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+  background-size: 24px auto;
+}
+@media (min-width: 1025px) {
+  .pageFlowContainer .flowPanel .flowBox {
+    width: calc(100% - 400px);
+  }
+  .pageFlowContainer .flowPanel .flowBox .detailBox .txtBox {
+    min-height: 300px;
+  }
+  .pageFlowContainer .flowPanel .flowBox .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contract
+///////////////////////////////////////////////////////////*/
+.contractMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/contract_kv.png) no-repeat;
+  background-size: cover;
+}
+.contractMain .topContainer {
+  padding: 100px 0 160px;
+  text-align: center;
+}
+.contractMain .topContainer .topBox .ttl {
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+.contractMain .topContainer .topBox .txt p + p {
+  margin: 20px 0 0;
+}
+.contractMain .sec01 {
+  padding: 0 0 200px;
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+.businessMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/business_kv.png) no-repeat;
+  background-size: cover;
+}
+.businessMain .sec01 {
+  padding: 100px 0 200px;
+}
+.businessMain .topContainer {
+  padding: 0 0 150px;
+  text-align: center;
+}
+.businessMain .topContainer .topBox {
+  margin: 0 0 80px;
+}
+.businessMain .topContainer .topBox .ttl {
+  font-size: 40px;
+}
+.businessMain .topContainer .chart {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	land
+///////////////////////////////////////////////////////////*/
+.landMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/land_kv.png) no-repeat;
+  background-size: cover;
+}
+.landMain .landContainer__top {
+  padding: 100px 0;
+}
+.landMain .landContainer__top .checkPanel {
+  padding: 40px 20px;
+  border-radius: 20px;
+  border: 1px solid #fe0000;
+  background: #fff9f9;
+}
+.landMain .landContainer__top .checkPanel .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.landMain .landContainer__top .checkPanel .ul {
+  font-size: 18px;
+}
+.landMain .landContainer__top .checkPanel .ul .li {
+  padding: 0 0 0 40px;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/land_top_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+.landMain .landContainer__top .checkPanel .ul .li + .li {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .landMain .landContainer__top .checkPanel .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .landMain .landContainer__top .checkPanel .inner .ul {
+    width: 50%;
+  }
+}
+.landMain .landContainer__top .arrow {
+  width: 80px;
+  margin: 0 auto;
+}
+.landMain .landContainer__top .message {
+  max-width: 750px;
+  margin: 30px auto 0;
+}
+.landMain .landContainer__merit {
+  padding: 120px 0;
+  background: #f1f1f1;
+}
+.landMain .landContainer__merit .topTitleBox {
+  margin: 0 0 80px;
+}
+.landMain .landContainer__merit .topTitleBox .ttl {
+  max-width: 800px;
+  padding: 20px 0 0;
+  font-size: 40px;
+  border-top: 1px solid #000000;
+}
+.landMain .landContainer__merit .topTitleBox .ttl + p {
+  font-size: 20px;
+}
+@media (min-width: 1025px) {
+  .landMain .landContainer__merit .topTitleBox .ttl {
+    white-space: nowrap;
+  }
+}
+.landMain .landContainer__merit .listBox .ul .photo + .txt {
+  margin: 0 0 15px;
+  padding: 15px 10px;
+  text-align: center;
+  line-height: 1.7;
+  border-radius: 0 0 6px 6px;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .landMain .landContainer__merit .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .landMain .landContainer__merit .listBox .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+  .landMain .landContainer__merit .listBox .ul .photo {
+    position: relative;
+    height: 250px;
+  }
+  .landMain .landContainer__merit .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.landMain .landContainer__flow {
+  padding: 120px 0 200px;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/company_kv.png) no-repeat;
+  background-size: cover;
+}
+.companyMain .sec01 {
+  padding: 120px 0;
+}
+.companyMain .sec01 .secBox .photoBox .name {
+  margin: 20px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+.companyMain .sec01 .secBox .photoBox .name p {
+  display: inline-block;
+}
+.companyMain .sec01 .secBox .photoBox .name .em {
+  margin: 0 0 0 10px;
+  font-size: 30px;
+}
+.companyMain .sec01 .secBox .txtBox {
+  padding: 20px 0 0;
+  border-top: 1px solid #000000;
+}
+.companyMain .sec01 .secBox .txtBox .ttl {
+  margin: 0 0 40px;
+  font-size: 30px;
+}
+.companyMain .sec01 .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .companyMain .sec01 .secBox .photoBox {
+    width: 400px;
+  }
+  .companyMain .sec01 .secBox .txtBox {
+    width: calc(100% - 480px);
+  }
+}
+.companyMain .sec02 {
+  padding: 120px 0 0;
+  background: #f1f1f1;
+}
+.companyMain .sec02 .infoBox {
+  padding: 0 0 60px;
+}
+.companyMain .sec02 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  line-height: 2;
+  border-bottom: 1px solid #e72119;
+}
+.companyMain .sec02 .infoBox .dl .dt {
+  width: 200px;
+  text-align: center;
+}
+.companyMain .sec02 .infoBox .dl .dd {
+  width: calc(100% - 260px);
+}
+.companyMain .sec02 .infoBox .dl .dd a {
+  display: inline-block;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/contact_kv.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .topTitleBox {
+  margin: 0 0 30px;
+}
+.contactMain .topTitleBox .ttl {
+  max-width: 800px;
+  padding: 20px 0 0;
+  font-size: 40px;
+  border-top: 1px solid #000000;
+}
+.contactMain .topTitleBox .ttl + p {
+  margin: 20px 0 0;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .contactMain .topTitleBox .ttl {
+    white-space: nowrap;
+  }
+}
+.contactMain .sec01 {
+  padding: 120px 0 150px;
+}
+.contactMain .sec01 .telPanel {
+  padding: 20px 60px;
+  background: #f1f1f1;
+}
+.contactMain .sec01 .telPanel .telBox {
+  max-width: 800px;
+  margin: 0 0 20px;
+}
+.contactMain .sec01 .telPanel .telBox .ttlBox {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  font-size: 0;
+}
+.contactMain .sec01 .telPanel .telBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.contactMain .sec01 .telPanel .telBox .ttlBox .ttl .em {
+  color: #cb0600;
+}
+.contactMain .sec01 .telPanel .telBox a {
+  display: inline-block;
+}
+.contactMain .sec01 .telPanel .telBox a .em {
+  display: inline-block;
+  margin: 0 0 5px;
+  padding: 0 0 0 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+  background-size: 24px auto;
+}
+.contactMain .sec01 .telPanel .telBox a .span {
+  padding: 0 0 0 20px;
+}
+.contactMain .sec02 {
+  padding: 0 0 200px;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #e72119;
+  background: #f1f1f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e72119;
+  background: #f1f1f1;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  position: relative;
+  display: block;
+  max-width: 140px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px 0 15px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/btn_more_arrow.png) left center no-repeat;
+  background-size: 45px auto;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit] span {
+  display: inline-block;
+  padding: 0 0 5px;
+  color: #fe0000;
+  border-bottom: 1px solid #fe0000;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul {
+  margin: -10px -20px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li {
+  display: inline-block;
+  margin: 10px 20px 0 0;
+}
+.formMain .contactForm .form .checkList02 {
+  margin: 20px 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0 20px;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  border: 1px solid #e72119;
+  background: #f1f1f1;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #e72119;
+  border-right: 3px solid #e72119;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+.formMain .contactForm .form .radioList .list + .list {
+  margin: 0 0 0 15px;
+}
+.formMain .contactForm .form .radioList + input {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .form .radioList .list + .list {
+    margin: 0 0 0 30px;
+  }
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #e72119;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #e72119;
+}
+.formMain .contactForm .form .postal {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postal input {
+  width: 90px;
+}
+.formMain .contactForm .form .postal input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postal .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 120px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #e72119;
+  background: #f1f1f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .inputVisit {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .inputVisit > p {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .datePanel + .datePanel {
+  margin: 15px 0 0;
+}
+.formMain .contactForm .form .ageInput {
+  display: inline-block;
+}
+.formMain .contactForm .form .ageInput + .ageInput {
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .form .ageInput input {
+  width: 100px;
+}
+.formMain .contactForm .form .ageInput .ageTxt {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 2;
+}
+.formMain .contactForm .form .addressTxt {
+  padding: 3px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.formMain .contactForm {
+  font-weight: bold;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox .dl + .dl {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .formBox .dl .dt {
+  padding: 0 0 5px;
+}
+.formMain .contactForm .formBox .dl .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dl .dt .em {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #c41823;
+}
+.formMain .contactForm .formBox .dl .dt .small {
+  font-size: 14px;
+  font-weight: normal;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: initial;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 220px;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  position: relative;
+  width: calc(100% - 260px);
+}
+.formMain .contactForm .formBox .baseBox .company {
+  max-width: 580px;
+}
+.formMain .contactForm .formBox .baseBox + * {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .formBox .multi {
+  margin: 20px 0;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm .formBox .multi {
+    display: flex;
+    justify-content: space-between;
+  }
+  .formMain .contactForm .formBox .multi > * {
+    width: 50%;
+    max-width: 580px;
+  }
+  .formMain .contactForm .formBox .multi .dl + .dl {
+    margin: 0;
+  }
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+  width: 60px;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid #e72119;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .aside {
+  padding: 10px 0;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox + .fileBox {
+  margin: 20px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 40%;
+  font-size: 16px;
+  color: #404142;
+  text-align: center;
+  border: 1px solid #c4dcc9;
+  background: #f0f9f2;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 40px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p {
+  width: 58%;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.complete .btnMoreBox {
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain .pageKvPanel {
+  background: url(https://westservice.co.jp/system_panel/uploads/images/blog_kv.png) no-repeat;
+  background-size: cover;
+}
+.blogMain .blogSection {
+  padding: 120px 0;
+}
+.blogMain .catePanel {
+  margin: 0 0 60px;
+}
+.blogMain .catePanel .categoryBox {
+  padding: 15px 0;
+  border-top: 1px solid #e72119;
+  border-bottom: 1px solid #e72119;
+}
+.blogMain .catePanel .webgene-header > * {
+  font-size: 24px;
+  text-align: center;
+}
+.blogMain .catePanel .webgene-item a {
+  display: block;
+  padding: 10px;
+  color: #fe0000;
+  text-align: center;
+  border: 1px solid #e72119;
+  background: #f1f1f1;
+}
+@media (min-width: 1025px) {
+  .blogMain .catePanel .webgene-blog {
+    display: flex;
+    align-items: center;
+  }
+  .blogMain .catePanel .webgene-blog > * {
+    width: calc(20% - 10px);
+  }
+  .blogMain .catePanel .webgene-blog .webgene-header {
+    margin: 0;
+  }
+  .blogMain .catePanel .webgene-blog .webgene-item {
+    margin: 0 0 0 20px;
+  }
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item {
+  padding: 0 0 20px;
+  border-bottom: 1px solid #e72119;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  font-size: 15px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .infoBox .time {
+  color: #fe0000;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  padding: 0 10px;
+  color: #fe0000;
+  text-align: center;
+  border: 1px solid #fe0000;
+  background: #f1f1f1;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -40px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 40px);
+    margin: 60px 0 0 40px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: center;
+  background: #cdcdcd;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #fe0000;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .blogMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  color: #fe0000;
+  text-align: center;
+  border: 1px solid #fe0000;
+  background: #f1f1f1;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 40px 0 0;
+  color: #fe0000;
+  vertical-align: middle;
+}
+.blogMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .thumb-item {
+  max-width: 800px;
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav {
+  max-width: 900px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.blogMain .blogPanel--detail .btnBack {
+  max-width: 180px;
+  margin: 60px auto;
+}
+.blogMain .blogPanel--detail .btnBack a {
+  display: block;
+  padding: 15px 0 15px 60px;
+  font-size: 18px;
+  color: #fe0000;
+  text-align: left;
+  background: url(https://westservice.co.jp/system_panel/uploads/images/btn_back_arrow.png) left center no-repeat;
+  background-size: 45px auto;
+}
+.blogMain .blogPanel--detail .btnBack a p {
+  display: inline-block;
+  border-bottom: 1px solid #fe0000;
+}

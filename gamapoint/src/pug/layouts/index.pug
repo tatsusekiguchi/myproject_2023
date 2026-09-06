@@ -1,0 +1,784 @@
+// ▽メイン▽
+main#topMain
+	.topKvContainer
+		.topKvPanel
+			.topKvBox
+				.kvTitle
+					h1
+						img(src=(root_path || '') + "image/top/top_kv_title_pc.png", class="switch" alt="蒲郡市民のためのポイ活アプリがまポイント")
+				.appBnrBox
+					p アプリインストールはこちら
+					.bnrList
+						.bnr
+							a(href="", target="_blank", rel="noopener")
+								img(src=(root_path || '') + "image/top/bnr_appstore.png", alt="")
+						.bnr
+							a(href="", target="_blank", rel="noopener")
+								img(src=(root_path || '') + "image/top/bnr_googleplay.png", alt="")
+				.kvInfoPanel
+					dl
+						dt アスリブアプリ内のがまポイント対応は<br>2023年10月2日 12:00を予定しております。
+						dd
+							.txt
+								p アプリダウンロードは2023年10月2日 12:00以降にダウンロードをお願いいたします。事前にダウンロードを行うと、がまポイント対応の為に一度退会していただき、再度アカウント（別のメールアドレス）を作成していただく必要がございます。
+	#about.section__about.section.fadeUp
+		.secWrap01
+			.secTitleBox
+				h2 がまポイントとは
+				p ABOUT
+			.introBox
+				.txt
+					p 「がまポイント」とは、蒲郡市民のためのポイ活アプリです。<br>ウォーキングや毎日の健康記録、ポイント対象のイベントに参加やコラムを読んだりアンケートに応えたりなど<br class="pcBreak">でポイントが貯まり、電子マネー等に交換できるうれしい機能付き。<br>楽しくポイ活ができます！<br>※ポイント付与と特典の交換には期限があります。<br>詳細は蒲郡市ホームページなどをご確認ください。
+				.logo
+					img(src=(root_path || '') + "image/common/header_logo.png", alt="蒲郡市xアスリゴ")
+			.limitedContainer
+				.limitedPanel
+					.ttlBox
+						dl
+							dt 期間限定
+							dd
+								p アプリダウンロード＆<br class="spBreak">マイナンバーカードの認証完了で
+					.appleWatch
+						img(src=(root_path || '') + "image/top/top_apple_watch.png", alt="")
+					.presentTtl
+						p
+							| 抽選で
+							em 5
+							| 名様にプレゼント！
+					.presentTxt
+						.txt
+							p
+								em ※マイナンバーカード認証時に18歳になっていること
+								| が条件です。
+							p ※2023年10月～ 2023年12月にマイナンバーマイナンバーカードによる本人認証を完了した方が対象です。
+					.term
+						.txt
+							p キャンペーン期間：<br>2023年10月2日（月）～ 2023年12月31日（日）まで
+	#merit.section__merit.section.fadeUp
+		.secWrap01
+			.secTitleBox
+				h2 がまポイントのメリット
+				p MERIT
+			.meritListBox
+				ol
+					li
+						.numBox
+							p.ttl メリット
+							p.num 1
+						dl
+							dt 電子マネーやギフト<br class="pcBreak">券等と交換できる！
+							dd
+								.imgBox
+									.img01.img
+										img(src=(root_path || '') + "image/top/merit_img_01.png", alt="")
+								.txt
+									p 貯まったポイントは500ポイント～の電子マネーやAmazonギフト券等と交換できる
+					li
+						.numBox
+							p.ttl メリット
+							p.num 2
+						dl
+							dt 貯まったポイントで<br class="pcBreak">抽選に参加できる！
+							dd
+								.imgBox
+									.img02.img
+										img(src=(root_path || '') + "image/top/merit_img_02.png", alt="")
+								.txt
+									p あなたが貯めたポイントで抽選に参加できます。<br>ポイントを貯めて毎週・毎月の抽選に参加しよう！
+					li
+						.numBox
+							p.ttl メリット
+							p.num 3
+						dl
+							dt 日々の健康管理や各種コラムが読める
+							dd
+								.imgBox
+									.img03.img
+										img(src=(root_path || '') + "image/top/merit_img_03.png", alt="")
+								.txt
+									p アプリ公開記念として期間限定でAppleWatchを抽選<br class="pcBreak">で5名様にプレゼント！
+	#flow.section__flow.section.fadeUp
+		.secWrap01
+			.secTitleBox
+				h2 がまポイントアプリの<br>ご利用方法
+				p FLOW
+			.pagerList
+				ol
+					li
+						a(href="#step01").pageLink
+							img(src=(root_path || '') + "image/top/flow_step_pager_01.png", alt="")
+					li
+						a(href="#step02").pageLink
+							img(src=(root_path || '') + "image/top/flow_step_pager_02.png", alt="")
+					li
+						a(href="#step03").pageLink
+							img(src=(root_path || '') + "image/top/flow_step_pager_03.png", alt="")
+					li
+						a(href="#step04").pageLink
+							img(src=(root_path || '') + "image/top/flow_step_pager_04.png", alt="")
+			#step01.stepSection
+				.secTtlBox
+					.numBox
+						p.ttl STEP
+						p.num 1
+					.secTtl
+						h3 アプリをダウンロードし<br class="spBreak">メールアドレスを登録
+				.tabList
+					ul
+						li.tabBtn.active
+							p iPhoneの方は<br>こちら
+						li.tabBtn
+							p Androidの方は<br>こちら
+				.stepContainer.tabItem
+					.stepPanel
+						.topBox
+							.ttl
+								p アプリをインストールした後、<br class="spBreak">簡単手続きで利用可能♪
+							.topList
+								ol
+									li
+										span 1.
+										em アプリインストール
+									li
+										span 2.
+										em 新規登録
+									li
+										span 3.
+										em 必要内容の入力
+								ol
+									li
+										span 4.
+										em メールアドレス認証
+									li
+										span 5.
+										em ログイン
+									li
+										span 6.
+										em ヘルスケアアプリと連動
+						.detailContainer
+							.detailBtn.accordionBtn
+								p 詳しく見る
+							.detailPanel.accordionBody
+								.mobileTitle
+									p iPhone版
+								.appBnr
+									a(href="", target="_blank", rel="noopener")
+										img(src=(root_path || '') + "image/top/bnr_appstore.png", alt="")
+								.introTxt
+									.txt
+										p 【事前準備】<br>普段ご利用のメールアドレス
+										p 【対応機種】<br>ios14.0以上のスマートフォン<br>推奨解像度：w1,440 w1,1080 w720<br>※上記以外の解像度でアプリを表示した場合、画が崩れる可能性があります。
+								.dlTxt
+									dl
+										dt APPストアから「アスリブ」で検索をし、<br class="pcBreak">ダウンロードしてください。
+										dd
+											.txt
+												p ※ダウンロードには別途通信料がかかります。
+								.dlComplete
+									p インストールが完了したら
+									.arrow
+										img(src=(root_path || '') + "image/top/download_arrow.png", alt="")
+								.stepFlow
+									ol
+										li
+											.num
+												p 1
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_01.png", alt="")
+											.txt
+												p インストールしたアプリを起動し「次へ」をタップ。
+										li
+											.num
+												p 2
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_02.png", alt="")
+											.txt
+												p 「新規登録」をタップ。
+										li
+											.num
+												p 3
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_03.png", alt="")
+											.txt
+												p 全ての項目の「規約を確認」をタップし、規約内容を確認。
+										li
+											.num
+												p 4
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_04.png", alt="")
+											.txt
+												p 規約を読み終えたら「閉じる」をタップし確認完了。
+										li
+											.num
+												p 5
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_05.png", alt="")
+											.txt
+												p 「同意して次へ」をタップ。<br>※すべての規約（3項目）を確認すると「同意して次へ」タップ可能になります。
+										li
+											.num
+												p 6
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_06.png", alt="")
+											.txt
+												p メールアドレス/パスワード/生年月/性別/住所/友達紹介番号（お持ちの方）を入力し「登録」をタップ。
+										li
+											.num
+												p 7
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_07.png", alt="")
+											.txt
+												p 「戻る」をタップ。<br>登録したメールアドレスに確認用メールアドレスが送信されます。
+										li
+											.num
+												p 8
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_08.png", alt="")
+											.txt
+												p 確認用メールが登録メールアドレス宛に送信されるので、本文の青いURLをタップし、確認画面に移動します。
+										li
+											.num
+												p 9
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_09.png", alt="")
+											.txt
+												p 登録内容を確認し、「登録」をタップ。
+										li
+											.num
+												p 10
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_10.png", alt="")
+											.txt
+												p 登録完了メールが、登録メールアドレスに送信され、<br>登録完了です。<br>アスリブを起動しご利用ください。
+										li
+											.num
+												p 11
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_11.png", alt="")
+											.txt
+												p 届いた登録完了メールは大切に保管してください。
+										li
+											.num
+												p 12
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_12.png", alt="")
+											.txt
+												p アスリブアプリを起動し、「ログインはこちらから」をタップします。
+										li
+											.num
+												p 13
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_13.png", alt="")
+											.txt
+												p 登録したメールアドレス/ パスワードを入力し「ログイン」をタップ。<br>※メールアドレスの代わりにメールで通知された参加者番号でも可
+										li
+											.num
+												p 14
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_14.png", alt="")
+											.txt
+												p プッシュ通知の許可設定を選択。<br>通知を「許可」を選択いただくことでお知らせが届いたときに通知がきます。
+										li
+											.num
+												p 15
+											.img
+												img(src=(root_path || '') + "image/top/step_iphone_15.png", alt="")
+											.txt
+												p 歩数との連携を「ON」にして「許可」をタップ。<br>※設定を許可することで、自動で歩数が記録されるようになります。
+				.stepContainer.tabItem
+					.stepPanel
+						.topBox
+							.ttl
+								p アプリをインストールした後、<br class="spBreak">簡単手続きで利用可能♪
+							.topList
+								ol
+									li
+										span 1.
+										em アプリインストール
+									li
+										span 2.
+										em 新規登録
+									li
+										span 3.
+										em 必要内容の入力
+								ol
+									li
+										span 4.
+										em メールアドレス認証
+									li
+										span 5.
+										em ログイン
+									li
+										span 6.
+										em ヘルスケアアプリと連動
+						.detailContainer
+							.detailBtn.accordionBtn
+								p 詳しく見る
+							.detailPanel.accordionBody
+								.mobileTitle
+									p Android版
+								.appBnr
+									a(href="", target="_blank", rel="noopener")
+										img(src=(root_path || '') + "image/top/bnr_googleplay.png", alt="")
+								.introTxt
+									.txt
+										p 【事前準備】<br>・普段ご利用のメールアドレス<br>・Googleアカウント<br>・Google Fitアプリ
+										p 【対応機種】<br>Android9.0以上のスマートフォン<br>推奨解像度：w1,440 w1,1080 w720<br>※上記以外の解像度でアプリを表示した場合、画面が崩れる可能性があります。
+								.dlTxt
+									dl
+										dt Google Play ストアから「アスリブ」で検索をし、<br class="pcBreak">ダウンロードしてください。
+										dd
+											.txt
+												p ※「アスリブ」をインストールする際のGoogleアカウントは「Google Fit」と同じアカウントを選択して下さい。<br>※ダウンロードには別途通信料がかかります。
+								.dlComplete
+									p インストールが完了したら
+									.arrow
+										img(src=(root_path || '') + "image/top/download_arrow.png", alt="")
+								.stepFlow
+									ol
+										li
+											.num
+												p 1
+											.img
+												img(src=(root_path || '') + "image/top/step_android_01.png", alt="")
+											.txt
+												p インストールしたアプリを起動し「次へ」をタップ。
+										li
+											.num
+												p 2
+											.img
+												img(src=(root_path || '') + "image/top/step_android_02.png", alt="")
+											.txt
+												p 「新規登録」をタップ。
+										li
+											.num
+												p 3
+											.img
+												img(src=(root_path || '') + "image/top/step_android_03.png", alt="")
+											.txt
+												p 全ての項目の「規約を確認」をタップし、規約内容を確認。
+										li
+											.num
+												p 4
+											.img
+												img(src=(root_path || '') + "image/top/step_android_04.png", alt="")
+											.txt
+												p 規約を読み終えたら「閉じる」をタップし確認完了。
+										li
+											.num
+												p 5
+											.img
+												img(src=(root_path || '') + "image/top/step_android_05.png", alt="")
+											.txt
+												p 「同意して次へ」をタップ。<br>※すべての規約（3項目）を確認すると「同意して次へ」タップ可能になります。
+										li
+											.num
+												p 6
+											.img
+												img(src=(root_path || '') + "image/top/step_android_06.png", alt="")
+											.txt
+												p メールアドレス/パスワード/生年月/性別/住所/友達紹介番号（お持ちの方）を入力し「登録」をタップ。
+										li
+											.num
+												p 7
+											.img
+												img(src=(root_path || '') + "image/top/step_android_07.png", alt="")
+											.txt
+												p 「戻る」をタップ。<br>登録したメールアドレスに確認用メールアドレスが送信されます。
+										li
+											.num
+												p 8
+											.img
+												img(src=(root_path || '') + "image/top/step_android_08.png", alt="")
+											.txt
+												p 確認用メールが登録メールアドレス宛に送信されるので、本文の青いURLをタップし、確認画面に移動します。
+										li
+											.num
+												p 9
+											.img
+												img(src=(root_path || '') + "image/top/step_android_09.png", alt="")
+											.txt
+												p 登録内容を確認し、「登録」をタップ。
+										li
+											.num
+												p 10
+											.img
+												img(src=(root_path || '') + "image/top/step_android_10.png", alt="")
+											.txt
+												p 登録完了メールが、登録メールアドレスに送信され、<br>登録完了です。<br>アスリブを起動しご利用ください。
+										li
+											.num
+												p 11
+											.img
+												img(src=(root_path || '') + "image/top/step_android_11.png", alt="")
+											.txt
+												p 届いた登録完了メールは大切に保管してください。
+										li
+											.num
+												p 12
+											.img
+												img(src=(root_path || '') + "image/top/step_android_12.png", alt="")
+											.txt
+												p アスリブアプリを起動し、「ログインはこちらから」をタップします。
+										li
+											.num
+												p 13
+											.img
+												img(src=(root_path || '') + "image/top/step_android_13.png", alt="")
+											.txt
+												p 登録したメールアドレス/ パスワードを入力し「ログイン」をタップ。<br>※メールアドレスの代わりにメールで通知された参加者番号でも可
+										li
+											.num
+												p 14
+											.img
+												img(src=(root_path || '') + "image/top/step_android_14.png", alt="")
+											.txt
+												p 歩数を連携するためにGoogle Fitとの連携を行います。<br>「Google にログイン」をタップ。<br>※設定を許可することで、自動で歩数が記録されるようになります。
+										li
+											.num
+												p 15
+											.img
+												img(src=(root_path || '') + "image/top/step_android_15.png", alt="")
+											.txt
+												p アクセスの連携「許可」をタップ。
+										li
+											.num
+												p 16
+											.img
+												img(src=(root_path || '') + "image/top/step_android_16.png", alt="")
+											.txt
+												p Google Fitと同じアカウントを選択し、アカウント名をタップ。
+			#step02.stepSection
+				.secTtlBox
+					.numBox
+						p.ttl STEP
+						p.num 2
+					.secTtl
+						h3 マイナンバーカードで<br class="spBreak">本人登録
+				.stepContainer
+					.stepPanel
+						.stepFlow
+							ol
+								li
+									.num
+										p 1
+									.img
+										img(src=(root_path || '') + "image/top/step_mynumber_01.png", alt="")
+									.txt
+										p TOP画面右上の三本線をタップし、「会員情報」をタップ。
+								li
+									.num
+										p 2
+									.img
+										img(src=(root_path || '') + "image/top/step_mynumber_02.png", alt="")
+									.txt
+										p 「マイナンバー本人確認」をタップ。
+								li
+									.num
+										p 3
+									.img
+										img(src=(root_path || '') + "image/top/step_mynumber_03.png", alt="")
+									.txt
+										p 「読み取りをはじめる」をタップ。
+								li
+									.num
+										p 4
+									.img
+										img(src=(root_path || '') + "image/top/step_mynumber_04.png", alt="")
+									.txt
+										p パスワード画面が出てくるのでマイナンバーカードの署名用パスワードを入力。
+								li
+									.num
+										p 5
+									.img
+										img(src=(root_path || '') + "image/top/step_mynumber_05.png", alt="")
+									.txt
+										p スマートフォンでマイナンバーカードを読み取り。<br>※機種によってはスキャン画面が出ないもあります。<br>※マイナンバーカードがうまく読み取れない場合は、画面に表示されている「うまく読み取れない場合は、こちら」をタップ。
+								li
+									.num
+										p 6
+									.img
+										img(src=(root_path || '') + "image/top/step_mynumber_06.png", alt="")
+									.txt
+										p 「カード読み取りが完了しました」という表記ののち、完了画面が出たら登録完了！
+			#step03.stepSection
+				.secTtlBox
+					.numBox
+						p.ttl STEP
+						p.num 3
+					.secTtl
+						h3 日々のアプリ利用で<br class="spBreak">ポイントを貯める
+				.stepContainer
+					.stepPanel
+						.topTxt
+							.txt
+								p 「新規登録」「ログイン」「ウォーキング」などのアクションを行うと、各アクションに応じたポイントが付与されます。
+						.pointTitle
+							p ポイントの貯め方
+						.pointTableHead
+							ul
+								li.count 付与回数
+								li.action アクション
+								li.point ポイント
+								li.description 概要
+						.pointTableContainer
+							.pointTablePanel
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd 初回のみ
+									li.action
+										dl
+											dt アクション
+											dd 新規登録
+									li.point
+										dl
+											dt ポイント
+											dd 500
+									li.description
+										dl
+											dt 概要
+											dd アスリブに新規登録で自動反映
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd 1回/年度
+									li.action
+										dl
+											dt アクション
+											dd けんしん結果記録ポイント
+									li.point
+										dl
+											dt ポイント
+											dd 500
+									li.description
+										dl
+											dt 概要
+											dd けんしん結果の項目を画面から入力<br>＜記録項目＞<br>身長、体重、血圧、尿たんぱく(定性)等
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd ウォーキング達成
+									li.action
+										dl
+											dt アクション
+											dd 毎日1回
+									li.point
+										dl
+											dt ポイント
+											dd 10
+									li.description
+										dl
+											dt 概要
+											dd
+												p スマホから自動反映<br>＜達成条件＞<br>男性<br>65歳以上　　　　・・・ 4,000歩<br>40 ～ 65歳未満　　・・・ 7,000歩<br>18 ～ 40歳未満　　・・・ 8,000歩<br>女性<br>65歳以上　　　　・・・ 4,000歩<br>40 ～ 65歳未満　　・・・ 5,500歩<br>18 ～ 40歳未満　　・・・ 6,000歩
+												aside
+													p ※歩きすぎにご注意ください。<br>※アプリを起動すると、ヘルスケア（iOS）/<br>GoogleFit（Android）より歩数が自動連携されます。
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd 健康記録
+									li.action
+										dl
+											dt アクション
+											dd 毎日1回
+									li.point.multi
+										dl
+											dt ポイント
+											dd
+												.box01.box
+													p 1
+												.box02.box
+													p 5
+									li.description.multi
+										dl
+											dt 概要
+											dd
+												.box01.box
+													p 体重・朝食・歯磨き・睡眠・体温を画面から入力
+													aside
+														p ※自動連携ON にすると、ヘルスケア（iOS）/自動連携ON にすると、ヘルスケア（iOS）/<br>GoogleFit（Android）より体重・睡眠が自動連携されます。<br>※ポイント付与は、当日分入力のみです。
+												.box02.box
+													p 運動を画面から入力
+													aside
+														p ※ポイント付与は、当日分入力のみです。
+									li.point02
+										dl
+											dt ポイント
+											dd 5
+									li.description02
+										dl
+											dt 概要
+											dd
+												p 運動を画面から入力
+												aside
+													p ※ポイント付与は、当日分入力のみです。
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd 健康コラムを読む
+									li.action
+										dl
+											dt アクション
+											dd 毎週火曜日
+									li.point
+										dl
+											dt ポイント
+											dd 10
+									li.description
+										dl
+											dt 概要
+											dd
+												p 健康コラムを読む
+												aside
+													p ※ポイント付与は当日分の既読のみです。
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd 各がん検診/ 歯科健診
+									li.action
+										dl
+											dt アクション
+											dd 毎年1回
+									li.point
+										dl
+											dt ポイント
+											dd 100
+									li.description
+										dl
+											dt 概要
+											dd 受診状況を画面から入力
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd けんしん結果記録
+									li.action
+										dl
+											dt アクション
+											dd 毎年1回
+									li.point
+										dl
+											dt ポイント
+											dd 500
+									li.description
+										dl
+											dt 概要
+											dd
+												p けんしん結果の項目を画面から入力
+												aside
+													p ＜記録項目＞<br>身長、体重、血圧、尿たんぱく（定性）等
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd 友達紹介（紹介者）
+									li.action
+										dl
+											dt アクション
+											dd 随時
+									li.point
+										dl
+											dt ポイント
+											dd 50
+									li.description
+										dl
+											dt 概要
+											dd
+												p 新規登録時に友達紹介番号を登録してもらう
+												aside
+													p ※ポイント付与されるのは紹介者です。
+								ul
+									li.count
+										dl
+											dt 付与回数
+											dd 健康イベント参加
+									li.action
+										dl
+											dt アクション
+											dd 随時
+									li.point
+										dl
+											dt ポイント
+											dd 50 ～
+									li.description
+										dl
+											dt 概要
+											dd イベントに参加して指定のQR コード読み取り、またはイベントコード入力
+			#step04.stepSection
+				.secTtlBox
+					.numBox
+						p.ttl STEP
+						p.num 4
+					.secTtl
+						h3 貯めたポイントを<br class="spBreak">交換する
+				.topTxt
+					.txt
+						p 貯まったポイントは500ポイント～の電子マネー等と交換できます。<br>交換できるのは18歳以上の蒲郡市民の方が対象です。<br>ポイント交換には、マイナンバーカードによる本人確認が完了していることが条件となります。<br>※おひとり様の交換ポイント上限は、5,000ポイント/年度となります。<br>※年度は４月１日～３月３１日
+				.tradeContainer
+					.tradeTitle
+						p 交換ができる電子マネー等一覧
+					.tradePanel
+						.tradeList
+							ul
+								li
+									p
+										span ●
+										em PayPayポイント
+									.item01.item
+										img(src=(root_path || '') + "image/top/step_trade_01.png", alt="")
+								//- li
+								//- 	p
+								//- 		span ●
+								//- 		em Pontaポイント
+								//- 	.item02.item
+								//- 		img(src=(root_path || '') + "image/top/step_trade_02.png", alt="")
+								li
+									p
+										span ●
+										em Amazonギフト券
+									.item03.item
+										img(src=(root_path || '') + "image/top/step_trade_03.png", alt="")
+								li
+									p
+										span ●
+										em ファミリーマート<br>500円お買い物券
+									.item04.item
+										img(src=(root_path || '') + "image/top/step_trade_04.png", alt="")
+							ul
+								li
+									p
+										span ●
+										em au PAY ギフトカード<br>500円分
+									.item05.item
+										img(src=(root_path || '') + "image/top/step_trade_05.png", alt="")
+								li
+									p
+										span ●
+										em majicaギフト券500円
+									.item06.item
+										img(src=(root_path || '') + "image/top/step_trade_06.png", alt="")
+								li
+									p
+										span ●
+										em WAONポイントID<br>500ポイント
+									.item07.item
+										img(src=(root_path || '') + "image/top/step_trade_07.png", alt="")
+	#faq.section__faq.section.fadeUp
+		.secWrap01
+			.secTitleBox
+				h2 よくある質問
+				p FAQ
+			.topTxt
+				.txt
+					p がまポイントアプリに関してよくあるご質問をおまとめしております。<br>詳しくはアスリブ公式ホームページよくあるご質問を御覧ください。
+			.btnFaq
+				a(href="https://asliv.jp/faq/", target="_blank", rel="noopener")
+					img(src=(root_path || '') + "image/top/faq_btn.png", alt="")
+// △メイン△

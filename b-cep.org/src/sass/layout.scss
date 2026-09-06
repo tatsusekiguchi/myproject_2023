@@ -1,0 +1,2589 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  #top #kv {
+    height: 640px;
+    padding: 180px 10px 0;
+    text-align: center;
+    background: url("../image/top/pc/kv_01.png") center bottom no-repeat;
+    background-size: cover;
+  }
+  #top #kv h2 {
+    width: 880px;
+    margin: 0 auto 10px;
+  }
+  #top #kv h2 + p {
+    font-size: 17px;
+    line-height: 2;
+  }
+}
+
+/* --------------------------------------------------
+	メイン
+-------------------------------------------------- */
+#top #menuBox {
+  max-width: 1020px;
+  margin: -140px auto 50px;
+  padding: 0 10px;
+}
+#top #menuBox ul {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-spacing: 10px 0;
+}
+#top #menuBox ul li {
+  display: table-cell;
+  width: 25%;
+  padding: 15px 8px 8px;
+  border: 5px solid #eeedec;
+  background: #ffffff;
+}
+#top #menuBox dl dt {
+  min-height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#top #menuBox dl dt span {
+  display: block;
+  font-size: 15px;
+}
+#top #menuBox dl dd {
+  font-size: 15px;
+}
+#top #menuBox dl dd img {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#top #newsList {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 50px 10px 60px;
+}
+#top #newsList .ttlBox {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#top #newsList .ttlBox h2 {
+  float: left;
+}
+#top #newsList .ttlBox h2 em {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+#top #newsList .ttlBox h2 span {
+  font-size: 16px;
+}
+#top #newsList .ttlBox p {
+  float: right;
+  width: 170px;
+  text-align: center;
+  line-height: 30px;
+  background: url("../image/top/news_arrow.png") right 10px center no-repeat
+    #1b893d;
+}
+#top #newsList .ttlBox p a {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+#top #newsList .list {
+  margin-bottom: 25px;
+  border-top: 1px dashed #a4a4a4;
+}
+#top #newsList .list li {
+  padding: 10px 20px;
+  border-bottom: 1px dashed #a4a4a4;
+}
+#top #newsList .list li dl {
+  display: table;
+  width: 100%;
+}
+#top #newsList .list li dl dt {
+  display: table-cell;
+  width: 160px;
+}
+#top #newsList .list li dl dt span {
+  display: inline-block;
+  margin-left: 10px;
+}
+#top #newsList .list li dl dd {
+  display: table-cell;
+}
+#top #newsList .cms-table {
+  width: 100%;
+  margin-bottom: 25px;
+  border-top: 1px dashed #a4a4a4;
+}
+#top #newsList .cms-table tr {
+  border-bottom: 1px dashed #a4a4a4;
+}
+#top #newsList .cms-table tr td {
+  padding: 10px;
+}
+#top #newsList .cms-table tr td + td {
+  width: 85%;
+}
+#top #newsList .update {
+  text-align: right;
+}
+
+/*////////////////////////////////////////////////////////////
+	下層ページ
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+.kv {
+  height: 250px;
+  text-align: center;
+  background: url("../image/common/kv.png") center bottom no-repeat;
+  background-size: cover;
+}
+.kv h2 {
+  display: inline-block;
+  line-height: 250px;
+}
+/* --------------------------------------------------
+	メイン
+-------------------------------------------------- */
+.cntnt {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 60px 10px 80px;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-15 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.text-top {
+  vertical-align: super;
+}
+span.text-small {
+  font-size: 12px;
+}
+.cntnt h2 {
+  margin-bottom: 40px;
+  padding: 10px 10px 10px 30px;
+  font-size: 25px;
+  border-top: 4px solid #1b893d;
+  background: #f6f6f6;
+}
+#sec02 h2 {
+}
+/* --------------------------------------------------
+	下層ページ
+-------------------------------------------------- */
+.subpage h3 {
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 30px;
+  font-size: 25px;
+  border-bottom: 1px solid #1b893d;
+}
+.subpage h4 {
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 30px;
+  font-size: 25px;
+  border-left: 5px solid #000000;
+}
+.subpage p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+.subpage p.indent-1 {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 0px;
+}
+
+.subpage ul {
+  margin: -30px 50px 40px;
+}
+.subpage ul li {
+  list-style: disc;
+  line-height: 2;
+}
+.subpage table.purple {
+  background-color: #f4f2ff;
+}
+
+.cntnt section + section {
+  margin-top: 100px;
+}
+.cntWrap {
+  padding: 0 15px;
+}
+.targetLinkBtn {
+  display: block;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: url("../image/common/link_arrow_right.png") right 20px center
+    no-repeat #1b893d;
+}
+.targetLinkBtn-left {
+  display: block;
+  max-width: 560px;
+  margin: 0;
+  padding: 20px;
+  color: #ffffff;
+  background: url("../image/common/link_arrow_right.png") right 20px center
+    no-repeat #1b893d;
+}
+
+/* --------------------------------------------------
+	リンク
+-------------------------------------------------- */
+.linkList {
+  overflow: hidden;
+  margin: -10px 0 20px -1%;
+}
+.linkList li {
+  overflow: hidden;
+  width: 49%;
+  margin: 10px 0 0 1%;
+  float: left;
+}
+.linkList li a,
+.linkList li span {
+  display: block;
+  padding: 20px 20px 20px 60px;
+  color: #ffffff;
+  cursor: pointer;
+  background: url("../image/common/link_arrow_right.png") left 20px center
+    no-repeat #1b893d;
+}
+
+.linkList_small {
+  overflow: hidden;
+}
+.linkList_small li {
+  overflow: hidden;
+  width: 20%;
+  float: left;
+}
+.linkList_small li a,
+.linkList_small li span {
+  display: block;
+  padding: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  background: url(../image/common/link_arrow_right.png) right 20px center
+    no-repeat #1b893d;
+  text-align: center;
+}
+li.linkList_small-left {
+  margin: 0 5% 0 25%;
+}
+li.linkList_small-right {
+  margin: 0 25% 0 5%;
+}
+.link-area {
+  margin-top: 30px;
+}
+.link-area a {
+  margin: 10px 0;
+}
+.link-area-center {
+  margin-top: 30px;
+}
+
+/*////////////////////////////////////////////////////////////
+	NEWS
+///////////////////////////////////////////////////////////*/
+
+#news #newsList {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 60px 10px 190px;
+}
+#news #newsList h2 {
+  margin-bottom: 40px;
+  padding: 10px 10px 10px 30px;
+  font-size: 25px;
+  border-top: 4px solid #1b893d;
+  background: #f6f6f6;
+}
+#news #newsList .cms-table {
+  width: 100%;
+  margin-bottom: 25px;
+  border-top: 1px dashed #a4a4a4;
+}
+#news #newsList .cms-table tr {
+  border-bottom: 1px dashed #a4a4a4;
+}
+#news #newsList .cms-table tr td {
+  padding: 10px;
+}
+#news #newsList .cms-table tr td + td {
+  width: 85%;
+}
+#news #newsList .update {
+  text-align: right;
+}
+
+/*////////////////////////////////////////////////////////////
+	B-CeP案内
+///////////////////////////////////////////////////////////*/
+@media (min-width: 1025px) {
+  #about #sec01 .box {
+    display: table;
+    width: 100%;
+  }
+  #about #sec01 .box > p {
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #e3e3e3;
+  }
+  #about #sec01 .box > p img {
+    width: 280px;
+  }
+  #about #sec01 .box > div {
+    display: table-cell;
+    width: 50%;
+    padding-left: 50px;
+    vertical-align: top;
+  }
+}
+
+#about #sec02 ul {
+  overflow: hidden;
+}
+#about #sec02 ul li {
+  float: left;
+  width: 50%;
+  padding: 30px 10px;
+  font-size: 19px;
+  text-align: center;
+  border: 1px solid #7f7f7f;
+}
+#about #sec02 ul li + li {
+  position: relative;
+  float: right;
+  width: 40%;
+}
+#about #sec02 ul li + li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25%;
+  bottom: 0;
+  width: 25%;
+  height: 1px;
+  margin: auto 0;
+  background: #7f7f7f;
+}
+#committee table,
+#about table {
+  width: 100%;
+  border-top: 1px solid #7f7f7f;
+  border-right: 1px solid #7f7f7f;
+}
+#committee table tr,
+#about table tr {
+  font-size: 19px;
+  border-bottom: 1px solid #7f7f7f;
+}
+#committee table th,
+#about table th {
+  padding: 25px 10px;
+  text-align: center;
+  border-left: 1px solid #7f7f7f;
+}
+#committee table td,
+#about table td {
+  padding: 25px 10px;
+  text-align: center;
+  border-left: 1px solid #7f7f7f;
+}
+#committee table a,
+#about table a {
+  color: #090361;
+  text-decoration: underline;
+}
+#committee p,
+#about p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#about p.m0 {
+  margin-bottom: 0px;
+}
+#committee #sec03 table,
+#about #sec04 table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#committee #sec03 table th.th-01,
+#about #sec04 table th.th-01 {
+  width: 15% !important;
+}
+#committee #sec03 table th.th-02,
+#about #sec04 table th.th-02 {
+  width: 43%;
+}
+#committee #sec03 table th.th-03,
+#about #sec04 table th.th-03 {
+  width: 12%;
+}
+#committee #sec03 table td,
+#about #sec04 table td {
+  padding: 25px;
+}
+#committee #sec03 table ul,
+#about #sec04 table ul {
+  margin-left: 25px;
+}
+#committee #sec03 table ul li,
+#about #sec04 table ul li {
+  list-style: disc;
+  line-height: 2;
+}
+/*////////////////////////////////////////////////////////////
+	発泡プラスチック断熱材
+///////////////////////////////////////////////////////////*/
+#plastic #sec01 p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#plastic #sec01 #sec1img {
+  display: block;
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+#plastic #sec01 ul li {
+  float: left;
+  width: 48%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+#plastic #sec01 ul li + li {
+  float: right;
+}
+#plastic #sec01 ul li figcaption {
+  margin-top: 10px;
+}
+
+#plastic #sec02 {
+  margin-bottom: 60px;
+}
+#plastic #sec02 p {
+  line-height: 2;
+}
+#plastic #sec02 ul {
+  overflow: hidden;
+  margin: 40px 0;
+}
+#plastic #sec02 ul li {
+  float: left;
+  width: 48%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#plastic #sec02 ul li + li {
+  float: right;
+}
+#plastic #sec02 ul li figcaption {
+  margin-top: 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	外張断熱耐震改修工法委員会
+///////////////////////////////////////////////////////////*/
+#committee #sec01 p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#committee #sec01 img {
+  display: block;
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	木造住宅の耐震改修
+///////////////////////////////////////////////////////////*/
+#wooden #sec01 p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#wooden #sec01 ul {
+  overflow: hidden;
+}
+#wooden #sec01 ul li {
+  float: left;
+  width: 48%;
+}
+#wooden #sec01 ul li + li {
+  float: right;
+}
+#wooden p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#wooden #sec03 .box {
+  overflow: hidden;
+}
+#wooden #sec03 .box > p {
+  float: right;
+  width: 35%;
+}
+#wooden #sec03 .box > div {
+  float: left;
+  width: 55%;
+}
+#wooden #sec03 .box > div p {
+  line-height: 2;
+}
+#wooden #sec03 .box > div ol {
+  margin: 40px 0;
+  line-height: 2;
+}
+#wooden h2 {
+  clear: both;
+}
+#wooden #sec01 table {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: left;
+}
+#wooden #sec01 table th {
+  width: 25%;
+  padding: 20px 40px;
+}
+#wooden #sec01 table th,
+#wooden #sec01 table td {
+  background: #e7ffb8;
+  border-bottom: 3px solid #fff;
+}
+#wooden #sec01 table tr:nth-child(odd) th,
+#wooden #sec01 table tr:nth-child(odd) td {
+  background: #c7de82;
+}
+#wooden #sec02 ul li.wooden-li-left {
+  float: left;
+  width: 45%;
+}
+#wooden #sec02 ul li.wooden-li-right {
+  float: left;
+  width: 54.5%;
+  margin-bottom: 100px;
+}
+#wooden #sec05 ul li {
+  float: left;
+  width: 48%;
+  margin: 0 1%;
+}
+#wooden #sec05 table {
+  width: 100%;
+  margin-bottom: 10px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+}
+#wooden #sec05 table th {
+  background-color: #f4f2ff;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+#wooden #sec05 table td {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+/*////////////////////////////////////////////////////////////
+	外張断熱耐震改修工法(SIR工法)とは？
+///////////////////////////////////////////////////////////*/
+#about_sir #sec01 p {
+  line-height: 2;
+}
+#about_sir #sec01 ul {
+  overflow: hidden;
+  margin: 30px 0 60px -1%;
+}
+#about_sir #sec01 ul li {
+  overflow: hidden;
+  width: 49%;
+  margin: 10px 0 0 1%;
+  float: left;
+}
+#about_sir #sec01 ul li a {
+  display: block;
+  padding: 20px 20px 20px 60px;
+  color: #ffffff;
+  background: url("../image/common/link_arrow_right.png") left 20px center
+    no-repeat #1b893d;
+}
+#about_sir #sec01 ul + p {
+  display: block;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1;
+}
+#about_sir #sec02 {
+  margin-bottom: 60px;
+}
+#about_sir #sec02 p {
+  line-height: 2;
+}
+#about_sir #sec02 table {
+  width: 100%;
+  margin: 40px 0;
+  border-top: 1px solid #7f7f7f;
+  border-right: 1px solid #7f7f7f;
+}
+#about_sir #sec02 table tr {
+  font-size: 16px;
+  border-bottom: 1px solid #7f7f7f;
+}
+#about_sir #sec02 table th {
+  width: 20%;
+  padding: 15px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #7f7f7f;
+  background: #f6f6f6;
+}
+#about_sir #sec02 table td {
+  padding: 15px 50px;
+  text-align: center;
+  border-left: 1px solid #7f7f7f;
+}
+#about_sir #sec02 table td p {
+  line-height: 1.8;
+}
+#about_sir #sec02 table .left td {
+  text-align: left;
+}
+#about_sir #sec02 .targetLinkBtn {
+  margin: 40px auto 0;
+}
+#about_sir p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#about_sir #sec03 .list {
+  padding-left: 20px;
+  line-height: 2;
+}
+#about_sir #sec03 table {
+  width: 100%;
+  margin: 20px 0 40px;
+  border-top: 1px solid #7f7f7f;
+  border-right: 1px solid #7f7f7f;
+}
+#about_sir #sec03 table tr {
+  font-size: 16px;
+  border-bottom: 1px solid #7f7f7f;
+}
+#about_sir #sec03 table th {
+  width: 20%;
+  padding: 15px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #7f7f7f;
+  background: #f6f6f6;
+}
+#about_sir #sec03 table th:nth-child(2) {
+  width: 48%;
+}
+#about_sir #sec03 table td {
+  padding: 15px 20px;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #7f7f7f;
+}
+#about_sir #sec03 dl {
+  display: table;
+  width: 100%;
+  margin: 40px 0;
+}
+#about_sir #sec03 dl dt {
+  display: table-cell;
+  width: 200px;
+}
+
+#about_sir #sec03 dl dt.tbl {
+  display: table-cell;
+  width: 160px;
+}
+#about_sir #sec03 dl dt.tbl2 {
+  display: table-cell;
+  width: 265px;
+}
+#about_sir #sec03 dl dd {
+  display: table-cell;
+  line-height: 2;
+}
+#about_sir #sec03 .drawing {
+  margin-bottom: 80px;
+  text-align: center;
+}
+#about_sir #sec03 .drawing li:first-child img {
+  max-width: 860px;
+}
+#about_sir #sec03 .drawing li + li {
+  margin-top: 40px;
+}
+#about_sir #sec03 .drawing li + li img {
+  max-width: 660px;
+}
+#about_sir #sec03 .linkList li + li {
+  margin-top: 40px;
+}
+#about_sir #sec03 .link-area .targetLinkBtn {
+  margin: 25px auto;
+}
+#about_sir #sec03 .linkList li {
+  float: none;
+}
+/*////////////////////////////////////////////////////////////
+	SR工法で耐震改修を行うためには？
+///////////////////////////////////////////////////////////*/
+#todo_sr .linkList {
+  overflow: hidden;
+  margin: -10px 0 20px -1%;
+}
+#todo_sr .linkList li {
+  overflow: hidden;
+  width: 49%;
+  margin: 10px 0 0 1%;
+  float: left;
+}
+#todo_sr .linkList li a,
+#todo_sr .linkList li span {
+  display: block;
+  padding: 20px 20px 20px 60px;
+  color: #ffffff;
+  cursor: pointer;
+  background: url("../image/common/link_arrow_right.png") left 20px center
+    no-repeat #1b893d;
+}
+#todo_sr #sec01 p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#todo_sr #sec02 p {
+  line-height: 2;
+}
+#todo_sr #sec02 img {
+  display: block;
+  margin: 40px 0;
+}
+#todo_sr #sec02 ol {
+  display: none;
+}
+#todo_sr #sec03 p {
+  line-height: 2;
+}
+#todo_sr #sec04 p {
+  line-height: 2;
+}
+#todo_sr #sec04 .box {
+  margin-bottom: 40px;
+  padding-left: 1em;
+}
+#todo_sr #sec04 .box aside p {
+  position: relative;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+#todo_sr #sec04 .box aside p:before {
+  content: "※";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#todo_sr #sec04 .box .no1,
+#todo_sr #sec04 .box .no2,
+#todo_sr #sec04 .box .no3 {
+  position: relative;
+  padding-left: 1.8em;
+  margin-left: 1em;
+}
+
+#todo_sr #sec04 .box .no1:before {
+  content: "(1)";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#todo_sr #sec04 .box .no2:before {
+  content: "(2)";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#todo_sr #sec04 .box .no3:before {
+  content: "(3)";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#todo_sr #sec04 .box .list {
+  position: relative;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+#todo_sr #sec04 .box .list:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#todo_sr #sec04 .box .list + aside {
+  padding-left: 1em;
+}
+#todo_sr #sec05 p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+/* --------------------------------------------------
+    モーダルウインドウ
+-------------------------------------------------- */
+.modalOverlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.modalOverlay.block {
+  z-index: 9999;
+  opacity: 1;
+}
+.modalContent {
+  display: none;
+  position: fixed;
+  width: 100%;
+  max-width: 930px;
+  min-width: 300px;
+  max-height: 90%;
+  height: 600px;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 99999;
+}
+.modalContent.block {
+  z-index: 99999;
+  margin: auto;
+  opacity: 1;
+}
+.modalContent > div {
+  position: relative;
+  padding: 30px 60px;
+  text-align: center;
+  background: #ffffff;
+}
+.modalContent > div > .modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 19px;
+  cursor: pointer;
+}
+.modalContent > div > dl > dt {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.modalContent #pcTbl {
+  width: 100%;
+  font-size: 19px;
+  border-top: 1px solid #7f7f7f;
+  border-left: 1px solid #7f7f7f;
+}
+.modalContent #pcTbl tr {
+  border-bottom: 1px solid #7f7f7f;
+}
+.modalContent #pcTbl thead tr {
+  background: #f6f6f6;
+}
+.modalContent #pcTbl thead th {
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+}
+.modalContent #pcTbl tbody td {
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+}
+.modalContent #pcTbl tbody td a {
+  color: #1300c5;
+  text-decoration: underline;
+}
+
+@media (min-width: 1025px) {
+  .modalContent #spTbl {
+    display: none;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	断熱改修・外張断熱工法について
+///////////////////////////////////////////////////////////*/
+#insulation h3 {
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 30px;
+  font-size: 25px;
+  border-bottom: 4px solid #1b893d;
+  clear: both;
+}
+#insulation h4 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  clear: both;
+}
+#insulation p {
+  line-height: 2;
+  margin-bottom: 40px;
+  padding: 0 0 0 30px;
+}
+#insulation section section + section {
+  margin-top: 40px;
+}
+#insulation section .drawing {
+  text-align: center;
+}
+#insulation section .drawing img {
+  display: inline-block;
+}
+#insulation #sec01 .insulation-li-01 li.insulation-li-01-left {
+  width: 45%;
+  padding-bottom: 70px;
+  text-align: left;
+  float: left;
+}
+#insulation #sec01 .insulation-li-01 li.insulation-li-01-right {
+  width: 55%;
+  padding-bottom: 70px;
+  float: left;
+}
+#insulation #sec01 ul.insulation-li-02 li {
+  width: 48%;
+  padding: 0 1% 70px;
+  float: left;
+}
+#insulation #sec10 ul.insulation-li-03 li {
+  width: 48%;
+  padding: 0 1% 70px;
+  float: left;
+}
+#insulation #sec10 ul.insulation-li-03 li ul.linkList li {
+  width: 100%;
+}
+#insulation #sec11 {
+  clear: both;
+}
+.insulation-box {
+  margin-top: 70px;
+}
+#insulation #sec03 .drawing {
+  margin-bottom: 40px;
+}
+#insulation #sec03 img {
+  max-width: 450px;
+}
+#insulation #sec03 ul {
+  margin-bottom: 40px;
+  margin-left: 1em;
+}
+#insulation #sec03 ul li + li {
+  margin-top: 40px;
+}
+#insulation #sec03 ul li em {
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+}
+#insulation #sec03 ul li span {
+  line-height: 2;
+  margin-left: 1em;
+  display: block;
+}
+#insulation #sec04 dl {
+  margin-top: 40px;
+  padding: 25px;
+  border: 1px solid #b6b6b6;
+  background: #f8f8f8;
+}
+#insulation #sec04 dl dt {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+#insulation #sec04 ul li {
+  position: relative;
+  padding-left: 1em;
+  line-height: 2;
+  margin-left: 1em;
+}
+#insulation #sec04 ul li:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#insulation #sec05 dl + dl {
+  margin-top: 40px;
+}
+#insulation #sec05 dl dt {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+#insulation #sec05 ul > li {
+  position: relative;
+  padding-left: 1em;
+  line-height: 2;
+  margin-left: 1em;
+}
+
+#insulation #sec05 ul > li.dot:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#insulation #sec05 ul > li span {
+  font-size: 13px;
+}
+
+#insulation #sec05 ul > li span.c01:before {
+  content: "①";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec05 ul > li span.c02:before {
+  content: "②";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec05 ul > li span.c03:before {
+  content: "③";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec05 ul > li span.c04:before {
+  content: "④";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec05 ul > li span.c05:before {
+  content: "⑤";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec05 ul > li span {
+  display: block;
+  margin-left: 1.2em;
+  font-size: 16px;
+}
+
+#insulation #sec05 .drawing {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+#insulation #sec06 dl + dl {
+  margin-top: 80px;
+}
+#insulation #sec06 dl dt {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+#insulation #sec06 .box01 .drawing {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+#insulation #sec06 ul > li {
+  position: relative;
+  padding-left: 1em;
+  line-height: 2;
+}
+#insulation #sec06 ul > li.dot:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#insulation #sec06 ul > li + li {
+  margin-top: 40px;
+}
+
+#insulation #sec06 ul li + li.inli {
+  margin-top: 10px;
+}
+
+#insulation #sec06 ul li.inli span.c01:before {
+  content: "A.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 2em;
+}
+
+#insulation #sec06 ul li.inli span.c02:before {
+  content: "B.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 2em;
+}
+
+#insulation #sec06 ul li.inli span.c03:before {
+  content: "C.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 2em;
+}
+
+#insulation #sec06 ul li.inli span.c04:before {
+  content: "D.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 2em;
+}
+
+#insulation #sec06 ul li.inli span.c05:before {
+  content: "E.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 2em;
+}
+
+#insulation #sec06 ul li.inli span {
+  display: block;
+  margin-left: 2.2em;
+  font-size: 16px;
+}
+
+#insulation #sec06 .box02 ul {
+  margin-bottom: 40px;
+}
+#insulation #sec06 .box02 ul + p {
+  margin-bottom: 40px;
+}
+#insulation #sec06 .box02 ul + p img {
+  max-width: 450px;
+}
+#insulation #sec06 .box02 ul + p + p {
+  margin-bottom: 40px;
+}
+#insulation #sec06 .box02 ul + p + p img {
+  max-width: 850px;
+}
+
+#insulation #sec07 dl {
+  margin-top: 40px;
+}
+#insulation #sec07 dl dt {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+#insulation #sec07 ul {
+  margin-bottom: 40px;
+}
+#insulation #sec07 ul > li {
+  position: relative;
+  padding-left: 1em;
+  line-height: 2;
+  margin-left: 1.2em;
+}
+#insulation #sec07 ul > li:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#insulation #sec07 .drawing img {
+  max-width: 850px;
+}
+#insulation #sec08 dl dt {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+#insulation #sec08 div {
+  padding-left: 10px;
+}
+#insulation #sec08 ul > li {
+  position: relative;
+  padding-left: 1em;
+  line-height: 2;
+  margin-left: 1.2em;
+}
+#insulation #sec08 ul > li:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#insulation #sec08 div + .drawing {
+  margin: 40px 0 80px;
+}
+#insulation #sec08 .drawing02 img {
+  max-width: 460px;
+}
+#insulation #sec08 .drawing03 {
+  margin-bottom: 40px;
+}
+#insulation #sec08 .drawing04 {
+  margin-top: 40px;
+}
+#insulation #sec09 ul {
+  margin-bottom: 40px;
+}
+#insulation #sec09 ul > li {
+  position: relative;
+  padding-left: 1em;
+  line-height: 2;
+}
+#insulation #sec09 ul > li.dot:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#insulation #sec09 ul > li span.c01:before {
+  content: "①";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec09 ul > li span.c02:before {
+  content: "②";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec09 ul > li span.c03:before {
+  content: "③";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec09 ul > li span.c04:before {
+  content: "④";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+#insulation #sec09 ul > li span.c05:before {
+  content: "⑤";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: block;
+  margin-left: 1em;
+}
+
+#insulation #sec09 ul > li span {
+  display: block;
+  margin-left: 1.2em;
+  font-size: 16px;
+}
+
+#insulation #sec09 .drawing {
+  padding: 0 40px;
+}
+
+/*////////////////////////////////////////////////////////////
+	講習会受講申込フォーム
+///////////////////////////////////////////////////////////*/
+#form .txt {
+  margin-bottom: 30px;
+}
+#form table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: 1px solid #12335f;
+}
+#form table tbody tr {
+  border-bottom: 1px solid #12335f;
+}
+#form table tbody th {
+  width: 20%;
+  padding: 20px 10px;
+  text-align: center;
+  vertical-align: middle;
+  background: #efeeed;
+}
+#form table tbody td {
+  padding: 20px;
+}
+#form table tbody td dl dt {
+  margin-bottom: 10px;
+}
+#form table tbody td dl + dl {
+  margin-top: 30px;
+}
+#form table + aside {
+  margin-bottom: 60px;
+  text-align: right;
+}
+#form table + aside + p {
+  text-align: center;
+}
+#form table .postal p + p {
+  margin-top: 20px;
+}
+#form table .postal .code {
+  width: 230px;
+}
+#form .checkBox input[type="text"] {
+  margin-left: 20px;
+}
+#form table .division .wpcf7-list-item {
+  display: block;
+}
+#form table .division .wpcf7-list-item + .wpcf7-list-item {
+  margin-top: 10px;
+}
+#form span.t-red {
+  color: #d40000;
+  font-size: 15px;
+}
+#wpcf7-select {
+  border: 1px solid #a0c8ac;
+  height: 60px;
+  width: 230px;
+}
+
+/* 入力項目
+--------------------------------------*/
+/*テキストボックス・メール・電話*/
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="tel"] {
+  width: 100%;
+  max-width: 600px;
+  height: 60px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 1px solid #c4c9cf;
+  background: #e7fdee;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*テキストエリア*/
+#form textarea {
+  width: 100%;
+  height: 260px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 1px solid #c4c9cf;
+  background: #e7fdee;
+  resize: none;
+}
+#form .checkBox li + li {
+  margin-top: 10px;
+}
+#form .checkBox li label {
+  cursor: pointer;
+}
+
+#form .checkList + ul {
+  margin-top: 20px;
+}
+#form .checkList li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#form .checkList li label {
+  cursor: pointer;
+}
+#form input[type="text"][disabled],
+#form textarea[disabled] {
+  background: #ededeb;
+}
+#form input[type="text"]:focus,
+#form input[type="email"]:focus,
+#form input[type="tel"]:focus,
+#form textarea:focus {
+  outline: 0;
+}
+#form input[type="submit"],
+#form input[type="button"] {
+  display: block;
+  width: 100%;
+  height: 65px;
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  background: url("../image/common/link_arrow_right.png") right 10px center
+    no-repeat #1b893d;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#form input[type="submit"][disabled],
+#form input[type="button"][disabled] {
+  opacity: 0.6;
+}
+#btnSubmit {
+  width: 260px;
+  margin: 50px auto 0;
+}
+#formWrap input[type="submit"] {
+  display: inline-block;
+  width: 260px;
+  height: 65px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  background: #12335f;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#formWrap input[type="button"] {
+  display: inline-block;
+  width: 260px;
+  height: 65px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  background: url("../image/common/link_arrow_left.png") 15px center no-repeat
+    #1783c1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*会場名*/
+#form .courseNumber,
+#form .place input[type="text"] {
+  display: none;
+}
+.screen-reader-response {
+  margin-bottom: 30px;
+}
+.screen-reader-response ul {
+  display: none;
+}
+.wpcf7-validation-errors,
+.wpcf7-mail-sent-ok {
+  margin-top: 20px;
+  text-align: center;
+}
+#toTop {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: #1783c1;
+  text-align: center;
+  line-height: 60px;
+  text-decoration: none;
+  border: 1px solid #1783c1;
+}
+
+.small {
+  font-size: 0.9em;
+}
+
+.wpcf7-validation-errors,
+.wpcf7-mail-sent-ok {
+  text-align: center;
+  margin: 30px 0 0;
+  color: #f00;
+  font-weight: bold;
+}
+
+.screen-reader-response {
+  color: #f00;
+  font-weight: bold;
+}
+
+#form .selectBox {
+  position: relative;
+  max-width: 330px;
+  height: 50px;
+  border: 1px solid #a0c8ac;
+  background: url("../image/common/select_arrow.png") right 10px center
+    no-repeat #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  #form .selectBox {
+    overflow: hidden;
+    line-height: 2em;
+  }
+}
+
+#form .selectBox label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#form .selectBox select {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#form .selectBox .wpcf7-form-control-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* 設計者・施工者登録フォーム
+--------------------------------------*/
+#form #firstCheck {
+  margin-bottom: 60px;
+  text-align: center;
+}
+#form #firstCheck li {
+  display: inline-block;
+}
+#form #firstCheck li + li {
+  margin-left: 40px;
+}
+
+#designBox,
+#constructionBox {
+  display: none;
+}
+
+#designBox h3,
+#constructionBox h3 {
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 30px;
+  font-size: 25px;
+  border-bottom: 4px solid #1b893d;
+}
+
+#form .registBox table .postal .code {
+  width: 330px;
+}
+
+#form .registBox table .postal .code > span {
+  display: inline-block;
+}
+
+#form .registBox table .postal .code input {
+  width: 250px;
+}
+
+#form .registBox table .postal p span:first-child {
+  display: inline-block;
+  min-width: 80px;
+}
+
+#designBox .license td > div + div {
+  margin-top: 40px;
+}
+
+#designBox .license td > div > * + * + * {
+  display: block;
+  margin-top: 20px;
+}
+
+#designBox .license .ttl {
+  margin-bottom: 10px;
+}
+
+#designBox .licenseList {
+  margin-top: 20px;
+}
+
+#designBox .licenseList li + li {
+  margin-top: 20px;
+}
+
+#designBox .licenseList li > * {
+  display: inline-block;
+}
+
+#designBox .licenseList li > * + * {
+  margin-left: 20px;
+}
+
+#designBox .licenseList li br {
+  display: none;
+}
+
+#designBox .licenseList li span:nth-of-type(1) {
+  min-width: 180px;
+}
+
+#designBox .licenseBox {
+  display: table;
+  width: 100%;
+}
+
+#designBox .licenseBox > div {
+  display: table-cell;
+  width: 20%;
+  padding: 18px 0 0;
+  vertical-align: top;
+}
+
+#designBox .licenseBox > div .wpcf7-list-item {
+  display: block;
+}
+
+#designBox .licenseBox > div .wpcf7-list-item + span {
+  margin-top: 56px;
+}
+
+#designBox .licenseBox > ul {
+  display: table-cell;
+}
+
+#designBox .licenseBox > ul li {
+  display: table;
+  width: 100%;
+}
+
+#designBox .licenseBox > ul li > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#designBox .licenseBox > ul li > span:first-child {
+  min-width: 50px;
+}
+
+#designBox .licenseBox > ul li .ttl {
+  display: none;
+}
+
+#designBox .taishin {
+  position: relative;
+}
+
+#designBox .taishin .taishinTxt {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+#designBox .taishin .wpcf7-list-item {
+  display: block;
+}
+
+#designBox .taishin .wpcf7-list-item + span {
+  margin-top: 120px;
+}
+
+#constructionBox .ttl {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#constructionBox table {
+  margin-bottom: 40px;
+}
+
+#constructionBox .license dt {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+#constructionBox .license dd {
+  display: inline-block;
+  width: 400px;
+  vertical-align: middle;
+}
+
+#constructionBox .license .wpcf7-list-item,
+#constructionBox .permission .wpcf7-list-item {
+  margin-right: 30px;
+}
+
+#constructionBox .group .radioBox .wpcf7-list-item {
+  margin-right: 30px;
+}
+
+#constructionBox .group .checkBox {
+  max-width: 600px;
+}
+
+#constructionBox .group .checkBox .wpcf7-list-item {
+  display: inline-block;
+  margin: 10px 30px 0 0;
+}
+
+#constructionBox .group .checkBox .wpcf7-list-item:nth-of-type(6) {
+  display: block;
+}
+
+#constructionBox .group .checkBox input[type="text"] {
+  margin: 10px 0 0 0;
+}
+
+#constructionBox .reform .reformWrap {
+  overflow: hidden;
+}
+
+#constructionBox .reform .reformWrap .left {
+  float: left;
+  width: 30%;
+  padding-top: 15px;
+}
+
+#constructionBox .reform .reformWrap .left .wpcf7-list-item {
+  display: block;
+}
+
+#constructionBox .reform .reformWrap .left .wpcf7-list-item + span {
+  margin-top: 40px;
+}
+
+#constructionBox .reform .reformWrap .right {
+  float: right;
+  width: 65%;
+}
+
+#constructionBox .reform .reformWrap .right dl + dl {
+  margin-top: 10px;
+}
+
+#constructionBox .reform .reformWrap .right dl dt {
+  display: inline-block;
+  width: 25%;
+  margin-right: 5%;
+  vertical-align: middle;
+}
+
+#constructionBox .reform .reformWrap .right dl dt span {
+  display: none;
+}
+
+#constructionBox .reform .reformWrap .right dl dd {
+  display: inline-block;
+  width: 68%;
+  vertical-align: middle;
+}
+
+#constructionBox .reform .reformWrap + p {
+  font-size: 15px;
+}
+
+#form .privacy {
+  display: table;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+#form .privacy dt {
+  display: table-cell;
+  width: 260px;
+}
+
+#form .privacy dd {
+  display: table-cell;
+}
+
+#form .privacy dd .wpcf7-list-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#form .privacy + p {
+  text-align: center;
+}
+
+/* 登録設計者・登録施工者名簿
+--------------------------------------*/
+#registList #sec01 {
+  margin-top: 60px;
+}
+#registList h3 {
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 30px;
+  font-size: 25px;
+  border-bottom: 4px solid #1b893d;
+}
+#registList .tblPc table {
+  width: 100%;
+  font-size: 15px;
+  border-left: 1px solid #7f7f7f;
+  border-top: 1px solid #7f7f7f;
+}
+#registList .tblPc table tr {
+  border-bottom: 1px solid #7f7f7f;
+}
+#registList .tblPc table th {
+  padding: 10px 5px;
+  text-align: center;
+  border-right: 1px solid #7f7f7f;
+  background: #f6f6f6;
+}
+#registList .tblPc table td {
+  padding: 10px 5px;
+  text-align: left;
+  border-right: 1px solid #7f7f7f;
+}
+#registList .tblSp {
+  display: none;
+}
+
+.wpcf7-not-valid-tip,
+.wpcf7-validation-errors {
+  color: #f00;
+}
+
+#top #newsList .cms-table tr td a {
+  color: #00f;
+}
+
+/* --------------------------------------------------
+	断熱材･断熱工法･技術資料
+-------------------------------------------------- */
+#tecDataTop {
+  .listPanel {
+    .listBox {
+      min-height: 300px;
+      a {
+        display: block;
+        height: 100%;
+        padding: 8px 10px;
+        border: 1px solid #080808;
+      }
+      dl {
+        dt {
+          padding: 7px 5px;
+          font-size: 20px;
+          text-align: center;
+          border-top: 4px solid #1b893d;
+          background: #f6f6f6;
+        }
+        dd {
+          padding: 15px 10px 10px;
+        }
+      }
+      ul {
+        li {
+          position: relative;
+          padding: 0 0 0 1em;
+          font-size: 15px;
+          &::before {
+            content: "・";
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          + li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .listPanel {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -20px 0 0 -20px;
+      .listBox {
+        width: calc((100% / 3) - 20px);
+        margin: 20px 0 0 20px;
+      }
+    }
+  }
+}
+
+.tecDataPage {
+  font-size: 15px;
+  .innerSection {
+    + .innerSection {
+      margin: 60px 0 0;
+    }
+  }
+  .innerSectionTitle {
+    margin-bottom: 25px;
+    padding: 10px 30px;
+    font-size: 25px;
+    border-bottom: 1px solid #000000;
+  }
+  .innerSectionContainer {
+    padding: 0 15px;
+    + .innerSectionContainer {
+      margin: 40px 0 0;
+    }
+    .txt {
+      line-height: 2.2;
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+  }
+  .imgTblBox {
+    margin: 30px 0 0;
+    p {
+      margin: 0 0 15px;
+    }
+    + .txt {
+      margin: 20px 0 0;
+    }
+  }
+  .caution {
+    margin: 50px 0 40px;
+    font-size: 22px;
+  }
+  .imgChartBox {
+    margin: 30px 0 0;
+  }
+}
+
+/* --------------------------------------------------
+	断熱材とは
+-------------------------------------------------- */
+#aboutInsulation {
+  .link-area {
+    padding: 0 10px;
+    ul {
+      li {
+        max-width: 430px;
+        .targetLinkBtn {
+          display: inline-block;
+          width: 100%;
+        }
+        &:nth-child(1),
+        &:nth-child(3) {
+          max-width: 360px;
+        }
+      }
+    }
+  }
+  .photoList {
+    margin: 50px 0 0;
+    ul {
+      dl {
+        padding: 10px;
+        text-align: center;
+        dt {
+          margin: 0 0 2px;
+          font-size: 22px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -30px 0 0;
+        li {
+          width: calc((100% / 3) - 15px);
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+  .txtBox01 {
+    margin: 30px 0 0;
+    line-height: 2;
+    > div {
+      padding: 0 0 0 2em;
+    }
+  }
+  .txtBox02 {
+    margin: 50px 0;
+    .box {
+      margin: 20px 0 0;
+      padding: 20px 30px;
+      line-height: 2;
+      background: #f6f6f6;
+      dl {
+        display: flex;
+        + dl {
+          margin: 30px 0 0;
+        }
+        dt {
+          width: 150px;
+        }
+      }
+    }
+  }
+  .markPanel {
+    padding: 20px 0 40px;
+    .leftBox {
+      .mark01,
+      .mark02 {
+        max-width: 160px;
+        margin: 0 auto;
+      }
+      .mark03 {
+        max-width: 230px;
+        margin: 0 auto 60px;
+      }
+      .mark04 {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+    }
+    .rightBox {
+      dl {
+        margin: 0 0 30px;
+        line-height: 2;
+        dt {
+          margin: 0 0 15px;
+        }
+        dd {
+          padding: 20px;
+          background: #f6f6f6;
+        }
+        ul {
+          max-width: 400px;
+          margin: 0 auto;
+          li {
+            position: relative;
+            padding: 0 0 0 1em;
+            &::before {
+              content: "・";
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            + li {
+              margin: 5px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .markPanel {
+      display: flex;
+      align-items: center;
+      > * {
+        width: 50%;
+      }
+    }
+  }
+  .rangePanel {
+    padding: 20px 30px;
+    border: 1px dashed #030000;
+  }
+  .introPanel {
+    dl {
+      margin: 0 0 30px;
+      line-height: 2;
+      dt {
+        margin: 0 0 15px;
+      }
+      dd {
+        padding: 20px;
+        background: #f6f6f6;
+      }
+      ul {
+        li {
+          position: relative;
+          padding: 0 0 0 1em;
+          &::before {
+            content: "・";
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          + li {
+            margin: 5px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .borderPanel {
+    margin: 40px 0 80px;
+    padding: 20px 30px;
+    border: 1px solid #030000;
+  }
+  .bottomLink {
+    margin: 20px 0 0;
+    .targetLinkBtn {
+      max-width: 440px;
+      margin: 0;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	繊維系断熱材について
+-------------------------------------------------- */
+#fiberInsulation {
+  .link-area {
+    padding: 0 10px;
+    ul {
+      li {
+        max-width: 450px;
+        .targetLinkBtn {
+          display: inline-block;
+          width: 100%;
+        }
+        &:nth-child(1) {
+          max-width: 420px;
+        }
+      }
+    }
+  }
+  .photoList {
+    margin: 50px 0 0;
+    ul {
+      p {
+        padding: 10px;
+        text-align: center;
+        em {
+          display: block;
+          margin: 0 0 2px;
+          font-size: 22px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -30px 0 0;
+        li {
+          width: calc((100% / 3) - 15px);
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+  .borderPanel {
+    padding: 20px 30px;
+    border: 1px solid #030000;
+  }
+  .theorySec01 {
+    .secBox01 {
+      margin: 0 0 40px;
+      .leftBox {
+        .chartBox {
+          max-width: 420px;
+          p {
+            margin: 10px 0 0;
+            text-align: center;
+          }
+        }
+      }
+      .rightBox {
+        .chartBox {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox01 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftBox {
+          width: 50%;
+        }
+        .rightBox {
+          width: 48%;
+        }
+      }
+    }
+    .secBox02 {
+      margin: 40px 0;
+      .leftBox {
+        .chartBox {
+          max-width: 280px;
+          p {
+            margin: 10px 0 0;
+            text-align: center;
+          }
+        }
+      }
+      .rightBox {
+        .chartBox {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox02 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 750px;
+        margin: 40px auto;
+        .leftBox {
+          width: 50%;
+        }
+        .rightBox {
+          width: 50%;
+        }
+      }
+    }
+    .secBox03 {
+      margin: 60px 0 0;
+      .chartBox {
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+    }
+    .secBox04 {
+      margin: 60px 0 0;
+      @media (min-width: 1025px) {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -30px 0 0;
+          li {
+            width: calc((100% / 2) - 20px);
+            margin: 30px 0 0;
+          }
+        }
+      }
+      > p {
+        margin: 20px 0 0;
+      }
+    }
+  }
+  .theorySec02 {
+    .secBox01 {
+      dl {
+        margin: 0 0 60px;
+        dt {
+          margin: 0 0 20px;
+        }
+        .chart01 {
+          max-width: 360px;
+        }
+        .chart02 {
+          max-width: 600px;
+        }
+      }
+      .txt {
+        margin: 0 0 20px;
+        padding: 20px 30px;
+        border: 1px dashed #030000;
+      }
+    }
+    .secBox02 {
+      margin: 60px 0 0;
+      .chartBox {
+        max-width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        p {
+          margin: 5px 0 0;
+        }
+      }
+    }
+  }
+  .theorySec03 {
+    .chart01 {
+      max-width: 380px;
+    }
+    .chart02 {
+      max-width: 280px;
+      margin: 60px 20px 60px;
+    }
+    .borderBox {
+      margin: 30px 0 10px;
+      padding: 20px 30px;
+      border: 1px dashed #030000;
+    }
+    .secBox01 {
+      margin: 60px 0 40px;
+      ul {
+        text-align: center;
+        li {
+          .chart {
+            max-width: 200px;
+            margin: 0 auto;
+          }
+          p {
+            margin: 10px 0 0;
+            font-size: 14px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          li {
+            width: calc((100% / 3) - 10px);
+          }
+        }
+      }
+    }
+  }
+  .theorySec04 {
+    .chartBox {
+      margin: 60px 0 0;
+      .chart {
+        max-width: 700px;
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	発砲プラスチック系断熱材について
+-------------------------------------------------- */
+#aboutPlastic {
+  .link-area {
+    padding: 0 10px;
+    ul {
+      li {
+        max-width: 450px;
+        .targetLinkBtn {
+          display: inline-block;
+          width: 100%;
+        }
+        &:nth-child(1) {
+          max-width: 420px;
+        }
+      }
+    }
+  }
+  .photoList {
+    ul {
+      p {
+        padding: 10px;
+        text-align: center;
+        em {
+          display: block;
+          margin: 0 0 2px;
+          font-size: 22px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -30px 0 0;
+        li {
+          width: calc((100% / 3) - 15px);
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+  .borderPanel {
+    padding: 20px 30px;
+    border: 1px solid #030000;
+  }
+  #section01 {
+    .chart01 {
+      max-width: 800px;
+      margin: 40px auto 60px;
+    }
+    .chart02 {
+      max-width: 780px;
+      margin: 40px auto 60px;
+    }
+    .chart03 {
+      max-width: 780px;
+      margin: 40px auto 60px;
+    }
+    .chart04 {
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    .chartPanel {
+      position: relative;
+      .chartBox01 {
+        max-width: 480px;
+      }
+    }
+    @media (min-width: 1025px) {
+      .chartPanel {
+        .chartBox02 {
+          margin: -150px 0 0;
+        }
+      }
+    }
+  }
+  #section02 {
+    .chart01 {
+      max-width: 600px;
+      margin: 0 auto 60px;
+      text-align: center;
+      p {
+        margin: 20px 0 0;
+      }
+    }
+    .small {
+      margin: 20px 0 0;
+      font-size: 13px;
+    }
+    .chart02 {
+      max-width: 800px;
+      margin: 60px auto 0;
+    }
+    .chart03 {
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    .chart04,
+    .chart05 {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      + .txt {
+        margin: 60px 0 0;
+        padding: 0 10px;
+        font-size: 14px;
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > * {
+          width: 48%;
+        }
+      }
+    }
+    .chartTxt {
+      max-width: 340px;
+      margin: 20px 0 0;
+    }
+    .chart06 {
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+  }
+}

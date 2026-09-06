@@ -1,0 +1,36 @@
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0')
+meta(name='format-detection', content='telephone=no')
+meta(name='description', content=description)
+meta(name='keywords', content=keywords)
+// css
+link(rel='stylesheet', href=(root_path || '') + 'css/reset.css')
+link(rel='stylesheet', href=(root_path || '') + 'css/attach.css')
+link(rel='stylesheet', href=(root_path || '') + 'css/animate.css')
+link(rel='stylesheet', href=(root_path || '') + 'css/slick.css')
+link(rel='stylesheet', href=(root_path || '') + 'css/slick-theme.css')
+link(rel='stylesheet', href=(root_path || '') + 'css/validationEngine.css')
+link(rel='stylesheet', href=(root_path || '') + 'css/common.css')
+link(rel='stylesheet', href=(root_path || '') + 'css/layout.css')
+link(rel='stylesheet', media='screen and (max-width: 1024px)', type='text/css', href=(root_path || '') + 'css/common_sp.css')
+link(rel='stylesheet', media='screen and (max-width: 1024px)', type='text/css', href=(root_path || '') + 'css/layout_sp.css')
+// js
+script(src=(root_path || '') + 'js/jquery-1.11.3.min.js')
+script(src=(root_path || '') + 'js/slick.min.js')
+script(src=(root_path || '') + 'js/common.js')
+script(src=(root_path || '') + 'js/scrollAnimation.js')
+if page_name == 'recruit' || page_name == 'contact'
+  script(src=(root_path || '') + 'js/jpostal.js')
+  script(src=(root_path || '') + 'js/autokana.js')
+  script(src=(root_path || '') + 'js/validate.js')
+  script(src=(root_path || '') + 'js/validateJa.js')
+  script(src=(root_path || '') + 'js/formContact.js')
+<script charset="UTF-8" data-mil-loader="https://branch.branch-fines.com/929DPE/js/mil_loader.js"></script>
+<script>(function(){var mv=window;mv=mv.mil=mv.mil||{};mv=mv.versions=mv.versions||{};var ss=document.getElementsByTagName('script');for(var i=0;i<ss.length;i++){var s=ss[i],ml;if(!s.src){if(s.dataset.milLoader){ml=s.dataset.milLoader;}else{continue;}}else if(s.src.match(/mil_embed.js/)){ml=s.src.replace(/mil_embed.js.*$/, 'mil_loader.js');}else if(s.src.match(/mil_autoplay.js/)){ml=s.src.replace(/mil_autoplay.js.*$/, 'mil_loader.js');}else{continue;}var p=s.parentNode;p.removeChild(s);var mlp=ml.match(new RegExp('^(https?://[^/]+(/(?:[^/]+/)+))(js/.+)$'))||[];if(!mlp){console.error('script data-mil-loader invalid: ',ml);continue;}var pi={},mtcs=mlp[1].match(new RegExp('^(https?://)([^/]+)(/(?:[^/]+/)+)$'));if(mtcs){var fqdns=mtcs[2].split('.'),d=fqdns.length==3?fqdns[1]+'.'+fqdns[2]:'';if(!d){console.error('invalid fqdn: ',fqdns);continue;}if(fqdns[0]=='media'){pi.m_url=mlp[1];pi.p_url=mtcs[1]+mtcs[3].match(new RegExp('^/([^/]+)'))[1]+'.'+d+mtcs[3].replace(new RegExp('^/[^/]+'), '');}else{if(d!='mil.movie'){if(d.replace(/:[0-9]+$/, '')!='mil-test.net'){d='mil.movie';}}pi.p_url=mlp[1];pi.m_url=mtcs[1]+'media.'+d+'/'+fqdns[0]+mtcs[3];}}pi.pvid=mlp[2].replace(new RegExp('/(preview/)?(ad[0-9]/)?$'), '').match(new RegExp('/([^/]+)$'))[1];pi.loader=mlp[3];var vi=mv[pi.pvid];if(vi===0){continue;}if(vi){_set(vi,pi);}else{(function(pi){mv[pi.pvid]=0;var x=new XMLHttpRequest();x.open('GET',pi.p_url+'js/version?serial='+Date.now());x.onloadend=function(){var vi='0.0.0';if(x.status>=200){if(x.status<300){vi=(x.responseText||'0.0.1').trim();}}mv[pi.pvid]=vi;_set(vi,pi);};x.send();})(pi);}function _set(vi,pi){var vs=vi.split(','),ver=vs[0],c_url,s;try{c_url=JSON.parse(vs[2]).CDN_base_url;}catch(e){}s=document.createElement('script');s.charset='UTF-8';document.body.appendChild(s);if(ver){s.src=(c_url?c_url:pi.m_url)+pi.loader+'?ver='+ver;}else{s.src=pi.m_url+pi.loader+'?serial='+Date.now();}}}})();</script>
+//- layout_js が定義されている場合に挿入
+if layout_js
+  each js_path in layout_js
+    script(src=(root_path || '') + js_path)
+// title
+title #{title}

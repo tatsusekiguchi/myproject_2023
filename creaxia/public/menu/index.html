@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="menu">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="logo"><a href="/">
+						<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+				<div class="ttl">
+					<p>新小岩駅徒歩3分の美顔痩身エステサロン<br>エステ×コンサルのトータルプロデュース</p>
+				</div>
+			</div>
+			<div class="headBox">
+				<div class="headNav">
+					<div class="ul">
+						<div class="li"><a href="concept">
+								<div>
+									<p class="em">Concept</p>
+									<p class="span">こだわり</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="beginners">
+								<div>
+									<p class="em">Beginner</p>
+									<p class="span">初めての方へ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="menu">
+								<div>
+									<p class="em">Menu</p>
+									<p class="span">メニュー</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="staff">
+								<div>
+									<p class="em">Staff</p>
+									<p class="span">スタッフ紹介</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="salon">
+								<div>
+									<p class="em">Salon</p>
+									<p class="span">店舗情報</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="headItem">
+					<div class="reserve"><a href="contact">
+							<div>
+								<p class="em">Reserve</p>
+								<p class="span">無料カウンセリング</p>
+							</div>
+						</a></div>
+					<div class="hamburgerMenu">
+						<div class="hamburgerBox">
+							<div class="hamburger">
+								<div class="span"></div>
+								<div class="span"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navClose"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_close.png" alt=""></div>
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="concept">
+							<div>
+								<p>こだわり</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="beginners">
+							<div>
+								<p>初めての方へ</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="menu">
+							<div>
+								<p>メニュー</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="staff">
+							<div>
+								<p>スタッフ紹介</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="salon">
+							<div>
+								<p>店舗情報</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="bloglist">
+							<div>
+								<p>ブログ</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="recruit">
+							<div>
+								<p>求人</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="contact">
+							<div>
+								<p>ご予約・お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="infoList">
+				<div class="dl">
+					<div class="dt">
+						<p>tel.</p>
+					</div>
+					<div class="dd"><a href="tel:0356076558">
+							<div>
+								<p>03-5607-6558</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="dl">
+					<div class="dt">
+						<p>open</p>
+					</div>
+					<div class="dd">
+						<p>13:00~21:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="navItem">
+				<div class="logo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+				<div class="sns">
+					<div class="ul">
+						<div class="li"><a href="https://www.instagram.com/rebion_shinkoiwa/" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_insta.png" alt="">
+									<p>美容術</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="https://www.instagram.com/rebion_black/" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_insta.png" alt="">
+									<p>モテ術</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_line.png" alt="">
+									<p>公式LINE</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="menuMain main">
+		<div class="pageKvPanel">
+			<div class="pageKvTitle">
+				<p>Menu</p>
+				<h1>メニュー</h1>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="pageSecTtl">
+					<p>Counseling</p>
+					<h2>無料カウンセリング</h2>
+				</div>
+				<div class="counselingContainer">
+					<div class="counselingPanel">
+						<div class="photoBox">
+							<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/menu_sec01_img.png" alt=""></div>
+						</div>
+						<div class="txtBox">
+							<div class="ttl01">
+								<p>Counseling</p>
+							</div>
+							<div class="ttl02">
+								<p>約30分の無料カウンセリングで:<br>あなた専用プログラムをご提案</p>
+							</div>
+							<div class="txt">
+								<p>元No.ホステスの経験をもつほか、セカンドキャリアで様々な人と接してきたエステティシャンが、カウンセリングを通してあなたの魅力や弱みを把握します。それを踏まえてゴールを一緒に設定し、あなた専用のプログラムをご提案します。単発メニューの場合も、まずは無料カウンセリングをご予約いただき、お悩みに合わせた必要なメニューを提案させていただきます。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtl">
+					<p>Menu</p>
+					<h2>メニュー・料金</h2>
+				</div>
+				<div class="secContainer">
+					<div class="topTxt">
+						<p>エステは継続していただくとより一層、効果が実感できます。<br>通いやすいように「リピート割引」「お得チケット」をご用意したので、ご活用ください。</p>
+					</div>
+					<div class="bnrContainer">
+						<div class="bnrPanel">
+							<div class="bnrBox">
+								<div class="secBox">
+									<div class="ttlBox">
+										<div class="ttl"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/menu_sec02_bnr_ttl_01.png" alt=""></div>
+									</div>
+									<div class="txtBox">
+										<div class="dl">
+											<div class="dt">
+												<p>1週間以内のご来店で</p>
+											</div>
+											<div class="dd">
+												<p>初回価格適用</p>
+											</div>
+										</div>
+										<div class="dl">
+											<div class="dt">
+												<p>2週間以内のご来店で</p>
+											</div>
+											<div class="dd">
+												<p>サプリor<br>美容液プレゼント</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bnrPanel">
+							<div class="bnrBox">
+								<div class="secBox">
+									<div class="ttlBox">
+										<div class="ttl"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/menu_sec02_bnr_ttl_02.png" alt=""></div>
+									</div>
+									<div class="txtBox">
+										<div class="dl">
+											<div class="dt">
+												<p>20,000円のチケット購入で</p>
+											</div>
+											<div class="dd">
+												<div class="price">
+													<p class="em">24,000</p>
+													<p>円分</p>
+												</div>
+												<p>ご利用いただけます。</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="topLinkList">
+						<div class="ul">
+							<div class="li"><a href="#menu01">
+									<div>
+										<p>モテ男・輝き女子コース</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#menu02">
+									<div>
+										<p>モテ王・ナンバーワンコース</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#menu03">
+									<div>
+										<p>モテ男メニュー</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#menu04">
+									<div>
+										<p>輝き女子メニュー</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#menu05">
+									<div>
+										<p>共通メニュー</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+					<div class="section01 section">
+						<div class="secTtl">
+							<p>Course Menu</p>
+							<h3>コースメニュー</h3>
+						</div>
+						<div class="menuContainer" id="menu01">
+							<div class="menuTitle">
+								<div class="topLabel">
+									<p>一番人気</p>
+								</div>
+								<h4>モテ男・輝き女子コース</h4>
+							</div>
+							<div class="photoPanel">
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/menu_sec02_menu_img_01.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>初めての方におすすめなコースメニュー。<br>「半年でモテ男になる」「3カ月でNo.1になる」など、お客様と設定したゴールを達成するために、あなた専用のプランを組みます。<br>必要なメニューだけを無駄なく組み込むことができ、期間を決めて集中的に通えるので、<br>一番効果を実感しやすいメニューです。<br>ご予算や期間についてもご相談いただけます。</p>
+									</div>
+								</div>
+							</div>
+							<div class="menuPanel">
+								<div class="menuBox">
+									<div class="ttlBox">
+										<p>モテ男育成コース（モテ男コンサル付)</p>
+									</div>
+									<div class="priceBox">
+										<div class="dl">
+											<div class="dt first">
+												<p>初回</p>
+											</div>
+											<div class="dd">
+												<p>¥4,980~</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="menuBox">
+									<div class="ttlBox">
+										<p>輝き女子育成コース(輝き方コンサル付)</p>
+									</div>
+									<div class="priceBox">
+										<div class="dl">
+											<div class="dt first">
+												<p>初回</p>
+											</div>
+											<div class="dd">
+												<p>¥4,980~</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="menuContainer" id="menu02">
+							<div class="menuTitle">
+								<h4>モテ王・ナンバーワンコース</h4>
+							</div>
+							<div class="photoPanel">
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/menu_sec02_menu_img_02.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>すでにモテてる男性、輝いている女性のために、スペシャルコースをご用意しました。<br>顔から全身を3~4時間かけて施術する、贅沢なフルコースです。<br>モテや輝きを維持するのは簡単なことではありません。<br>モテ続けたい方、輝き続けたい方や、さらに上を目指す方はこちらのメニューをご利用ください。</p>
+									</div>
+								</div>
+							</div>
+							<div class="menuPanel">
+								<div class="menuBox">
+									<div class="ttlBox">
+										<p>モテ王コース(フルコース)</p>
+									</div>
+									<div class="priceBox">
+										<div class="dl">
+											<div class="dt first">
+												<p>初回</p>
+											</div>
+											<div class="dd">
+												<p>¥4,980~</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="menuBox">
+									<div class="ttlBox">
+										<p>ナンバーワンコース(フルコース)</p>
+									</div>
+									<div class="priceBox">
+										<div class="dl">
+											<div class="dt first">
+												<p>初回</p>
+											</div>
+											<div class="dd">
+												<p>¥4,980~</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section02 section">
+						<div class="secTtl">
+							<p>Single Menu</p>
+							<h3>単発メニュー</h3>
+						</div>
+						<div class="menuContainer" id="menu03">
+							<div class="menuTitle">
+								<h4>モテ男メニュー</h4>
+							</div>
+							<div class="menuItemContainer">
+								<div class="menuSubTitle">
+									<p>■美顔・痩身</p>
+								</div>
+								<div class="menuPanel">
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>大人気ハーブテント付き！目指せ細マッチョお腹引き締め/60分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980~</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥12,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>セルフホワイトニング付き！即効モテ小顔コース/110分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥6,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥15,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="menuContainer" id="menu04">
+							<div class="menuTitle">
+								<h4>輝き女子メニュー</h4>
+							</div>
+							<div class="menuItemContainer">
+								<div class="menuSubTitle">
+									<p>■美顔・痩身</p>
+								</div>
+								<div class="menuPanel">
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【キュッと小顔】ほうれい線・シワたるみ改善/70分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥15,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【とっておきのツヤ肌へ】ツヤぷる小顔/ 70分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥15,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【痩せづらくなった方にオススメ】背中のはみ肉撃退/60分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥10,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox wedding">
+										<div class="ttlBox">
+											<p>【背中ピーリング◎】憧れの薄い背中へ！魅せる背中/60分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥10,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【代謝アップ】ハーブテント付き！がっつりくびれメイク/60分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥12,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【全身ぐんぐん痩せ】スッキリボディライン全身/90分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥19,800</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【脚の疲れやむくみ改善】立ち仕事の方に！むくみスッキリ美脚/60分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥4,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥10,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="weddingTxt">
+									<div class="icon"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/menu_icon_wedding.png" alt=""></div>
+									<p>→ウエディングにオススメ！</p>
+								</div>
+							</div>
+						</div>
+						<div class="menuContainer" id="menu05">
+							<div class="menuTitle">
+								<h4>共通メニュー</h4>
+							</div>
+							<div class="menuItemContainer">
+								<div class="menuSubTitle">
+									<p>■ホワイトニング</p>
+								</div>
+								<div class="menuPanel">
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【白い歯で清潔感UP！】セルフホワイトニング/10分×２セット</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt first">
+													<p>初回</p>
+												</div>
+												<div class="dd">
+													<p>¥1,980</p>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥3,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【マシンとセット利用】セルフホワイトニング/10分×２セット</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥2,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【定額通い放題】セルフホワイトニング/１ヶ月</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥8,800</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="menuItemContainer">
+								<div class="menuSubTitle">
+									<p>■ハーブテント</p>
+								</div>
+								<div class="menuPanel">
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【手ぶらでOK!】発汗＆デトックスで大人気！ハーブテント/20分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥2,500</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【マシンとセット利用で代謝UP】ハーブテント/20分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥2,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="menuItemContainer">
+								<div class="menuSubTitle">
+									<p>■ホームエステスキンケア</p>
+								</div>
+								<div class="menuPanel">
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【ホームエステスキンケア講座90分】基礎化粧品7,000円相当をプレゼント！/90分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥6,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menuBox">
+										<div class="ttlBox">
+											<p>【当店指定のスキンケア用品ご持参の方限定】ホームエステスキンケア講座/90分</p>
+										</div>
+										<div class="priceBox">
+											<div class="dl">
+												<div class="dt normal">
+													<p>通常</p>
+												</div>
+												<div class="dd">
+													<p>¥0</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section03 homeCareContainer">
+						<div class="homeCarePanel">
+							<div class="photoBox">
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/menu_sec02_homecare_img.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="ttl01">
+									<p>Home care</p>
+								</div>
+								<div class="ttlSub">
+									<p>6,000円のホームエステスキンケア講座(90分)に参加で</p>
+								</div>
+								<div class="ttl02">
+									<p>7,000円相当の<br>スキンケアセットをプレゼント！</p>
+								</div>
+								<div class="txt">
+									<p>せっかくエステに通っていただくなら、日々のスキンケアも大事にしていただきたい。そんな想いから、お得にスキンケアセットが手に入る講座をご用意しました！当店が厳選した高品質コスメを効果的に使っていただけるよう、正しいスキンケアの方法をレクチャーします。<br>ご自宅でのケアを丁寧にすることで、エステの効果をより実感していただけるはずです。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="pagetop linkBtn" data-target="main"><img src=" https://creaxia230724.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+		<div class="logo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+		<div class="copy">
+			<p>©2023.rebion</p>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

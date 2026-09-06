@@ -1,0 +1,59 @@
+// ▽メイン▽
+main#serviceMain.main
+	.pageKvPanel
+		.pageKvTitle
+			h1
+				span サービス紹介
+			p
+				span Our Business
+	.sec01
+		.secWrap01
+			.sectionTitle.center.white.fadeUp
+				.titleBox
+					h2 電気工事事業
+					p Our work
+			.topTxt.fadeUp
+				.txt
+					p 私たちが提供するサービスは「電気工事」です。<br>電気工事といっても様々な種類があり当社が主に扱うサービスとしては<br class="pcBreak">以下のようなものになります。
+			.secPanel.fadeUp
+				.secBox
+					.photo
+						img(src=(root_path || '') + "image/service/sec01_img.png", alt="")
+					.txtBox
+						.secTtl
+							h3 一般電気工事
+						.txt
+							p 電気工事の中でも当社では以下の工事を主に取り扱っています。<br>下記以外にも取り扱っておりますので電気工事に関するお問い合わせは下記ボタンよりお問い合わせください。
+			.secPanelList
+				.secPanel.fadeUp
+					.box01.box
+						.secTtl
+							h3 弱電通信工事
+						.txt
+							p インターネット・LAN 設備、テレビ・電話・インターホン設備、防災設備、防犯設備などの48V 未満の電圧が対象の電気設備工事。
+				.secPanel.fadeUp
+					.box02.box
+						.secTtl
+							h3 電気制御工事
+						.txt
+							p 配管や配線、制御盤敷設・メンテナンス、各種センサーの取り付け等の制御系統の電源供給に関する出来設備工事。
+			.btnMore.fadeUp
+				a(href=(root_path || '') + "contact") お問い合わせはこちら
+	.sec02
+		.secWrap01
+			.secTtl.fadeUp
+				h2 求人広告事業
+			.topTxt.fadeUp
+				.txt
+					p 求人広告の作成や管理、その時々に応じた求人記事の作成など、<br>御社の求人活動のお手伝いをいたします。
+			.recruitPanel.fadeUp
+				.secBox
+					.photo
+						img(src=(root_path || '') + "image/service/sec02_img.png", alt="")
+					.txtBox
+						h3 求人広告の作成、管理
+						.txt
+							p 求人広告作成からリクルートサイトへの求人記事の登録・掲載など煩わしい手続きなど御社に変わってお手伝いいたします。
+			.btnMore.fadeUp
+				a(href=(root_path || '') + "contact") お問い合わせはこちら
+// △メイン△

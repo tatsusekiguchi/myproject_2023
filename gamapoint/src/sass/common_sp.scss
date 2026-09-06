@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .topLogo {
+    max-width: 400px;
+    .logo {
+      max-width: 250px;
+    }
+  }
+  .appTitle {
+    margin: 0 0 50px;
+    font-size: 30px;
+  }
+  .contactPanel {
+    max-width: 600px;
+    .gamapointTitle {
+      max-width: 400px;
+    }
+    .contactTitle {
+      font-size: 16px;
+    }
+    > dl {
+      dt {
+        margin: 0 0 10px;
+      }
+      dd {
+        a {
+          font-size: 20px;
+          em {
+            font-size: 40px;
+          }
+        }
+        .txt {
+          font-size: 14px;
+        }
+      }
+    }
+    .infoPanel {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px 15px;
+      dl {
+        dt {
+          margin: 0 0 10px;
+          font-size: 12px;
+        }
+        dd {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  .btnOhp {
+    max-width: 340px;
+  }
+}

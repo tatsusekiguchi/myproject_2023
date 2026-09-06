@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="system">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="logo"><a href="/">
+				<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+			</a></div>
+		<div class="navBox">
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="about">
+							<div>
+								<p>アークについて</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>事業紹介</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="hair">
+										<div>
+											<p>ヘアサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="product">
+										<div>
+											<p>商品紹介</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="aesthetic">
+										<div>
+											<p>エステサロン</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="childcare">
+										<div>
+											<p>保育事業</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="hair">
+							<div>
+								<p>ヘアサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="product">
+							<div>
+								<p>商品紹介</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="aesthetic">
+							<div>
+								<p>エステサロン</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="childcare">
+							<div>
+								<p>保育事業</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>採用情報</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="message">
+										<div>
+											<p>メッセージ</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="system">
+										<div>
+											<p>アークの制度</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="interview">
+										<div>
+											<p>先輩の声</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="requirement">
+										<div>
+											<p>募集要項</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="message">
+							<div>
+								<p>メッセージ</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="system">
+							<div>
+								<p>アークの制度</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="interview">
+							<div>
+								<p>先輩の声</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="requirement">
+							<div>
+								<p>募集要項</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="company">
+							<div>
+								<p>会社概要</p>
+							</div>
+						</a></div>
+					<div class="li contact"><a href="contact">
+							<div>
+								<p>ご予約・お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="systemMain main">
+		<div class="pageKvContainer">
+			<div class="topKvPanel">
+				<div class="topKvTitle mincho">
+					<div class="ttl">
+						<h1>アークの制度</h1>
+					</div>
+					<p>SYSTEM</p>
+				</div>
+				<div class="topKv"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_kv.png" alt=""></div>
+			</div>
+		</div>
+		<div class="pageMainContainer">
+			<div class="topSection">
+				<div class="secWrap02">
+					<div class="pagerList">
+						<div class="ul mincho">
+							<div class="li"><a href="#sec01">
+									<div>
+										<p class="em">教育制度</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#sec02">
+									<div>
+										<p class="em">復帰キャリア</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="#sec03">
+									<div>
+										<p class="em">福利厚生</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec01 section" id="sec01">
+				<div class="secWrap01">
+					<div class="pageSecTtl mincho grad fadeUp">
+						<div class="ttl">
+							<h2>教育制度</h2>
+						</div>
+						<div class="sub">
+							<p>CAREER PATH</p>
+						</div>
+					</div>
+					<div class="topTxt fadeUp">
+						<div class="txt">
+							<p>まずはスタイリストを目指すというのが王道ですが、アークでは最初から専門分野を学べるコースも用意しています。<br>それぞれが自分の道を極められる環境を整えているので、存分に活用してください。</p>
+						</div>
+					</div>
+					<div class="secContainerList">
+						<div class="secContainer fadeUp">
+							<div class="ttlNumBox mincho">
+								<div class="num">
+									<p>01</p>
+								</div>
+								<h3>キャリアパスを自分で選べる</h3>
+							</div>
+							<div class="careerPathPanelList">
+								<div class="careerPathPanel">
+									<div class="careerPathBox">
+										<div class="boxTtl mincho">
+											<p>“スタイリストを経てから専門分野に進む”</p>
+										</div>
+										<div class="pathBox">
+											<div class="dl">
+												<div class="dt">
+													<p>アシスタント</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li blue"></div>
+														<div class="li"></div>
+														<div class="li"></div>
+													</div>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt">
+													<p>スタイリスト</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li green"></div>
+														<div class="li green"></div>
+														<div class="li blue"></div>
+													</div>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt">
+													<p>専門分野</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li green"></div>
+														<div class="li green"></div>
+														<div class="li blue"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="txt">
+											<p>スタイリストは目指さず、アシスタント業務を経たらそのまま専門分野に進むコースです。<br>カットやカラーの練習はないので、自分の学びたい分野に時間をかけることができます。<br>アイリストやネイリストなど、最初から専門分野を極めたい人におすすめのコースです。</p>
+										</div>
+									</div>
+								</div>
+								<div class="careerPathPanel">
+									<div class="careerPathBox">
+										<div class="boxTtl mincho">
+											<p>“スタイリストは経験せずに専門分野に進む”</p>
+										</div>
+										<div class="pathBox">
+											<div class="dl">
+												<div class="dt">
+													<p>アシスタント</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li blue"></div>
+														<div class="li"></div>
+														<div class="li"></div>
+													</div>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt">
+													<p>スタイリスト</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li"></div>
+														<div class="li"></div>
+														<div class="li"></div>
+													</div>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt">
+													<p>専門分野</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li green"></div>
+														<div class="li blue"></div>
+														<div class="li"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="txt">
+											<p>スタイリストは目指さず、アシスタント業務を経たらそのまま専門分野に進むコースです。<br>カットやカラーの練習はないので、自分の学びたい分野に時間をかけることができます。<br>アイリストやネイリストなど、最初から専門分野を極めたい人におすすめのコースです。</p>
+										</div>
+									</div>
+								</div>
+								<div class="careerPathPanel">
+									<div class="careerPathBox">
+										<div class="boxTtl mincho">
+											<p>“アシスタントと専門分野を同時並行で学ぶ”</p>
+										</div>
+										<div class="pathBox">
+											<div class="dl">
+												<div class="dt">
+													<p>アシスタント</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li blue"></div>
+														<div class="li"></div>
+													</div>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt">
+													<p>スタイリスト</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li"></div>
+														<div class="li"></div>
+														<div class="li"></div>
+													</div>
+												</div>
+											</div>
+											<div class="dl">
+												<div class="dt">
+													<p>専門分野</p>
+												</div>
+												<div class="dd">
+													<div class="ul">
+														<div class="li blue"></div>
+														<div class="li"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="txt">
+											<p>アシスタントと専門分野を同時並行で学ぶコースです。<br>最初から専門分野の勉強をすることができるので、早く学び始めたい人にぴったりです。<br>他のサロンでの経験がある人もにもおすすめです。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="secContainer fadeUp">
+							<div class="secBox">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec01_img_01.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlNumBox mincho">
+										<div class="num">
+											<p>02</p>
+										</div>
+										<h3>豊富なカリキュラム</h3>
+									</div>
+									<div class="txt">
+										<p>カットの練習や専門分野の講師による研修など、<br>充実したカリキュラムを用意しています。<br>研修は基本的には営業時間内に実施。<br>自分の時間を確保しながら進めることができます。</p>
+									</div>
+								</div>
+							</div>
+							<div class="curriculum">
+								<p>■カリキュラム<br>〇JPA（パーマ協会）＋JHCA（カラー協会）のテクニック＆理論講習〇エムズによる人間力、ホスピタリティー〇店内での個人勉強会<br>〇アーク全体勉強会（ディーラー、メーカーなどによる臨店講習会)〇撮影会（フォトコンテスト）〇コンテスト参加<br>〇着付け、メイク、ネイル、まつエク</p>
+							</div>
+						</div>
+						<div class="secContainer fadeUp">
+							<div class="secBox">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec01_img_02.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlNumBox mincho">
+										<div class="num">
+											<p>03</p>
+										</div>
+										<h3>自主的に学べる環境</h3>
+									</div>
+									<div class="txt">
+										<p>新卒の内定者は、入社前からバイトとして働けます。<br>働きながら研修を受けられ、一足早くスタートを切ることができます。<br>研修は基本的に営業時間内に行いますが、カット練習などを追加で取りたい場合はサロンを使うこともできるので、自分のペースで学べます。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec02 section" id="sec02">
+				<div class="secWrap01">
+					<div class="pageSecTtl mincho grad fadeUp">
+						<div class="ttl">
+							<h2>復帰キャリア</h2>
+						</div>
+						<div class="sub">
+							<p>REʼCAREER</p>
+						</div>
+					</div>
+					<div class="topTxt fadeUp">
+						<div class="txt">
+							<p>結婚や出産、子育てで一度現場を離れると、フルタイムでの復帰が難しくなり美容師の道を諦めてしまう人を何人も見てきました。<br>そこでアークはサロンの傍に自社保育園を開園し、柔軟に働けるシフトを導入。<br>ライフステージ変化に合わせて長く働き続けられる環境を整えています。</p>
+						</div>
+					</div>
+					<div class="secPanelList">
+						<div class="secPanel01 secPanel fadeUp">
+							<div class="secBox">
+								<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec02_img.png" alt=""></div>
+								<div class="txtBox">
+									<div class="ttlBox mincho">
+										<h3>自社保育園で安心して預けられる</h3>
+									</div>
+									<div class="txt">
+										<p>アークでは小さなお子さんがいるスタッフにも安心して働き続けてほしい。<br>という想いからサロンの近くに自社保育園を開園しました。</p>
+										<p>
+											<アーク保育園の特徴><br>□保育料の負担が少ない（月額費目安：7,000円)<br>□近くにあるので休み時間に顔を見れる<br>□何かあったときもすぐに駆け付けられる<br>□「手ぶらde保育」で働く親御さんに優しい<br>□生後100日から確実に預けられる<br>□もちろん男性スタッフも利用可能
+										</p>
+									</div>
+									<div class="btnMore"><a href="https://hc-ark.com/ark-hoikuen/" target="_blank" rel="noopener">
+											<div>
+												<p>アーク保育園HP</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02 secPanel fadeUp">
+							<div class="secBox">
+								<div class="ttlBox mincho">
+									<h3>ライフステージに合わせた雇用形態</h3>
+								</div>
+								<div class="txt">
+									<p>お子さんの年齢に合わせて柔軟に働くことができます。<br>＜キャリア復帰例＞</p>
+								</div>
+								<div class="chartBox">
+									<div class="chart"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec02_chart.png" alt=""></div>
+								</div>
+								<div class="txt">
+									<p>パートタイム：週20時間未満の勤務、社会保険なし<br>準社員：週20時間以上の勤務、社会保険完備<br>正社員：週40時間の勤務、社会保険完備</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec03 section" id="sec03">
+				<div class="secWrap01">
+					<div class="pageSecTtl mincho grad fadeUp">
+						<div class="ttl">
+							<h2>福利厚生</h2>
+						</div>
+						<div class="sub">
+							<p>WELFARE</p>
+						</div>
+					</div>
+					<div class="topTxt fadeUp">
+						<div class="txt">
+							<p>長く安心して働き続けられるよう、福利厚生を整ています。</p>
+						</div>
+					</div>
+					<div class="listPanel fadeUp">
+						<div class="listBox01 listBox">
+							<div class="ul">
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_01.png" alt=""></div>
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_02.png" alt=""></div>
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_03.png" alt=""></div>
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_04.png" alt=""></div>
+							</div>
+						</div>
+						<div class="listBox02 listBox">
+							<div class="ul">
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_05.png" alt=""></div>
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_06.png" alt=""></div>
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_07.png" alt=""></div>
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_08.png" alt=""></div>
+								<div class="li"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_list_09.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="secBoxList">
+						<div class="secBox fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_img_01.png" alt=""></div>
+							<div class="txtBox">
+								<h3 class="mincho">社員旅行はプレゼンで決定</h3>
+								<div class="txt">
+									<p>アークの社員旅行はプレゼン制。<br>これまでにベトナム、タイ、グアム、竹富島（沖縄）など社員の行きたい場所に行ってきました。<br>自主的にしおりを作ったりとスタッフの気合いも入った楽しい旅行です。<br>他にBBQや忘年会、代表が思い立った日に飲み会など、サロン外での交流も深めています。</p>
+								</div>
+							</div>
+						</div>
+						<div class="secBox fadeUp">
+							<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/system_sec03_img_02.png" alt=""></div>
+							<div class="txtBox">
+								<h3 class="mincho">休日は希望制</h3>
+								<div class="txt">
+									<p>月曜日の定休日に加え、平日で希望日にお休みを取ることができます。<br>月＋火で連休にする人や、月＋金でこまめに休みを入れる人など、スタッフによって組み合わせ方は様々です。<br>ご自身が働きやすいように休みを取ってください。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottomLinkContainer">
+				<div class="secWrap01">
+					<div class="bottomLinkList">
+						<div class="listBox">
+							<div class="ul">
+								<div class="li"><a href="message">
+										<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/page_bottom_img_message.png" alt=""></div>
+										<div class="dl mincho">
+											<div class="dt">
+												<p>MESSAGE</p>
+											</div>
+											<div class="dd">
+												<p>代表メッセージ</p>
+											</div>
+										</div>
+									</a></div>
+								<div class="li"><a href="interview">
+										<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/page_bottom_img_interview.png" alt=""></div>
+										<div class="dl mincho">
+											<div class="dt">
+												<p>INTERVIEW</p>
+											</div>
+											<div class="dd">
+												<p>社員インタビュー</p>
+											</div>
+										</div>
+									</a></div>
+								<div class="li"><a href="requirement">
+										<div class="photo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/page_bottom_img_requirements.png" alt=""></div>
+										<div class="dl mincho">
+											<div class="dt">
+												<p>REQUIREMENTS</p>
+											</div>
+											<div class="dd">
+												<p>募集要項</p>
+											</div>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtl mincho white fadeUp">
+					<div class="ttl">
+						<h2>ご予約・お問い合わせ</h2>
+					</div>
+					<div class="sub">
+						<p>CONTACT</p>
+					</div>
+				</div>
+				<div class="contactItem fadeUp">
+					<div class="itemBox">
+						<div class="tel"><a href="tel:0265772227">
+								<div>
+									<p class="em mincho">0265-77-2227</p>
+									<p class="span">平日 10:00～19:00<br>日曜日・祝日 09:00～18:00</p>
+								</div>
+							</a></div>
+						<div class="mail"><a href="contact?sec02">
+								<div>
+									<p class="mincho">メールフォームはこちら</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="itemBox">
+						<div class="reserve"><a href="contact">
+								<div>
+									<p class="mincho">ご予約はこちらから</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="logo"><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txtBox">
+						<div class="ttl">
+							<p>株式会社アーク</p>
+							<div class="insta"><a href="https://www.instagram.com/haircraftark/" target="_blank" rel="noopener">
+									<div><img src="https://s-arc231031.smooooth.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+								</a></div>
+						</div>
+						<div class="txt">
+							<p>〒396-0012長野県伊那市上新田2401-1</p><a href="tel:0265772227">
+								<div>
+									<p>TEL: 0265-77-2227</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy;2023　株式会社アーク.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

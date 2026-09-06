@@ -1,0 +1,660 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  background: url(https://hasunuma-metal.co.jp/system_panel/uploads/images/base_bg.png);
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.fade-up {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation-name: fadeInAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* アニメーションスタートの遅延時間を決めるCSS*/
+.delay-time {
+  animation-delay: 0.2s;
+}
+
+.delay-time01 {
+  animation-delay: 0.4s;
+}
+
+.delay-time02 {
+  animation-delay: 0.6s;
+}
+
+.delay-time03 {
+  animation-delay: 1s;
+}
+
+.delay-time04 {
+  animation-delay: 1.4s;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 140px 0 20px;
+  z-index: 999;
+  background: #ffffff;
+}
+.header .headBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.header .logo {
+  width: 300px;
+}
+.header .logo a {
+  display: block;
+}
+.header .hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 40px;
+  width: 50px;
+  height: 40px;
+  z-index: 10000;
+}
+.header .hamburger .span {
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 1px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.header .hamburger .span:nth-of-type(1) {
+  top: 10px;
+}
+.header .hamburger .span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .hamburger .span:nth-of-type(3) {
+  bottom: 10px;
+}
+.header .hamburger.is-open .span:nth-of-type(1) {
+  transform: translate(-50%, 9px) rotate(-45deg);
+}
+.header .hamburger.is-open .span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .hamburger.is-open .span:nth-of-type(3) {
+  transform: translate(-50%, -9px) rotate(45deg);
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .headNavBox .navList .ul {
+    display: flex;
+  }
+  .headNavBox .navList .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  .headNavBox .navList .ul > .li + .li {
+    margin: 0 0 0 60px;
+  }
+  .headNavBox .navList .ul > .li > a {
+    display: block;
+  }
+  .headNavBox .navList .ul .linkTxt {
+    position: relative;
+  }
+  .headNavBox .navList .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .headNavBox .navList .ul .pulldown:hover .subList {
+    top: 90px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .headNavBox .subList {
+    position: absolute;
+    top: 70px;
+    left: -110px;
+    width: 300px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    border: 1px solid #dbdbdb;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .headNavBox .subList .li + .li {
+    border-top: 1px solid #dbdbdb;
+  }
+  .headNavBox .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+  }
+  .headNavBox .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .headNavBox .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #ea5404;
+  }
+}
+@media (max-width: 1155px) {
+  .headNavBox {
+    display: none;
+  }
+}
+.navBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 120px 20px 60px;
+  z-index: 999;
+  background: #ffffff;
+  transition: 0.6s;
+}
+.navBox .navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.navBox .navContainer .leftBox {
+  width: 40%;
+  padding: 0 20px 0 0;
+}
+.navBox .navContainer .leftBox .logoBox {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.navBox .navContainer .leftBox .logo {
+  display: inline-block;
+  width: 300px;
+  margin: 0 30px 0 0;
+}
+.navBox .navContainer .leftBox .sns {
+  display: inline-block;
+  width: 35px;
+  vertical-align: bottom;
+}
+.navBox .navContainer .leftBox .sns a {
+  display: block;
+}
+.navBox .navContainer .rightBox {
+  width: 700px;
+}
+.navBox .navContainer .rightBox .navList {
+  display: flex;
+  margin: 0 0 60px;
+}
+.navBox .navContainer .rightBox .navList .ul {
+  width: 50%;
+}
+.navBox .navContainer .rightBox .navList .ul .li {
+  padding: 0 0 0 1em;
+  background: url(https://hasunuma-metal.co.jp/system_panel/uploads/images/header_nav_list_arrow.png) left top 8px no-repeat;
+  background-size: 4px auto;
+}
+.navBox .navContainer .rightBox .navList .ul .li + .li {
+  margin: 30px 0 0;
+}
+.navBox .navContainer .rightBox .navList .ul .li a {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 5px;
+  font-size: 15px;
+  line-height: 1.3;
+}
+.navBox .navContainer .rightBox .navList .ul .li a:after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  width: 98%;
+  height: 2px;
+  background: #000000;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  /*X方向0、Y方向1*/
+  transform-origin: left top;
+  /*左上基点*/
+}
+.navBox .navContainer .rightBox .navList .ul .li a:hover {
+  opacity: 0.9;
+}
+.navBox .navContainer .rightBox .navList .ul .li a:hover:after {
+  transform: scale(1, 1);
+}
+.navBox .navContainer .rightBox .telLink {
+  display: inline-block;
+  margin: 0 60px 0 0;
+  vertical-align: middle;
+}
+.navBox .navContainer .rightBox .telLink a {
+  display: inline-block;
+  font-size: 20px;
+}
+.navBox .navContainer .rightBox .telLink a p {
+  display: inline-block;
+}
+.navBox .navContainer .rightBox .telLink a .em {
+  font-size: 36px;
+}
+.navBox .navContainer .rightBox .lineLink {
+  display: inline-block;
+  width: 35px;
+  padding: 0 0 20px;
+  vertical-align: middle;
+}
+.navBox .navContainer .rightBox .lineLink a {
+  display: block;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 91px 0 0;
+}
+
+.pageKvContainer {
+  position: relative;
+}
+.pageKvContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: #ffffff;
+}
+.pageKvContainer .pageKvPanel {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 0 0;
+  text-align: center;
+}
+.pageKvContainer .pageKvPanel .pageKvTitle {
+  margin: 0 0 30px;
+}
+.pageKvContainer .pageKvPanel .pageKvTitle .sub {
+  position: relative;
+  margin: 0 0 15px;
+  font-size: 50px;
+}
+.pageKvContainer .pageKvPanel .pageKvTitle .sub:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 3px;
+  margin: 0 auto;
+  background: #ea5404;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.pageSecTtlBox .subTtl {
+  font-size: 0;
+}
+.pageSecTtlBox .subTtl p {
+  display: inline;
+  font-size: 36px;
+}
+.pageSecTtlBox .subTtl .em {
+  color: #ea5404;
+}
+.pageSecTtlBox .secTtl {
+  color: #343434;
+}
+
+.secWrap {
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 260px;
+}
+.btnMore a {
+  display: block;
+  padding: 12px 15px;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #808080;
+  background: #000000;
+}
+.btnMore a p {
+  padding: 0 20px;
+  background: url(https://hasunuma-metal.co.jp/system_panel/uploads/images/btn_more_arrow.png) right center no-repeat;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 120px 0;
+}
+.footer .footContact .footContactPanel {
+  padding: 80px 20px;
+  color: #ffffff;
+  background: #d7c1a1;
+}
+.footer .footContact .listBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .footContact .listBox .ttl {
+  margin: 0 0 40px;
+  font-size: 20px;
+}
+.footer .footContact .listBox .telBox .telLink {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .footContact .listBox .telBox .telLink a {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer .footContact .listBox .telBox .telLink a p {
+  display: inline-block;
+}
+.footer .footContact .listBox .telBox .telLink a .em {
+  font-size: 36px;
+}
+.footer .footContact .listBox .btnMail {
+  max-width: 270px;
+  margin: 0 auto;
+}
+.footer .footContact .listBox .btnMail a {
+  display: block;
+  padding: 15px 10px;
+  color: #ffffff;
+  background: #ea5404;
+}
+.footer .footContact .listBox .btnMail p {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  background: url(https://hasunuma-metal.co.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+}
+.footer .footContact .listBox .btnLine {
+  max-width: 270px;
+  margin: 0 auto;
+}
+.footer .footContact .listBox .btnLine a {
+  display: block;
+  padding: 15px 10px;
+  color: #ffffff;
+  background: #000000;
+}
+.footer .footContact .listBox .btnLine p {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  background: url(https://hasunuma-metal.co.jp/system_panel/uploads/images/footer_line.png) left center no-repeat;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .listBox {
+    display: flex;
+  }
+  .footer .footContact .listBox > * {
+    width: 33.3333333333%;
+    padding: 20px;
+  }
+  .footer .footContact .listBox > * + * {
+    border-left: 1px solid #ffffff;
+  }
+}
+.footer .footPanel {
+  padding: 180px 0 50px;
+  background: #ffffff;
+}
+.footer .footPanel .logo {
+  max-width: 350px;
+  margin: 0 0 30px;
+}
+.footer .footPanel .pagetopArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footer .footPanel .pagetopArea .pagetop {
+  width: 50px;
+  cursor: pointer;
+}
+.footer .footPanel .footBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer .footPanel .footBox .txtBox .info {
+  display: inline-block;
+  margin: 0 40px 0 0;
+}
+.footer .footPanel .footBox .txtBox .info a {
+  display: inline-block;
+}
+.footer .footPanel .footBox .txtBox .sns {
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  width: 35px;
+}
+.footer .footPanel .footBox .txtBox .sns a {
+  display: block;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

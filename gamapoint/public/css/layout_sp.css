@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#topMain .topKvContainer {
+  background: url("../image/top/top_kv_bg_sp.png") center no-repeat;
+  background-size: cover;
+}
+#topMain .topKvContainer .topKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 700px;
+  padding: 30px 5px 50px;
+}
+#topMain .topKvContainer .topKvBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+#topMain .topKvContainer .kvTitle {
+  order: 1;
+  position: static;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+#topMain .topKvContainer .appBnrBox {
+  order: 3;
+  position: static;
+  max-width: 340px;
+  margin: auto 0 0;
+  padding: 0;
+  background: none;
+}
+#topMain .topKvContainer .appBnrBox > p {
+  display: none;
+}
+#topMain .topKvContainer .appBnrBox .bnrList {
+  max-width: 340px;
+  min-width: 0;
+  margin: 0 auto;
+}
+#topMain .topKvContainer .appBnrBox .bnrList .bnr {
+  width: 49%;
+}
+#topMain .topKvContainer .kvInfoPanel {
+  order: 2;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+#topMain .topKvContainer .kvInfoPanel dl dt {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+#topMain .topKvContainer .kvInfoPanel dl dd {
+  font-size: 12px;
+}
+#topMain .section {
+  padding: 40px 0;
+}
+#topMain .section .secTitleBox h2 {
+  padding: 30px 0 0;
+  font-size: 27px;
+  background: url("../image/top/top_sec_ttl_icon.png") center top no-repeat;
+  background-size: 30px auto;
+}
+#topMain .section .secTitleBox p {
+  font-size: 70px;
+}
+#topMain .section__about .introBox {
+  margin: -5px 0 50px;
+  padding: 20px;
+}
+#topMain .section__about .introBox .logo {
+  display: none;
+}
+#topMain .section__about .limitedContainer {
+  padding: 5px;
+}
+#topMain .section__about .limitedContainer .limitedPanel {
+  padding: 30px 20px;
+}
+#topMain .section__about .limitedContainer .ttlBox dl dt {
+  min-width: 120px;
+  margin: 0 0 20px;
+  padding: 0 10px;
+  font-size: 18px;
+}
+#topMain .section__about .limitedContainer .ttlBox dl dd {
+  font-size: 18px;
+}
+#topMain .section__about .limitedContainer .ttlBox dl dd p {
+  display: inline;
+}
+#topMain .section__about .limitedContainer .appleWatch {
+  max-width: 300px;
+}
+#topMain .section__about .limitedContainer .presentTtl {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#topMain .section__about .limitedContainer .presentTtl em {
+  font-size: 30px;
+}
+#topMain .section__about .limitedContainer .presentTxt {
+  margin: 0 auto 30px;
+  font-size: 14px;
+}
+#topMain .section__about .limitedContainer .term {
+  padding: 20px;
+  font-size: 14px;
+}
+#topMain .section__merit .meritListBox ol {
+  max-width: 380px;
+  margin: 0 auto;
+}
+#topMain .section__merit .meritListBox ol li {
+  position: relative;
+  padding: 50px 20px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+#topMain .section__merit .meritListBox ol li + li {
+  margin: 60px 0 0;
+}
+#topMain .section__merit .meritListBox ol .numBox {
+  position: absolute;
+  top: -34px;
+  left: 10px;
+  right: auto;
+  width: 68px;
+  height: 68px;
+}
+#topMain .section__merit .meritListBox ol .numBox .ttl {
+  padding: 15px 0 0;
+  font-size: 11px;
+}
+#topMain .section__merit .meritListBox ol .numBox .num {
+  bottom: -8px;
+  font-size: 50px;
+}
+#topMain .section__merit .meritListBox ol dl dt {
+  font-size: 24px;
+}
+#topMain .section__flow .secWrap01 {
+  padding: 0 10px;
+}
+#topMain .section__flow .pagerList {
+  padding: 15px 0 60px;
+}
+#topMain .section__flow .pagerList ol {
+  max-width: 400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+#topMain .section__flow .pagerList ol li {
+  width: calc(50% - 2px);
+  margin: 5px 0 0;
+}
+#topMain .section__flow .stepSection + .stepSection {
+  margin: 80px 0 0;
+}
+#topMain .section__flow .stepSection .secTtlBox {
+  margin: 0 0 30px;
+}
+#topMain .section__flow .stepSection .secTtlBox .secTtl {
+  margin: 0 0 0 15px;
+  font-size: 24px;
+}
+#topMain .section__flow .tabList {
+  max-width: 400px;
+}
+#topMain .section__flow .tabList ul li {
+  padding: 15px 10px;
+}
+#topMain .section__flow .tabList ul li p {
+  font-size: 16px;
+}
+#topMain .section__flow .stepContainer .stepPanel {
+  padding: 30px 10px;
+}
+#topMain .section__flow #step01 .topBox {
+  margin: 0 auto 30px;
+}
+#topMain .section__flow #step01 .topBox .ttl {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#topMain .section__flow #step01 .topBox .topList {
+  max-width: 300px;
+}
+#topMain .section__flow #step01 .topBox .topList ol {
+  font-size: 20px;
+}
+#topMain .section__flow #step01 .topBox .topList ol + ol {
+  margin: 10px 0 0;
+}
+#topMain .section__flow #step01 .detailContainer .detailBtn {
+  padding: 10px;
+  font-size: 20px;
+  background: url("../image/top/accord_arrow_down.png") right 15px center no-repeat;
+  background-size: 12px auto;
+}
+#topMain .section__flow #step01 .detailContainer .detailBtn.active {
+  background: url("../image/top/accord_arrow_up.png") right 15px center no-repeat;
+  background-size: 12px auto;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel {
+  padding: 20px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .mobileTitle {
+  max-width: 240px;
+  font-size: 20px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .appBnr {
+  max-width: 200px;
+  margin: 0 auto 30px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .introTxt {
+  margin: 0 0 30px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .introTxt p + p {
+  margin: 30px 0 0;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlTxt {
+  margin: 0 auto 30px;
+  padding: 15px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlTxt dl dt {
+  font-size: 16px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlTxt dl dd {
+  font-size: 14px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlComplete {
+  margin: 0 0 40px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlComplete p {
+  font-size: 20px;
+}
+#topMain .section__flow #step01 .detailContainer .detailPanel .dlComplete .arrow {
+  width: 50px;
+}
+#topMain .section__flow .stepFlow ol {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#topMain .section__flow .stepFlow ol li + li {
+  margin: 40px 0 0;
+}
+#topMain .section__flow .stepFlow ol .num {
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+#topMain .section__flow .stepFlow ol .num p {
+  top: -1px;
+}
+#topMain .section__flow .stepFlow ol .txt {
+  padding: 10px 0;
+}
+#topMain .section__flow #step03 .topTxt {
+  margin: 0 0 30px;
+}
+#topMain .section__flow #step03 .pointTitle {
+  max-width: 240px;
+  font-size: 20px;
+}
+#topMain .section__flow #step03 .pointTableHead {
+  display: none;
+}
+#topMain .section__flow #step03 .pointTablePanel {
+  background: #e9ebee;
+}
+#topMain .section__flow #step03 .pointTablePanel ul {
+  display: flex;
+  flex-direction: column;
+}
+#topMain .section__flow #step03 .pointTablePanel ul li {
+  padding: 15px 0;
+  font-size: 12px;
+}
+#topMain .section__flow #step03 .pointTablePanel ul li + li {
+  border-top: 1px solid #ffffff;
+}
+#topMain .section__flow #step03 .pointTablePanel ul dl {
+  display: flex;
+}
+#topMain .section__flow #step03 .pointTablePanel ul dl dt {
+  width: 100px;
+  padding: 0 0 0 20px;
+}
+#topMain .section__flow #step03 .pointTablePanel ul dl dd {
+  width: calc(100% - 100px);
+  padding: 0 10px 0 0;
+}
+#topMain .section__flow #step03 .pointTablePanel ul dl dd aside {
+  margin: 10px 0 0;
+  font-size: 11px;
+  font-weight: normal;
+}
+#topMain .section__flow #step03 .pointTablePanel ul dl dd .box + .box {
+  display: none;
+}
+#topMain .section__flow #step03 .pointTablePanel ul .count {
+  order: 2;
+}
+#topMain .section__flow #step03 .pointTablePanel ul .action {
+  order: 1;
+  color: #ffffff;
+  background: #1771ba;
+}
+#topMain .section__flow #step03 .pointTablePanel ul .point {
+  order: 3;
+}
+#topMain .section__flow #step03 .pointTablePanel ul .description {
+  order: 4;
+}
+#topMain .section__flow #step03 .pointTablePanel ul .point02 {
+  order: 5;
+}
+#topMain .section__flow #step03 .pointTablePanel ul .description02 {
+  order: 6;
+}
+#topMain .section__flow #step04 .topTxt {
+  margin: 0 0 50px;
+  padding: 0 10px;
+}
+#topMain .section__flow #step04 .tradeTitle {
+  top: -20px;
+  max-width: 340px;
+  font-size: 18px;
+}
+#topMain .section__flow #step04 .tradePanel {
+  padding: 10px 20px 40px;
+}
+#topMain .section__flow #step04 .tradeList {
+  max-width: 340px;
+}
+#topMain .section__flow #step04 .tradeList ul li + li {
+  margin: 30px 0 0;
+}
+#topMain .section__flow #step04 .tradeList ul + ul {
+  margin: 30px 0 0;
+}
+#topMain .section__flow #step04 .tradeList ul p {
+  padding: 0 0 0 18px;
+}
+#topMain .section__flow #step04 .tradeList ul span {
+  top: 5px;
+  font-size: 14px;
+}
+#topMain .section__flow #step04 .tradeList ul em {
+  font-size: 18px;
+}
+#topMain .section__flow #step04 .tradeList ul .item {
+  text-align: center;
+}
+#topMain .section__flow #step04 .tradeList ul .item img {
+  display: inline-block;
+}
+#topMain .section__flow #step04 .tradeList ul .item01 {
+  width: 100px;
+}
+#topMain .section__flow #step04 .tradeList ul .item01 img {
+  width: 90px;
+}
+#topMain .section__flow #step04 .tradeList ul .item02 {
+  width: 110px;
+}
+#topMain .section__flow #step04 .tradeList ul .item03 {
+  width: 100px;
+}
+#topMain .section__flow #step04 .tradeList ul .item03 img {
+  width: 100px;
+}
+#topMain .section__flow #step04 .tradeList ul .item04 {
+  width: 110px;
+}
+#topMain .section__flow #step04 .tradeList ul .item04 img {
+  width: 90px;
+}
+#topMain .section__flow #step04 .tradeList ul .item05 {
+  width: 100px;
+}
+#topMain .section__flow #step04 .tradeList ul .item06 {
+  width: 110px;
+}
+#topMain .section__flow #step04 .tradeList ul .item06 img {
+  width: 90px;
+}
+#topMain .section__flow #step04 .tradeList ul .item07 {
+  width: 110px;
+}
+#topMain .section__flow #step04 .tradeList ul .item07 img {
+  width: 100px;
+}
+#topMain .section__faq .btnFaq {
+  max-width: 340px;
+}

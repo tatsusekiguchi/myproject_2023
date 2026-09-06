@@ -1,0 +1,1901 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvPanel {
+    .topKv {
+      position: relative;
+      height: 900px;
+      padding: 95px 20px 0;
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .kv01 {
+          background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/top_kv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/top_kv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .kvContents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .kvTitlePanel {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      color: #ffffff;
+      text-align: center;
+      z-index: 1;
+      border-radius: 10px;
+      background: rgba(175, 143, 89, 0.8);
+      .kvTitle {
+        h1 {
+          margin: 0 0 20px;
+          font-size: 40px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 20px;
+          line-height: 2;
+        }
+      }
+    }
+  }
+  .topSection {
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/top_top_bg.png)
+      center bottom no-repeat;
+    background-size: cover;
+    .secBox {
+      display: flex;
+      flex-direction: column;
+      min-height: 1000px;
+      padding: 200px 0 60px;
+      color: #ffffff;
+      text-align: center;
+      h2 {
+        margin: 0 0 60px;
+        font-size: 40px;
+        font-weight: 500;
+      }
+      .txt {
+        font-size: 20px;
+      }
+    }
+  }
+  .sec01 {
+    padding: 100px 0;
+    background: #f9f7ed;
+    .topTxt {
+      margin: 0 0 50px;
+      text-align: center;
+    }
+    .listBox {
+      .ul {
+        .li {
+          overflow: hidden;
+          position: relative;
+          padding: 30px;
+          border-radius: 10px;
+          background: #ffffff;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            right: 0;
+            width: 250px;
+            height: 10px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background: #f8b600;
+          }
+        }
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+        .dl {
+          padding: 20px 0 0;
+          .dt {
+            margin: 0 0 20px;
+            font-size: 30px;
+            font-weight: 500;
+            color: #f8b600;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3 - 30px));
+          }
+          .photo {
+            position: relative;
+            height: 248px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 100px 0 0;
+    background: #f1f4dc;
+    .secPanelList {
+      padding: 0 0 150px;
+      .secPanel {
+        position: relative;
+        + .secPanel {
+          margin: 100px 0 0;
+        }
+        .photoBox {
+          .photo {
+            img {
+              border-radius: 10px;
+            }
+          }
+        }
+        .secBox {
+          max-width: 450px;
+          width: 100%;
+          border-radius: 10px;
+          background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/top_sec02_box_bg.png)
+            no-repeat;
+          background-size: 100% auto;
+          .txtBox {
+            position: relative;
+            top: -15px;
+            left: -15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 30px;
+            border-radius: 10px;
+            background: #ffffff;
+          }
+          .ttl {
+            margin: 0 0 20px;
+            font-size: 30px;
+            font-weight: 500;
+            color: #f8b600;
+            text-align: center;
+          }
+          .txt {
+            padding: 0 0 20px;
+          }
+          .btnMore {
+            margin: auto auto 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          .photoBox {
+            .photo {
+              position: relative;
+              max-width: 1000px;
+              width: 100%;
+              height: 420px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+          .secBox {
+            .txtBox {
+              min-height: 380px;
+            }
+          }
+          &:nth-child(odd) {
+            .photoBox {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+            }
+            .secBox {
+              position: absolute;
+              left: 20px;
+              bottom: -40px;
+            }
+          }
+          &:nth-child(even) {
+            .secBox {
+              position: absolute;
+              right: 20px;
+              bottom: -40px;
+            }
+          }
+        }
+      }
+    }
+    .seriesSection {
+      .titleBox {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+        font-size: 50px;
+        font-weight: 500;
+        color: #a3ba1a;
+        line-height: 1;
+      }
+      .seriesContainer {
+        margin: -25px 0 0;
+        padding: 120px 0 60px;
+        background: #ffffff;
+        .itemSlider {
+          .itemBox {
+            a {
+              display: block;
+            }
+            .inner {
+              position: relative;
+              max-width: 350px;
+              padding: 0 0 30px;
+            }
+            .unit {
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding: 5px 0 0;
+              font-size: 14px;
+              font-weight: 500;
+              &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50px;
+                height: 2px;
+                background: #e95516;
+              }
+            }
+            .photo {
+              position: relative;
+              width: 280px;
+              height: 280px;
+              margin: 0 auto;
+              img {
+                @include cover-image;
+                border-radius: 50%;
+              }
+            }
+            .dl {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              max-width: 320px;
+              .dt {
+                margin: 0 0 5px;
+              }
+              .dd {
+                padding: 0 40px 0 0;
+                font-size: 24px;
+                font-weight: 500;
+                color: #f8b600;
+                background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/top_slider_item_arrow.png)
+                  right center no-repeat;
+                background-size: 30px auto;
+              }
+            }
+          }
+        }
+        > .txt {
+          margin: 60px 0 0;
+          padding: 0 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain {
+  .pageKvPanel {
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/about_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 160px;
+    background: #f9f7ed;
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+    .checkPanel {
+      max-width: 1000px;
+      margin: 0 auto 100px;
+      .ttl {
+        margin: 0 0 60px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #f8b600;
+        text-align: center;
+      }
+      .listBox {
+        background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/about_sec01_box_bg.png)
+          no-repeat;
+        background-size: 100% auto;
+        .checkListBox {
+          position: relative;
+          top: -15px;
+          left: -15px;
+          padding: 60px 20px;
+          border-radius: 10px;
+          background: #ffffff;
+          .list {
+            max-width: 880px;
+            margin: 0 auto;
+            .ul {
+              .li {
+                padding: 0 0 0 50px;
+                font-size: 20px;
+                background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/about_sec01_check.png)
+                  left center no-repeat;
+                background-size: 30px auto;
+                + .li {
+                  margin: 20px 0 0;
+                }
+              }
+            }
+          }
+          @media (min-width: 1025px) {
+            .list {
+              display: flex;
+              justify-content: space-between;
+              .ul {
+                width: 45%;
+                + .ul {
+                  width: 55%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .messagePanel {
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: center;
+      .ttl {
+        margin: 0 0 40px;
+        padding: 50px 0 0;
+        font-size: 40px;
+        background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/about_sec01_message_title_bg.png)
+          center top no-repeat;
+        background-size: 100% auto;
+      }
+      .txtBox {
+        font-size: 30px;
+        color: #f8b600;
+        .box {
+          + .box {
+            margin: 10px 0 0;
+          }
+        }
+        p {
+          display: inline-block;
+          padding: 0 30px;
+          border-radius: 25px;
+          background: #ffffff;
+        }
+      }
+    }
+    .bottomContainer {
+      position: relative;
+      padding: 80px 0 0;
+      .txtBox {
+        .ttl {
+          display: inline-block;
+          margin: 0 0 30px;
+          padding: 0 15px 5px;
+          font-size: 26px;
+          font-weight: 500;
+          border-bottom: 2px solid #f8b600;
+        }
+        .txt {
+          padding: 0 15px;
+          line-height: 2.5;
+          p + p {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .photo {
+        img {
+          border-radius: 10px 0 0 10px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .bottomContainer {
+        .txtBox {
+          width: 50%;
+        }
+        .photo {
+          position: absolute;
+          top: 120px;
+          right: 0;
+          width: 45%;
+          height: 430px;
+          img {
+            @include cover-image;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0 100px;
+    color: #ffffff;
+    text-align: center;
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/about_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtl {
+      margin: 0 0 40px;
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .list {
+      margin: 0 0 60px;
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 3) - 20px);
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    .dl {
+      .dt {
+        margin: 0 0 20px;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .dd {
+        font-size: 20px;
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    background: #f9f7ed;
+    .secTtl {
+      margin: 0 0 60px;
+      font-size: 40px;
+      font-weight: 500;
+      color: #a3ba1a;
+      text-align: center;
+    }
+    .listBox {
+      .ul {
+        .li {
+          overflow: hidden;
+          position: relative;
+          padding: 30px;
+          border-radius: 10px;
+          background: #ffffff;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            right: 0;
+            width: 250px;
+            height: 10px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background: #f8b600;
+          }
+        }
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+        .dl {
+          padding: 20px 0 0;
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            font-weight: 500;
+            color: #f8b600;
+            text-align: center;
+            h3 {
+              line-height: 1.3;
+            }
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3 - 30px));
+          }
+          .photo {
+            position: relative;
+            height: 248px;
+            img {
+              @include cover-image;
+            }
+          }
+          .dl {
+            .dt {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              min-height: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 120px 0;
+    .secTtl {
+      margin: 0 0 60px;
+      font-size: 40px;
+      font-weight: 500;
+      color: #a3ba1a;
+      text-align: center;
+    }
+    .voicePanel {
+      + .voicePanel {
+        margin: 40px 0 0;
+      }
+      .voiceBg {
+        width: 100%;
+        padding: 0 0 15px;
+        border-radius: 10px;
+        background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/about_sec04_voice_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .voiceBox {
+        max-width: 900px;
+        padding: 30px;
+        border-radius: 10px;
+        background: #ffffff;
+        .voice {
+          font-size: 24px;
+        }
+        .name {
+          margin: 10px 0 0;
+          text-align: right;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .voicePanel {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(odd) {
+          .voiceBox {
+            position: relative;
+            left: -15px;
+          }
+        }
+        &:nth-child(even) {
+          align-items: flex-end;
+          .voiceBg {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0 15px 15px;
+          }
+        }
+        &.voicePanel01 {
+          .voiceBg {
+            max-width: 1100px;
+          }
+        }
+        &.voicePanel02 {
+          .voiceBg {
+            max-width: 1100px;
+          }
+        }
+        &.voicePanel03 {
+          .voiceBg {
+            max-width: 900px;
+          }
+        }
+        &.voicePanel04 {
+          .voiceBg {
+            max-width: 800px;
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 120px 0;
+    background: #f9f7ed;
+    .secTtl {
+      margin: 0 0 60px;
+      font-size: 40px;
+      font-weight: 500;
+      color: #a3ba1a;
+      text-align: center;
+    }
+    .secPanel {
+      overflow: hidden;
+      position: relative;
+      padding: 40px 60px;
+      border-radius: 10px;
+      background: #ffffff;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -5px;
+        bottom: 0;
+        width: 10px;
+        height: 80%;
+        margin: auto 0;
+        border-radius: 0 10px 10px 0;
+        background: #f8b600;
+      }
+      + .secPanel {
+        margin: 30px 0 0;
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+        .txtBox {
+          .stepBox {
+            display: flex;
+            align-items: center;
+            margin: 0 0 20px;
+            font-weight: 500;
+            .step01 {
+              width: 130px;
+              font-size: 20px;
+              p {
+                display: inline-block;
+                width: 120px;
+                padding: 0 5px;
+                color: #ffffff;
+                text-align: center;
+                border-radius: 6px;
+                background: #ff89c0;
+              }
+            }
+            .step02 {
+              width: calc(100% - 130px);
+              font-size: 26px;
+              font-weight: 500;
+              color: #ff89c0;
+            }
+          }
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              font-size: 26px;
+              font-weight: 500;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 300px;
+          }
+          .txtBox {
+            width: calc(100% - 350px);
+          }
+        }
+      }
+    }
+    .contactList {
+      max-width: 900px;
+      margin: 30px auto 0;
+      .contactItem {
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #392214;
+        border-bottom: 1px solid #392214;
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            font-weight: 500;
+            color: #f8b600;
+            text-align: center;
+          }
+          .tel {
+            a {
+              display: inline-block;
+              margin: 0 0 10px;
+              padding: 0 0 0 30px;
+              font-size: 40px;
+              font-weight: 500;
+              line-height: 1;
+              background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+                left bottom 5px no-repeat;
+              background-size: 25px auto;
+            }
+          }
+          .mail {
+            padding: 10px 0 0;
+            a {
+              display: block;
+              width: 260px;
+              margin: 0 auto;
+              padding: 10px;
+              font-weight: 500px;
+              text-align: center;
+              color: #ffffff;
+              border-radius: 25px;
+              background: #ff89c0;
+              p {
+                display: inline-block;
+                padding: 0 0 0 20px;
+                background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png)
+                  left center no-repeat;
+                background-size: 15px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .contactList {
+        display: flex;
+        justify-content: space-between;
+        > * {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+.productMain {
+  .pageKvPanel {
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/product_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 0;
+    .topSection {
+      padding: 0 0 120px;
+      .secTtl {
+        max-width: 640px;
+        margin: 0 auto 60px;
+        font-size: 44px;
+        font-weight: 500;
+        color: #a3ba1a;
+        text-align: center;
+        background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/product_sec01_sec_title_bg.png)
+          center bottom 10px no-repeat;
+        background-size: 100% auto;
+      }
+      .message {
+        max-width: 720px;
+        margin: 0 auto 60px;
+        padding: 40px 0 0;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/product_sec01_message_title_bg.png)
+          center top no-repeat;
+        background-size: 100% auto;
+      }
+      .secPanel {
+        max-width: 1420px;
+        margin: 0 auto 100px;
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 40px 0 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          .photo {
+            width: 45%;
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+      .itemList {
+        max-width: 820px;
+        margin: 0 auto 60px;
+        .itemBox {
+          .inner {
+            position: relative;
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 0 0 30px;
+          }
+          .unit {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5px 0 0;
+            font-size: 14px;
+            font-weight: 500;
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 50px;
+              height: 2px;
+              background: #e95516;
+            }
+          }
+          .photo {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+            img {
+              @include cover-image;
+              border-radius: 50%;
+            }
+          }
+          .dl {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            max-width: 320px;
+            .dt {
+              margin: 0 0 5px;
+            }
+            .dd {
+              font-size: 24px;
+              font-weight: 500;
+              color: #f8b600;
+            }
+          }
+        }
+        + .txt {
+          text-align: center;
+        }
+      }
+      @media (min-width: 1025px) {
+        .itemList {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -60px auto 60px;
+          .itemBox {
+            width: 50%;
+            margin: 60px 0 0;
+          }
+        }
+      }
+    }
+    .listContainer {
+      padding: 100px 0;
+      background: #f9f7ed;
+      .listBox {
+        .ul {
+          .li {
+            overflow: hidden;
+            position: relative;
+            padding: 30px;
+            border-radius: 10px;
+            background: #ffffff;
+            &::before {
+              content: "";
+              position: absolute;
+              top: -5px;
+              left: 0;
+              right: 0;
+              width: 250px;
+              height: 10px;
+              margin: 0 auto;
+              border-radius: 10px;
+              background: #f8b600;
+            }
+          }
+          .photo {
+            img {
+              border-radius: 10px;
+            }
+          }
+          .dl {
+            padding: 20px 0 0;
+            .dt {
+              margin: 0 0 20px;
+              font-size: 30px;
+              font-weight: 500;
+              color: #f8b600;
+              text-align: center;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 3 - 30px));
+            }
+            .photo {
+              position: relative;
+              height: 248px;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: #f1f4dc;
+    .secTtl {
+      max-width: 450px;
+      margin: 0 auto 60px;
+      padding: 20px 0 0;
+      font-size: 40px;
+      font-weight: 500;
+      text-align: center;
+      background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/product_sec02_title_bg.png)
+        center top no-repeat;
+      background-size: 100% auto;
+    }
+    .photoList {
+      margin: 0 0 100px;
+      .ul {
+        a {
+          display: block;
+        }
+        .photoBox {
+          .photo {
+            img {
+              border-radius: 10px;
+            }
+          }
+          p {
+            margin: 15px 0 0;
+            text-align: center;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -60px 0 0;
+          .li {
+            width: calc((100% / 2) - 20px);
+            margin: 60px 0 0;
+          }
+        }
+      }
+    }
+    .secPanel {
+      overflow: hidden;
+      position: relative;
+      padding: 40px 60px;
+      border-radius: 10px;
+      background: #ffffff;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right: 0;
+        width: 250px;
+        height: 10px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: #f8b600;
+      }
+      + .secPanel {
+        margin: 100px 0 0;
+      }
+      .panelTitle {
+        margin: 0 0 40px;
+        font-size: 26px;
+        font-family: 500;
+        text-align: center;
+      }
+      .infoBox {
+        .dl {
+          display: flex;
+          padding: 0 15px;
+          .dt {
+            width: 120px;
+            padding: 5px 0 0;
+            p {
+              display: inline-block;
+              width: 100px;
+              padding: 0 5px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 6px;
+              background: #ff89c0;
+            }
+          }
+          .dd {
+            width: calc(100% - 120px);
+            line-height: 2;
+          }
+        }
+        .ul {
+          margin: 30px 0 0;
+          .li {
+            padding: 15px 0;
+            border-bottom: 1px solid #392214;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .li {
+              width: calc((100% / 2) - 20px);
+              &:nth-child(-n + 2) {
+                border-top: 1px solid #392214;
+              }
+            }
+          }
+        }
+      }
+      .aside {
+        padding: 15px 15px 0;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .pageKvPanel {
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/company_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    background: #f9f7ed;
+    .secPanel {
+      margin: 0 0 40px;
+      .photoBox {
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+        .name {
+          margin: 5px 0 0;
+          font-size: 20px;
+          font-weight: 500;
+          text-align: right;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photoBox {
+          width: 35%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+    .txt {
+      font-size: 17px;
+      line-height: 2.5;
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0;
+    .listBox {
+      max-width: 1000px;
+      margin: 0 auto 100px;
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: 220px;
+        }
+      }
+    }
+    .secPanel {
+      .pTitle {
+        max-width: 400px;
+        margin: 0 auto 60px;
+      }
+      .promiseBox {
+        .ul {
+          .dl {
+            .dt {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              min-height: 96px;
+              margin: 0 0 20px;
+              padding: 0 10px 5px;
+              font-size: 30px;
+              font-weight: 500;
+              color: #f8b600;
+              border-bottom: 1px solid #f8b600;
+            }
+            .dd {
+              padding: 0 10px;
+              font-size: 18px;
+              line-height: 2;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 80px 0 120px;
+    background: #f1f4dc;
+    .secBox {
+      .photo {
+        img {
+          border-radius: 10px;
+        }
+      }
+      .txtBox {
+        .infoBox {
+          border-top: 1px solid #392214;
+          .dl {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            line-height: 2;
+            border-bottom: 1px solid #392214;
+            .dt {
+              width: 170px;
+              font-size: 20px;
+              font-weight: 500;
+              text-align: center;
+            }
+            .dd {
+              width: calc(100% - 200px);
+              font-size: 18px;
+              a {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .pageKvPanel {
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/contact_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    padding: 150px 0;
+    .secPanel {
+      border-radius: 10px;
+      background: #a3ba1a;
+      .txtBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        color: #ffffff;
+        .secTtl {
+          margin: 0 0 30px;
+          font-size: 30px;
+          font-size: clamp(1.25rem, -0.625rem + 2.5vw, 1.875rem);
+          font-weight: 500;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 20px;
+            font-size: 24px;
+            font-size: clamp(1.125rem, 0rem + 1.5vw, 1.5rem);
+            font-weight: 500;
+            color: #eaf2bd;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        .txtBox {
+          width: 60%;
+        }
+        .photo {
+          position: relative;
+          width: 40%;
+          height: 430px;
+          img {
+            @include cover-image;
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 80px 0 150px;
+    background: #f9f7ed;
+    .topBox {
+      margin: 0 0 40px;
+      text-align: center;
+      .title {
+        max-width: 480px;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    .secTtl {
+      max-width: 440px;
+      margin: 0 auto 20px;
+    }
+    .txt {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+    .tel {
+      text-align: center;
+      a {
+        display: inline-block;
+        margin: 0 0 10px;
+        padding: 0 0 0 30px;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1;
+        background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+          left bottom 5px no-repeat;
+        background-size: 25px auto;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 55px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    resize: none;
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+
+  .contactForm button[type="submit"] {
+    position: relative;
+    display: block;
+    max-width: 220px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: url(https://kuroyanagiseifun231003.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+      right 15px center no-repeat #a3ba1a;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    .checkList {
+      max-width: 540px;
+      .ul {
+        margin: -10px -20px 0 0;
+        .li {
+          display: inline-block;
+          width: 45%;
+          margin: 10px 20px 0 0;
+        }
+      }
+    }
+    .checkList02 {
+      margin: 20px 0;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0 20px;
+          }
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 35px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+        border: 1px solid #dbdfe3;
+        background: #f7f7f7;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #ebaecc;
+        border-right: 3px solid #ebaecc;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+    .radioList {
+      padding: 5px 0;
+      .list {
+        + .list {
+          margin: 20px 0 0;
+        }
+      }
+      + input {
+        margin: 10px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .radioList {
+        display: flex;
+        flex-wrap: wrap;
+        .list {
+          + .list {
+            margin: 0 0 0 30px;
+          }
+        }
+      }
+    }
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #dbdfe3;
+        background: #f7f7f7;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #ebaecc;
+      }
+    }
+    .postal {
+      margin: 0 0 5px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .selectBox {
+      display: inline-block;
+      width: 120px;
+      select {
+        display: block;
+        width: 100%;
+        padding: 11px 15px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5em;
+        border-radius: 6px;
+        border: 1px solid #cbc0b6;
+        background: #ffffff;
+        background-size: 10px auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .ageInput {
+      display: inline-block;
+      input {
+        width: 100px;
+      }
+      .ageTxt {
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 2;
+      }
+    }
+    .addressTxt {
+      padding: 3px 0 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .contactForm {
+    font-weight: 500;
+    text-align: left;
+    .formBox {
+      border-top: 1px solid #392214;
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        + .dl {
+          border-top: 1px dashed #dcd7cd;
+        }
+        &.line {
+          align-items: initial;
+          > .dt {
+            padding: 25px 10px 10px;
+          }
+        }
+        &.checkForm {
+          align-items: initial;
+        }
+        > .dt {
+          width: 300px;
+          padding: 10px;
+          .span {
+            display: inline-block;
+            margin-right: 5px;
+            color: #f8b600;
+            vertical-align: middle;
+          }
+          .em {
+            display: inline-block;
+            padding: 2px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            border-radius: 6px;
+            background: #f8b600;
+          }
+          .small {
+            margin: 5px 0 0;
+            font-size: 12px;
+            font-weight: normal;
+          }
+        }
+
+        > .dd {
+          position: relative;
+          padding: 10px;
+          width: calc(100% - 300px);
+          .aside {
+            font-size: 14px;
+            padding: 5px 10px;
+          }
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+          width: 60px;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 10px auto 0;
+        padding: 20px 0 0;
+        text-align: center;
+        border-top: 1px solid #392214;
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-size: 14px;
+          font-weight: normal;
+          text-align: left;
+          border-radius: 10px;
+          border: 1px solid #e1dfd2;
+          background: #f0eee7;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .aside {
+        padding: 10px 0;
+      }
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+        + .fileBox {
+          margin: 20px 0 0;
+        }
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+        .inputFile {
+          position: relative;
+          width: 40%;
+          font-size: 16px;
+          color: #404142;
+          text-align: center;
+          border: 1px solid #c4dcc9;
+          background: #f0f9f2;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 40px 10px;
+          }
+        }
+
+        > p {
+          width: 58%;
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .btnMore {
+    margin: 0 auto;
+  }
+}

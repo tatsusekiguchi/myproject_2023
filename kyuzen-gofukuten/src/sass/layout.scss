@@ -1,0 +1,1378 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvPanel {
+    padding: 0 50px;
+    .topKv {
+      position: relative;
+      height: 800px;
+    }
+    .kvBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+      }
+      .kv01 {
+        background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_kv_01.png)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv02 {
+        background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_kv_02.png)
+          center no-repeat;
+        background-size: cover;
+      }
+      .kv03 {
+        background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_kv_03.png)
+          center no-repeat;
+        background-size: cover;
+      }
+    }
+    .kvTtl {
+      position: absolute;
+      left: 5%;
+      bottom: 260px;
+      color: #ffffff;
+      z-index: 1;
+      h1 {
+        font-size: 50px;
+        text-shadow: 3px 4px 3px #3d3e3c;
+      }
+    }
+  }
+  .kvScroll {
+    position: relative;
+    padding: 40px 10px 30px;
+    text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      right: 0;
+      width: 1px;
+      height: 80px;
+      margin: 0 auto;
+      background: #231815;
+    }
+  }
+  .sec01 {
+    margin: 0 0 80px;
+    padding: 0 50px;
+    .bgContainer {
+      padding: 100px 0;
+      background: #fefaf1;
+    }
+    .ttlBox {
+      margin: 0 0 60px;
+      text-align: center;
+      h2 {
+        display: inline-block;
+        padding: 0 80px;
+        font-size: 30px;
+        background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_01.png)
+          left center no-repeat,url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_02.png)
+          right center no-repeat;
+        background-size: 50px auto, 50px auto;
+      }
+    }
+    .secBox {
+      .txtBox {
+        padding: 40px 30px;
+        border-radius: 6px;
+        background: #ffffff;
+        .txt {
+          margin: 0 0 60px;
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+        .message {
+          max-width: 520px;
+          margin: 0 0 10px;
+          font-size: 22px;
+          text-align: center;
+          border: 1px solid #333333;
+          a {
+            display: block;
+            padding: 10px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px)  {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 49%;
+          padding: 30px 0 0;
+        }
+        .txtBox {
+          width: 50%;
+        }
+        .message {
+          a {
+            pointer-events: none;
+          }
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 200px;
+    padding: 0 50px;
+    .bgContainer {
+      min-height: 1000px;
+      padding: 120px 0 0;
+      background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec02_bg_pc.png) center bottom no-repeat;
+      background-size: cover;
+    }
+    .secBox  {
+      .txtBox {
+        .txt {
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .ttlBox {
+          width: 140px;
+          padding: 40px 0 0;
+          font-size: 50px;
+          writing-mode: vertical-rl;
+          h2 {
+            display: flex;
+            line-height: 2;
+          }
+        }
+        .txtBox {
+          width: 700px;
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 200px;
+    .secBox {
+      position: relative;
+      + .secBox {
+        margin: 120px 0 0;
+      }
+      .photo {
+        img {
+          border-radius: 6px;
+        }
+      }
+      h3 {
+        position: relative;
+        margin: 0 0 40px;
+        padding: 20px 0 0;
+        font-size: 40px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 80px;
+          height: 1px;
+          background: #ff0000;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        min-height: 400px;
+        .photo {
+          width: 50%;
+          height: 400px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .txt {
+         max-width: 590px;
+        }
+        &:nth-child(odd) {
+          .photo {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+          .txt {
+            width: 45%;
+          }
+        }
+        &:nth-child(even) {
+          left: -80px;
+          padding: 0 0 0 55%;
+          .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 0 50px;
+    .bgContainer {
+      padding: 100px 0;
+      background: #fefaf1;
+    }
+    .secBox {
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      .ttlBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #ffffff;
+        .num {
+          position: relative;
+          top: -25px;
+          font-size: 70px;
+          color: #ff0000;
+          line-height: 1;
+        }
+        .ttl {
+          position: relative;
+          padding: 30px 0 0;
+          font-size: 40px;
+          letter-spacing: 0.1em;
+          writing-mode: vertical-rl;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 50px;
+            height: 1px;
+            margin: 0 auto;
+            background: #ff0000;
+          }
+        }
+      }
+      .photo {
+        img {
+          border-radius: 6px;
+        }
+      }
+      .btnBox {
+        .btnMore {
+          max-width: 280px;
+          a {
+            position: relative;
+            display: block;
+            padding: 0 30px;
+            text-align: center;
+            border-bottom: 1px solid #ff0000;
+            p {
+              display: inline-block;
+              padding: 15px 0 15px 60px;
+              background: url(https://studio-kyuzen.jp/system_panel/uploads/images/btn_more_red.png) left center no-repeat;
+              background-size: 40px auto;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        .ttlBox {
+          width: 200px;
+          border-radius: 6px 0 0 6px;
+        }
+        .photo {
+          width: 700px;
+        }
+        .btnBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          width: 280px;
+          padding: 0 0 60px;
+        }
+        &:nth-child(odd) {
+          .ttlBox {
+            order: 3;
+            border-radius: 0 6px 6px 0;
+          }
+          .photo {
+            order: 2;
+          }
+          .btnBox {
+            order: 1;
+            .btnMore {
+              a {
+                &::before {
+                  content: '';
+                  position: absolute;
+                  right: -80px;
+                  bottom: -1px;
+                  width: 80px;
+                  height: 1px;
+                  background: #ff0000;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(even) {
+          .btnBox {
+            .btnMore {
+              a {
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: -80px;
+                  bottom: -1px;
+                  width: 80px;
+                  height: 1px;
+                  background: #ff0000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 100px 0;
+    .infoBox {
+      .dl {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #7f7f7e;
+        + .dl {
+          margin: 30px 0 0;
+        }
+        .dt {
+          width: 260px;
+          text-align: center;
+          border-right: 1px solid #ff0000;
+        }
+        .dd {
+          width: 800px;
+        }
+      }
+    }
+  }
+  .mapPanel {
+    padding: 70px 0;
+    background: #fefaf1;
+    .mapTxtBox {
+      margin: 0 0 40px;
+      text-align: center;
+      .mapTxt {
+        display: inline-block;
+        a {
+          display: inline-block;
+          p {
+            display: inline;
+          }
+          .em {
+            color: #9f6d51;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .mapBox {
+      iframe {
+        filter: hue-rotate(200deg);
+      }
+    }
+  }
+  + .footer .footContainer {
+    background: #fefaf1;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  .topSection {
+    padding: 120px 0;
+    text-align: center;
+    .topTitle {
+      margin: 0 0 40px;
+      font-size: 40px;
+      line-height: 2;
+    }
+    .photoList {
+      max-width: 900px;
+      margin: 50px auto 0;
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        .li {
+          position: relative;
+          width: calc(100% / 3);
+          height: 300px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      + p {
+        margin: 50px 0 0;
+        font-size: 40px;
+      }
+    }
+    .topImg {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0 0;
+    }
+  }
+  .featureSection {
+    padding: 120px 0;
+    background: #fefaf1;
+    .secBox {
+      position: relative;
+      + .secBox {
+        margin: 160px 0 0;
+      }
+      .photo {
+        img {
+          border-radius: 6px;
+        }
+      }
+      .ttlBox {
+        margin: 0 0 20px;
+        h3 {
+          position: relative;
+          margin: 0 0 20px;
+          padding: 20px 0 0;
+          font-size: 36px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 1px;
+            background: #ff0000;
+          }
+        }
+        p {
+          font-size: 26px;
+          color: #ff0000;
+        }
+      }
+      .txt {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        min-height: 400px;
+        .ttlBox {
+          width: 50%;
+        }
+        .photo {
+          position: absolute;
+          top: 30px;
+          right: 0;
+          width: 45%;
+        }
+        .txt {
+         width: 50%;
+        }
+      }
+    }
+  }
+  .bnrSection {
+    padding: 150px 0 100px;
+    .bnrPanel {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #ffffff;
+      text-align: center;
+      background: #3e3d3b;
+      .btnLink {
+        max-width: 280px;
+        margin: 0 auto;
+        a {
+          display: block;
+          padding: 10px;
+          color: #ffffff;
+          border-radius: 20px;
+          background: #58524c;
+        }
+        p {
+          display: inline-block;
+          padding: 0 15px 0 0;
+          background: url(https://studio-kyuzen.jp/system_panel/uploads/images/icon_target_white.png) right center no-repeat;
+          background-size: 10px auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .bnrPanel {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        border-radius: 6px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100%;
+          background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_bnr_img.png) center top no-repeat;
+          background-size: cover;
+        }
+        .inner {
+          width: 48%;
+          padding: 60px 10px 40px;
+        }
+        .title {
+          margin: 0 0 30px;
+          font-size: 34px;
+          line-height: 2;
+        }
+        .photo {
+          display: none;
+        }
+        .circle {
+          position: absolute;
+          top: -50px;
+          right: 30px;
+          width: 100px;
+        }
+      }
+    }
+  }
+  .flowSection {
+    padding: 100px 0 150px;
+    .flowList {
+      margin: 0 0 40px;
+      text-align: center;
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 6) - 30px);
+          }
+          .ttl {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 72px;
+            margin: 20px 0 0;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .campaignSection {
+    .bgContainer {
+      padding: 100px 0;
+      background: #fefaf1;
+    }
+    .ttlBox {
+      margin: 0 0 60px;
+      text-align: center;
+      h2 {
+        display: inline-block;
+        padding: 0 80px;
+        font-size: 30px;
+        background: url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_01.png)
+          left center no-repeat,url(https://studio-kyuzen.jp/system_panel/uploads/images/top_sec01_slash_02.png)
+          right center no-repeat;
+        background-size: 50px auto, 50px auto;
+      }
+    }
+    .secBox {
+      .txtBox {
+        padding: 40px 30px;
+        border-radius: 6px;
+        background: #ffffff;
+        .txt {
+          margin: 0 0 60px;
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+        .message {
+          max-width: 520px;
+          margin: 0 0 10px;
+          font-size: 22px;
+          text-align: center;
+          border: 1px solid #333333;
+          a {
+            display: block;
+            padding: 10px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px)  {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 49%;
+          padding: 30px 0 0;
+        }
+        .txtBox {
+          width: 50%;
+        }
+        .message {
+          a {
+            pointer-events: none;
+          }
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .planSection {
+    padding: 150px 0 100px;
+    .linkList {
+      margin: 0 0 150px;
+      .ul {
+        .li {
+          position: relative;
+          color: #ffffff;
+          text-align: center;
+          cursor: pointer;
+        }
+        .img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .ttl {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 260px;
+          font-size: 30px;
+          background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_plan_link_arrow.png) center bottom 20px no-repeat;
+          background-size: 30px auto;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          .li {
+            width: calc(100% / 3);
+            + .li {
+              border-left: 1px solid #ffffff;
+            }
+          }
+        }
+      }
+    }
+    .secBoxList {
+      margin: 0 0 60px;
+    }
+    .secBox {
+      position: relative;
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      .ttlBox {
+        margin: 0 0 60px;
+        h3 {
+          position: relative;
+          margin: 0 0 20px;
+          padding: 20px 0 0;
+          font-size: 40px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 1px;
+            background: #ff0000;
+          }
+        }
+      }
+      .priceList {
+        .priceCnt {
+          + .priceCnt {
+            margin: 60px 0 0;
+          }
+        }
+        .priceBox {
+          display: flex;
+          justify-content: space-between;
+          + .priceBox {
+            margin: 20px 0 0;
+          }
+          + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .photoBox {
+        font-size: 14px;
+        .photoMain {
+          + .photoMain {
+            margin: 20px 0 0;
+          }
+          img {
+            border-radius: 6px;
+          }
+        }
+        .photoSubListCol2 {
+          margin: 20px 0 0;
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            .li {
+              width: calc((100% / 2) - 10px);
+            }
+            p {
+              margin: 10px 0 0;
+            }
+          }
+        }
+        .photoSubListCol4 {
+          margin: 20px 0 0;
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            .li {
+              width: calc((100% / 4) - 10px);
+            }
+            p {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+      .photoSubListCol3 {
+        margin: 20px 0 0;
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          text-align: center;
+          .li {
+            width: calc((100% / 3) - 10px);
+          }
+          p {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        min-height: 550px;
+        &.multiCnt {
+          min-height: 850px;
+          margin: 100px 0;
+        }
+        .priceList {
+          .priceBox {
+            .priceTtl {
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+        .photoBox {
+          position: absolute;
+          top: 0;
+          width: 45%;
+        }
+        &:nth-child(odd) {
+          .ttlBox {
+            width: 50%;
+          }
+          .priceList {
+            width: 50%;
+          }
+          .photoBox {
+            right: 0;
+          }
+        }
+        &:nth-child(even) {
+          padding: 0 0 0 50%;
+          .photoBox {
+            left: 0;
+          }
+        }
+        .photoSubListCol3 {
+          width: 800px;
+        }
+      }
+    }
+  }
+  .optionPanel {
+    padding: 40px;
+    background: #f7f6f5;
+    + .optionPanel {
+      margin: 40px 0 0;
+    }
+    h3,
+    h4,
+    .optionTtl {
+      position: relative;
+      margin: 0 0 60px;
+      padding: 0 0 0 60px;
+      font-size: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 2px;
+        margin: auto 0;
+        background: #ff0000;
+      }
+    }
+    .optionTtl {
+      p {
+        display: inline;
+      }
+    }
+    .omiyaOptionList {
+      .box {
+        margin: 0 0 20px;
+      }
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3%;
+      }
+      > .ul + .ul {
+        margin: 20px 0 0;
+      }
+    }
+    .optionList {
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3%;
+      }
+    }
+    @media (min-width: 1025px) {
+      .omiyaOptionList {
+        .box {
+          display: flex;
+          justify-content: space-between;
+        }
+        .ul {
+          width: 50%;
+        }
+      }
+      .optionList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -20px 0 0;
+        .ul {
+          width: 50%;
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .aside {
+      margin: 40px 0 0;
+      padding: 0 30px;
+    }
+  }
+  .rentalSection {
+    margin: 150px 0 0;
+  }
+  .exampleContainer {
+    .exampleList {
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: calc((100% / 2) - 15px);
+            margin: 0 0 10px;
+            font-size: 14px;
+            .em {
+              width: calc(100% - 110px);
+              padding: 15px 20px;
+              border-radius: 6px;
+              background: #ffffff;
+            }
+            .span {
+              width: 100px;
+              text-align: right;
+              background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_price_arrow.png) left center no-repeat;
+              background-size: 12px auto;
+            }
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .exampleListSeijinshiki {
+      @media (min-width: 1025px) {
+        .ul {
+          align-items: flex-start;
+          .setPrice {
+            align-items: flex-start;
+            .span {
+              position: relative;
+              top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .totalContainer {
+    margin: 20px 0 0;
+    padding: 30px 0 0;
+    text-align: center;
+    border-top: 1px solid #7f7f7e;
+    p {
+      display: inline;
+      font-size: 30px;
+    }
+    .em {
+      font-size: 50px;
+    }
+    .box {
+      display: inline-block;
+      p {
+        font-size: 26px;
+      }
+      .em {
+        font-size: 36px;
+      }
+    }
+  }
+  .caseSection {
+    padding: 100px 0 200px;
+  }
+  .swiperContainer {
+    height: 40vw;
+    max-height: 540px;
+    min-height: 320px;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      img {
+        align-self: center;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	omiya
+///////////////////////////////////////////////////////////*/
+.omiyaMain {
+  .pageKvPanel {
+    background: url(https://studio-kyuzen.jp/system_panel/uploads/images/omiya_kv_pc.png) center no-repeat;
+    background-size: cover;
+  }
+  .featureSection {
+    @media (min-width: 1025px) {
+      .secBox {
+        &:nth-child(2) {
+          .photo {
+            top: -100px;
+            right: 5%;
+            max-width: 420px;
+          }
+        }
+        &:nth-child(3) {
+          .photo {
+            right: 5%;
+          }
+        }
+      }
+    }
+  }
+  .rentalOmiya {
+    h3 {
+      position: relative;
+      margin: 0 0 30px;
+      padding: 20px 0 0;
+      font-size: 40px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background: #ff0000;
+      }
+      + p {
+        margin: 0 0 40px;
+      }
+    }
+    .secBox {
+      margin: 0 0 60px;
+      .photo {
+        img {
+          border-radius: 6px;
+        }
+      }
+      .txtBox {
+        .priceBox {
+          margin: 0 0 10px;
+          padding: 25px 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #3e3d3b;
+          p {
+            display: inline;
+          }
+          .em {
+            font-size: 26px;
+          }
+          br {
+            display: none;
+          }
+        }
+        .setBox {
+          margin: 0 0 20px;
+          padding: 20px 30px;
+          background: #4f4c49;
+          .dl {
+            font-size: 24px;
+            color: #d7d0ca;
+            .dt {
+              margin: 0 0 20px;
+            }
+            .ul {
+              padding: 0 10px;
+              + .ul {
+                margin: 20px 0 0;
+              }
+              .li {
+                display: inline-block;
+                + .li {
+                  margin: 0 0 0 30px;
+                }
+              }
+            }
+          }
+        }
+        .listBox {
+          padding: 0 20px;
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            + .ul {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .omiyaOptionList {
+      margin: 0 0 40px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shichigosan
+///////////////////////////////////////////////////////////*/
+.shichigosanMain {
+  .pageKvPanel {
+    background: url(https://studio-kyuzen.jp/system_panel/uploads/images/shichigosan_kv_pc.png) center no-repeat;
+    background-size: cover;
+  }
+  .rentalShichigosan {
+    padding: 0 0 100px;
+    .rentalList {
+      .ul {
+        .photo {
+          img {
+            border-radius: 6px;
+          }
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          .ttl {
+            margin: 0 0 10px;
+            font-size: 20px;
+          }
+          .dl {
+            display: flex;
+            margin: 0 0 10px;
+            line-height: 2.5;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 10px);
+          }
+        }
+      }
+    }
+    .message {
+      margin: 60px 0 80px;
+      font-size: 26px;
+      text-align: center;
+    }
+    .linkList {
+      margin: 0 0 60px;
+      .ul {
+        max-width: 860px;
+        margin: 0 auto;
+        .li {
+          padding: 10px;
+          font-size: 18px;
+          color: #ffffff;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 20px;
+          background: #58524c;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	seijinshiki
+///////////////////////////////////////////////////////////*/
+.seijinshikiMain {
+  .pageKvPanel {
+    background: url(https://studio-kyuzen.jp/system_panel/uploads/images/seijinshiki_kv_pc.png) center no-repeat;
+    background-size: cover;
+  }
+  .bnrSection {
+    @media (min-width: 1025px) {
+      .bnrPanel {
+        &::before {
+          background: url(https://studio-kyuzen.jp/system_panel/uploads/images/service_bnr_img2.png) center top no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	anniversary
+///////////////////////////////////////////////////////////*/
+.anniversaryMain {
+  .pageKvPanel {
+    background: url(https://studio-kyuzen.jp/system_panel/uploads/images/anniversary_kv_pc.png) center no-repeat;
+    background-size: cover;
+  }
+  .featureSection {
+    margin: 80px 0 0;
+    @media (min-width: 1025px) {
+      .secBox {
+        min-height: 650px;
+        .ttlBox {
+          width: 55%;
+          h3 {
+            br {
+              display: none;
+            }
+          }
+        }
+        .photo {
+          top: 0;
+          right: 20px;
+          max-width: 420px;
+        }
+      }
+    }
+  }
+  .planSection {
+    .basicBox {
+      padding: 40px 60px;
+      background: #f7f6f5;
+      .ttlBox {
+        position: relative;
+        margin: 0 0 30px;
+        padding: 20px 0 0;
+       &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background: #ff0000;
+       }
+        p {
+          display: inline-block;
+        }
+        .em {
+          font-size: 36px;
+        }
+        .span {
+          font-size: 20px;
+        }
+      }
+      .txtBox {
+        padding: 30px;
+        border-radius: 6px;
+        background: #ffffff;
+        .aside {
+          p + p {
+            padding: 0 0 0 1em;
+          }
+        }
+      }
+    }
+  }
+  .rentalAnniversary {
+    .secBox {
+      position: relative;
+      padding: 50px 0 0;
+      h3 {
+        position: relative;
+        margin: 0 0 60px;
+        padding: 20px 0 0;
+        font-size: 36px;
+       &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background: #ff0000;
+       }
+      }
+      .photo {
+        img {
+          border-radius: 6px;
+        }
+      }
+      .listBox {
+        padding: 0 20px;
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          + .ul {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        min-height: 680px;
+        padding: 0 0 0 50%;
+        .photo {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 43%;
+        }
+        .txtBox {
+
+        }
+      }
+    }
+  }
+}

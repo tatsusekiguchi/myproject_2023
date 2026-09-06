@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="beginners">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="logo"><a href="/">
+						<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+				<div class="ttl">
+					<p>新小岩駅徒歩3分の美顔痩身エステサロン<br>エステ×コンサルのトータルプロデュース</p>
+				</div>
+			</div>
+			<div class="headBox">
+				<div class="headNav">
+					<div class="ul">
+						<div class="li"><a href="concept">
+								<div>
+									<p class="em">Concept</p>
+									<p class="span">こだわり</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="beginners">
+								<div>
+									<p class="em">Beginner</p>
+									<p class="span">初めての方へ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="menu">
+								<div>
+									<p class="em">Menu</p>
+									<p class="span">メニュー</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="staff">
+								<div>
+									<p class="em">Staff</p>
+									<p class="span">スタッフ紹介</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="salon">
+								<div>
+									<p class="em">Salon</p>
+									<p class="span">店舗情報</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="headItem">
+					<div class="reserve"><a href="contact">
+							<div>
+								<p class="em">Reserve</p>
+								<p class="span">無料カウンセリング</p>
+							</div>
+						</a></div>
+					<div class="hamburgerMenu">
+						<div class="hamburgerBox">
+							<div class="hamburger">
+								<div class="span"></div>
+								<div class="span"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navClose"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_close.png" alt=""></div>
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="concept">
+							<div>
+								<p>こだわり</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="beginners">
+							<div>
+								<p>初めての方へ</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="menu">
+							<div>
+								<p>メニュー</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="staff">
+							<div>
+								<p>スタッフ紹介</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="salon">
+							<div>
+								<p>店舗情報</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="bloglist">
+							<div>
+								<p>ブログ</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="recruit">
+							<div>
+								<p>求人</p>
+							</div>
+						</a></div>
+					<div class="li"><a href="contact">
+							<div>
+								<p>ご予約・お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="infoList">
+				<div class="dl">
+					<div class="dt">
+						<p>tel.</p>
+					</div>
+					<div class="dd"><a href="tel:0356076558">
+							<div>
+								<p>03-5607-6558</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="dl">
+					<div class="dt">
+						<p>open</p>
+					</div>
+					<div class="dd">
+						<p>13:00~21:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="navItem">
+				<div class="logo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+				<div class="sns">
+					<div class="ul">
+						<div class="li"><a href="https://www.instagram.com/rebion_shinkoiwa/" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_insta.png" alt="">
+									<p>美容術</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="https://www.instagram.com/rebion_black/" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_insta.png" alt="">
+									<p>モテ術</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/header_nav_line.png" alt="">
+									<p>公式LINE</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="beginnersMain main">
+		<div class="pageKvPanel">
+			<div class="pageKvTitle">
+				<p>Beginners</p>
+				<h1>初めての方へ</h1>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="topContainer">
+					<div class="dl">
+						<div class="dt">
+							<p>初めてのお客様へ</p>
+						</div>
+						<div class="dd">
+							<div class="txt">
+								<p>当店では、エステ×コンサルでお客さまをトータルプロデュースしています。<br>無料カウンセリングであなた専用のプログラムをご提案し、理想の自分に導いていきます。<br>2週間に1回のペースで3カ月～半年ほど通っていただくと、大きな変化を感じやすくなります。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pageSecTtl">
+					<p>Road to Goal</p>
+					<h2>ゴールまでの道のり</h2>
+				</div>
+				<div class="goalContainer">
+					<div class="topLinkList">
+						<div class="ul">
+							<div class="li"><a href="#goalPanel01">
+									<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_01.png" alt=""></div>
+									<div class="dl">
+										<div class="dt">
+											<p>Aさんの場合</p>
+										</div>
+										<div class="dd">
+											<p>脱・モテない男！</p>
+										</div>
+									</div>
+								</a></div>
+							<div class="li"><a href="#goalPanel02">
+									<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_02.png" alt=""></div>
+									<div class="dl">
+										<div class="dt">
+											<p>Bさんの場合</p>
+										</div>
+										<div class="dd">
+											<p>エステで仕事効率化</p>
+										</div>
+									</div>
+								</a></div>
+							<div class="li"><a href="#goalPanel03">
+									<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_03.png" alt=""></div>
+									<div class="dl">
+										<div class="dt">
+											<p>Cさんの場合</p>
+										</div>
+										<div class="dd">
+											<p>ついにナンバー2に！</p>
+										</div>
+									</div>
+								</a></div>
+							<div class="li"><a href="#goalPanel04">
+									<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_04.png" alt=""></div>
+									<div class="dl">
+										<div class="dt">
+											<p>Dさんの場合</p>
+										</div>
+										<div class="dd">
+											<p>新しいキャリアに挑戦</p>
+										</div>
+									</div>
+								</a></div>
+						</div>
+					</div>
+					<div class="goalPanelList">
+						<div class="goalPanel goalAnim" id="goalPanel01">
+							<div class="startBox goalTarget">
+								<div class="ttl">
+									<p>Start!!</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>脱・モテない男！</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>プロフィール：32歳、男性、会社員<br>趣味：キャンプ<br>悩み：おしゃれに気を使ってもモテない<br>施術メニュー：モテ男コース<br>期間：2週間に1回のペースで半年</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox01 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.01</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>顔が少しシュッとして来た</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>無料カウンセリングを受けた結果、モテない原因は清潔感が足りないこと、自信のなさが表に出てしまっているということだった。<br>全身についている贅肉を落としつつ、歯のホワイトニングをお願いすることに。<br>小顔メニューの効果が早くも出てきて、会社の人から初めて「痩せた？」と言われた。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox02 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.02</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>なんだか少し前向きになってきた</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>「痩せた？」と言われることが多くなり、鏡の前に立つ自分の姿の変化も嬉しくて、なんだか気持ちが前向きになってきた！<br>いつもより笑顔で挨拶してみたり、仕事終わりに少し歩いてみたり、今までやりたくてもできなかったことが、少しずつできるようになって嬉しい。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox03 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.03</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>ついに、お腹が少しへこんできた</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>顔は痩せてもなかなかへこまなかったお腹が、少しましになってきた。<br>仕事終わりの散歩や、休日のジム通いの効果も出てきたらしい！<br>これまでは運動なんて三日坊主だったけど、定期的にサロンに通って、先生に会うことでモチベーションが保てるからとてもありがたい。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox04 stepBox large goalTarget">
+								<div class="ttl">
+									<p>Step.04</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>自分に自信が持てるように！<br>モテ期の予感</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>緩み切った体がどんどん引き締まってきて、先生にも褒めてもらえるように！<br>ホワイトニングの効果も出てきて、自信を持って笑えるようにもなった。これまで自信がなくてあまり出会いを探せなかったけど、久しぶりにデートに誘った相手と次回の約束もできて、モテ期が始まった予感！</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goalBox goalTarget">
+								<div class="goalTxt"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_txt_goal.png" alt=""></div>
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_01.png" alt=""></div>
+							</div>
+						</div>
+						<div class="goalPanel goalAnim" id="goalPanel02">
+							<div class="startBox goalTarget">
+								<div class="ttl">
+									<p>Start!!</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>エステで仕事効率化</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>プロフィール：43歳、男性、課長<br>趣味：ゴルフ<br>悩み：特になし<br>施術メニュー：モテ王コース<br>期間：2週間に1回のペースで半年</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox01 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.01</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>肌が明るくなった</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>特に悩みはなかったが、肌の老化を感じ始めたので予約してみた。<br>初めてのエステは思ったよりリラックスでき、早速肌が明るくなったのを感じる。<br>こんなに効果が早いとは思わなかった。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox02 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.02</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>エステの癒し時間が欠かせない</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>定期的に通っていると、エステの癒し時間が欠かせないものになってきた。<br>仕事のストレスを抜きながら体のメンテナンスができるので、一石二鳥。<br>翌日から気分が良いので、仕事も捗る。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox03 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.03</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>家族との関係に変化が…</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>全体的に体が引き締まってきて、あまり会話のなかった家族から珍しく褒められた。<br>最近気分の良い日が多いからか、家の雰囲気も良くなった気がする。<br>久しぶりにそろって外食してみようか。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox04 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.04</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>部長に昇進</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>ホワイトニングの効果が出てきて、職場でも後輩から褒められた。<br>そしてなんと部長への昇進の話をもらった。<br>エステに通い始めてから仕事の調子も上がっていたので、その成果が認められたことは素直に嬉しい。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goalBox goalTarget">
+								<div class="goalTxt"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_txt_goal.png" alt=""></div>
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_02.png" alt=""></div>
+							</div>
+						</div>
+						<div class="goalPanel goalAnim" id="goalPanel03">
+							<div class="startBox goalTarget">
+								<div class="ttl">
+									<p>Start!!</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>ついにナンバー2に！</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>プロフィール：24歳、女性、キャバ嬢<br>趣味：YouTube<br>悩み：ナンバー３に入れない<br>施術メニュー：輝き女子コース<br>期間：2週間に1回のペースで半年</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox01 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.01</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>悩みの原因が分かってすっきり</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>キャバ嬢として働き始めて3カ月、自己流で頑張ったけどなかなかランクが上がらない。<br>そんな時に元No.1ホステスがエステをやっていると聞いて、無料カウンセリングを受けてみた。<br>自分では分からなかった原因が分かっただけでもすっきりして、また頑張れそう！</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox02 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.02</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>お客さんの反応に変化が</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>小顔の効果が出てきて、ちょっとだけ自信がついてきた。<br>リビオンでもらったアドバイスを一つずつ実践していると、お客様の反応が分かりやすく変わってきて、いい感じ。<br>半分諦めてたけど、なんとかなりそうな気がしてきた！</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox03 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.03</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>指名が増えてきた</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>リビオンに通い始めて3カ月、指名が増えてきてやりがいを感じるようになってきた！<br>体型も変わってきたので、露出も気にならなくなって堂々といられるのも嬉しい。<br>ナンバー3まであと一歩と思うと頑張れる。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox04 stepBox large goalTarget">
+								<div class="ttl">
+									<p>Step.04</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>ナンバー2に！<br>今月のバースデーが楽しみ！</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>ついに目標のナンバー3を達成して、なんとナンバー2になれた！<br>こまめにアドバイスをくれて、モチベーションを維持してくれたリビオンのおかげ。<br>エステの効果もばっちり感じてる。<br>今月のバースデーが楽しみたまらない！</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goalBox goalTarget">
+								<div class="goalTxt"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_txt_goal.png" alt=""></div>
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_03.png" alt=""></div>
+							</div>
+						</div>
+						<div class="goalPanel goalAnim" id="goalPanel04">
+							<div class="startBox goalTarget">
+								<div class="ttl">
+									<p>Start!!</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>新しいキャリアに挑戦</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>プロフィール：35歳、女性、ホステス<br>趣味：なし（子育て）<br>悩み：将来が不安<br>施術メニュー：ナンバーワンコース<br>期間：2週間に1回のペースで3カ月</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox01 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.01</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>将来の不安が少し和らいだ</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>30歳を超えてからこのまま今の仕事を続けられるか考えることが増えてきた。<br>元No.1ホステスの先輩がいるということでエステに来てみたら、すごく綺麗で楽しそうに仕事をしている姿を見ただけで希望が出てきた。<br></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox02 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.02</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>この年齢でも綺麗になれた</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>年のせいか特に肌の調子が悪かったけど、エステに通うようになってむしろ前より綺麗になった！<br>エステで話す時間も癒しになって、前向きになれる。<br>同じように年齢で諦めている女性を励ます仕事を、自分もしてみたいかも。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox03 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.03</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>次のキャリアが見えてきた</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>たるみ始めたお腹がシュッとしてきて、タイトなドレスをまた着られるようになってきた！<br>まだまだ現役でいけそうな気はするけど、そろそろ次のキャリアに進むタイミングかも。<br>やろうと思えることが見つかって久しぶりにやる気に満ちてきた。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stepBox04 stepBox goalTarget">
+								<div class="ttl">
+									<p>Step.04</p>
+								</div>
+								<div class="dl">
+									<div class="dt">
+										<p>エステティシャン見習いに</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p>3カ月で見た目も心も変わった感じが自分でも分かる。<br>子どもの将来も考えて、思い切って新しい仕事にチャレンジすることに。<br>まだ不安がないわけじゃないけど、まずはこの道で頑張ってみる！</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goalBox goalTarget">
+								<div class="goalTxt"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_txt_goal.png" alt=""></div>
+								<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec01_customer_04.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtl">
+					<p>Service Flow</p>
+					<h2>サービスの流れ</h2>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox fadeUp">
+						<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec02_img_01.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="ttl01">
+									<p>Step.01</p>
+								</div>
+								<div class="ttl02">
+									<p>ご予約</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>ホットペッパー・お電話・LINEからご予約いただけます。<br>まずは無料カウンセリングをご予約ください。</p>
+							</div>
+							<div class="btnMore"><a href="contact">
+									<div>
+										<p>ご予約はこちら</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec02_img_02.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="ttl01">
+									<p>Step.02</p>
+								</div>
+								<div class="ttl02">
+									<p>無料カウンセリング</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>全てのお客様に、約30分の無料カウンセリングを実施しています。<br>あなたの魅力や弱みはどこにあるのか、客観的に分析し、一緒に目指す姿（ゴール）を設定します。<br>人生経験が豊富な元No.1ホステスだからこそ、適切なアドバイスができます。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec02_img_03.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="ttl01">
+									<p>Step.03</p>
+								</div>
+								<div class="ttl02">
+									<p>あなた専用プログラムを提案</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>カウンセリングの結果を踏まえ、あなた専用のプログラムをご提案。<br>無駄のないプログラムを組むことで、最短でのゴールを目指します。<br>ご予算や期間に合わせ、柔軟に対応しています。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox fadeUp">
+						<div class="photo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/beginners_sec02_img_04.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="ttl01">
+									<p>Step.04</p>
+								</div>
+								<div class="ttl02">
+									<p>施術</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>最新の高性能マシンや高品質の美容液を贅沢に使い、最大の効果が出るよう、施術します。<br>結果重視で施術しているので、効果を実感しやすいのが特徴です。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec03">
+			<div class="secWrap">
+				<div class="pageSecTtl">
+					<p>Q&A</p>
+					<h2>よくある質問</h2>
+				</div>
+				<div class="faqContainer">
+					<div class="faqPanel">
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>カウンセリング当日に施術は受けられますか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>はい、カウンセリング当日にメニューをご提案し、そのまま施術を受けていただけます。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>支払い方法は何がありますか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>現金のほか、Visa、Mastercard、JCB、American Express、Diners Club、Discover、各種電子マネー をご利用いただけます。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>予約の変更やキャンセルは可能ですか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>予約の変更やキャンセルは、前日までにご連絡ください。<br>60分以上の施術メニューをご予約のお客様には、当日キャンセルは一律3,000円のキャンセル料を頂戴しております。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>アトピー、敏感肌ですが大丈夫ですか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>お肌の弱い方には施術時の摩擦に気を付けて施術いたします。<br>また、美容液なども低刺激なものを使用しますので、安心してご来店ください。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>結婚式に向けての利用もできますか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>もちろん可能です。キメ美肌背中美人のメニューは特にプレ花嫁さんからの人気が高く、背中の空いたドレスも自信を持って着ていただいております。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="faqPanel">
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>準備するものはありますか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>フェイシャルメニューをご希望の場合は、こちらでクレンジングしますので、施術後メイクができるようご準備ください。<br>ボディメニューをご希望の場合は、お腹周りを刺激することがございますので、来店1時間前の飲食はお控えください。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>途中解約は可能ですか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>当店はコースメニューをご利用の場合も、コース契約ではなく都度払い制です。その日施術を受けたメニュー分のみお支払いいただきますので、ご安心ください。<br>お客様のライフスタイルやご予算に合わせメニューのご提案をしておりますので、お客様の通いやすいペースでご利用ください。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>スキンケア用品の購入はできますか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>高品質なスキンケア用品を用意しております。<br>ぜひ店頭でお買い求めいただき、日々のケアにお役立てください。<br>ホームケア講座を受けていただくと、お得に購入できます。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>単発でも効果は出ますか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>単発でも効果を感じていただけるお客様はいらっしゃしますが、3カ月以上通っていただくことで、明らかな効果を感じやすくなります。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faqBox">
+							<div class="dl accord">
+								<div class="dt">
+									<div class="icon">
+										<p>Q.</p>
+									</div>
+									<div class="ttl">
+										<p>どのくらいのペースで通ったらいいですか？</p>
+									</div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>基本的には2週間に1回のペースで通うと、お肌のきれいな状態を維持しやすくなります。<br>頻繁に通えない方は、カウンセリング時にご相談いただければ、ライフスタイルに合ったペースをご提案します。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="pagetop linkBtn" data-target="main"><img src=" https://creaxia230724.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+		<div class="logo"><img src="https://creaxia230724.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+		<div class="copy">
+			<p>©2023.rebion</p>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

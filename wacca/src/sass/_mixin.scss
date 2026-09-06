@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// カラー
+$bgBaseColor: #fdfdfd;
+$mainColor: #7d7c2c;
+
+//画像
+$imgPath: "../images";
+
+//font
+$notoSans: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3",
+  "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica",
+  "Arial", sans-serif;
+$serif: "Noto Serif JP", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+  "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝",
+  "ＭＳ 明朝", serif;
+$poppins: "Poppins";
+$roboto: "Roboto";
+
+//フォントサイズ
+$PCfontSize: 16px;
+$SPfontSize: 12px;
+
+//行間
+$lhBase: 1.5;
+$lhTxt: 1.8;
+
+// レイアウト・パーツ

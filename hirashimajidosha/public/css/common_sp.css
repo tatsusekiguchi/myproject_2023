@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background: #000000;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logo {
+    width: 180px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .rightBox {
+    display: none;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span {
+    background: #ffffff;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 60px;
+    z-index: 999;
+    background: #000000;
+    transition: 0.6s;
+  }
+  .navBox .navList {
+    border-top: 1px solid #ffffff;
+    background: #002d72;
+  }
+  .navBox .navList .ul .li {
+    padding: 10px 20px;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 1px solid #ffffff;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .navBox .navList .ul .li a .span {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #5d5d5d;
+  }
+  .navBox .navItem .telBox {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .navBox .navItem .telBox a {
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+  }
+  .navBox .navItem .telBox .em {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.2;
+    background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navItem .telBox .span {
+    font-size: 12px;
+  }
+  .navBox .navItem .mailBox a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 65px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #0082d4;
+  }
+  .navBox .navItem .mailBox p {
+    display: inline-block;
+    padding: 25px 0 0;
+    font-size: 14px;
+    text-indent: -0.5em;
+    background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/header_mail.png) center top no-repeat;
+    background-size: 40px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    height: 250px;
+    padding: 100px 0 20px;
+  }
+  .pageKvPanel .pageKvTitle {
+    max-width: 280px;
+    padding: 15px 20px;
+    font-size: 30px;
+  }
+
+  .pageSecTitleBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTitleBox .pageSecTitle {
+    margin: 0 0 3px;
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 80px 0;
+  }
+  .footer .footContact .titleBox {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .footer .footContact .titleBox .img {
+    width: 50px;
+    margin: 0 auto 20px;
+  }
+  .footer .footContact .titleBox .title {
+    display: inline-block;
+    margin: 0 0 0 -20px;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/page_kv_title_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .footer .footContact .listBox {
+    display: block;
+  }
+  .footer .footContact .listBox .box {
+    width: 100%;
+    min-height: 130px;
+    padding: 30px 20px;
+    background: url(https://hirashimajidosha230906.smooooth.jp/system_panel/uploads/images/footer_contact_box_bg.png) center no-repeat;
+    background-size: 100% auto;
+  }
+  .footer .footContact .listBox .box + .box {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .listBox .dl .dt {
+    font-size: 18px;
+  }
+  .footer .footContact .listBox .dl .tel {
+    padding: 5px 0 0;
+  }
+  .footer .footContact .listBox .dl .tel a {
+    font-size: 28px;
+  }
+  .footer .footContainer .footPanel {
+    padding: 60px 0;
+  }
+  .footer .footContainer .footPanel .footBox {
+    display: block;
+  }
+  .footer .footContainer .footPanel .leftBox {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footContainer .footPanel .leftBox .logo {
+    max-width: 300px;
+    margin: 0 auto 30px;
+  }
+  .footer .footContainer .footPanel .rightBox {
+    display: none;
+  }
+  .footer .footContainer .copy {
+    padding: 5px;
+  }
+}

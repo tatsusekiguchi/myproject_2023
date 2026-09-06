@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.wrap {
+  height: auto;
+}
+
+/*改行*/
+.pcBreak {
+  display: none;
+}
+
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+
+.spHidden {
+  display: none;
+}
+
+#sideBtn {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+header {
+  border-top: 5px solid #1b893d;
+}
+
+header .headTop > div {
+  display: table;
+  width: 240px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+header .headTop h1 {
+  display: table-cell;
+  width: 100px;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+header .headTop p {
+  display: table-cell;
+  padding: 0 10px;
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+header .spLidt {
+  position: relative;
+}
+
+#spMenuBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+}
+
+#spApply {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 60px;
+  bottom: 0;
+  left: -100%;
+  background: #1b893d;
+}
+
+nav ul li {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav ul li:first-child {
+  display: none;
+}
+
+nav ul li a {
+  text-align: left;
+  padding: 15px 10px;
+  line-height: 1.5;
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  background: url("../image/common/link_arrow_right.png") right 10px center no-repeat;
+  background-size: 5px auto;
+}
+
+nav ul li ul li {
+  padding-left: 20px;
+}
+
+nav ul li:last-child {
+  overflow: hidden;
+}
+
+nav ul li:last-child a + a {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#navClose {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 65px;
+}
+
+/* --------------------------------------------------
+	メイン
+-------------------------------------------------- */
+article {
+  margin-top: 57px;
+}
+
+/* --------------------------------------------------
+	バナー
+-------------------------------------------------- */
+#bnrBox {
+  padding: 20px 10px;
+  background: url("../image/common/bnr_bg.png") no-repeat;
+  background-size: cover;
+}
+
+#bnrBox2 {
+  padding: 20px 10px;
+  background-size: cover;
+}
+
+#bnrBox ul li + li,
+#bnrBox2 ul li + li,
+.youtube {
+  margin-top: 10px;
+}
+
+/* --------------------------------------------------
+    ページトップ
+-------------------------------------------------- */
+#pagetopBox {
+  overflow: hidden;
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  text-indent: 9999px;
+  background: url("../image/common/pagetop.png") no-repeat;
+  background-size: 50px auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+footer {
+  position: relative;
+  margin-top: 25px;
+}
+
+footer .footBox .leftBox {
+  width: 100%;
+  text-align: center;
+}
+
+footer .footBox .leftBox .logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+footer .footBox .rightBox {
+  display: none;
+}
+
+footer .copy {
+  padding: 10px;
+  text-align: center;
+}
+
+footer .footBox p.privacy {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

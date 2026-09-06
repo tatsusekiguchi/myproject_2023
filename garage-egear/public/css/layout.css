@@ -1,0 +1,1719 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  padding: 0 0 10px;
+}
+.topMain .topKvContainer .topKvPanel {
+  padding: 0 10px;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/top_kv_01.png) right center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvPanel .kvWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 1440px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
+.topMain .topKvContainer .topKvPanel .kvTtl {
+  margin: 0 0 40px;
+}
+.topMain .topKvContainer .topKvPanel .kvTtl h1 {
+  font-size: 4vw;
+  color: #ffffff;
+  text-shadow: 0 0 15px #ffffff;
+}
+.topMain .topKvContainer .topKvPanel .kvList {
+  max-width: 1000px;
+  width: 70%;
+}
+.topMain .topKvContainer .topKvPanel .person {
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  width: 35%;
+  max-width: 550px;
+  z-index: 1;
+}
+.topMain .topContainer {
+  padding: 100px 0;
+}
+.topMain .topContainer .messageBox {
+  text-align: center;
+}
+.topMain .topContainer .messageBox .message + .message {
+  margin: 15px 0 0;
+}
+.topMain .topContainer .messageBox .message p {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.topMain .topContainer .messageBox .message .em {
+  padding: 3px 10px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.topMain .topContainer .messageBox .message .blue {
+  background: #00a0e9;
+}
+.topMain .topContainer .messageBox .message .green {
+  background: #0fc61c;
+}
+.topMain .sec01 {
+  padding: 120px 0;
+}
+.topMain .sec01 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec01 .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec01 .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.topMain .sec01 .webgene-blog .webgene-item .img img {
+  border-radius: 4px;
+}
+.topMain .sec01 .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+}
+.topMain .sec01 .webgene-blog .webgene-item .infoBox .time {
+  margin: 0 5px 0 0;
+}
+.topMain .sec01 .webgene-blog .webgene-item .infoBox .cate p {
+  display: inline-block;
+  min-width: 100px;
+  padding: 2px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #0fc61c;
+}
+.topMain .sec01 .webgene-blog .webgene-item .title {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -40px;
+  }
+  .topMain .sec01 .webgene-blog .webgene-item {
+    width: calc(25% - 40px);
+    margin: 0 0 0 40px;
+  }
+  .topMain .sec01 .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 270px;
+  }
+  .topMain .sec01 .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec01 .btnMore {
+  margin: 80px auto 0;
+}
+.topMain .sec02 .secContainer {
+  padding: 60px 10px 120px;
+  border-radius: 4px;
+  background: #fcfaea;
+}
+.topMain .sec02 .listBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0 0;
+}
+.topMain .sec02 .listBox .ol .li {
+  border-radius: 4px;
+  background: #ffffff;
+}
+.topMain .sec02 .listBox .ol .ttlBox {
+  position: relative;
+  padding: 12px 15px;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  background: #0fc61c;
+}
+.topMain .sec02 .listBox .ol .ttlBox .step {
+  position: absolute;
+  top: -35px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  line-height: 1.2;
+  border-radius: 50%;
+  background: #0fc61c;
+}
+.topMain .sec02 .listBox .ol .ttlBox .step .span {
+  font-size: 13px;
+  color: #7ced84;
+}
+.topMain .sec02 .listBox .ol .ttlBox .step .em {
+  font-size: 24px;
+  color: #a5f0aa;
+}
+.topMain .sec02 .listBox .ol .ttlBox .ttl {
+  position: relative;
+  font-size: 24px;
+  color: #ffffff;
+}
+.topMain .sec02 .listBox .ol .txt {
+  padding: 15px 20px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .listBox .ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec02 .listBox .ol .li {
+    width: calc(33.3333333333% - 30px);
+  }
+  .topMain .sec02 .listBox .ol .photo {
+    position: relative;
+    height: 280px;
+  }
+  .topMain .sec02 .listBox .ol .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec03 {
+  padding: 120px 0 300px;
+}
+.topMain .sec03 .secContainer {
+  position: relative;
+  padding: 60px 10px 0 0;
+}
+.topMain .sec03 .secContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 500px;
+  background: #f0f8fb;
+}
+.topMain .sec03 .secContainer .secWrap {
+  position: relative;
+}
+.topMain .sec03 .secContainer .photo img {
+  border-radius: 4px;
+}
+.topMain .sec03 .secContainer .txtBox {
+  padding: 30px 0 0;
+}
+.topMain .sec03 .secContainer .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 34px;
+  color: #00a0e9;
+}
+.topMain .sec03 .secContainer .txtBox .txt {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secContainer .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+  }
+  .topMain .sec03 .secContainer .txtBox {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .topMain .sec03 .secContainer .txtBox .inner {
+    width: 50%;
+  }
+}
+.topMain .sec04 {
+  margin: 0 0 160px;
+}
+.topMain .sec04 .secContainer {
+  padding: 60px 10px 120px;
+  border-radius: 4px;
+  background: #f0f8fb;
+}
+.topMain .sec04 .secBoxList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.topMain .sec04 .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.topMain .sec04 .secBox .photo img {
+  border-radius: 4px;
+}
+.topMain .sec04 .secBox .txtBox .ttl {
+  margin: 0 0 30px;
+  font-size: 34px;
+  color: #00a0e9;
+}
+.topMain .sec04 .secBox .txtBox .txt {
+  margin: 0 0 40px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec04 .secBox .photo {
+    position: relative;
+    width: 53%;
+    height: 420px;
+  }
+  .topMain .sec04 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec04 .secBox .txtBox {
+    width: 44%;
+  }
+  .topMain .sec04 .secBox:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+.topMain .sec05 {
+  margin: 0 0 160px;
+}
+.topMain .sec05 .secContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  padding: 60px 10px 80px;
+  border-radius: 4px;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/top_sec05_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec05 .secContainer .btnMore {
+  width: 100%;
+  margin: auto auto 0;
+}
+.topMain .sec06 {
+  margin: 0 0 160px;
+}
+.topMain .sec06 .secContainer {
+  padding: 60px 0 120px;
+  border-radius: 4px;
+  background: #fcfaea;
+}
+.topMain .sec06 .listItem a {
+  position: relative;
+  display: block;
+}
+.topMain .sec06 .listItem .btnBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 5px 30px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #0fc61c;
+}
+.topMain .sec06 .listItem .btnBox p {
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/top_sec06_arrow.png) right center no-repeat;
+  background-size: 20px auto;
+}
+@media (min-width: 1025px) {
+  .topMain .sec06 .listItem {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec06 .listItem .itemBox {
+    width: 48%;
+  }
+}
+.topMain .sec07 {
+  padding: 0 0 200px;
+}
+.topMain .sec07 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec07 .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec07 .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.topMain .sec07 .webgene-blog .webgene-item .img img {
+  border-radius: 4px;
+}
+.topMain .sec07 .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+}
+.topMain .sec07 .webgene-blog .webgene-item .infoBox .time {
+  margin: 0 5px 0 0;
+}
+.topMain .sec07 .webgene-blog .webgene-item .infoBox .cate p {
+  display: inline-block;
+  min-width: 100px;
+  padding: 2px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #00a0e9;
+}
+.topMain .sec07 .webgene-blog .webgene-item .title {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .topMain .sec07 .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -40px;
+  }
+  .topMain .sec07 .webgene-blog .webgene-item {
+    width: calc(25% - 40px);
+    margin: 0 0 0 40px;
+  }
+  .topMain .sec07 .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 270px;
+  }
+  .topMain .sec07 .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec07 .btnMore {
+  margin: 80px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain .purchaseSection {
+  margin: 80px 0 160px;
+}
+.strengthMain .section + .section {
+  margin: 120px 0 0;
+}
+.strengthMain .section .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #f0f8fb;
+}
+.strengthMain .section .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.strengthMain .section .secBox .photo img {
+  border-radius: 4px;
+}
+.strengthMain .section .secBox .txtBox {
+  padding: 50px 0 0;
+}
+.strengthMain .section .secBox .txtBox .ttl {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.strengthMain .section .secBox .txtBox .ttl p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  color: #ffffff;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/strength_sec_num_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.strengthMain .section .secBox .txtBox .ttl h3 {
+  width: calc(100% - 80px);
+  font-size: 34px;
+  color: #00a0e9;
+}
+.strengthMain .section .secBox .txtBox .txt + .txt {
+  margin: 30px 0 0;
+}
+.strengthMain .section .secBox .txtBox .txt .em {
+  color: #006d9f;
+}
+@media (min-width: 1025px) {
+  .strengthMain .section .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .strengthMain .section .secBox .photo {
+    position: relative;
+    width: 50%;
+    height: 420px;
+  }
+  .strengthMain .section .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .strengthMain .section .secBox .txtBox {
+    width: 47%;
+  }
+  .strengthMain .section .secBox:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1440px) {
+  .strengthMain .section .secBox .txtBox .ttl {
+    white-space: nowrap;
+  }
+}
+.strengthMain .sec01 {
+  margin: 0 0 200px;
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain .sec01 {
+  padding: 80px 0 160px;
+}
+.flowMain .sec01 .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #f0f8fb;
+}
+.flowMain .sec01 .secBox + .arrow {
+  width: 60px;
+  margin: 80px auto;
+}
+.flowMain .sec01 .secBox .photo img {
+  border-radius: 4px;
+}
+.flowMain .sec01 .secBox .txtBox {
+  padding: 15px 0 0;
+}
+.flowMain .sec01 .secBox .txtBox .ttl {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.flowMain .sec01 .secBox .txtBox .ttl .num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 20px 0 0;
+  color: #ffffff;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/strength_sec_num_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.flowMain .sec01 .secBox .txtBox .ttl .num .span {
+  font-size: 12px;
+  line-height: 1;
+}
+.flowMain .sec01 .secBox .txtBox .ttl .num .em {
+  font-size: 26px;
+  line-height: 1;
+}
+.flowMain .sec01 .secBox .txtBox .ttl h3 {
+  width: calc(100% - 80px);
+  font-size: 34px;
+  color: #00a0e9;
+}
+.flowMain .sec01 .secBox .txtBox .txt + .txt {
+  margin: 30px 0 0;
+}
+.flowMain .sec01 .secBox .txtBox .txt .em {
+  color: #006d9f;
+}
+.flowMain .sec01 .secBox .btnList {
+  margin: 60px 0 0;
+}
+.flowMain .sec01 .secBox .btnList .ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 460px;
+}
+.flowMain .sec01 .secBox .btnList .ul .li {
+  width: 48%;
+}
+.flowMain .sec01 .secBox .btnList .ul .li a {
+  display: block;
+}
+.flowMain .sec01 .secBox .infoBox {
+  margin: 30px 0 0;
+  padding: 20px 30px;
+  border: 5px solid #3db7ef;
+  background: #ffffff;
+}
+.flowMain .sec01 .secBox .infoBox .dl .dt {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  text-align: center;
+  border-bottom: 1px dashed #dcdbd3;
+}
+.flowMain .sec01 .secBox .infoBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .flowMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .flowMain .sec01 .secBox .photo {
+    position: relative;
+    width: 40%;
+    height: 350px;
+  }
+  .flowMain .sec01 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .flowMain .sec01 .secBox .txtBox {
+    width: 55%;
+  }
+}
+.flowMain .sec02 {
+  margin: 0 0 200px;
+}
+.flowMain .sec02 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.flowMain .sec02 .listBox .ul .li .photo {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.flowMain .sec02 .listBox .ul .li .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flowMain .sec02 .listBox .ul .li .dl .dt {
+  margin: 0 0 10px;
+  font-size: 26px;
+  color: #00a0e9;
+}
+.flowMain .sec02 .listBox .ul .li .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .flowMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -80px 0 0;
+  }
+  .flowMain .sec02 .listBox .ul .li {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 80px 0 0;
+  }
+  .flowMain .sec02 .listBox .ul .li .dl {
+    width: calc(100% - 150px);
+  }
+  .flowMain .sec02 .listBox .ul .li .supplement {
+    max-width: 340px;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    color: #64808d;
+    border-radius: 4px;
+    background: #f0f8fb;
+  }
+}
+.flowMain .sec03 {
+  margin: 0 0 200px;
+}
+.flowMain .sec03 .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #fcfaea;
+}
+.flowMain .sec03 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.flowMain .sec03 .secBox + .secBox {
+  margin: 100px 0 0;
+}
+.flowMain .sec03 .secBox .photo img {
+  border-radius: 4px;
+}
+.flowMain .sec03 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.flowMain .sec03 .secBox .txtBox .ttl {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.flowMain .sec03 .secBox .txtBox .ttl p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  color: #ffffff;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/flow_sec03_num_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.flowMain .sec03 .secBox .txtBox .ttl h3 {
+  width: calc(100% - 80px);
+  font-size: 34px;
+  color: #0fc61c;
+}
+.flowMain .sec03 .secBox .txtBox .txt + .txt {
+  margin: 30px 0 0;
+}
+.flowMain .sec03 .secBox .txtBox .txt .em {
+  color: #006d9f;
+}
+@media (min-width: 1025px) {
+  .flowMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flowMain .sec03 .secBox .photo {
+    position: relative;
+    width: 40%;
+    height: 350px;
+  }
+  .flowMain .sec03 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .flowMain .sec03 .secBox .txtBox {
+    width: 55%;
+  }
+  .flowMain .sec03 .secBox:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+.priceMain .sec01 {
+  padding: 80px 0 100px;
+}
+.priceMain .sec01 .txt {
+  text-align: center;
+}
+.priceMain .sec01 .txt p + p {
+  margin: 40px 0 0;
+}
+.priceMain .sec02 {
+  margin: 0 0 200px;
+}
+.priceMain .sec02 .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #fcfaea;
+}
+.priceMain .sec02 .listBox .ul .li {
+  border-radius: 4px;
+  background: #ffffff;
+}
+.priceMain .sec02 .listBox .ul .ttl {
+  padding: 5px 10px;
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  border: 4px solid #43d64e;
+  background: #0fc61c;
+}
+.priceMain .sec02 .listBox .ul .itemBox {
+  padding: 20px 30px;
+}
+.priceMain .sec02 .listBox .ul .itemBox .photo img {
+  border-radius: 4px;
+}
+.priceMain .sec02 .listBox .ul .itemBox .info .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+.priceMain .sec02 .listBox .ul .itemBox .info .dl + .dl {
+  margin: 10px 0 0;
+}
+.priceMain .sec02 .listBox .ul .itemBox .info .dl .dt {
+  color: #0fc61c;
+}
+.priceMain .sec02 .listBox .ul .itemBox .info .dl .dd {
+  text-align: right;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -40px 0 0;
+  }
+  .priceMain .sec02 .listBox .ul .li {
+    width: 48%;
+    margin: 40px 0 0;
+  }
+  .priceMain .sec02 .listBox .itemBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .priceMain .sec02 .listBox .itemBox .photo {
+    position: relative;
+    width: 50%;
+    height: 200px;
+  }
+  .priceMain .sec02 .listBox .itemBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .priceMain .sec02 .listBox .itemBox .info {
+    width: 43%;
+  }
+}
+.priceMain .sec02 .btnMore {
+  margin: 60px auto 0;
+}
+.priceMain .sec03 {
+  margin: 0 0 200px;
+}
+.priceMain .sec03 .secBox {
+  padding: 40px 60px;
+  border-radius: 4px;
+  background: #f0f8fb;
+}
+.priceMain .sec03 .secBox + .secBox {
+  margin: 40px 0 0;
+}
+.priceMain .sec03 .secBox .photoBox .photo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.priceMain .sec03 .secBox .photoBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.priceMain .sec03 .secBox .photoBox p {
+  margin: 20px 0 0;
+  text-align: center;
+}
+.priceMain .sec03 .secBox .txtBox h3 {
+  margin: 0 0 30px;
+  font-size: 26px;
+  color: #00a0e9;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceMain .sec03 .secBox .photoBox {
+    width: 200px;
+  }
+  .priceMain .sec03 .secBox .txtBox {
+    width: calc(100% - 250px);
+  }
+  .priceMain .sec03 .secBox:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+.priceMain .sec04 {
+  margin: 0 0 200px;
+}
+.priceMain .sec04 .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #f0f8fb;
+}
+.priceMain .sec04 .secPanel {
+  padding: 40px 10px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.priceMain .sec04 .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+.priceMain .sec04 .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.priceMain .sec04 .secBox .photo img {
+  border-radius: 4px;
+}
+.priceMain .sec04 .secBox .txtBox .ttl {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.priceMain .sec04 .secBox .txtBox .ttl p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  color: #ffffff;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/strength_sec_num_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.priceMain .sec04 .secBox .txtBox .ttl h3 {
+  width: calc(100% - 80px);
+  font-size: 34px;
+  color: #00a0e9;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .priceMain .sec04 .secBox .photo {
+    position: relative;
+    width: 40%;
+    height: 260px;
+  }
+  .priceMain .sec04 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .priceMain .sec04 .secBox .txtBox {
+    width: 55%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+.supportMain .section .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.supportMain .sec01 {
+  margin: 80px 0 100px;
+}
+.supportMain .sec01 .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #f0f8fb;
+}
+.supportMain .sec01 .secPanel {
+  padding: 40px 10px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.supportMain .sec01 .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+.supportMain .sec01 .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.supportMain .sec01 .secBox .photo img {
+  border-radius: 4px;
+}
+.supportMain .sec01 .secBox .txtBox .ttl {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.supportMain .sec01 .secBox .txtBox .ttl p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  color: #ffffff;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/support_sec01_num_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .sec01 .secBox .txtBox .ttl h3 {
+  width: calc(100% - 80px);
+  font-size: 34px;
+  color: #00a0e9;
+}
+@media (min-width: 1025px) {
+  .supportMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .supportMain .sec01 .secBox .photo {
+    position: relative;
+    width: 40%;
+    height: 260px;
+  }
+  .supportMain .sec01 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .supportMain .sec01 .secBox .txtBox {
+    width: 57%;
+  }
+}
+.supportMain .sec02 {
+  margin: 100px 0 200px;
+}
+.supportMain .sec02 .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #fcfaea;
+}
+.supportMain .sec02 .secPanel {
+  padding: 40px 10px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.supportMain .sec02 .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+.supportMain .sec02 .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.supportMain .sec02 .secBox .photo img {
+  border-radius: 4px;
+}
+.supportMain .sec02 .secBox .txtBox .ttl {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.supportMain .sec02 .secBox .txtBox .ttl p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  color: #ffffff;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/support_sec02_num_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .sec02 .secBox .txtBox .ttl h3 {
+  width: calc(100% - 80px);
+  font-size: 30px;
+  color: #0fc61c;
+}
+@media (min-width: 1025px) {
+  .supportMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .supportMain .sec02 .secBox .photo {
+    position: relative;
+    width: 40%;
+    height: 260px;
+  }
+  .supportMain .sec02 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .supportMain .sec02 .secBox .txtBox {
+    width: 57%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	faq
+///////////////////////////////////////////////////////////*/
+.faqMain .faqSection {
+  margin: 80px 0 200px;
+}
+.faqMain .faqSection .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #f0f8fb;
+}
+.faqMain .faqSection .faqPanel {
+  padding: 0 40px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.faqMain .faqSection .faqPanel + .faqPanel {
+  margin: 30px 0 0;
+}
+.faqMain .faqSection .faqPanel .accordHead {
+  display: flex;
+  padding: 20px 0;
+  cursor: pointer;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/accord_arrow_down.png) right 10px center no-repeat;
+  background-size: 15px auto;
+}
+.faqMain .faqSection .faqPanel .accordHead.active {
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/accord_arrow_up.png) right 10px center no-repeat;
+  background-size: 15px auto;
+}
+.faqMain .faqSection .faqPanel .accordHead .icon {
+  width: 40px;
+  margin: 0 10px 0 0;
+}
+.faqMain .faqSection .faqPanel .accordHead .ttl {
+  width: calc(100% - 50px);
+  padding: 8px 0 0;
+  font-size: 18px;
+  color: #00a0e9;
+  line-height: 1.2;
+}
+.faqMain .faqSection .faqPanel .accordBody {
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px dashed #dcdbd3;
+}
+.faqMain .faqSection .faqPanel .accordBody .icon {
+  width: 40px;
+  margin: 0 10px 0 0;
+}
+.faqMain .faqSection .faqPanel .accordBody .txtBox {
+  width: calc(100% - 50px);
+  padding: 5px 0 0;
+  line-height: 2;
+}
+.faqMain .faqSection .faqPanel .accordBody .txtBox p + p {
+  margin: 30px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .topSection {
+  padding: 80px 0 160px;
+}
+.companyMain .topSection .secContainer {
+  padding: 80px 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/company_top_bg.png) center no-repeat;
+  background-size: cover;
+}
+.companyMain .topSection .secContainer h2 {
+  margin: 0 0 40px;
+  font-size: 40px;
+}
+.companyMain .topSection .secContainer .txt {
+  margin: 0 0 60px;
+}
+.companyMain .topSection .secContainer .txt p + p {
+  margin: 30px 0 0;
+}
+.companyMain .topSection .secContainer .name {
+  font-size: 20px;
+  line-height: 2;
+}
+.companyMain .sec01 {
+  padding: 0 0 200px;
+}
+.companyMain .sec01 .infoBox {
+  margin: 0 0 60px;
+}
+.companyMain .sec01 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+}
+.companyMain .sec01 .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.companyMain .sec01 .infoBox .dl .dt {
+  width: 200px;
+  padding: 20px 0;
+  color: #00a0e9;
+  text-align: center;
+  border-bottom: 1px solid #00a0e9;
+}
+.companyMain .sec01 .infoBox .dl .dd {
+  width: calc(100% - 220px);
+  padding: 20px 30px;
+  border-bottom: 1px solid #000000;
+}
+.companyMain .sec01 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.companyMain .sec01 .list {
+  margin: 0 0 100px;
+}
+.companyMain .sec01 .list .ul .li img {
+  border-radius: 4px;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .list .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .companyMain .sec01 .list .ul .li {
+    position: relative;
+    width: calc(33.3333333333% - 15px);
+    height: 340px;
+  }
+  .companyMain .sec01 .list .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.companyMain .sec01 .mapBox {
+  border-radius: 4px;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .sec01 {
+  padding: 80px 0 100px;
+}
+.contactMain .sec01 .txt {
+  text-align: center;
+}
+.contactMain .sec01 .cntBox {
+  margin: 60px 0 0;
+  padding: 40px 10px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #00a0e9;
+  background: #f3fbff;
+}
+.contactMain .sec01 .cntBox h3 {
+  margin: 0 0 40px;
+  font-size: 30px;
+  color: #00a0e9;
+}
+.contactMain .sec01 .cntBox .dl .dt {
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+.contactMain .sec01 .cntBox .dl .dd {
+  line-height: 2;
+}
+.contactMain .sec02 {
+  margin: 140px 0 200px;
+}
+.contactMain .sec02 .secContainer {
+  padding: 100px 0;
+  border-radius: 4px;
+  background: #fcfaea;
+}
+.contactMain .sec02 .stepPanel + .stepPanel {
+  margin: 120px 0 0;
+}
+.contactMain .sec02 .stepPanel .ttl {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 100px;
+  border-radius: 4px 4px 0 0;
+  background: #0fc61c;
+}
+.contactMain .sec02 .stepPanel .ttl .num {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  border-radius: 50%;
+  background: #0fc61c;
+}
+.contactMain .sec02 .stepPanel .ttl .num .span {
+  font-size: 12px;
+  color: #7ced84;
+  line-height: 1;
+}
+.contactMain .sec02 .stepPanel .ttl .num .em {
+  font-size: 26px;
+  color: #a5f0aa;
+  line-height: 1;
+}
+.contactMain .sec02 .stepPanel .ttl h3 {
+  width: calc(100% - 80px);
+  font-size: 24px;
+  color: #ffffff;
+}
+.contactMain .sec02 .stepPanel .cntBody {
+  padding: 40px 10px;
+  border-radius: 0 0 4px 4px;
+  background: #ffffff;
+}
+.contactMain .sec02 .stepPanel .qrBox {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contactMain .sec02 .stepPanel .qrBox .qr a {
+  display: block;
+}
+.contactMain .sec02 .stepPanel .qrBox .txtBox .account {
+  margin: 30px 0 0;
+  border-radius: 4px;
+  border: 1px solid #6fc375;
+}
+.contactMain .sec02 .stepPanel .qrBox .txtBox .account .dl {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+}
+.contactMain .sec02 .stepPanel .qrBox .txtBox .account .dl + .dl {
+  border-top: 1px solid #6fc375;
+}
+.contactMain .sec02 .stepPanel .qrBox .txtBox .account .dl + .dl .dt {
+  border-radius: 0 0 0 4px;
+}
+.contactMain .sec02 .stepPanel .qrBox .txtBox .account .dl > * {
+  display: table-cell;
+}
+.contactMain .sec02 .stepPanel .qrBox .txtBox .account .dl .dt {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px 0 0 0;
+  background: #fcfaea;
+}
+.contactMain .sec02 .stepPanel .qrBox .txtBox .account .dl .dd {
+  padding: 10px 20px;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec02 .stepPanel .qrBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .sec02 .stepPanel .qrBox .qr {
+    width: 190px;
+  }
+  .contactMain .sec02 .stepPanel .qrBox .txtBox {
+    width: calc(100% - 220px);
+  }
+}
+.contactMain .sec02 .stepPanel .listBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contactMain .sec02 .stepPanel .listBox .ul .photo img {
+  border-radius: 4px;
+}
+.contactMain .sec02 .stepPanel .listBox .ul p {
+  margin: 10px 0 0;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec02 .stepPanel .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -30px;
+  }
+  .contactMain .sec02 .stepPanel .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+    margin: 40px 0 0 30px;
+  }
+  .contactMain .sec02 .stepPanel .listBox .ul .photo {
+    position: relative;
+    height: 265px;
+  }
+  .contactMain .sec02 .stepPanel .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.contactMain .sec02 .stepPanel .docBox01 {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+.contactMain .sec02 .stepPanel .docBox01 .photoBox .photo {
+  width: 200px;
+}
+.contactMain .sec02 .stepPanel .docBox01 .txtBox .dl {
+  border-radius: 4px;
+  border: 1px solid #6fc375;
+}
+.contactMain .sec02 .stepPanel .docBox01 .txtBox .dl .dt {
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #0fc61c;
+}
+.contactMain .sec02 .stepPanel .docBox01 .txtBox .dl .dd {
+  padding: 20px 40px;
+}
+.contactMain .sec02 .stepPanel .docBox01 .txtBox .dl .ul .li + .li {
+  margin: 15px 0 0;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec02 .stepPanel .docBox01 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .contactMain .sec02 .stepPanel .docBox01 .photoBox {
+    width: 40%;
+  }
+  .contactMain .sec02 .stepPanel .docBox01 .txtBox {
+    width: 55%;
+  }
+  .contactMain .sec02 .stepPanel .docBox01 .txtBox .dl .dd {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .sec02 .stepPanel .docBox01 .txtBox .dl .ul {
+    width: 50%;
+  }
+}
+.contactMain .sec02 .stepPanel .docBox02 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contactMain .sec02 .stepPanel .docBox02 .dl {
+  border-radius: 4px;
+  border: 1px solid #6fc375;
+}
+.contactMain .sec02 .stepPanel .docBox02 .dl .dt {
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #0fc61c;
+}
+.contactMain .sec02 .stepPanel .docBox02 .dl .dd {
+  padding: 20px 40px;
+}
+.contactMain .sec02 .stepPanel .docBox02 .dl .txt {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .blogSection {
+  padding: 80px 0 200px;
+}
+@media (min-width: 1025px) {
+  .newsMain .postContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newsMain .postContainer .catePanel {
+    width: 160px;
+  }
+  .newsMain .postContainer .blogPanel {
+    width: calc(100% - 220px);
+    padding: 60px 0 0;
+  }
+}
+.newsMain .catePanel .webgene-blog .webgene-header {
+  margin: 0 0 20px;
+  padding: 70px 0 0;
+  text-align: center;
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center top no-repeat;
+  background-size: 140px auto;
+}
+.newsMain .catePanel .webgene-blog .webgene-header h2 {
+  font-size: 26px;
+}
+.newsMain .catePanel .webgene-blog .webgene-header em {
+  color: #f04046;
+}
+.newsMain .catePanel .webgene-blog .webgene-item a {
+  display: block;
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  min-height: 300px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .img img {
+  border-radius: 4px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .time {
+  margin: 0 10px 0 0;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #00a0e9;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .title {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 20px);
+    margin: 40px 0 0 20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 200px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #dbf0fa;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #00a0e9;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-pagination ul li {
+    margin: 0 5px;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.newsMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #00a0e9;
+}
+.newsMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  padding: 0 15px;
+  font-size: 26px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav {
+  max-width: 900px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 20px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+  border-radius: 6px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+}
+.newsMain .blogPanel--detail .pdfArea {
+  margin: 40px 0 0;
+}
+.newsMain .blogPanel--detail .pdfArea a {
+  color: #2151a3;
+}
+.newsMain .blogPanel .btnBack {
+  width: 220px;
+  margin: 100px auto 0;
+}
+.newsMain .blogPanel .btnBack a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: #00a0e9;
+}
+.newsMain .blogPanel .btnBack a p {
+  background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left 10px center no-repeat;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel .btnBack a:hover p {
+    background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left center no-repeat;
+  }
+}

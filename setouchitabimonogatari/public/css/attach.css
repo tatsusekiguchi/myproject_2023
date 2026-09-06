@@ -1,0 +1,24 @@
+body {
+  opacity: 0;
+}
+.navBox {
+  display: none;
+}
+.topMain .topKvContainer .slideTitlePanel {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.topMain .topKvContainer .slick-active .slideTitlePanel {
+  bottom: 80px;
+  opacity: 1;
+}
+@media (max-width: 1024px) {
+  .topMain .topKvContainer .slick-active .slideTitlePanel {
+    bottom: 30px;
+  }
+}

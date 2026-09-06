@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    height: 55px;
+    padding: 15px 20px;
+    .headWrap {
+      .leftBox {
+        .headTtl {
+          display: none;
+        }
+        .logo {
+          width: 170px;
+        }
+      }
+    }
+    .hamburgerBox {
+      top: 10px;
+      right: 20px;
+      .hamburgerTxt {
+        margin: 4px 0 0;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    padding: 100px 20px;
+    .navContainer {
+      display: block;
+      > * {
+        width: 100%;
+      }
+      .leftBox {
+        margin: 0 0 30px;
+        .ttl {
+          font-size: 12px;
+        }
+        .logo {
+          width: 200px;
+          margin: 20px auto 30px;
+        }
+        .btnTarget {
+          max-width: 260px;
+          margin: 0 auto;
+        }
+      }
+      .rightBox {
+        .navList {
+          max-width: 260px;
+          margin: 0 auto 30px;
+          .ul {
+            display: block;
+            margin: 0;
+            .li {
+              width: 100%;
+              margin: 15px 0 0;
+            }
+          }
+        }
+        .lineItem {
+          margin: 0 auto 30px;
+        }
+        .telItem {
+          text-align: center;
+          .telBox01 {
+            .ttl {
+              display: block;
+              margin: 0 0 5px;
+              font-size: 20px;
+            }
+            a {
+              display: inline-block;
+              padding: 0 0 0 25px;
+              font-size: 26px;
+              line-height: 1;
+              background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/header_tel_black.png)
+                left top 5px no-repeat;
+              background-size: 20px auto;
+            }
+          }
+          .telBox02 {
+            a {
+              margin: 0;
+              padding: 0 0 0 35px;
+              font-size: 26px;
+              background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/header_tel_icon.png)
+                left bottom 2px no-repeat;
+              background-size: 30px auto;
+            }
+            .span {
+              display: block;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 55px 0 0;
+  }
+  .pageKvPanel {
+    height: 200px;
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    padding: 40px 0 0;
+    background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+      center top no-repeat;
+    background-size: 80px auto;
+    .pageSecTtl {
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+  .purchaseSection {
+    margin: 0 0 100px;
+    .purchaseWrap {
+      padding: 60px 10px 0;
+    }
+    h2 {
+      margin: 0 0 30px;
+      font-size: 22px;
+    }
+    .list {
+      margin: 0 0 30px;
+    }
+    .dl {
+      padding: 0 0 20px;
+      .dt {
+        margin: 0 auto 30px;
+        max-width: 500px;
+      }
+      .ul {
+        max-width: 660px;
+        margin: 0 auto;
+        .li {
+          padding: 0 0 0 25px;
+          font-size: 15px;
+          background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/top_purchase_check.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+    }
+    .person {
+      position: static;
+      width: 200px;
+    }
+  }
+  .pageContactContainer {
+    .pageContactPanel {
+      padding: 40px 10px;
+    }
+    h2 {
+      margin: 0 0 30px;
+      font-size: 22px;
+    }
+    .contactItem {
+      max-width: 500px;
+      > * {
+        padding: 20px;
+      }
+      .lineItem {
+        margin: 0 0 20px;
+        .lineBox {
+          .dl {
+            max-width: 260px;
+            margin: 0 auto 20px;
+            padding: 0 0 0 60px;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/page_contact_line_ttl.png)
+              left center no-repeat;
+            background-size: 50px auto;
+            .dt {
+              margin: 0 0 5px;
+            }
+            .dd {
+              font-size: 24px;
+            }
+          }
+          .qrBox {
+            .qr {
+              width: 28%;
+            }
+            .txt {
+              width: 70%;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+      .telItem {
+        .telBox01 {
+          margin: 0 0 20px;
+          .ttl {
+            margin: 0 0 15px;
+            .em {
+              font-size: 24px;
+            }
+          }
+          a {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            font-size: 26px;
+            line-height: 1.2;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/page_contact_tel_black.png)
+              left top 5px no-repeat;
+            background-size: 25px auto;
+          }
+        }
+        .telBox02 {
+          a {
+            display: inline-block;
+            padding: 0 0 0 45px;
+            font-size: 26px;
+            background: url(https://garage-egear231127.smooooth.jp/system_panel/uploads/images/page_contact_tel_icon.png)
+              left center no-repeat;
+            background-size: 35px auto;
+          }
+          .em {
+            line-height: 1.2;
+          }
+          .span {
+            font-size: 12px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .contactItem {
+        display: flex;
+        justify-content: space-between;
+        > * {
+          width: 500px;
+        }
+      }
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footPanel {
+      padding: 60px 0 30px;
+      .footBox {
+        display: block;
+      }
+      .leftBox {
+        width: 100%;
+        .logo {
+          width: 220px;
+          margin: 0 auto 30px;
+        }
+        .txt {
+          margin: 0 0 30px;
+          text-align: center;
+        }
+        .btnTarget {
+          max-width: 260px;
+          margin: 0 auto;
+        }
+      }
+      .rightBox {
+        width: 100%;
+        .footNav {
+          display: none;
+        }
+        .copy {
+          padding: 50px 0 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

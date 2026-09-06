@@ -1,0 +1,587 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #063a1c;
+  font-size: 18px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #063a1c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1241px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 60px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logo {
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    max-width: 200px;
+    width: 15%;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1241px) {
+  .navBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBox .navList {
+    width: calc(100% - 200px);
+  }
+  .navBox .navList > .ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .navBox .navList > .ul > .li {
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    padding: 48px 0 30px;
+    font-size: 15px;
+  }
+  .navBox .navList > .ul > .li + .li {
+    margin: 0 0 0 2%;
+  }
+  .navBox .navList > .ul > .li .linkTxt {
+    position: relative;
+  }
+  .navBox .navList > .ul > .li .linkTxt > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li > a {
+    display: inline-block;
+  }
+  .navBox .navList > .ul > .li > a > div > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList > .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList > .ul .pulldown:hover .subList {
+    top: 100px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 70px;
+    left: -60px;
+    width: 200px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + .li {
+    margin: 1px 0 0;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 14px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #91c3e0;
+  }
+  .navBox .navItem {
+    width: 150px;
+    padding: 15px 0 0;
+  }
+  .navBox .navItem .reserve a {
+    display: block;
+    padding: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #2b724c;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1240px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logo {
+    position: relative;
+    z-index: 9999;
+    width: 140px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #2b724c;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1240px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 80px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 60px;
+  }
+  .navBox .navList .ul .li {
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navItem {
+    padding: 20px 0 0;
+  }
+  .navBox .navItem .reserve {
+    width: 150px;
+    margin: 10px auto 0;
+  }
+  .navBox .navItem .reserve a {
+    display: block;
+    padding: 4px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #2b724c;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+@media (max-width: 1240px) {
+  .main {
+    margin: 60px 0 0;
+  }
+}
+.pageHeadTitlePanel {
+  padding: 60px 20px 20px;
+}
+.pageHeadTitlePanel .pageHeadTitle {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pageHeadTitlePanel .pageHeadTitle p {
+  margin: 0 0 10px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+}
+.pageHeadTitlePanel .pageHeadTitle .pageSecTtl {
+  font-size: 16px;
+}
+
+.mainContainer {
+  position: relative;
+}
+.mainContainer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  z-index: -1;
+  background: #ededed;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 60px;
+}
+.pageSecTtlBox p {
+  margin: 0 0 10px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+}
+.pageSecTtlBox .pageSecTtl {
+  font-size: 16px;
+}
+
+.secWrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.secWrap01 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secWrap02 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 220px;
+}
+.btnMore a {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #063a1c;
+  background: url(https://rihanoki230831.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 15px center no-repeat #063a1c;
+  background-size: 24px auto;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover {
+    opacity: 1;
+    color: #063a1c;
+    background: url(https://rihanoki230831.smooooth.jp/system_panel/uploads/images/btn_more_arrow_green.png) right 15px center no-repeat #ffffff;
+    background-size: 24px auto;
+  }
+}
+.btnMore.white a {
+  color: #063a1c;
+  border: 1px solid #ffffff;
+  background: url(https://rihanoki230831.smooooth.jp/system_panel/uploads/images/btn_more_arrow_green.png) right 15px center no-repeat #ffffff;
+  background-size: 24px auto;
+}
+@media (min-width: 1025px) {
+  .btnMore.white a:hover {
+    color: #ffffff;
+    background: url(https://rihanoki230831.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 15px center no-repeat #063a1c;
+    background-size: 24px auto;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  overflow: hidden;
+  padding: 0 20px 120px;
+  background: #ededed;
+}
+.footer .footContact .secWrap {
+  position: relative;
+}
+.footer .footContact .contactPanel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: url(https://rihanoki230831.smooooth.jp/system_panel/uploads/images/footer_contact_bg.png) no-repeat;
+  background-size: cover;
+}
+.footer .footContact .contactPanel .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer .footContact .contactPanel .secBox .dl .dt {
+  margin: 0 0 10px;
+}
+.footer .footContact .contactPanel .secBox .dl .dd a {
+  display: inline-block;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.footer .footContact .contactPanel .secBox .dl .dd a p {
+  display: inline-block;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+}
+.footer .footContact .contactPanel .secBox .dl .dd a .span {
+  font-size: 20px;
+}
+.footer .footContact .contactPanel .secBox .dl .dd a .em {
+  font-size: 50px;
+}
+.footer .footContact .contactPanel .secBox .txtBox {
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.35);
+}
+.footer .footContact .contactPanel .secBox .txtBox .btnMore {
+  width: 260px;
+  margin: 20px auto 0;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footContact .contactPanel .secBox .pageSecTtlBox {
+    margin: 0;
+    padding: 0 0 0 3%;
+  }
+  .footer .footContact .contactPanel .secBox .txtBox {
+    width: 50%;
+  }
+}
+.footer .footContact .pagetop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  cursor: pointer;
+}
+.footer .footPanel {
+  padding: 60px 20px 20px;
+}
+.footer .footPanel .footBox {
+  display: flex;
+  align-items: center;
+}
+.footer .footPanel .footBox .logo {
+  width: 250px;
+  margin: 0 60px 0 0;
+}
+.footer .footPanel .footBox .txt a {
+  display: inline-block;
+}
+.footer .footPanel .copy {
+  margin: 40px 0 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

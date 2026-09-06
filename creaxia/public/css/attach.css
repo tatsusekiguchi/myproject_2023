@@ -1,0 +1,11 @@
+body {
+  opacity: 0;
+}
+.header .navBox {
+  right: -100%;
+}
+.header .navBox.active {
+  right: 0;
+  opacity: 1;
+  z-index: 999;
+}

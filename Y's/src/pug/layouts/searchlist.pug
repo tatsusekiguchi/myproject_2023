@@ -1,0 +1,99 @@
+// ▽メイン▽
+.searchMain.formMain.main
+    .pageKvPanel
+        .pageKv
+        .kvTtl
+            h1 店舗検索
+    .sec01
+        .secWrap01
+            .pageSecTtl.center
+                p SALON SEARCH
+                h2 取扱いサロン検索
+            .searchPanel
+                p.gothic ご希望の条件を選択して検索してください。
+                <form class="webgene-search-form" method="get" action="">
+                    <div rel="店舗名" title="店舗名" class=" webgene-search-form-block">
+                            <div class="search-title-wrapper">
+                                 <p class="search-title">店舗名</p>
+                            </div>
+                            <div class="search-area-wrapper">
+                                <div class="search-subtitle-wrapper"> </div>
+                                <div class="search-contents-wrapper"> <input type="text" name="s1l0" value=""> </div>
+                            </div>
+                    </div>
+                    <div rel="エリア" title="エリア" class="area webgene-search-form-block">
+                            <div class="search-title-wrapper">
+                                    <p class="search-title">エリア</p>
+                            </div>
+                            <div class="search-area-wrapper">
+                                <div class="search-subtitle-wrapper"> </div>
+                                <div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="3">東北エリア</label> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="2">関東エリア</label> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="1">北海道エリア</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div rel="取扱メニュー" title="取扱メニュー" class=" webgene-search-form-block">
+                            <div class="search-title-wrapper">
+                                    <p class="search-title">取扱メニュー</p>
+                            </div>
+                            <div class="search-area-wrapper">
+                                    <div class="search-subtitle-wrapper"> </div>
+                                    <div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="2">Velvet Straight ( 髪質改善ストレート )</label> <label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">Velvet Refined color（ノンジアミンカラー）</label> </div>
+                            </div>
+                    </div>
+                    <div rel="取扱商品" title="取扱商品" class=" webgene-search-form-block">
+                        <div class="search-title-wrapper">
+                                <p class="search-title">取扱商品</p>
+                        </div>
+                        <div class="search-area-wrapper">
+                                <div class="search-subtitle-wrapper"> </div>
+                                <div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd3" name="s3l0[]" value="2">Velvet Fluffy（ベルベット フラフィー　シャンプー　トリートメント） 　</label> <label><input type="checkbox" class="property_facility_cd3" name="s3l0[]" value="1">Velvet Elca ( ベルベット エルカ)    </label> </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="search-submit" value="検索する"><input type="hidden" name="wgsearch" value="property">
+                </form>
+    .sec02
+        .secWrap01
+            .searchResultPanel
+                section.webgene-blog
+                    .webgene-header
+                        .sectionTitle.gothic
+                            h3 店舗情報
+                    .webgene-legend
+                        p
+                            em 15
+                            span 件中　1 ～ 15 件を表示
+                    .webgene-item
+                        .webgene-item-wrap
+                            .area.gothic
+                                p 関東エリア
+                            .inner
+                                .leftBox
+                                    .shop
+                                        a(href="")  店舗名が入ります。
+                                    .address
+                                        p 住所：
+                                        p 東京都世田谷区2-3-4
+                                    .reserve
+                                        dl
+                                            dt.gothic ご予約はこちら
+                                            dd
+                                                .tel
+                                                    a(href="tel:03-1234-5678") 03-1234-5678
+                                            dd.gothic ※ワイズラボのホームページを見て連絡<br>しましたとお伝えいただくとスムーズです。
+                                .rightBox
+                                    dl.menuList
+                                        dt □ 取り扱いメニュー
+                                        dd.menuListTxt SHITAKU（くせ毛改善：ストリートメント）、10秒ヘアエステ（髪質改善：ベルベットエルカ）、Velvet Straight （弱酸性髪質改善ストレート：ベルベット オーサム ストレート）、Velvet Refined color（ノンジアミンカラー：ベルベット リファインド カラー）、Velvet Refined Frais color System（しみないカラーシステム：ベルベット リファインド フレ）
+                    .webgene-pagination
+                        ul
+                            li.prev
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 前へ
+                            li.number
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=1") 1
+                            li.number
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 2
+                            li.number.selected
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=3") 3
+                            li.next
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 次へ
+// △メイン△

@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    height: 60px;
+    padding: 20px;
+  }
+  .header .headTitle {
+    display: none;
+  }
+  .header .logoBox {
+    max-width: 160px;
+    width: 160px;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .headItem {
+    top: -20px;
+    right: -10px;
+    width: 100px;
+  }
+  .header .headItem .headMenu {
+    width: 100px;
+  }
+  .header .headItem .sns {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox .navWrap {
+    padding: 100px 0;
+  }
+  .navBox .closeMenu {
+    right: -10px;
+    width: 100px;
+  }
+  .navBox .navContainer .leftBox {
+    margin: 0 0 30px;
+  }
+  .navBox .navContainer .leftBox .logo {
+    max-width: 220px;
+    margin: 0 auto 10px;
+  }
+  .navBox .navContainer .leftBox p {
+    font-size: 12px;
+  }
+  .navBox .navContainer .rightBox {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .navBox .navContainer .rightBox .title {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+  .navBox .navContainer .rightBox .navList {
+    font-size: 20px;
+  }
+  .navBox .navContainer .rightBox .navList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+  }
+
+  .pageKvContainer {
+    margin: 0 0 60px;
+  }
+  .pageKvContainer .pageKvPanel {
+    height: 200px;
+  }
+  .pageKvContainer .kvTitleBox {
+    left: -10px;
+    padding: 0 0 20px;
+  }
+  .pageKvContainer .kvTitle {
+    padding: 5px 15px;
+    text-align: left;
+  }
+  .pageKvContainer .kvTitle p {
+    font-size: 16px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore {
+    max-width: 340px;
+  }
+  .btnMore a .inner {
+    font-size: 14px;
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 10px center no-repeat #ffffff;
+    background-size: 6px auto;
+  }
+  .btnMore a .icon {
+    left: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .btnMore a p {
+    min-height: 50px;
+    padding: 10px 10px 10px 30px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    background: url(https://setouchitabimonogatari230704.smooooth.jp/system_panel/uploads/images/footer_bg.png) center top no-repeat;
+    background-size: 100% auto;
+  }
+  .footer .secWrap {
+    padding: 0;
+  }
+  .footer .footPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 350px;
+    padding: 100px 0 0;
+  }
+  .footer .footBox {
+    padding: 0 20px;
+    background: #f9ff8a;
+  }
+  .footer .footBox .logo {
+    max-width: 200px;
+    margin: 0 0 20px;
+  }
+  .footer .footBox .txt {
+    display: block;
+  }
+  .footer .footBox .txt .telMail > * {
+    display: block;
+  }
+  .footer .footBox .txt .telMail .mail {
+    margin: 0;
+  }
+  .footer .footBox .sns {
+    margin: 20px 0 0;
+  }
+  .footer .copy {
+    margin: 0;
+    padding: 20px;
+    background: #f9ff8a;
+  }
+}
